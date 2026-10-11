@@ -22,7 +22,7 @@ theme:
     - content.code.copy
 
 extra_css:
-  - stylesheets/extra.css
+  - stylesheets/fistiland-v3.css
 
 extra:
   social:
