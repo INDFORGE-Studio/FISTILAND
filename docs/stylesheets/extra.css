@@ -150,3 +150,22 @@
   .fl-grid { grid-template-columns: repeat(2, 1fr); }
   .fl-card p { display: block; }
 }
+
+/* ---- Content pages: everything centred, no side panels ---- */
+@media (min-width: 60em) {
+  .md-sidebar--primary, .md-sidebar--secondary { display: none; }
+}
+.md-main__inner:not(:has(.fl-home)) { max-width: 56rem; margin-left: auto; margin-right: auto; }
+.md-content:not(:has(.fl-home)) { max-width: 52rem; margin: 0 auto; }
+.md-content:not(:has(.fl-home)) .md-content__inner { margin: 0 .8rem 3rem; padding-top: 1.5rem; }
+.md-content:not(:has(.fl-home)) .md-typeset { text-align: center; }
+.md-content:not(:has(.fl-home)) .md-typeset h1 { font-size: 2.4rem; letter-spacing: .08em; margin-bottom: 1.2rem; }
+.md-content:not(:has(.fl-home)) .md-typeset h2 { border-left: 0; padding-left: 0; border-bottom: 2px solid var(--fl-orange); display: inline-block; padding-bottom: .2rem; margin-top: 2rem; }
+.md-content:not(:has(.fl-home)) .md-typeset ul,
+.md-content:not(:has(.fl-home)) .md-typeset ol { display: table; margin: 1rem auto; text-align: left; }
+.md-content:not(:has(.fl-home)) .md-typeset .md-typeset__scrollwrap,
+.md-content:not(:has(.fl-home)) .md-typeset__table { text-align: center; }
+.md-content:not(:has(.fl-home)) .md-typeset table:not([class]) td,
+.md-content:not(:has(.fl-home)) .md-typeset table:not([class]) th { text-align: center; }
+.md-content:not(:has(.fl-home)) .md-typeset .admonition { text-align: left; }
+.md-content:not(:has(.fl-home)) .md-typeset .md-button { margin: .3rem; }

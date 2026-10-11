@@ -43,8 +43,7 @@ markdown_extensions:
 
 nav:
   - Home: index.md
-  - Server:
-      - Overview: server/overview.md
-      - Territory wars: server/territory-wars.md
-      - Survival and enemies: server/survival.md
+  - Overview: server/overview.md
+  - Territory wars: server/territory-wars.md
+  - Survival: server/survival.md
   - Join: join.md
