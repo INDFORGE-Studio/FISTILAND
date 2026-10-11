@@ -5,13 +5,12 @@ hide:
 ---
 
 <div class="fl-home" markdown>
-<div class="fl-wrap" markdown>
 
-<div class="fl-left" markdown>
+<div class="fl-hero" markdown>
 <p class="fl-kicker">EU &middot; PvP &middot; Territory wars</p>
 <div class="fl-title">FISTILAND</div>
 <p class="fl-lead">Hold zones, defend your base, fight over cargo drops. Survival is easier, so the fight is the point.</p>
-<a class="fl-btn" href="join/">How to join</a><a class="fl-btn ghost" href="https://discord.gg/UdHGdRSyyu">Discord</a>
+<div><a class="fl-btn" href="join/">How to join</a><a class="fl-btn ghost" href="https://discord.gg/UdHGdRSyyu">Discord</a></div>
 
 <div class="fl-stats">
   <div><b>14</b><span>Slots</span></div>
@@ -33,7 +32,7 @@ hide:
 <div class="fl-card" markdown>
 :material-timer-sand:
 <b>Fast respawns</b>
-<p>A lost fight costs minutes, not an evening.</p>
+<p>A lost fight costs minutes.</p>
 </div>
 
 <div class="fl-card" markdown>
@@ -45,7 +44,7 @@ hide:
 <div class="fl-card" markdown>
 :material-chart-line:
 <b>Long progression</b>
-<p>Skills at x0.5. Mastery takes time.</p>
+<p>Skills at x0.5.</p>
 </div>
 
 <div class="fl-card" markdown>
@@ -57,28 +56,27 @@ hide:
 <div class="fl-card" markdown>
 :material-skull-crossbones:
 <b>Easy enemies</b>
-<p>Easy zombies, easy armed NPCs, plenty of game.</p>
+<p>Easy zombies and armed NPCs.</p>
 </div>
 
 <div class="fl-card" markdown>
 :material-robot-off:
 <b>No mechs</b>
-<p>The fights stay between players.</p>
+<p>Fights stay between players.</p>
 </div>
 
 <div class="fl-card" markdown>
 :material-key-variant:
 <b>Access cards</b>
-<p>6 Killbox + 6 Apex at once.</p>
+<p>6 Killbox + 6 Apex.</p>
 </div>
 
 <div class="fl-card" markdown>
 :material-cash-remove:
 <b>No pay-to-win</b>
-<p>No P2W packs. No crosshair.</p>
+<p>No P2W packs, no crosshair.</p>
 </div>
 
 </div>
 
-</div>
 </div>
