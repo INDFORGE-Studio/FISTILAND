@@ -26,7 +26,7 @@ Up to **6 Killbox** and **6 Apex** access cards can be in play at the same time.
 
 ## Fame and respawns
 
-- Killing a player gives you half of the fame points the victim loses.
+- Killing a player takes half of their fame points and gives them to you.
 - Respawns are fast and cheap, so a lost fight costs you time less than a whole evening.
 - Respawning at your shelter is possible **30 seconds** after your first death.
 
