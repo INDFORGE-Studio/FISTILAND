@@ -1,8 +1,6 @@
 site_name: FISTILAND
 site_description: FISTILAND, EU PvP SCUM server built around territory wars. Loot x5, fast respawns, easier survival, no mechs.
 site_url: https://indforge-studio.github.io/FISTILAND/
-repo_url: https://github.com/INDFORGE-Studio/FISTILAND
-repo_name: INDFORGE-Studio/FISTILAND
 
 theme:
   name: material
