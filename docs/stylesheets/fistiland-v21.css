@@ -454,3 +454,12 @@ html[lang="uk"] .md-header__option .md-select > button::before { background-imag
   .md-content:has(.fl-page-hero):not(:has(.fl-home)) .md-typeset .fl-page-hero h1 { font-size: 2rem; }
   .md-typeset table:not([class]):has(th:nth-child(3)) th:nth-child(1) { width: 38%; }
 }
+
+/* v21: big icon on the right of the hero (it sits inside a paragraph), six key figures on one row */
+.md-content .fl-page-hero p:has(> .twemoji) {
+  position: absolute; right: 2.4rem; top: 50%; transform: translateY(-50%); margin: 0 !important; max-width: none; line-height: 0;
+}
+.md-content .fl-page-hero p > .twemoji { height: 6.5rem; width: 6.5rem; display: block; }
+.md-content .fl-page-hero p > .twemoji svg { height: 6.5rem; width: 6.5rem; fill: var(--fl-orange-hot); filter: drop-shadow(0 4px 14px rgba(0,0,0,.8)); }
+.fl-facts { grid-template-columns: repeat(auto-fit, minmax(8rem, 1fr)); }
+@media (max-width: 40em) { .md-content .fl-page-hero p:has(> .twemoji) { display: none; } }
