@@ -169,3 +169,8 @@
 .md-content:not(:has(.fl-home)) .md-typeset table:not([class]) th { text-align: center; }
 .md-content:not(:has(.fl-home)) .md-typeset .admonition { text-align: left; }
 .md-content:not(:has(.fl-home)) .md-typeset .md-button { margin: .3rem; }
+
+/* Home: full width, nothing reserved for side panels */
+.md-main__inner:has(.fl-home) { max-width: none; margin: 0; }
+.md-main__inner:has(.fl-home) .md-content { max-width: none; width: 100%; flex: 1 1 100%; }
+.fl-hero > * { margin-left: auto; margin-right: auto; }
