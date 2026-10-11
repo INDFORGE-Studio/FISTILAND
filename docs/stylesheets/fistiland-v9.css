@@ -272,3 +272,15 @@ html[lang="uk"] .md-header__option .md-select > button::before { background-imag
 @media (min-width: 62em) and (min-height: 560px) {
   html:has(.fl-home) { overflow-y: hidden; }
 }
+
+/* ---- Home: logo replaces the text title (kept for screen readers) ---- */
+.fl-sr { position: absolute; width: 1px; height: 1px; margin: -1px; padding: 0; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; border: 0; }
+.fl-logo {
+  display: block;
+  height: min(25vh, 21rem);
+  width: auto;
+  max-width: 80vw;
+  margin: .2rem auto .5rem;
+  filter: drop-shadow(0 8px 24px rgba(0,0,0,.7));
+}
+@media (max-height: 700px) { .fl-logo { height: 22vh; margin-bottom: .3rem; } }
