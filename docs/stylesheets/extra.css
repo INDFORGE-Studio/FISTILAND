@@ -151,3 +151,5 @@
   .fl-grid { grid-template-columns: repeat(2, 1fr); }
   .fl-card { text-align: left; }
 }
+
+.md-content__inner:has(.fl-home) > h1 { display: none; }
