@@ -8,7 +8,8 @@ hide:
 
 <div class="fl-hero" markdown>
 <p class="fl-kicker">EU &middot; PvP &middot; Війни за територію</p>
-<div class="fl-title">FISTILAND</div>
+<img class="fl-logo" src="/FISTILAND/assets/logo-home.png" alt="FISTILAND - SCUM Server">
+<div class="fl-title fl-sr">FISTILAND</div>
 <p class="fl-lead">Утримуйте зони, захищайте базу, боріться за вантажні скидання. Виживати легше — головне тут бій.</p>
 <div><a class="fl-btn" href="join/">Як приєднатися</a><a class="fl-btn ghost" href="https://discord.gg/UdHGdRSyyu">Discord</a></div>
 

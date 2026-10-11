@@ -8,7 +8,8 @@ hide:
 
 <div class="fl-hero" markdown>
 <p class="fl-kicker">EU &middot; PvP &middot; Territorialkriege</p>
-<div class="fl-title">FISTILAND</div>
+<img class="fl-logo" src="/FISTILAND/assets/logo-home.png" alt="FISTILAND - SCUM Server">
+<div class="fl-title fl-sr">FISTILAND</div>
 <p class="fl-lead">Haltet Zonen, verteidigt eure Basis, kämpft um Cargo-Drops. Das Überleben ist leichter – der Kampf steht im Mittelpunkt.</p>
 <div><a class="fl-btn" href="join/">So trittst du bei</a><a class="fl-btn ghost" href="https://discord.gg/UdHGdRSyyu">Discord</a></div>
 
