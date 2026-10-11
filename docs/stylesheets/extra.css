@@ -32,45 +32,59 @@
 }
 .md-typeset h2 { border-left: 4px solid var(--fl-orange); padding-left: .7rem; }
 
-/* ---- Home page ---- */
-.md-content__inner:has(.fl-hero) { margin: 0; padding: 0; }
-.md-content__inner:has(.fl-hero)::before { display: none; }
-.md-content:has(.fl-hero) { max-width: none; }
+/* ---- Home: one screen, no scroll ---- */
+.md-content:has(.fl-home) { max-width: none; }
+.md-content__inner:has(.fl-home) { margin: 0; padding: 0; }
+.md-content__inner:has(.fl-home)::before { display: none; }
+.md-main:has(.fl-home) .md-footer,
+.md-container:has(.fl-home) .md-footer { display: none; }
+.md-main__inner:has(.fl-home) { margin: 0; }
 
-.fl-hero {
-  position: relative;
-  text-align: center;
-  padding: 4.5rem 1.2rem 4rem;
+.fl-home {
+  min-height: calc(100vh - 5rem);
+  min-height: calc(100svh - 5rem);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem 1.5rem;
   background:
-    linear-gradient(180deg, rgba(13,12,11,.55) 0%, rgba(13,12,11,.92) 100%),
-    radial-gradient(ellipse at 50% 0%, rgba(232,99,28,.38) 0%, rgba(13,12,11,0) 65%),
-    url("../assets/banner.jpg") center / cover no-repeat;
-  border-bottom: 3px solid var(--fl-orange);
+    linear-gradient(90deg, rgba(13,12,11,.88) 0%, rgba(13,12,11,.55) 50%, rgba(13,12,11,.8) 100%),
+    radial-gradient(ellipse at 25% 40%, rgba(232,99,28,.22) 0%, rgba(13,12,11,0) 60%),
+    url("../assets/bg.jpg") center / cover no-repeat;
 }
-.fl-hero img.fl-logo { width: min(300px, 62vw); filter: drop-shadow(0 8px 24px rgba(0,0,0,.7)); }
-.fl-hero .fl-kicker {
-  margin: 1.2rem 0 0;
+.fl-wrap {
+  width: 100%;
+  max-width: 78rem;
+  display: grid;
+  grid-template-columns: 1.05fr 1fr;
+  gap: 3rem;
+  align-items: center;
+}
+
+.fl-kicker {
+  margin: 0;
   color: var(--fl-orange-hot);
   font-family: "Oswald", sans-serif;
   letter-spacing: .28em;
   text-transform: uppercase;
   font-size: .95rem;
 }
-.fl-hero h1.fl-title {
-  margin: .2rem 0 .6rem;
+.fl-title {
+  margin: .1rem 0 .5rem;
   font-family: "Oswald", sans-serif;
-  font-size: clamp(3rem, 11vw, 6.4rem);
+  font-weight: 700;
+  font-size: clamp(3rem, 8.5vw, 6.6rem);
   line-height: 1;
-  letter-spacing: .1em;
+  letter-spacing: .08em;
   color: #fff;
   text-shadow: 0 4px 0 var(--fl-rust), 0 10px 30px rgba(0,0,0,.7);
 }
-.fl-hero .fl-lead { max-width: 38rem; margin: 0 auto 1.8rem; font-size: 1.1rem; color: #d9cfc6; }
+.fl-lead { max-width: 30rem; margin: 0 0 1.4rem; font-size: 1.08rem; color: #d9cfc6; }
 
 .fl-btn {
   display: inline-block;
-  margin: .3rem .4rem;
-  padding: .85rem 1.8rem;
+  margin: .2rem .5rem .2rem 0;
+  padding: .8rem 1.7rem;
   font-family: "Oswald", sans-serif;
   font-size: 1rem;
   letter-spacing: .12em;
@@ -83,41 +97,57 @@
   transition: background .15s, transform .15s;
 }
 .fl-btn:hover { background: var(--fl-orange-hot); transform: translateY(-2px); }
-.fl-btn.ghost { background: rgba(0,0,0,.35); }
+.fl-btn.ghost { background: rgba(0,0,0,.4); }
 .fl-btn.ghost:hover { background: rgba(232,99,28,.25); }
 
 .fl-stats {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  max-width: 62rem;
-  margin: -2.2rem auto 0;
-  position: relative;
-  gap: 0;
-  background: var(--fl-panel);
+  grid-template-columns: repeat(5, 1fr);
+  margin-top: 1.8rem;
+  background: rgba(24,21,19,.85);
   border: 1px solid var(--fl-line);
   border-top: 3px solid var(--fl-orange);
+  max-width: 34rem;
 }
-.fl-stats div { padding: 1.1rem .6rem; text-align: center; border-right: 1px solid var(--fl-line); }
+.fl-stats div { padding: .75rem .3rem; text-align: center; border-right: 1px solid var(--fl-line); }
 .fl-stats div:last-child { border-right: 0; }
-.fl-stats b { display: block; font-family: "Oswald", sans-serif; font-size: 2rem; line-height: 1.1; color: var(--fl-orange-hot); }
-.fl-stats span { font-size: .78rem; letter-spacing: .14em; text-transform: uppercase; color: #a89d92; }
+.fl-stats b { display: block; font-family: "Oswald", sans-serif; font-size: 1.6rem; line-height: 1.1; color: var(--fl-orange-hot); }
+.fl-stats span { font-size: .66rem; letter-spacing: .12em; text-transform: uppercase; color: #a89d92; }
 
-.fl-section { max-width: 62rem; margin: 0 auto; padding: 2.6rem 1rem 0; }
-.fl-section h2 { margin-top: 0; }
-
-.fl-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1rem; }
+.fl-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: .7rem; }
 .fl-card {
-  background: var(--fl-panel);
+  background: rgba(24,21,19,.82);
   border: 1px solid var(--fl-line);
   border-left: 4px solid var(--fl-orange);
-  padding: 1.1rem 1.2rem 1.2rem;
+  padding: .8rem .9rem .9rem;
+  backdrop-filter: blur(3px);
   transition: transform .15s, border-color .15s;
 }
 .fl-card:hover { transform: translateY(-3px); border-color: var(--fl-orange-hot); }
-.fl-card .twemoji, .fl-card svg { height: 1.7rem; width: 1.7rem; fill: var(--fl-orange-hot); }
-.fl-card h3 { margin: .5rem 0 .3rem; font-size: 1.1rem; color: #fff; }
-.fl-card p { margin: 0; color: #b9aea3; font-size: .92rem; }
+.fl-card .twemoji, .fl-card svg { height: 1.4rem; width: 1.4rem; fill: var(--fl-orange-hot); }
+.fl-card b {
+  display: block; margin: .35rem 0 .2rem;
+  font-family: "Oswald", sans-serif; font-size: .98rem; letter-spacing: .05em; text-transform: uppercase; color: #fff;
+}
+.fl-card p { margin: 0; color: #b9aea3; font-size: .78rem; line-height: 1.35; }
 
-.fl-banner img { width: 100%; height: auto; border: 1px solid var(--fl-line); box-shadow: 0 10px 40px rgba(0,0,0,.6); }
-.fl-cta { text-align: center; padding: 3rem 1rem 3.5rem; }
-.fl-cta p { color: #b9aea3; }
+/* Smaller laptop screens */
+@media (max-height: 820px) and (min-width: 76em) {
+  .fl-home { padding: 1rem 1.5rem; }
+  .fl-title { font-size: clamp(2.8rem, 7vw, 5rem); }
+  .fl-lead { font-size: 1rem; margin-bottom: 1rem; }
+  .fl-stats { margin-top: 1.2rem; }
+  .fl-card { padding: .6rem .8rem .7rem; }
+  .fl-card p { font-size: .72rem; }
+}
+
+/* Tablet and phone: stack, scrolling is fine here */
+@media (max-width: 76em) {
+  .fl-wrap { grid-template-columns: 1fr; gap: 1.6rem; text-align: center; }
+  .fl-lead, .fl-stats { margin-left: auto; margin-right: auto; }
+  .fl-home { align-items: flex-start; padding-top: 2rem; }
+}
+@media (max-width: 40em) {
+  .fl-grid { grid-template-columns: repeat(2, 1fr); }
+  .fl-card { text-align: left; }
+}
