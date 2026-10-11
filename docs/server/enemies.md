@@ -1,8 +1,22 @@
+<div class="fl-page-hero fl-bg-f" markdown>
+
+:material-skull-crossbones:
+
 # Enemies
 
-The real opponents are other players. Zombies and armed NPCs are there to be handled, not feared.
+<p>The real opponents are other players. Zombies and armed NPCs are there to be handled, not feared.</p>
 
-## Zombies
+</div>
+
+<div class="fl-facts">
+<div><b>200</b><span>Zombies at most</span></div>
+<div><b>x0.5</b><span>Zombie health</span></div>
+<div><b>x0.1</b><span>Armed NPC health</span></div>
+<div><b>2</b><span>Armed NPC difficulty</span></div>
+</div>
+
+
+## :material-ghost: Zombies
 
 Zombies are called puppets in the settings.
 
@@ -23,7 +37,7 @@ Zombies are called puppets in the settings.
 | `PuppetsCanOpenDoors`, `PuppetsCanVaultWindows` | True | Zombies open doors and climb through windows. |
 | `PuppetWorldEncounterSpawnWeightMultiplier`, `DropshipWorldEncounterSpawnWeightMultiplier` | 1 | Weights for random world encounters. |
 
-## Armed NPCs
+## :material-pistol: Armed NPCs
 
 | Setting | Value | What it does |
 |---|---|---|
@@ -36,7 +50,7 @@ Zombies are called puppets in the settings.
 | `MinimumDurabilityOfArmedNPCsDroppedItemFromHands` / `MaximumDurabilityOfArmedNPCsDroppedItemFromHands` | 0.2 / 0.3 | Condition of those items. |
 | `MaxAllowedNPCs` | -1 | No limit on armed NPCs. |
 
-## Mechs
+## :material-robot-off: Mechs
 
 There are no mechs. The setting `DisableSentrySpawning` is True. See [Events](events.md).
 

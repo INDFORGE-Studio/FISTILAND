@@ -1,8 +1,24 @@
+<div class="fl-page-hero fl-bg-a" markdown>
+
+:material-flag-variant:
+
 # Territory
 
-FISTILAND is a base-versus-base server. The ground you hold is what you fight for. Every value below comes straight from the server's `ServerSettings.ini`.
+<p>A base-versus-base server: the ground you hold is what you fight for. Every value below comes straight from the server's ServerSettings.ini.</p>
 
-## Flags and capture
+</div>
+
+<div class="fl-facts">
+<div><b>3</b><span>Flags per player</span></div>
+<div><b>200</b><span>Elements per flag</span></div>
+<div><b>2</b><span>Turrets per base</span></div>
+<div><b>24 h</b><span>Flag capture</span></div>
+<div><b>8 h</b><span>Offline raid protection</span></div>
+<div><b>4</b><span>Squad size</span></div>
+</div>
+
+
+## :material-flag: Flags and capture
 
 | Setting | Value | What it does |
 |---|---|---|
@@ -14,7 +30,7 @@ FISTILAND is a base-versus-base server. The ground you hold is what you fight fo
 | `UseBuildingProximityRestrictions` | True | Minimum distances between bases are enforced. |
 | `DisableBaseBuilding` | False | Base building is allowed. |
 
-## Base size
+## :material-wall: Base size
 
 | Setting | Value | What it does |
 |---|---|---|
@@ -28,14 +44,14 @@ FISTILAND is a base-versus-base server. The ground you hold is what you fight fo
 | `WeaponRackMaxAmountPerFlagArea`, `WallWeaponRackMaxAmountPerFlagArea`, `WellMaxAmountPerFlagArea`, `OvenMaxAmountPerFlagArea`, `GardenMaxAmountPerFlagArea`, `SmokerMaxAmountPerFlagArea` | -1 | No limit on these objects. |
 | `TombstoneMaxAmountPerSquad` | -1 | No limit on tombstones per squad. |
 
-## Decay
+## :material-timer-sand: Decay
 
 | Setting | Value | What it does |
 |---|---|---|
 | `BaseElementsDecayRateMultiplier` | 0.5 | Speed at which unmaintained base elements decay. The reference decay time is 672 hours; 0.5 stretches it to 1344 hours (56 days). |
 | `ChestAcquisitionDuration` | 24 | Hours before an enemy chest inside your flag area becomes yours. |
 
-## Raid protection
+## :material-shield-lock: Raid protection
 
 | Setting | Value | What it does |
 |---|---|---|
@@ -44,7 +60,7 @@ FISTILAND is a base-versus-base server. The ground you hold is what you fight fo
 | `RaidProtectionOfflineMaxProtectionTime` | 08:00:00 | Maximum length of the protection. |
 | `RaidProtectionEnableLog` | False | Raid protection events are not logged. |
 
-## Squads
+## :material-account-group: Squads
 
 | Setting | Value | What it does |
 |---|---|---|
@@ -54,18 +70,18 @@ FISTILAND is a base-versus-base server. The ground you hold is what you fight fo
 | `SquadMoneyPenaltyPerPrevSquadMember`, `SquadFamePointsPenaltyPerPrevSquadMember` | 0 | No money or fame penalty for changing squads. |
 | `EnableSquadMemberNameWidget` | False | Squad members' names are not shown above their heads. |
 
-## Turrets
+## :material-target: Turrets
 
 Turrets attack prisoners, puppets (zombies), vehicles, sentries, animals and armed NPCs (`TurretsAttackPrisoners`, `TurretsAttackPuppets`, `TurretsAttackVehicles`, `TurretsAttackSentries`, `TurretsAttackAnimals`, `TurretsAttackArmedNPCs`, all True).
 
-## Base damage
+## :material-hammer: Base damage
 
 | Setting | Value | What it does |
 |---|---|---|
 | `LockProtectionDamageMultiplier` | 1 | Damage dealt by locks to people who fail to pick them. |
 | `BaseBuildingDestructionLogDamageThreshold` | 20 | Damage level above which base destruction is logged. |
 
-## Related pages
+## :material-link-variant: Related pages
 
 [Rules](rules.md) covers aircraft and mines. [Respawn](respawn.md) covers shelter respawns.
 

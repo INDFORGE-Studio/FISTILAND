@@ -1,8 +1,22 @@
+<div class="fl-page-hero fl-bg-c" markdown>
+
+:material-tag-multiple:
+
 # Economy
 
-Loot is plentiful and traders are cheap, so you gear up in a few hours.
+<p>Loot is plentiful and traders are cheap, so you gear up in a few hours.</p>
 
-## Loot
+</div>
+
+<div class="fl-facts">
+<div><b>x5</b><span>Loot</span></div>
+<div><b>x0.5</b><span>Fuel and water price</span></div>
+<div><b>5</b><span>Quests per trader per cycle</span></div>
+<div><b>2</b><span>Active quests per trader</span></div>
+</div>
+
+
+## :material-treasure-chest: Loot
 
 | Setting | Value | What it does |
 |---|---|---|
@@ -14,7 +28,7 @@ Loot is plentiful and traders are cheap, so you gear up in a few hours.
 | `ItemCooldownGroupsDurationMultiplier` | 0.5 | Length of those cooldowns. |
 | `EnableLockedLootContainers` | True | Lockers in the world are locked. |
 
-## Fuel, water and gas at stations
+## :material-gas-station: Fuel, water and gas at stations
 
 | Setting | Value | What it does |
 |---|---|---|
@@ -26,7 +40,7 @@ Loot is plentiful and traders are cheap, so you gear up in a few hours.
 | `...PeriodicReplenishAmountMultiplier` and `...PeriodicReplenishIntervalMultiplier` | 1 | Refill amount and speed over time. |
 | `...ProximityReplenishAmountMultiplier`, `...ProximityReplenishChanceMultiplier`, `...ProximityReplenishTimeoutMultiplier` | 1 | Refill when a player is nearby. |
 
-## Quests
+## :material-clipboard-text: Quests
 
 | Setting | Value | What it does |
 |---|---|---|
@@ -39,7 +53,7 @@ Loot is plentiful and traders are cheap, so you gear up in a few hours.
 | `QuestsNoticeBoardRefillCooldown` | 02:00:00 | Notice-board quests refill every 2 hours. |
 | `QuestRequirementsBlockTradeableItems` | False | Quest items can still be traded. |
 
-## Services
+## :material-account-edit: Services
 
 | Setting | Value | What it does |
 |---|---|---|

@@ -1,6 +1,15 @@
+<div class="fl-page-hero fl-bg-e" markdown>
+
+:material-format-list-bulleted-square:
+
 # All settings
 
-Every value of the server's `ServerSettings.ini`, as it runs today. Names are shown without the `scum.` prefix. Use the search bar to find a setting. The category pages explain the settings that shape the gameplay: [Territory](territory-wars.md), [Respawn](respawn.md), [Economy](economy.md), [Progression](progression.md), [Survival](survival.md), [Enemies](enemies.md), [Events](events.md), [Bunkers](bunkers.md), [Rules](rules.md).
+<p>Every value of the server's <code>ServerSettings.ini</code>, as it runs today. Use the search bar to find a setting.</p>
+
+</div>
+
+
+Names are shown without the `scum.` prefix. The category pages explain the settings that shape the gameplay: [Territory](territory-wars.md), [Respawn](respawn.md), [Economy](economy.md), [Progression](progression.md), [Survival](survival.md), [Enemies](enemies.md), [Events](events.md), [Bunkers](bunkers.md), [Rules](rules.md).
 
 
 ## General

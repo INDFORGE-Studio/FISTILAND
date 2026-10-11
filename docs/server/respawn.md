@@ -1,8 +1,23 @@
+<div class="fl-page-hero fl-bg-b" markdown>
+
+:material-timer-sand:
+
 # Respawn
 
-A lost fight costs minutes, not an evening. Prices ending in **g** are paid in gold; the others are paid in fame points.
+<p>A lost fight costs minutes, not an evening. Prices ending in g are paid in gold; the others are paid in fame points.</p>
 
-## Respawn methods
+</div>
+
+<div class="fl-facts">
+<div><b>30 s</b><span>Shelter wait</span></div>
+<div><b>150</b><span>Shelter price</span></div>
+<div><b>100</b><span>Random respawn</span></div>
+<div><b>250</b><span>Sector respawn</span></div>
+<div><b>Off</b><span>Cloning sickness</span></div>
+</div>
+
+
+## :material-parachute: Respawn methods
 
 | Setting | Value | What it does |
 |---|---|---|
@@ -12,7 +27,7 @@ A lost fight costs minutes, not an evening. Prices ending in **g** are paid in g
 | `EnableSpawnOnGround` | False | New spawns arrive by parachute. |
 | `AllowAutomaticParachuteOpening` | True | The parachute opens automatically. |
 
-## Prices
+## :material-cash: Prices
 
 | Setting | Value | What it does |
 |---|---|---|
@@ -23,7 +38,7 @@ A lost fight costs minutes, not an evening. Prices ending in **g** are paid in g
 | `SquadRespawnPrice` | 2g | Respawn next to a squad member. |
 | `RandomPricePerSquadmateModifier`, `SectorPricePerSquadmateModifier`, `ShelterPricePerSquadmateModifier` | 0 | Squad size does not change the price. |
 
-## Waiting times
+## :material-timer-sand: Waiting times
 
 | Setting | Value | What it does |
 |---|---|---|
@@ -38,7 +53,7 @@ A lost fight costs minutes, not an evening. Prices ending in **g** are paid in g
 | `RandomCooldownResetMultiplier` | 0 | Random respawn cooldown resets at once. |
 | `SectorCooldownResetMultiplier`, `ShelterCooldownResetMultiplier`, `SquadCooldownResetMultiplier` | 0.7 | The cooldown resets after this multiple of the cooldown time. |
 
-## Suicide
+## :material-skull: Suicide
 
 | Setting | Value | What it does |
 |---|---|---|
@@ -46,7 +61,7 @@ A lost fight costs minutes, not an evening. Prices ending in **g** are paid in g
 | `CommitSuicideCooldown` | 300 | Seconds before it can be used again. |
 | `CommitSuicideCooldownResetMultiplier` | 1.25 | How fast the suicide cooldown resets. |
 
-## Other
+## :material-cog: Other
 
 | Setting | Value | What it does |
 |---|---|---|

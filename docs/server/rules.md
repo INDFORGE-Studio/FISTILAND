@@ -1,15 +1,29 @@
+<div class="fl-page-hero fl-bg-d" markdown>
+
+:material-gavel:
+
 # Rules
 
-Fair play first: first person only, no crosshair, no pay-to-win packs.
+<p>Fair play first: first person only, no crosshair, no pay-to-win packs.</p>
 
-## Player rules
+</div>
+
+<div class="fl-facts">
+<div><b>14</b><span>Slots</span></div>
+<div><b>1st person</b><span>Only view</span></div>
+<div><b>Off</b><span>Crosshair</span></div>
+<div><b>x1.3</b><span>Player damage</span></div>
+</div>
+
+
+## :material-gavel: Player rules
 
 - **Aircraft** are for getting around only. Raiding with an aircraft is not allowed.
 - **Mines** are for defending your base only.
 
 These two are rules, not server settings: they rely on players respecting them.
 
-## View and interface
+## :material-eye: View and interface
 
 | Setting | Value | What it does |
 |---|---|---|
@@ -20,7 +34,7 @@ These two are rules, not server settings: they rely on players respecting them.
 | `HideKillNotification` | True | Players do not see a notification when someone kills someone else. |
 | `HideQuickAccessBar`, `HideLifeIndicators` | False | Both interface elements are shown. |
 
-## Combat
+## :material-sword-cross: Combat
 
 | Setting | Value | What it does |
 |---|---|---|
@@ -33,7 +47,7 @@ These two are rules, not server settings: they rely on players respecting them.
 | `AllowKillClaiming` | True | A BCU drops when a player is killed. |
 | `LogSuicides` | True | Suicides are logged. |
 
-## Logging out and protection
+## :material-logout: Logging out and protection
 
 | Setting | Value | What it does |
 |---|---|---|
@@ -43,7 +57,7 @@ These two are rules, not server settings: they rely on players respecting them.
 | `NewPlayerProtectionDuration` | 120 | Length of the protection. |
 | `PlaySafeIdProtection` | False | Joining does not require a PlaySafe ID. |
 
-## Characters
+## :material-account: Characters
 
 | Setting | Value | What it does |
 |---|---|---|
@@ -51,14 +65,14 @@ These two are rules, not server settings: they rely on players respecting them.
 | `DaysSinceLastLoginToBecomeInactive` | 30 | Days without login before a player counts as inactive. |
 | `DeleteBannedUsers` | False | Banned characters are kept. |
 
-## Packs
+## :material-cash-remove: Packs
 
 | Setting | Value | What it does |
 |---|---|---|
 | `EnableDigitalDeluxeStarterPack` | False | The Deluxe Survival Pack cannot be used. |
 | `EnableDigitalDeluxeFreeGoldCard` | False | The free gold card of that pack cannot be claimed. |
 
-## Server
+## :material-server: Server
 
 | Setting | Value | What it does |
 |---|---|---|

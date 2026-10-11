@@ -1,8 +1,22 @@
+<div class="fl-page-hero fl-bg-d" markdown>
+
+:material-chart-line:
+
 # Progression
 
-Gear comes fast, skills take longer. A multiplier scales the experience earned for each skill.
+<p>Gear comes fast, skills take longer. A multiplier scales the experience earned for each skill.</p>
 
-## Skill experience
+</div>
+
+<div class="fl-facts">
+<div><b>x1.5</b><span>Archery, driving, motorcycle</span></div>
+<div><b>x1</b><span>Medical, melee, rifles</span></div>
+<div><b>x0.5</b><span>All other skills</span></div>
+<div><b>50%</b><span>Fame taken on a kill</span></div>
+</div>
+
+
+## :material-chart-line: Skill experience
 
 | Multiplier | Skills |
 |---|---|
@@ -12,7 +26,7 @@ Gear comes fast, skills take longer. A multiplier scales the experience earned f
 
 The setting name is the skill name followed by `SkillMultiplier`, for example `RiflesSkillMultiplier=1`.
 
-## Other progression settings
+## :material-star-circle: Other progression settings
 
 | Setting | Value | What it does |
 |---|---|---|

@@ -1,8 +1,22 @@
+<div class="fl-page-hero fl-bg-a" markdown>
+
+:material-key-variant:
+
 # Bunkers
 
-Access cards open the Killbox and Apex facilities, the best loot on the map. Abandoned bunkers open on their own for a while, then close again.
+<p>Access cards open the Killbox and Apex facilities, the best loot on the map. Abandoned bunkers open on their own for a while, then close again.</p>
 
-## Access cards
+</div>
+
+<div class="fl-facts">
+<div><b>6</b><span>Killbox cards</span></div>
+<div><b>6</b><span>Apex cards</span></div>
+<div><b>3</b><span>Bunkers open at once</span></div>
+<div><b>12 h</b><span>Bunker open time</span></div>
+</div>
+
+
+## :material-key-variant: Access cards
 
 | Setting | Value | What it does |
 |---|---|---|
@@ -15,7 +29,7 @@ Access cards open the Killbox and Apex facilities, the best loot on the map. Aba
 | `KillboxDefuseFailureBonus` | 0.2 | Extra seconds added by a failed defusing attempt. |
 | `EnableBCULocking` | True | BCU terminals can be locked. |
 
-## Abandoned bunkers
+## :material-radioactive: Abandoned bunkers
 
 | Setting | Value | What it does |
 |---|---|---|

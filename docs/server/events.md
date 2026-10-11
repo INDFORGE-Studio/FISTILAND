@@ -1,8 +1,22 @@
+<div class="fl-page-hero fl-bg-b" markdown>
+
+:material-package-variant-closed:
+
 # Events
 
-Cargo drops give every squad a reason to leave its base. Mechs and dropships are off, so the fights stay between players.
+<p>Cargo drops give every squad a reason to leave its base. Mechs and dropships are off, so the fights stay between players.</p>
 
-## Cargo drops
+</div>
+
+<div class="fl-facts">
+<div><b>45-60 min</b><span>Between cargo drops</span></div>
+<div><b>0</b><span>Mechs</span></div>
+<div><b>9 min</b><span>From announcement to fall</span></div>
+<div><b>20 min</b><span>Before an unopened crate explodes</span></div>
+</div>
+
+
+## :material-package-variant-closed: Cargo drops
 
 | Setting | Value | What it does |
 |---|---|---|
@@ -14,7 +28,7 @@ Cargo drops give every squad a reason to leave its base. Mechs and dropships are
 | `CargoDropZombieEncounterWeightMultiplier` | 0.3 | Weight of the zombie encounter at a drop. |
 | `CargoDropDropshipEncounterWeightMultiplier` | 0.01 | Weight of the dropship encounter at a drop. The dropship is practically never chosen. |
 
-## Mechs and dropships
+## :material-robot-off: Mechs and dropships
 
 | Setting | Value | What it does |
 |---|---|---|
@@ -28,7 +42,7 @@ Cargo drops give every squad a reason to leave its base. Mechs and dropships are
 | `DropshipHealthMultiplier`, `SentryHealthMultiplier`, `BaseBuildingAttackerSentryHealthMultiplier` | 1 | Health of dropships and sentries. |
 | `DropshipDamageMultiplier`, `SentryDamageMultiplier` | 1 | Damage of dropships and sentries. |
 
-## Server events
+## :material-calendar-star: Server events
 
 | Setting | Value | What it does |
 |---|---|---|

@@ -1,8 +1,22 @@
+<div class="fl-page-hero fl-bg-e" markdown>
+
+:material-shield-account:
+
 # Survival
 
-Survival is a light layer on top of the PvP: nights are short, chores are small and vehicles are limited.
+<p>A light layer on top of the PvP: nights are short, chores are small and vehicles are limited.</p>
 
-## Day and night
+</div>
+
+<div class="fl-facts">
+<div><b>05:00</b><span>Sunrise</span></div>
+<div><b>22:30</b><span>Sunset</span></div>
+<div><b>x0.5</b><span>Fuel use</span></div>
+<div><b>10 days</b><span>Before an unused vehicle is removed</span></div>
+</div>
+
+
+## :material-weather-night: Day and night
 
 | Setting | Value | What it does |
 |---|---|---|
@@ -13,7 +27,7 @@ Survival is a light layer on top of the PvP: nights are short, chores are small 
 | `NighttimeDarkness` | 0 | Night darkness level, set to the lowest value for the brightest nights. |
 | `EnableFog` | True | Fog is rendered. |
 
-## Body and items
+## :material-heart-pulse: Body and items
 
 | Setting | Value | What it does |
 |---|---|---|
@@ -28,7 +42,7 @@ Survival is a light layer on top of the PvP: nights are short, chores are small 
 | `BedrollVisibilityTimer` | 1 | Time a sleeping bag stays visible to others after logout. |
 | `RadiationEnabled` | True | Radiation zones are active. |
 
-## Vehicles
+## :material-car: Vehicles
 
 | Setting | Value | What it does |
 |---|---|---|
@@ -45,7 +59,7 @@ Survival is a light layer on top of the PvP: nights are short, chores are small 
 | `MaximumTimeOfVehicleInactivity` | 240:00:00 | An unused vehicle is removed after 10 days. |
 | `MaximumTimeForVehiclesInForbiddenZones` | 02:00:00 | Vehicles left in forbidden zones are removed after 2 hours. |
 
-## Vehicle fuel and batteries
+## :material-car-battery: Vehicle fuel and batteries
 
 | Setting | Value | What it does |
 |---|---|---|
@@ -56,7 +70,7 @@ Survival is a light layer on top of the PvP: nights are short, chores are small 
 | `BatteryChargeWithAlternatorMultiplier` | 1.5 | Charging speed from an alternator. |
 | `BatteryChargeWithDynamoMultiplier` | 1.5 | Charging speed from a generator. |
 
-## Animals
+## :material-paw: Animals
 
 | Setting | Value | What it does |
 |---|---|---|

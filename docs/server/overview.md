@@ -1,6 +1,22 @@
+<div class="fl-page-hero fl-bg-c" markdown>
+
+:material-information-outline:
+
 # Server overview
 
-## What makes FISTILAND different
+<p>What FISTILAND is, in one table, and where to find every setting.</p>
+
+</div>
+
+<div class="fl-facts">
+<div><b>14</b><span>Slots</span></div>
+<div><b>EU</b><span>Region</span></div>
+<div><b>PvP</b><span>Full PvP</span></div>
+<div><b>x5</b><span>Loot</span></div>
+</div>
+
+
+## :material-star-circle: What makes FISTILAND different
 
 | Feature | FISTILAND |
 |---|---|
@@ -24,7 +40,7 @@
 | Inactive characters | Kept, never deleted |
 | Pay-to-win packs | None |
 
-## Skill progression
+## :material-chart-line: Skill progression
 
 | Multiplier | Skills |
 |---|---|
@@ -32,11 +48,11 @@
 | x1 | Medical, Melee weapons, Rifles |
 | x0.5 | All other skills |
 
-## Philosophy
+## :material-lightbulb-on-outline: Philosophy
 
 Gear up in a few hours, then spend the rest of the time fighting for ground. Skills take longer to build than gear, so progression lasts, and survival chores stay out of the way of the PvP.
 
-## Every setting explained
+## :material-format-list-bulleted: Every setting explained
 
 - [Territory](territory-wars.md): flags, base size, decay, raid protection, squads.
 - [Respawn](respawn.md): methods, prices, waiting times.
