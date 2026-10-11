@@ -1,4 +1,4 @@
----
+﻿---
 hide:
   - navigation
   - toc
@@ -7,7 +7,7 @@ hide:
 <div class="fl-home" markdown>
 
 <div class="fl-hero" markdown>
-<img class="fl-logo" src="/FISTILAND/assets/logo-home-v2.png" alt="FISTILAND - SCUM Server">
+<img class="fl-logo" src="/FISTILAND/assets/logo-home-v3.png" alt="FISTILAND - SCUM Server">
 <p class="fl-kicker">EU &middot; PvP &middot; Territory wars</p>
 <div class="fl-title fl-sr">FISTILAND</div>
 <p class="fl-lead">Hold zones, defend your base, fight over cargo drops. Survival is easier, so the fight is the point.</p>
