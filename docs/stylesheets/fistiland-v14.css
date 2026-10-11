@@ -318,14 +318,10 @@ html[lang="uk"] .md-header__option .md-select > button::before { background-imag
 .fl-card b { margin: .2rem 0 .1rem; }
 .fl-grid { padding-bottom: clamp(.3rem, 1.1vh, .8rem); }
 
-/* ---- Home v13: the logo takes all the height left over, within sane limits ---- */
-.md-typeset .fl-hero .fl-logo {
-  height: auto !important;
-  flex: 1 1 0;
-  min-height: clamp(110px, 26vh, 200px);
-  max-height: 470px;
-  width: min(86vw, 560px) !important;
-  max-width: none;
-  object-fit: contain;
-}
-@media (max-height: 700px) { .md-typeset .fl-hero .fl-logo { height: auto !important; min-height: 20vh; } }
+/* ---- Home v14: bigger logo, blocks below slightly tighter ---- */
+.md-typeset .fl-hero .fl-logo { height: clamp(120px, 35vh, 420px) !important; margin-bottom: .2rem; }
+@media (max-height: 700px) { .md-typeset .fl-hero .fl-logo { height: 27vh !important; } }
+.fl-hero .fl-kicker { margin: .05rem 0 .3rem; }
+.fl-lead { margin-bottom: clamp(.25rem, 1vh, .7rem); }
+.fl-stats { margin-top: clamp(.3rem, 1vh, .8rem); }
+.fl-card { padding: .5rem .65rem .5rem; }
