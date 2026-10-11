@@ -84,7 +84,7 @@ These two are rules, not server settings: they rely on players respecting them.
 | `MaxPing` | 300 | Highest allowed ping in milliseconds. |
 | `MaxNumberOfConsecutiveHighPingReadings` | 5 | Bad readings in a row before removal. |
 | `WelcomeMessage` | FISTILAND PvP SERVER | Shown when a player joins. |
-| `MessageOfTheDay` | More information on discord.gg/UdHGdRSyyu | Message repeated in the chat. |
+| `MessageOfTheDay` | More information on discord.gg/RHkNGk6ZQN | Message repeated in the chat. |
 | `MessageOfTheDayCooldown` | 30 | Minutes between two repeats. |
 | `AllowGlobalChat`, `AllowLocalChat`, `AllowSquadChat`, `AllowAdminChat` | True | All chat channels are open. |
 | `LimitGlobalChat` | False | Global chat has no restriction. |

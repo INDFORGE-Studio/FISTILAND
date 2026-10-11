@@ -84,7 +84,7 @@
 | `MaxPing` | 300 | Найвищий дозволений пінг у мілісекундах. |
 | `MaxNumberOfConsecutiveHighPingReadings` | 5 | Кількість поганих вимірів поспіль до вилучення. |
 | `WelcomeMessage` | FISTILAND PvP SERVER | Показується, коли гравець приєднується. |
-| `MessageOfTheDay` | More information on discord.gg/UdHGdRSyyu | Повідомлення, що повторюється в чаті. |
+| `MessageOfTheDay` | More information on discord.gg/RHkNGk6ZQN | Повідомлення, що повторюється в чаті. |
 | `MessageOfTheDayCooldown` | 30 | Хвилини між двома повторами. |
 | `AllowGlobalChat`, `AllowLocalChat`, `AllowSquadChat`, `AllowAdminChat` | True | Усі канали чату відкриті. |
 | `LimitGlobalChat` | False | Глобальний чат не має обмежень. |

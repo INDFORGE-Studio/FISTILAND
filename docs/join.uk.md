@@ -6,7 +6,7 @@
 
 ## Discord
 
-Новини, зміни, пошук загону та підтримка: [discord.gg/UdHGdRSyyu](https://discord.gg/UdHGdRSyyu).
+Новини, зміни, пошук загону та підтримка: [discord.gg/RHkNGk6ZQN](https://discord.gg/RHkNGk6ZQN).
 
 ## Про сервер
 

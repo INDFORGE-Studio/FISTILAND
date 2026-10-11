@@ -6,7 +6,7 @@
 
 ## Discord
 
-Actualités, changements, recherche d'escouade et support : [discord.gg/UdHGdRSyyu](https://discord.gg/UdHGdRSyyu).
+Actualités, changements, recherche d'escouade et support : [discord.gg/RHkNGk6ZQN](https://discord.gg/RHkNGk6ZQN).
 
 ## Infos du serveur
 

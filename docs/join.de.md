@@ -6,7 +6,7 @@
 
 ## Discord
 
-Neuigkeiten, Änderungen, Truppsuche und Support: [discord.gg/UdHGdRSyyu](https://discord.gg/UdHGdRSyyu).
+Neuigkeiten, Änderungen, Truppsuche und Support: [discord.gg/RHkNGk6ZQN](https://discord.gg/RHkNGk6ZQN).
 
 ## Server-Fakten
 

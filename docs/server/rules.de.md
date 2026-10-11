@@ -84,7 +84,7 @@ Diese beiden Punkte sind Regeln, keine Servereinstellungen: Sie beruhen darauf, 
 | `MaxPing` | 300 | Höchster erlaubter Ping in Millisekunden. |
 | `MaxNumberOfConsecutiveHighPingReadings` | 5 | Schlechte Messungen in Folge bis zur Entfernung. |
 | `WelcomeMessage` | FISTILAND PvP SERVER | Wird beim Beitritt eines Spielers angezeigt. |
-| `MessageOfTheDay` | More information on discord.gg/UdHGdRSyyu | Im Chat wiederholte Nachricht. |
+| `MessageOfTheDay` | More information on discord.gg/RHkNGk6ZQN | Im Chat wiederholte Nachricht. |
 | `MessageOfTheDayCooldown` | 30 | Minuten zwischen zwei Wiederholungen. |
 | `AllowGlobalChat`, `AllowLocalChat`, `AllowSquadChat`, `AllowAdminChat` | True | Alle Chatkanäle sind offen. |
 | `LimitGlobalChat` | False | Der globale Chat hat keine Einschränkung. |

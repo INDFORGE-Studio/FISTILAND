@@ -6,7 +6,7 @@
 
 ## Discord
 
-Novedades, cambios, búsqueda de escuadra y soporte: [discord.gg/UdHGdRSyyu](https://discord.gg/UdHGdRSyyu).
+Novedades, cambios, búsqueda de escuadra y soporte: [discord.gg/RHkNGk6ZQN](https://discord.gg/RHkNGk6ZQN).
 
 ## Datos del servidor
 

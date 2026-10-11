@@ -6,7 +6,7 @@
 
 ## Discord
 
-News, changes, squad searches and support: [discord.gg/UdHGdRSyyu](https://discord.gg/UdHGdRSyyu).
+News, changes, squad searches and support: [discord.gg/RHkNGk6ZQN](https://discord.gg/RHkNGk6ZQN).
 
 ## Server facts
 

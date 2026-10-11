@@ -17,12 +17,12 @@
 | Налаштування | Значення |
 |---|---|
 | `ServerName` | `[EU] FISTILAND - Loot x5 - PvP` |
-| `ServerDescription` | `Active EU community PvP server built around territory wars. Loot x5, fast respawns, cheap prices, long skill progression (x0.5), easier survival, squads of 4 max, no pay-to-win packs. No mechs, light zombies, easy armed NPCs, plenty of game to hunt. 3 flags per player, 2 turrets per base, 6 Killbox + 6 Apex keycards, short nights, no crosshair. Hold zones, defend your base, fight over cargo drops. Join our Discord: UdHGdRSyyu` |
+| `ServerDescription` | `Active EU community PvP server built around territory wars. Loot x5, fast respawns, cheap prices, long skill progression (x0.5), easier survival, squads of 4 max, no pay-to-win packs. No mechs, light zombies, easy armed NPCs, plenty of game to hunt. 3 flags per player, 2 turrets per base, 6 Killbox + 6 Apex keycards, short nights, no crosshair. Hold zones, defend your base, fight over cargo drops. Join our Discord: RHkNGk6ZQN` |
 | `MaxPlayers` | `14` |
 | `PlaySafeIdProtection` | `False` |
 | `ServerPlaystyle` | `PVP` |
 | `WelcomeMessage` | `FISTILAND PvP SERVER` |
-| `MessageOfTheDay` | `More information on discord.gg/UdHGdRSyyu` |
+| `MessageOfTheDay` | `More information on discord.gg/RHkNGk6ZQN` |
 | `MessageOfTheDayCooldown` | `30.000000` |
 | `MinServerTickRate` | `5` |
 | `MaxServerTickRate` | `35` |
