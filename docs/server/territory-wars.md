@@ -68,3 +68,7 @@ Turrets attack prisoners, puppets (zombies), vehicles, sentries, animals and arm
 ## Related pages
 
 [Rules](rules.md) covers aircraft and mines. [Respawn](respawn.md) covers shelter respawns.
+
+---
+
+[All server settings pages](overview.md#every-setting-explained) | [Full list of values](all-settings.md)

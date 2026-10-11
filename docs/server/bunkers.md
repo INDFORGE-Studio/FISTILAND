@@ -27,3 +27,7 @@ Access cards open the Killbox and Apex facilities, the best loot on the map. Aba
 | `SecretBunkerKeyCardActiveDurationHours` | 0.5 | Hours a secret bunker stays open after a card activation. |
 | `AbandonedBunkerCommotionThreshold`, `AbandonedBunkerCommotionThresholdPerPlayerExtra`, `AbandonedBunkerEnemyActivationThreshold`, `AbandonedBunkerEnemyActivationThresholdPerPlayerExtra` | -1 | Noise thresholds use the game's built-in values. |
 | `LogoutTimerInBunker` | 30000 | Seconds before a player logging out in a bunker disappears. |
+
+---
+
+[All server settings pages](overview.md#every-setting-explained) | [Full list of values](all-settings.md)

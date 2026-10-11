@@ -71,3 +71,7 @@ Survival is a light layer on top of the PvP: nights are short, chores are small 
 | `BearPrevalenceMultiplier`, `WolfPrevalenceMultiplier` | 0.5 | Bears and wolves. |
 | `...MaxHealthMultiplier` (all animals) | 1 | Animal health. |
 | `MaxAllowedBirds` | 15 | Birds (this setting currently has no effect in the game). |
+
+---
+
+[All server settings pages](overview.md#every-setting-explained) | [Full list of values](all-settings.md)

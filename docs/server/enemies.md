@@ -39,3 +39,7 @@ Zombies are called puppets in the settings.
 ## Mechs
 
 There are no mechs. The setting `DisableSentrySpawning` is True. See [Events](events.md).
+
+---
+
+[All server settings pages](overview.md#every-setting-explained) | [Full list of values](all-settings.md)

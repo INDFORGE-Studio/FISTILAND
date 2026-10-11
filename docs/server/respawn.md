@@ -53,3 +53,7 @@ A lost fight costs minutes, not an evening. Prices ending in **g** are paid in g
 | `MaximumBaseProximityWhenSpawning` | 5000 | Distance to enemy flags used when choosing a spawn point. |
 | `CloningSicknessEnabled` | False | No cloning sickness after respawning. |
 | `PermadeathThreshold` | -7500 | Negative account balance at which a character is permanently deleted. |
+
+---
+
+[All server settings pages](overview.md#every-setting-explained) | [Full list of values](all-settings.md)

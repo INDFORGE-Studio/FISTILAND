@@ -24,3 +24,7 @@ The setting name is the skill name followed by `SkillMultiplier`, for example `R
 | `FamePointPenaltyOnDeath` | 0.1 | Any other death costs 10% of fame points. |
 | `PlantHarvestExamineTimeMultiplier` | 1 | Time to harvest a plant. |
 | `FirstPlantHarvestAdditionalChance` | 1 | Bonus chance on the first harvest of a plant. |
+
+---
+
+[All server settings pages](overview.md#every-setting-explained) | [Full list of values](all-settings.md)

@@ -74,3 +74,7 @@ These two are rules, not server settings: they rely on players respecting them.
 | `MessageOfTheDayCooldown` | 30 | Minutes between two repeats. |
 | `AllowGlobalChat`, `AllowLocalChat`, `AllowSquadChat`, `AllowAdminChat` | True | All chat channels are open. |
 | `LimitGlobalChat` | False | Global chat has no restriction. |
+
+---
+
+[All server settings pages](overview.md#every-setting-explained) | [Full list of values](all-settings.md)

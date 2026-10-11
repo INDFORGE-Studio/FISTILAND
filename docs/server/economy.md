@@ -47,3 +47,7 @@ Loot is plentiful and traders are cheap, so you gear up in a few hours.
 | `NameChangeCooldown` | 168 | Hours between name changes. |
 | `DisableTimedGifts` | False | Seasonal gifts stay active. |
 | `EnableDeenaOnServer` | True | Deena is active. |
+
+---
+
+[All server settings pages](overview.md#every-setting-explained) | [Full list of values](all-settings.md)

@@ -37,3 +37,7 @@ Cargo drops give every squad a reason to leave its base. Mechs and dropships are
 | `VotingDuration` | 60 | Length of a vote in seconds. |
 | `PlayerMinimalVotingInterest` | 0.5 | Share of players that must take part for a vote to count. |
 | `PlayerPositiveVotePercentage` | 0.5 | Share of yes votes needed to pass. |
+
+---
+
+[All server settings pages](overview.md#every-setting-explained) | [Full list of values](all-settings.md)
