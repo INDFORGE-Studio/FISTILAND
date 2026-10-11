@@ -259,7 +259,7 @@ html[lang="uk"] .md-header__option .md-select > button::before { background-imag
 /* Sizes follow the window height so everything stays visible */
 .fl-hero { padding-top: clamp(.4rem, 2vh, 1.5rem); padding-bottom: clamp(.2rem, 1vh, 1rem); }
 .fl-kicker { font-size: clamp(.75rem, 1.8vh, .95rem); }
-.fl-title { font-size: min(6.8rem, 14vh, 11vw); }
+.fl-title { font-size: min(6.8rem, 12vh, 10vw); }
 .fl-lead { font-size: clamp(.9rem, 2.3vh, 1.1rem); margin-bottom: clamp(.4rem, 1.8vh, 1.2rem); }
 .fl-btn { padding-top: clamp(.45rem, 1.4vh, .8rem); padding-bottom: clamp(.45rem, 1.4vh, .8rem); }
 .fl-stats { margin-top: clamp(.5rem, 2vh, 1.4rem); }
@@ -277,10 +277,15 @@ html[lang="uk"] .md-header__option .md-select > button::before { background-imag
 .fl-sr { position: absolute; width: 1px; height: 1px; margin: -1px; padding: 0; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; border: 0; }
 .fl-logo {
   display: block;
-  height: min(25vh, 21rem);
+  height: clamp(64px, 14vh, 150px);
   width: auto;
   max-width: 80vw;
-  margin: .2rem auto .5rem;
+  margin: 0 auto .4rem;
   filter: drop-shadow(0 8px 24px rgba(0,0,0,.7));
 }
-@media (max-height: 700px) { .fl-logo { height: 22vh; margin-bottom: .3rem; } }
+@media (max-height: 700px) { .fl-logo { height: 13vh; margin-bottom: .2rem; } }
+
+/* Home: the tagline stays on a single line on desktop */
+@media (min-width: 62em) {
+  .fl-lead { max-width: none; white-space: nowrap; font-size: min(clamp(.9rem, 2.3vh, 1.1rem), 1.7vw); }
+}
