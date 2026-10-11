@@ -68,7 +68,7 @@
 | `RTSquadProbationDuration` | 1 | Horas de prueba para un miembro que deja una escuadra y vuelve a unirse. |
 | `SquadMemberCountLimitForPunishment` | 2 | Mayor escuadra anterior cuyos miembros no sufren penalización de prisionero. |
 | `SquadMoneyPenaltyPerPrevSquadMember`, `SquadFamePointsPenaltyPerPrevSquadMember` | 0 | Sin penalización de dinero ni de fama por cambiar de escuadra. |
-| `EnableSquadMemberNameWidget` | False | Los nombres de los miembros de la escuadra no se muestran sobre sus cabezas. |
+| `EnableSquadMemberNameWidget` | True | Los nombres de los miembros de la escuadra se muestran sobre sus cabezas (solo la escuadra, nunca los enemigos). |
 
 ## :material-target: Torretas
 

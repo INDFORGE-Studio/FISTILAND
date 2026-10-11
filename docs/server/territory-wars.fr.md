@@ -68,7 +68,7 @@
 | `RTSquadProbationDuration` | 1 | Heures de probation pour un membre qui quitte puis rejoint une escouade. |
 | `SquadMemberCountLimitForPunishment` | 2 | Plus grande ancienne escouade dont les membres n'ont pas de pénalité de prisonnier. |
 | `SquadMoneyPenaltyPerPrevSquadMember`, `SquadFamePointsPenaltyPerPrevSquadMember` | 0 | Aucune pénalité d'argent ni de renommée en changeant d'escouade. |
-| `EnableSquadMemberNameWidget` | False | Les noms des coéquipiers ne s'affichent pas au-dessus de leur tête. |
+| `EnableSquadMemberNameWidget` | True | Les noms des coéquipiers s'affichent au-dessus de leur tête (membres de l'escouade uniquement, jamais les ennemis). |
 
 ## :material-target: Tourelles
 

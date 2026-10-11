@@ -68,7 +68,7 @@
 | `RTSquadProbationDuration` | 1 | Ore di prova per un membro che lascia e rientra in una squadra. |
 | `SquadMemberCountLimitForPunishment` | 2 | La più grande ex squadra i cui membri non subiscono la penalità da prigioniero. |
 | `SquadMoneyPenaltyPerPrevSquadMember`, `SquadFamePointsPenaltyPerPrevSquadMember` | 0 | Nessuna penalità di denaro o fama per il cambio di squadra. |
-| `EnableSquadMemberNameWidget` | False | I nomi dei compagni di squadra non vengono mostrati sopra la testa. |
+| `EnableSquadMemberNameWidget` | True | I nomi dei compagni di squadra vengono mostrati sopra la testa (solo la squadra, mai i nemici). |
 
 ## :material-target: Torrette
 

@@ -68,7 +68,7 @@
 | `RTSquadProbationDuration` | 1 | Години випробування для учасника, який залишає загін і повертається. |
 | `SquadMemberCountLimitForPunishment` | 2 | Найбільший колишній загін, учасники якого не отримують штрафу в'язня. |
 | `SquadMoneyPenaltyPerPrevSquadMember`, `SquadFamePointsPenaltyPerPrevSquadMember` | 0 | Жодного штрафу грошима чи славою за зміну загону. |
-| `EnableSquadMemberNameWidget` | False | Імена учасників загону не показуються над їхніми головами. |
+| `EnableSquadMemberNameWidget` | True | Імена учасників загону показуються над їхніми головами (лише загін, ніколи вороги). |
 
 ## :material-target: Турелі
 

@@ -68,7 +68,7 @@
 | `RTSquadProbationDuration` | 1 | Probation hours for a member who leaves and rejoins a squad. |
 | `SquadMemberCountLimitForPunishment` | 2 | Largest former squad whose members face no prisoner penalty. |
 | `SquadMoneyPenaltyPerPrevSquadMember`, `SquadFamePointsPenaltyPerPrevSquadMember` | 0 | No money or fame penalty for changing squads. |
-| `EnableSquadMemberNameWidget` | False | Squad members' names are not shown above their heads. |
+| `EnableSquadMemberNameWidget` | True | Squad members' names are shown above their heads (squad members only, never enemies). |
 
 ## :material-target: Turrets
 

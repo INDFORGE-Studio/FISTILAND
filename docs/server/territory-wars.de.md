@@ -68,7 +68,7 @@
 | `RTSquadProbationDuration` | 1 | Bewährungsstunden für ein Mitglied, das einen Trupp verlässt und wieder beitritt. |
 | `SquadMemberCountLimitForPunishment` | 2 | Größter früherer Trupp, dessen Mitglieder keine Gefangenenstrafe erhalten. |
 | `SquadMoneyPenaltyPerPrevSquadMember`, `SquadFamePointsPenaltyPerPrevSquadMember` | 0 | Kein Geld- oder Ruhmabzug beim Truppwechsel. |
-| `EnableSquadMemberNameWidget` | False | Namen von Truppmitgliedern werden nicht über ihren Köpfen angezeigt. |
+| `EnableSquadMemberNameWidget` | True | Die Namen der Truppmitglieder werden über ihren Köpfen angezeigt (nur Truppmitglieder, nie Gegner). |
 
 ## :material-target: Geschütztürme
 

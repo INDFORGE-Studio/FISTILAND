@@ -416,7 +416,7 @@ Die Namen werden ohne das Präfix `scum.` angezeigt. Die Kategorieseiten erklär
 | `RTSquadProbationDuration` | `1.000000` |
 | `SquadMoneyPenaltyPerPrevSquadMember` | `0` |
 | `SquadFamePointsPenaltyPerPrevSquadMember` | `0` |
-| `EnableSquadMemberNameWidget` | `False` |
+| `EnableSquadMemberNameWidget` | `True` |
 | `PlantHarvestExamineTimeMultiplier` | `1.000000` |
 | `FirstPlantHarvestAdditionalChance` | `1.000000` |
 | `EnableSelectedSkillsPromotion` | `True` |
