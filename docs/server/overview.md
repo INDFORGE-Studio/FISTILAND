@@ -7,17 +7,30 @@
 | Loot | x5 |
 | Respawns | Fast |
 | Trader prices | Attractive |
-| Skill progression | Extended, x0.5 |
+| Skill progression | Extended: x0.5 by default, up to x1.5 on some skills |
 | Survival | Easier |
 | Squads | 4 players max |
 | Mechs | None |
-| Zombies | Easy |
-| Armed NPCs | Easy |
+| Zombies | More numerous, but easy and slow |
+| Armed NPCs | Medium difficulty, fragile and slower |
 | Animals | Plenty of game to hunt |
+| Vehicles | Fewer on the map, so getting around takes effort |
 | Access cards | 6 Killbox + 6 Apex |
+| Flag capture | 24 hours |
+| Raid protection | Offline protection, up to 8 hours |
+| New players | Protected at the start |
 | Nights | Short |
-| Crosshair | Disabled |
+| View | First person only, no crosshair |
+| Inactive characters | Deleted after 30 days without login |
 | Pay-to-win packs | None |
+
+## Skill progression
+
+| Multiplier | Skills |
+|---|---|
+| x1.5 | Archery, Driving, Motorcycle |
+| x1 | Medical, Melee weapons, Rifles |
+| x0.5 | All other skills |
 
 ## Philosophy
 

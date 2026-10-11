@@ -26,7 +26,7 @@ hide:
 <div class="fl-card" markdown>
 :material-flag:
 <b>Territory wars</b>
-<p>3 flags per player, 2 turrets per base.</p>
+<p>3 flags per player, 2 turrets, 24 h to take a flag.</p>
 </div>
 
 <div class="fl-card" markdown>
@@ -44,7 +44,7 @@ hide:
 <div class="fl-card" markdown>
 :material-chart-line:
 <b>Long progression</b>
-<p>Skills at x0.5.</p>
+<p>Skills from x0.5 to x1.5.</p>
 </div>
 
 <div class="fl-card" markdown>
@@ -74,7 +74,7 @@ hide:
 <div class="fl-card" markdown>
 :material-cash-remove:
 <b>No pay-to-win</b>
-<p>No P2W packs, no crosshair.</p>
+<p>No P2W packs, no crosshair, first person only.</p>
 </div>
 
 </div>
