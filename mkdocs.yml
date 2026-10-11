@@ -20,7 +20,7 @@ theme:
     - content.code.copy
 
 extra_css:
-  - stylesheets/fistiland-v18.css
+  - stylesheets/fistiland-v19.css
 
 extra:
   social:
@@ -99,7 +99,16 @@ plugins:
 
 nav:
   - Home: index.md
-  - Overview: server/overview.md
-  - Territory wars: server/territory-wars.md
-  - Survival: server/survival.md
+  - Server settings:
+      - Overview: server/overview.md
+      - Territory: server/territory-wars.md
+      - Respawn: server/respawn.md
+      - Economy: server/economy.md
+      - Progression: server/progression.md
+      - Survival: server/survival.md
+      - Enemies: server/enemies.md
+      - Events: server/events.md
+      - Bunkers: server/bunkers.md
+      - Rules: server/rules.md
+      - All settings: server/all-settings.md
   - Join: join.md

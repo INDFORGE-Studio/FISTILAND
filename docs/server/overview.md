@@ -35,3 +35,16 @@
 ## Philosophy
 
 Gear up in a few hours, then spend the rest of the time fighting for ground. Skills take longer to build than gear, so progression lasts, and survival chores stay out of the way of the PvP.
+
+## Every setting explained
+
+- [Territory](territory-wars.md): flags, base size, decay, raid protection, squads.
+- [Respawn](respawn.md): methods, prices, waiting times.
+- [Economy](economy.md): loot, trader prices, quests.
+- [Progression](progression.md): skills and fame.
+- [Survival](survival.md): day and night, vehicles, animals.
+- [Enemies](enemies.md): zombies and armed NPCs.
+- [Events](events.md): cargo drops, mechs, dropships.
+- [Bunkers](bunkers.md): access cards and abandoned bunkers.
+- [Rules](rules.md): fair play, combat, server limits.
+- [All settings](all-settings.md): every value of the file.

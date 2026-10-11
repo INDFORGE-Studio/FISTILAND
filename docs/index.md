@@ -25,56 +25,56 @@ hide:
 
 <div class="fl-card" markdown>
 :material-flag:
-<b>Territory wars</b>
-<p>3 flags per player, 2 turrets, 24 h to take a flag.</p>
+**[Territory](server/territory-wars.md)**
+<p>Flags, bases and raids.</p>
 </div>
 
 <div class="fl-card" markdown>
 :material-timer-sand:
-<b>Fast respawns</b>
-<p>A lost fight costs minutes.</p>
+**[Respawn](server/respawn.md)**
+<p>Prices and waiting times.</p>
 </div>
 
 <div class="fl-card" markdown>
 :material-tag-multiple:
-<b>Attractive prices</b>
-<p>Cheaper traders, gear in hours.</p>
+**[Economy](server/economy.md)**
+<p>Loot, traders and quests.</p>
 </div>
 
 <div class="fl-card" markdown>
 :material-chart-line:
-<b>Long progression</b>
-<p>Skills x1.5.</p>
+**[Progression](server/progression.md)**
+<p>Skills and fame.</p>
 </div>
 
 <div class="fl-card" markdown>
 :material-shield-account:
-<b>Easier survival</b>
-<p>Short nights, relaxed survival.</p>
+**[Survival](server/survival.md)**
+<p>Nights, vehicles and animals.</p>
 </div>
 
 <div class="fl-card" markdown>
 :material-skull-crossbones:
-<b>Easy enemies</b>
-<p>Easy zombies and armed NPCs.</p>
+**[Enemies](server/enemies.md)**
+<p>Zombies and armed NPCs.</p>
 </div>
 
 <div class="fl-card" markdown>
 :material-robot-off:
-<b>No mechs</b>
-<p>Fights stay between players.</p>
+**[Events](server/events.md)**
+<p>Cargo drops, no mechs.</p>
 </div>
 
 <div class="fl-card" markdown>
 :material-key-variant:
-<b>Access cards</b>
-<p>6 Killbox + 6 Apex.</p>
+**[Bunkers](server/bunkers.md)**
+<p>Access cards and bunkers.</p>
 </div>
 
 <div class="fl-card" markdown>
 :material-cash-remove:
-<b>No pay-to-win</b>
-<p>No P2W packs, no crosshair, first person only.</p>
+**[Rules](server/rules.md)**
+<p>Fair play and server limits.</p>
 </div>
 
 </div>
