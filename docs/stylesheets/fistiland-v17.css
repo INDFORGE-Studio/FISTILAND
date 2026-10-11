@@ -336,3 +336,7 @@ html[lang="uk"] .md-header__option .md-select > button::before { background-imag
 }
 .fl-lead { font-weight: 600; color: #f4ece3; text-shadow: 0 2px 14px rgba(0,0,0,.85); }
 .md-typeset .fl-hero .fl-logo { height: clamp(130px, 38vh, 450px) !important; }
+
+/* ---- Home v17: bigger logo (thinner outline baked into the image) ---- */
+.md-typeset .fl-hero .fl-logo { height: clamp(140px, 41vh, 480px) !important; margin-bottom: .3rem; }
+@media (max-height: 700px) { .md-typeset .fl-hero .fl-logo { height: 31vh !important; } }

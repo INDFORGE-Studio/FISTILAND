@@ -7,7 +7,7 @@ hide:
 <div class="fl-home" markdown>
 
 <div class="fl-hero" markdown>
-<img class="fl-logo" src="/FISTILAND/assets/logo-home-v3.png" alt="FISTILAND - SCUM Server">
+<img class="fl-logo" src="/FISTILAND/assets/logo-home-v4.png" alt="FISTILAND - SCUM Server">
 <div class="fl-title fl-sr">FISTILAND</div>
 <p class="fl-lead">Tieni le zone, difendi la tua base, combatti per i cargo drop. Sopravvivere è più facile: quello che conta è il combattimento.</p>
 <div><a class="fl-btn" href="join/">Come entrare</a><a class="fl-btn ghost" href="https://discord.gg/UdHGdRSyyu">Discord</a></div>
