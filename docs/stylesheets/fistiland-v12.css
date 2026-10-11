@@ -303,3 +303,17 @@ html[lang="uk"] .md-header__option .md-select > button::before { background-imag
   letter-spacing: .32em;
   margin: .2rem 0 .7rem;
 }
+
+/* ---- Home v12: bigger logo, slightly tighter blocks below ---- */
+.md-typeset .fl-hero .fl-logo { height: clamp(110px, 31vh, 380px) !important; margin-bottom: .3rem; }
+@media (max-height: 700px) { .md-typeset .fl-hero .fl-logo { height: 26vh !important; } }
+.fl-hero { padding-top: clamp(.2rem, .8vh, .8rem); }
+.fl-hero .fl-kicker { margin: .1rem 0 .45rem; }
+.fl-lead { margin-bottom: clamp(.3rem, 1.2vh, .9rem); }
+.fl-btn { padding-top: clamp(.4rem, 1.1vh, .65rem); padding-bottom: clamp(.4rem, 1.1vh, .65rem); }
+.fl-stats { margin-top: clamp(.35rem, 1.3vh, 1rem); }
+.fl-stats b { font-size: clamp(1.1rem, 2.8vh, 1.45rem); }
+.fl-stats div { padding-top: clamp(.25rem, .8vh, .5rem); padding-bottom: clamp(.25rem, .8vh, .5rem); }
+.fl-card { padding: .55rem .7rem .6rem; }
+.fl-card b { margin: .2rem 0 .1rem; }
+.fl-grid { padding-bottom: clamp(.3rem, 1.1vh, .8rem); }
