@@ -13,4 +13,4 @@ News, changes, squad searches and support: [discord.gg/UdHGdRSyyu](https://disco
 - 14 slots, EU, full PvP.
 - First person only, no crosshair.
 - No pay-to-win packs.
-- Characters inactive for 30 days are deleted.
+- Characters are never deleted for inactivity.

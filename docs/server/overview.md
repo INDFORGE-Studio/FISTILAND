@@ -21,7 +21,7 @@
 | New players | Protected at the start |
 | Nights | Short |
 | View | First person only, no crosshair |
-| Inactive characters | Deleted after 30 days without login |
+| Inactive characters | Kept, never deleted |
 | Pay-to-win packs | None |
 
 ## Skill progression

@@ -28,7 +28,7 @@ Nights are short. We are tuning them to be brighter than on a stock server.
 
 ## Inactive characters
 
-Characters that have not logged in for 30 days are deleted.
+Characters are never deleted for inactivity: your character is waiting for you when you come back.
 
 !!! note
     Zombie and NPC density is being tested. Feedback is welcome on the Discord.
