@@ -41,6 +41,64 @@ markdown_extensions:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
 
+plugins:
+  - search
+  - i18n:
+      docs_structure: suffix
+      fallback_to_default: true
+      reconfigure_material: true
+      reconfigure_search: true
+      languages:
+        - locale: en
+          name: English
+          default: true
+          build: true
+        - locale: fr
+          name: Français
+          build: true
+          nav_translations:
+            Home: Accueil
+            Overview: Aperçu
+            Territory wars: Guerre de territoires
+            Survival: Survie
+            Join: Rejoindre
+        - locale: de
+          name: Deutsch
+          build: true
+          nav_translations:
+            Home: Start
+            Overview: Überblick
+            Territory wars: Territorialkriege
+            Survival: Überleben
+            Join: Beitreten
+        - locale: es
+          name: Español
+          build: true
+          nav_translations:
+            Home: Inicio
+            Overview: Resumen
+            Territory wars: Guerra de territorios
+            Survival: Supervivencia
+            Join: Unirse
+        - locale: it
+          name: Italiano
+          build: true
+          nav_translations:
+            Home: Home
+            Overview: Panoramica
+            Territory wars: Guerre territoriali
+            Survival: Sopravvivenza
+            Join: Entra
+        - locale: uk
+          name: Українська
+          build: true
+          nav_translations:
+            Home: Головна
+            Overview: Огляд
+            Territory wars: Війни за територію
+            Survival: Виживання
+            Join: Приєднатися
+
 nav:
   - Home: index.md
   - Overview: server/overview.md
