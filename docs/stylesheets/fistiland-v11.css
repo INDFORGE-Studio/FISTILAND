@@ -289,3 +289,17 @@ html[lang="uk"] .md-header__option .md-select > button::before { background-imag
 @media (min-width: 62em) {
   .fl-lead { max-width: none; white-space: nowrap; font-size: min(clamp(.9rem, 2.3vh, 1.1rem), 1.7vw); }
 }
+
+/* ---- Home v11: logo is the title; bigger kicker under it; one-line tagline ---- */
+.md-typeset .fl-hero .fl-logo {
+  height: clamp(90px, 24vh, 260px) !important;
+  width: auto !important;
+  max-width: 80vw;
+  margin: 0 auto .5rem;
+}
+@media (max-height: 700px) { .md-typeset .fl-hero .fl-logo { height: 20vh !important; } }
+.fl-hero .fl-kicker {
+  font-size: clamp(1.05rem, 3vh, 1.7rem);
+  letter-spacing: .32em;
+  margin: .2rem 0 .7rem;
+}

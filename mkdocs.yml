@@ -20,7 +20,7 @@ theme:
     - content.code.copy
 
 extra_css:
-  - stylesheets/fistiland-v10.css
+  - stylesheets/fistiland-v11.css
 
 extra:
   social:

@@ -7,9 +7,9 @@ hide:
 <div class="fl-home" markdown>
 
 <div class="fl-hero" markdown>
-<img class="fl-logo" src="/FISTILAND/assets/logo-home.png" alt="FISTILAND - SCUM Server">
+<img class="fl-logo" src="/FISTILAND/assets/logo-home-v2.png" alt="FISTILAND - SCUM Server">
 <p class="fl-kicker">EU &middot; PvP &middot; Guerre de territoires</p>
-<div class="fl-title">FISTILAND</div>
+<div class="fl-title fl-sr">FISTILAND</div>
 <p class="fl-lead">Tenez vos zones, défendez votre base, battez-vous pour les largages. La survie est plus facile : l'essentiel, c'est le combat.</p>
 <div><a class="fl-btn" href="join/">Comment rejoindre</a><a class="fl-btn ghost" href="https://discord.gg/UdHGdRSyyu">Discord</a></div>
 
