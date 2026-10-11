@@ -325,3 +325,7 @@ html[lang="uk"] .md-header__option .md-select > button::before { background-imag
 .fl-lead { margin-bottom: clamp(.25rem, 1vh, .7rem); }
 .fl-stats { margin-top: clamp(.3rem, 1vh, .8rem); }
 .fl-card { padding: .5rem .65rem .5rem; }
+
+/* ---- Home v15: no kicker line, the logo takes its place ---- */
+.md-typeset .fl-hero .fl-logo { height: clamp(130px, 39vh, 460px) !important; margin-bottom: .5rem; }
+@media (max-height: 700px) { .md-typeset .fl-hero .fl-logo { height: 30vh !important; } }
