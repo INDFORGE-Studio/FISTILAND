@@ -240,3 +240,35 @@ html[lang="uk"] .md-header__option .md-select > button::before { background-imag
   border-radius: 2px;
   box-shadow: 0 0 5px rgba(232, 99, 28, .35);
 }
+
+/* ---- Home: exactly one screen, no scroll ---- */
+.md-main:has(.fl-home) {
+  display: flex;
+  flex-direction: column;
+  background:
+    radial-gradient(ellipse 42% 34% at 50% 36%, rgba(13,12,11,.62) 0%, rgba(13,12,11,0) 100%),
+    radial-gradient(ellipse at 50% 42%, rgba(13,12,11,.10) 0%, rgba(13,12,11,.55) 100%),
+    linear-gradient(180deg, rgba(13,12,11,.20) 0%, rgba(13,12,11,.82) 100%),
+    url("../assets/bg-v2.jpg") center / cover no-repeat;
+}
+.md-main__inner:has(.fl-home) { flex: 1 1 auto; height: auto; margin: 0; padding: 0; }
+.md-content:has(.fl-home) { display: flex; flex-direction: column; }
+.md-content__inner:has(.fl-home) { flex: 1; display: flex; flex-direction: column; margin: 0; padding: 0; }
+.fl-home { background: none; min-height: 0; flex: 1; }
+
+/* Sizes follow the window height so everything stays visible */
+.fl-hero { padding-top: clamp(.4rem, 2vh, 1.5rem); padding-bottom: clamp(.2rem, 1vh, 1rem); }
+.fl-kicker { font-size: clamp(.75rem, 1.8vh, .95rem); }
+.fl-title { font-size: min(6.8rem, 14vh, 11vw); }
+.fl-lead { font-size: clamp(.9rem, 2.3vh, 1.1rem); margin-bottom: clamp(.4rem, 1.8vh, 1.2rem); }
+.fl-btn { padding-top: clamp(.45rem, 1.4vh, .8rem); padding-bottom: clamp(.45rem, 1.4vh, .8rem); }
+.fl-stats { margin-top: clamp(.5rem, 2vh, 1.4rem); }
+.fl-stats b { font-size: clamp(1.2rem, 3.2vh, 1.6rem); }
+.fl-stats div { padding-top: clamp(.35rem, 1.1vh, .65rem); padding-bottom: clamp(.35rem, 1.1vh, .65rem); }
+.fl-grid { padding-bottom: clamp(.4rem, 1.5vh, 1rem); }
+@media (max-height: 760px) { .fl-card p { display: none; } }
+
+/* Desktop: no scrollbar on the home page */
+@media (min-width: 62em) and (min-height: 560px) {
+  html:has(.fl-home) { overflow-y: hidden; }
+}
