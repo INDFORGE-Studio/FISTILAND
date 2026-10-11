@@ -206,3 +206,36 @@ html[lang="uk"] .md-header__option .md-select > button { background-image: url("
 /* Show the whole list (it was cut after five entries) */
 .md-select:hover .md-select__inner,
 .md-select:focus-within .md-select__inner { max-height: 22rem; }
+
+/* ---- Orange frame around every flag ---- */
+.md-header__option .md-select > button {
+  background-image: none !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.md-header__option .md-select > button::before {
+  content: "";
+  box-sizing: border-box;
+  width: 1.9rem;
+  height: 1.3rem;
+  background: center / cover no-repeat;
+  border: 2px solid var(--fl-orange);
+  border-radius: 2px;
+  box-shadow: 0 0 6px rgba(232, 99, 28, .45);
+}
+html[lang="en"] .md-header__option .md-select > button::before { background-image: url("../assets/flags/en.svg"); }
+html[lang="fr"] .md-header__option .md-select > button::before { background-image: url("../assets/flags/fr.svg"); }
+html[lang="de"] .md-header__option .md-select > button::before { background-image: url("../assets/flags/de.svg"); }
+html[lang="es"] .md-header__option .md-select > button::before { background-image: url("../assets/flags/es.svg"); }
+html[lang="it"] .md-header__option .md-select > button::before { background-image: url("../assets/flags/it.svg"); }
+html[lang="uk"] .md-header__option .md-select > button::before { background-image: url("../assets/flags/uk.svg"); }
+
+.md-select__link::before {
+  box-sizing: border-box;
+  width: 1.8rem;
+  height: 1.25rem;
+  border: 2px solid var(--fl-orange);
+  border-radius: 2px;
+  box-shadow: 0 0 5px rgba(232, 99, 28, .35);
+}
