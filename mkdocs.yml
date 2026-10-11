@@ -56,45 +56,90 @@ plugins:
           build: true
           nav_translations:
             Home: Accueil
+            Server settings: Réglages du serveur
             Overview: Aperçu
-            Territory wars: Guerre de territoires
+            Territory: Territoire
+            Respawn: Respawn
+            Economy: Économie
+            Progression: Progression
             Survival: Survie
+            Enemies: Ennemis
+            Events: Événements
+            Bunkers: Bunkers
+            Rules: Règles
+            All settings: Tous les réglages
             Join: Rejoindre
         - locale: de
           name: Deutsch
           build: true
           nav_translations:
             Home: Start
+            Server settings: Servereinstellungen
             Overview: Überblick
-            Territory wars: Territorialkriege
+            Territory: Gebiet
+            Respawn: Respawn
+            Economy: Wirtschaft
+            Progression: Fortschritt
             Survival: Überleben
+            Enemies: Gegner
+            Events: Ereignisse
+            Bunkers: Bunker
+            Rules: Regeln
+            All settings: Alle Einstellungen
             Join: Beitreten
         - locale: es
           name: Español
           build: true
           nav_translations:
             Home: Inicio
+            Server settings: Ajustes del servidor
             Overview: Resumen
-            Territory wars: Guerra de territorios
+            Territory: Territorio
+            Respawn: Reaparición
+            Economy: Economía
+            Progression: Progresión
             Survival: Supervivencia
+            Enemies: Enemigos
+            Events: Eventos
+            Bunkers: Búnkeres
+            Rules: Reglas
+            All settings: Todos los ajustes
             Join: Unirse
         - locale: it
           name: Italiano
           build: true
           nav_translations:
             Home: Home
+            Server settings: Impostazioni del server
             Overview: Panoramica
-            Territory wars: Guerre territoriali
+            Territory: Territorio
+            Respawn: Respawn
+            Economy: Economia
+            Progression: Progressione
             Survival: Sopravvivenza
+            Enemies: Nemici
+            Events: Eventi
+            Bunkers: Bunker
+            Rules: Regole
+            All settings: Tutte le impostazioni
             Join: Entra
         - locale: uk
           name: Українська
           build: true
           nav_translations:
             Home: Головна
+            Server settings: Налаштування сервера
             Overview: Огляд
-            Territory wars: Війни за територію
+            Territory: Територія
+            Respawn: Відродження
+            Economy: Економіка
+            Progression: Прогрес
             Survival: Виживання
+            Enemies: Вороги
+            Events: Події
+            Bunkers: Бункери
+            Rules: Правила
+            All settings: Усі налаштування
             Join: Приєднатися
 
 nav:

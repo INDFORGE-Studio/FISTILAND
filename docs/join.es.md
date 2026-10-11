@@ -6,9 +6,11 @@
 
 ## Discord
 
-Novedades, cambios, búsqueda de escuadra y ayuda: [discord.gg/UdHGdRSyyu](https://discord.gg/UdHGdRSyyu).
+Novedades, cambios, búsqueda de escuadra y soporte: [discord.gg/UdHGdRSyyu](https://discord.gg/UdHGdRSyyu).
 
 ## Datos del servidor
 
-- 14 slots, EU, PvP total.
-- Sin packs pay-to-win.
+- 14 slots, EU, PvP completo.
+- Solo primera persona, sin mira.
+- Sin paquetes pay-to-win.
+- Los personajes nunca se eliminan por inactividad.

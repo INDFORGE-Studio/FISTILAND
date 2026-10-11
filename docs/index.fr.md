@@ -1,4 +1,4 @@
-﻿---
+---
 hide:
   - navigation
   - toc
@@ -25,56 +25,56 @@ hide:
 
 <div class="fl-card" markdown>
 :material-flag:
-<b>Guerre de territoires</b>
-<p>3 drapeaux par joueur, 2 tourelles par base.</p>
+**[Territoire](server/territory-wars.md)**
+<p>Drapeaux, bases et raids.</p>
 </div>
 
 <div class="fl-card" markdown>
 :material-timer-sand:
-<b>Respawns rapides</b>
-<p>Un combat perdu coûte quelques minutes.</p>
+**[Respawn](server/respawn.md)**
+<p>Prix et temps d'attente.</p>
 </div>
 
 <div class="fl-card" markdown>
 :material-tag-multiple:
-<b>Prix attractifs</b>
-<p>Marchands moins chers, équipement en quelques heures.</p>
+**[Économie](server/economy.md)**
+<p>Butin, marchands et quêtes.</p>
 </div>
 
 <div class="fl-card" markdown>
 :material-chart-line:
-<b>Progression longue</b>
-<p>Compétences à x0.5.</p>
+**[Progression](server/progression.md)**
+<p>Compétences et renommée.</p>
 </div>
 
 <div class="fl-card" markdown>
 :material-shield-account:
-<b>Survie facilitée</b>
-<p>Nuits courtes, survie détendue.</p>
+**[Survie](server/survival.md)**
+<p>Nuits, véhicules et animaux.</p>
 </div>
 
 <div class="fl-card" markdown>
 :material-skull-crossbones:
-<b>Ennemis faciles</b>
-<p>Zombies et PNJ armés faciles.</p>
+**[Ennemis](server/enemies.md)**
+<p>Zombies et PNJ armés.</p>
 </div>
 
 <div class="fl-card" markdown>
 :material-robot-off:
-<b>Pas de mécas</b>
-<p>Les combats restent entre joueurs.</p>
+**[Événements](server/events.md)**
+<p>Largages, pas de mécas.</p>
 </div>
 
 <div class="fl-card" markdown>
 :material-key-variant:
-<b>Cartes d'accès</b>
-<p>6 Killbox + 6 Apex.</p>
+**[Bunkers](server/bunkers.md)**
+<p>Cartes d'accès et bunkers.</p>
 </div>
 
 <div class="fl-card" markdown>
 :material-cash-remove:
-<b>Pas de pay-to-win</b>
-<p>Aucun pack P2W, pas de réticule.</p>
+**[Règles](server/rules.md)**
+<p>Fair-play et limites du serveur.</p>
 </div>
 
 </div>

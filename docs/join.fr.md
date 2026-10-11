@@ -6,9 +6,11 @@
 
 ## Discord
 
-Nouveautés, changements, recherche d'escouade et aide : [discord.gg/UdHGdRSyyu](https://discord.gg/UdHGdRSyyu).
+Actualités, changements, recherche d'escouade et support : [discord.gg/UdHGdRSyyu](https://discord.gg/UdHGdRSyyu).
 
 ## Infos du serveur
 
 - 14 slots, EU, PvP complet.
+- Vue à la première personne uniquement, pas de réticule.
 - Aucun pack pay-to-win.
+- Les personnages ne sont jamais supprimés pour inactivité.

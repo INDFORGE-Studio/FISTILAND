@@ -8,7 +8,9 @@
 
 Novità, modifiche, ricerca di squadra e supporto: [discord.gg/UdHGdRSyyu](https://discord.gg/UdHGdRSyyu).
 
-## Info sul server
+## Informazioni sul server
 
-- 14 slot, EU, PvP totale.
+- 14 slot, EU, PvP completo.
+- Solo prima persona, nessun mirino.
 - Nessun pacchetto pay-to-win.
+- I personaggi non vengono mai eliminati per inattività.

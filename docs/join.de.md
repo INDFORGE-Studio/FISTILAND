@@ -2,13 +2,15 @@
 
 1. Starte SCUM und öffne die Serverliste.
 2. Suche nach **FISTILAND**.
-3. Tritt bei. Es ist ein Community-Server mit freiem Zugang.
+3. Tritt bei. Der Server ist ein frei zugänglicher Community-Server.
 
 ## Discord
 
-Neuigkeiten, Änderungen, Squad-Suche und Hilfe: [discord.gg/UdHGdRSyyu](https://discord.gg/UdHGdRSyyu).
+Neuigkeiten, Änderungen, Truppsuche und Support: [discord.gg/UdHGdRSyyu](https://discord.gg/UdHGdRSyyu).
 
-## Server-Infos
+## Server-Fakten
 
 - 14 Slots, EU, volles PvP.
-- Keine Pay-to-Win-Pakete.
+- Nur Ego-Perspektive, kein Fadenkreuz.
+- Keine Pay-to-win-Pakete.
+- Charaktere werden bei Inaktivität nie gelöscht.

@@ -1,26 +1,91 @@
-# Überleben und Gegner
+<div class="fl-page-hero fl-bg-e" markdown>
 
-Das Überleben auf FISTILAND ist leichter als auf einem Standard-Server, damit ihr euch auf die echten Gegner konzentriert: andere Spieler.
+:material-shield-account:
 
-## Zombies
+# Überleben
 
-Zombies sind leicht zu töten und richten weniger Schaden an als auf einem Standard-Server.
+<p>Eine leichte Schicht über dem PvP: Die Nächte sind kurz, die Pflichten klein und die Fahrzeuge begrenzt.</p>
 
-## Bewaffnete NPCs
+</div>
 
-Bewaffnete NPCs sind vorhanden und leicht. Sie sind eine beherrschbare Bedrohung, keine Mauer.
+<div class="fl-facts">
+<div><b>05:00</b><span>Sonnenaufgang</span></div>
+<div><b>22:30</b><span>Sonnenuntergang</span></div>
+<div><b>x0.5</b><span>Treibstoffverbrauch</span></div>
+<div><b>10 Tage</b><span>Bis ein ungenutztes Fahrzeug entfernt wird</span></div>
+</div>
 
-## Keine Mechs
 
-Es gibt keine Mechs auf der Karte.
+## :material-weather-night: Tag und Nacht
 
-## Tiere
+| Einstellung | Wert | Wirkung |
+|---|---|---|
+| `StartTimeOfDay` | 08:00:00 | Spielzeit beim Start des Servers. |
+| `TimeOfDaySpeed` | 3.84 | Die Spielzeit läuft 3,84-mal schneller als die Echtzeit (ein ganzer Tag dauert etwa 6 h 15 min). |
+| `SunriseTime` | 05:00:00 | Sonnenaufgang. |
+| `SunsetTime` | 22:30:00 | Sonnenuntergang. |
+| `NighttimeDarkness` | 0 | Dunkelheit der Nacht, auf den niedrigsten Wert gesetzt für möglichst helle Nächte. |
+| `EnableFog` | True | Nebel wird dargestellt. |
 
-Viel Wild zum Jagen.
+## :material-heart-pulse: Körper und Gegenstände
 
-## Nächte
+| Einstellung | Wert | Wirkung |
+|---|---|---|
+| `BodySimulationSpeedMultiplier` | 2.5 | Geschwindigkeit der Verdauung und anderer Körperprozesse. |
+| `StaminaDrainOnJumpMultiplier` | 0.5 | Ausdauerkosten beim Springen. |
+| `StaminaDrainOnClimbMultiplier` | 0.5 | Ausdauerkosten beim Klettern. |
+| `DisableExhaustion` | False | Erschöpfung baut sich normal auf. |
+| `ItemDecayDamageMultiplier` | 0.5 | Geschwindigkeit, mit der sich Gegenstände mit der Zeit abnutzen. |
+| `FoodDecayDamageMultiplier` | 0.5 | Geschwindigkeit, mit der Nahrung verdirbt. |
+| `WeaponDecayDamageOnFiring` | 0.5 | Waffenverschleiß pro Schuss. |
+| `MaintainItemsExpirationTime` | 360:00:00 | Zeit, bis unberührte Wartungsgegenstände (Betten und Ähnliches) ablaufen. |
+| `BedrollVisibilityTimer` | 1 | Zeit, in der ein Schlafsack nach dem Abmelden für andere sichtbar bleibt. |
+| `RadiationEnabled` | True | Strahlungszonen sind aktiv. |
 
-Die Nächte sind kurz und heller als auf einem Standard-Server.
+## :material-car: Fahrzeuge
 
-!!! note "Hinweis"
-    Die Dichte von Zombies und NPCs wird getestet. Feedback ist im Discord willkommen.
+| Einstellung | Wert | Wirkung |
+|---|---|---|
+| `BicycleMaxAmount` | 40 | Fahrräder auf der Karte. |
+| `RagerMaxAmount`, `WolfswagenMaxAmount`, `LaikaMaxAmount`, `RisMaxAmount`, `TractorMaxAmount`, `SidecarBikeMaxAmount` | 10 | Höchstzahl jedes Modells. |
+| `CruiserMaxAmount` | 15 | Cruiser auf der Karte. |
+| `RagerMaxFunctionalAmount`, `WolfswagenMaxFunctionalAmount`, `LaikaMaxFunctionalAmount`, `RisMaxFunctionalAmount`, `SidecarBikeMaxFunctionalAmount` | 8 | Höchstzahl mit funktionierendem Motor. |
+| `CruiserMaxFunctionalAmount` | 12 | Cruiser mit funktionierendem Motor. |
+| `DirtbikeMaxAmount` / `DirtbikeMaxFunctionalAmount` | 20 / 15 | Geländemotorräder. |
+| `MotorboatMaxAmount`, `DinghyMaxAmount`, `SUPMaxAmount` | 11, 14, 20 | Boote und Stand-up-Paddleboards. |
+| `WheelbarrowMaxAmount` | 20 | Schubkarren. |
+| `KingletDusterMaxAmount`, `KingletMarinerMaxAmount` | 2, 1 | Luftfahrzeuge. |
+| `...MinPurchasedAmount` (alle Fahrzeuge) | 5 (Schubkarre 10, Kinglet Mariner und Duster 0) | Mindestanzahl, die bei Händlern verfügbar ist. |
+| `MaximumTimeOfVehicleInactivity` | 240:00:00 | Ein ungenutztes Fahrzeug wird nach 10 Tagen entfernt. |
+| `MaximumTimeForVehiclesInForbiddenZones` | 02:00:00 | In Sperrzonen zurückgelassene Fahrzeuge werden nach 2 Stunden entfernt. |
+
+## :material-car-battery: Treibstoff und Batterien von Fahrzeugen
+
+| Einstellung | Wert | Wirkung |
+|---|---|---|
+| `FuelDrainFromEngineMultiplier` | 0.5 | Treibstoffverbrauch der Motoren. |
+| `BatteryDrainFromEngineMultiplier` | 0.1 | Batterieverbrauch der Motoren. |
+| `BatteryDrainFromDevicesMultiplier` | 0.7 | Batterieverbrauch elektrischer Geräte. |
+| `BatteryDrainFromInactivityMultiplier` | 0.3 | Batterieverbrauch im Stillstand. |
+| `BatteryChargeWithAlternatorMultiplier` | 1.5 | Ladegeschwindigkeit durch eine Lichtmaschine. |
+| `BatteryChargeWithDynamoMultiplier` | 1.5 | Ladegeschwindigkeit durch einen Generator. |
+
+## :material-paw: Tiere
+
+| Einstellung | Wert | Wirkung |
+|---|---|---|
+| `AreAnimalsAllowedInWorld` | True | Tiere existieren in der Welt. |
+| `AnimalGlobalDensityMultiplier` | 1 | Gesamtdichte der Tiere. |
+| `MaxNonVirtualAnimalsInWorld` | 350 | Gleichzeitig aktive Tiere. |
+| `RabbitPrevalenceMultiplier` | 5 | Kaninchen. |
+| `DeerPrevalenceMultiplier`, `GoatPrevalenceMultiplier` | 3 | Hirsche und Ziegen. |
+| `DonkeyPrevalenceMultiplier` | 2 | Esel. |
+| `BoarPrevalenceMultiplier` | 1.5 | Wildschweine. |
+| `ChickenPrevalenceMultiplier`, `HorsePrevalenceMultiplier` | 1 | Hühner und Pferde. |
+| `BearPrevalenceMultiplier`, `WolfPrevalenceMultiplier` | 0.5 | Bären und Wölfe. |
+| `...MaxHealthMultiplier` (alle Tiere) | 1 | Gesundheit der Tiere. |
+| `MaxAllowedBirds` | 15 | Vögel (diese Einstellung hat im Spiel derzeit keine Wirkung). |
+
+---
+
+[Alle Einstellungsseiten](overview.md#every-setting-explained) | [Vollständige Werteliste](all-settings.md)
