@@ -10,20 +10,21 @@
 
 <div class="fl-facts">
 <div><b>x5</b><span>Loot</span></div>
+<div><b>60 min</b><span>Respawn del loot quando non c'è nessuno vicino</span></div>
 <div><b>x0.5</b><span>Prezzo di carburante e acqua</span></div>
 <div><b>5</b><span>Missioni per mercante e ciclo</span></div>
 <div><b>2</b><span>Missioni attive per mercante</span></div>
 </div>
 
 
-## :material-treasure-chest: Bottino
+## :material-treasure-chest: Bottino e respawn del loot
 
 | Impostazione | Valore | Cosa fa |
 |---|---|---|
 | `SpawnerProbabilityMultiplier` | 5 | Probabilità che oggetti sparsi compaiano nel mondo (il loot x5). |
 | `ExamineSpawnerProbabilityMultiplier` | 5 | Probabilità che un contenitore esaminato dia un oggetto. |
-| `SpawnerExpirationTimeMultiplier` | 1 | Quanto durano gli oggetti comparsi nel mondo. |
-| `ExamineSpawnerExpirationTimeMultiplier` | 1 | Quanto durano gli oggetti ottenuti esaminando. |
+| `SpawnerExpirationTimeMultiplier` | 1 | Tempo di respawn del loot: uno spawner del mondo ritira i dadi dopo 60 minuti (x1) senza giocatori entro 50 m. |
+| `ExamineSpawnerExpirationTimeMultiplier` | 1 | Lo stesso per i contenitori esaminati: decidono di nuovo dopo 60 minuti (x1) senza giocatori entro 50 m. |
 | `EnableItemCooldownGroups` | True | Gli oggetti rari condividono gruppi di tempo di recupero, il che limita il farming di oggetti. |
 | `ItemCooldownGroupsDurationMultiplier` | 0.5 | Durata di quei tempi di recupero. |
 | `EnableLockedLootContainers` | True | Gli armadietti nel mondo sono chiusi a chiave. |

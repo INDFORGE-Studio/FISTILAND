@@ -10,20 +10,21 @@
 
 <div class="fl-facts">
 <div><b>x5</b><span>Loot</span></div>
+<div><b>60 min</b><span>Reaparición del botín cuando no hay nadie cerca</span></div>
 <div><b>x0.5</b><span>Precio del combustible y el agua</span></div>
 <div><b>5</b><span>Misiones por comerciante y ciclo</span></div>
 <div><b>2</b><span>Misiones activas por comerciante</span></div>
 </div>
 
 
-## :material-treasure-chest: Botín
+## :material-treasure-chest: Botín y reaparición del botín
 
 | Ajuste | Valor | Qué hace |
 |---|---|---|
 | `SpawnerProbabilityMultiplier` | 5 | Probabilidad de que aparezcan objetos sueltos en el mundo (el loot x5). |
 | `ExamineSpawnerProbabilityMultiplier` | 5 | Probabilidad de que un contenedor examinado dé un objeto. |
-| `SpawnerExpirationTimeMultiplier` | 1 | Cuánto duran los objetos aparecidos en el mundo. |
-| `ExamineSpawnerExpirationTimeMultiplier` | 1 | Cuánto duran los objetos obtenidos al examinar. |
+| `SpawnerExpirationTimeMultiplier` | 1 | Tiempo de reaparición del botín: un generador del mundo vuelve a tirar tras 60 minutos (x1) sin ningún jugador a menos de 50 m. |
+| `ExamineSpawnerExpirationTimeMultiplier` | 1 | Igual para los contenedores examinados: vuelven a decidir tras 60 minutos (x1) sin jugadores a menos de 50 m. |
 | `EnableItemCooldownGroups` | True | Los objetos raros comparten grupos de enfriamiento, lo que limita el farmeo de objetos. |
 | `ItemCooldownGroupsDurationMultiplier` | 0.5 | Duración de esos enfriamientos. |
 | `EnableLockedLootContainers` | True | Las taquillas del mundo están cerradas con llave. |

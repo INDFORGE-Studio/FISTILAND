@@ -10,20 +10,21 @@
 
 <div class="fl-facts">
 <div><b>x5</b><span>Loot</span></div>
+<div><b>60 min</b><span>Loot respawn once nobody is nearby</span></div>
 <div><b>x0.5</b><span>Fuel and water price</span></div>
 <div><b>5</b><span>Quests per trader per cycle</span></div>
 <div><b>2</b><span>Active quests per trader</span></div>
 </div>
 
 
-## :material-treasure-chest: Loot
+## :material-treasure-chest: Loot and loot respawn
 
 | Setting | Value | What it does |
 |---|---|---|
 | `SpawnerProbabilityMultiplier` | 5 | Chance that loose items spawn in the world (the loot x5). |
 | `ExamineSpawnerProbabilityMultiplier` | 5 | Chance that an examined container gives an item. |
-| `SpawnerExpirationTimeMultiplier` | 1 | How long spawned world items last. |
-| `ExamineSpawnerExpirationTimeMultiplier` | 1 | How long examine spawns last. |
+| `SpawnerExpirationTimeMultiplier` | 1 | Loot respawn time: a world spawner rolls for new loot after 60 minutes (x1) with no player within 50 m. |
+| `ExamineSpawnerExpirationTimeMultiplier` | 1 | Same for examined containers: they decide again after 60 minutes (x1) with no player within 50 m. |
 | `EnableItemCooldownGroups` | True | Rare items share cooldown groups, which limits item farming. |
 | `ItemCooldownGroupsDurationMultiplier` | 0.5 | Length of those cooldowns. |
 | `EnableLockedLootContainers` | True | Lockers in the world are locked. |

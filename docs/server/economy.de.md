@@ -10,20 +10,21 @@
 
 <div class="fl-facts">
 <div><b>x5</b><span>Loot</span></div>
+<div><b>60 min</b><span>Loot-Respawn, wenn niemand in der Nähe ist</span></div>
 <div><b>x0.5</b><span>Preis für Treibstoff und Wasser</span></div>
 <div><b>5</b><span>Quests pro Händler und Zyklus</span></div>
 <div><b>2</b><span>Aktive Quests pro Händler</span></div>
 </div>
 
 
-## :material-treasure-chest: Loot
+## :material-treasure-chest: Loot und Loot-Respawn
 
 | Einstellung | Wert | Wirkung |
 |---|---|---|
 | `SpawnerProbabilityMultiplier` | 5 | Chance, dass lose Gegenstände in der Welt erscheinen (das Loot x5). |
 | `ExamineSpawnerProbabilityMultiplier` | 5 | Chance, dass ein untersuchter Behälter einen Gegenstand ergibt. |
-| `SpawnerExpirationTimeMultiplier` | 1 | Wie lange erschienene Weltgegenstände bleiben. |
-| `ExamineSpawnerExpirationTimeMultiplier` | 1 | Wie lange beim Untersuchen erscheinende Gegenstände bleiben. |
+| `SpawnerExpirationTimeMultiplier` | 1 | Loot-Respawn-Zeit: Ein Welt-Spawner würfelt nach 60 Minuten (x1) ohne Spieler im Umkreis von 50 m neu. |
+| `ExamineSpawnerExpirationTimeMultiplier` | 1 | Dasselbe für untersuchte Behälter: Sie entscheiden nach 60 Minuten (x1) ohne Spieler im Umkreis von 50 m neu. |
 | `EnableItemCooldownGroups` | True | Seltene Gegenstände teilen sich Abklinggruppen, was das Farmen von Gegenständen begrenzt. |
 | `ItemCooldownGroupsDurationMultiplier` | 0.5 | Dauer dieser Abklingzeiten. |
 | `EnableLockedLootContainers` | True | Spinde in der Welt sind verschlossen. |

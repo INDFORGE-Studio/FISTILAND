@@ -10,20 +10,21 @@
 
 <div class="fl-facts">
 <div><b>x5</b><span>Loot</span></div>
+<div><b>60 min</b><span>Réapparition du loot quand personne n'est à proximité</span></div>
 <div><b>x0.5</b><span>Prix du carburant et de l'eau</span></div>
 <div><b>5</b><span>Quêtes par marchand et par cycle</span></div>
 <div><b>2</b><span>Quêtes actives par marchand</span></div>
 </div>
 
 
-## :material-treasure-chest: Butin
+## :material-treasure-chest: Butin et réapparition du loot
 
 | Réglage | Valeur | Rôle |
 |---|---|---|
 | `SpawnerProbabilityMultiplier` | 5 | Chance que des objets apparaissent au sol dans le monde (le loot x5). |
 | `ExamineSpawnerProbabilityMultiplier` | 5 | Chance qu'un conteneur examiné donne un objet. |
-| `SpawnerExpirationTimeMultiplier` | 1 | Durée de vie des objets apparus dans le monde. |
-| `ExamineSpawnerExpirationTimeMultiplier` | 1 | Durée de vie des objets obtenus en examinant. |
+| `SpawnerExpirationTimeMultiplier` | 1 | Temps de réapparition du loot : un point de loot du monde retente sa chance après 60 minutes (x1) sans aucun joueur à moins de 50 m. |
+| `ExamineSpawnerExpirationTimeMultiplier` | 1 | Pareil pour les conteneurs examinés : ils retentent après 60 minutes (x1) sans joueur à moins de 50 m. |
 | `EnableItemCooldownGroups` | True | Les objets rares partagent des groupes de délai, ce qui limite le farm d'objets. |
 | `ItemCooldownGroupsDurationMultiplier` | 0.5 | Durée de ces délais. |
 | `EnableLockedLootContainers` | True | Les casiers du monde sont verrouillés. |
