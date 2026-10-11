@@ -329,3 +329,10 @@ html[lang="uk"] .md-header__option .md-select > button::before { background-imag
 /* ---- Home v15: no kicker line, the logo takes its place ---- */
 .md-typeset .fl-hero .fl-logo { height: clamp(130px, 39vh, 460px) !important; margin-bottom: .5rem; }
 @media (max-height: 700px) { .md-typeset .fl-hero .fl-logo { height: 30vh !important; } }
+
+/* ---- Home v16: the tagline is a headline ---- */
+@media (min-width: 62em) {
+  .fl-lead { font-size: min(clamp(1rem, 2.9vh, 1.5rem), 1.5vw); }
+}
+.fl-lead { font-weight: 600; color: #f4ece3; text-shadow: 0 2px 14px rgba(0,0,0,.85); }
+.md-typeset .fl-hero .fl-logo { height: clamp(130px, 38vh, 450px) !important; }
