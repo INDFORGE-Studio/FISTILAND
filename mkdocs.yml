@@ -1,4 +1,4 @@
-site_name: FISTILAND
+﻿site_name: FISTILAND
 site_description: FISTILAND, EU PvP SCUM server built around territory wars. Loot x5, fast respawns, easier survival, no mechs.
 site_url: https://indforge-studio.github.io/FISTILAND/
 
@@ -20,7 +20,7 @@ theme:
     - content.code.copy
 
 extra_css:
-  - stylesheets/fistiland-v17.css
+  - stylesheets/fistiland-v18.css
 
 extra:
   social:
@@ -52,11 +52,11 @@ plugins:
           default: true
           build: true
         - locale: fr
-          name: Français
+          name: FranÃ§ais
           build: true
           nav_translations:
             Home: Accueil
-            Overview: Aperçu
+            Overview: AperÃ§u
             Territory wars: Guerre de territoires
             Survival: Survie
             Join: Rejoindre
@@ -65,12 +65,12 @@ plugins:
           build: true
           nav_translations:
             Home: Start
-            Overview: Überblick
+            Overview: Ãœberblick
             Territory wars: Territorialkriege
-            Survival: Überleben
+            Survival: Ãœberleben
             Join: Beitreten
         - locale: es
-          name: Español
+          name: EspaÃ±ol
           build: true
           nav_translations:
             Home: Inicio
@@ -88,14 +88,14 @@ plugins:
             Survival: Sopravvivenza
             Join: Entra
         - locale: uk
-          name: Українська
+          name: Ð£ÐºÑ€Ð°Ñ—Ð½ÑÑŒÐºÐ°
           build: true
           nav_translations:
-            Home: Головна
-            Overview: Огляд
-            Territory wars: Війни за територію
-            Survival: Виживання
-            Join: Приєднатися
+            Home: Ð“Ð¾Ð»Ð¾Ð²Ð½Ð°
+            Overview: ÐžÐ³Ð»ÑÐ´
+            Territory wars: Ð’Ñ–Ð¹Ð½Ð¸ Ð·Ð° Ñ‚ÐµÑ€Ð¸Ñ‚Ð¾Ñ€Ñ–ÑŽ
+            Survival: Ð’Ð¸Ð¶Ð¸Ð²Ð°Ð½Ð½Ñ
+            Join: ÐŸÑ€Ð¸Ñ”Ð´Ð½Ð°Ñ‚Ð¸ÑÑ
 
 nav:
   - Home: index.md
