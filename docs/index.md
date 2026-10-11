@@ -45,7 +45,7 @@ hide:
 <div class="fl-card" markdown>
 :material-chart-line:
 <b>Long progression</b>
-<p>Skills from x0.5 to x1.5.</p>
+<p>Skills x1.5.</p>
 </div>
 
 <div class="fl-card" markdown>

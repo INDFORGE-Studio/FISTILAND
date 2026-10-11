@@ -7,7 +7,7 @@
 | Loot | x5 |
 | Respawns | Fast |
 | Trader prices | Attractive |
-| Skill progression | Extended: x0.5 by default, up to x1.5 on some skills |
+| Skill progression | Extended, see the table below |
 | Survival | Easier |
 | Squads | 4 players max |
 | Mechs | None |

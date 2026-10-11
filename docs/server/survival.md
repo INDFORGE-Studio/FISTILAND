@@ -4,7 +4,7 @@ Survival on FISTILAND is easier than on a stock server, so you spend your time o
 
 ## Zombies
 
-There are more zombies than before, but they stay easy: they are weaker, slower and do less damage than on a stock server.
+Zombies are numerous but easy: they are weaker, slower and do less damage than on a stock server.
 
 ## Armed NPCs
 
