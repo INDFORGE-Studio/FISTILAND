@@ -174,3 +174,35 @@
 .md-main__inner:has(.fl-home) { max-width: none; margin: 0; }
 .md-main__inner:has(.fl-home) .md-content { max-width: none; width: 100%; flex: 1 1 100%; }
 .fl-hero > * { margin-left: auto; margin-right: auto; }
+
+/* ---- Language selector: worn flags instead of the translate icon ---- */
+.md-header__option .md-select > button svg { display: none; }
+.md-header__option .md-select > button {
+  width: 2.6rem;
+  background: center / 1.75rem 1.17rem no-repeat;
+}
+html[lang="en"] .md-header__option .md-select > button { background-image: url("../assets/flags/en.svg"); }
+html[lang="fr"] .md-header__option .md-select > button { background-image: url("../assets/flags/fr.svg"); }
+html[lang="de"] .md-header__option .md-select > button { background-image: url("../assets/flags/de.svg"); }
+html[lang="es"] .md-header__option .md-select > button { background-image: url("../assets/flags/es.svg"); }
+html[lang="it"] .md-header__option .md-select > button { background-image: url("../assets/flags/it.svg"); }
+html[lang="uk"] .md-header__option .md-select > button { background-image: url("../assets/flags/uk.svg"); }
+
+.md-select__link { display: flex; align-items: center; gap: .7rem; }
+.md-select__link::before {
+  content: "";
+  flex: none;
+  width: 1.65rem;
+  height: 1.1rem;
+  background: center / cover no-repeat;
+}
+.md-select__link[hreflang="en"]::before { background-image: url("../assets/flags/en.svg"); }
+.md-select__link[hreflang="fr"]::before { background-image: url("../assets/flags/fr.svg"); }
+.md-select__link[hreflang="de"]::before { background-image: url("../assets/flags/de.svg"); }
+.md-select__link[hreflang="es"]::before { background-image: url("../assets/flags/es.svg"); }
+.md-select__link[hreflang="it"]::before { background-image: url("../assets/flags/it.svg"); }
+.md-select__link[hreflang="uk"]::before { background-image: url("../assets/flags/uk.svg"); }
+
+/* Show the whole list (it was cut after five entries) */
+.md-select:hover .md-select__inner,
+.md-select:focus-within .md-select__inner { max-height: 22rem; }
