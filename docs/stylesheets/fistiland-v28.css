@@ -499,3 +499,8 @@ html[lang="uk"] .md-header__option .md-select > button::before { background-imag
 .fl-wh-fl { color: var(--fl-orange-hot); }
 .fl-wh-sc { color: #e8dccf; }
 .fl-wh-da { color: #6fa8dc; }
+
+/* Downloads table (fixed layout): the narrow label column needs a real width, not 1% */
+.md-content:has(.fl-page-hero):not(:has(.fl-home)) .md-typeset table:not([class]):has(.fl-st):not(:has(.fl-copy)) th:nth-child(1) { width: 38%; }
+.md-content:has(.fl-page-hero):not(:has(.fl-home)) .md-typeset table:not([class]):has(.fl-st):not(:has(.fl-copy)) th:nth-child(2) { width: 10rem; }
+.md-content:has(.fl-page-hero):not(:has(.fl-home)) .md-typeset table:not([class]):has(.fl-st):not(:has(.fl-copy)) td:nth-child(2) { width: auto; }
