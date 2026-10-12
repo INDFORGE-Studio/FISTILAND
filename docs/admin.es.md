@@ -4,7 +4,7 @@
 
 # Guía de admin
 
-<p>Todo lo que comprobamos al llevar un servidor de SCUM v1.3.4.2</p>
+<p>Todo lo que comprobamos al llevar un servidor de SCUM</p>
 
 </div>
 

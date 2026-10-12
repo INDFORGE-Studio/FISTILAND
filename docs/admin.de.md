@@ -4,7 +4,7 @@
 
 # Admin-Leitfaden
 
-<p>Alles, was wir auf einem SCUM-Server v1.3.4.2 geprüft haben</p>
+<p>Alles, was wir auf einem SCUM-Server geprüft haben</p>
 
 </div>
 
