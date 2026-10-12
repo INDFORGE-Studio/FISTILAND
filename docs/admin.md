@@ -44,11 +44,11 @@ Status: **Valid** means we checked in-game that it works. **Unverified** means a
 
 The two settings files work the same way everywhere: the server reads them when it starts, so stop the server, replace the files, then start it again.
 
-### On a hosted server
+### Hosted server
 
-On a rented server (Nitrado, for example), upload your `ServerSettings.ini` and `EconomyOverride.json` through the host's file or settings page while the server is stopped, then start it again. The screens differ from one host to another, so check your host's help for where the files go.
+On a rented server, upload your `ServerSettings.ini` and `EconomyOverride.json` through the host's file or settings page while the server is stopped, then start it again. The screens differ from one host to another, so check your host's help for where the files go.
 
-### Locally, for free
+### Local server [free]
 
 A local server on your own PC lets you play online for free with your friends, for example, or even try your settings and/or prices before putting a bigger server online:
 
@@ -77,7 +77,7 @@ Each file comes in two versions, so you can compare them. **FISTILAND** are the 
 | File | Which one | What it is |
 |---|---|---|
 | [ServerSettings_FISTILAND.ini](downloads/ServerSettings_FISTILAND.ini){ download="ServerSettings_FISTILAND.ini" } | <span class="fl-st fl-wh-fl">:material-shield-star: FISTILAND</span> | The settings of the FISTILAND server. |
-| [ServerSettings_SCUM.ini](downloads/ServerSettings_SCUM.ini){ download="ServerSettings_SCUM.ini" } | <span class="fl-st fl-wh-sc">:material-gamepad-variant: SCUM</span> | The file a new Nitrado server starts with, untouched. |
+| [ServerSettings_SCUM.ini](downloads/ServerSettings_SCUM.ini){ download="ServerSettings_SCUM.ini" } | <span class="fl-st fl-wh-sc">:material-gamepad-variant: SCUM</span> | The file a new hosted server starts with, untouched. |
 | [EconomyOverride_FISTILAND.json](downloads/EconomyOverride_FISTILAND.json){ download="EconomyOverride_FISTILAND.json" } | <span class="fl-st fl-wh-fl">:material-shield-star: FISTILAND</span> | Trader settings of FISTILAND: no fame requirement, traders always stocked and funded, fixed prices. |
 | [EconomyOverride_SCUM.json](downloads/EconomyOverride_SCUM.json){ download="EconomyOverride_SCUM.json" } | <span class="fl-st fl-wh-sc">:material-gamepad-variant: SCUM</span> | The trader file with the values the game starts with. |
 | [SCUM_item_codes_1.3.4.2.txt](downloads/SCUM_item_codes_1.3.4.2.txt){ download="SCUM_item_codes_1.3.4.2.txt" } | <span class="fl-st fl-wh-da">:material-database: Data</span> | All 2,572 item codes of game version 1.3.4.2, one per line (from the `#ListItems` command). |

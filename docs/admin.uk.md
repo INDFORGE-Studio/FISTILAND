@@ -44,11 +44,11 @@
 
 Обидва файли налаштувань працюють однаково скрізь: сервер читає їх під час запуску, тож зупиніть сервер, замініть файли й запустіть його знову.
 
-### На орендованому сервері
+### Орендований сервер
 
-На орендованому сервері (наприклад, Nitrado) завантажте свої `ServerSettings.ini` і `EconomyOverride.json` через сторінку файлів або налаштувань хостингу, поки сервер зупинено, а потім запустіть його знову. Екрани відрізняються в різних хостингів: перегляньте довідку свого хостингу, щоб дізнатися, куди класти файли.
+На орендованому сервері завантажте свої `ServerSettings.ini` і `EconomyOverride.json` через сторінку файлів або налаштувань хостингу, поки сервер зупинено, а потім запустіть його знову. Екрани відрізняються в різних хостингів: перегляньте довідку свого хостингу, щоб дізнатися, куди класти файли.
 
-### Локально й безкоштовно
+### Локальний сервер [безкоштовно]
 
 Локальний сервер на вашому ПК дає змогу, наприклад, безкоштовно грати онлайн з друзями або навіть випробувати налаштування та/або ціни перед запуском більшого сервера:
 
@@ -77,7 +77,7 @@
 | Файл | Який | Що це |
 |---|---|---|
 | [ServerSettings_FISTILAND.ini](downloads/ServerSettings_FISTILAND.ini){ download="ServerSettings_FISTILAND.ini" } | <span class="fl-st fl-wh-fl">:material-shield-star: FISTILAND</span> | Налаштування сервера FISTILAND. |
-| [ServerSettings_SCUM.ini](downloads/ServerSettings_SCUM.ini){ download="ServerSettings_SCUM.ini" } | <span class="fl-st fl-wh-sc">:material-gamepad-variant: SCUM</span> | Файл, з яким стартує новий сервер Nitrado, без змін. |
+| [ServerSettings_SCUM.ini](downloads/ServerSettings_SCUM.ini){ download="ServerSettings_SCUM.ini" } | <span class="fl-st fl-wh-sc">:material-gamepad-variant: SCUM</span> | Файл, з яким стартує новий орендований сервер, без змін. |
 | [EconomyOverride_FISTILAND.json](downloads/EconomyOverride_FISTILAND.json){ download="EconomyOverride_FISTILAND.json" } | <span class="fl-st fl-wh-fl">:material-shield-star: FISTILAND</span> | Налаштування торговців FISTILAND: без вимоги слави, торговці завжди з товаром і грошима, фіксовані ціни. |
 | [EconomyOverride_SCUM.json](downloads/EconomyOverride_SCUM.json){ download="EconomyOverride_SCUM.json" } | <span class="fl-st fl-wh-sc">:material-gamepad-variant: SCUM</span> | Файл торговців зі стартовими значеннями гри. |
 | [SCUM_item_codes_1.3.4.2.txt](downloads/SCUM_item_codes_1.3.4.2.txt){ download="SCUM_item_codes_1.3.4.2.txt" } | <span class="fl-st fl-wh-da">:material-database: Дані</span> | Усі 2 572 коди предметів версії гри 1.3.4.2, по одному в рядку (з команди `#ListItems`). |

@@ -44,11 +44,11 @@ Status: **Gültig** heißt, wir haben im Spiel geprüft, dass er funktioniert. *
 
 Die beiden Einstellungsdateien funktionieren überall gleich: Der Server liest sie beim Start. Stoppe also den Server, ersetze die Dateien und starte ihn neu.
 
-### Auf einem gemieteten Server
+### Gemieteter Server
 
-Lade bei einem gemieteten Server (zum Beispiel Nitrado) deine `ServerSettings.ini` und `EconomyOverride.json` über die Datei- oder Einstellungsseite des Anbieters hoch, während der Server gestoppt ist, und starte ihn dann neu. Die Oberflächen unterscheiden sich je nach Anbieter; schau in die Hilfe deines Anbieters, wo die Dateien hingehören.
+Lade bei einem gemieteten Server deine `ServerSettings.ini` und `EconomyOverride.json` über die Datei- oder Einstellungsseite des Anbieters hoch, während der Server gestoppt ist, und starte ihn dann neu. Die Oberflächen unterscheiden sich je nach Anbieter; schau in die Hilfe deines Anbieters, wo die Dateien hingehören.
 
-### Lokal und kostenlos
+### Lokaler Server [kostenlos]
 
 Ein lokaler Server auf deinem eigenen PC erlaubt es dir zum Beispiel, kostenlos online mit deinen Freunden zu spielen oder sogar deine Einstellungen und/oder Preise auszuprobieren, bevor ein größerer Server online geht:
 
@@ -77,7 +77,7 @@ Jede Datei gibt es in zwei Versionen, damit du sie vergleichen kannst. **FISTILA
 | Datei | Welche | Was es ist |
 |---|---|---|
 | [ServerSettings_FISTILAND.ini](downloads/ServerSettings_FISTILAND.ini){ download="ServerSettings_FISTILAND.ini" } | <span class="fl-st fl-wh-fl">:material-shield-star: FISTILAND</span> | Die Einstellungen des FISTILAND-Servers. |
-| [ServerSettings_SCUM.ini](downloads/ServerSettings_SCUM.ini){ download="ServerSettings_SCUM.ini" } | <span class="fl-st fl-wh-sc">:material-gamepad-variant: SCUM</span> | Die Datei, mit der ein neuer Nitrado-Server startet, unverändert. |
+| [ServerSettings_SCUM.ini](downloads/ServerSettings_SCUM.ini){ download="ServerSettings_SCUM.ini" } | <span class="fl-st fl-wh-sc">:material-gamepad-variant: SCUM</span> | Die Datei, mit der ein neuer gemieteter Server startet, unverändert. |
 | [EconomyOverride_FISTILAND.json](downloads/EconomyOverride_FISTILAND.json){ download="EconomyOverride_FISTILAND.json" } | <span class="fl-st fl-wh-fl">:material-shield-star: FISTILAND</span> | Händlereinstellungen von FISTILAND: keine Fame-Anforderung, Händler immer mit Ware und Geld, feste Preise. |
 | [EconomyOverride_SCUM.json](downloads/EconomyOverride_SCUM.json){ download="EconomyOverride_SCUM.json" } | <span class="fl-st fl-wh-sc">:material-gamepad-variant: SCUM</span> | Die Händlerdatei mit den Startwerten des Spiels. |
 | [SCUM_item_codes_1.3.4.2.txt](downloads/SCUM_item_codes_1.3.4.2.txt){ download="SCUM_item_codes_1.3.4.2.txt" } | <span class="fl-st fl-wh-da">:material-database: Daten</span> | Alle 2.572 Item-Codes der Spielversion 1.3.4.2, einer pro Zeile (aus dem Befehl `#ListItems`). |

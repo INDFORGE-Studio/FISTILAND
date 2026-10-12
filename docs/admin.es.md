@@ -44,11 +44,11 @@ Estado: **Válido** significa que comprobamos en el juego que funciona. **Sin ve
 
 Los dos archivos de ajustes funcionan igual en todas partes: el servidor los lee al iniciarse, así que detén el servidor, sustituye los archivos y vuelve a iniciarlo.
 
-### En un servidor alquilado
+### Servidor alquilado
 
-En un servidor alquilado (Nitrado, por ejemplo), sube tu `ServerSettings.ini` y tu `EconomyOverride.json` desde la página de archivos o de ajustes del proveedor, con el servidor detenido, y vuelve a iniciarlo. Las pantallas cambian de un proveedor a otro: consulta la ayuda de tu proveedor para saber dónde van los archivos.
+En un servidor alquilado, sube tu `ServerSettings.ini` y tu `EconomyOverride.json` desde la página de archivos o de ajustes del proveedor, con el servidor detenido, y vuelve a iniciarlo. Las pantallas cambian de un proveedor a otro: consulta la ayuda de tu proveedor para saber dónde van los archivos.
 
-### En local, gratis
+### Servidor local [gratis]
 
 Un servidor local en tu propio PC te permite, por ejemplo, jugar en línea gratis con tus amigos, o incluso probar tus ajustes y/o precios antes de poner en línea un servidor más grande:
 
@@ -77,7 +77,7 @@ Cada archivo existe en dos versiones, para poder compararlos. **FISTILAND** son 
 | Archivo | Cuál | Qué es |
 |---|---|---|
 | [ServerSettings_FISTILAND.ini](downloads/ServerSettings_FISTILAND.ini){ download="ServerSettings_FISTILAND.ini" } | <span class="fl-st fl-wh-fl">:material-shield-star: FISTILAND</span> | Los ajustes del servidor FISTILAND. |
-| [ServerSettings_SCUM.ini](downloads/ServerSettings_SCUM.ini){ download="ServerSettings_SCUM.ini" } | <span class="fl-st fl-wh-sc">:material-gamepad-variant: SCUM</span> | El archivo con el que empieza un servidor Nitrado nuevo, sin tocar. |
+| [ServerSettings_SCUM.ini](downloads/ServerSettings_SCUM.ini){ download="ServerSettings_SCUM.ini" } | <span class="fl-st fl-wh-sc">:material-gamepad-variant: SCUM</span> | El archivo con el que empieza un servidor alquilado nuevo, sin tocar. |
 | [EconomyOverride_FISTILAND.json](downloads/EconomyOverride_FISTILAND.json){ download="EconomyOverride_FISTILAND.json" } | <span class="fl-st fl-wh-fl">:material-shield-star: FISTILAND</span> | Ajustes de los comerciantes de FISTILAND: sin requisito de fama, comerciantes siempre con existencias y dinero, precios fijos. |
 | [EconomyOverride_SCUM.json](downloads/EconomyOverride_SCUM.json){ download="EconomyOverride_SCUM.json" } | <span class="fl-st fl-wh-sc">:material-gamepad-variant: SCUM</span> | El archivo de comerciantes con los valores de salida del juego. |
 | [SCUM_item_codes_1.3.4.2.txt](downloads/SCUM_item_codes_1.3.4.2.txt){ download="SCUM_item_codes_1.3.4.2.txt" } | <span class="fl-st fl-wh-da">:material-database: Datos</span> | Los 2.572 códigos de objetos de la versión 1.3.4.2 del juego, uno por línea (del comando `#ListItems`). |
