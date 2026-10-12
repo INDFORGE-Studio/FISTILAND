@@ -20,10 +20,10 @@ theme:
     - content.code.copy
 
 extra_javascript:
-  - javascripts/fl-copy-v2.js
+  - javascripts/fl-copy-v3.js
 
 extra_css:
-  - stylesheets/fistiland-v23.css
+  - stylesheets/fistiland-v24.css
 
 extra:
   social:
