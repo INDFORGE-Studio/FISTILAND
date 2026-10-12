@@ -342,7 +342,7 @@ Die Namen werden ohne das Präfix `scum.` angezeigt. Die Kategorieseiten erklär
 | Einstellung | Wert |
 |---|---|
 | `FlagOvertakeDuration` | `24:00:00` |
-| `MaximumAmountOfElementsPerFlag` | `200` |
+| `MaximumAmountOfElementsPerFlag` | `300` |
 | `ExtraElementsPerFlagForAdditionalSquadMember` | `17` |
 | `MaximumNumberOfExpandedElementsPerFlag` | `75` |
 | `AllowMultipleFlagsPerPlayer` | `True` |

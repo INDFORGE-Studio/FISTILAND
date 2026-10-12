@@ -10,7 +10,7 @@
 
 <div class="fl-facts">
 <div><b>3</b><span>Flaggen pro Spieler</span></div>
-<div><b>200</b><span>Elemente pro Flagge</span></div>
+<div><b>300</b><span>Elemente pro Flagge</span></div>
 <div><b>2</b><span>Geschütztürme pro Basis</span></div>
 <div><b>24 h</b><span>Flaggeneroberung</span></div>
 <div><b>8 h</b><span>Offline-Raid-Schutz</span></div>
@@ -34,7 +34,7 @@
 
 | Einstellung | Wert | Wirkung |
 |---|---|---|
-| `MaximumAmountOfElementsPerFlag` | 200 | Basiselemente, die in einen Flaggenbereich passen. |
+| `MaximumAmountOfElementsPerFlag` | 300 | Basiselemente, die in einen Flaggenbereich passen. |
 | `ExtraElementsPerFlagForAdditionalSquadMember` | 17 | Zusätzliche Elemente pro Flagge für jedes Truppmitglied nach dem ersten. |
 | `MaximumNumberOfExpandedElementsPerFlag` | 75 | Zusätzliche Elemente, die Basis-Erweiterungssets hinzufügen können. |
 | `TurretMaxAmountPerFlagArea` | 2 | Erlaubte Geschütztürme pro Flaggenbereich. |

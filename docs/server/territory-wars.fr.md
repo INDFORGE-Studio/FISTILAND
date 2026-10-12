@@ -10,7 +10,7 @@
 
 <div class="fl-facts">
 <div><b>3</b><span>Drapeaux par joueur</span></div>
-<div><b>200</b><span>Éléments par drapeau</span></div>
+<div><b>300</b><span>Éléments par drapeau</span></div>
 <div><b>2</b><span>Tourelles par base</span></div>
 <div><b>24 h</b><span>Capture de drapeau</span></div>
 <div><b>8 h</b><span>Protection hors ligne contre les raids</span></div>
@@ -34,7 +34,7 @@
 
 | Réglage | Valeur | Rôle |
 |---|---|---|
-| `MaximumAmountOfElementsPerFlag` | 200 | Éléments de base qui tiennent dans une zone de drapeau. |
+| `MaximumAmountOfElementsPerFlag` | 300 | Éléments de base qui tiennent dans une zone de drapeau. |
 | `ExtraElementsPerFlagForAdditionalSquadMember` | 17 | Éléments supplémentaires par drapeau pour chaque membre d'escouade après le premier. |
 | `MaximumNumberOfExpandedElementsPerFlag` | 75 | Éléments supplémentaires que les kits d'extension de base peuvent ajouter. |
 | `TurretMaxAmountPerFlagArea` | 2 | Tourelles autorisées par zone de drapeau. |

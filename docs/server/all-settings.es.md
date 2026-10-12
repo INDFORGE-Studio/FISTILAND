@@ -342,7 +342,7 @@ Los nombres se muestran sin el prefijo `scum.`. Las páginas por categoría expl
 | Ajuste | Valor |
 |---|---|
 | `FlagOvertakeDuration` | `24:00:00` |
-| `MaximumAmountOfElementsPerFlag` | `200` |
+| `MaximumAmountOfElementsPerFlag` | `300` |
 | `ExtraElementsPerFlagForAdditionalSquadMember` | `17` |
 | `MaximumNumberOfExpandedElementsPerFlag` | `75` |
 | `AllowMultipleFlagsPerPlayer` | `True` |

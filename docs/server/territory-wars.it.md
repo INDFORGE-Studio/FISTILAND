@@ -10,7 +10,7 @@
 
 <div class="fl-facts">
 <div><b>3</b><span>Bandiere per giocatore</span></div>
-<div><b>200</b><span>Elementi per bandiera</span></div>
+<div><b>300</b><span>Elementi per bandiera</span></div>
 <div><b>2</b><span>Torrette per base</span></div>
 <div><b>24 h</b><span>Cattura della bandiera</span></div>
 <div><b>8 h</b><span>Protezione offline dai raid</span></div>
@@ -34,7 +34,7 @@
 
 | Impostazione | Valore | Cosa fa |
 |---|---|---|
-| `MaximumAmountOfElementsPerFlag` | 200 | Elementi di base che stanno nell'area di una bandiera. |
+| `MaximumAmountOfElementsPerFlag` | 300 | Elementi di base che stanno nell'area di una bandiera. |
 | `ExtraElementsPerFlagForAdditionalSquadMember` | 17 | Elementi extra per bandiera per ogni membro della squadra dopo il primo. |
 | `MaximumNumberOfExpandedElementsPerFlag` | 75 | Elementi extra che i kit di espansione della base possono aggiungere. |
 | `TurretMaxAmountPerFlagArea` | 2 | Torrette consentite per area di bandiera. |

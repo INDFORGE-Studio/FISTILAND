@@ -10,7 +10,7 @@
 
 <div class="fl-facts">
 <div><b>3</b><span>Banderas por jugador</span></div>
-<div><b>200</b><span>Elementos por bandera</span></div>
+<div><b>300</b><span>Elementos por bandera</span></div>
 <div><b>2</b><span>Torretas por base</span></div>
 <div><b>24 h</b><span>Captura de bandera</span></div>
 <div><b>8 h</b><span>Protección sin conexión contra asaltos</span></div>
@@ -34,7 +34,7 @@
 
 | Ajuste | Valor | Qué hace |
 |---|---|---|
-| `MaximumAmountOfElementsPerFlag` | 200 | Elementos de base que caben en el área de una bandera. |
+| `MaximumAmountOfElementsPerFlag` | 300 | Elementos de base que caben en el área de una bandera. |
 | `ExtraElementsPerFlagForAdditionalSquadMember` | 17 | Elementos extra por bandera por cada miembro de la escuadra después del primero. |
 | `MaximumNumberOfExpandedElementsPerFlag` | 75 | Elementos extra que pueden añadir los kits de ampliación de base. |
 | `TurretMaxAmountPerFlagArea` | 2 | Torretas permitidas por área de bandera. |

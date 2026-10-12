@@ -342,7 +342,7 @@ Names are shown without the `scum.` prefix. The category pages explain the setti
 | Setting | Value |
 |---|---|
 | `FlagOvertakeDuration` | `24:00:00` |
-| `MaximumAmountOfElementsPerFlag` | `200` |
+| `MaximumAmountOfElementsPerFlag` | `300` |
 | `ExtraElementsPerFlagForAdditionalSquadMember` | `17` |
 | `MaximumNumberOfExpandedElementsPerFlag` | `75` |
 | `AllowMultipleFlagsPerPlayer` | `True` |

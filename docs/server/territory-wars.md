@@ -10,7 +10,7 @@
 
 <div class="fl-facts">
 <div><b>3</b><span>Flags per player</span></div>
-<div><b>200</b><span>Elements per flag</span></div>
+<div><b>300</b><span>Elements per flag</span></div>
 <div><b>2</b><span>Turrets per base</span></div>
 <div><b>24 h</b><span>Flag capture</span></div>
 <div><b>8 h</b><span>Offline raid protection</span></div>
@@ -34,7 +34,7 @@
 
 | Setting | Value | What it does |
 |---|---|---|
-| `MaximumAmountOfElementsPerFlag` | 200 | Base elements that fit in one flag area. |
+| `MaximumAmountOfElementsPerFlag` | 300 | Base elements that fit in one flag area. |
 | `ExtraElementsPerFlagForAdditionalSquadMember` | 17 | Extra elements per flag for each squad member after the first. |
 | `MaximumNumberOfExpandedElementsPerFlag` | 75 | Extra elements that base expansion kits can add. |
 | `TurretMaxAmountPerFlagArea` | 2 | Turrets allowed per flag area. |

@@ -10,7 +10,7 @@
 
 <div class="fl-facts">
 <div><b>3</b><span>Прапори на гравця</span></div>
-<div><b>200</b><span>Елементів на прапор</span></div>
+<div><b>300</b><span>Елементів на прапор</span></div>
 <div><b>2</b><span>Турелі на базу</span></div>
 <div><b>24 год</b><span>Захоплення прапора</span></div>
 <div><b>8 год</b><span>Офлайн-захист від рейдів</span></div>
@@ -34,7 +34,7 @@
 
 | Налаштування | Значення | Що воно робить |
 |---|---|---|
-| `MaximumAmountOfElementsPerFlag` | 200 | Елементи бази, що вміщуються в зону одного прапора. |
+| `MaximumAmountOfElementsPerFlag` | 300 | Елементи бази, що вміщуються в зону одного прапора. |
 | `ExtraElementsPerFlagForAdditionalSquadMember` | 17 | Додаткові елементи на прапор за кожного учасника загону після першого. |
 | `MaximumNumberOfExpandedElementsPerFlag` | 75 | Додаткові елементи, які можуть дати набори розширення бази. |
 | `TurretMaxAmountPerFlagArea` | 2 | Дозволені турелі на зону прапора. |
