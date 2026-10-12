@@ -1,381 +1,381 @@
-﻿date;outpost;shop;category;item;price_buy;stock;note
-2026-10-12;A_0;Armory;Assault rifles;AK-15;12800;99+;default
-2026-10-12;A_0;Armory;Assault rifles;AK-47;500;99+;our override (default price unknown)
-2026-10-12;A_0;Armory;Assault rifles;AK-47 engraved;19200;99+;default
-2026-10-12;A_0;Armory;Assault rifles;AKM;11200;99+;default
-2026-10-12;A_0;Armory;Assault rifles;AS Val;7200;99+;default
-2026-10-12;A_0;Armory;Assault rifles;M16A4;11200;99+;default
-2026-10-12;A_0;Armory;Assault rifles;MK18;12800;99+;default
-2026-10-12;A_0;Armory;Assault rifles;SCAR-L;11200;99+;default
-2026-10-12;A_0;Armory;Assault rifles;VHS 2;14400;99+;default
-2026-10-12;A_0;Armory;Assault rifles;VHS 2 CT;14400;99+;default
-2026-10-12;A_0;Armory;Assault rifles;VSS VZ;12800;99+;default
-2026-10-12;A_0;Armory;Rifles;AWM;16000;99+;default
-2026-10-12;A_0;Armory;Rifles;AWM Desert;16000;99+;default
-2026-10-12;A_0;Armory;Rifles;AWM Serpent;16000;99+;default
-2026-10-12;A_0;Armory;Rifles;AWM Green;16000;99+;default
-2026-10-12;A_0;Armory;Rifles;AWP;16000;99+;default
-2026-10-12;A_0;Armory;Rifles;AWP Desert;16000;99+;default
-2026-10-12;A_0;Armory;Rifles;AWP Serpent;16000;99+;default
-2026-10-12;A_0;Armory;Rifles;AWP Green;16000;99+;default
-2026-10-12;A_0;Armory;Rifles;M1 Rifle;9600;99+;default
-2026-10-12;A_0;Armory;Rifles;Kar98k;11200;99+;default
-2026-10-12;A_0;Armory;Rifles;M1891;9600;99+;default
-2026-10-12;A_0;Armory;Rifles;SCAR-DMR;17600;99+;default
-2026-10-12;A_0;Armory;Rifles;(name cut off, 13th item);11360;99+;default
-2026-10-12;A_0;Armory;Rifles;(name cut off, 14th item);24000;99+;default
-2026-10-12;A_0;Armory;SMGs;AKS-74U;8800;99+;default
-2026-10-12;A_0;Armory;SMGs;MAC-10;6400;99+;default
-2026-10-12;A_0;Armory;SMGs;MP5;6400;99+;default
-2026-10-12;A_0;Armory;SMGs;MP5 K;7200;99+;default
-2026-10-12;A_0;Armory;SMGs;MP5 SD;7200;99+;default
-2026-10-12;A_0;Armory;SMGs;Submachine gun (Thompson-style);6719;99+;default
-2026-10-12;A_0;Armory;SMGs;UMP-45;6400;99+;default
-2026-10-12;A_0;Armory;Machine guns;M249;20800;99+;default
-2026-10-12;A_0;Armory;Machine guns;RPK;19200;99+;default
-2026-10-12;A_0;Armory;Handguns;Block 21;1600;99+;default
-2026-10-12;A_0;Armory;Handguns;Block 21 Bay Riffer;1600;99+;default
-2026-10-12;A_0;Armory;Handguns;DEagle .357;2400;99+;default
-2026-10-12;A_0;Armory;Handguns;DEagle .50;3200;99+;default
-2026-10-12;A_0;Armory;Handguns;DEagle .50 gold;8000;99+;default
-2026-10-12;A_0;Armory;Handguns;HS SF19;4000;99+;default
-2026-10-12;A_0;Armory;Handguns;HS-9;3200;99+;default
-2026-10-12;A_0;Armory;Handguns;Judge .44;2400;99+;default
-2026-10-12;A_0;Armory;Handguns;Krueger;1600;99+;default
-2026-10-12;A_0;Armory;Handguns;M1911;1600;99+;default
-2026-10-12;A_0;Armory;Handguns;M1911 gold;4480;99+;default
-2026-10-12;A_0;Armory;Handguns;M1911 engraved;2640;99+;default
-2026-10-12;A_0;Armory;Handguns;(red M1911, name cut off);4480;99+;default
-2026-10-12;A_0;Armory;Handguns;(revolver, name cut off);1600;99+;default
-2026-10-12;A_0;Armory;Handguns;Flare pistol;800;99+;default
-2026-10-12;A_0;Armory;Handguns;Serpent 357;2400;99+;default
-2026-10-12;A_0;Armory;Handguns;TEC01 M9;1600;99+;default (silver)
-2026-10-12;A_0;Armory;Handguns;TEC01 M9;1600;99+;default (black)
-2026-10-12;A_0;Armory;Handguns;Viper M357;2400;99+;default
-2026-10-12;A_0;Armory;Shotguns;Trench gun;8000;99+;default
-2026-10-12;A_0;Armory;Shotguns;M1887;4800;99+;default
-2026-10-12;A_0;Armory;Shotguns;M1887 sawed-off;4800;99+;default
-2026-10-12;A_0;Armory;Shotguns;SDASS 12M;8000;99+;default
-2026-10-12;A_0;Armory;Shotguns;TEC01 490;6400;99+;default
-2026-10-12;A_0;Armory;Grenade launchers;VHS BG;14400;99+;default
-2026-10-12;A_0;Armory;Weapon parts;Parts AK-15;2640;99+;default
-2026-10-12;A_0;Armory;Weapon parts;Parts AK-47;2420;99+;default
-2026-10-12;A_0;Armory;Weapon parts;Parts AKM;2420;99+;default
-2026-10-12;A_0;Armory;Weapon parts;Parts AKS-74U;1540;99+;default
-2026-10-12;A_0;Armory;Weapon parts;Parts Trench gun;1540;99+;default
-2026-10-12;A_0;Armory;Weapon parts;Parts SKS;1837;99+;default
-2026-10-12;A_0;Armory;Weapon parts;Parts AS Val;1210;99+;default
-2026-10-12;A_0;Armory;Weapon parts;Parts AWM;3850;99+;default
-2026-10-12;A_0;Armory;Weapon parts;Parts AWP;3850;99+;default
-2026-10-12;A_0;Armory;Weapon parts;Parts UMP;1210;99+;default
-2026-10-12;A_0;Armory;Weapon parts;Parts Block 21;616;99+;default
-2026-10-12;A_0;Armory;Weapon parts;Parts DEagle .357;660;99+;default
-2026-10-12;A_0;Armory;Weapon parts;(parts, name cut off);825;99+;default
-2026-10-12;A_0;Armory;Weapon parts;(parts, name cut off);935;99+;default
-2026-10-12;A_0;Armory;Weapon parts;(parts, name cut off);880;99+;default
-2026-10-12;A_0;Armory;Weapon parts;Parts Judge 44;660;99+;default
-2026-10-12;A_0;Armory;Weapon parts;Parts Kar98k;2420;99+;default
-2026-10-12;A_0;Armory;Weapon parts;Parts Krueger;616;99+;default
-2026-10-12;A_0;Armory;Weapon parts;Parts M1;1540;99+;default
-2026-10-12;A_0;Armory;Weapon parts;Parts M16A4;2420;99+;default
-2026-10-12;A_0;Armory;Weapon parts;Parts M1887;880;99+;default
-2026-10-12;A_0;Armory;Weapon parts;Parts M1891;1540;99+;default
-2026-10-12;A_0;Armory;Weapon parts;Parts M1911;616;99+;default
-2026-10-12;A_0;Armory;Weapon parts;Parts M249;4070;99+;default
-2026-10-12;A_0;Armory;Weapon parts;Parts M82A1;6490;99+;default
-2026-10-12;A_0;Armory;Weapon parts;Parts M9;616;99+;default
-2026-10-12;A_0;Armory;Weapon parts;Parts MAC-10;1210;99+;default
-2026-10-12;A_0;Armory;Weapon parts;Parts MK18;2640;99+;default
-2026-10-12;A_0;Armory;Weapon parts;Parts MP5;1210;99+;default
-2026-10-12;A_0;Armory;Weapon parts;Parts PeaceKeeper 38;616;99+;default
-2026-10-12;A_0;Armory;Weapon parts;Parts Flare pistol;550;99+;default
-2026-10-12;A_0;Armory;Weapon parts;Parts RPG;8800;99+;default
-2026-10-12;A_0;Armory;Weapon parts;Parts RPK;3850;99+;default
-2026-10-12;A_0;Armory;Weapon parts;Parts SCAR-DMR;4400;99+;default
-2026-10-12;A_0;Armory;Weapon parts;Parts SCAR-L;2420;99+;default
-2026-10-12;A_0;Armory;Weapon parts;Parts SDASS;1540;99+;default
-2026-10-12;A_0;Armory;Weapon parts;Parts Serpent 357;660;99+;default
-2026-10-12;A_0;Armory;Weapon parts;Parts SVD;4400;99+;default
-2026-10-12;A_0;Armory;Weapon parts;Parts TEC01 490;1210;99+;default
-2026-10-12;A_0;Armory;Weapon parts;(parts, name cut off);2640;99+;default
-2026-10-12;A_0;Armory;Weapon parts;(parts, name cut off);2750;99+;default
-2026-10-12;A_0;Armory;Weapon parts;(parts, name cut off);660;99+;default
-2026-10-12;A_0;Armory;Weapon parts;Parts VSS VZ;2640;99+;default
-2026-10-12;A_0;Armory;Weapon parts;Parts Submachine gun (Thompson-style);1540;99+;default
-2026-10-12;A_0;Armory;Blunt melee;Blaze bat;2200;99+;default
-2026-10-12;A_0;Armory;Blunt melee;Baseball bat;440;99+;default
-2026-10-12;A_0;Armory;Blunt melee;Metal baseball bat;1100;99+;default
-2026-10-12;A_0;Armory;Blunt melee;Skull crusher;5500;99+;default
-2026-10-12;A_0;Armory;Blunt melee;Club;220;99+;default
-2026-10-12;A_0;Armory;Blunt melee;Sledgehammer (Masse);2200;99+;default
-2026-10-12;A_0;Armory;Blunt melee;Military shovel;1650;99+;default
-2026-10-12;A_0;Armory;Blunt melee;Brass knuckles;77;99+;default
-2026-10-12;A_0;Armory;Blunt melee;Tonfa;550;99+;default
-2026-10-12;A_0;Armory;Blades;EMpossible knife;550;99+;default
-2026-10-12;A_0;Armory;Blades;Hunter knife;440;99+;default
-2026-10-12;A_0;Armory;Blades;Medieval sword;3300;99+;default
-2026-10-12;A_0;Armory;Blades;Axe;1650;99+;default
-2026-10-12;A_0;Armory;Blades;Traynor hatchet;1650;99+;default
-2026-10-12;A_0;Armory;Blades;Karambit;440;99+;default
-2026-10-12;A_0;Armory;Blades;Karambit (2nd variant);440;99+;default
-2026-10-12;A_0;Armory;Blades;Katana;8800;99+;default
-2026-10-12;A_0;Armory;Blades;Vhendya katana;11000;99+;default
-2026-10-12;A_0;Armory;Blades;Kunai;330;99+;default
-2026-10-12;A_0;Armory;Blades;MK5000;440;99+;default
-2026-10-12;A_0;Armory;Blades;MK5000 (2nd variant);440;99+;default
-2026-10-12;A_0;Armory;Blades;(axe with wooden handle, name cut off);1100;99+;default
-2026-10-12;A_0;Armory;Blades;(long blade, name cut off);8800;99+;default
-2026-10-12;A_0;Armory;Blades;(long blade, name cut off);8800;99+;default
-2026-10-12;A_0;Armory;Blades;Black dragon tang dao;8800;99+;default
-2026-10-12;A_0;Armory;Blades;Military tomahawk;1650;99+;default
-2026-10-12;A_0;Armory;Blades;Zhan Ma Dao;8800;99+;default
-2026-10-12;A_0;Armory;Piercing melee;Wushu wooden spear;880;99+;default
-2026-10-12;A_0;Armory;Piercing melee;Wushu metal spear;880;99+;default
-2026-10-12;A_0;Armory;Piercing melee;Shuriken;330;99+;default
-2026-10-12;A_0;Armory;Ammo boxes;.22 box;200;99+;default
-2026-10-12;A_0;Armory;Ammo boxes;.22 tracer box;220;99+;default
-2026-10-12;A_0;Armory;Ammo boxes;.30-06 box;800;99+;default
-2026-10-12;A_0;Armory;Ammo boxes;.30-06 AP box;1200;99+;default
-2026-10-12;A_0;Armory;Ammo boxes;.30-06 tracer box;880;99+;default
-2026-10-12;A_0;Armory;Ammo boxes;.308 box;1200;99+;default
-2026-10-12;A_0;Armory;Ammo boxes;.308 AP box;2300;99+;default
-2026-10-12;A_0;Armory;Ammo boxes;.308 tracer box;1300;99+;default
-2026-10-12;A_0;Armory;Ammo boxes;.338 box;1400;99+;default
-2026-10-12;A_0;Armory;Ammo boxes;.338 tracer box;1500;99+;default
-2026-10-12;A_0;Armory;Ammo boxes;.338 AP box;2500;99+;default
-2026-10-12;A_0;Armory;Ammo boxes;.357 box;450;99+;default
-2026-10-12;A_0;Armory;Ammo boxes;.357 AP box;750;99+;default
-2026-10-12;A_0;Armory;Ammo boxes;.357 tracer box;510;99+;default
-2026-10-12;A_0;Armory;Ammo boxes;.38 box;450;99+;default (name cut off, deduced from neighbours)
-2026-10-12;A_0;Armory;Ammo boxes;.38 AP box;750;99+;default
-2026-10-12;A_0;Armory;Ammo boxes;.38 tracer box;510;99+;default
-2026-10-12;A_0;Armory;Ammo boxes;.44 box;600;99+;default
-2026-10-12;A_0;Armory;Ammo boxes;.44 AP box;900;99+;default
-2026-10-12;A_0;Armory;Ammo boxes;.44 tracer box;660;99+;default
-2026-10-12;A_0;Armory;Ammo boxes;.45 ACP box;600;99+;default
-2026-10-12;A_0;Armory;Ammo boxes;.45 ACP AP box;1200;99+;default
-2026-10-12;A_0;Armory;Ammo boxes;.45 ACP tracer box;660;99+;default
-2026-10-12;A_0;Armory;Ammo boxes;.50 AE box;750;99+;default
-2026-10-12;A_0;Armory;Ammo boxes;.50 AE AP box;1500;99+;default
-2026-10-12;A_0;Armory;Ammo boxes;.50 AE tracer box;840;99+;default
-2026-10-12;A_0;Armory;Ammo boxes;5.45x39 box;1050;99+;default
-2026-10-12;A_0;Armory;Ammo boxes;5.45x39 AP box;1500;99+;default
-2026-10-12;A_0;Armory;Ammo boxes;5.45x39 tracer box;1140;99+;default
-2026-10-12;A_0;Armory;Ammo boxes;5.56x45 box;1110;99+;default (name cut off, deduced)
-2026-10-12;A_0;Armory;Ammo boxes;5.56x45 AP box;1710;99+;default (price partly cut off, probably 1710)
-2026-10-12;A_0;Armory;Ammo boxes;5.56x45 tracer box;1230;99+;default
-2026-10-12;A_0;Armory;Ammo boxes;7.62x39 box;1200;99+;default
-2026-10-12;A_0;Armory;Ammo boxes;7.62x39 AP box;1800;99+;default
-2026-10-12;A_0;Armory;Ammo boxes;7.62x39 tracer box;1320;99+;default
-2026-10-12;A_0;Armory;Ammo boxes;7.62x54R box;2000;99+;default
-2026-10-12;A_0;Armory;Ammo boxes;7.62x54R AP box;4000;99+;default
-2026-10-12;A_0;Armory;Ammo boxes;7.62x54R tracer box;2200;99+;default
-2026-10-12;A_0;Armory;Ammo boxes;7.92x57 box;1000;99+;default
-2026-10-12;A_0;Armory;Ammo boxes;7.92x57 AP box;2100;99+;default
-2026-10-12;A_0;Armory;Ammo boxes;7.92x57 tracer box;1100;99+;default
-2026-10-12;A_0;Armory;Ammo boxes;9mm box;450;99+;default
-2026-10-12;A_0;Armory;Ammo boxes;9mm AP box;750;99+;default
-2026-10-12;A_0;Armory;Ammo boxes;9mm tracer box;510;99+;default
-2026-10-12;A_0;Armory;Ammo boxes;9x39 box;900;99+;default (name cut off, deduced)
-2026-10-12;A_0;Armory;Ammo boxes;9x39 AP box;1350;99+;default
-2026-10-12;A_0;Armory;Ammo boxes;9x39 tracer box;990;99+;default
-2026-10-12;A_0;Armory;Ammo boxes;Shotgun slug box;600;99+;default
-2026-10-12;A_0;Armory;Ammo boxes;Shotgun buckshot box;500;99+;default
-2026-10-12;A_0;Armory;Ammo boxes;Shotgun birdshot box;200;99+;default
-2026-10-12;A_0;Armory;Ammo boxes;Flare;5;99+;default
-2026-10-12;A_0;Armory;Magazines;M249 ammo box;1430;99+;default
-2026-10-12;A_0;Armory;Magazines;AK-15 magazine;660;99+;default
-2026-10-12;A_0;Armory;Magazines;AK-47 magazine;770;99+;default
-2026-10-12;A_0;Armory;Magazines;AKS-74U magazine;550;99+;default
-2026-10-12;A_0;Armory;Magazines;AS Val/VSS magazine;550;99+;default
-2026-10-12;A_0;Armory;Magazines;AWM magazine;1320;99+;default
-2026-10-12;A_0;Armory;Magazines;AWP magazine;1320;99+;default
-2026-10-12;A_0;Armory;Magazines;UMP-45 magazine;550;99+;default
-2026-10-12;A_0;Armory;Magazines;Block 21 magazine;330;99+;default
-2026-10-12;A_0;Armory;Magazines;DEagle .357 magazine;330;99+;default
-2026-10-12;A_0;Armory;Magazines;DEagle .50 magazine;330;99+;default
-2026-10-12;A_0;Armory;Magazines;HS SF19 magazine;440;99+;default
-2026-10-12;A_0;Armory;Magazines;(magazine, name cut off);440;99+;default
-2026-10-12;A_0;Armory;Magazines;(magazine, name cut off);330;99+;default
-2026-10-12;A_0;Armory;Magazines;(magazine, name cut off);440;99+;default
-2026-10-12;A_0;Armory;Magazines;M16 magazine;550;99+;default
-2026-10-12;A_0;Armory;Magazines;M1911 magazine;330;99+;default
-2026-10-12;A_0;Armory;Magazines;M9 magazine;330;99+;default
-2026-10-12;A_0;Armory;Magazines;MAC-10 magazine;550;99+;default
-2026-10-12;A_0;Armory;Magazines;MP5 magazine;550;99+;default
-2026-10-12;A_0;Armory;Magazines;RPK-74 magazine;1210;99+;default
-2026-10-12;A_0;Armory;Magazines;SCAR-DMR magazine;550;99+;default
-2026-10-12;A_0;Armory;Magazines;SVD magazine;1210;99+;default
-2026-10-12;A_0;Armory;Magazines;VHS 2 magazine;1100;99+;default
-2026-10-12;A_0;Armory;Magazines;SKS stripper clip;704;99+;default
-2026-10-12;A_0;Armory;Magazines;Submachine gun (Thompson-style) drum;1045;99+;default
-2026-10-12;A_0;Armory;Scopes;ACOG;2200;99+;default
-2026-10-12;A_0;Armory;Scopes;M1 scope;2200;99+;default
-2026-10-12;A_0;Armory;Scopes;P-223 scope;3300;99+;default
-2026-10-12;A_0;Armory;Scopes;PU scope;3300;99+;default
-2026-10-12;A_0;Armory;Scopes;Vampyr scope;6600;99+;default
-2026-10-12;A_0;Armory;Scopes;POSP 4x24V;4400;99+;default
-2026-10-12;A_0;Armory;Scopes;SpektralDR;3300;99+;default
-2026-10-12;A_0;Armory;Scopes;ZF39;3300;99+;default
-2026-10-12;A_0;Armory;Sights;M16A4 folding rear sight;550;99+;default
-2026-10-12;A_0;Armory;Sights;Red dot for Desert Eagle;1650;99+;default
-2026-10-12;A_0;Armory;Sights;M1 expanding sight;660;99+;default
-2026-10-12;A_0;Armory;Sights;OKP holographic sight;1650;99+;default
-2026-10-12;A_0;Armory;Sights;V3 holographic sight;1650;99+;default
-2026-10-12;A_0;Armory;Sights;XPS holographic sight;1650;99+;default
-2026-10-12;A_0;Armory;Sights;Red dot sight;1650;99+;default
-2026-10-12;A_0;Armory;Sights;AimPRO red dot sight;2200;99+;default
-2026-10-12;A_0;Armory;Sights;MRO red dot sight;1650;99+;default
-2026-10-12;A_0;Armory;Sights;Shark reflex sight;1870;99+;default
-2026-10-12;A_0;Armory;Sights;Snake reflex sight;1870;99+;default
-2026-10-12;A_0;Armory;Sights;Wasp reflex sight;1870;99+;default
-2026-10-12;A_0;Armory;Sights;Sentry RDRS sight;1870;99+;default
-2026-10-12;A_0;Armory;Suppressors;.308 round (name as shown, probably a .308 suppressor);2200;99+;default
-2026-10-12;A_0;Armory;Suppressors;M1 flash hider;550;99+;default
-2026-10-12;A_0;Armory;Suppressors;AK-15 suppressor;2200;99+;default
-2026-10-12;A_0;Armory;Suppressors;.30-06 suppressor;2200;99+;default
-2026-10-12;A_0;Armory;Suppressors;.338 suppressor;2200;99+;default
-2026-10-12;A_0;Armory;Suppressors;.338 brown suppressor;2200;99+;default
-2026-10-12;A_0;Armory;Suppressors;.338 green suppressor;2200;99+;default
-2026-10-12;A_0;Armory;Suppressors;.45 ACP suppressor;1430;99+;default
-2026-10-12;A_0;Armory;Suppressors;5.45x39 suppressor;2200;99+;default
-2026-10-12;A_0;Armory;Suppressors;12 gauge suppressor;2200;99+;default
-2026-10-12;A_0;Armory;Suppressors;Kar98k suppressor;2200;99+;default
-2026-10-12;A_0;Armory;Suppressors;M1 suppressor;2200;99+;default
-2026-10-12;A_0;Armory;Suppressors;M1891 suppressor;2200;99+;default
-2026-10-12;A_0;Armory;Suppressors;MAC-10 suppressor;1650;99+;default
-2026-10-12;A_0;Armory;Suppressors;MK18 suppressor;2200;99+;default
-2026-10-12;A_0;Armory;Suppressors;MP5 suppressor;1650;99+;default
-2026-10-12;A_0;Armory;Suppressors;Pistol suppressor;1100;99+;default
-2026-10-12;A_0;Armory;Suppressors;SVD suppressor;3850;99+;default
-2026-10-12;A_0;Armory;Weapon ghillies;Weapon ghillie (white);2200;99+;default
-2026-10-12;A_0;Armory;Weapon ghillies;Weapon ghillie (green);2200;99+;default
-2026-10-12;A_0;Armory;Weapon ghillies;Weapon ghillie (brown);2200;99+;default
-2026-10-12;A_0;Armory;Bayonets;Kar98k bayonet;2200;99+;default
-2026-10-12;A_0;Armory;Bayonets;M1 bayonet;2200;99+;default
-2026-10-12;A_0;Armory;Bayonets;M1891 bayonet;2200;99+;default
-2026-10-12;A_0;Armory;Bayonets;M70 bayonet;2200;99+;default
-2026-10-12;A_0;Armory;Bayonets;N9 bayonet;2200;99+;default
-2026-10-12;A_0;Armory;Bayonets;N9 bayonet (2nd variant);2200;99+;default
-2026-10-12;A_0;Armory;Bayonets;P17 bayonet;2200;99+;default
-2026-10-12;A_0;Armory;Bayonets;SKS bayonet;2200;99+;default
-2026-10-12;A_0;Armory;Bayonets;Military survival knife;2200;99+;default
-2026-10-12;A_0;Armory;Flashlights;AS Val/VSS flashlight;1100;99+;default
-2026-10-12;A_0;Armory;Flashlights;Desert Eagle flashlight;1100;99+;default
-2026-10-12;A_0;Armory;Flashlights;M9 flashlight;1100;99+;default
-2026-10-12;A_0;Armory;Flashlights;Improvised flashlight;1100;99+;default
-2026-10-12;A_0;Armory;Rails;M1911 rail;1650;99+;default
-2026-10-12;A_0;Armory;Rails;MP5 rail;1650;99+;default
-2026-10-12;A_0;Armory;Rails;Viper M357 rail;2200;99+;default
-2026-10-12;A_0;Armory;Rails;RIS rail;2200;99+;default
-2026-10-12;A_0;Armory;Grenades;M84 flash grenade;770;99+;default
-2026-10-12;A_0;Armory;Grenades;Smoke grenade (green);770;99+;default
-2026-10-12;A_0;Armory;Grenades;Smoke grenade (red);770;99+;default
-2026-10-12;A_0;Armory;Grenades;Smoke grenade (violet);770;99+;default
-2026-10-12;A_0;Armory;Grenades;Smoke grenade (yellow);770;99+;default
-2026-10-12;A_0;Armory;Grenades;Smoke grenade (white);770;99+;default
-2026-10-12;A_0;Armory;Grenades;Tear gas grenade;1100;99+;default
-2026-10-12;A_0;Armory;Mines;Training bomb;440;99+;default
-2026-10-12;A_0;Armory;Mines;Claymore;5500;99+;default
-2026-10-12;A_0;Armory;Mines;Anti-personnel mine;4400;99+;default
-2026-10-12;A_0;Armory;Mines;PROM-1 mine;3300;99+;default
-2026-10-12;A_0;Armory;Mines;Small anti-personnel mine;3300;99+;default
-2026-10-12;A_0;Armory;Clothing > Long sleeves (military menu, probably);Tactical shirt (grey, as seen);440;99+;default - all 8 variants share the same displayed name
-2026-10-12;A_0;Armory;Clothing > Long sleeves (military menu, probably);Tactical shirt (pink-green, as seen);440;99+;default - all 8 variants share the same displayed name
-2026-10-12;A_0;Armory;Clothing > Long sleeves (military menu, probably);Tactical shirt (white, as seen);440;99+;default - all 8 variants share the same displayed name
-2026-10-12;A_0;Armory;Clothing > Long sleeves (military menu, probably);Tactical shirt (tan, as seen);440;99+;default - all 8 variants share the same displayed name
-2026-10-12;A_0;Armory;Clothing > Long sleeves (military menu, probably);Tactical shirt (white-black, as seen);440;99+;default - all 8 variants share the same displayed name
-2026-10-12;A_0;Armory;Clothing > Long sleeves (military menu, probably);Tactical shirt (green-tan, as seen);440;99+;default - all 8 variants share the same displayed name
-2026-10-12;A_0;Armory;Clothing > Long sleeves (military menu, probably);Tactical shirt (blue-black, as seen);440;99+;default - all 8 variants share the same displayed name
-2026-10-12;A_0;Armory;Clothing > Long sleeves (military menu, probably);Tactical shirt (olive, as seen);440;99+;default - all 8 variants share the same displayed name
-2026-10-12;A_0;Armory;Military clothing > Holsters;Melee weapon holster;300;99+;default
-2026-10-12;A_0;Armory;Military clothing > Holsters;Tactical holster (variant 1);500;99+;default
-2026-10-12;A_0;Armory;Military clothing > Holsters;Tactical holster (variant 2);500;99+;default
-2026-10-12;A_0;Armory;Military clothing > Holsters;Tactical holster (variant 3);500;99+;default
-2026-10-12;A_0;Armory;Military clothing > Holsters;Tactical holster (variant 4);500;99+;default
-2026-10-12;A_0;Armory;Military clothing > Holsters;Tactical holster (variant 5);500;99+;default
-2026-10-12;A_0;Armory;Military clothing > Holsters;Tactical holster (variant 6);500;99+;default
-2026-10-12;A_0;Armory;Military clothing > Holsters;Tactical holster (variant 7);500;99+;default
-2026-10-12;A_0;Armory;Military clothing > Holsters;Tactical holster (variant 8);500;99+;default
-2026-10-12;A_0;Armory;Military clothing > Scarves;Shemagh (white-black);100;99+;default
-2026-10-12;A_0;Armory;Military clothing > Scarves;Shemagh (red-white);100;99+;default
-2026-10-12;A_0;Armory;Military clothing > Scarves;Shemagh (olive-black);100;99+;default
-2026-10-12;A_0;Armory;Military clothing > Scarves;Shemagh (tan);100;99+;default
-2026-10-12;A_0;Armory;Military clothing > Scarves;Shemagh (olive);100;99+;default
-2026-10-12;A_0;Armory;Military clothing > Scarves;Shemagh (red-black);100;99+;default
-2026-10-12;A_0;Armory;Military clothing > Scarves;Shemagh (camo-light);100;99+;default
-2026-10-12;A_0;Armory;Military clothing > Scarves;Shemagh (black-white);100;99+;default
-2026-10-12;A_0;Armory;Military clothing > Gloves;Police gloves;200;99+;default
-2026-10-12;A_0;Armory;Military clothing > Gloves;Tactical gloves (variant 1);200;99+;default
-2026-10-12;A_0;Armory;Military clothing > Gloves;Tactical gloves (variant 2);200;99+;default
-2026-10-12;A_0;Armory;Military clothing > Gloves;Tactical gloves (variant 3);200;99+;default
-2026-10-12;A_0;Armory;Military clothing > Gloves;Tactical gloves (variant 4);200;99+;default
-2026-10-12;A_0;Armory;Military clothing > Gloves;Tactical gloves (variant 5);200;99+;default
-2026-10-12;A_0;Armory;Military clothing > Gloves;Tactical gloves (variant 6);200;99+;default
-2026-10-12;A_0;Armory;Military clothing > Gloves;Tactical gloves (variant 7);200;99+;default
-2026-10-12;A_0;Armory;Military clothing > Gloves;Tactical gloves (variant 8);200;99+;default
-2026-10-12;A_0;Armory;Military clothing > Headwear > Hats;Beret;330;99+;default (6 colour variants)
-2026-10-12;A_0;Armory;Military clothing > Headwear > Hats;Beanie;110;99+;default (8 variants)
-2026-10-12;A_0;Armory;Military clothing > Headwear > Hats;Police beanie;110;99+;default (1 variant)
-2026-10-12;A_0;Armory;Military clothing > Headwear > Hats;Navy cap;220;99+;default (8 variants)
-2026-10-12;A_0;Armory;Military clothing > Headwear > Hats;Police cap;220;99+;default (1 variant)
-2026-10-12;A_0;Armory;Military clothing > Headwear > Hats;Military garrison cap (cheap model);100;99+;default (5 variants)
-2026-10-12;A_0;Armory;Military clothing > Headwear > Hats;Military cap;220;99+;default (8 variants)
-2026-10-12;A_0;Armory;Military clothing > Headwear > Hats;Fishing hat;220;99+;default (8 variants)
-2026-10-12;A_0;Armory;Military clothing > Headwear > Hats;Police hat;220;99+;default (1 variant)
-2026-10-12;A_0;Armory;Military clothing > Headwear > Hats;Slouch hat (Chapeau mou);220;99+;default (2 variants)
-2026-10-12;A_0;Armory;Military clothing > Headwear > Hats;Camouflage slouch hat;220;99+;default (6 variants)
-2026-10-12;A_0;Armory;Military clothing > Headwear > Gas masks;Gas mask (black);1650;99+;default
-2026-10-12;A_0;Armory;Military clothing > Headwear > Gas masks;Gas mask (pink);4400;99+;default
-2026-10-12;A_0;Armory;Military clothing > Headwear > Gas masks;Gas mask (white);1650;99+;default
-2026-10-12;A_0;Armory;Military clothing > Headwear > Gas masks;Gas mask (green);1100;99+;default
-2026-10-12;A_0;Armory;Military clothing > Headwear > Balaclavas;Balaclava (variant 1);110;99+;default
-2026-10-12;A_0;Armory;Military clothing > Headwear > Balaclavas;Balaclava (variant 2);110;99+;default
-2026-10-12;A_0;Armory;Military clothing > Headwear > Balaclavas;Balaclava (variant 3);110;99+;default
-2026-10-12;A_0;Armory;Military clothing > Headwear > Balaclavas;Balaclava (variant 4);110;99+;default
-2026-10-12;A_0;Armory;Military clothing > Headwear > Balaclavas;Balaclava (variant 5);110;99+;default
-2026-10-12;A_0;Armory;Military clothing > Headwear > Balaclavas;Balaclava (variant 6);110;99+;default
-2026-10-12;A_0;Armory;Military clothing > Headwear > Balaclavas;Balaclava (variant 7);110;99+;default
-2026-10-12;A_0;Armory;Military clothing > Headwear > Balaclavas;Balaclava (variant 8);110;99+;default
-2026-10-12;A_0;Armory;Military clothing > Headwear > Balaclavas;Balaclava (variant 9);110;99+;default
-2026-10-12;A_0;Armory;Military clothing > Headwear > Eyewear;Night vision goggles;5500;99+;default
-2026-10-12;A_0;Armory;Military clothing > Headwear > Eyewear;Military glasses (dark);660;99+;default
-2026-10-12;A_0;Armory;Military clothing > Headwear > Eyewear;Military glasses;440;99+;default
-2026-10-12;A_0;Armory;Military clothing > Tops > Short sleeves;Shirt;110;99+;default (3 variants)
-2026-10-12;A_0;Armory;Military clothing > Tops > Short sleeves;Military shirt;110;99+;default (6 variants)
-2026-10-12;A_0;Armory;Military clothing > Tops > Short sleeves;Tactical vest (chest rig);110;99+;default (1 variant)
-2026-10-12;A_0;Armory;Military clothing > Tops > Short sleeves;Sleeveless top;110;99+;default (2 variants)
-2026-10-12;A_0;Armory;Military clothing > Tops > Short sleeves;Camouflage sleeveless top;110;99+;default (5 variants)
-2026-10-12;A_0;Armory;Military clothing > Tops > Short sleeves;Camouflage sleeveless top (black-white);100;99+;default (1 variant)
-2026-10-12;A_0;Armory;Military clothing > Tops > Jackets;Camouflage jacket;1100;99+;default (3 variants)
-2026-10-12;A_0;Armory;Military clothing > Tops > Jackets;Tactical jacket;1320;99+;default (9 variants)
-2026-10-12;A_0;Armory;Military clothing > Tops > Ghillies;Ghillie suit top (green, white, desert, black);3300;99+;default (4 variants)
-2026-10-12;A_0;Armory;Military clothing > Tops > Ghillies;Ghillie suit top (pink);11000;99+;default (1 variant)
-2026-10-12;A_0;Armory;Military clothing > Pants > Tactical;Military tactical pants;660;99+;default (9 variants)
-2026-10-12;A_0;Armory;Military clothing > Pants > Tactical;Military tactical pants (green camo);100;99+;default (1 variant)
-2026-10-12;A_0;Armory;Military clothing > Pants > Shorts;Long shorts;330;99+;default (5 variants)
-2026-10-12;A_0;Armory;Military clothing > Pants > Ghillies;Ghillie suit bottom (green, white, desert, black);3300;99+;default (4 variants)
-2026-10-12;A_0;Armory;Military clothing > Pants > Ghillies;Ghillie suit bottom (pink);11000;99+;default (1 variant)
-2026-10-12;A_0;Armory;Military clothing > Boots;Combat boots;1200;99+;default (1 variant)
-2026-10-12;A_0;Armory;Military clothing > Boots;Military boots;1200;99+;default (1 variant (black))
-2026-10-12;A_0;Armory;Military clothing > Boots;Military boots (pink);4000;99+;default (1 variant)
-2026-10-12;A_0;Armory;Military clothing > Backpacks;Assault backpack;1200;99+;default (9 camo variants)
-2026-10-12;A_0;Armory;Military clothing > Backpacks;Police assault backpack;1200;99+;default (1 variant)
-2026-10-12;A_0;Armory;Military clothing > Backpacks;Parachute;7200;99+;default (1 variant)
-2026-10-12;A_0;Armory;Military clothing > Backpacks;Hiking backpack (camouflage);1800;99+;default (6 variants)
-2026-10-12;A_0;Armory;Military clothing > Backpacks;Police hiking backpack;1800;99+;default (1 variant)
-2026-10-12;A_0;Armory;Crafting materials;CD player;1650;99+;default
-2026-10-12;A_0;Armory;Crafting materials;Black powder;330;99+;default
-2026-10-12;A_0;Armory;Repair;Weapon maintenance kit;6500;99+;default
-2026-10-12;A_0;Armory;Other;Geiger counter;6000;99+;default
-2026-10-12;A_0;Armory;Other;Recoil radar (Radar de recul);660;99+;default
-2026-10-12;A_0;Armory;Other;Respirator;2200;99+;default
-2026-10-12;A_0;Armory;Armor > Vests;Reinforced tactical vest;2400;99+;default (6 variants)
-2026-10-12;A_0;Armory;Armor > Vests;Bulletproof vest;1440;99+;default (6 variants)
-2026-10-12;A_0;Armory;Armor > Vests;Protection vest;720;99+;default (9 variants)
-2026-10-12;A_0;Armory;Armor > Helmets;K6-3 helmet;1200;99+;default (1 variant)
-2026-10-12;A_0;Armory;Armor > Helmets;Military helmet;960;99+;default (9 variants)
-2026-10-12;A_0;Armory;Armor > Helmets;Vietnam helmet;1200;99+;default (1 variant)
-2026-10-12;A_0;Armory;Armor > Helmets;M1 medic helmet;1200;99+;default (1 variant)
-2026-10-12;A_0;Armory;Armor > Helmets;Stahlhelm;1200;99+;default (1 variant)
-2026-10-12;A_0;Armory;Armor > Helmets;Combat helmet;1440;99+;default (4 variants)
+﻿outpost;shop;category;item;price_buy;stock;note
+A_0;Armory;Assault rifles;AK-15;12800;99+;default
+A_0;Armory;Assault rifles;AK-47;;99+;default price unknown
+A_0;Armory;Assault rifles;AK-47 engraved;19200;99+;default
+A_0;Armory;Assault rifles;AKM;11200;99+;default
+A_0;Armory;Assault rifles;AS Val;7200;99+;default
+A_0;Armory;Assault rifles;M16A4;11200;99+;default
+A_0;Armory;Assault rifles;MK18;12800;99+;default
+A_0;Armory;Assault rifles;SCAR-L;11200;99+;default
+A_0;Armory;Assault rifles;VHS 2;14400;99+;default
+A_0;Armory;Assault rifles;VHS 2 CT;14400;99+;default
+A_0;Armory;Assault rifles;VSS VZ;12800;99+;default
+A_0;Armory;Rifles;AWM;16000;99+;default
+A_0;Armory;Rifles;AWM Desert;16000;99+;default
+A_0;Armory;Rifles;AWM Serpent;16000;99+;default
+A_0;Armory;Rifles;AWM Green;16000;99+;default
+A_0;Armory;Rifles;AWP;16000;99+;default
+A_0;Armory;Rifles;AWP Desert;16000;99+;default
+A_0;Armory;Rifles;AWP Serpent;16000;99+;default
+A_0;Armory;Rifles;AWP Green;16000;99+;default
+A_0;Armory;Rifles;M1 Rifle;9600;99+;default
+A_0;Armory;Rifles;Kar98k;11200;99+;default
+A_0;Armory;Rifles;M1891;9600;99+;default
+A_0;Armory;Rifles;SCAR-DMR;17600;99+;default
+A_0;Armory;Rifles;(name cut off, 13th item);11360;99+;default
+A_0;Armory;Rifles;(name cut off, 14th item);24000;99+;default
+A_0;Armory;SMGs;AKS-74U;8800;99+;default
+A_0;Armory;SMGs;MAC-10;6400;99+;default
+A_0;Armory;SMGs;MP5;6400;99+;default
+A_0;Armory;SMGs;MP5 K;7200;99+;default
+A_0;Armory;SMGs;MP5 SD;7200;99+;default
+A_0;Armory;SMGs;Submachine gun (Thompson-style);6719;99+;default
+A_0;Armory;SMGs;UMP-45;6400;99+;default
+A_0;Armory;Machine guns;M249;20800;99+;default
+A_0;Armory;Machine guns;RPK;19200;99+;default
+A_0;Armory;Handguns;Block 21;1600;99+;default
+A_0;Armory;Handguns;Block 21 Bay Riffer;1600;99+;default
+A_0;Armory;Handguns;DEagle .357;2400;99+;default
+A_0;Armory;Handguns;DEagle .50;3200;99+;default
+A_0;Armory;Handguns;DEagle .50 gold;8000;99+;default
+A_0;Armory;Handguns;HS SF19;4000;99+;default
+A_0;Armory;Handguns;HS-9;3200;99+;default
+A_0;Armory;Handguns;Judge .44;2400;99+;default
+A_0;Armory;Handguns;Krueger;1600;99+;default
+A_0;Armory;Handguns;M1911;1600;99+;default
+A_0;Armory;Handguns;M1911 gold;4480;99+;default
+A_0;Armory;Handguns;M1911 engraved;2640;99+;default
+A_0;Armory;Handguns;(red M1911, name cut off);4480;99+;default
+A_0;Armory;Handguns;(revolver, name cut off);1600;99+;default
+A_0;Armory;Handguns;Flare pistol;800;99+;default
+A_0;Armory;Handguns;Serpent 357;2400;99+;default
+A_0;Armory;Handguns;TEC01 M9;1600;99+;default (silver)
+A_0;Armory;Handguns;TEC01 M9;1600;99+;default (black)
+A_0;Armory;Handguns;Viper M357;2400;99+;default
+A_0;Armory;Shotguns;Trench gun;8000;99+;default
+A_0;Armory;Shotguns;M1887;4800;99+;default
+A_0;Armory;Shotguns;M1887 sawed-off;4800;99+;default
+A_0;Armory;Shotguns;SDASS 12M;8000;99+;default
+A_0;Armory;Shotguns;TEC01 490;6400;99+;default
+A_0;Armory;Grenade launchers;VHS BG;14400;99+;default
+A_0;Armory;Weapon parts;Parts AK-15;2640;99+;default
+A_0;Armory;Weapon parts;Parts AK-47;2420;99+;default
+A_0;Armory;Weapon parts;Parts AKM;2420;99+;default
+A_0;Armory;Weapon parts;Parts AKS-74U;1540;99+;default
+A_0;Armory;Weapon parts;Parts Trench gun;1540;99+;default
+A_0;Armory;Weapon parts;Parts SKS;1837;99+;default
+A_0;Armory;Weapon parts;Parts AS Val;1210;99+;default
+A_0;Armory;Weapon parts;Parts AWM;3850;99+;default
+A_0;Armory;Weapon parts;Parts AWP;3850;99+;default
+A_0;Armory;Weapon parts;Parts UMP;1210;99+;default
+A_0;Armory;Weapon parts;Parts Block 21;616;99+;default
+A_0;Armory;Weapon parts;Parts DEagle .357;660;99+;default
+A_0;Armory;Weapon parts;(parts, name cut off);825;99+;default
+A_0;Armory;Weapon parts;(parts, name cut off);935;99+;default
+A_0;Armory;Weapon parts;(parts, name cut off);880;99+;default
+A_0;Armory;Weapon parts;Parts Judge 44;660;99+;default
+A_0;Armory;Weapon parts;Parts Kar98k;2420;99+;default
+A_0;Armory;Weapon parts;Parts Krueger;616;99+;default
+A_0;Armory;Weapon parts;Parts M1;1540;99+;default
+A_0;Armory;Weapon parts;Parts M16A4;2420;99+;default
+A_0;Armory;Weapon parts;Parts M1887;880;99+;default
+A_0;Armory;Weapon parts;Parts M1891;1540;99+;default
+A_0;Armory;Weapon parts;Parts M1911;616;99+;default
+A_0;Armory;Weapon parts;Parts M249;4070;99+;default
+A_0;Armory;Weapon parts;Parts M82A1;6490;99+;default
+A_0;Armory;Weapon parts;Parts M9;616;99+;default
+A_0;Armory;Weapon parts;Parts MAC-10;1210;99+;default
+A_0;Armory;Weapon parts;Parts MK18;2640;99+;default
+A_0;Armory;Weapon parts;Parts MP5;1210;99+;default
+A_0;Armory;Weapon parts;Parts PeaceKeeper 38;616;99+;default
+A_0;Armory;Weapon parts;Parts Flare pistol;550;99+;default
+A_0;Armory;Weapon parts;Parts RPG;8800;99+;default
+A_0;Armory;Weapon parts;Parts RPK;3850;99+;default
+A_0;Armory;Weapon parts;Parts SCAR-DMR;4400;99+;default
+A_0;Armory;Weapon parts;Parts SCAR-L;2420;99+;default
+A_0;Armory;Weapon parts;Parts SDASS;1540;99+;default
+A_0;Armory;Weapon parts;Parts Serpent 357;660;99+;default
+A_0;Armory;Weapon parts;Parts SVD;4400;99+;default
+A_0;Armory;Weapon parts;Parts TEC01 490;1210;99+;default
+A_0;Armory;Weapon parts;(parts, name cut off);2640;99+;default
+A_0;Armory;Weapon parts;(parts, name cut off);2750;99+;default
+A_0;Armory;Weapon parts;(parts, name cut off);660;99+;default
+A_0;Armory;Weapon parts;Parts VSS VZ;2640;99+;default
+A_0;Armory;Weapon parts;Parts Submachine gun (Thompson-style);1540;99+;default
+A_0;Armory;Blunt melee;Blaze bat;2200;99+;default
+A_0;Armory;Blunt melee;Baseball bat;440;99+;default
+A_0;Armory;Blunt melee;Metal baseball bat;1100;99+;default
+A_0;Armory;Blunt melee;Skull crusher;5500;99+;default
+A_0;Armory;Blunt melee;Club;220;99+;default
+A_0;Armory;Blunt melee;Sledgehammer (Masse);2200;99+;default
+A_0;Armory;Blunt melee;Military shovel;1650;99+;default
+A_0;Armory;Blunt melee;Brass knuckles;77;99+;default
+A_0;Armory;Blunt melee;Tonfa;550;99+;default
+A_0;Armory;Blades;EMpossible knife;550;99+;default
+A_0;Armory;Blades;Hunter knife;440;99+;default
+A_0;Armory;Blades;Medieval sword;3300;99+;default
+A_0;Armory;Blades;Axe;1650;99+;default
+A_0;Armory;Blades;Traynor hatchet;1650;99+;default
+A_0;Armory;Blades;Karambit;440;99+;default
+A_0;Armory;Blades;Karambit (2nd variant);440;99+;default
+A_0;Armory;Blades;Katana;8800;99+;default
+A_0;Armory;Blades;Vhendya katana;11000;99+;default
+A_0;Armory;Blades;Kunai;330;99+;default
+A_0;Armory;Blades;MK5000;440;99+;default
+A_0;Armory;Blades;MK5000 (2nd variant);440;99+;default
+A_0;Armory;Blades;(axe with wooden handle, name cut off);1100;99+;default
+A_0;Armory;Blades;(long blade, name cut off);8800;99+;default
+A_0;Armory;Blades;(long blade, name cut off);8800;99+;default
+A_0;Armory;Blades;Black dragon tang dao;8800;99+;default
+A_0;Armory;Blades;Military tomahawk;1650;99+;default
+A_0;Armory;Blades;Zhan Ma Dao;8800;99+;default
+A_0;Armory;Piercing melee;Wushu wooden spear;880;99+;default
+A_0;Armory;Piercing melee;Wushu metal spear;880;99+;default
+A_0;Armory;Piercing melee;Shuriken;330;99+;default
+A_0;Armory;Ammo boxes;.22 box;200;99+;default
+A_0;Armory;Ammo boxes;.22 tracer box;220;99+;default
+A_0;Armory;Ammo boxes;.30-06 box;800;99+;default
+A_0;Armory;Ammo boxes;.30-06 AP box;1200;99+;default
+A_0;Armory;Ammo boxes;.30-06 tracer box;880;99+;default
+A_0;Armory;Ammo boxes;.308 box;1200;99+;default
+A_0;Armory;Ammo boxes;.308 AP box;2300;99+;default
+A_0;Armory;Ammo boxes;.308 tracer box;1300;99+;default
+A_0;Armory;Ammo boxes;.338 box;1400;99+;default
+A_0;Armory;Ammo boxes;.338 tracer box;1500;99+;default
+A_0;Armory;Ammo boxes;.338 AP box;2500;99+;default
+A_0;Armory;Ammo boxes;.357 box;450;99+;default
+A_0;Armory;Ammo boxes;.357 AP box;750;99+;default
+A_0;Armory;Ammo boxes;.357 tracer box;510;99+;default
+A_0;Armory;Ammo boxes;.38 box;450;99+;default (name cut off, deduced from neighbours)
+A_0;Armory;Ammo boxes;.38 AP box;750;99+;default
+A_0;Armory;Ammo boxes;.38 tracer box;510;99+;default
+A_0;Armory;Ammo boxes;.44 box;600;99+;default
+A_0;Armory;Ammo boxes;.44 AP box;900;99+;default
+A_0;Armory;Ammo boxes;.44 tracer box;660;99+;default
+A_0;Armory;Ammo boxes;.45 ACP box;600;99+;default
+A_0;Armory;Ammo boxes;.45 ACP AP box;1200;99+;default
+A_0;Armory;Ammo boxes;.45 ACP tracer box;660;99+;default
+A_0;Armory;Ammo boxes;.50 AE box;750;99+;default
+A_0;Armory;Ammo boxes;.50 AE AP box;1500;99+;default
+A_0;Armory;Ammo boxes;.50 AE tracer box;840;99+;default
+A_0;Armory;Ammo boxes;5.45x39 box;1050;99+;default
+A_0;Armory;Ammo boxes;5.45x39 AP box;1500;99+;default
+A_0;Armory;Ammo boxes;5.45x39 tracer box;1140;99+;default
+A_0;Armory;Ammo boxes;5.56x45 box;1110;99+;default (name cut off, deduced)
+A_0;Armory;Ammo boxes;5.56x45 AP box;1710;99+;default (price partly cut off, probably 1710)
+A_0;Armory;Ammo boxes;5.56x45 tracer box;1230;99+;default
+A_0;Armory;Ammo boxes;7.62x39 box;1200;99+;default
+A_0;Armory;Ammo boxes;7.62x39 AP box;1800;99+;default
+A_0;Armory;Ammo boxes;7.62x39 tracer box;1320;99+;default
+A_0;Armory;Ammo boxes;7.62x54R box;2000;99+;default
+A_0;Armory;Ammo boxes;7.62x54R AP box;4000;99+;default
+A_0;Armory;Ammo boxes;7.62x54R tracer box;2200;99+;default
+A_0;Armory;Ammo boxes;7.92x57 box;1000;99+;default
+A_0;Armory;Ammo boxes;7.92x57 AP box;2100;99+;default
+A_0;Armory;Ammo boxes;7.92x57 tracer box;1100;99+;default
+A_0;Armory;Ammo boxes;9mm box;450;99+;default
+A_0;Armory;Ammo boxes;9mm AP box;750;99+;default
+A_0;Armory;Ammo boxes;9mm tracer box;510;99+;default
+A_0;Armory;Ammo boxes;9x39 box;900;99+;default (name cut off, deduced)
+A_0;Armory;Ammo boxes;9x39 AP box;1350;99+;default
+A_0;Armory;Ammo boxes;9x39 tracer box;990;99+;default
+A_0;Armory;Ammo boxes;Shotgun slug box;600;99+;default
+A_0;Armory;Ammo boxes;Shotgun buckshot box;500;99+;default
+A_0;Armory;Ammo boxes;Shotgun birdshot box;200;99+;default
+A_0;Armory;Ammo boxes;Flare;5;99+;default
+A_0;Armory;Magazines;M249 ammo box;1430;99+;default
+A_0;Armory;Magazines;AK-15 magazine;660;99+;default
+A_0;Armory;Magazines;AK-47 magazine;770;99+;default
+A_0;Armory;Magazines;AKS-74U magazine;550;99+;default
+A_0;Armory;Magazines;AS Val/VSS magazine;550;99+;default
+A_0;Armory;Magazines;AWM magazine;1320;99+;default
+A_0;Armory;Magazines;AWP magazine;1320;99+;default
+A_0;Armory;Magazines;UMP-45 magazine;550;99+;default
+A_0;Armory;Magazines;Block 21 magazine;330;99+;default
+A_0;Armory;Magazines;DEagle .357 magazine;330;99+;default
+A_0;Armory;Magazines;DEagle .50 magazine;330;99+;default
+A_0;Armory;Magazines;HS SF19 magazine;440;99+;default
+A_0;Armory;Magazines;(magazine, name cut off);440;99+;default
+A_0;Armory;Magazines;(magazine, name cut off);330;99+;default
+A_0;Armory;Magazines;(magazine, name cut off);440;99+;default
+A_0;Armory;Magazines;M16 magazine;550;99+;default
+A_0;Armory;Magazines;M1911 magazine;330;99+;default
+A_0;Armory;Magazines;M9 magazine;330;99+;default
+A_0;Armory;Magazines;MAC-10 magazine;550;99+;default
+A_0;Armory;Magazines;MP5 magazine;550;99+;default
+A_0;Armory;Magazines;RPK-74 magazine;1210;99+;default
+A_0;Armory;Magazines;SCAR-DMR magazine;550;99+;default
+A_0;Armory;Magazines;SVD magazine;1210;99+;default
+A_0;Armory;Magazines;VHS 2 magazine;1100;99+;default
+A_0;Armory;Magazines;SKS stripper clip;704;99+;default
+A_0;Armory;Magazines;Submachine gun (Thompson-style) drum;1045;99+;default
+A_0;Armory;Scopes;ACOG;2200;99+;default
+A_0;Armory;Scopes;M1 scope;2200;99+;default
+A_0;Armory;Scopes;P-223 scope;3300;99+;default
+A_0;Armory;Scopes;PU scope;3300;99+;default
+A_0;Armory;Scopes;Vampyr scope;6600;99+;default
+A_0;Armory;Scopes;POSP 4x24V;4400;99+;default
+A_0;Armory;Scopes;SpektralDR;3300;99+;default
+A_0;Armory;Scopes;ZF39;3300;99+;default
+A_0;Armory;Sights;M16A4 folding rear sight;550;99+;default
+A_0;Armory;Sights;Red dot for Desert Eagle;1650;99+;default
+A_0;Armory;Sights;M1 expanding sight;660;99+;default
+A_0;Armory;Sights;OKP holographic sight;1650;99+;default
+A_0;Armory;Sights;V3 holographic sight;1650;99+;default
+A_0;Armory;Sights;XPS holographic sight;1650;99+;default
+A_0;Armory;Sights;Red dot sight;1650;99+;default
+A_0;Armory;Sights;AimPRO red dot sight;2200;99+;default
+A_0;Armory;Sights;MRO red dot sight;1650;99+;default
+A_0;Armory;Sights;Shark reflex sight;1870;99+;default
+A_0;Armory;Sights;Snake reflex sight;1870;99+;default
+A_0;Armory;Sights;Wasp reflex sight;1870;99+;default
+A_0;Armory;Sights;Sentry RDRS sight;1870;99+;default
+A_0;Armory;Suppressors;.308 round (name as shown, probably a .308 suppressor);2200;99+;default
+A_0;Armory;Suppressors;M1 flash hider;550;99+;default
+A_0;Armory;Suppressors;AK-15 suppressor;2200;99+;default
+A_0;Armory;Suppressors;.30-06 suppressor;2200;99+;default
+A_0;Armory;Suppressors;.338 suppressor;2200;99+;default
+A_0;Armory;Suppressors;.338 brown suppressor;2200;99+;default
+A_0;Armory;Suppressors;.338 green suppressor;2200;99+;default
+A_0;Armory;Suppressors;.45 ACP suppressor;1430;99+;default
+A_0;Armory;Suppressors;5.45x39 suppressor;2200;99+;default
+A_0;Armory;Suppressors;12 gauge suppressor;2200;99+;default
+A_0;Armory;Suppressors;Kar98k suppressor;2200;99+;default
+A_0;Armory;Suppressors;M1 suppressor;2200;99+;default
+A_0;Armory;Suppressors;M1891 suppressor;2200;99+;default
+A_0;Armory;Suppressors;MAC-10 suppressor;1650;99+;default
+A_0;Armory;Suppressors;MK18 suppressor;2200;99+;default
+A_0;Armory;Suppressors;MP5 suppressor;1650;99+;default
+A_0;Armory;Suppressors;Pistol suppressor;1100;99+;default
+A_0;Armory;Suppressors;SVD suppressor;3850;99+;default
+A_0;Armory;Weapon ghillies;Weapon ghillie (white);2200;99+;default
+A_0;Armory;Weapon ghillies;Weapon ghillie (green);2200;99+;default
+A_0;Armory;Weapon ghillies;Weapon ghillie (brown);2200;99+;default
+A_0;Armory;Bayonets;Kar98k bayonet;2200;99+;default
+A_0;Armory;Bayonets;M1 bayonet;2200;99+;default
+A_0;Armory;Bayonets;M1891 bayonet;2200;99+;default
+A_0;Armory;Bayonets;M70 bayonet;2200;99+;default
+A_0;Armory;Bayonets;N9 bayonet;2200;99+;default
+A_0;Armory;Bayonets;N9 bayonet (2nd variant);2200;99+;default
+A_0;Armory;Bayonets;P17 bayonet;2200;99+;default
+A_0;Armory;Bayonets;SKS bayonet;2200;99+;default
+A_0;Armory;Bayonets;Military survival knife;2200;99+;default
+A_0;Armory;Flashlights;AS Val/VSS flashlight;1100;99+;default
+A_0;Armory;Flashlights;Desert Eagle flashlight;1100;99+;default
+A_0;Armory;Flashlights;M9 flashlight;1100;99+;default
+A_0;Armory;Flashlights;Improvised flashlight;1100;99+;default
+A_0;Armory;Rails;M1911 rail;1650;99+;default
+A_0;Armory;Rails;MP5 rail;1650;99+;default
+A_0;Armory;Rails;Viper M357 rail;2200;99+;default
+A_0;Armory;Rails;RIS rail;2200;99+;default
+A_0;Armory;Grenades;M84 flash grenade;770;99+;default
+A_0;Armory;Grenades;Smoke grenade (green);770;99+;default
+A_0;Armory;Grenades;Smoke grenade (red);770;99+;default
+A_0;Armory;Grenades;Smoke grenade (violet);770;99+;default
+A_0;Armory;Grenades;Smoke grenade (yellow);770;99+;default
+A_0;Armory;Grenades;Smoke grenade (white);770;99+;default
+A_0;Armory;Grenades;Tear gas grenade;1100;99+;default
+A_0;Armory;Mines;Training bomb;440;99+;default
+A_0;Armory;Mines;Claymore;5500;99+;default
+A_0;Armory;Mines;Anti-personnel mine;4400;99+;default
+A_0;Armory;Mines;PROM-1 mine;3300;99+;default
+A_0;Armory;Mines;Small anti-personnel mine;3300;99+;default
+A_0;Armory;Clothing > Long sleeves (military menu, probably);Tactical shirt (grey, as seen);440;99+;default - all 8 variants share the same displayed name
+A_0;Armory;Clothing > Long sleeves (military menu, probably);Tactical shirt (pink-green, as seen);440;99+;default - all 8 variants share the same displayed name
+A_0;Armory;Clothing > Long sleeves (military menu, probably);Tactical shirt (white, as seen);440;99+;default - all 8 variants share the same displayed name
+A_0;Armory;Clothing > Long sleeves (military menu, probably);Tactical shirt (tan, as seen);440;99+;default - all 8 variants share the same displayed name
+A_0;Armory;Clothing > Long sleeves (military menu, probably);Tactical shirt (white-black, as seen);440;99+;default - all 8 variants share the same displayed name
+A_0;Armory;Clothing > Long sleeves (military menu, probably);Tactical shirt (green-tan, as seen);440;99+;default - all 8 variants share the same displayed name
+A_0;Armory;Clothing > Long sleeves (military menu, probably);Tactical shirt (blue-black, as seen);440;99+;default - all 8 variants share the same displayed name
+A_0;Armory;Clothing > Long sleeves (military menu, probably);Tactical shirt (olive, as seen);440;99+;default - all 8 variants share the same displayed name
+A_0;Armory;Military clothing > Holsters;Melee weapon holster;300;99+;default
+A_0;Armory;Military clothing > Holsters;Tactical holster (variant 1);500;99+;default
+A_0;Armory;Military clothing > Holsters;Tactical holster (variant 2);500;99+;default
+A_0;Armory;Military clothing > Holsters;Tactical holster (variant 3);500;99+;default
+A_0;Armory;Military clothing > Holsters;Tactical holster (variant 4);500;99+;default
+A_0;Armory;Military clothing > Holsters;Tactical holster (variant 5);500;99+;default
+A_0;Armory;Military clothing > Holsters;Tactical holster (variant 6);500;99+;default
+A_0;Armory;Military clothing > Holsters;Tactical holster (variant 7);500;99+;default
+A_0;Armory;Military clothing > Holsters;Tactical holster (variant 8);500;99+;default
+A_0;Armory;Military clothing > Scarves;Shemagh (white-black);100;99+;default
+A_0;Armory;Military clothing > Scarves;Shemagh (red-white);100;99+;default
+A_0;Armory;Military clothing > Scarves;Shemagh (olive-black);100;99+;default
+A_0;Armory;Military clothing > Scarves;Shemagh (tan);100;99+;default
+A_0;Armory;Military clothing > Scarves;Shemagh (olive);100;99+;default
+A_0;Armory;Military clothing > Scarves;Shemagh (red-black);100;99+;default
+A_0;Armory;Military clothing > Scarves;Shemagh (camo-light);100;99+;default
+A_0;Armory;Military clothing > Scarves;Shemagh (black-white);100;99+;default
+A_0;Armory;Military clothing > Gloves;Police gloves;200;99+;default
+A_0;Armory;Military clothing > Gloves;Tactical gloves (variant 1);200;99+;default
+A_0;Armory;Military clothing > Gloves;Tactical gloves (variant 2);200;99+;default
+A_0;Armory;Military clothing > Gloves;Tactical gloves (variant 3);200;99+;default
+A_0;Armory;Military clothing > Gloves;Tactical gloves (variant 4);200;99+;default
+A_0;Armory;Military clothing > Gloves;Tactical gloves (variant 5);200;99+;default
+A_0;Armory;Military clothing > Gloves;Tactical gloves (variant 6);200;99+;default
+A_0;Armory;Military clothing > Gloves;Tactical gloves (variant 7);200;99+;default
+A_0;Armory;Military clothing > Gloves;Tactical gloves (variant 8);200;99+;default
+A_0;Armory;Military clothing > Headwear > Hats;Beret;330;99+;default (6 colour variants)
+A_0;Armory;Military clothing > Headwear > Hats;Beanie;110;99+;default (8 variants)
+A_0;Armory;Military clothing > Headwear > Hats;Police beanie;110;99+;default (1 variant)
+A_0;Armory;Military clothing > Headwear > Hats;Navy cap;220;99+;default (8 variants)
+A_0;Armory;Military clothing > Headwear > Hats;Police cap;220;99+;default (1 variant)
+A_0;Armory;Military clothing > Headwear > Hats;Military garrison cap (cheap model);100;99+;default (5 variants)
+A_0;Armory;Military clothing > Headwear > Hats;Military cap;220;99+;default (8 variants)
+A_0;Armory;Military clothing > Headwear > Hats;Fishing hat;220;99+;default (8 variants)
+A_0;Armory;Military clothing > Headwear > Hats;Police hat;220;99+;default (1 variant)
+A_0;Armory;Military clothing > Headwear > Hats;Slouch hat (Chapeau mou);220;99+;default (2 variants)
+A_0;Armory;Military clothing > Headwear > Hats;Camouflage slouch hat;220;99+;default (6 variants)
+A_0;Armory;Military clothing > Headwear > Gas masks;Gas mask (black);1650;99+;default
+A_0;Armory;Military clothing > Headwear > Gas masks;Gas mask (pink);4400;99+;default
+A_0;Armory;Military clothing > Headwear > Gas masks;Gas mask (white);1650;99+;default
+A_0;Armory;Military clothing > Headwear > Gas masks;Gas mask (green);1100;99+;default
+A_0;Armory;Military clothing > Headwear > Balaclavas;Balaclava (variant 1);110;99+;default
+A_0;Armory;Military clothing > Headwear > Balaclavas;Balaclava (variant 2);110;99+;default
+A_0;Armory;Military clothing > Headwear > Balaclavas;Balaclava (variant 3);110;99+;default
+A_0;Armory;Military clothing > Headwear > Balaclavas;Balaclava (variant 4);110;99+;default
+A_0;Armory;Military clothing > Headwear > Balaclavas;Balaclava (variant 5);110;99+;default
+A_0;Armory;Military clothing > Headwear > Balaclavas;Balaclava (variant 6);110;99+;default
+A_0;Armory;Military clothing > Headwear > Balaclavas;Balaclava (variant 7);110;99+;default
+A_0;Armory;Military clothing > Headwear > Balaclavas;Balaclava (variant 8);110;99+;default
+A_0;Armory;Military clothing > Headwear > Balaclavas;Balaclava (variant 9);110;99+;default
+A_0;Armory;Military clothing > Headwear > Eyewear;Night vision goggles;5500;99+;default
+A_0;Armory;Military clothing > Headwear > Eyewear;Military glasses (dark);660;99+;default
+A_0;Armory;Military clothing > Headwear > Eyewear;Military glasses;440;99+;default
+A_0;Armory;Military clothing > Tops > Short sleeves;Shirt;110;99+;default (3 variants)
+A_0;Armory;Military clothing > Tops > Short sleeves;Military shirt;110;99+;default (6 variants)
+A_0;Armory;Military clothing > Tops > Short sleeves;Tactical vest (chest rig);110;99+;default (1 variant)
+A_0;Armory;Military clothing > Tops > Short sleeves;Sleeveless top;110;99+;default (2 variants)
+A_0;Armory;Military clothing > Tops > Short sleeves;Camouflage sleeveless top;110;99+;default (5 variants)
+A_0;Armory;Military clothing > Tops > Short sleeves;Camouflage sleeveless top (black-white);100;99+;default (1 variant)
+A_0;Armory;Military clothing > Tops > Jackets;Camouflage jacket;1100;99+;default (3 variants)
+A_0;Armory;Military clothing > Tops > Jackets;Tactical jacket;1320;99+;default (9 variants)
+A_0;Armory;Military clothing > Tops > Ghillies;Ghillie suit top (green, white, desert, black);3300;99+;default (4 variants)
+A_0;Armory;Military clothing > Tops > Ghillies;Ghillie suit top (pink);11000;99+;default (1 variant)
+A_0;Armory;Military clothing > Pants > Tactical;Military tactical pants;660;99+;default (9 variants)
+A_0;Armory;Military clothing > Pants > Tactical;Military tactical pants (green camo);100;99+;default (1 variant)
+A_0;Armory;Military clothing > Pants > Shorts;Long shorts;330;99+;default (5 variants)
+A_0;Armory;Military clothing > Pants > Ghillies;Ghillie suit bottom (green, white, desert, black);3300;99+;default (4 variants)
+A_0;Armory;Military clothing > Pants > Ghillies;Ghillie suit bottom (pink);11000;99+;default (1 variant)
+A_0;Armory;Military clothing > Boots;Combat boots;1200;99+;default (1 variant)
+A_0;Armory;Military clothing > Boots;Military boots;1200;99+;default (1 variant (black))
+A_0;Armory;Military clothing > Boots;Military boots (pink);4000;99+;default (1 variant)
+A_0;Armory;Military clothing > Backpacks;Assault backpack;1200;99+;default (9 camo variants)
+A_0;Armory;Military clothing > Backpacks;Police assault backpack;1200;99+;default (1 variant)
+A_0;Armory;Military clothing > Backpacks;Parachute;7200;99+;default (1 variant)
+A_0;Armory;Military clothing > Backpacks;Hiking backpack (camouflage);1800;99+;default (6 variants)
+A_0;Armory;Military clothing > Backpacks;Police hiking backpack;1800;99+;default (1 variant)
+A_0;Armory;Crafting materials;CD player;1650;99+;default
+A_0;Armory;Crafting materials;Black powder;330;99+;default
+A_0;Armory;Repair;Weapon maintenance kit;6500;99+;default
+A_0;Armory;Other;Geiger counter;6000;99+;default
+A_0;Armory;Other;Recoil radar (Radar de recul);660;99+;default
+A_0;Armory;Other;Respirator;2200;99+;default
+A_0;Armory;Armor > Vests;Reinforced tactical vest;2400;99+;default (6 variants)
+A_0;Armory;Armor > Vests;Bulletproof vest;1440;99+;default (6 variants)
+A_0;Armory;Armor > Vests;Protection vest;720;99+;default (9 variants)
+A_0;Armory;Armor > Helmets;K6-3 helmet;1200;99+;default (1 variant)
+A_0;Armory;Armor > Helmets;Military helmet;960;99+;default (9 variants)
+A_0;Armory;Armor > Helmets;Vietnam helmet;1200;99+;default (1 variant)
+A_0;Armory;Armor > Helmets;M1 medic helmet;1200;99+;default (1 variant)
+A_0;Armory;Armor > Helmets;Stahlhelm;1200;99+;default (1 variant)
+A_0;Armory;Armor > Helmets;Combat helmet;1440;99+;default (4 variants)
