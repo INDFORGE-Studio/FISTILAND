@@ -1,0 +1,62 @@
+<div class="fl-page-hero fl-bg-d" markdown>
+
+:material-shield-crown:
+
+# Guida admin
+
+<p>Tutto ciò che abbiamo verificato gestendo un server SCUM, in un unico posto. Scritta per la versione 1.3.4.2 del gioco.</p>
+
+</div>
+
+<div class="fl-facts">
+<div><b>1.3.4.2</b><span>Versione del gioco</span></div>
+<div><b>2.572</b><span>Codici oggetto</span></div>
+<div><b>7779</b><span>Porta di connessione diretta (locale)</span></div>
+<div><b>2 file</b><span>Impostazioni + economia</span></div>
+</div>
+
+
+## :material-key: Diventare admin
+
+Aggiungi il tuo SteamID64 (17 cifre, si trova su steamid.io) in `AdminUsers.ini`, uno per riga. Il file viene letto all'avvio del server, quindi riavvialo dopo la modifica. Poi scrivi i comandi nella chat di gioco, con un `#` davanti.
+
+## :material-console: Comandi della chat
+
+Stato: **Testato** significa che l'abbiamo eseguito sul nostro server. **Segnalato** significa che una guida pubblica lo descrive e che non l'abbiamo testato.
+
+| Comando | Cosa fa | Stato |
+|---|---|---|
+| `#ListPlayers` | Elenca i giocatori online. | Testato |
+| `#ListItems` | Scrive tutti i codici oggetto della tua versione (2.572 in 1.3.4.2) nel log del gioco. | Testato |
+| `#spawnitem Apple` | Ti dà un oggetto dal suo codice. | Testato |
+| `#SetCurrencyBalance Normal 10000 NomeGiocatore` | Imposta i soldi di un giocatore. | Testato |
+| `#ChangeCurrencyBalance Gold 5 NomeGiocatore` | Cambia l'oro di un giocatore. | Testato |
+| `#NightBrightness 1` | Luminosità della notte, da 0 (buio) a 1 (chiaro). Solo per te, non per tutto il server. | Testato |
+| `#SetTime 12` | Imposta l'ora del giorno, da 0 a 24. | Testato |
+| `#ListZombies`, `#ListAnimals` | Elenca i tipi di zombie e di animali. | Testato |
+| `#ListSpawnedVehicles`, `#ListSpawnedArmedNPCs` | Elenca ciò che è vivo nel mondo. Il risultato appare solo nella chat, non nel log. | Testato |
+| `#MapTeleport` | Teletrasporto tramite la mappa. | In elenco, non testato |
+| `#SetImmortality true` / `false` | Immunità ai danni, attivata e poi disattivata. | Segnalato |
+| `#SetFamePoints 500 NomeGiocatore` | Imposta i punti fama di un giocatore. | Segnalato |
+| `#SetGodMode` | Costruzione istantanea, non invulnerabilità. | Segnalato |
+| `#heal` | Non esiste in 1.3.4.2. | Non disponibile |
+
+## :material-monitor: Avviare un server di test locale gratuito
+
+1. In Steam, installa lo strumento gratuito **SCUM Server**.
+2. Copia il tuo `ServerSettings.ini` e il tuo `EconomyOverride.json` nella cartella `SCUM\Saved\Config\WindowsServer` dello strumento. Aggiungi `[TEST]` al nome del server per riconoscerlo.
+3. Avvia `SCUMServer.exe -log -port=7777` da `SCUM\Binaries\Win64`. Il caricamento della mappa richiede circa due minuti.
+4. Nel gioco, apri la casella di connessione diretta e inserisci `127.0.0.1:7779`. La porta 7777 lì non funziona.
+5. Ferma il server con Ctrl+C nella sua finestra.
+
+Il log del server è `SCUM\Saved\Logs\SCUM.log` nella cartella dello strumento. Il log del tuo gioco, dove compaiono i risultati dei comandi, è in `%LOCALAPPDATA%\SCUM\Saved\Logs`.
+
+## :material-file-cog: File delle impostazioni
+
+| File | Cosa contiene |
+|---|---|
+| `ServerSettings.ini` | Tutte le impostazioni del server (440 chiavi, testo ASCII). |
+| `EconomyOverride.json` | Impostazioni dei mercanti e prezzi per oggetto. Ogni valore è scritto come testo tra virgolette. |
+| `AdminUsers.ini` | Gli admin, un SteamID64 per riga. |
+
+Vedi le [pagine delle impostazioni](server/overview.md) per cosa fa ogni valore su FISTILAND.
