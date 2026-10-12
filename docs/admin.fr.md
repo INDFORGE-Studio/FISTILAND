@@ -28,7 +28,7 @@ Statut : **Testée** veut dire que nous l'avons lancée sur notre serveur. **Sig
 |---|---|---|
 | `#ListPlayers` | Liste les joueurs en ligne. | Testée |
 | `#ListItems` | Affiche tous les codes d'objets de votre version (2 572 en 1.3.4.2) dans le journal du jeu. | Testée |
-| `#spawnitem Apple` | Vous donne un objet à partir de son code. | Testée |
+| `#spawnitem Apple`, `#spawnitem Water_05l` | Vous donne un objet à partir de son code. | Testée |
 | `#SetCurrencyBalance Normal 10000 NomDuJoueur` | Fixe l'argent d'un joueur. | Testée |
 | `#ChangeCurrencyBalance Gold 5 NomDuJoueur` | Modifie l'or d'un joueur. | Testée |
 | `#NightBrightness 1` | Luminosité de la nuit, de 0 (sombre) à 1 (clair). Pour vous seulement, pas pour tout le serveur. | Testée |

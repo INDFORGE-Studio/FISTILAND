@@ -28,7 +28,7 @@ Stato: **Testato** significa che l'abbiamo eseguito sul nostro server. **Segnala
 |---|---|---|
 | `#ListPlayers` | Elenca i giocatori online. | Testato |
 | `#ListItems` | Scrive tutti i codici oggetto della tua versione (2.572 in 1.3.4.2) nel log del gioco. | Testato |
-| `#spawnitem Apple` | Ti dà un oggetto dal suo codice. | Testato |
+| `#spawnitem Apple`, `#spawnitem Water_05l` | Ti dà un oggetto dal suo codice. | Testato |
 | `#SetCurrencyBalance Normal 10000 NomeGiocatore` | Imposta i soldi di un giocatore. | Testato |
 | `#ChangeCurrencyBalance Gold 5 NomeGiocatore` | Cambia l'oro di un giocatore. | Testato |
 | `#NightBrightness 1` | Luminosità della notte, da 0 (buio) a 1 (chiaro). Solo per te, non per tutto il server. | Testato |

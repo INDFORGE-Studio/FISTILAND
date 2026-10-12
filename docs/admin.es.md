@@ -28,7 +28,7 @@ Estado: **Probado** significa que lo ejecutamos en nuestro servidor. **Indicado*
 |---|---|---|
 | `#ListPlayers` | Lista los jugadores conectados. | Probado |
 | `#ListItems` | Escribe todos los códigos de objetos de tu versión (2.572 en 1.3.4.2) en el registro del juego. | Probado |
-| `#spawnitem Apple` | Te da un objeto a partir de su código. | Probado |
+| `#spawnitem Apple`, `#spawnitem Water_05l` | Te da un objeto a partir de su código. | Probado |
 | `#SetCurrencyBalance Normal 10000 NombreDelJugador` | Fija el dinero de un jugador. | Probado |
 | `#ChangeCurrencyBalance Gold 5 NombreDelJugador` | Cambia el oro de un jugador. | Probado |
 | `#NightBrightness 1` | Brillo de la noche, de 0 (oscuro) a 1 (claro). Solo para ti, no para todo el servidor. | Probado |

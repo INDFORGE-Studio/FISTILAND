@@ -28,7 +28,7 @@ Status: **Tested** means we ran it on our server. **Reported** means a public gu
 |---|---|---|
 | `#ListPlayers` | Lists the players online. | Tested |
 | `#ListItems` | Prints every item code of your game version (2,572 on 1.3.4.2) in the game's log file. | Tested |
-| `#spawnitem Apple` | Gives you an item from its code. | Tested |
+| `#spawnitem Apple`, `#spawnitem Water_05l` | Gives you an item from its code. | Tested |
 | `#SetCurrencyBalance Normal 10000 PlayerName` | Sets the money of a player. | Tested |
 | `#ChangeCurrencyBalance Gold 5 PlayerName` | Changes the gold of a player. | Tested |
 | `#NightBrightness 1` | Night brightness, from 0 (dark) to 1 (bright). Only for you, not the whole server. | Tested |
