@@ -12,7 +12,7 @@
 <div><b>1.3.4.2</b><span>Version du jeu</span></div>
 <div><b>2 572</b><span>Codes d'objets</span></div>
 <div><b>7779</b><span>Port de connexion directe (local)</span></div>
-<div><b>2 fichiers</b><span>Réglages + économie</span></div>
+<div><b>6 fichiers</b><span>À télécharger</span></div>
 </div>
 
 

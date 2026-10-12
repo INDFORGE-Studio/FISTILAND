@@ -12,7 +12,7 @@
 <div><b>1.3.4.2</b><span>Spielversion</span></div>
 <div><b>2.572</b><span>Item-Codes</span></div>
 <div><b>7779</b><span>Port für direkte Verbindung (lokal)</span></div>
-<div><b>2 Dateien</b><span>Einstellungen + Wirtschaft</span></div>
+<div><b>6 Dateien</b><span>Zum Download</span></div>
 </div>
 
 

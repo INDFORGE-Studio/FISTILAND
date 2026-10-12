@@ -12,7 +12,7 @@
 <div><b>1.3.4.2</b><span>Versión del juego</span></div>
 <div><b>2.572</b><span>Códigos de objetos</span></div>
 <div><b>7779</b><span>Puerto de conexión directa (local)</span></div>
-<div><b>2 archivos</b><span>Ajustes + economía</span></div>
+<div><b>6 archivos</b><span>Para descargar</span></div>
 </div>
 
 

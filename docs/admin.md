@@ -12,7 +12,7 @@
 <div><b>1.3.4.2</b><span>Game version</span></div>
 <div><b>2,572</b><span>Item codes</span></div>
 <div><b>7779</b><span>Direct connect port (local)</span></div>
-<div><b>2 files</b><span>Settings + economy</span></div>
+<div><b>6 files</b><span>To download</span></div>
 </div>
 
 
