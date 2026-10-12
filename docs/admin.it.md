@@ -43,6 +43,16 @@ Stato: **Testato** significa che l'abbiamo eseguito sul nostro server. **Segnala
 
 ## :material-monitor: Avviare e gestire un server SCUM: su uno dedicato o in locale gratis
 
+I due file delle impostazioni funzionano allo stesso modo ovunque: il server li legge all'avvio, quindi ferma il server, sostituisci i file e riavvialo.
+
+### Su un server dedicato
+
+Su un server a noleggio (per esempio Nitrado), carica il tuo `ServerSettings.ini` e il tuo `EconomyOverride.json` dalla pagina dei file o delle impostazioni del provider, a server fermo, poi riavvialo. Le schermate cambiano da un provider all'altro: controlla l'aiuto del tuo provider per sapere dove vanno i file.
+
+### In locale, gratis
+
+Un server di test gratuito sul tuo PC ti permette di provare impostazioni e prezzi prima di metterli online:
+
 1. In Steam, installa lo strumento gratuito **SCUM Server**.
 2. Copia il tuo `ServerSettings.ini` e il tuo `EconomyOverride.json` nella cartella `SCUM\Saved\Config\WindowsServer` dello strumento. Aggiungi `[TEST]` al nome del server per riconoscerlo.
 3. Avvia `SCUMServer.exe -log -port=7777` da `SCUM\Binaries\Win64`. Il caricamento della mappa richiede circa due minuti.

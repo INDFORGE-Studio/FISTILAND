@@ -43,6 +43,16 @@ Estado: **Probado** significa que lo ejecutamos en nuestro servidor. **Indicado*
 
 ## :material-monitor: Lanzar y mantener un servidor de SCUM: en uno dedicado o en local gratis
 
+Los dos archivos de ajustes funcionan igual en todas partes: el servidor los lee al iniciarse, así que detén el servidor, sustituye los archivos y vuelve a iniciarlo.
+
+### En un servidor dedicado
+
+En un servidor alquilado (Nitrado, por ejemplo), sube tu `ServerSettings.ini` y tu `EconomyOverride.json` desde la página de archivos o de ajustes del proveedor, con el servidor detenido, y vuelve a iniciarlo. Las pantallas cambian de un proveedor a otro: consulta la ayuda de tu proveedor para saber dónde van los archivos.
+
+### En local, gratis
+
+Un servidor de prueba gratuito en tu propio PC te permite probar tus ajustes y precios antes de publicarlos:
+
 1. En Steam, instala la herramienta gratuita **SCUM Server**.
 2. Copia tu `ServerSettings.ini` y tu `EconomyOverride.json` en la carpeta `SCUM\Saved\Config\WindowsServer` de la herramienta. Añade `[TEST]` al nombre del servidor para reconocerlo.
 3. Inicia `SCUMServer.exe -log -port=7777` desde `SCUM\Binaries\Win64`. Cargar el mapa tarda unos dos minutos.

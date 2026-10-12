@@ -43,6 +43,16 @@ Statut : **Testée** veut dire que nous l'avons lancée sur notre serveur. **Sig
 
 ## :material-monitor: Lancer et faire tourner un serveur SCUM : sur un dédié ou en local gratuitement
 
+Les deux fichiers de réglages fonctionnent de la même façon partout : le serveur les lit au démarrage, donc arrêtez le serveur, remplacez les fichiers, puis relancez-le.
+
+### Sur un serveur dédié
+
+Sur un serveur loué (Nitrado, par exemple), envoyez vos `ServerSettings.ini` et `EconomyOverride.json` par la page de fichiers ou de réglages de l'hébergeur, serveur arrêté, puis relancez-le. Les écrans changent d'un hébergeur à l'autre : consultez l'aide de votre hébergeur pour savoir où déposer les fichiers.
+
+### En local, gratuitement
+
+Un serveur de test gratuit sur votre propre PC permet d'essayer vos réglages et vos prix avant de les mettre en ligne :
+
 1. Dans Steam, installez l'outil gratuit **SCUM Server**.
 2. Copiez votre `ServerSettings.ini` et votre `EconomyOverride.json` dans le dossier `SCUM\Saved\Config\WindowsServer` de l'outil. Ajoutez `[TEST]` au nom du serveur pour le repérer.
 3. Lancez `SCUMServer.exe -log -port=7777` depuis `SCUM\Binaries\Win64`. Le chargement de la carte prend environ deux minutes.

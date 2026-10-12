@@ -43,6 +43,16 @@ Status: **Tested** means we ran it on our server. **Reported** means a public gu
 
 ## :material-monitor: Launch and run a SCUM server: on a dedicated host or locally for free
 
+The two settings files work the same way everywhere: the server reads them when it starts, so stop the server, replace the files, then start it again.
+
+### On a dedicated server
+
+On a rented server (Nitrado, for example), upload your `ServerSettings.ini` and `EconomyOverride.json` through the host's file or settings page while the server is stopped, then start it again. The screens differ from one host to another, so check your host's help for where the files go.
+
+### Locally, for free
+
+A free test server on your own PC lets you try your settings and prices before they go live:
+
 1. In Steam, install the free **SCUM Server** tool.
 2. Copy your `ServerSettings.ini` and `EconomyOverride.json` into the folder `SCUM\Saved\Config\WindowsServer` of the tool. Add `[TEST]` to the server name so you spot it.
 3. Start `SCUMServer.exe -log -port=7777` from `SCUM\Binaries\Win64`. Loading the map takes about two minutes.
