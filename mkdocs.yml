@@ -24,7 +24,7 @@ extra_javascript:
   - javascripts/fl-map-v1.js
 
 extra_css:
-  - stylesheets/fistiland-v29.css
+  - stylesheets/fistiland-v30.css
 
 extra:
   social:
