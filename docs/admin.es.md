@@ -60,3 +60,16 @@ El registro del servidor es `SCUM\Saved\Logs\SCUM.log` en la carpeta de la herra
 | `AdminUsers.ini` | Los admins, un SteamID64 por línea. |
 
 Consulta las [páginas de ajustes](server/overview.md) para ver qué hace cada valor en FISTILAND.
+
+## :material-download: Descargar los archivos de configuración
+
+Cada archivo existe en dos versiones, para poder compararlos. **FISTILAND** es el archivo que usa nuestro servidor. **Por defecto** es el punto de partida, para empezar desde cero.
+
+| Archivo | Cuál | Qué es |
+|---|---|---|
+| [ServerSettings_FISTILAND.ini](downloads/ServerSettings_FISTILAND.ini) | **El nuestro** | Los ajustes del servidor FISTILAND. |
+| [ServerSettings_Nitrado-default.ini](downloads/ServerSettings_Nitrado-default.ini) | **Por defecto** | El archivo con el que empieza un servidor Nitrado nuevo, sin tocar. |
+| [EconomyOverride_FISTILAND.json](downloads/EconomyOverride_FISTILAND.json) | **El nuestro** | Ajustes de los comerciantes de FISTILAND: sin requisito de fama, comerciantes siempre con existencias y dinero, precios fijos. |
+| [EconomyOverride_game-default.json](downloads/EconomyOverride_game-default.json) | **Por defecto** | El archivo de comerciantes con los valores de salida del juego. |
+
+La dirección del servidor, los puertos y la contraseña se han quitado de estas copias. Conserva los tuyos al subir el archivo.

@@ -60,3 +60,16 @@ The server log is `SCUM\Saved\Logs\SCUM.log` in the tool folder. Your own game l
 | `AdminUsers.ini` | The admins, one SteamID64 per line. |
 
 See the [settings pages](server/overview.md) for what each value does on FISTILAND.
+
+## :material-download: Download the config files
+
+Each file comes in two versions, so you can compare them. **FISTILAND** is the file our server runs. **Default** is the starting point, to use if you want to begin from scratch.
+
+| File | Which one | What it is |
+|---|---|---|
+| [ServerSettings_FISTILAND.ini](downloads/ServerSettings_FISTILAND.ini) | **Ours** | The settings of the FISTILAND server. |
+| [ServerSettings_Nitrado-default.ini](downloads/ServerSettings_Nitrado-default.ini) | **Default** | The file a new Nitrado server starts with, untouched. |
+| [EconomyOverride_FISTILAND.json](downloads/EconomyOverride_FISTILAND.json) | **Ours** | Trader settings of FISTILAND: no fame requirement, traders always stocked and funded, fixed prices. |
+| [EconomyOverride_game-default.json](downloads/EconomyOverride_game-default.json) | **Default** | The trader file with the values the game starts with. |
+
+The server address, ports and password are removed from these copies. Keep your own when you upload.

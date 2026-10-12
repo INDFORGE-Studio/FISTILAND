@@ -60,3 +60,16 @@
 | `AdminUsers.ini` | Адміністратори, по одному SteamID64 в рядку. |
 
 Що робить кожне значення на FISTILAND, дивіться на [сторінках налаштувань](server/overview.md).
+
+## :material-download: Завантажити файли конфігурації
+
+Кожен файл існує у двох версіях, щоб їх можна було порівняти. **FISTILAND** — це файл, який використовує наш сервер. **Типовий** — це відправна точка, якщо хочете почати з нуля.
+
+| Файл | Який | Що це |
+|---|---|---|
+| [ServerSettings_FISTILAND.ini](downloads/ServerSettings_FISTILAND.ini) | **Наш** | Налаштування сервера FISTILAND. |
+| [ServerSettings_Nitrado-default.ini](downloads/ServerSettings_Nitrado-default.ini) | **Типовий** | Файл, з яким стартує новий сервер Nitrado, без змін. |
+| [EconomyOverride_FISTILAND.json](downloads/EconomyOverride_FISTILAND.json) | **Наш** | Налаштування торговців FISTILAND: без вимоги слави, торговці завжди з товаром і грошима, фіксовані ціни. |
+| [EconomyOverride_game-default.json](downloads/EconomyOverride_game-default.json) | **Типовий** | Файл торговців зі стартовими значеннями гри. |
+
+Адресу сервера, порти та пароль прибрано з цих копій. Під час завантаження залишайте свої.
