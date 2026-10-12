@@ -40,7 +40,7 @@ Stato: **Valido** significa che abbiamo verificato in gioco che funziona. **Non 
 | `#SetFamePoints 500 NomeGiocatore` | <span class="fl-st fl-st-rep">:material-help-circle-outline: Non verificato</span> | Imposta i punti fama di un giocatore. |
 | `#SetGodMode` | <span class="fl-st fl-st-rep">:material-help-circle-outline: Non verificato</span> | Costruzione istantanea, non invulnerabilità. |
 
-## :material-monitor: Avviare e gestire un server SCUM: su uno dedicato o in locale gratis
+## :material-monitor: Avviare e gestire un server SCUM: su uno dedicato o in locale
 
 I due file delle impostazioni funzionano allo stesso modo ovunque: il server li legge all'avvio, quindi ferma il server, sostituisci i file e riavvialo.
 

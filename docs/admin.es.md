@@ -40,7 +40,7 @@ Estado: **Válido** significa que comprobamos en el juego que funciona. **Sin ve
 | `#SetFamePoints 500 NombreDelJugador` | <span class="fl-st fl-st-rep">:material-help-circle-outline: Sin verificar</span> | Fija los puntos de fama de un jugador. |
 | `#SetGodMode` | <span class="fl-st fl-st-rep">:material-help-circle-outline: Sin verificar</span> | Construcción instantánea, no invulnerabilidad. |
 
-## :material-monitor: Lanzar y mantener un servidor de SCUM: en uno dedicado o en local gratis
+## :material-monitor: Lanzar y mantener un servidor de SCUM: en uno dedicado o en local
 
 Los dos archivos de ajustes funcionan igual en todas partes: el servidor los lee al iniciarse, así que detén el servidor, sustituye los archivos y vuelve a iniciarlo.
 

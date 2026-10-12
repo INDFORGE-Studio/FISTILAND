@@ -40,7 +40,7 @@ Status: **Gültig** heißt, wir haben im Spiel geprüft, dass er funktioniert. *
 | `#SetFamePoints 500 Spielername` | <span class="fl-st fl-st-rep">:material-help-circle-outline: Ungeprüft</span> | Setzt die Fame Points eines Spielers. |
 | `#SetGodMode` | <span class="fl-st fl-st-rep">:material-help-circle-outline: Ungeprüft</span> | Sofortiges Bauen, keine Unverwundbarkeit. |
 
-## :material-monitor: Einen SCUM-Server starten und betreiben: auf einem Dedicated Server oder kostenlos lokal
+## :material-monitor: Einen SCUM-Server starten und betreiben: auf einem Dedicated Server oder lokal
 
 Die beiden Einstellungsdateien funktionieren überall gleich: Der Server liest sie beim Start. Stoppe also den Server, ersetze die Dateien und starte ihn neu.
 

@@ -40,7 +40,7 @@ Status: **Valid** means we checked in-game that it works. **Unverified** means a
 | `#SetFamePoints 500 PlayerName` | <span class="fl-st fl-st-rep">:material-help-circle-outline: Unverified</span> | Sets the fame points of a player. |
 | `#SetGodMode` | <span class="fl-st fl-st-rep">:material-help-circle-outline: Unverified</span> | Instant building, not invulnerability. |
 
-## :material-monitor: Launch and run a SCUM server: on a dedicated host or locally for free
+## :material-monitor: Launch and run a SCUM server: on a dedicated host or locally
 
 The two settings files work the same way everywhere: the server reads them when it starts, so stop the server, replace the files, then start it again.
 
