@@ -71,5 +71,7 @@
 | [ServerSettings_Nitrado-default.ini](downloads/ServerSettings_Nitrado-default.ini) | **Типовий** | Файл, з яким стартує новий сервер Nitrado, без змін. |
 | [EconomyOverride_FISTILAND.json](downloads/EconomyOverride_FISTILAND.json) | **Наш** | Налаштування торговців FISTILAND: без вимоги слави, торговці завжди з товаром і грошима, фіксовані ціни. |
 | [EconomyOverride_game-default.json](downloads/EconomyOverride_game-default.json) | **Типовий** | Файл торговців зі стартовими значеннями гри. |
+| [SCUM_item_codes_1.3.4.2.txt](downloads/SCUM_item_codes_1.3.4.2.txt) | **Дані** | Усі 2 572 коди предметів версії гри 1.3.4.2, по одному в рядку (з команди `#ListItems`). |
+| [Armory_default_prices_A0.csv](downloads/Armory_default_prices_A0.csv) | **Дані** | Ціни торговця Armory в базовій грі, зчитані в грі на форпості A0 (близько 380 рядків). |
 
 Адресу сервера, порти та пароль прибрано з цих копій. Під час завантаження залишайте свої.

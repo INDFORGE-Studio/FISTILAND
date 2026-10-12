@@ -71,5 +71,7 @@ Each file comes in two versions, so you can compare them. **FISTILAND** is the f
 | [ServerSettings_Nitrado-default.ini](downloads/ServerSettings_Nitrado-default.ini) | **Default** | The file a new Nitrado server starts with, untouched. |
 | [EconomyOverride_FISTILAND.json](downloads/EconomyOverride_FISTILAND.json) | **Ours** | Trader settings of FISTILAND: no fame requirement, traders always stocked and funded, fixed prices. |
 | [EconomyOverride_game-default.json](downloads/EconomyOverride_game-default.json) | **Default** | The trader file with the values the game starts with. |
+| [SCUM_item_codes_1.3.4.2.txt](downloads/SCUM_item_codes_1.3.4.2.txt) | **Data** | All 2,572 item codes of game version 1.3.4.2, one per line (from the `#ListItems` command). |
+| [Armory_default_prices_A0.csv](downloads/Armory_default_prices_A0.csv) | **Data** | The Armory trader prices of the base game, read in game at outpost A0 (about 380 lines). |
 
 The server address, ports and password are removed from these copies. Keep your own when you upload.

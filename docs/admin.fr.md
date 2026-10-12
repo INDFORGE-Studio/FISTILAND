@@ -71,5 +71,7 @@ Chaque fichier existe en deux versions, pour pouvoir les comparer. **FISTILAND**
 | [ServerSettings_Nitrado-default.ini](downloads/ServerSettings_Nitrado-default.ini) | **Par défaut** | Le fichier d'un nouveau serveur Nitrado, intact. |
 | [EconomyOverride_FISTILAND.json](downloads/EconomyOverride_FISTILAND.json) | **Le nôtre** | Les réglages des marchands de FISTILAND : pas de fame requis, marchands toujours approvisionnés et riches, prix fixes. |
 | [EconomyOverride_game-default.json](downloads/EconomyOverride_game-default.json) | **Par défaut** | Le fichier des marchands avec les valeurs de départ du jeu. |
+| [SCUM_item_codes_1.3.4.2.txt](downloads/SCUM_item_codes_1.3.4.2.txt) | **Données** | Les 2 572 codes d'objets de la version 1.3.4.2 du jeu, un par ligne (issus de la commande `#ListItems`). |
+| [Armory_default_prices_A0.csv](downloads/Armory_default_prices_A0.csv) | **Données** | Les prix de l'Armory (armurier) du jeu de base, relevés en jeu à l'avant-poste A0 (environ 380 lignes). |
 
 L'adresse du serveur, les ports et le mot de passe sont retirés de ces copies. Gardez les vôtres quand vous envoyez le fichier.

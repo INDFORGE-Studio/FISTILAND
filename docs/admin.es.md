@@ -71,5 +71,7 @@ Cada archivo existe en dos versiones, para poder compararlos. **FISTILAND** es e
 | [ServerSettings_Nitrado-default.ini](downloads/ServerSettings_Nitrado-default.ini) | **Por defecto** | El archivo con el que empieza un servidor Nitrado nuevo, sin tocar. |
 | [EconomyOverride_FISTILAND.json](downloads/EconomyOverride_FISTILAND.json) | **El nuestro** | Ajustes de los comerciantes de FISTILAND: sin requisito de fama, comerciantes siempre con existencias y dinero, precios fijos. |
 | [EconomyOverride_game-default.json](downloads/EconomyOverride_game-default.json) | **Por defecto** | El archivo de comerciantes con los valores de salida del juego. |
+| [SCUM_item_codes_1.3.4.2.txt](downloads/SCUM_item_codes_1.3.4.2.txt) | **Datos** | Los 2.572 códigos de objetos de la versión 1.3.4.2 del juego, uno por línea (del comando `#ListItems`). |
+| [Armory_default_prices_A0.csv](downloads/Armory_default_prices_A0.csv) | **Datos** | Los precios del comerciante Armory del juego base, leídos en el juego en el puesto A0 (unas 380 líneas). |
 
 La dirección del servidor, los puertos y la contraseña se han quitado de estas copias. Conserva los tuyos al subir el archivo.
