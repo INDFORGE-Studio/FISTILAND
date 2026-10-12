@@ -28,7 +28,7 @@ Diese beiden Punkte sind Regeln, keine Servereinstellungen: Sie beruhen darauf, 
 | Einstellung | Wert | Wirkung |
 |---|---|---|
 | `AllowFirstPerson` | True | Die Ego-Perspektive ist erlaubt. |
-| `AllowThirdPerson` | False | Die Third-Person-Ansicht ist deaktiviert. |
+| `AllowThirdPerson` | True | Die Third-Person-Ansicht ist erlaubt: Spieler können zwischen Ego- und Third-Person-Ansicht wechseln. |
 | `AllowCrosshair` | False | Kein Fadenkreuz. |
 | `AllowMapScreen` | True | Der Kartenbildschirm ist verfügbar. |
 | `HideKillNotification` | True | Spieler sehen keine Meldung, wenn jemand jemanden tötet. |

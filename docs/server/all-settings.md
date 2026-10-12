@@ -33,7 +33,7 @@ Names are shown without the `scum.` prefix. The category pages explain the setti
 | `LogoutTimerWhileCaptured` | `120.000000` |
 | `LogoutTimerInBunker` | `30000.000000` |
 | `AllowFirstPerson` | `True` |
-| `AllowThirdPerson` | `False` |
+| `AllowThirdPerson` | `True` |
 | `AllowCrosshair` | `False` |
 | `AllowVoting` | `True` |
 | `AllowMapScreen` | `True` |

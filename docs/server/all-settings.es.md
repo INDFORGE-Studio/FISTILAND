@@ -33,7 +33,7 @@ Los nombres se muestran sin el prefijo `scum.`. Las páginas por categoría expl
 | `LogoutTimerWhileCaptured` | `120.000000` |
 | `LogoutTimerInBunker` | `30000.000000` |
 | `AllowFirstPerson` | `True` |
-| `AllowThirdPerson` | `False` |
+| `AllowThirdPerson` | `True` |
 | `AllowCrosshair` | `False` |
 | `AllowVoting` | `True` |
 | `AllowMapScreen` | `True` |

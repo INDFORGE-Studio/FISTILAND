@@ -28,7 +28,7 @@ Ces deux points sont des règles, pas des réglages du serveur : elles reposent 
 | Réglage | Valeur | Rôle |
 |---|---|---|
 | `AllowFirstPerson` | True | La vue à la première personne est autorisée. |
-| `AllowThirdPerson` | False | La troisième personne est désactivée. |
+| `AllowThirdPerson` | True | La troisième personne est autorisée : on peut passer de la première à la troisième personne. |
 | `AllowCrosshair` | False | Pas de réticule. |
 | `AllowMapScreen` | True | L'écran de la carte est disponible. |
 | `HideKillNotification` | True | Les joueurs ne voient pas de notification quand quelqu'un en tue un autre. |

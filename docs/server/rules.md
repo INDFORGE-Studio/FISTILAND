@@ -28,7 +28,7 @@ These two are rules, not server settings: they rely on players respecting them.
 | Setting | Value | What it does |
 |---|---|---|
 | `AllowFirstPerson` | True | First-person view is allowed. |
-| `AllowThirdPerson` | False | Third person is disabled. |
+| `AllowThirdPerson` | True | Third person is allowed: players can switch between first and third person. |
 | `AllowCrosshair` | False | No crosshair. |
 | `AllowMapScreen` | True | The map screen is available. |
 | `HideKillNotification` | True | Players do not see a notification when someone kills someone else. |

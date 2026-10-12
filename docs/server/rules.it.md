@@ -28,7 +28,7 @@ Queste due sono regole, non impostazioni del server: si basano sul rispetto da p
 | Impostazione | Valore | Cosa fa |
 |---|---|---|
 | `AllowFirstPerson` | True | La visuale in prima persona è consentita. |
-| `AllowThirdPerson` | False | La terza persona è disattivata. |
+| `AllowThirdPerson` | True | La terza persona è consentita: i giocatori possono passare dalla prima alla terza persona. |
 | `AllowCrosshair` | False | Nessun mirino. |
 | `AllowMapScreen` | True | La schermata della mappa è disponibile. |
 | `HideKillNotification` | True | I giocatori non vedono una notifica quando qualcuno ne uccide un altro. |
