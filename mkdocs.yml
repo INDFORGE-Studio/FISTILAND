@@ -4,8 +4,8 @@ site_url: https://indforge-studio.github.io/FISTILAND/
 
 theme:
   name: material
-  logo: assets/logo-header.png
-  favicon: assets/logo-header.png
+  logo: assets/logo-header-v5.png
+  favicon: assets/logo-header-v5.png
   font:
     text: Inter
     code: Roboto Mono
