@@ -109,11 +109,11 @@ Los nombres se muestran sin el prefijo `scum.`. Las páginas por categoría expl
 | `DropshipHealthMultiplier` | `1.000000` |
 | `SentryHealthMultiplier` | `1.000000` |
 | `BaseBuildingAttackerSentryHealthMultiplier` | `1.000000` |
-| `ArmedNPCDifficultyLevel` | `2` |
+| `ArmedNPCDifficultyLevel` | `3` |
 | `ArmedNPCHealthMultiplier` | `0.100000` |
 | `ArmedNPCDamageMultiplier` | `0.500000` |
 | `ArmedNPCSpreadMultiplier` | `1.000000` |
-| `ArmedNPCRunningSpeedMultiplier` | `0.700000` |
+| `ArmedNPCRunningSpeedMultiplier` | `0.900000` |
 | `ArmedNPCNetCullDistanceOverride` | `-1.000000` |
 | `ProbabilityForArmedNPCToDropItemFromHandsWhenSearched` | `1.000000` |
 | `MinimumDurabilityOfArmedNPCsDroppedItemFromHands` | `0.200000` |

@@ -12,7 +12,7 @@
 <div><b>200</b><span>Зомбі щонайбільше</span></div>
 <div><b>x0.5</b><span>Здоров'я зомбі</span></div>
 <div><b>x0.1</b><span>Здоров'я озброєних NPC</span></div>
-<div><b>2</b><span>Складність озброєних NPC</span></div>
+<div><b>3</b><span>Складність озброєних NPC</span></div>
 </div>
 
 
@@ -41,10 +41,10 @@
 
 | Налаштування | Значення | Що воно робить |
 |---|---|---|
-| `ArmedNPCDifficultyLevel` | 2 | Середня складність. |
+| `ArmedNPCDifficultyLevel` | 3 | Висока складність. |
 | `ArmedNPCHealthMultiplier` | 0.1 | Здоров'я: достатньо однієї влучної кулі. |
 | `ArmedNPCDamageMultiplier` | 0.5 | Завдана шкода. |
-| `ArmedNPCRunningSpeedMultiplier` | 0.7 | Швидкість бігу. |
+| `ArmedNPCRunningSpeedMultiplier` | 0.9 | Швидкість бігу. |
 | `ArmedNPCSpreadMultiplier` | 1 | Розкид зброї. |
 | `ProbabilityForArmedNPCToDropItemFromHandsWhenSearched` | 1 | Обшуканий NPC завжди випускає те, що тримає в руках. |
 | `MinimumDurabilityOfArmedNPCsDroppedItemFromHands` / `MaximumDurabilityOfArmedNPCsDroppedItemFromHands` | 0.2 / 0.3 | Стан цих предметів. |

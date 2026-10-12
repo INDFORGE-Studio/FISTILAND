@@ -12,7 +12,7 @@
 <div><b>200</b><span>Zombie al massimo</span></div>
 <div><b>x0.5</b><span>Salute degli zombie</span></div>
 <div><b>x0.1</b><span>Salute dei PNG armati</span></div>
-<div><b>2</b><span>Difficoltà dei PNG armati</span></div>
+<div><b>3</b><span>Difficoltà dei PNG armati</span></div>
 </div>
 
 
@@ -41,10 +41,10 @@ Nelle impostazioni gli zombie si chiamano marionette (puppets).
 
 | Impostazione | Valore | Cosa fa |
 |---|---|---|
-| `ArmedNPCDifficultyLevel` | 2 | Difficoltà media. |
+| `ArmedNPCDifficultyLevel` | 3 | Difficoltà alta. |
 | `ArmedNPCHealthMultiplier` | 0.1 | Salute: basta un solo proiettile ben piazzato. |
 | `ArmedNPCDamageMultiplier` | 0.5 | Danno inflitto. |
-| `ArmedNPCRunningSpeedMultiplier` | 0.7 | Velocità di corsa. |
+| `ArmedNPCRunningSpeedMultiplier` | 0.9 | Velocità di corsa. |
 | `ArmedNPCSpreadMultiplier` | 1 | Dispersione delle armi. |
 | `ProbabilityForArmedNPCToDropItemFromHandsWhenSearched` | 1 | Un PNG perquisito lascia sempre cadere ciò che tiene in mano. |
 | `MinimumDurabilityOfArmedNPCsDroppedItemFromHands` / `MaximumDurabilityOfArmedNPCsDroppedItemFromHands` | 0.2 / 0.3 | Condizione di quegli oggetti. |

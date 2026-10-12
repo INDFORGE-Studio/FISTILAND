@@ -12,7 +12,7 @@
 <div><b>200</b><span>Zombis como máximo</span></div>
 <div><b>x0.5</b><span>Salud de los zombis</span></div>
 <div><b>x0.1</b><span>Salud de los PNJ armados</span></div>
-<div><b>2</b><span>Dificultad de los PNJ armados</span></div>
+<div><b>3</b><span>Dificultad de los PNJ armados</span></div>
 </div>
 
 
@@ -41,10 +41,10 @@ Los zombis se llaman marionetas (puppets) en los ajustes.
 
 | Ajuste | Valor | Qué hace |
 |---|---|---|
-| `ArmedNPCDifficultyLevel` | 2 | Dificultad media. |
+| `ArmedNPCDifficultyLevel` | 3 | Dificultad alta. |
 | `ArmedNPCHealthMultiplier` | 0.1 | Salud: basta una sola bala bien colocada. |
 | `ArmedNPCDamageMultiplier` | 0.5 | Daño que causan. |
-| `ArmedNPCRunningSpeedMultiplier` | 0.7 | Velocidad de carrera. |
+| `ArmedNPCRunningSpeedMultiplier` | 0.9 | Velocidad de carrera. |
 | `ArmedNPCSpreadMultiplier` | 1 | Dispersión de las armas. |
 | `ProbabilityForArmedNPCToDropItemFromHandsWhenSearched` | 1 | Un PNJ registrado siempre suelta lo que lleva en las manos. |
 | `MinimumDurabilityOfArmedNPCsDroppedItemFromHands` / `MaximumDurabilityOfArmedNPCsDroppedItemFromHands` | 0.2 / 0.3 | Estado de esos objetos. |

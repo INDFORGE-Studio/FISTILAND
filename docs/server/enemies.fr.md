@@ -12,7 +12,7 @@
 <div><b>200</b><span>Zombies au maximum</span></div>
 <div><b>x0.5</b><span>Santé des zombies</span></div>
 <div><b>x0.1</b><span>Santé des PNJ armés</span></div>
-<div><b>2</b><span>Difficulté des PNJ armés</span></div>
+<div><b>3</b><span>Difficulté des PNJ armés</span></div>
 </div>
 
 
@@ -41,10 +41,10 @@ Les zombies s'appellent des marionnettes (puppets) dans les réglages.
 
 | Réglage | Valeur | Rôle |
 |---|---|---|
-| `ArmedNPCDifficultyLevel` | 2 | Difficulté moyenne. |
+| `ArmedNPCDifficultyLevel` | 3 | Difficulté élevée. |
 | `ArmedNPCHealthMultiplier` | 0.1 | Santé : une seule balle bien placée suffit. |
 | `ArmedNPCDamageMultiplier` | 0.5 | Dégâts infligés. |
-| `ArmedNPCRunningSpeedMultiplier` | 0.7 | Vitesse de course. |
+| `ArmedNPCRunningSpeedMultiplier` | 0.9 | Vitesse de course. |
 | `ArmedNPCSpreadMultiplier` | 1 | Dispersion des armes. |
 | `ProbabilityForArmedNPCToDropItemFromHandsWhenSearched` | 1 | Un PNJ fouillé lâche toujours ce qu'il tient. |
 | `MinimumDurabilityOfArmedNPCsDroppedItemFromHands` / `MaximumDurabilityOfArmedNPCsDroppedItemFromHands` | 0.2 / 0.3 | État de ces objets. |
