@@ -40,7 +40,7 @@ Statut : **Valide** veut dire que nous avons vérifié en jeu qu'elle fonctionne
 | `#SetFamePoints 500 NomDuJoueur` | <span class="fl-st fl-st-rep">:material-help-circle-outline: Non vérifiée</span> | Fixe les fame points d'un joueur. |
 | `#SetGodMode` | <span class="fl-st fl-st-rep">:material-help-circle-outline: Non vérifiée</span> | Construction instantanée, pas d'invulnérabilité. |
 
-## :material-monitor: Lancer et faire tourner un serveur SCUM : sur un dédié ou en local
+## :material-monitor: Lancer et faire tourner un serveur SCUM : sur dédié ou en local
 
 Les deux fichiers de réglages fonctionnent de la même façon partout : le serveur les lit au démarrage, donc arrêtez le serveur, remplacez les fichiers, puis relancez-le.
 
