@@ -39,7 +39,6 @@ Status: **Gültig** heißt, wir haben im Spiel geprüft, dass er funktioniert. *
 | `#SetImmortality true`<br>`#SetImmortality false` | <span class="fl-st fl-st-rep">:material-help-circle-outline: Gemeldet</span> | Schadensimmunität an, dann aus. |
 | `#SetFamePoints 500 Spielername` | <span class="fl-st fl-st-rep">:material-help-circle-outline: Gemeldet</span> | Setzt die Fame Points eines Spielers. |
 | `#SetGodMode` | <span class="fl-st fl-st-rep">:material-help-circle-outline: Gemeldet</span> | Sofortiges Bauen, keine Unverwundbarkeit. |
-| `#heal` | <span class="fl-st fl-st-no">:material-close-circle: Fehlt</span> | Gibt es in 1.3.4.2 nicht. |
 
 ## :material-monitor: Einen SCUM-Server starten und betreiben: auf einem Dedicated Server oder kostenlos lokal
 

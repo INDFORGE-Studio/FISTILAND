@@ -39,7 +39,6 @@ Status: **Valid** means we checked in-game that it works. **Reported** means a p
 | `#SetImmortality true`<br>`#SetImmortality false` | <span class="fl-st fl-st-rep">:material-help-circle-outline: Reported</span> | Damage immunity on, then off. |
 | `#SetFamePoints 500 PlayerName` | <span class="fl-st fl-st-rep">:material-help-circle-outline: Reported</span> | Sets the fame points of a player. |
 | `#SetGodMode` | <span class="fl-st fl-st-rep">:material-help-circle-outline: Reported</span> | Instant building, not invulnerability. |
-| `#heal` | <span class="fl-st fl-st-no">:material-close-circle: Missing</span> | Does not exist on 1.3.4.2. |
 
 ## :material-monitor: Launch and run a SCUM server: on a dedicated host or locally for free
 

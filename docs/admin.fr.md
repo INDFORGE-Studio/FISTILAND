@@ -39,7 +39,6 @@ Statut : **Valide** veut dire que nous avons vérifié en jeu qu'elle fonctionne
 | `#SetImmortality true`<br>`#SetImmortality false` | <span class="fl-st fl-st-rep">:material-help-circle-outline: Signalée</span> | Immunité aux dégâts, activée puis désactivée. |
 | `#SetFamePoints 500 NomDuJoueur` | <span class="fl-st fl-st-rep">:material-help-circle-outline: Signalée</span> | Fixe les fame points d'un joueur. |
 | `#SetGodMode` | <span class="fl-st fl-st-rep">:material-help-circle-outline: Signalée</span> | Construction instantanée, pas d'invulnérabilité. |
-| `#heal` | <span class="fl-st fl-st-no">:material-close-circle: Absente</span> | N'existe pas en 1.3.4.2. |
 
 ## :material-monitor: Lancer et faire tourner un serveur SCUM : sur un dédié ou en local gratuitement
 

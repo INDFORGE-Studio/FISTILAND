@@ -39,7 +39,6 @@
 | `#SetImmortality true`<br>`#SetImmortality false` | <span class="fl-st fl-st-rep">:material-help-circle-outline: Згадано</span> | Імунітет до шкоди: увімкнути, потім вимкнути. |
 | `#SetFamePoints 500 ІмяГравця` | <span class="fl-st fl-st-rep">:material-help-circle-outline: Згадано</span> | Встановлює очки слави гравця. |
 | `#SetGodMode` | <span class="fl-st fl-st-rep">:material-help-circle-outline: Згадано</span> | Миттєве будівництво, а не невразливість. |
-| `#heal` | <span class="fl-st fl-st-no">:material-close-circle: Немає</span> | Не існує у 1.3.4.2. |
 
 ## :material-monitor: Запуск і робота сервера SCUM: на виділеному сервері або локально безкоштовно
 
