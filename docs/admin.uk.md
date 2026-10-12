@@ -26,20 +26,20 @@
 
 | Команда | Статус | Що робить |
 |---|---|---|
-| `#ListPlayers` | Перевірено | Показує гравців онлайн. |
-| `#ListItems` | Перевірено | Виводить усі коди предметів вашої версії (2 572 у 1.3.4.2) у журнал гри. |
-| `#spawnitem Apple`<br>`#spawnitem Water_05l` | Перевірено | Видає вам предмет за його кодом. Використовуйте будь-який код зі списку предметів (див. завантаження нижче). |
-| `#SetCurrencyBalance Normal 10000 ІмяГравця` | Перевірено | Встановлює гроші гравця. `Normal` — звичайні гроші, `10000` — сума: змініть її на будь-яке число (500, 100000...). |
-| `#ChangeCurrencyBalance Gold 5 ІмяГравця` | Перевірено | Змінює золото гравця. `Gold` — валюта, `5` — сума: змініть як хочете. |
-| `#NightBrightness 1` | Перевірено | Яскравість ночі від 0 (темно) до 1 (світло). Лише для вас, не для всього сервера. |
-| `#SetTime 12` | Перевірено | Встановлює час доби від 0 до 24. |
-| `#ListZombies`<br>`#ListAnimals` | Перевірено | Показує типи зомбі та тварин. |
-| `#ListSpawnedVehicles`<br>`#ListSpawnedArmedNPCs` | Перевірено | Показує, що живе у світі. Результат з'являється лише в чаті, не в журналі. |
-| `#MapTeleport` | У списку, не перевірено | Телепорт через мапу. |
-| `#SetImmortality true`<br>`#SetImmortality false` | Згадано | Імунітет до шкоди: увімкнути, потім вимкнути. |
-| `#SetFamePoints 500 ІмяГравця` | Згадано | Встановлює очки слави гравця. |
-| `#SetGodMode` | Згадано | Миттєве будівництво, а не невразливість. |
-| `#heal` | Недоступно | Не існує у 1.3.4.2. |
+| `#ListPlayers` | <span class="fl-st fl-st-ok">:material-check-circle: Перевірено</span> | Показує гравців онлайн. |
+| `#ListItems` | <span class="fl-st fl-st-ok">:material-check-circle: Перевірено</span> | Виводить усі коди предметів вашої версії (2 572 у 1.3.4.2) у журнал гри. |
+| `#spawnitem Apple`<br>`#spawnitem Water_05l` | <span class="fl-st fl-st-ok">:material-check-circle: Перевірено</span> | Видає вам предмет за його кодом. Використовуйте будь-який код зі списку предметів (див. завантаження нижче). |
+| `#SetCurrencyBalance Normal 10000 ІмяГравця` | <span class="fl-st fl-st-ok">:material-check-circle: Перевірено</span> | Встановлює гроші гравця. `Normal` — звичайні гроші, `10000` — сума: змініть її на будь-яке число (500, 100000...). |
+| `#ChangeCurrencyBalance Gold 5 ІмяГравця` | <span class="fl-st fl-st-ok">:material-check-circle: Перевірено</span> | Змінює золото гравця. `Gold` — валюта, `5` — сума: змініть як хочете. |
+| `#NightBrightness 1` | <span class="fl-st fl-st-ok">:material-check-circle: Перевірено</span> | Яскравість ночі від 0 (темно) до 1 (світло). Лише для вас, не для всього сервера. |
+| `#SetTime 12` | <span class="fl-st fl-st-ok">:material-check-circle: Перевірено</span> | Встановлює час доби від 0 до 24. |
+| `#ListZombies`<br>`#ListAnimals` | <span class="fl-st fl-st-ok">:material-check-circle: Перевірено</span> | Показує типи зомбі та тварин. |
+| `#ListSpawnedVehicles`<br>`#ListSpawnedArmedNPCs` | <span class="fl-st fl-st-ok">:material-check-circle: Перевірено</span> | Показує, що живе у світі. Результат з'являється лише в чаті, не в журналі. |
+| `#MapTeleport` | <span class="fl-st fl-st-lst">:material-format-list-bulleted: У списку</span> | Телепорт через мапу. Не перевірено. |
+| `#SetImmortality true`<br>`#SetImmortality false` | <span class="fl-st fl-st-rep">:material-help-circle-outline: Згадано</span> | Імунітет до шкоди: увімкнути, потім вимкнути. |
+| `#SetFamePoints 500 ІмяГравця` | <span class="fl-st fl-st-rep">:material-help-circle-outline: Згадано</span> | Встановлює очки слави гравця. |
+| `#SetGodMode` | <span class="fl-st fl-st-rep">:material-help-circle-outline: Згадано</span> | Миттєве будівництво, а не невразливість. |
+| `#heal` | <span class="fl-st fl-st-no">:material-close-circle: Немає</span> | Не існує у 1.3.4.2. |
 
 ## :material-monitor: Запуск і робота сервера SCUM: на виділеному сервері або локально безкоштовно
 

@@ -29,6 +29,7 @@
   document.querySelectorAll('.md-typeset table tbody tr td:first-child code').forEach(function (code) {
     var txt = code.textContent.trim();
     if (txt.charAt(0) !== '#') return;
+    if (code.closest('tr').querySelector('.fl-st-no')) return;
     var b = document.createElement('button');
     b.type = 'button'; b.className = 'fl-copy'; b.innerHTML = ICON_COPY;
     b.title = T[0]; b.setAttribute('aria-label', T[0]);

@@ -483,3 +483,16 @@ html[lang="uk"] .md-header__option .md-select > button::before { background-imag
   .md-content:has(.fl-page-hero):not(:has(.fl-home)) .md-typeset table:not([class]):has(.fl-copy) td:nth-child(1) code { white-space: normal; }
   .md-content:has(.fl-page-hero):not(:has(.fl-home)) .md-typeset table:not([class]):has(.fl-copy) td:nth-child(1) .fl-cmd { white-space: normal; align-items: flex-start; }
 }
+
+/* Status column of the commands table: icon + one short word, never wrapped; unavailable commands greyed out */
+.md-content:has(.fl-page-hero):not(:has(.fl-home)) .md-typeset table:not([class]):has(.fl-st) th:nth-child(2) { width: 1%; text-align: left; white-space: nowrap; }
+.md-content:has(.fl-page-hero):not(:has(.fl-home)) .md-typeset table:not([class]):has(.fl-st) td:nth-child(2) { width: 1%; text-align: left; white-space: nowrap; font-family: inherit; font-size: .74rem; font-weight: 600; letter-spacing: .02em; color: inherit; }
+.fl-st { display: inline-flex; align-items: center; gap: .4em; white-space: nowrap; }
+.fl-st .twemoji { display: inline-flex; }
+.fl-st .twemoji svg { height: 1.15em; width: 1.15em; fill: currentColor; }
+.fl-st-ok { color: #4fb36c; }
+.fl-st-rep { color: #d9a441; }
+.fl-st-lst { color: #6fa8dc; }
+.fl-st-no { color: #8a7f75; }
+.md-content:has(.fl-page-hero):not(:has(.fl-home)) .md-typeset table:not([class]):has(.fl-st) tr:has(.fl-st-no) td { opacity: .55; }
+.md-content:has(.fl-page-hero):not(:has(.fl-home)) .md-typeset table:not([class]):has(.fl-st) tr:has(.fl-st-no) td:nth-child(1) code { color: #8a7f75; text-decoration: line-through; }

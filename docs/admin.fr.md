@@ -26,20 +26,20 @@ Statut : **Testée** veut dire que nous l'avons lancée sur notre serveur. **Sig
 
 | Commande | Statut | Ce qu'elle fait |
 |---|---|---|
-| `#ListPlayers` | Testée | Liste les joueurs en ligne. |
-| `#ListItems` | Testée | Affiche tous les codes d'objets de votre version (2 572 en 1.3.4.2) dans le journal du jeu. |
-| `#spawnitem Apple`<br>`#spawnitem Water_05l` | Testée | Vous donne un objet à partir de son code. Utilisez n'importe quel code de la liste des objets (voir les téléchargements plus bas). |
-| `#SetCurrencyBalance Normal 10000 NomDuJoueur` | Testée | Fixe l'argent d'un joueur. `Normal` est l'argent ordinaire et `10000` le montant : changez-le par le nombre voulu (500, 100000…). |
-| `#ChangeCurrencyBalance Gold 5 NomDuJoueur` | Testée | Modifie l'or d'un joueur. `Gold` est la monnaie et `5` le montant : changez-le comme vous voulez. |
-| `#NightBrightness 1` | Testée | Luminosité de la nuit, de 0 (sombre) à 1 (clair). Pour vous seulement, pas pour tout le serveur. |
-| `#SetTime 12` | Testée | Fixe l'heure de la journée, de 0 à 24. |
-| `#ListZombies`<br>`#ListAnimals` | Testée | Liste les types de zombies et d'animaux. |
-| `#ListSpawnedVehicles`<br>`#ListSpawnedArmedNPCs` | Testée | Liste ce qui est vivant dans le monde. Le résultat s'affiche dans le chat uniquement, pas dans le journal. |
-| `#MapTeleport` | Listée, non testée | Téléportation par la carte. |
-| `#SetImmortality true`<br>`#SetImmortality false` | Signalée | Immunité aux dégâts, activée puis désactivée. |
-| `#SetFamePoints 500 NomDuJoueur` | Signalée | Fixe les fame points d'un joueur. |
-| `#SetGodMode` | Signalée | Construction instantanée, pas d'invulnérabilité. |
-| `#heal` | Indisponible | N'existe pas en 1.3.4.2. |
+| `#ListPlayers` | <span class="fl-st fl-st-ok">:material-check-circle: Testée</span> | Liste les joueurs en ligne. |
+| `#ListItems` | <span class="fl-st fl-st-ok">:material-check-circle: Testée</span> | Affiche tous les codes d'objets de votre version (2 572 en 1.3.4.2) dans le journal du jeu. |
+| `#spawnitem Apple`<br>`#spawnitem Water_05l` | <span class="fl-st fl-st-ok">:material-check-circle: Testée</span> | Vous donne un objet à partir de son code. Utilisez n'importe quel code de la liste des objets (voir les téléchargements plus bas). |
+| `#SetCurrencyBalance Normal 10000 NomDuJoueur` | <span class="fl-st fl-st-ok">:material-check-circle: Testée</span> | Fixe l'argent d'un joueur. `Normal` est l'argent ordinaire et `10000` le montant : changez-le par le nombre voulu (500, 100000…). |
+| `#ChangeCurrencyBalance Gold 5 NomDuJoueur` | <span class="fl-st fl-st-ok">:material-check-circle: Testée</span> | Modifie l'or d'un joueur. `Gold` est la monnaie et `5` le montant : changez-le comme vous voulez. |
+| `#NightBrightness 1` | <span class="fl-st fl-st-ok">:material-check-circle: Testée</span> | Luminosité de la nuit, de 0 (sombre) à 1 (clair). Pour vous seulement, pas pour tout le serveur. |
+| `#SetTime 12` | <span class="fl-st fl-st-ok">:material-check-circle: Testée</span> | Fixe l'heure de la journée, de 0 à 24. |
+| `#ListZombies`<br>`#ListAnimals` | <span class="fl-st fl-st-ok">:material-check-circle: Testée</span> | Liste les types de zombies et d'animaux. |
+| `#ListSpawnedVehicles`<br>`#ListSpawnedArmedNPCs` | <span class="fl-st fl-st-ok">:material-check-circle: Testée</span> | Liste ce qui est vivant dans le monde. Le résultat s'affiche dans le chat uniquement, pas dans le journal. |
+| `#MapTeleport` | <span class="fl-st fl-st-lst">:material-format-list-bulleted: Listée</span> | Téléportation par la carte. Non testée. |
+| `#SetImmortality true`<br>`#SetImmortality false` | <span class="fl-st fl-st-rep">:material-help-circle-outline: Signalée</span> | Immunité aux dégâts, activée puis désactivée. |
+| `#SetFamePoints 500 NomDuJoueur` | <span class="fl-st fl-st-rep">:material-help-circle-outline: Signalée</span> | Fixe les fame points d'un joueur. |
+| `#SetGodMode` | <span class="fl-st fl-st-rep">:material-help-circle-outline: Signalée</span> | Construction instantanée, pas d'invulnérabilité. |
+| `#heal` | <span class="fl-st fl-st-no">:material-close-circle: Absente</span> | N'existe pas en 1.3.4.2. |
 
 ## :material-monitor: Lancer et faire tourner un serveur SCUM : sur un dédié ou en local gratuitement
 

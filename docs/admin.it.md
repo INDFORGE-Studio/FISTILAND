@@ -26,20 +26,20 @@ Stato: **Testato** significa che l'abbiamo eseguito sul nostro server. **Segnala
 
 | Comando | Stato | Cosa fa |
 |---|---|---|
-| `#ListPlayers` | Testato | Elenca i giocatori online. |
-| `#ListItems` | Testato | Scrive tutti i codici oggetto della tua versione (2.572 in 1.3.4.2) nel log del gioco. |
-| `#spawnitem Apple`<br>`#spawnitem Water_05l` | Testato | Ti dà un oggetto dal suo codice. Usa qualsiasi codice dell'elenco oggetti (vedi i download qui sotto). |
-| `#SetCurrencyBalance Normal 10000 NomeGiocatore` | Testato | Imposta i soldi di un giocatore. `Normal` è il denaro normale e `10000` l'importo: cambialo con il numero che vuoi (500, 100000...). |
-| `#ChangeCurrencyBalance Gold 5 NomeGiocatore` | Testato | Cambia l'oro di un giocatore. `Gold` è la valuta e `5` l'importo: cambialo come vuoi. |
-| `#NightBrightness 1` | Testato | Luminosità della notte, da 0 (buio) a 1 (chiaro). Solo per te, non per tutto il server. |
-| `#SetTime 12` | Testato | Imposta l'ora del giorno, da 0 a 24. |
-| `#ListZombies`<br>`#ListAnimals` | Testato | Elenca i tipi di zombie e di animali. |
-| `#ListSpawnedVehicles`<br>`#ListSpawnedArmedNPCs` | Testato | Elenca ciò che è vivo nel mondo. Il risultato appare solo nella chat, non nel log. |
-| `#MapTeleport` | In elenco, non testato | Teletrasporto tramite la mappa. |
-| `#SetImmortality true`<br>`#SetImmortality false` | Segnalato | Immunità ai danni, attivata e poi disattivata. |
-| `#SetFamePoints 500 NomeGiocatore` | Segnalato | Imposta i punti fama di un giocatore. |
-| `#SetGodMode` | Segnalato | Costruzione istantanea, non invulnerabilità. |
-| `#heal` | Non disponibile | Non esiste in 1.3.4.2. |
+| `#ListPlayers` | <span class="fl-st fl-st-ok">:material-check-circle: Testato</span> | Elenca i giocatori online. |
+| `#ListItems` | <span class="fl-st fl-st-ok">:material-check-circle: Testato</span> | Scrive tutti i codici oggetto della tua versione (2.572 in 1.3.4.2) nel log del gioco. |
+| `#spawnitem Apple`<br>`#spawnitem Water_05l` | <span class="fl-st fl-st-ok">:material-check-circle: Testato</span> | Ti dà un oggetto dal suo codice. Usa qualsiasi codice dell'elenco oggetti (vedi i download qui sotto). |
+| `#SetCurrencyBalance Normal 10000 NomeGiocatore` | <span class="fl-st fl-st-ok">:material-check-circle: Testato</span> | Imposta i soldi di un giocatore. `Normal` è il denaro normale e `10000` l'importo: cambialo con il numero che vuoi (500, 100000...). |
+| `#ChangeCurrencyBalance Gold 5 NomeGiocatore` | <span class="fl-st fl-st-ok">:material-check-circle: Testato</span> | Cambia l'oro di un giocatore. `Gold` è la valuta e `5` l'importo: cambialo come vuoi. |
+| `#NightBrightness 1` | <span class="fl-st fl-st-ok">:material-check-circle: Testato</span> | Luminosità della notte, da 0 (buio) a 1 (chiaro). Solo per te, non per tutto il server. |
+| `#SetTime 12` | <span class="fl-st fl-st-ok">:material-check-circle: Testato</span> | Imposta l'ora del giorno, da 0 a 24. |
+| `#ListZombies`<br>`#ListAnimals` | <span class="fl-st fl-st-ok">:material-check-circle: Testato</span> | Elenca i tipi di zombie e di animali. |
+| `#ListSpawnedVehicles`<br>`#ListSpawnedArmedNPCs` | <span class="fl-st fl-st-ok">:material-check-circle: Testato</span> | Elenca ciò che è vivo nel mondo. Il risultato appare solo nella chat, non nel log. |
+| `#MapTeleport` | <span class="fl-st fl-st-lst">:material-format-list-bulleted: In elenco</span> | Teletrasporto tramite la mappa. Non testato. |
+| `#SetImmortality true`<br>`#SetImmortality false` | <span class="fl-st fl-st-rep">:material-help-circle-outline: Segnalato</span> | Immunità ai danni, attivata e poi disattivata. |
+| `#SetFamePoints 500 NomeGiocatore` | <span class="fl-st fl-st-rep">:material-help-circle-outline: Segnalato</span> | Imposta i punti fama di un giocatore. |
+| `#SetGodMode` | <span class="fl-st fl-st-rep">:material-help-circle-outline: Segnalato</span> | Costruzione istantanea, non invulnerabilità. |
+| `#heal` | <span class="fl-st fl-st-no">:material-close-circle: Assente</span> | Non esiste in 1.3.4.2. |
 
 ## :material-monitor: Avviare e gestire un server SCUM: su uno dedicato o in locale gratis
 
