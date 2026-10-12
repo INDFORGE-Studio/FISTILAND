@@ -74,4 +74,4 @@ Each file comes in two versions, so you can compare them. **FISTILAND** is the f
 | [SCUM_item_codes_1.3.4.2.txt](downloads/SCUM_item_codes_1.3.4.2.txt){ download="SCUM_item_codes_1.3.4.2.txt" } | **Data** | All 2,572 item codes of game version 1.3.4.2, one per line (from the `#ListItems` command). |
 | [Armory_SCUM_prices_A0.csv](downloads/Armory_SCUM_prices_A0.csv){ download="Armory_SCUM_prices_A0.csv" } | **Data** | The Armory trader prices of the base game, read in game at outpost A0 (about 380 lines). |
 
-The server address, ports and password are removed from these copies. Keep your own when you upload.
+:material-alert: For all the files available for download, the server address, the ports and the passwords have been removed on purpose; do not forget to do the same if you share your own files afterwards.

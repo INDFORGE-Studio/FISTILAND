@@ -74,4 +74,4 @@ Jede Datei gibt es in zwei Versionen, damit du sie vergleichen kannst. **FISTILA
 | [SCUM_item_codes_1.3.4.2.txt](downloads/SCUM_item_codes_1.3.4.2.txt){ download="SCUM_item_codes_1.3.4.2.txt" } | **Daten** | Alle 2.572 Item-Codes der Spielversion 1.3.4.2, einer pro Zeile (aus dem Befehl `#ListItems`). |
 | [Armory_SCUM_prices_A0.csv](downloads/Armory_SCUM_prices_A0.csv){ download="Armory_SCUM_prices_A0.csv" } | **Daten** | Die Preise des Armory-Händlers im Basisspiel, im Spiel am Außenposten A0 abgelesen (etwa 380 Zeilen). |
 
-Serveradresse, Ports und Passwort sind aus diesen Kopien entfernt. Behalte beim Hochladen deine eigenen.
+:material-alert: Bei allen zum Download angebotenen Dateien wurden Serveradresse, Ports und Passwörter absichtlich entfernt; vergiss nicht, dasselbe zu tun, wenn du deine eigenen Dateien später weitergibst.

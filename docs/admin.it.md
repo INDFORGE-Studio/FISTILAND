@@ -74,4 +74,4 @@ Ogni file esiste in due versioni, così puoi confrontarle. **FISTILAND** è il f
 | [SCUM_item_codes_1.3.4.2.txt](downloads/SCUM_item_codes_1.3.4.2.txt){ download="SCUM_item_codes_1.3.4.2.txt" } | **Dati** | I 2.572 codici oggetto della versione 1.3.4.2 del gioco, uno per riga (dal comando `#ListItems`). |
 | [Armory_SCUM_prices_A0.csv](downloads/Armory_SCUM_prices_A0.csv){ download="Armory_SCUM_prices_A0.csv" } | **Dati** | I prezzi del mercante Armory del gioco base, letti in gioco all'avamposto A0 (circa 380 righe). |
 
-L'indirizzo del server, le porte e la password sono rimossi da queste copie. Tieni i tuoi quando carichi il file.
+:material-alert: In tutti i file disponibili per il download, l'indirizzo del server, le porte e le password sono stati rimossi di proposito; non dimenticare di fare lo stesso se poi condividi i tuoi file.
