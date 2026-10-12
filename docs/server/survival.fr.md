@@ -24,7 +24,7 @@
 | `TimeOfDaySpeed` | 3.84 | Le temps en jeu s'écoule 3,84 fois plus vite que le temps réel (un jour complet dure environ 6 h 15 min). |
 | `SunriseTime` | 05:00:00 | Lever du soleil. |
 | `SunsetTime` | 22:30:00 | Coucher du soleil. |
-| `NighttimeDarkness` | 0 | Niveau d'obscurité de la nuit, réglé à la valeur la plus basse pour des nuits les plus claires. |
+| `NighttimeDarkness` | 0 | Niveau d'obscurité de la nuit, laissé à la valeur par défaut du jeu. Les nuits restent sombres, pensez à une lampe. |
 | `EnableFog` | True | Le brouillard est affiché. |
 
 ## :material-heart-pulse: Corps et objets

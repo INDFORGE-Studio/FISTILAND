@@ -24,7 +24,7 @@
 | `TimeOfDaySpeed` | 3.84 | Die Spielzeit läuft 3,84-mal schneller als die Echtzeit (ein ganzer Tag dauert etwa 6 h 15 min). |
 | `SunriseTime` | 05:00:00 | Sonnenaufgang. |
 | `SunsetTime` | 22:30:00 | Sonnenuntergang. |
-| `NighttimeDarkness` | 0 | Dunkelheit der Nacht, auf den niedrigsten Wert gesetzt für möglichst helle Nächte. |
+| `NighttimeDarkness` | 0 | Dunkelheit der Nacht, auf dem Standardwert des Spiels belassen. Die Nächte bleiben dunkel, nehmt eine Lampe mit. |
 | `EnableFog` | True | Nebel wird dargestellt. |
 
 ## :material-heart-pulse: Körper und Gegenstände

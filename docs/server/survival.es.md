@@ -24,7 +24,7 @@
 | `TimeOfDaySpeed` | 3.84 | El tiempo del juego corre 3,84 veces más rápido que el tiempo real (un día completo dura unas 6 h 15 min). |
 | `SunriseTime` | 05:00:00 | Amanecer. |
 | `SunsetTime` | 22:30:00 | Atardecer. |
-| `NighttimeDarkness` | 0 | Nivel de oscuridad de la noche, fijado en el valor más bajo para las noches más claras. |
+| `NighttimeDarkness` | 0 | Nivel de oscuridad de la noche, dejado en el valor por defecto del juego. Las noches siguen siendo oscuras, llevad una luz. |
 | `EnableFog` | True | Se muestra la niebla. |
 
 ## :material-heart-pulse: Cuerpo y objetos

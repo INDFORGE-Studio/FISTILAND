@@ -24,7 +24,7 @@
 | `TimeOfDaySpeed` | 3.84 | Il tempo di gioco scorre 3,84 volte più veloce del tempo reale (un giorno intero dura circa 6 h 15 min). |
 | `SunriseTime` | 05:00:00 | Alba. |
 | `SunsetTime` | 22:30:00 | Tramonto. |
-| `NighttimeDarkness` | 0 | Livello di oscurità della notte, impostato al valore più basso per le notti più luminose. |
+| `NighttimeDarkness` | 0 | Livello di oscurità della notte, lasciato al valore predefinito del gioco. Le notti restano buie, portate una luce. |
 | `EnableFog` | True | La nebbia viene mostrata. |
 
 ## :material-heart-pulse: Corpo e oggetti

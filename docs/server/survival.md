@@ -24,7 +24,7 @@
 | `TimeOfDaySpeed` | 3.84 | In-game time runs 3.84 times faster than real time (a full day lasts about 6 h 15 min). |
 | `SunriseTime` | 05:00:00 | Sunrise. |
 | `SunsetTime` | 22:30:00 | Sunset. |
-| `NighttimeDarkness` | 0 | Night darkness level, set to the lowest value for the brightest nights. |
+| `NighttimeDarkness` | 0 | Night darkness level, left at the game default. Nights stay dark, so bring a light. |
 | `EnableFog` | True | Fog is rendered. |
 
 ## :material-heart-pulse: Body and items
