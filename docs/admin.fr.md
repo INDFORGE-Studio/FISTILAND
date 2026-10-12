@@ -77,11 +77,11 @@ Chaque fichier existe en deux versions, pour pouvoir les comparer. **FISTILAND**
 
 | Fichier | Lequel | Ce que c'est |
 |---|---|---|
-| [ServerSettings_FISTILAND.ini](downloads/ServerSettings_FISTILAND.ini){ download="ServerSettings_FISTILAND.ini" } | **FISTILAND** | Les réglages du serveur FISTILAND. |
-| [ServerSettings_SCUM.ini](downloads/ServerSettings_SCUM.ini){ download="ServerSettings_SCUM.ini" } | **SCUM** | Le fichier d'un nouveau serveur Nitrado, intact. |
-| [EconomyOverride_FISTILAND.json](downloads/EconomyOverride_FISTILAND.json){ download="EconomyOverride_FISTILAND.json" } | **FISTILAND** | Les réglages des marchands de FISTILAND : pas de fame requis, marchands toujours approvisionnés et riches, prix fixes. |
-| [EconomyOverride_SCUM.json](downloads/EconomyOverride_SCUM.json){ download="EconomyOverride_SCUM.json" } | **SCUM** | Le fichier des marchands avec les valeurs de départ du jeu. |
-| [SCUM_item_codes_1.3.4.2.txt](downloads/SCUM_item_codes_1.3.4.2.txt){ download="SCUM_item_codes_1.3.4.2.txt" } | **Données** | Les 2 572 codes d'objets de la version 1.3.4.2 du jeu, un par ligne (issus de la commande `#ListItems`). |
-| [Armory_SCUM_prices_A0.csv](downloads/Armory_SCUM_prices_A0.csv){ download="Armory_SCUM_prices_A0.csv" } | **Données** | Les prix de l'Armory (armurier) du jeu de base, relevés en jeu à l'avant-poste A0 (environ 380 lignes). |
+| [ServerSettings_FISTILAND.ini](downloads/ServerSettings_FISTILAND.ini){ download="ServerSettings_FISTILAND.ini" } | <span class="fl-st fl-wh-fl">:material-shield-star: FISTILAND</span> | Les réglages du serveur FISTILAND. |
+| [ServerSettings_SCUM.ini](downloads/ServerSettings_SCUM.ini){ download="ServerSettings_SCUM.ini" } | <span class="fl-st fl-wh-sc">:material-gamepad-variant: SCUM</span> | Le fichier d'un nouveau serveur Nitrado, intact. |
+| [EconomyOverride_FISTILAND.json](downloads/EconomyOverride_FISTILAND.json){ download="EconomyOverride_FISTILAND.json" } | <span class="fl-st fl-wh-fl">:material-shield-star: FISTILAND</span> | Les réglages des marchands de FISTILAND : pas de fame requis, marchands toujours approvisionnés et riches, prix fixes. |
+| [EconomyOverride_SCUM.json](downloads/EconomyOverride_SCUM.json){ download="EconomyOverride_SCUM.json" } | <span class="fl-st fl-wh-sc">:material-gamepad-variant: SCUM</span> | Le fichier des marchands avec les valeurs de départ du jeu. |
+| [SCUM_item_codes_1.3.4.2.txt](downloads/SCUM_item_codes_1.3.4.2.txt){ download="SCUM_item_codes_1.3.4.2.txt" } | <span class="fl-st fl-wh-da">:material-database: Données</span> | Les 2 572 codes d'objets de la version 1.3.4.2 du jeu, un par ligne (issus de la commande `#ListItems`). |
+| [Armory_SCUM_prices_A0.csv](downloads/Armory_SCUM_prices_A0.csv){ download="Armory_SCUM_prices_A0.csv" } | <span class="fl-st fl-wh-da">:material-database: Données</span> | Les prix de l'Armory (armurier) du jeu de base, relevés en jeu à l'avant-poste A0 (environ 380 lignes). |
 
 :material-alert: Pour tous les fichiers disponibles au téléchargement, l'adresse du serveur, les ports et les mots de passe ont volontairement été retirés ; n'oubliez pas de faire de même si vous faites circuler vos fichiers par la suite.

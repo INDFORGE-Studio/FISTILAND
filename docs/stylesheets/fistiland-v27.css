@@ -496,3 +496,6 @@ html[lang="uk"] .md-header__option .md-select > button::before { background-imag
 .fl-st-no { color: #8a7f75; }
 .md-content:has(.fl-page-hero):not(:has(.fl-home)) .md-typeset table:not([class]):has(.fl-st) tr:has(.fl-st-no) td { opacity: .55; }
 .md-content:has(.fl-page-hero):not(:has(.fl-home)) .md-typeset table:not([class]):has(.fl-st) tr:has(.fl-st-no) td:nth-child(1) code { color: #8a7f75; text-decoration: line-through; }
+.fl-wh-fl { color: var(--fl-orange-hot); }
+.fl-wh-sc { color: #e8dccf; }
+.fl-wh-da { color: #6fa8dc; }

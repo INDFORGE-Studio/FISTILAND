@@ -77,11 +77,11 @@
 
 | Файл | Який | Що це |
 |---|---|---|
-| [ServerSettings_FISTILAND.ini](downloads/ServerSettings_FISTILAND.ini){ download="ServerSettings_FISTILAND.ini" } | **FISTILAND** | Налаштування сервера FISTILAND. |
-| [ServerSettings_SCUM.ini](downloads/ServerSettings_SCUM.ini){ download="ServerSettings_SCUM.ini" } | **SCUM** | Файл, з яким стартує новий сервер Nitrado, без змін. |
-| [EconomyOverride_FISTILAND.json](downloads/EconomyOverride_FISTILAND.json){ download="EconomyOverride_FISTILAND.json" } | **FISTILAND** | Налаштування торговців FISTILAND: без вимоги слави, торговці завжди з товаром і грошима, фіксовані ціни. |
-| [EconomyOverride_SCUM.json](downloads/EconomyOverride_SCUM.json){ download="EconomyOverride_SCUM.json" } | **SCUM** | Файл торговців зі стартовими значеннями гри. |
-| [SCUM_item_codes_1.3.4.2.txt](downloads/SCUM_item_codes_1.3.4.2.txt){ download="SCUM_item_codes_1.3.4.2.txt" } | **Дані** | Усі 2 572 коди предметів версії гри 1.3.4.2, по одному в рядку (з команди `#ListItems`). |
-| [Armory_SCUM_prices_A0.csv](downloads/Armory_SCUM_prices_A0.csv){ download="Armory_SCUM_prices_A0.csv" } | **Дані** | Ціни торговця Armory в базовій грі, зчитані в грі на форпості A0 (близько 380 рядків). |
+| [ServerSettings_FISTILAND.ini](downloads/ServerSettings_FISTILAND.ini){ download="ServerSettings_FISTILAND.ini" } | <span class="fl-st fl-wh-fl">:material-shield-star: FISTILAND</span> | Налаштування сервера FISTILAND. |
+| [ServerSettings_SCUM.ini](downloads/ServerSettings_SCUM.ini){ download="ServerSettings_SCUM.ini" } | <span class="fl-st fl-wh-sc">:material-gamepad-variant: SCUM</span> | Файл, з яким стартує новий сервер Nitrado, без змін. |
+| [EconomyOverride_FISTILAND.json](downloads/EconomyOverride_FISTILAND.json){ download="EconomyOverride_FISTILAND.json" } | <span class="fl-st fl-wh-fl">:material-shield-star: FISTILAND</span> | Налаштування торговців FISTILAND: без вимоги слави, торговці завжди з товаром і грошима, фіксовані ціни. |
+| [EconomyOverride_SCUM.json](downloads/EconomyOverride_SCUM.json){ download="EconomyOverride_SCUM.json" } | <span class="fl-st fl-wh-sc">:material-gamepad-variant: SCUM</span> | Файл торговців зі стартовими значеннями гри. |
+| [SCUM_item_codes_1.3.4.2.txt](downloads/SCUM_item_codes_1.3.4.2.txt){ download="SCUM_item_codes_1.3.4.2.txt" } | <span class="fl-st fl-wh-da">:material-database: Дані</span> | Усі 2 572 коди предметів версії гри 1.3.4.2, по одному в рядку (з команди `#ListItems`). |
+| [Armory_SCUM_prices_A0.csv](downloads/Armory_SCUM_prices_A0.csv){ download="Armory_SCUM_prices_A0.csv" } | <span class="fl-st fl-wh-da">:material-database: Дані</span> | Ціни торговця Armory в базовій грі, зчитані в грі на форпості A0 (близько 380 рядків). |
 
 :material-alert: У всіх файлах, доступних для завантаження, адресу сервера, порти та паролі навмисно прибрано; не забудьте зробити те саме, якщо надалі поширюватимете свої файли.
