@@ -4,7 +4,7 @@
 
 # Guide Admin
 
-<p>Tout ce que nous avons vérifié en faisant tourner un serveur SCUM, avec la v1.3.4.2</p>
+<p>Tout ce que nous avons vérifié en faisant tourner un serveur SCUM v1.3.4.2</p>
 
 </div>
 
