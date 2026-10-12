@@ -22,7 +22,7 @@ Trage deine SteamID64 (17 Ziffern, zu finden auf steamid.io) in `AdminUsers.ini`
 
 ## :material-console: Chat-Befehle
 
-Status: **Gültig** heißt, wir haben im Spiel geprüft, dass er funktioniert. **Gemeldet** heißt, ein öffentlicher Leitfaden beschreibt ihn und wir haben ihn nicht getestet. In den Beispielen sind Beträge, Spielername und Item-Codes nur Beispiele: ändere sie nach Bedarf.
+Status: **Gültig** heißt, wir haben im Spiel geprüft, dass er funktioniert. **Ungeprüft** heißt, ein öffentlicher Leitfaden oder das Spiel nennt ihn, aber wir haben ihn im Spiel nicht geprüft. In den Beispielen sind Beträge, Spielername und Item-Codes nur Beispiele: ändere sie nach Bedarf.
 
 | Befehl | Status | Was er macht |
 |---|---|---|
@@ -35,10 +35,10 @@ Status: **Gültig** heißt, wir haben im Spiel geprüft, dass er funktioniert. *
 | `#SetTime 12` | <span class="fl-st fl-st-ok">:material-check-decagram: Gültig</span> | Setzt die Tageszeit, von 0 bis 24. |
 | `#ListZombies`<br>`#ListAnimals` | <span class="fl-st fl-st-ok">:material-check-decagram: Gültig</span> | Listet die Zombie- und Tiertypen auf. |
 | `#ListSpawnedVehicles`<br>`#ListSpawnedArmedNPCs` | <span class="fl-st fl-st-ok">:material-check-decagram: Gültig</span> | Listet, was in der Welt lebt. Das Ergebnis erscheint nur im Chat, nicht im Log. |
-| `#MapTeleport` | <span class="fl-st fl-st-lst">:material-format-list-bulleted: Gelistet</span> | Teleport über die Karte. Nicht getestet. |
-| `#SetImmortality true`<br>`#SetImmortality false` | <span class="fl-st fl-st-rep">:material-help-circle-outline: Gemeldet</span> | Schadensimmunität an, dann aus. |
-| `#SetFamePoints 500 Spielername` | <span class="fl-st fl-st-rep">:material-help-circle-outline: Gemeldet</span> | Setzt die Fame Points eines Spielers. |
-| `#SetGodMode` | <span class="fl-st fl-st-rep">:material-help-circle-outline: Gemeldet</span> | Sofortiges Bauen, keine Unverwundbarkeit. |
+| `#MapTeleport` | <span class="fl-st fl-st-rep">:material-help-circle-outline: Ungeprüft</span> | Teleport über die Karte. |
+| `#SetImmortality true`<br>`#SetImmortality false` | <span class="fl-st fl-st-rep">:material-help-circle-outline: Ungeprüft</span> | Schadensimmunität an, dann aus. |
+| `#SetFamePoints 500 Spielername` | <span class="fl-st fl-st-rep">:material-help-circle-outline: Ungeprüft</span> | Setzt die Fame Points eines Spielers. |
+| `#SetGodMode` | <span class="fl-st fl-st-rep">:material-help-circle-outline: Ungeprüft</span> | Sofortiges Bauen, keine Unverwundbarkeit. |
 
 ## :material-monitor: Einen SCUM-Server starten und betreiben: auf einem Dedicated Server oder kostenlos lokal
 

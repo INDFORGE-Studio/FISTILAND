@@ -22,7 +22,7 @@ Ajoutez votre SteamID64 (17 chiffres, à trouver sur steamid.io) dans `AdminUser
 
 ## :material-console: Commandes du chat
 
-Statut : **Valide** veut dire que nous avons vérifié en jeu qu'elle fonctionne. **Signalée** veut dire qu'un guide public la décrit et que nous ne l'avons pas testée. Dans les exemples, les montants, le nom du joueur et les codes d'objets ne sont que des exemples : changez-les selon vos besoins.
+Statut : **Valide** veut dire que nous avons vérifié en jeu qu'elle fonctionne. **Non vérifiée** veut dire qu'un guide public ou le jeu la mentionne, mais que nous ne l'avons pas vérifiée en jeu. Dans les exemples, les montants, le nom du joueur et les codes d'objets ne sont que des exemples : changez-les selon vos besoins.
 
 | Commande | Statut | Ce qu'elle fait |
 |---|---|---|
@@ -35,10 +35,10 @@ Statut : **Valide** veut dire que nous avons vérifié en jeu qu'elle fonctionne
 | `#SetTime 12` | <span class="fl-st fl-st-ok">:material-check-decagram: Valide</span> | Fixe l'heure de la journée, de 0 à 24. |
 | `#ListZombies`<br>`#ListAnimals` | <span class="fl-st fl-st-ok">:material-check-decagram: Valide</span> | Liste les types de zombies et d'animaux. |
 | `#ListSpawnedVehicles`<br>`#ListSpawnedArmedNPCs` | <span class="fl-st fl-st-ok">:material-check-decagram: Valide</span> | Liste ce qui est vivant dans le monde. Le résultat s'affiche dans le chat uniquement, pas dans le journal. |
-| `#MapTeleport` | <span class="fl-st fl-st-lst">:material-format-list-bulleted: Listée</span> | Téléportation par la carte. Non testée. |
-| `#SetImmortality true`<br>`#SetImmortality false` | <span class="fl-st fl-st-rep">:material-help-circle-outline: Signalée</span> | Immunité aux dégâts, activée puis désactivée. |
-| `#SetFamePoints 500 NomDuJoueur` | <span class="fl-st fl-st-rep">:material-help-circle-outline: Signalée</span> | Fixe les fame points d'un joueur. |
-| `#SetGodMode` | <span class="fl-st fl-st-rep">:material-help-circle-outline: Signalée</span> | Construction instantanée, pas d'invulnérabilité. |
+| `#MapTeleport` | <span class="fl-st fl-st-rep">:material-help-circle-outline: Non vérifiée</span> | Téléportation par la carte. |
+| `#SetImmortality true`<br>`#SetImmortality false` | <span class="fl-st fl-st-rep">:material-help-circle-outline: Non vérifiée</span> | Immunité aux dégâts, activée puis désactivée. |
+| `#SetFamePoints 500 NomDuJoueur` | <span class="fl-st fl-st-rep">:material-help-circle-outline: Non vérifiée</span> | Fixe les fame points d'un joueur. |
+| `#SetGodMode` | <span class="fl-st fl-st-rep">:material-help-circle-outline: Non vérifiée</span> | Construction instantanée, pas d'invulnérabilité. |
 
 ## :material-monitor: Lancer et faire tourner un serveur SCUM : sur un dédié ou en local gratuitement
 

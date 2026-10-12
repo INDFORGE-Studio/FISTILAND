@@ -22,7 +22,7 @@
 
 ## :material-console: Команди чату
 
-Статус: **Працює** означає, що ми перевірили в грі, що команда працює. **Згадано** означає, що її описує публічний посібник, а ми її не перевіряли. У прикладах суми, ім'я гравця та коди предметів — лише приклади: змініть їх на потрібні.
+Статус: **Працює** означає, що ми перевірили в грі, що команда працює. **Не перевірено** означає, що її згадує публічний посібник або гра, але ми не перевіряли її в грі. У прикладах суми, ім'я гравця та коди предметів — лише приклади: змініть їх на потрібні.
 
 | Команда | Статус | Що робить |
 |---|---|---|
@@ -35,10 +35,10 @@
 | `#SetTime 12` | <span class="fl-st fl-st-ok">:material-check-decagram: Працює</span> | Встановлює час доби від 0 до 24. |
 | `#ListZombies`<br>`#ListAnimals` | <span class="fl-st fl-st-ok">:material-check-decagram: Працює</span> | Показує типи зомбі та тварин. |
 | `#ListSpawnedVehicles`<br>`#ListSpawnedArmedNPCs` | <span class="fl-st fl-st-ok">:material-check-decagram: Працює</span> | Показує, що живе у світі. Результат з'являється лише в чаті, не в журналі. |
-| `#MapTeleport` | <span class="fl-st fl-st-lst">:material-format-list-bulleted: У списку</span> | Телепорт через мапу. Не перевірено. |
-| `#SetImmortality true`<br>`#SetImmortality false` | <span class="fl-st fl-st-rep">:material-help-circle-outline: Згадано</span> | Імунітет до шкоди: увімкнути, потім вимкнути. |
-| `#SetFamePoints 500 ІмяГравця` | <span class="fl-st fl-st-rep">:material-help-circle-outline: Згадано</span> | Встановлює очки слави гравця. |
-| `#SetGodMode` | <span class="fl-st fl-st-rep">:material-help-circle-outline: Згадано</span> | Миттєве будівництво, а не невразливість. |
+| `#MapTeleport` | <span class="fl-st fl-st-rep">:material-help-circle-outline: Не перевірено</span> | Телепорт через мапу. |
+| `#SetImmortality true`<br>`#SetImmortality false` | <span class="fl-st fl-st-rep">:material-help-circle-outline: Не перевірено</span> | Імунітет до шкоди: увімкнути, потім вимкнути. |
+| `#SetFamePoints 500 ІмяГравця` | <span class="fl-st fl-st-rep">:material-help-circle-outline: Не перевірено</span> | Встановлює очки слави гравця. |
+| `#SetGodMode` | <span class="fl-st fl-st-rep">:material-help-circle-outline: Не перевірено</span> | Миттєве будівництво, а не невразливість. |
 
 ## :material-monitor: Запуск і робота сервера SCUM: на виділеному сервері або локально безкоштовно
 
