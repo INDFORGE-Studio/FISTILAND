@@ -67,11 +67,11 @@ Each file comes in two versions, so you can compare them. **FISTILAND** is the f
 
 | File | Which one | What it is |
 |---|---|---|
-| [ServerSettings_FISTILAND.ini](downloads/ServerSettings_FISTILAND.ini){ download } | **FISTILAND** | The settings of the FISTILAND server. |
-| [ServerSettings_SCUM.ini](downloads/ServerSettings_SCUM.ini){ download } | **SCUM** | The file a new Nitrado server starts with, untouched. |
-| [EconomyOverride_FISTILAND.json](downloads/EconomyOverride_FISTILAND.json){ download } | **FISTILAND** | Trader settings of FISTILAND: no fame requirement, traders always stocked and funded, fixed prices. |
-| [EconomyOverride_SCUM.json](downloads/EconomyOverride_SCUM.json){ download } | **SCUM** | The trader file with the values the game starts with. |
-| [SCUM_item_codes_1.3.4.2.txt](downloads/SCUM_item_codes_1.3.4.2.txt){ download } | **Data** | All 2,572 item codes of game version 1.3.4.2, one per line (from the `#ListItems` command). |
-| [Armory_SCUM_prices_A0.csv](downloads/Armory_SCUM_prices_A0.csv){ download } | **Data** | The Armory trader prices of the base game, read in game at outpost A0 (about 380 lines). |
+| [ServerSettings_FISTILAND.ini](downloads/ServerSettings_FISTILAND.ini){ download="ServerSettings_FISTILAND.ini" } | **FISTILAND** | The settings of the FISTILAND server. |
+| [ServerSettings_SCUM.ini](downloads/ServerSettings_SCUM.ini){ download="ServerSettings_SCUM.ini" } | **SCUM** | The file a new Nitrado server starts with, untouched. |
+| [EconomyOverride_FISTILAND.json](downloads/EconomyOverride_FISTILAND.json){ download="EconomyOverride_FISTILAND.json" } | **FISTILAND** | Trader settings of FISTILAND: no fame requirement, traders always stocked and funded, fixed prices. |
+| [EconomyOverride_SCUM.json](downloads/EconomyOverride_SCUM.json){ download="EconomyOverride_SCUM.json" } | **SCUM** | The trader file with the values the game starts with. |
+| [SCUM_item_codes_1.3.4.2.txt](downloads/SCUM_item_codes_1.3.4.2.txt){ download="SCUM_item_codes_1.3.4.2.txt" } | **Data** | All 2,572 item codes of game version 1.3.4.2, one per line (from the `#ListItems` command). |
+| [Armory_SCUM_prices_A0.csv](downloads/Armory_SCUM_prices_A0.csv){ download="Armory_SCUM_prices_A0.csv" } | **Data** | The Armory trader prices of the base game, read in game at outpost A0 (about 380 lines). |
 
 The server address, ports and password are removed from these copies. Keep your own when you upload.

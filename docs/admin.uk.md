@@ -67,11 +67,11 @@
 
 | Файл | Який | Що це |
 |---|---|---|
-| [ServerSettings_FISTILAND.ini](downloads/ServerSettings_FISTILAND.ini){ download } | **FISTILAND** | Налаштування сервера FISTILAND. |
-| [ServerSettings_SCUM.ini](downloads/ServerSettings_SCUM.ini){ download } | **SCUM** | Файл, з яким стартує новий сервер Nitrado, без змін. |
-| [EconomyOverride_FISTILAND.json](downloads/EconomyOverride_FISTILAND.json){ download } | **FISTILAND** | Налаштування торговців FISTILAND: без вимоги слави, торговці завжди з товаром і грошима, фіксовані ціни. |
-| [EconomyOverride_SCUM.json](downloads/EconomyOverride_SCUM.json){ download } | **SCUM** | Файл торговців зі стартовими значеннями гри. |
-| [SCUM_item_codes_1.3.4.2.txt](downloads/SCUM_item_codes_1.3.4.2.txt){ download } | **Дані** | Усі 2 572 коди предметів версії гри 1.3.4.2, по одному в рядку (з команди `#ListItems`). |
-| [Armory_SCUM_prices_A0.csv](downloads/Armory_SCUM_prices_A0.csv){ download } | **Дані** | Ціни торговця Armory в базовій грі, зчитані в грі на форпості A0 (близько 380 рядків). |
+| [ServerSettings_FISTILAND.ini](downloads/ServerSettings_FISTILAND.ini){ download="ServerSettings_FISTILAND.ini" } | **FISTILAND** | Налаштування сервера FISTILAND. |
+| [ServerSettings_SCUM.ini](downloads/ServerSettings_SCUM.ini){ download="ServerSettings_SCUM.ini" } | **SCUM** | Файл, з яким стартує новий сервер Nitrado, без змін. |
+| [EconomyOverride_FISTILAND.json](downloads/EconomyOverride_FISTILAND.json){ download="EconomyOverride_FISTILAND.json" } | **FISTILAND** | Налаштування торговців FISTILAND: без вимоги слави, торговці завжди з товаром і грошима, фіксовані ціни. |
+| [EconomyOverride_SCUM.json](downloads/EconomyOverride_SCUM.json){ download="EconomyOverride_SCUM.json" } | **SCUM** | Файл торговців зі стартовими значеннями гри. |
+| [SCUM_item_codes_1.3.4.2.txt](downloads/SCUM_item_codes_1.3.4.2.txt){ download="SCUM_item_codes_1.3.4.2.txt" } | **Дані** | Усі 2 572 коди предметів версії гри 1.3.4.2, по одному в рядку (з команди `#ListItems`). |
+| [Armory_SCUM_prices_A0.csv](downloads/Armory_SCUM_prices_A0.csv){ download="Armory_SCUM_prices_A0.csv" } | **Дані** | Ціни торговця Armory в базовій грі, зчитані в грі на форпості A0 (близько 380 рядків). |
 
 Адресу сервера, порти та пароль прибрано з цих копій. Під час завантаження залишайте свої.

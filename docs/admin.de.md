@@ -67,11 +67,11 @@ Jede Datei gibt es in zwei Versionen, damit du sie vergleichen kannst. **FISTILA
 
 | Datei | Welche | Was es ist |
 |---|---|---|
-| [ServerSettings_FISTILAND.ini](downloads/ServerSettings_FISTILAND.ini){ download } | **FISTILAND** | Die Einstellungen des FISTILAND-Servers. |
-| [ServerSettings_SCUM.ini](downloads/ServerSettings_SCUM.ini){ download } | **SCUM** | Die Datei, mit der ein neuer Nitrado-Server startet, unverändert. |
-| [EconomyOverride_FISTILAND.json](downloads/EconomyOverride_FISTILAND.json){ download } | **FISTILAND** | Händlereinstellungen von FISTILAND: keine Fame-Anforderung, Händler immer mit Ware und Geld, feste Preise. |
-| [EconomyOverride_SCUM.json](downloads/EconomyOverride_SCUM.json){ download } | **SCUM** | Die Händlerdatei mit den Startwerten des Spiels. |
-| [SCUM_item_codes_1.3.4.2.txt](downloads/SCUM_item_codes_1.3.4.2.txt){ download } | **Daten** | Alle 2.572 Item-Codes der Spielversion 1.3.4.2, einer pro Zeile (aus dem Befehl `#ListItems`). |
-| [Armory_SCUM_prices_A0.csv](downloads/Armory_SCUM_prices_A0.csv){ download } | **Daten** | Die Preise des Armory-Händlers im Basisspiel, im Spiel am Außenposten A0 abgelesen (etwa 380 Zeilen). |
+| [ServerSettings_FISTILAND.ini](downloads/ServerSettings_FISTILAND.ini){ download="ServerSettings_FISTILAND.ini" } | **FISTILAND** | Die Einstellungen des FISTILAND-Servers. |
+| [ServerSettings_SCUM.ini](downloads/ServerSettings_SCUM.ini){ download="ServerSettings_SCUM.ini" } | **SCUM** | Die Datei, mit der ein neuer Nitrado-Server startet, unverändert. |
+| [EconomyOverride_FISTILAND.json](downloads/EconomyOverride_FISTILAND.json){ download="EconomyOverride_FISTILAND.json" } | **FISTILAND** | Händlereinstellungen von FISTILAND: keine Fame-Anforderung, Händler immer mit Ware und Geld, feste Preise. |
+| [EconomyOverride_SCUM.json](downloads/EconomyOverride_SCUM.json){ download="EconomyOverride_SCUM.json" } | **SCUM** | Die Händlerdatei mit den Startwerten des Spiels. |
+| [SCUM_item_codes_1.3.4.2.txt](downloads/SCUM_item_codes_1.3.4.2.txt){ download="SCUM_item_codes_1.3.4.2.txt" } | **Daten** | Alle 2.572 Item-Codes der Spielversion 1.3.4.2, einer pro Zeile (aus dem Befehl `#ListItems`). |
+| [Armory_SCUM_prices_A0.csv](downloads/Armory_SCUM_prices_A0.csv){ download="Armory_SCUM_prices_A0.csv" } | **Daten** | Die Preise des Armory-Händlers im Basisspiel, im Spiel am Außenposten A0 abgelesen (etwa 380 Zeilen). |
 
 Serveradresse, Ports und Passwort sind aus diesen Kopien entfernt. Behalte beim Hochladen deine eigenen.
