@@ -63,7 +63,7 @@ Consulta las [páginas de ajustes](server/overview.md) para ver qué hace cada v
 
 ## :material-download: Descargar los archivos de configuración
 
-Cada archivo existe en dos versiones, para poder compararlos. **FISTILAND** es el archivo que usa nuestro servidor. **SCUM** es el archivo tal como lo entrega el juego o Nitrado, el punto de partida para empezar desde cero.
+Cada archivo existe en dos versiones, para poder compararlos. **FISTILAND** es el archivo que usa nuestro servidor. **SCUM** son los archivos tal como los entrega el juego por defecto, y por tanto un buen punto de partida para empezar desde cero.
 
 | Archivo | Cuál | Qué es |
 |---|---|---|
