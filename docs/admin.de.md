@@ -46,7 +46,7 @@ Status: **Getestet** heißt, wir haben den Befehl auf unserem Server ausgeführt
 1. Installiere in Steam das kostenlose Tool **SCUM Server**.
 2. Kopiere deine `ServerSettings.ini` und `EconomyOverride.json` in den Ordner `SCUM\Saved\Config\WindowsServer` des Tools. Füge dem Servernamen `[TEST]` hinzu, damit du ihn erkennst.
 3. Starte `SCUMServer.exe -log -port=7777` aus `SCUM\Binaries\Win64`. Das Laden der Karte dauert etwa zwei Minuten.
-4. Öffne im Spiel das Feld für die direkte Verbindung und gib `127.0.0.1:7779` ein. Port 7777 funktioniert dort nicht.
+4. Öffne im Spiel das Feld für die direkte Verbindung und gib `127.0.0.1:7779` ein. So hat es bei uns mit einem Server funktioniert, der mit `-port=7777` gestartet wurde: Der Verbindungsport war 7779, also zwei mehr als der Spielport, und 7777 schlug fehl. Getestet auf demselben PC wie das Spiel; bei einem anderen `-port`-Wert kann der Port abweichen.
 5. Beende den Server mit Strg+C in seinem Fenster.
 
 Das Serverlog ist `SCUM\Saved\Logs\SCUM.log` im Ordner des Tools. Das Log deines eigenen Spiels, in dem die Ergebnisse der Befehle erscheinen, liegt in `%LOCALAPPDATA%\SCUM\Saved\Logs`.

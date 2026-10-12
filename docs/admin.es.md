@@ -46,7 +46,7 @@ Estado: **Probado** significa que lo ejecutamos en nuestro servidor. **Indicado*
 1. En Steam, instala la herramienta gratuita **SCUM Server**.
 2. Copia tu `ServerSettings.ini` y tu `EconomyOverride.json` en la carpeta `SCUM\Saved\Config\WindowsServer` de la herramienta. Añade `[TEST]` al nombre del servidor para reconocerlo.
 3. Inicia `SCUMServer.exe -log -port=7777` desde `SCUM\Binaries\Win64`. Cargar el mapa tarda unos dos minutos.
-4. En el juego, abre el cuadro de conexión directa y escribe `127.0.0.1:7779`. El puerto 7777 no funciona ahí.
+4. En el juego, abre el cuadro de conexión directa y escribe `127.0.0.1:7779`. Esto nos funcionó con un servidor iniciado con `-port=7777`: el puerto de conexión era el 7779, dos más que el puerto del juego, y el 7777 fallaba. Probado en el mismo PC que el juego; con otro valor de `-port`, el puerto puede cambiar.
 5. Para el servidor con Ctrl+C en su ventana.
 
 El registro del servidor es `SCUM\Saved\Logs\SCUM.log` en la carpeta de la herramienta. El registro de tu propio juego, donde salen los resultados de los comandos, está en `%LOCALAPPDATA%\SCUM\Saved\Logs`.

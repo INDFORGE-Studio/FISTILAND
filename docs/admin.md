@@ -46,7 +46,7 @@ Status: **Tested** means we ran it on our server. **Reported** means a public gu
 1. In Steam, install the free **SCUM Server** tool.
 2. Copy your `ServerSettings.ini` and `EconomyOverride.json` into the folder `SCUM\Saved\Config\WindowsServer` of the tool. Add `[TEST]` to the server name so you spot it.
 3. Start `SCUMServer.exe -log -port=7777` from `SCUM\Binaries\Win64`. Loading the map takes about two minutes.
-4. In the game, open the direct connect box and use `127.0.0.1:7779`. Port 7777 does not work there.
+4. In the game, open the direct connect box and type `127.0.0.1:7779`. This is what worked for us with a server started with `-port=7777`: the connection port was 7779, two above the game port, and typing 7777 failed. Tested on the same PC as the game; with another `-port` value the port may differ.
 5. Stop the server with Ctrl+C in its window.
 
 The server log is `SCUM\Saved\Logs\SCUM.log` in the tool folder. Your own game log, where command results show up, is in `%LOCALAPPDATA%\SCUM\Saved\Logs`.
