@@ -63,7 +63,7 @@ Vedi le [pagine delle impostazioni](server/overview.md) per cosa fa ogni valore 
 
 ## :material-download: Scaricare i file di configurazione
 
-Ogni file esiste in due versioni, così puoi confrontarle. **FISTILAND** è il file che usa il nostro server. **SCUM** sono i file così come li fornisce il gioco per impostazione predefinita, e quindi un buon punto di partenza per ricominciare da zero.
+Ogni file esiste in due versioni, così puoi confrontarle. **FISTILAND** sono le versioni che usa il nostro server. E **SCUM** sono le versioni così come le fornisce il gioco per impostazione predefinita, e quindi anche un buon punto di partenza per ricominciare da zero.
 
 | File | Quale | Cos'è |
 |---|---|---|

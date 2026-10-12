@@ -63,7 +63,7 @@ Auf den [Einstellungsseiten](server/overview.md) steht, was jeder Wert auf FISTI
 
 ## :material-download: Konfigurationsdateien herunterladen
 
-Jede Datei gibt es in zwei Versionen, damit du sie vergleichen kannst. **FISTILAND** ist die Datei, die unser Server benutzt. **SCUM** sind die Dateien so, wie das Spiel sie standardmäßig liefert, und damit ein guter Ausgangspunkt, wenn du bei null anfangen willst.
+Jede Datei gibt es in zwei Versionen, damit du sie vergleichen kannst. **FISTILAND** sind die Versionen, die unser Server benutzt. Und **SCUM** sind die Versionen so, wie das Spiel sie standardmäßig liefert, und damit auch ein guter Ausgangspunkt, wenn du bei null anfangen willst.
 
 | Datei | Welche | Was es ist |
 |---|---|---|

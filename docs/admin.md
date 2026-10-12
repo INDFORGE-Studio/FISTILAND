@@ -63,7 +63,7 @@ See the [settings pages](server/overview.md) for what each value does on FISTILA
 
 ## :material-download: Download the config files
 
-Each file comes in two versions, so you can compare them. **FISTILAND** is the file our server runs. **SCUM** are the files as the game provides them by default, and so a good starting point if you want to begin from scratch.
+Each file comes in two versions, so you can compare them. **FISTILAND** are the versions our server uses. And **SCUM** are the versions as the game provides them by default, and so also a good starting point if you want to begin from scratch.
 
 | File | Which one | What it is |
 |---|---|---|

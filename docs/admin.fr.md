@@ -63,7 +63,7 @@ Consultez les [pages de réglages](server/overview.md) pour ce que fait chaque v
 
 ## :material-download: Télécharger les fichiers de configuration
 
-Chaque fichier existe en deux versions, pour pouvoir les comparer. **FISTILAND** est le fichier que notre serveur utilise. **SCUM** sont les fichiers tels que le jeu les fournit par défaut, et donc un bon point de départ pour repartir de zéro.
+Chaque fichier existe en deux versions, pour pouvoir les comparer. **FISTILAND** sont les versions que notre serveur utilise. Et **SCUM** sont les versions telles que le jeu les fournit par défaut, et donc aussi un bon point de départ pour repartir de zéro.
 
 | Fichier | Lequel | Ce que c'est |
 |---|---|---|
