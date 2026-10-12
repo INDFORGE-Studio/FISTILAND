@@ -520,7 +520,7 @@ html[lang="uk"] .md-header__option .md-select > button::before { background-imag
 .fl-map.is-zoomed { cursor: grab; touch-action: none; }
 .fl-map:fullscreen { aspect-ratio: auto; border-radius: 0; display: flex; align-items: center; justify-content: center; }
 .fl-map:fullscreen .fl-map__stage { width: min(100vw, 150vh); }
-.fl-map__stage { width: 100%; transform-origin: 0 0; will-change: transform; }
+.fl-map__stage { width: 100%; transform-origin: 0 0; }
 .fl-map__stage svg { display: block; width: 100%; height: auto; }
 .fl-map__fail { padding: 2rem; text-align: center; color: #b9aea3; }
 .fl-map__ctl { position: absolute; top: .6rem; right: .6rem; display: flex; gap: .3rem; z-index: 2; }
