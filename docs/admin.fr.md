@@ -24,22 +24,22 @@ Ajoutez votre SteamID64 (17 chiffres, à trouver sur steamid.io) dans `AdminUser
 
 Statut : **Testée** veut dire que nous l'avons lancée sur notre serveur. **Signalée** veut dire qu'un guide public la décrit et que nous ne l'avons pas testée.
 
-| Commande | Ce qu'elle fait | Statut |
+| Commande | Statut | Ce qu'elle fait |
 |---|---|---|
-| `#ListPlayers` | Liste les joueurs en ligne. | Testée |
-| `#ListItems` | Affiche tous les codes d'objets de votre version (2 572 en 1.3.4.2) dans le journal du jeu. | Testée |
-| `#spawnitem Apple`, `#spawnitem Water_05l` | Vous donne un objet à partir de son code. | Testée |
-| `#SetCurrencyBalance Normal 10000 NomDuJoueur` | Fixe l'argent d'un joueur. | Testée |
-| `#ChangeCurrencyBalance Gold 5 NomDuJoueur` | Modifie l'or d'un joueur. | Testée |
-| `#NightBrightness 1` | Luminosité de la nuit, de 0 (sombre) à 1 (clair). Pour vous seulement, pas pour tout le serveur. | Testée |
-| `#SetTime 12` | Fixe l'heure de la journée, de 0 à 24. | Testée |
-| `#ListZombies`, `#ListAnimals` | Liste les types de zombies et d'animaux. | Testée |
-| `#ListSpawnedVehicles`, `#ListSpawnedArmedNPCs` | Liste ce qui est vivant dans le monde. Le résultat s'affiche dans le chat uniquement, pas dans le journal. | Testée |
-| `#MapTeleport` | Téléportation par la carte. | Listée, non testée |
-| `#SetImmortality true` / `false` | Immunité aux dégâts, activée puis désactivée. | Signalée |
-| `#SetFamePoints 500 NomDuJoueur` | Fixe les fame points d'un joueur. | Signalée |
-| `#SetGodMode` | Construction instantanée, pas d'invulnérabilité. | Signalée |
-| `#heal` | N'existe pas en 1.3.4.2. | Indisponible |
+| `#ListPlayers` | Testée | Liste les joueurs en ligne. |
+| `#ListItems` | Testée | Affiche tous les codes d'objets de votre version (2 572 en 1.3.4.2) dans le journal du jeu. |
+| `#spawnitem Apple`, `#spawnitem Water_05l` | Testée | Vous donne un objet à partir de son code. |
+| `#SetCurrencyBalance Normal 10000 NomDuJoueur` | Testée | Fixe l'argent d'un joueur. |
+| `#ChangeCurrencyBalance Gold 5 NomDuJoueur` | Testée | Modifie l'or d'un joueur. |
+| `#NightBrightness 1` | Testée | Luminosité de la nuit, de 0 (sombre) à 1 (clair). Pour vous seulement, pas pour tout le serveur. |
+| `#SetTime 12` | Testée | Fixe l'heure de la journée, de 0 à 24. |
+| `#ListZombies`, `#ListAnimals` | Testée | Liste les types de zombies et d'animaux. |
+| `#ListSpawnedVehicles`, `#ListSpawnedArmedNPCs` | Testée | Liste ce qui est vivant dans le monde. Le résultat s'affiche dans le chat uniquement, pas dans le journal. |
+| `#MapTeleport` | Listée, non testée | Téléportation par la carte. |
+| `#SetImmortality true` / `false` | Signalée | Immunité aux dégâts, activée puis désactivée. |
+| `#SetFamePoints 500 NomDuJoueur` | Signalée | Fixe les fame points d'un joueur. |
+| `#SetGodMode` | Signalée | Construction instantanée, pas d'invulnérabilité. |
+| `#heal` | Indisponible | N'existe pas en 1.3.4.2. |
 
 ## :material-monitor: Lancer un serveur de test local gratuit
 

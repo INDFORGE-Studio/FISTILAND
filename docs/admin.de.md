@@ -24,22 +24,22 @@ Trage deine SteamID64 (17 Ziffern, zu finden auf steamid.io) in `AdminUsers.ini`
 
 Status: **Getestet** heißt, wir haben den Befehl auf unserem Server ausgeführt. **Gemeldet** heißt, ein öffentlicher Leitfaden beschreibt ihn und wir haben ihn nicht getestet.
 
-| Befehl | Was er macht | Status |
+| Befehl | Status | Was er macht |
 |---|---|---|
-| `#ListPlayers` | Listet die Spieler online auf. | Getestet |
-| `#ListItems` | Gibt alle Item-Codes deiner Spielversion (2.572 in 1.3.4.2) in der Logdatei des Spiels aus. | Getestet |
-| `#spawnitem Apple`, `#spawnitem Water_05l` | Gibt dir ein Item anhand seines Codes. | Getestet |
-| `#SetCurrencyBalance Normal 10000 Spielername` | Setzt das Geld eines Spielers. | Getestet |
-| `#ChangeCurrencyBalance Gold 5 Spielername` | Ändert das Gold eines Spielers. | Getestet |
-| `#NightBrightness 1` | Helligkeit der Nacht, von 0 (dunkel) bis 1 (hell). Nur für dich, nicht für den ganzen Server. | Getestet |
-| `#SetTime 12` | Setzt die Tageszeit, von 0 bis 24. | Getestet |
-| `#ListZombies`, `#ListAnimals` | Listet die Zombie- und Tiertypen auf. | Getestet |
-| `#ListSpawnedVehicles`, `#ListSpawnedArmedNPCs` | Listet, was in der Welt lebt. Das Ergebnis erscheint nur im Chat, nicht im Log. | Getestet |
-| `#MapTeleport` | Teleport über die Karte. | Aufgelistet, nicht getestet |
-| `#SetImmortality true` / `false` | Schadensimmunität an, dann aus. | Gemeldet |
-| `#SetFamePoints 500 Spielername` | Setzt die Fame Points eines Spielers. | Gemeldet |
-| `#SetGodMode` | Sofortiges Bauen, keine Unverwundbarkeit. | Gemeldet |
-| `#heal` | Gibt es in 1.3.4.2 nicht. | Nicht verfügbar |
+| `#ListPlayers` | Getestet | Listet die Spieler online auf. |
+| `#ListItems` | Getestet | Gibt alle Item-Codes deiner Spielversion (2.572 in 1.3.4.2) in der Logdatei des Spiels aus. |
+| `#spawnitem Apple`, `#spawnitem Water_05l` | Getestet | Gibt dir ein Item anhand seines Codes. |
+| `#SetCurrencyBalance Normal 10000 Spielername` | Getestet | Setzt das Geld eines Spielers. |
+| `#ChangeCurrencyBalance Gold 5 Spielername` | Getestet | Ändert das Gold eines Spielers. |
+| `#NightBrightness 1` | Getestet | Helligkeit der Nacht, von 0 (dunkel) bis 1 (hell). Nur für dich, nicht für den ganzen Server. |
+| `#SetTime 12` | Getestet | Setzt die Tageszeit, von 0 bis 24. |
+| `#ListZombies`, `#ListAnimals` | Getestet | Listet die Zombie- und Tiertypen auf. |
+| `#ListSpawnedVehicles`, `#ListSpawnedArmedNPCs` | Getestet | Listet, was in der Welt lebt. Das Ergebnis erscheint nur im Chat, nicht im Log. |
+| `#MapTeleport` | Aufgelistet, nicht getestet | Teleport über die Karte. |
+| `#SetImmortality true` / `false` | Gemeldet | Schadensimmunität an, dann aus. |
+| `#SetFamePoints 500 Spielername` | Gemeldet | Setzt die Fame Points eines Spielers. |
+| `#SetGodMode` | Gemeldet | Sofortiges Bauen, keine Unverwundbarkeit. |
+| `#heal` | Nicht verfügbar | Gibt es in 1.3.4.2 nicht. |
 
 ## :material-monitor: Einen kostenlosen lokalen Testserver betreiben
 

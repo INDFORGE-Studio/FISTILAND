@@ -24,22 +24,22 @@ Aggiungi il tuo SteamID64 (17 cifre, si trova su steamid.io) in `AdminUsers.ini`
 
 Stato: **Testato** significa che l'abbiamo eseguito sul nostro server. **Segnalato** significa che una guida pubblica lo descrive e che non l'abbiamo testato.
 
-| Comando | Cosa fa | Stato |
+| Comando | Stato | Cosa fa |
 |---|---|---|
-| `#ListPlayers` | Elenca i giocatori online. | Testato |
-| `#ListItems` | Scrive tutti i codici oggetto della tua versione (2.572 in 1.3.4.2) nel log del gioco. | Testato |
-| `#spawnitem Apple`, `#spawnitem Water_05l` | Ti dà un oggetto dal suo codice. | Testato |
-| `#SetCurrencyBalance Normal 10000 NomeGiocatore` | Imposta i soldi di un giocatore. | Testato |
-| `#ChangeCurrencyBalance Gold 5 NomeGiocatore` | Cambia l'oro di un giocatore. | Testato |
-| `#NightBrightness 1` | Luminosità della notte, da 0 (buio) a 1 (chiaro). Solo per te, non per tutto il server. | Testato |
-| `#SetTime 12` | Imposta l'ora del giorno, da 0 a 24. | Testato |
-| `#ListZombies`, `#ListAnimals` | Elenca i tipi di zombie e di animali. | Testato |
-| `#ListSpawnedVehicles`, `#ListSpawnedArmedNPCs` | Elenca ciò che è vivo nel mondo. Il risultato appare solo nella chat, non nel log. | Testato |
-| `#MapTeleport` | Teletrasporto tramite la mappa. | In elenco, non testato |
-| `#SetImmortality true` / `false` | Immunità ai danni, attivata e poi disattivata. | Segnalato |
-| `#SetFamePoints 500 NomeGiocatore` | Imposta i punti fama di un giocatore. | Segnalato |
-| `#SetGodMode` | Costruzione istantanea, non invulnerabilità. | Segnalato |
-| `#heal` | Non esiste in 1.3.4.2. | Non disponibile |
+| `#ListPlayers` | Testato | Elenca i giocatori online. |
+| `#ListItems` | Testato | Scrive tutti i codici oggetto della tua versione (2.572 in 1.3.4.2) nel log del gioco. |
+| `#spawnitem Apple`, `#spawnitem Water_05l` | Testato | Ti dà un oggetto dal suo codice. |
+| `#SetCurrencyBalance Normal 10000 NomeGiocatore` | Testato | Imposta i soldi di un giocatore. |
+| `#ChangeCurrencyBalance Gold 5 NomeGiocatore` | Testato | Cambia l'oro di un giocatore. |
+| `#NightBrightness 1` | Testato | Luminosità della notte, da 0 (buio) a 1 (chiaro). Solo per te, non per tutto il server. |
+| `#SetTime 12` | Testato | Imposta l'ora del giorno, da 0 a 24. |
+| `#ListZombies`, `#ListAnimals` | Testato | Elenca i tipi di zombie e di animali. |
+| `#ListSpawnedVehicles`, `#ListSpawnedArmedNPCs` | Testato | Elenca ciò che è vivo nel mondo. Il risultato appare solo nella chat, non nel log. |
+| `#MapTeleport` | In elenco, non testato | Teletrasporto tramite la mappa. |
+| `#SetImmortality true` / `false` | Segnalato | Immunità ai danni, attivata e poi disattivata. |
+| `#SetFamePoints 500 NomeGiocatore` | Segnalato | Imposta i punti fama di un giocatore. |
+| `#SetGodMode` | Segnalato | Costruzione istantanea, non invulnerabilità. |
+| `#heal` | Non disponibile | Non esiste in 1.3.4.2. |
 
 ## :material-monitor: Avviare un server di test locale gratuito
 
