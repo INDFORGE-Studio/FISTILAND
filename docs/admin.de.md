@@ -4,7 +4,7 @@
 
 # Admin-Leitfaden
 
-<p>Alles, was wir beim Betrieb eines SCUM-Servers geprüft haben, an einem Ort. Geschrieben für Spielversion 1.3.4.2.</p>
+<p>Alles, was wir beim Betrieb eines SCUM-Servers geprüft haben, mit v1.3.4.2</p>
 
 </div>
 
@@ -63,15 +63,15 @@ Auf den [Einstellungsseiten](server/overview.md) steht, was jeder Wert auf FISTI
 
 ## :material-download: Konfigurationsdateien herunterladen
 
-Jede Datei gibt es in zwei Versionen, damit du sie vergleichen kannst. **FISTILAND** ist die Datei, die unser Server benutzt. **Standard** ist der Ausgangspunkt, wenn du bei null anfangen willst.
+Jede Datei gibt es in zwei Versionen, damit du sie vergleichen kannst. **FISTILAND** ist die Datei, die unser Server benutzt. **SCUM** ist die Datei so, wie das Spiel oder Nitrado sie liefert, der Ausgangspunkt, wenn du bei null anfangen willst.
 
 | Datei | Welche | Was es ist |
 |---|---|---|
-| [ServerSettings_FISTILAND.ini](downloads/ServerSettings_FISTILAND.ini) | **Unsere** | Die Einstellungen des FISTILAND-Servers. |
-| [ServerSettings_Nitrado-default.ini](downloads/ServerSettings_Nitrado-default.ini) | **Standard** | Die Datei, mit der ein neuer Nitrado-Server startet, unverändert. |
-| [EconomyOverride_FISTILAND.json](downloads/EconomyOverride_FISTILAND.json) | **Unsere** | Händlereinstellungen von FISTILAND: keine Fame-Anforderung, Händler immer mit Ware und Geld, feste Preise. |
-| [EconomyOverride_game-default.json](downloads/EconomyOverride_game-default.json) | **Standard** | Die Händlerdatei mit den Startwerten des Spiels. |
-| [SCUM_item_codes_1.3.4.2.txt](downloads/SCUM_item_codes_1.3.4.2.txt) | **Daten** | Alle 2.572 Item-Codes der Spielversion 1.3.4.2, einer pro Zeile (aus dem Befehl `#ListItems`). |
-| [Armory_default_prices_A0.csv](downloads/Armory_default_prices_A0.csv) | **Daten** | Die Preise des Armory-Händlers im Basisspiel, im Spiel am Außenposten A0 abgelesen (etwa 380 Zeilen). |
+| [ServerSettings_FISTILAND.ini](downloads/ServerSettings_FISTILAND.ini){ download } | **FISTILAND** | Die Einstellungen des FISTILAND-Servers. |
+| [ServerSettings_SCUM.ini](downloads/ServerSettings_SCUM.ini){ download } | **SCUM** | Die Datei, mit der ein neuer Nitrado-Server startet, unverändert. |
+| [EconomyOverride_FISTILAND.json](downloads/EconomyOverride_FISTILAND.json){ download } | **FISTILAND** | Händlereinstellungen von FISTILAND: keine Fame-Anforderung, Händler immer mit Ware und Geld, feste Preise. |
+| [EconomyOverride_SCUM.json](downloads/EconomyOverride_SCUM.json){ download } | **SCUM** | Die Händlerdatei mit den Startwerten des Spiels. |
+| [SCUM_item_codes_1.3.4.2.txt](downloads/SCUM_item_codes_1.3.4.2.txt){ download } | **Daten** | Alle 2.572 Item-Codes der Spielversion 1.3.4.2, einer pro Zeile (aus dem Befehl `#ListItems`). |
+| [Armory_SCUM_prices_A0.csv](downloads/Armory_SCUM_prices_A0.csv){ download } | **Daten** | Die Preise des Armory-Händlers im Basisspiel, im Spiel am Außenposten A0 abgelesen (etwa 380 Zeilen). |
 
 Serveradresse, Ports und Passwort sind aus diesen Kopien entfernt. Behalte beim Hochladen deine eigenen.

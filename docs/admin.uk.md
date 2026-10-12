@@ -4,7 +4,7 @@
 
 # Посібник адміністратора
 
-<p>Усе, що ми перевірили, запускаючи сервер SCUM, в одному місці. Написано для версії гри 1.3.4.2.</p>
+<p>Усе, що ми перевірили, запускаючи сервер SCUM, з v1.3.4.2</p>
 
 </div>
 
@@ -63,15 +63,15 @@
 
 ## :material-download: Завантажити файли конфігурації
 
-Кожен файл існує у двох версіях, щоб їх можна було порівняти. **FISTILAND** — це файл, який використовує наш сервер. **Типовий** — це відправна точка, якщо хочете почати з нуля.
+Кожен файл існує у двох версіях, щоб їх можна було порівняти. **FISTILAND** — це файл, який використовує наш сервер. **SCUM** — це файл у тому вигляді, в якому його дає гра або Nitrado, відправна точка, якщо хочете почати з нуля.
 
 | Файл | Який | Що це |
 |---|---|---|
-| [ServerSettings_FISTILAND.ini](downloads/ServerSettings_FISTILAND.ini) | **Наш** | Налаштування сервера FISTILAND. |
-| [ServerSettings_Nitrado-default.ini](downloads/ServerSettings_Nitrado-default.ini) | **Типовий** | Файл, з яким стартує новий сервер Nitrado, без змін. |
-| [EconomyOverride_FISTILAND.json](downloads/EconomyOverride_FISTILAND.json) | **Наш** | Налаштування торговців FISTILAND: без вимоги слави, торговці завжди з товаром і грошима, фіксовані ціни. |
-| [EconomyOverride_game-default.json](downloads/EconomyOverride_game-default.json) | **Типовий** | Файл торговців зі стартовими значеннями гри. |
-| [SCUM_item_codes_1.3.4.2.txt](downloads/SCUM_item_codes_1.3.4.2.txt) | **Дані** | Усі 2 572 коди предметів версії гри 1.3.4.2, по одному в рядку (з команди `#ListItems`). |
-| [Armory_default_prices_A0.csv](downloads/Armory_default_prices_A0.csv) | **Дані** | Ціни торговця Armory в базовій грі, зчитані в грі на форпості A0 (близько 380 рядків). |
+| [ServerSettings_FISTILAND.ini](downloads/ServerSettings_FISTILAND.ini){ download } | **FISTILAND** | Налаштування сервера FISTILAND. |
+| [ServerSettings_SCUM.ini](downloads/ServerSettings_SCUM.ini){ download } | **SCUM** | Файл, з яким стартує новий сервер Nitrado, без змін. |
+| [EconomyOverride_FISTILAND.json](downloads/EconomyOverride_FISTILAND.json){ download } | **FISTILAND** | Налаштування торговців FISTILAND: без вимоги слави, торговці завжди з товаром і грошима, фіксовані ціни. |
+| [EconomyOverride_SCUM.json](downloads/EconomyOverride_SCUM.json){ download } | **SCUM** | Файл торговців зі стартовими значеннями гри. |
+| [SCUM_item_codes_1.3.4.2.txt](downloads/SCUM_item_codes_1.3.4.2.txt){ download } | **Дані** | Усі 2 572 коди предметів версії гри 1.3.4.2, по одному в рядку (з команди `#ListItems`). |
+| [Armory_SCUM_prices_A0.csv](downloads/Armory_SCUM_prices_A0.csv){ download } | **Дані** | Ціни торговця Armory в базовій грі, зчитані в грі на форпості A0 (близько 380 рядків). |
 
 Адресу сервера, порти та пароль прибрано з цих копій. Під час завантаження залишайте свої.
