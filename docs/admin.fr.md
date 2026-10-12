@@ -22,15 +22,15 @@ Ajoutez votre SteamID64 (17 chiffres, à trouver sur steamid.io) dans `AdminUser
 
 ## :material-console: Commandes du chat
 
-Statut : **Testée** veut dire que nous l'avons lancée sur notre serveur. **Signalée** veut dire qu'un guide public la décrit et que nous ne l'avons pas testée.
+Statut : **Testée** veut dire que nous l'avons lancée sur notre serveur. **Signalée** veut dire qu'un guide public la décrit et que nous ne l'avons pas testée. Dans les exemples, les montants, le nom du joueur et les codes d'objets ne sont que des exemples : changez-les selon vos besoins.
 
 | Commande | Statut | Ce qu'elle fait |
 |---|---|---|
 | `#ListPlayers` | Testée | Liste les joueurs en ligne. |
 | `#ListItems` | Testée | Affiche tous les codes d'objets de votre version (2 572 en 1.3.4.2) dans le journal du jeu. |
-| `#spawnitem Apple`<br>`#spawnitem Water_05l` | Testée | Vous donne un objet à partir de son code. |
-| `#SetCurrencyBalance Normal 10000 NomDuJoueur` | Testée | Fixe l'argent d'un joueur. |
-| `#ChangeCurrencyBalance Gold 5 NomDuJoueur` | Testée | Modifie l'or d'un joueur. |
+| `#spawnitem Apple`<br>`#spawnitem Water_05l` | Testée | Vous donne un objet à partir de son code. Utilisez n'importe quel code de la liste des objets (voir les téléchargements plus bas). |
+| `#SetCurrencyBalance Normal 10000 NomDuJoueur` | Testée | Fixe l'argent d'un joueur. `Normal` est l'argent ordinaire et `10000` le montant : changez-le par le nombre voulu (500, 100000…). |
+| `#ChangeCurrencyBalance Gold 5 NomDuJoueur` | Testée | Modifie l'or d'un joueur. `Gold` est la monnaie et `5` le montant : changez-le comme vous voulez. |
 | `#NightBrightness 1` | Testée | Luminosité de la nuit, de 0 (sombre) à 1 (clair). Pour vous seulement, pas pour tout le serveur. |
 | `#SetTime 12` | Testée | Fixe l'heure de la journée, de 0 à 24. |
 | `#ListZombies`<br>`#ListAnimals` | Testée | Liste les types de zombies et d'animaux. |

@@ -22,15 +22,15 @@ Aggiungi il tuo SteamID64 (17 cifre, si trova su steamid.io) in `AdminUsers.ini`
 
 ## :material-console: Comandi della chat
 
-Stato: **Testato** significa che l'abbiamo eseguito sul nostro server. **Segnalato** significa che una guida pubblica lo descrive e che non l'abbiamo testato.
+Stato: **Testato** significa che l'abbiamo eseguito sul nostro server. **Segnalato** significa che una guida pubblica lo descrive e che non l'abbiamo testato. Negli esempi, gli importi, il nome del giocatore e i codici oggetto sono solo esempi: cambiali a seconda di ciò che ti serve.
 
 | Comando | Stato | Cosa fa |
 |---|---|---|
 | `#ListPlayers` | Testato | Elenca i giocatori online. |
 | `#ListItems` | Testato | Scrive tutti i codici oggetto della tua versione (2.572 in 1.3.4.2) nel log del gioco. |
-| `#spawnitem Apple`<br>`#spawnitem Water_05l` | Testato | Ti dà un oggetto dal suo codice. |
-| `#SetCurrencyBalance Normal 10000 NomeGiocatore` | Testato | Imposta i soldi di un giocatore. |
-| `#ChangeCurrencyBalance Gold 5 NomeGiocatore` | Testato | Cambia l'oro di un giocatore. |
+| `#spawnitem Apple`<br>`#spawnitem Water_05l` | Testato | Ti dà un oggetto dal suo codice. Usa qualsiasi codice dell'elenco oggetti (vedi i download qui sotto). |
+| `#SetCurrencyBalance Normal 10000 NomeGiocatore` | Testato | Imposta i soldi di un giocatore. `Normal` è il denaro normale e `10000` l'importo: cambialo con il numero che vuoi (500, 100000...). |
+| `#ChangeCurrencyBalance Gold 5 NomeGiocatore` | Testato | Cambia l'oro di un giocatore. `Gold` è la valuta e `5` l'importo: cambialo come vuoi. |
 | `#NightBrightness 1` | Testato | Luminosità della notte, da 0 (buio) a 1 (chiaro). Solo per te, non per tutto il server. |
 | `#SetTime 12` | Testato | Imposta l'ora del giorno, da 0 a 24. |
 | `#ListZombies`<br>`#ListAnimals` | Testato | Elenca i tipi di zombie e di animali. |

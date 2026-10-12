@@ -22,15 +22,15 @@ Añade tu SteamID64 (17 cifras, se encuentra en steamid.io) a `AdminUsers.ini`, 
 
 ## :material-console: Comandos del chat
 
-Estado: **Probado** significa que lo ejecutamos en nuestro servidor. **Indicado** significa que una guía pública lo describe y que no lo probamos.
+Estado: **Probado** significa que lo ejecutamos en nuestro servidor. **Indicado** significa que una guía pública lo describe y que no lo probamos. En los ejemplos, las cantidades, el nombre del jugador y los códigos de objetos son solo ejemplos: cámbialos según lo necesites.
 
 | Comando | Estado | Qué hace |
 |---|---|---|
 | `#ListPlayers` | Probado | Lista los jugadores conectados. |
 | `#ListItems` | Probado | Escribe todos los códigos de objetos de tu versión (2.572 en 1.3.4.2) en el registro del juego. |
-| `#spawnitem Apple`<br>`#spawnitem Water_05l` | Probado | Te da un objeto a partir de su código. |
-| `#SetCurrencyBalance Normal 10000 NombreDelJugador` | Probado | Fija el dinero de un jugador. |
-| `#ChangeCurrencyBalance Gold 5 NombreDelJugador` | Probado | Cambia el oro de un jugador. |
+| `#spawnitem Apple`<br>`#spawnitem Water_05l` | Probado | Te da un objeto a partir de su código. Usa cualquier código de la lista de objetos (ver las descargas más abajo). |
+| `#SetCurrencyBalance Normal 10000 NombreDelJugador` | Probado | Fija el dinero de un jugador. `Normal` es el dinero normal y `10000` la cantidad: cámbiala por el número que quieras (500, 100000...). |
+| `#ChangeCurrencyBalance Gold 5 NombreDelJugador` | Probado | Cambia el oro de un jugador. `Gold` es la moneda y `5` la cantidad: cámbiala como quieras. |
 | `#NightBrightness 1` | Probado | Brillo de la noche, de 0 (oscuro) a 1 (claro). Solo para ti, no para todo el servidor. |
 | `#SetTime 12` | Probado | Fija la hora del día, de 0 a 24. |
 | `#ListZombies`<br>`#ListAnimals` | Probado | Lista los tipos de zombis y de animales. |

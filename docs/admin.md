@@ -22,15 +22,15 @@ Add your SteamID64 (17 digits, find it on steamid.io) to `AdminUsers.ini`, one p
 
 ## :material-console: Chat commands
 
-Status: **Tested** means we ran it on our server. **Reported** means a public guide describes it and we did not test it.
+Status: **Tested** means we ran it on our server. **Reported** means a public guide describes it and we did not test it. In the examples, the amounts, the player name and the item codes are only examples: change them to what you need.
 
 | Command | Status | What it does |
 |---|---|---|
 | `#ListPlayers` | Tested | Lists the players online. |
 | `#ListItems` | Tested | Prints every item code of your game version (2,572 on 1.3.4.2) in the game's log file. |
-| `#spawnitem Apple`<br>`#spawnitem Water_05l` | Tested | Gives you an item from its code. |
-| `#SetCurrencyBalance Normal 10000 PlayerName` | Tested | Sets the money of a player. |
-| `#ChangeCurrencyBalance Gold 5 PlayerName` | Tested | Changes the gold of a player. |
+| `#spawnitem Apple`<br>`#spawnitem Water_05l` | Tested | Gives you an item from its code. Use any code of the item list (see the downloads below). |
+| `#SetCurrencyBalance Normal 10000 PlayerName` | Tested | Sets the money of a player. `Normal` is the regular money and `10000` is the amount: change it to any number (500, 100000...). |
+| `#ChangeCurrencyBalance Gold 5 PlayerName` | Tested | Changes the gold of a player. `Gold` is the currency and `5` is the amount: change it as you like. |
 | `#NightBrightness 1` | Tested | Night brightness, from 0 (dark) to 1 (bright). Only for you, not the whole server. |
 | `#SetTime 12` | Tested | Sets the time of day, from 0 to 24. |
 | `#ListZombies`<br>`#ListAnimals` | Tested | Lists the zombie and animal types. |

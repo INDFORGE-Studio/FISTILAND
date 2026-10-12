@@ -471,3 +471,11 @@ html[lang="uk"] .md-header__option .md-select > button::before { background-imag
   -webkit-mask: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><path d='M5 20h14v-2H5m14-9h-4V3H9v6H5l7 7z'/></svg>") center / contain no-repeat;
           mask: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><path d='M5 20h14v-2H5m14-9h-4V3H9v6H5l7 7z'/></svg>") center / contain no-repeat;
 }
+
+/* Commands table: wide first column, a command never wraps (narrow screens may wrap) */
+.md-typeset table:not([class]):has(.fl-copy) th:nth-child(1) { width: 46%; }
+.md-typeset table:not([class]):has(.fl-copy) th:nth-child(2) { width: 14%; }
+.md-typeset table:not([class]):has(.fl-copy) td:nth-child(1) code { white-space: nowrap; }
+@media (max-width: 900px) {
+  .md-typeset table:not([class]):has(.fl-copy) td:nth-child(1) code { white-space: normal; }
+}
