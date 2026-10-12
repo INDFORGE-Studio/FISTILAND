@@ -17,7 +17,7 @@ Names are shown without the `scum.` prefix. The category pages explain the setti
 | Setting | Value |
 |---|---|
 | `ServerName` | `[EU] FISTILAND - Loot x5 - PvP` |
-| `ServerDescription` | `Active EU community PvP server built around territory wars. Loot x5, fast respawns, cheap prices, long skill progression (x0.5), easier survival, squads of 4 max, no pay-to-win packs. No mechs, light zombies, easy armed NPCs, plenty of game to hunt. 3 flags per player, 2 turrets per base, 6 Killbox + 6 Apex keycards, short nights, no crosshair. Hold zones, defend your base, fight over cargo drops. Join our Discord: RHkNGk6ZQN` |
+| `ServerDescription` | `Active EU community PvP server built around territory wars. Loot x5, fast respawns, cheap prices, long skill progression (x0.5), easier survival, squads of 10 max, no pay-to-win packs. No mechs, light zombies, easy armed NPCs, plenty of game to hunt. 3 flags per player, 2 turrets per base, 6 Killbox + 6 Apex keycards, short nights, no crosshair. Hold zones, defend your base, fight over cargo drops. Join our Discord: RHkNGk6ZQN` |
 | `MaxPlayers` | `14` |
 | `PlaySafeIdProtection` | `False` |
 | `ServerPlaystyle` | `PVP` |
@@ -407,11 +407,11 @@ Names are shown without the `scum.` prefix. The category pages explain the setti
 | `SpawnerExpirationTimeMultiplier` | `1.000000` |
 | `EnableItemCooldownGroups` | `True` |
 | `ItemCooldownGroupsDurationMultiplier` | `0.500000` |
-| `SquadMemberCountAtIntLevel1` | `4` |
-| `SquadMemberCountAtIntLevel2` | `4` |
-| `SquadMemberCountAtIntLevel3` | `4` |
-| `SquadMemberCountAtIntLevel4` | `4` |
-| `SquadMemberCountAtIntLevel5` | `4` |
+| `SquadMemberCountAtIntLevel1` | `10` |
+| `SquadMemberCountAtIntLevel2` | `10` |
+| `SquadMemberCountAtIntLevel3` | `10` |
+| `SquadMemberCountAtIntLevel4` | `10` |
+| `SquadMemberCountAtIntLevel5` | `10` |
 | `SquadMemberCountLimitForPunishment` | `2` |
 | `RTSquadProbationDuration` | `1.000000` |
 | `SquadMoneyPenaltyPerPrevSquadMember` | `0` |

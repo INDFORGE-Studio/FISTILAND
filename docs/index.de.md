@@ -17,7 +17,7 @@ hide:
   <div><b>EU</b><span>Region</span></div>
   <div><b>PvP</b><span>Volles PvP</span></div>
   <div><b>x5</b><span>Loot</span></div>
-  <div><b>4</b><span>Max. Trupp</span></div>
+  <div><b>10</b><span>Max. Trupp</span></div>
 </div>
 </div>
 

@@ -25,7 +25,7 @@
 | Prezzi dei mercanti | Convenienti |
 | Progressione delle abilità | Estesa, vedi la tabella sotto |
 | Sopravvivenza | Più facile |
-| Squadre | Massimo 4 giocatori |
+| Squadre | Massimo 10 giocatori |
 | Mech | Nessuno |
 | Zombie | Più numerosi, ma facili e lenti |
 | PNG armati | Difficoltà media, fragili e più lenti |

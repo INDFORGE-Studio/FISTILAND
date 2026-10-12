@@ -14,7 +14,7 @@
 <div><b>2</b><span>Tourelles par base</span></div>
 <div><b>24 h</b><span>Capture de drapeau</span></div>
 <div><b>8 h</b><span>Protection hors ligne contre les raids</span></div>
-<div><b>4</b><span>Taille d'escouade</span></div>
+<div><b>10</b><span>Taille d'escouade</span></div>
 </div>
 
 
@@ -64,7 +64,7 @@
 
 | Réglage | Valeur | Rôle |
 |---|---|---|
-| `SquadMemberCountAtIntLevel1` à `SquadMemberCountAtIntLevel5` | 4 | Les escouades comptent 4 joueurs à chaque niveau d'intelligence. |
+| `SquadMemberCountAtIntLevel1` à `SquadMemberCountAtIntLevel5` | 10 | Les escouades comptent 10 joueurs à chaque niveau d'intelligence. |
 | `RTSquadProbationDuration` | 1 | Heures de probation pour un membre qui quitte puis rejoint une escouade. |
 | `SquadMemberCountLimitForPunishment` | 2 | Plus grande ancienne escouade dont les membres n'ont pas de pénalité de prisonnier. |
 | `SquadMoneyPenaltyPerPrevSquadMember`, `SquadFamePointsPenaltyPerPrevSquadMember` | 0 | Aucune pénalité d'argent ni de renommée en changeant d'escouade. |

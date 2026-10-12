@@ -14,7 +14,7 @@
 <div><b>2</b><span>Турелі на базу</span></div>
 <div><b>24 год</b><span>Захоплення прапора</span></div>
 <div><b>8 год</b><span>Офлайн-захист від рейдів</span></div>
-<div><b>4</b><span>Розмір загону</span></div>
+<div><b>10</b><span>Розмір загону</span></div>
 </div>
 
 
@@ -64,7 +64,7 @@
 
 | Налаштування | Значення | Що воно робить |
 |---|---|---|
-| від `SquadMemberCountAtIntLevel1` до `SquadMemberCountAtIntLevel5` | 4 | Загони налічують 4 гравці на кожному рівні інтелекту. |
+| від `SquadMemberCountAtIntLevel1` до `SquadMemberCountAtIntLevel5` | 10 | Загони налічують 10 гравців на кожному рівні інтелекту. |
 | `RTSquadProbationDuration` | 1 | Години випробування для учасника, який залишає загін і повертається. |
 | `SquadMemberCountLimitForPunishment` | 2 | Найбільший колишній загін, учасники якого не отримують штрафу в'язня. |
 | `SquadMoneyPenaltyPerPrevSquadMember`, `SquadFamePointsPenaltyPerPrevSquadMember` | 0 | Жодного штрафу грошима чи славою за зміну загону. |

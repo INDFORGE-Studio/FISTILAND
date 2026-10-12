@@ -25,7 +25,7 @@
 | Trader prices | Attractive |
 | Skill progression | Extended, see the table below |
 | Survival | Easier |
-| Squads | 4 players max |
+| Squads | 10 players max |
 | Mechs | None |
 | Zombies | More numerous, but easy and slow |
 | Armed NPCs | Medium difficulty, fragile and slower |

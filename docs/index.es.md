@@ -17,7 +17,7 @@ hide:
   <div><b>EU</b><span>Región</span></div>
   <div><b>PvP</b><span>PvP completo</span></div>
   <div><b>x5</b><span>Loot</span></div>
-  <div><b>4</b><span>Escuadra máx.</span></div>
+  <div><b>10</b><span>Escuadra máx.</span></div>
 </div>
 </div>
 

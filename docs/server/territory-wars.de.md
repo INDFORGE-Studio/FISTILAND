@@ -14,7 +14,7 @@
 <div><b>2</b><span>Geschütztürme pro Basis</span></div>
 <div><b>24 h</b><span>Flaggeneroberung</span></div>
 <div><b>8 h</b><span>Offline-Raid-Schutz</span></div>
-<div><b>4</b><span>Truppgröße</span></div>
+<div><b>10</b><span>Truppgröße</span></div>
 </div>
 
 
@@ -64,7 +64,7 @@
 
 | Einstellung | Wert | Wirkung |
 |---|---|---|
-| `SquadMemberCountAtIntLevel1` bis `SquadMemberCountAtIntLevel5` | 4 | Trupps haben auf jeder Intelligenzstufe 4 Spieler. |
+| `SquadMemberCountAtIntLevel1` bis `SquadMemberCountAtIntLevel5` | 10 | Trupps haben auf jeder Intelligenzstufe 10 Spieler. |
 | `RTSquadProbationDuration` | 1 | Bewährungsstunden für ein Mitglied, das einen Trupp verlässt und wieder beitritt. |
 | `SquadMemberCountLimitForPunishment` | 2 | Größter früherer Trupp, dessen Mitglieder keine Gefangenenstrafe erhalten. |
 | `SquadMoneyPenaltyPerPrevSquadMember`, `SquadFamePointsPenaltyPerPrevSquadMember` | 0 | Kein Geld- oder Ruhmabzug beim Truppwechsel. |

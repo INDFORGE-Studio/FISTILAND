@@ -25,7 +25,7 @@
 | Händlerpreise | Attraktiv |
 | Fertigkeitsfortschritt | Verlängert, siehe Tabelle unten |
 | Überleben | Leichter |
-| Trupps | Höchstens 4 Spieler |
+| Trupps | Höchstens 10 Spieler |
 | Mechs | Keine |
 | Zombies | Zahlreicher, aber leicht und langsam |
 | Bewaffnete NPCs | Mittlere Schwierigkeit, schwach und langsamer |

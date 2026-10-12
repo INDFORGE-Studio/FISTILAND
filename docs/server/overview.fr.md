@@ -25,7 +25,7 @@
 | Prix des marchands | Attractifs |
 | Progression des compétences | Étendue, voir le tableau ci-dessous |
 | Survie | Plus facile |
-| Escouades | 4 joueurs maximum |
+| Escouades | 10 joueurs maximum |
 | Mécas | Aucun |
 | Zombies | Plus nombreux, mais faciles et lents |
 | PNJ armés | Difficulté moyenne, fragiles et plus lents |

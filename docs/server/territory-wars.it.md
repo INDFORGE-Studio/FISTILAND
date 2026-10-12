@@ -14,7 +14,7 @@
 <div><b>2</b><span>Torrette per base</span></div>
 <div><b>24 h</b><span>Cattura della bandiera</span></div>
 <div><b>8 h</b><span>Protezione offline dai raid</span></div>
-<div><b>4</b><span>Dimensione della squadra</span></div>
+<div><b>10</b><span>Dimensione della squadra</span></div>
 </div>
 
 
@@ -64,7 +64,7 @@
 
 | Impostazione | Valore | Cosa fa |
 |---|---|---|
-| Da `SquadMemberCountAtIntLevel1` a `SquadMemberCountAtIntLevel5` | 4 | Le squadre contano 4 giocatori a ogni livello di intelligenza. |
+| Da `SquadMemberCountAtIntLevel1` a `SquadMemberCountAtIntLevel5` | 10 | Le squadre contano 10 giocatori a ogni livello di intelligenza. |
 | `RTSquadProbationDuration` | 1 | Ore di prova per un membro che lascia e rientra in una squadra. |
 | `SquadMemberCountLimitForPunishment` | 2 | La più grande ex squadra i cui membri non subiscono la penalità da prigioniero. |
 | `SquadMoneyPenaltyPerPrevSquadMember`, `SquadFamePointsPenaltyPerPrevSquadMember` | 0 | Nessuna penalità di denaro o fama per il cambio di squadra. |

@@ -25,7 +25,7 @@
 | Precios de los comerciantes | Atractivos |
 | Progresión de habilidades | Ampliada, ver la tabla de abajo |
 | Supervivencia | Más fácil |
-| Escuadras | 4 jugadores como máximo |
+| Escuadras | 10 jugadores como máximo |
 | Mechs | Ninguno |
 | Zombis | Más numerosos, pero fáciles y lentos |
 | PNJ armados | Dificultad media, frágiles y más lentos |

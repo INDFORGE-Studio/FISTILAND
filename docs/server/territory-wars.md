@@ -14,7 +14,7 @@
 <div><b>2</b><span>Turrets per base</span></div>
 <div><b>24 h</b><span>Flag capture</span></div>
 <div><b>8 h</b><span>Offline raid protection</span></div>
-<div><b>4</b><span>Squad size</span></div>
+<div><b>10</b><span>Squad size</span></div>
 </div>
 
 
@@ -64,7 +64,7 @@
 
 | Setting | Value | What it does |
 |---|---|---|
-| `SquadMemberCountAtIntLevel1` to `SquadMemberCountAtIntLevel5` | 4 | Squads hold 4 players at every intelligence level. |
+| `SquadMemberCountAtIntLevel1` to `SquadMemberCountAtIntLevel5` | 10 | Squads hold 10 players at every intelligence level. |
 | `RTSquadProbationDuration` | 1 | Probation hours for a member who leaves and rejoins a squad. |
 | `SquadMemberCountLimitForPunishment` | 2 | Largest former squad whose members face no prisoner penalty. |
 | `SquadMoneyPenaltyPerPrevSquadMember`, `SquadFamePointsPenaltyPerPrevSquadMember` | 0 | No money or fame penalty for changing squads. |

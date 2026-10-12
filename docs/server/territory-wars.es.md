@@ -14,7 +14,7 @@
 <div><b>2</b><span>Torretas por base</span></div>
 <div><b>24 h</b><span>Captura de bandera</span></div>
 <div><b>8 h</b><span>Protección sin conexión contra asaltos</span></div>
-<div><b>4</b><span>Tamaño de escuadra</span></div>
+<div><b>10</b><span>Tamaño de escuadra</span></div>
 </div>
 
 
@@ -64,7 +64,7 @@
 
 | Ajuste | Valor | Qué hace |
 |---|---|---|
-| `SquadMemberCountAtIntLevel1` a `SquadMemberCountAtIntLevel5` | 4 | Las escuadras son de 4 jugadores en todos los niveles de inteligencia. |
+| `SquadMemberCountAtIntLevel1` a `SquadMemberCountAtIntLevel5` | 10 | Las escuadras son de 10 jugadores en todos los niveles de inteligencia. |
 | `RTSquadProbationDuration` | 1 | Horas de prueba para un miembro que deja una escuadra y vuelve a unirse. |
 | `SquadMemberCountLimitForPunishment` | 2 | Mayor escuadra anterior cuyos miembros no sufren penalización de prisionero. |
 | `SquadMoneyPenaltyPerPrevSquadMember`, `SquadFamePointsPenaltyPerPrevSquadMember` | 0 | Sin penalización de dinero ni de fama por cambiar de escuadra. |
