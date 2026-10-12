@@ -28,15 +28,15 @@ Status: **Getestet** heißt, wir haben den Befehl auf unserem Server ausgeführt
 |---|---|---|
 | `#ListPlayers` | Getestet | Listet die Spieler online auf. |
 | `#ListItems` | Getestet | Gibt alle Item-Codes deiner Spielversion (2.572 in 1.3.4.2) in der Logdatei des Spiels aus. |
-| `#spawnitem Apple`, `#spawnitem Water_05l` | Getestet | Gibt dir ein Item anhand seines Codes. |
+| `#spawnitem Apple`<br>`#spawnitem Water_05l` | Getestet | Gibt dir ein Item anhand seines Codes. |
 | `#SetCurrencyBalance Normal 10000 Spielername` | Getestet | Setzt das Geld eines Spielers. |
 | `#ChangeCurrencyBalance Gold 5 Spielername` | Getestet | Ändert das Gold eines Spielers. |
 | `#NightBrightness 1` | Getestet | Helligkeit der Nacht, von 0 (dunkel) bis 1 (hell). Nur für dich, nicht für den ganzen Server. |
 | `#SetTime 12` | Getestet | Setzt die Tageszeit, von 0 bis 24. |
-| `#ListZombies`, `#ListAnimals` | Getestet | Listet die Zombie- und Tiertypen auf. |
-| `#ListSpawnedVehicles`, `#ListSpawnedArmedNPCs` | Getestet | Listet, was in der Welt lebt. Das Ergebnis erscheint nur im Chat, nicht im Log. |
+| `#ListZombies`<br>`#ListAnimals` | Getestet | Listet die Zombie- und Tiertypen auf. |
+| `#ListSpawnedVehicles`<br>`#ListSpawnedArmedNPCs` | Getestet | Listet, was in der Welt lebt. Das Ergebnis erscheint nur im Chat, nicht im Log. |
 | `#MapTeleport` | Aufgelistet, nicht getestet | Teleport über die Karte. |
-| `#SetImmortality true` / `false` | Gemeldet | Schadensimmunität an, dann aus. |
+| `#SetImmortality true`<br>`#SetImmortality false` | Gemeldet | Schadensimmunität an, dann aus. |
 | `#SetFamePoints 500 Spielername` | Gemeldet | Setzt die Fame Points eines Spielers. |
 | `#SetGodMode` | Gemeldet | Sofortiges Bauen, keine Unverwundbarkeit. |
 | `#heal` | Nicht verfügbar | Gibt es in 1.3.4.2 nicht. |

@@ -20,7 +20,7 @@ theme:
     - content.code.copy
 
 extra_javascript:
-  - javascripts/fl-copy-v1.js
+  - javascripts/fl-copy-v2.js
 
 extra_css:
   - stylesheets/fistiland-v21.css

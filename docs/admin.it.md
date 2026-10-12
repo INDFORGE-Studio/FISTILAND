@@ -28,15 +28,15 @@ Stato: **Testato** significa che l'abbiamo eseguito sul nostro server. **Segnala
 |---|---|---|
 | `#ListPlayers` | Testato | Elenca i giocatori online. |
 | `#ListItems` | Testato | Scrive tutti i codici oggetto della tua versione (2.572 in 1.3.4.2) nel log del gioco. |
-| `#spawnitem Apple`, `#spawnitem Water_05l` | Testato | Ti dà un oggetto dal suo codice. |
+| `#spawnitem Apple`<br>`#spawnitem Water_05l` | Testato | Ti dà un oggetto dal suo codice. |
 | `#SetCurrencyBalance Normal 10000 NomeGiocatore` | Testato | Imposta i soldi di un giocatore. |
 | `#ChangeCurrencyBalance Gold 5 NomeGiocatore` | Testato | Cambia l'oro di un giocatore. |
 | `#NightBrightness 1` | Testato | Luminosità della notte, da 0 (buio) a 1 (chiaro). Solo per te, non per tutto il server. |
 | `#SetTime 12` | Testato | Imposta l'ora del giorno, da 0 a 24. |
-| `#ListZombies`, `#ListAnimals` | Testato | Elenca i tipi di zombie e di animali. |
-| `#ListSpawnedVehicles`, `#ListSpawnedArmedNPCs` | Testato | Elenca ciò che è vivo nel mondo. Il risultato appare solo nella chat, non nel log. |
+| `#ListZombies`<br>`#ListAnimals` | Testato | Elenca i tipi di zombie e di animali. |
+| `#ListSpawnedVehicles`<br>`#ListSpawnedArmedNPCs` | Testato | Elenca ciò che è vivo nel mondo. Il risultato appare solo nella chat, non nel log. |
 | `#MapTeleport` | In elenco, non testato | Teletrasporto tramite la mappa. |
-| `#SetImmortality true` / `false` | Segnalato | Immunità ai danni, attivata e poi disattivata. |
+| `#SetImmortality true`<br>`#SetImmortality false` | Segnalato | Immunità ai danni, attivata e poi disattivata. |
 | `#SetFamePoints 500 NomeGiocatore` | Segnalato | Imposta i punti fama di un giocatore. |
 | `#SetGodMode` | Segnalato | Costruzione istantanea, non invulnerabilità. |
 | `#heal` | Non disponibile | Non esiste in 1.3.4.2. |

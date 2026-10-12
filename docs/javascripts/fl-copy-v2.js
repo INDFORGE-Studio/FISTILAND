@@ -12,7 +12,7 @@
   var ICON_COPY = '<svg viewBox="0 0 24 24" width="15" height="15" aria-hidden="true"><path fill="currentColor" d="M19 21H8V7h11m0-2H8a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h11a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2m-3-4H4a2 2 0 0 0-2 2v14h2V3h12z"/></svg>';
   var ICON_OK = '<svg viewBox="0 0 24 24" width="15" height="15" aria-hidden="true"><path fill="currentColor" d="M21 7 9 19l-5.5-5.5 1.41-1.41L9 16.17 19.59 5.59z"/></svg>';
 
-  var css = '.fl-copy{display:inline-flex;align-items:center;justify-content:center;vertical-align:middle;margin-left:.45rem;padding:.2rem;width:1.55rem;height:1.55rem;' +
+  var css = '.fl-copy{display:inline-flex;align-items:center;justify-content:center;vertical-align:middle;margin:0 .55rem 0 0;padding:.2rem;width:1.55rem;height:1.55rem;' +
     'background:rgba(232,99,28,.12);color:#e8631c;border:1px solid rgba(232,99,28,.45);border-radius:4px;cursor:pointer;line-height:1;transition:background .15s,color .15s}' +
     '.fl-copy:hover{background:#e8631c;color:#0d0c0b}.fl-copy.fl-done{background:#3f9d5a;border-color:#3f9d5a;color:#fff}';
   var st = document.createElement('style'); st.textContent = css; document.head.appendChild(st);
@@ -38,6 +38,6 @@
         setTimeout(function () { b.classList.remove('fl-done'); b.innerHTML = ICON_COPY; b.title = T[0]; }, 1500);
       });
     });
-    code.insertAdjacentElement('afterend', b);
+    code.insertAdjacentElement('beforebegin', b);
   });
 })();

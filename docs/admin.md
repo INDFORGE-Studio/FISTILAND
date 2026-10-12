@@ -28,15 +28,15 @@ Status: **Tested** means we ran it on our server. **Reported** means a public gu
 |---|---|---|
 | `#ListPlayers` | Tested | Lists the players online. |
 | `#ListItems` | Tested | Prints every item code of your game version (2,572 on 1.3.4.2) in the game's log file. |
-| `#spawnitem Apple`, `#spawnitem Water_05l` | Tested | Gives you an item from its code. |
+| `#spawnitem Apple`<br>`#spawnitem Water_05l` | Tested | Gives you an item from its code. |
 | `#SetCurrencyBalance Normal 10000 PlayerName` | Tested | Sets the money of a player. |
 | `#ChangeCurrencyBalance Gold 5 PlayerName` | Tested | Changes the gold of a player. |
 | `#NightBrightness 1` | Tested | Night brightness, from 0 (dark) to 1 (bright). Only for you, not the whole server. |
 | `#SetTime 12` | Tested | Sets the time of day, from 0 to 24. |
-| `#ListZombies`, `#ListAnimals` | Tested | Lists the zombie and animal types. |
-| `#ListSpawnedVehicles`, `#ListSpawnedArmedNPCs` | Tested | Lists what is alive in the world. The result shows in the chat only, not in the log. |
+| `#ListZombies`<br>`#ListAnimals` | Tested | Lists the zombie and animal types. |
+| `#ListSpawnedVehicles`<br>`#ListSpawnedArmedNPCs` | Tested | Lists what is alive in the world. The result shows in the chat only, not in the log. |
 | `#MapTeleport` | Listed, not tested | Teleport through the map. |
-| `#SetImmortality true` / `false` | Reported | Damage immunity on, then off. |
+| `#SetImmortality true`<br>`#SetImmortality false` | Reported | Damage immunity on, then off. |
 | `#SetFamePoints 500 PlayerName` | Reported | Sets the fame points of a player. |
 | `#SetGodMode` | Reported | Instant building, not invulnerability. |
 | `#heal` | Not available | Does not exist on 1.3.4.2. |
