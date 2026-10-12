@@ -21,9 +21,10 @@ theme:
 
 extra_javascript:
   - javascripts/fl-copy-v4.js
+  - javascripts/fl-map-v1.js
 
 extra_css:
-  - stylesheets/fistiland-v28.css
+  - stylesheets/fistiland-v29.css
 
 extra:
   social:
@@ -73,6 +74,7 @@ plugins:
             All settings: Tous les réglages
             Join: Rejoindre
             Admin: Admin
+            Maps: Cartes
         - locale: de
           name: Deutsch
           build: true
@@ -92,6 +94,7 @@ plugins:
             All settings: Alle Einstellungen
             Join: Beitreten
             Admin: Admin
+            Maps: Karten
         - locale: es
           name: Español
           build: true
@@ -111,6 +114,7 @@ plugins:
             All settings: Todos los ajustes
             Join: Unirse
             Admin: Administración
+            Maps: Mapas
         - locale: it
           name: Italiano
           build: true
@@ -130,6 +134,7 @@ plugins:
             All settings: Tutte le impostazioni
             Join: Entra
             Admin: Admin
+            Maps: Mappe
         - locale: uk
           name: Українська
           build: true
@@ -149,6 +154,7 @@ plugins:
             All settings: Усі налаштування
             Join: Приєднатися
             Admin: Адміністрування
+            Maps: Карти
 
 nav:
   - Home: index.md
@@ -164,5 +170,6 @@ nav:
       - Bunkers: server/bunkers.md
       - Rules: server/rules.md
       - All settings: server/all-settings.md
+  - Maps: maps.md
   - Join: join.md
   - Admin: admin.md
