@@ -35,7 +35,7 @@
 | Setting | Value | What it does |
 |---|---|---|
 | `MaximumAmountOfElementsPerFlag` | 200 | Base elements that fit in one flag area. |
-| `ExtraElementsPerFlagForAdditionalSquadMember` | 25 | Extra elements per flag for each squad member after the first. |
+| `ExtraElementsPerFlagForAdditionalSquadMember` | 17 | Extra elements per flag for each squad member after the first. |
 | `MaximumNumberOfExpandedElementsPerFlag` | 75 | Extra elements that base expansion kits can add. |
 | `TurretMaxAmountPerFlagArea` | 2 | Turrets allowed per flag area. |
 | `TurretStartDecayingIfFlagAreaHasMoreThan` | 2 | Turrets above this number decay faster. |

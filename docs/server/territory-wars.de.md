@@ -35,7 +35,7 @@
 | Einstellung | Wert | Wirkung |
 |---|---|---|
 | `MaximumAmountOfElementsPerFlag` | 200 | Basiselemente, die in einen Flaggenbereich passen. |
-| `ExtraElementsPerFlagForAdditionalSquadMember` | 25 | Zusätzliche Elemente pro Flagge für jedes Truppmitglied nach dem ersten. |
+| `ExtraElementsPerFlagForAdditionalSquadMember` | 17 | Zusätzliche Elemente pro Flagge für jedes Truppmitglied nach dem ersten. |
 | `MaximumNumberOfExpandedElementsPerFlag` | 75 | Zusätzliche Elemente, die Basis-Erweiterungssets hinzufügen können. |
 | `TurretMaxAmountPerFlagArea` | 2 | Erlaubte Geschütztürme pro Flaggenbereich. |
 | `TurretStartDecayingIfFlagAreaHasMoreThan` | 2 | Geschütztürme über dieser Zahl verfallen schneller. |

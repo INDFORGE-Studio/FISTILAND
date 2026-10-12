@@ -35,7 +35,7 @@
 | Ajuste | Valor | Qué hace |
 |---|---|---|
 | `MaximumAmountOfElementsPerFlag` | 200 | Elementos de base que caben en el área de una bandera. |
-| `ExtraElementsPerFlagForAdditionalSquadMember` | 25 | Elementos extra por bandera por cada miembro de la escuadra después del primero. |
+| `ExtraElementsPerFlagForAdditionalSquadMember` | 17 | Elementos extra por bandera por cada miembro de la escuadra después del primero. |
 | `MaximumNumberOfExpandedElementsPerFlag` | 75 | Elementos extra que pueden añadir los kits de ampliación de base. |
 | `TurretMaxAmountPerFlagArea` | 2 | Torretas permitidas por área de bandera. |
 | `TurretStartDecayingIfFlagAreaHasMoreThan` | 2 | Las torretas por encima de este número se deterioran más rápido. |

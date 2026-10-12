@@ -35,7 +35,7 @@
 | Налаштування | Значення | Що воно робить |
 |---|---|---|
 | `MaximumAmountOfElementsPerFlag` | 200 | Елементи бази, що вміщуються в зону одного прапора. |
-| `ExtraElementsPerFlagForAdditionalSquadMember` | 25 | Додаткові елементи на прапор за кожного учасника загону після першого. |
+| `ExtraElementsPerFlagForAdditionalSquadMember` | 17 | Додаткові елементи на прапор за кожного учасника загону після першого. |
 | `MaximumNumberOfExpandedElementsPerFlag` | 75 | Додаткові елементи, які можуть дати набори розширення бази. |
 | `TurretMaxAmountPerFlagArea` | 2 | Дозволені турелі на зону прапора. |
 | `TurretStartDecayingIfFlagAreaHasMoreThan` | 2 | Турелі понад це число руйнуються швидше. |

@@ -35,7 +35,7 @@
 | Réglage | Valeur | Rôle |
 |---|---|---|
 | `MaximumAmountOfElementsPerFlag` | 200 | Éléments de base qui tiennent dans une zone de drapeau. |
-| `ExtraElementsPerFlagForAdditionalSquadMember` | 25 | Éléments supplémentaires par drapeau pour chaque membre d'escouade après le premier. |
+| `ExtraElementsPerFlagForAdditionalSquadMember` | 17 | Éléments supplémentaires par drapeau pour chaque membre d'escouade après le premier. |
 | `MaximumNumberOfExpandedElementsPerFlag` | 75 | Éléments supplémentaires que les kits d'extension de base peuvent ajouter. |
 | `TurretMaxAmountPerFlagArea` | 2 | Tourelles autorisées par zone de drapeau. |
 | `TurretStartDecayingIfFlagAreaHasMoreThan` | 2 | Au-delà de ce nombre, les tourelles se dégradent plus vite. |
