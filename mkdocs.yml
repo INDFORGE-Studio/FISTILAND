@@ -23,7 +23,7 @@ extra_javascript:
   - javascripts/fl-copy-v3.js
 
 extra_css:
-  - stylesheets/fistiland-v24.css
+  - stylesheets/fistiland-v25.css
 
 extra:
   social:

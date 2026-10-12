@@ -473,13 +473,13 @@ html[lang="uk"] .md-header__option .md-select > button::before { background-imag
 }
 
 /* Commands table: the first column takes the room a command needs, the description column wraps */
-.md-content .md-typeset table:not([class]):has(.fl-copy) { table-layout: auto; }
-.md-content .md-typeset table:not([class]):has(.fl-copy) th:nth-child(1),
-.md-content .md-typeset table:not([class]):has(.fl-copy) th:nth-child(2) { width: auto; }
-.md-content .md-typeset table:not([class]):has(.fl-copy) td:nth-child(1) code { white-space: nowrap; overflow-wrap: normal; word-break: normal; }
-.md-content .md-typeset table:not([class]):has(.fl-copy) td:nth-child(1) { overflow-wrap: normal; white-space: nowrap; }
+.md-content:has(.fl-page-hero):not(:has(.fl-home)) .md-typeset table:not([class]):has(.fl-copy) { table-layout: auto; }
+.md-content:has(.fl-page-hero):not(:has(.fl-home)) .md-typeset table:not([class]):has(.fl-copy) th:nth-child(1),
+.md-content:has(.fl-page-hero):not(:has(.fl-home)) .md-typeset table:not([class]):has(.fl-copy) th:nth-child(2) { width: auto; }
+.md-content:has(.fl-page-hero):not(:has(.fl-home)) .md-typeset table:not([class]):has(.fl-copy) td:nth-child(1) code { white-space: nowrap; overflow-wrap: normal; word-break: normal; }
+.md-content:has(.fl-page-hero):not(:has(.fl-home)) .md-typeset table:not([class]):has(.fl-copy) td:nth-child(1) { overflow-wrap: normal; white-space: nowrap; }
 @media (max-width: 900px) {
-  .md-content .md-typeset table:not([class]):has(.fl-copy) td:nth-child(1),
-  .md-content .md-typeset table:not([class]):has(.fl-copy) td:nth-child(1) code { white-space: normal; }
-  .md-content .md-typeset table:not([class]):has(.fl-copy) td:nth-child(1) .fl-cmd { white-space: normal; align-items: flex-start; }
+  .md-content:has(.fl-page-hero):not(:has(.fl-home)) .md-typeset table:not([class]):has(.fl-copy) td:nth-child(1),
+  .md-content:has(.fl-page-hero):not(:has(.fl-home)) .md-typeset table:not([class]):has(.fl-copy) td:nth-child(1) code { white-space: normal; }
+  .md-content:has(.fl-page-hero):not(:has(.fl-home)) .md-typeset table:not([class]):has(.fl-copy) td:nth-child(1) .fl-cmd { white-space: normal; align-items: flex-start; }
 }
