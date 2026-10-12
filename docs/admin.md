@@ -41,7 +41,7 @@ Status: **Tested** means we ran it on our server. **Reported** means a public gu
 | `#SetGodMode` | Reported | Instant building, not invulnerability. |
 | `#heal` | Not available | Does not exist on 1.3.4.2. |
 
-## :material-monitor: Run a free local test server
+## :material-monitor: Launch and run a SCUM server: on a dedicated host or locally for free
 
 1. In Steam, install the free **SCUM Server** tool.
 2. Copy your `ServerSettings.ini` and `EconomyOverride.json` into the folder `SCUM\Saved\Config\WindowsServer` of the tool. Add `[TEST]` to the server name so you spot it.

@@ -41,7 +41,7 @@ Stato: **Testato** significa che l'abbiamo eseguito sul nostro server. **Segnala
 | `#SetGodMode` | Segnalato | Costruzione istantanea, non invulnerabilità. |
 | `#heal` | Non disponibile | Non esiste in 1.3.4.2. |
 
-## :material-monitor: Avviare un server di test locale gratuito
+## :material-monitor: Avviare e gestire un server SCUM: su uno dedicato o in locale gratis
 
 1. In Steam, installa lo strumento gratuito **SCUM Server**.
 2. Copia il tuo `ServerSettings.ini` e il tuo `EconomyOverride.json` nella cartella `SCUM\Saved\Config\WindowsServer` dello strumento. Aggiungi `[TEST]` al nome del server per riconoscerlo.

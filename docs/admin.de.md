@@ -41,7 +41,7 @@ Status: **Getestet** heißt, wir haben den Befehl auf unserem Server ausgeführt
 | `#SetGodMode` | Gemeldet | Sofortiges Bauen, keine Unverwundbarkeit. |
 | `#heal` | Nicht verfügbar | Gibt es in 1.3.4.2 nicht. |
 
-## :material-monitor: Einen kostenlosen lokalen Testserver betreiben
+## :material-monitor: Einen SCUM-Server starten und betreiben: auf einem Dedicated Server oder kostenlos lokal
 
 1. Installiere in Steam das kostenlose Tool **SCUM Server**.
 2. Kopiere deine `ServerSettings.ini` und `EconomyOverride.json` in den Ordner `SCUM\Saved\Config\WindowsServer` des Tools. Füge dem Servernamen `[TEST]` hinzu, damit du ihn erkennst.
