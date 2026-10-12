@@ -22,7 +22,7 @@ Los nombres se muestran sin el prefijo `scum.`. Las páginas por categoría expl
 | `PlaySafeIdProtection` | `False` |
 | `ServerPlaystyle` | `PVP` |
 | `WelcomeMessage` | `FISTILAND PvP SERVER` |
-| `MessageOfTheDay` | `More information on discord.gg/RHkNGk6ZQN` |
+| `MessageOfTheDay` | `More information on https://indforge-studio.github.io/FISTILAND/` |
 | `MessageOfTheDayCooldown` | `30.000000` |
 | `MinServerTickRate` | `5` |
 | `MaxServerTickRate` | `35` |
