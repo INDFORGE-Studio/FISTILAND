@@ -40,11 +40,11 @@ Status: **Gültig** heißt, wir haben im Spiel geprüft, dass er funktioniert. *
 | `#SetFamePoints 500 Spielername` | <span class="fl-st fl-st-rep">:material-help-circle-outline: Ungeprüft</span> | Setzt die Fame Points eines Spielers. |
 | `#SetGodMode` | <span class="fl-st fl-st-rep">:material-help-circle-outline: Ungeprüft</span> | Sofortiges Bauen, keine Unverwundbarkeit. |
 
-## :material-monitor: Einen SCUM-Server starten und betreiben: auf einem Dedicated Server oder lokal
+## :material-monitor: Einen SCUM-Server starten und betreiben: auf einem gemieteten Server oder lokal
 
 Die beiden Einstellungsdateien funktionieren überall gleich: Der Server liest sie beim Start. Stoppe also den Server, ersetze die Dateien und starte ihn neu.
 
-### Auf einem Dedicated Server
+### Auf einem gemieteten Server
 
 Lade bei einem gemieteten Server (zum Beispiel Nitrado) deine `ServerSettings.ini` und `EconomyOverride.json` über die Datei- oder Einstellungsseite des Anbieters hoch, während der Server gestoppt ist, und starte ihn dann neu. Die Oberflächen unterscheiden sich je nach Anbieter; schau in die Hilfe deines Anbieters, wo die Dateien hingehören.
 

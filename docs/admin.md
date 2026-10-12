@@ -40,11 +40,11 @@ Status: **Valid** means we checked in-game that it works. **Unverified** means a
 | `#SetFamePoints 500 PlayerName` | <span class="fl-st fl-st-rep">:material-help-circle-outline: Unverified</span> | Sets the fame points of a player. |
 | `#SetGodMode` | <span class="fl-st fl-st-rep">:material-help-circle-outline: Unverified</span> | Instant building, not invulnerability. |
 
-## :material-monitor: Launch and run a SCUM server: on a dedicated host or locally
+## :material-monitor: Launch and run a SCUM server: on a hosted server or locally
 
 The two settings files work the same way everywhere: the server reads them when it starts, so stop the server, replace the files, then start it again.
 
-### On a dedicated server
+### On a hosted server
 
 On a rented server (Nitrado, for example), upload your `ServerSettings.ini` and `EconomyOverride.json` through the host's file or settings page while the server is stopped, then start it again. The screens differ from one host to another, so check your host's help for where the files go.
 

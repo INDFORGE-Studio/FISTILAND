@@ -40,11 +40,11 @@ Statut : **Valide** veut dire que nous avons vérifié en jeu qu'elle fonctionne
 | `#SetFamePoints 500 NomDuJoueur` | <span class="fl-st fl-st-rep">:material-help-circle-outline: Non vérifiée</span> | Fixe les fame points d'un joueur. |
 | `#SetGodMode` | <span class="fl-st fl-st-rep">:material-help-circle-outline: Non vérifiée</span> | Construction instantanée, pas d'invulnérabilité. |
 
-## :material-monitor: Lancer et faire tourner un serveur SCUM : sur dédié ou en local
+## :material-monitor: Lancer et faire tourner un serveur SCUM : hébergé ou en local
 
 Les deux fichiers de réglages fonctionnent de la même façon partout : le serveur les lit au démarrage, donc arrêtez le serveur, remplacez les fichiers, puis relancez-le.
 
-### Sur un serveur dédié
+### Sur un serveur hébergé
 
 Sur un serveur loué (Nitrado, par exemple), envoyez vos `ServerSettings.ini` et `EconomyOverride.json` par la page de fichiers ou de réglages de l'hébergeur, serveur arrêté, puis relancez-le. Les écrans changent d'un hébergeur à l'autre : consultez l'aide de votre hébergeur pour savoir où déposer les fichiers.
 
