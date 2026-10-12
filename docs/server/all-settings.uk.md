@@ -109,7 +109,7 @@
 | `DropshipHealthMultiplier` | `1.000000` |
 | `SentryHealthMultiplier` | `1.000000` |
 | `BaseBuildingAttackerSentryHealthMultiplier` | `1.000000` |
-| `ArmedNPCDifficultyLevel` | `3` |
+| `ArmedNPCDifficultyLevel` | `2` |
 | `ArmedNPCHealthMultiplier` | `0.100000` |
 | `ArmedNPCDamageMultiplier` | `0.500000` |
 | `ArmedNPCSpreadMultiplier` | `1.000000` |

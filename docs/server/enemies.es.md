@@ -12,7 +12,7 @@
 <div><b>200</b><span>Zombis como máximo</span></div>
 <div><b>x0.5</b><span>Salud de los zombis</span></div>
 <div><b>x0.1</b><span>Salud de los PNJ armados</span></div>
-<div><b>3</b><span>Dificultad de los PNJ armados</span></div>
+<div><b>2</b><span>Dificultad de los PNJ armados</span></div>
 </div>
 
 
@@ -41,7 +41,7 @@ Los zombis se llaman marionetas (puppets) en los ajustes.
 
 | Ajuste | Valor | Qué hace |
 |---|---|---|
-| `ArmedNPCDifficultyLevel` | 3 | Dificultad alta. |
+| `ArmedNPCDifficultyLevel` | 2 | Dificultad media. |
 | `ArmedNPCHealthMultiplier` | 0.1 | Salud: basta una sola bala bien colocada. |
 | `ArmedNPCDamageMultiplier` | 0.5 | Daño que causan. |
 | `ArmedNPCRunningSpeedMultiplier` | 0.9 | Velocidad de carrera. |

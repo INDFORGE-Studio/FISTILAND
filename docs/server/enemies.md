@@ -12,7 +12,7 @@
 <div><b>200</b><span>Zombies at most</span></div>
 <div><b>x0.5</b><span>Zombie health</span></div>
 <div><b>x0.1</b><span>Armed NPC health</span></div>
-<div><b>3</b><span>Armed NPC difficulty</span></div>
+<div><b>2</b><span>Armed NPC difficulty</span></div>
 </div>
 
 
@@ -41,7 +41,7 @@ Zombies are called puppets in the settings.
 
 | Setting | Value | What it does |
 |---|---|---|
-| `ArmedNPCDifficultyLevel` | 3 | Hard difficulty. |
+| `ArmedNPCDifficultyLevel` | 2 | Medium difficulty. |
 | `ArmedNPCHealthMultiplier` | 0.1 | Health: a single well-placed bullet is enough. |
 | `ArmedNPCDamageMultiplier` | 0.5 | Damage dealt. |
 | `ArmedNPCRunningSpeedMultiplier` | 0.9 | Running speed. |

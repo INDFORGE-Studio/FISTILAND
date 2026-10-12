@@ -12,7 +12,7 @@
 <div><b>200</b><span>Zombies au maximum</span></div>
 <div><b>x0.5</b><span>Santé des zombies</span></div>
 <div><b>x0.1</b><span>Santé des PNJ armés</span></div>
-<div><b>3</b><span>Difficulté des PNJ armés</span></div>
+<div><b>2</b><span>Difficulté des PNJ armés</span></div>
 </div>
 
 
@@ -41,7 +41,7 @@ Les zombies s'appellent des marionnettes (puppets) dans les réglages.
 
 | Réglage | Valeur | Rôle |
 |---|---|---|
-| `ArmedNPCDifficultyLevel` | 3 | Difficulté élevée. |
+| `ArmedNPCDifficultyLevel` | 2 | Difficulté moyenne. |
 | `ArmedNPCHealthMultiplier` | 0.1 | Santé : une seule balle bien placée suffit. |
 | `ArmedNPCDamageMultiplier` | 0.5 | Dégâts infligés. |
 | `ArmedNPCRunningSpeedMultiplier` | 0.9 | Vitesse de course. |
