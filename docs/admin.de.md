@@ -22,19 +22,19 @@ Trage deine SteamID64 (17 Ziffern, zu finden auf steamid.io) in `AdminUsers.ini`
 
 ## :material-console: Chat-Befehle
 
-Status: **Getestet** heißt, wir haben den Befehl auf unserem Server ausgeführt. **Gemeldet** heißt, ein öffentlicher Leitfaden beschreibt ihn und wir haben ihn nicht getestet. In den Beispielen sind Beträge, Spielername und Item-Codes nur Beispiele: ändere sie nach Bedarf.
+Status: **Gültig** heißt, wir haben im Spiel geprüft, dass er funktioniert. **Gemeldet** heißt, ein öffentlicher Leitfaden beschreibt ihn und wir haben ihn nicht getestet. In den Beispielen sind Beträge, Spielername und Item-Codes nur Beispiele: ändere sie nach Bedarf.
 
 | Befehl | Status | Was er macht |
 |---|---|---|
-| `#ListPlayers` | <span class="fl-st fl-st-ok">:material-check-circle: Getestet</span> | Listet die Spieler online auf. |
-| `#ListItems` | <span class="fl-st fl-st-ok">:material-check-circle: Getestet</span> | Gibt alle Item-Codes deiner Spielversion (2.572 in 1.3.4.2) in der Logdatei des Spiels aus. |
-| `#spawnitem Apple`<br>`#spawnitem Water_05l` | <span class="fl-st fl-st-ok">:material-check-circle: Getestet</span> | Gibt dir ein Item anhand seines Codes. Nimm einen beliebigen Code aus der Item-Liste (siehe Downloads unten). |
-| `#SetCurrencyBalance Normal 10000 Spielername` | <span class="fl-st fl-st-ok">:material-check-circle: Getestet</span> | Setzt das Geld eines Spielers. `Normal` ist das normale Geld und `10000` der Betrag: ändere ihn auf jede Zahl (500, 100000 ...). |
-| `#ChangeCurrencyBalance Gold 5 Spielername` | <span class="fl-st fl-st-ok">:material-check-circle: Getestet</span> | Ändert das Gold eines Spielers. `Gold` ist die Währung und `5` der Betrag: ändere ihn nach Belieben. |
-| `#NightBrightness 1` | <span class="fl-st fl-st-ok">:material-check-circle: Getestet</span> | Helligkeit der Nacht, von 0 (dunkel) bis 1 (hell). Nur für dich, nicht für den ganzen Server. |
-| `#SetTime 12` | <span class="fl-st fl-st-ok">:material-check-circle: Getestet</span> | Setzt die Tageszeit, von 0 bis 24. |
-| `#ListZombies`<br>`#ListAnimals` | <span class="fl-st fl-st-ok">:material-check-circle: Getestet</span> | Listet die Zombie- und Tiertypen auf. |
-| `#ListSpawnedVehicles`<br>`#ListSpawnedArmedNPCs` | <span class="fl-st fl-st-ok">:material-check-circle: Getestet</span> | Listet, was in der Welt lebt. Das Ergebnis erscheint nur im Chat, nicht im Log. |
+| `#ListPlayers` | <span class="fl-st fl-st-ok">:material-check-decagram: Gültig</span> | Listet die Spieler online auf. |
+| `#ListItems` | <span class="fl-st fl-st-ok">:material-check-decagram: Gültig</span> | Gibt alle Item-Codes deiner Spielversion (2.572 in 1.3.4.2) in der Logdatei des Spiels aus. |
+| `#spawnitem Apple`<br>`#spawnitem Water_05l` | <span class="fl-st fl-st-ok">:material-check-decagram: Gültig</span> | Gibt dir ein Item anhand seines Codes. Nimm einen beliebigen Code aus der Item-Liste (siehe Downloads unten). |
+| `#SetCurrencyBalance Normal 10000 Spielername` | <span class="fl-st fl-st-ok">:material-check-decagram: Gültig</span> | Setzt das Geld eines Spielers. `Normal` ist das normale Geld und `10000` der Betrag: ändere ihn auf jede Zahl (500, 100000 ...). |
+| `#ChangeCurrencyBalance Gold 5 Spielername` | <span class="fl-st fl-st-ok">:material-check-decagram: Gültig</span> | Ändert das Gold eines Spielers. `Gold` ist die Währung und `5` der Betrag: ändere ihn nach Belieben. |
+| `#NightBrightness 1` | <span class="fl-st fl-st-ok">:material-check-decagram: Gültig</span> | Helligkeit der Nacht, von 0 (dunkel) bis 1 (hell). Nur für dich, nicht für den ganzen Server. |
+| `#SetTime 12` | <span class="fl-st fl-st-ok">:material-check-decagram: Gültig</span> | Setzt die Tageszeit, von 0 bis 24. |
+| `#ListZombies`<br>`#ListAnimals` | <span class="fl-st fl-st-ok">:material-check-decagram: Gültig</span> | Listet die Zombie- und Tiertypen auf. |
+| `#ListSpawnedVehicles`<br>`#ListSpawnedArmedNPCs` | <span class="fl-st fl-st-ok">:material-check-decagram: Gültig</span> | Listet, was in der Welt lebt. Das Ergebnis erscheint nur im Chat, nicht im Log. |
 | `#MapTeleport` | <span class="fl-st fl-st-lst">:material-format-list-bulleted: Gelistet</span> | Teleport über die Karte. Nicht getestet. |
 | `#SetImmortality true`<br>`#SetImmortality false` | <span class="fl-st fl-st-rep">:material-help-circle-outline: Gemeldet</span> | Schadensimmunität an, dann aus. |
 | `#SetFamePoints 500 Spielername` | <span class="fl-st fl-st-rep">:material-help-circle-outline: Gemeldet</span> | Setzt die Fame Points eines Spielers. |

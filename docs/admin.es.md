@@ -22,19 +22,19 @@ Añade tu SteamID64 (17 cifras, se encuentra en steamid.io) a `AdminUsers.ini`, 
 
 ## :material-console: Comandos del chat
 
-Estado: **Probado** significa que lo ejecutamos en nuestro servidor. **Indicado** significa que una guía pública lo describe y que no lo probamos. En los ejemplos, las cantidades, el nombre del jugador y los códigos de objetos son solo ejemplos: cámbialos según lo necesites.
+Estado: **Válido** significa que comprobamos en el juego que funciona. **Indicado** significa que una guía pública lo describe y que no lo probamos. En los ejemplos, las cantidades, el nombre del jugador y los códigos de objetos son solo ejemplos: cámbialos según lo necesites.
 
 | Comando | Estado | Qué hace |
 |---|---|---|
-| `#ListPlayers` | <span class="fl-st fl-st-ok">:material-check-circle: Probado</span> | Lista los jugadores conectados. |
-| `#ListItems` | <span class="fl-st fl-st-ok">:material-check-circle: Probado</span> | Escribe todos los códigos de objetos de tu versión (2.572 en 1.3.4.2) en el registro del juego. |
-| `#spawnitem Apple`<br>`#spawnitem Water_05l` | <span class="fl-st fl-st-ok">:material-check-circle: Probado</span> | Te da un objeto a partir de su código. Usa cualquier código de la lista de objetos (ver las descargas más abajo). |
-| `#SetCurrencyBalance Normal 10000 NombreDelJugador` | <span class="fl-st fl-st-ok">:material-check-circle: Probado</span> | Fija el dinero de un jugador. `Normal` es el dinero normal y `10000` la cantidad: cámbiala por el número que quieras (500, 100000...). |
-| `#ChangeCurrencyBalance Gold 5 NombreDelJugador` | <span class="fl-st fl-st-ok">:material-check-circle: Probado</span> | Cambia el oro de un jugador. `Gold` es la moneda y `5` la cantidad: cámbiala como quieras. |
-| `#NightBrightness 1` | <span class="fl-st fl-st-ok">:material-check-circle: Probado</span> | Brillo de la noche, de 0 (oscuro) a 1 (claro). Solo para ti, no para todo el servidor. |
-| `#SetTime 12` | <span class="fl-st fl-st-ok">:material-check-circle: Probado</span> | Fija la hora del día, de 0 a 24. |
-| `#ListZombies`<br>`#ListAnimals` | <span class="fl-st fl-st-ok">:material-check-circle: Probado</span> | Lista los tipos de zombis y de animales. |
-| `#ListSpawnedVehicles`<br>`#ListSpawnedArmedNPCs` | <span class="fl-st fl-st-ok">:material-check-circle: Probado</span> | Lista lo que está vivo en el mundo. El resultado sale solo en el chat, no en el registro. |
+| `#ListPlayers` | <span class="fl-st fl-st-ok">:material-check-decagram: Válido</span> | Lista los jugadores conectados. |
+| `#ListItems` | <span class="fl-st fl-st-ok">:material-check-decagram: Válido</span> | Escribe todos los códigos de objetos de tu versión (2.572 en 1.3.4.2) en el registro del juego. |
+| `#spawnitem Apple`<br>`#spawnitem Water_05l` | <span class="fl-st fl-st-ok">:material-check-decagram: Válido</span> | Te da un objeto a partir de su código. Usa cualquier código de la lista de objetos (ver las descargas más abajo). |
+| `#SetCurrencyBalance Normal 10000 NombreDelJugador` | <span class="fl-st fl-st-ok">:material-check-decagram: Válido</span> | Fija el dinero de un jugador. `Normal` es el dinero normal y `10000` la cantidad: cámbiala por el número que quieras (500, 100000...). |
+| `#ChangeCurrencyBalance Gold 5 NombreDelJugador` | <span class="fl-st fl-st-ok">:material-check-decagram: Válido</span> | Cambia el oro de un jugador. `Gold` es la moneda y `5` la cantidad: cámbiala como quieras. |
+| `#NightBrightness 1` | <span class="fl-st fl-st-ok">:material-check-decagram: Válido</span> | Brillo de la noche, de 0 (oscuro) a 1 (claro). Solo para ti, no para todo el servidor. |
+| `#SetTime 12` | <span class="fl-st fl-st-ok">:material-check-decagram: Válido</span> | Fija la hora del día, de 0 a 24. |
+| `#ListZombies`<br>`#ListAnimals` | <span class="fl-st fl-st-ok">:material-check-decagram: Válido</span> | Lista los tipos de zombis y de animales. |
+| `#ListSpawnedVehicles`<br>`#ListSpawnedArmedNPCs` | <span class="fl-st fl-st-ok">:material-check-decagram: Válido</span> | Lista lo que está vivo en el mundo. El resultado sale solo en el chat, no en el registro. |
 | `#MapTeleport` | <span class="fl-st fl-st-lst">:material-format-list-bulleted: En lista</span> | Teletransporte desde el mapa. No probado. |
 | `#SetImmortality true`<br>`#SetImmortality false` | <span class="fl-st fl-st-rep">:material-help-circle-outline: Indicado</span> | Inmunidad al daño, activada y luego desactivada. |
 | `#SetFamePoints 500 NombreDelJugador` | <span class="fl-st fl-st-rep">:material-help-circle-outline: Indicado</span> | Fija los puntos de fama de un jugador. |

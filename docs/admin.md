@@ -22,19 +22,19 @@ Add your SteamID64 (17 digits, find it on steamid.io) to `AdminUsers.ini`, one p
 
 ## :material-console: Chat commands
 
-Status: **Tested** means we ran it on our server. **Reported** means a public guide describes it and we did not test it. In the examples, the amounts, the player name and the item codes are only examples: change them to what you need.
+Status: **Valid** means we checked in-game that it works. **Reported** means a public guide describes it and we did not test it. In the examples, the amounts, the player name and the item codes are only examples: change them to what you need.
 
 | Command | Status | What it does |
 |---|---|---|
-| `#ListPlayers` | <span class="fl-st fl-st-ok">:material-check-circle: Tested</span> | Lists the players online. |
-| `#ListItems` | <span class="fl-st fl-st-ok">:material-check-circle: Tested</span> | Prints every item code of your game version (2,572 on 1.3.4.2) in the game's log file. |
-| `#spawnitem Apple`<br>`#spawnitem Water_05l` | <span class="fl-st fl-st-ok">:material-check-circle: Tested</span> | Gives you an item from its code. Use any code of the item list (see the downloads below). |
-| `#SetCurrencyBalance Normal 10000 PlayerName` | <span class="fl-st fl-st-ok">:material-check-circle: Tested</span> | Sets the money of a player. `Normal` is the regular money and `10000` is the amount: change it to any number (500, 100000...). |
-| `#ChangeCurrencyBalance Gold 5 PlayerName` | <span class="fl-st fl-st-ok">:material-check-circle: Tested</span> | Changes the gold of a player. `Gold` is the currency and `5` is the amount: change it as you like. |
-| `#NightBrightness 1` | <span class="fl-st fl-st-ok">:material-check-circle: Tested</span> | Night brightness, from 0 (dark) to 1 (bright). Only for you, not the whole server. |
-| `#SetTime 12` | <span class="fl-st fl-st-ok">:material-check-circle: Tested</span> | Sets the time of day, from 0 to 24. |
-| `#ListZombies`<br>`#ListAnimals` | <span class="fl-st fl-st-ok">:material-check-circle: Tested</span> | Lists the zombie and animal types. |
-| `#ListSpawnedVehicles`<br>`#ListSpawnedArmedNPCs` | <span class="fl-st fl-st-ok">:material-check-circle: Tested</span> | Lists what is alive in the world. The result shows in the chat only, not in the log. |
+| `#ListPlayers` | <span class="fl-st fl-st-ok">:material-check-decagram: Valid</span> | Lists the players online. |
+| `#ListItems` | <span class="fl-st fl-st-ok">:material-check-decagram: Valid</span> | Prints every item code of your game version (2,572 on 1.3.4.2) in the game's log file. |
+| `#spawnitem Apple`<br>`#spawnitem Water_05l` | <span class="fl-st fl-st-ok">:material-check-decagram: Valid</span> | Gives you an item from its code. Use any code of the item list (see the downloads below). |
+| `#SetCurrencyBalance Normal 10000 PlayerName` | <span class="fl-st fl-st-ok">:material-check-decagram: Valid</span> | Sets the money of a player. `Normal` is the regular money and `10000` is the amount: change it to any number (500, 100000...). |
+| `#ChangeCurrencyBalance Gold 5 PlayerName` | <span class="fl-st fl-st-ok">:material-check-decagram: Valid</span> | Changes the gold of a player. `Gold` is the currency and `5` is the amount: change it as you like. |
+| `#NightBrightness 1` | <span class="fl-st fl-st-ok">:material-check-decagram: Valid</span> | Night brightness, from 0 (dark) to 1 (bright). Only for you, not the whole server. |
+| `#SetTime 12` | <span class="fl-st fl-st-ok">:material-check-decagram: Valid</span> | Sets the time of day, from 0 to 24. |
+| `#ListZombies`<br>`#ListAnimals` | <span class="fl-st fl-st-ok">:material-check-decagram: Valid</span> | Lists the zombie and animal types. |
+| `#ListSpawnedVehicles`<br>`#ListSpawnedArmedNPCs` | <span class="fl-st fl-st-ok">:material-check-decagram: Valid</span> | Lists what is alive in the world. The result shows in the chat only, not in the log. |
 | `#MapTeleport` | <span class="fl-st fl-st-lst">:material-format-list-bulleted: Listed</span> | Teleport through the map. Not tested. |
 | `#SetImmortality true`<br>`#SetImmortality false` | <span class="fl-st fl-st-rep">:material-help-circle-outline: Reported</span> | Damage immunity on, then off. |
 | `#SetFamePoints 500 PlayerName` | <span class="fl-st fl-st-rep">:material-help-circle-outline: Reported</span> | Sets the fame points of a player. |
