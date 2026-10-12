@@ -50,10 +50,10 @@ Su un server a noleggio (per esempio Nitrado), carica il tuo `ServerSettings.ini
 
 ### In locale, gratis
 
-Un server di test gratuito sul tuo PC ti permette di provare impostazioni e prezzi prima di metterli online:
+Un server locale sul tuo PC ti permette, per esempio, di giocare online gratis con i tuoi amici, o anche di provare le tue impostazioni e/o i tuoi prezzi prima di mettere online un server più grande:
 
 1. In Steam, installa lo strumento gratuito **SCUM Server**.
-2. Copia il tuo `ServerSettings.ini` e il tuo `EconomyOverride.json` nella cartella `SCUM\Saved\Config\WindowsServer` dello strumento. Aggiungi `[TEST]` al nome del server per riconoscerlo.
+2. Copia il tuo `ServerSettings.ini` e il tuo `EconomyOverride.json` nella cartella `SCUM\Saved\Config\WindowsServer` dello strumento. Dai un nome al tuo server per riconoscerlo (noi abbiamo aggiunto `[TEST]` al nostro).
 3. Avvia `SCUMServer.exe -log -port=7777` da `SCUM\Binaries\Win64`. Il caricamento della mappa richiede circa due minuti.
 4. Nel gioco, apri la casella di connessione diretta e inserisci `127.0.0.1:7779`. Con noi ha funzionato con un server avviato con `-port=7777`: la porta di connessione era la 7779, due in più della porta di gioco, e la 7777 non funzionava. Testato sullo stesso PC del gioco; con un altro valore di `-port`, la porta può cambiare.
 5. Ferma il server con Ctrl+C nella sua finestra.
