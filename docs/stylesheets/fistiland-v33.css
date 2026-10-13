@@ -573,8 +573,14 @@ html[lang="uk"] .md-header__option .md-select > button::before { background-imag
 .fl-poi text { fill: #0d0c0b; font: 700 10px Oswald, sans-serif; }
 .fl-poi.is-approx path { fill: rgba(13, 12, 11, .82); stroke: #ff7a33; stroke-dasharray: 3 2; }
 .fl-poi.is-approx text { fill: #ff7a33; }
-.fl-island__poi ol { margin: .5rem 0 0; padding-left: 1.5rem; font-size: .82rem; color: #e0d6cc; }
-.fl-island__poi li { margin: .2rem 0; }
-.fl-island__poi li::marker { color: #ff7a33; font-family: Oswald, sans-serif; font-weight: 600; }
-.fl-island__poi li.is-approx::marker { color: #8a7f75; }
 .fl-island__poi p { margin: .6rem 0 0; font-size: .7rem; line-height: 1.4; color: #8a7f75; }
+.fl-island__poi ul { list-style: none; margin: .5rem 0 0; padding: 0; max-height: 24rem; overflow-y: auto; }
+.fl-island__poi li { display: flex; align-items: baseline; gap: .55rem; margin: 0; padding: .28rem .35rem; font-size: .8rem; color: #e0d6cc; border-bottom: 1px solid rgba(58, 45, 36, .6); cursor: pointer; }
+.fl-island__poi li:hover, .fl-island__poi li:focus { background: #1d1814; outline: none; color: #fff; }
+.fl-island__poi .n { flex: none; min-width: 1.3rem; font-family: Oswald, sans-serif; font-weight: 600; color: #ff7a33; }
+.fl-island__poi li.is-sector .n { color: #8a7f75; }
+.fl-island__poi .t { flex: 1; }
+.fl-island__poi .s { flex: none; font-family: Oswald, sans-serif; font-size: .7rem; letter-spacing: .08em; color: #8a7f75; }
+.fl-sec { position: absolute; width: 20%; height: 20%; background: rgba(255, 122, 51, .18); border: 2px solid #ff7a33; box-sizing: border-box; pointer-events: none; }
+.fl-poi.is-hot { z-index: 3; }
+.fl-poi.is-hot svg { transform: scale(1.5); }

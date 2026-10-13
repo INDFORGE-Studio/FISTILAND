@@ -1,22 +1,22 @@
 (function () {
   var L = {
     en: { zin: 'Zoom in', zout: 'Zoom out', reset: 'Reset view', full: 'Full screen', fail: 'The map could not be loaded.', open: 'Open the image',
-      sat: 'Satellite map of the island', guide: 'Wildlife guide', layers: 'Layers', hab: 'Habitats', mut: 'Mutant sightings', openLegend: 'Open the legend as an image', poi: 'Places of interest', approx: 'Dashed marker: approximate position',
+      sat: 'Satellite map of the island', guide: 'Wildlife guide', layers: 'Layers', hab: 'Habitats', mut: 'Mutant sightings', openLegend: 'Open the legend as an image', poi: 'Places of interest', approx: 'Dashed marker: approximate position. No marker: only the sector is known; hover or tap the name to light it up.',
       sp: { bear: 'Bear', deer: 'Deer', wolf: 'Wolf', boar: 'Boar' } },
     fr: { zin: 'Zoom avant', zout: 'Zoom arrière', reset: 'Réinitialiser la vue', full: 'Plein écran', fail: 'La carte n’a pas pu être chargée.', open: 'Ouvrir l’image',
-      sat: 'Carte satellite de l’île', guide: 'Guide de la faune', layers: 'Calques', hab: 'Habitats', mut: 'Mutants repérés', openLegend: 'Ouvrir la légende en image', poi: 'Lieux d’intérêt', approx: 'Repère hachuré : position approximative',
+      sat: 'Carte satellite de l’île', guide: 'Guide de la faune', layers: 'Calques', hab: 'Habitats', mut: 'Mutants repérés', openLegend: 'Ouvrir la légende en image', poi: 'Lieux d’intérêt', approx: 'Repère hachuré : position approximative. Sans repère : seul le secteur est connu ; survolez ou touchez le nom pour l’illuminer.',
       sp: { bear: 'Ours', deer: 'Cerf', wolf: 'Loup', boar: 'Sanglier' } },
     de: { zin: 'Vergrößern', zout: 'Verkleinern', reset: 'Ansicht zurücksetzen', full: 'Vollbild', fail: 'Die Karte konnte nicht geladen werden.', open: 'Bild öffnen',
-      sat: 'Satellitenkarte der Insel', guide: 'Tierführer', layers: 'Ebenen', hab: 'Lebensräume', mut: 'Mutanten-Sichtungen', openLegend: 'Legende als Bild öffnen', poi: 'Interessante Orte', approx: 'Gestrichelte Markierung: ungefähre Position',
+      sat: 'Satellitenkarte der Insel', guide: 'Tierführer', layers: 'Ebenen', hab: 'Lebensräume', mut: 'Mutanten-Sichtungen', openLegend: 'Legende als Bild öffnen', poi: 'Interessante Orte', approx: 'Gestrichelte Markierung: ungefähre Position. Ohne Markierung: nur der Sektor ist bekannt; Namen überfahren oder antippen, um ihn hervorzuheben.',
       sp: { bear: 'Bär', deer: 'Hirsch', wolf: 'Wolf', boar: 'Wildschwein' } },
     es: { zin: 'Acercar', zout: 'Alejar', reset: 'Restablecer la vista', full: 'Pantalla completa', fail: 'No se pudo cargar el mapa.', open: 'Abrir la imagen',
-      sat: 'Mapa satelital de la isla', guide: 'Guía de fauna', layers: 'Capas', hab: 'Hábitats', mut: 'Mutantes avistados', openLegend: 'Abrir la leyenda como imagen', poi: 'Lugares de interés', approx: 'Marcador discontinuo: posición aproximada',
+      sat: 'Mapa satelital de la isla', guide: 'Guía de fauna', layers: 'Capas', hab: 'Hábitats', mut: 'Mutantes avistados', openLegend: 'Abrir la leyenda como imagen', poi: 'Lugares de interés', approx: 'Marcador discontinuo: posición aproximada. Sin marcador: solo se conoce el sector; pase el cursor o toque el nombre para iluminarlo.',
       sp: { bear: 'Oso', deer: 'Ciervo', wolf: 'Lobo', boar: 'Jabalí' } },
     it: { zin: 'Ingrandisci', zout: 'Riduci', reset: 'Reimposta la vista', full: 'Schermo intero', fail: 'Impossibile caricare la mappa.', open: 'Apri l’immagine',
-      sat: 'Mappa satellitare dell’isola', guide: 'Guida alla fauna', layers: 'Livelli', hab: 'Habitat', mut: 'Mutanti avvistati', openLegend: 'Apri la legenda come immagine', poi: 'Luoghi di interesse', approx: 'Segnaposto tratteggiato: posizione approssimativa',
+      sat: 'Mappa satellitare dell’isola', guide: 'Guida alla fauna', layers: 'Livelli', hab: 'Habitat', mut: 'Mutanti avvistati', openLegend: 'Apri la legenda come immagine', poi: 'Luoghi di interesse', approx: 'Segnaposto tratteggiato: posizione approssimativa. Senza segnaposto: si conosce solo il settore; passa sopra il nome o toccalo per evidenziarlo.',
       sp: { bear: 'Orso', deer: 'Cervo', wolf: 'Lupo', boar: 'Cinghiale' } },
     uk: { zin: 'Збільшити', zout: 'Зменшити', reset: 'Скинути вигляд', full: 'На весь екран', fail: 'Не вдалося завантажити карту.', open: 'Відкрити зображення',
-      sat: 'Супутникова карта острова', guide: 'Довідник фауни', layers: 'Шари', hab: 'Середовища', mut: 'Мутанти на карті', openLegend: 'Відкрити легенду як зображення', poi: 'Цікаві місця', approx: 'Пунктирний маркер: приблизна позиція',
+      sat: 'Супутникова карта острова', guide: 'Довідник фауни', layers: 'Шари', hab: 'Середовища', mut: 'Мутанти на карті', openLegend: 'Відкрити легенду як зображення', poi: 'Цікаві місця', approx: 'Пунктирний маркер: приблизна позиція. Без маркера: відомий лише сектор; наведіть курсор або торкніться назви, щоб підсвітити його.',
       sp: { bear: 'Ведмідь', deer: 'Олень', wolf: 'Вовк', boar: 'Кабан' } }
   };
   var lang = (document.documentElement.lang || 'en').slice(0, 2);
@@ -164,7 +164,7 @@
       '<aside class="fl-island__side">' +
       '<a href="' + legend + '" target="_blank" rel="noopener" title="' + T.openLegend + '"><img class="fl-island__legend" alt="' + T.guide + '" src="' + legend + '"></a>' +
       '<div class="fl-island__mut" data-l="mutants"><b>' + T.mut + '</b><ul>' + mutRows + '</ul></div>' +
-      '<div class="fl-island__mut fl-island__poi" data-l="poi" hidden><b>' + T.poi + '</b><ol></ol><p>' + T.approx + '</p></div>' +
+      '<div class="fl-island__mut fl-island__poi" data-l="poi" hidden><b>' + T.poi + '</b><ul></ul><p>' + T.approx + '</p></div>' +
       '</aside></div>';
 
     var box = root.querySelector('.fl-island__map');
@@ -182,30 +182,67 @@
 
     var poiUrl = root.getAttribute('data-poi');
     if (poiUrl) {
+      var ROWS = 'DCBAZ';
+      var poiBox = root.querySelector('.fl-island__poi');
       fetch(poiUrl).then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); }).then(function (data) {
+        function key(p) { var c = p.sectors.split(' ')[0]; return ROWS.indexOf(c.charAt(0)) * 10 + (4 - parseInt(c.charAt(1), 10)); }
+        var places = data.places.slice().sort(function (a, b) {
+          return key(a) - key(b) || (a.name[lang] || a.name.en).localeCompare(b.name[lang] || b.name.en, lang);
+        });
         var layer = document.createElement('div');
         layer.className = 'fl-island__pois';
         layer.setAttribute('data-l', 'poi');
-        var list = root.querySelector('.fl-island__poi ol');
-        data.places.forEach(function (p, i) {
+        var list = poiBox.querySelector('ul');
+        var secs = document.createElement('div');
+        secs.className = 'fl-island__pois';
+        secs.setAttribute('data-l', 'poi');
+        var pinned = null;
+        function showSectors(str) {
+          secs.innerHTML = '';
+          if (!str) return;
+          str.split(' ').forEach(function (c) {
+            var d = document.createElement('div');
+            d.className = 'fl-sec';
+            d.style.left = ((4 - parseInt(c.charAt(1), 10)) * 20) + '%';
+            d.style.top = (ROWS.indexOf(c.charAt(0)) * 20) + '%';
+            secs.appendChild(d);
+          });
+        }
+        var n = 0;
+        places.forEach(function (p) {
           var name = p.name[lang] || p.name.en;
-          var n = i + 1;
-          var m = document.createElement('span');
-          m.className = 'fl-poi' + (p.exact ? '' : ' is-approx');
-          m.style.left = (p.x * 100) + '%';
-          m.style.top = (p.y * 100) + '%';
-          m.title = n + '. ' + name;
-          m.innerHTML = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 1.5L22.5 12 12 22.5 1.5 12z"/><text x="12" y="15.6" text-anchor="middle">' + n + '</text></svg>';
-          layer.appendChild(m);
           var li = document.createElement('li');
-          li.textContent = name;
-          if (!p.exact) li.className = 'is-approx';
+          var marker = null;
+          var num = '·';
+          if (p.prec !== 'sector') {
+            n += 1; num = String(n);
+            marker = document.createElement('span');
+            marker.className = 'fl-poi' + (p.prec === 'exact' ? '' : ' is-approx');
+            marker.style.left = (p.x * 100) + '%';
+            marker.style.top = (p.y * 100) + '%';
+            marker.title = num + '. ' + name;
+            marker.innerHTML = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 1.5L22.5 12 12 22.5 1.5 12z"/><text x="12" y="15.6" text-anchor="middle">' + num + '</text></svg>';
+            layer.appendChild(marker);
+          } else {
+            li.className = 'is-sector';
+          }
+          li.tabIndex = 0;
+          li.innerHTML = '<span class="n">' + num + '</span><span class="t"></span><span class="s">' + p.sectors.replace(' ', ' / ') + '</span>';
+          li.querySelector('.t').textContent = name;
+          function on() { if (marker) marker.classList.add('is-hot'); showSectors(p.sectors); }
+          function off() { if (marker) marker.classList.remove('is-hot'); showSectors(pinned); }
+          li.addEventListener('mouseenter', on);
+          li.addEventListener('mouseleave', off);
+          li.addEventListener('focus', on);
+          li.addEventListener('blur', off);
+          li.addEventListener('click', function () { pinned = (pinned === p.sectors) ? null : p.sectors; showSectors(pinned || p.sectors); });
           list.appendChild(li);
         });
+        stage.appendChild(secs);
         stage.appendChild(layer);
-        root.querySelector('.fl-island__poi').hidden = false;
+        poiBox.hidden = false;
         var cb = root.querySelector('input[data-l="poi"]');
-        if (cb && !cb.checked) { layer.classList.add('is-off'); root.querySelector('.fl-island__poi').classList.add('is-off'); }
+        if (cb && !cb.checked) { layer.classList.add('is-off'); secs.classList.add('is-off'); poiBox.classList.add('is-off'); }
       }).catch(function () {});
     }
 
