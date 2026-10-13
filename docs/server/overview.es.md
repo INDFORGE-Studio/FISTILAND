@@ -22,7 +22,7 @@
 
 1. Inicia SCUM y abre la lista de servidores desde la sección **MULTIJUGADOR**.
 
-2. Busca **FISTILAND** en la pestaña **BÚSQUEDA**, arriba a la derecha, o escribe directamente la IP del servidor en el campo blanco de abajo a la derecha: <button type="button" class="fl-ip" data-copy="31.214.207.109:8159">31.214.207.109:8159</button> (funciona mucho mejor).
+2. Busca <button type="button" class="fl-ip" data-copy="FISTILAND">FISTILAND</button> en la pestaña **BÚSQUEDA**, arriba a la derecha, o escribe directamente la IP del servidor en el campo blanco de abajo a la derecha: <button type="button" class="fl-ip" data-copy="31.214.207.109:8159">31.214.207.109:8159</button> (funciona mucho mejor).
 
 3. En ambos casos, haz clic en **CONECTAR**. Es un servidor comunitario de acceso libre.
 

@@ -657,12 +657,12 @@ html[lang="uk"] .md-header__option .md-select > button::before { background-imag
 .fl-left ol > li { margin-bottom: .9rem; }
 
 /* Server IP: click to copy, orange so it looks interactive */
-.fl-ip { font: 600 1rem Oswald, sans-serif; letter-spacing: .05em; color: #ff7a33; background: rgba(232, 99, 28, .16); border: 1px dashed #e8631c; border-radius: 3px; padding: .08rem .6rem; cursor: pointer; transition: background .15s, color .15s; white-space: nowrap; }
+.fl-ip { font: 600 .88rem/1.3 Oswald, sans-serif; letter-spacing: .04em; color: #ff7a33; background: rgba(232, 99, 28, .16); border: 1px dashed #e8631c; border-radius: 3px; padding: .02rem .42rem; cursor: pointer; transition: background .15s, color .15s; white-space: nowrap; }
 .fl-ip:hover, .fl-ip:focus-visible { background: #e8631c; color: #0d0c0b; border-style: solid; outline: none; box-shadow: 0 0 0 3px rgba(232, 99, 28, .35); }
 .fl-ip.is-done { background: #3f9d5a; border-color: #3f9d5a; color: #fff; }
 
 /* Discord link: logo + name, orange */
 .md-typeset a.fl-discord { display: inline-flex; align-items: center; gap: .6rem; font: 600 1.4rem Oswald, sans-serif; letter-spacing: .1em; color: #ff7a33; text-decoration: none; }
-.md-typeset a.fl-discord:hover { color: #ff9a5c; }
+.md-typeset a.fl-discord:hover { color: #fff; }
 .md-typeset a.fl-discord .twemoji, .md-typeset a.fl-discord svg { width: 1.9rem; height: 1.9rem; fill: currentColor; }
 .md-typeset a.fl-discord strong { font-weight: 600; }

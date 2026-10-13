@@ -27,7 +27,7 @@ extra_javascript:
   - javascripts/fl-ip-v1.js
 
 extra_css:
-  - stylesheets/fistiland-v41.css
+  - stylesheets/fistiland-v42.css
 
 extra:
   social:

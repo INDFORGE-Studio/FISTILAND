@@ -22,7 +22,7 @@
 
 1. Starte SCUM und öffne die Serverliste über den Bereich **MEHRSPIELER**.
 
-2. Suche **FISTILAND** im Reiter **SUCHE** oben rechts, oder gib die Server-IP direkt in das weiße Feld unten rechts ein: <button type="button" class="fl-ip" data-copy="31.214.207.109:8159">31.214.207.109:8159</button> (das funktioniert viel besser).
+2. Suche <button type="button" class="fl-ip" data-copy="FISTILAND">FISTILAND</button> im Reiter **SUCHE** oben rechts, oder gib die Server-IP direkt in das weiße Feld unten rechts ein: <button type="button" class="fl-ip" data-copy="31.214.207.109:8159">31.214.207.109:8159</button> (das funktioniert viel besser).
 
 3. In beiden Fällen klickst du auf **VERBINDEN**. Es ist ein frei zugänglicher Community-Server.
 
