@@ -17,7 +17,7 @@ hide:
   <div><b>EU</b><span>Region</span></div>
   <div><b>PvP</b><span>Voll</span></div>
   <div><b>x5</b><span>Loot</span></div>
-  <div><b>10</b><span>Trupp</span></div>
+  <div><b>10</b><span>Pro Trupp</span></div>
 </div>
 </div>
 
