@@ -25,13 +25,12 @@ extra_javascript:
   - javascripts/fl-cards-v1.js
   - javascripts/fl-mush-v1.js
   - javascripts/fl-ip-v1.js
-  - javascripts/fl-bgfx-v3.js
   - javascripts/fl-join-v1.js
   - javascripts/fl-discord-v1.js
-  - javascripts/fl-logo-v4.js
+  - javascripts/fl-logo-v5.js
 
 extra_css:
-  - stylesheets/fistiland-v50.css
+  - stylesheets/fistiland-v51.css
 
 extra:
   social:

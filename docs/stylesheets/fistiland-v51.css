@@ -673,22 +673,6 @@ html[lang="uk"] .md-header__option .md-select > button::before { background-imag
 .md-typeset a.fl-discord:hover .twemoji::after { opacity: 1; }
 .md-typeset a.fl-discord:hover .twemoji svg { opacity: 0; }
 
-/* Home: animated background (canvas added by fl-bgfx-v1.js); the dark veil moves above it */
-html.fl-live .md-main:has(.fl-home) {
-  position: relative;
-  isolation: isolate;
-  background: url("../assets/bg-v3.jpg") center / cover no-repeat;
-}
-html.fl-live .md-main:has(.fl-home)::after {
-  content: "";
-  position: absolute; inset: 0; z-index: 1; pointer-events: none;
-  background:
-    radial-gradient(ellipse 42% 34% at 50% 36%, rgba(13,12,11,.40) 0%, rgba(13,12,11,0) 100%),
-    radial-gradient(ellipse at 50% 42%, rgba(13,12,11,0) 0%, rgba(13,12,11,.30) 100%),
-    linear-gradient(180deg, rgba(13,12,11,.05) 0%, rgba(13,12,11,.72) 100%);
-}
-.md-main > canvas.fl-bgfx { position: absolute; inset: 0; width: 100%; height: 100%; z-index: 0; pointer-events: none; }
-html.fl-live .md-main:has(.fl-home) > .md-main__inner { position: relative; z-index: 2; }
 
 /* ---- Header Discord icon (next to the flag): logo -> zombie on hover ---- */
 .md-header__button.fl-hd-discord {
@@ -750,3 +734,11 @@ html.fl-live .md-main:has(.fl-home) > .md-main__inner { position: relative; z-in
 /* Server page Discord link: same hover as the header icon */
 .md-typeset a.fl-discord .twemoji { transition: transform .2s ease, filter .2s ease; }
 .md-typeset a.fl-discord:hover .twemoji { transform: scale(1.18); filter: drop-shadow(0 0 7px rgba(140, 196, 60, .6)); }
+
+/* Logo hover "trip": colour ghosts that orbit the logo as the effect builds up */
+.md-typeset .fl-hero .fl-logo-tilt > .fl-logo-ghost {
+  position: absolute; left: 0; top: 0; width: 100% !important; height: 100% !important; max-width: none; margin: 0;
+  object-fit: contain; opacity: 0; pointer-events: none; mix-blend-mode: screen; filter: none;
+}
+.md-typeset .fl-hero .fl-logo-tilt > .fl-logo-ghost.g1 { filter: hue-rotate(140deg) saturate(2.2); }
+.md-typeset .fl-hero .fl-logo-tilt > .fl-logo-ghost.g2 { filter: hue-rotate(250deg) saturate(2.2); }
