@@ -4,7 +4,7 @@
 
 # Resumen del servidor
 
-<p>Qué es FISTILAND en una tabla y dónde encontrar cada ajuste.</p>
+<p>FISTILAND... ¿Dónde está? ¿Qué es?</p>
 
 </div>
 
@@ -16,17 +16,23 @@
 </div>
 
 
-## :material-login: Cómo unirse { #join }
+<div class="fl-left" markdown>
 
-1. Inicia SCUM y abre la lista de servidores.
-2. Busca **FISTILAND**.
-3. Únete. Es un servidor comunitario de acceso libre.
+## :material-login: Unirse { #join }
 
-### Discord
+1. Inicia SCUM y abre la lista de servidores desde la sección **MULTIJUGADOR**.
 
-Novedades, cambios, búsqueda de escuadra y soporte: [discord.gg/RHkNGk6ZQN](https://discord.gg/RHkNGk6ZQN).
+2. Busca **FISTILAND** en la pestaña **BÚSQUEDA**, arriba a la derecha, o escribe directamente la IP del servidor en el campo blanco de abajo a la derecha: <button type="button" class="fl-ip" data-copy="31.214.207.109:8159">31.214.207.109:8159</button> (funciona mucho mejor).
 
-## :material-star-circle: Qué hace diferente a FISTILAND
+3. En ambos casos, haz clic en **CONECTAR**. Es un servidor comunitario de acceso libre.
+
+[:simple-discord: **DISCORD**](https://discord.gg/RHkNGk6ZQN){ .fl-discord }
+
+Únete a nuestro Discord para estar al día de las novedades y los cambios, buscar escuadra y, por supuesto, contar con un soporte comunitario simpático y agradable.
+
+</div>
+
+## :material-star-circle: Ajustes
 
 | Característica | FISTILAND |
 |---|---|
@@ -50,7 +56,7 @@ Novedades, cambios, búsqueda de escuadra y soporte: [discord.gg/RHkNGk6ZQN](htt
 | Personajes inactivos | Se conservan, nunca se eliminan |
 | Paquetes pay-to-win | Ninguno |
 
-## :material-chart-line: Progresión de habilidades
+## :material-chart-line: Progresión
 
 | Multiplicador | Habilidades |
 |---|---|
@@ -58,11 +64,19 @@ Novedades, cambios, búsqueda de escuadra y soporte: [discord.gg/RHkNGk6ZQN](htt
 | x1 | Medicina, Armas cuerpo a cuerpo, Rifles |
 | x0.5 | Todas las demás habilidades |
 
+<div class="fl-left" markdown>
+
 ## :material-lightbulb-on-outline: Filosofía
 
-Equiparte en pocas horas y dedicar el resto del tiempo a pelear por el terreno. Las habilidades tardan más en subir que el equipo, así que la progresión dura, y las tareas de supervivencia no estorban al PvP.
+Equiparte en unas horas y pasar el resto del tiempo sobreviviendo en solitario o construyendo una base en equipo para, pase lo que pase, luchar, hostigar a los grupos para vivir a su costa o defender un territorio hasta la muerte... Y revivir, para volver aún más fuerte.
 
-## :material-format-list-bulleted: Cada ajuste explicado { #every-setting-explained }
+Las habilidades tardan más en subir que un equipo digno de ese nombre, así que tómate tu tiempo y vigila tu entorno. Las tareas de supervivencia tampoco te estorbarán... Todo para facilitar el PvP y hacerlo agradable, favoreciendo a los veteranos por su constancia y su presencia.
+
+</div>
+
+<div class="fl-left" markdown>
+
+## :material-format-list-bulleted: Explicaciones { #every-setting-explained }
 
 - [Territorio](territory-wars.md): banderas, tamaño de las bases, deterioro, protección contra asaltos, escuadras.
 - [Reaparición](respawn.md): métodos, precios, tiempos de espera.
@@ -74,3 +88,5 @@ Equiparte en pocas horas y dedicar el resto del tiempo a pelear por el terreno. 
 - [Búnkeres](bunkers.md): tarjetas de acceso y búnkeres abandonados.
 - [Reglas](rules.md): juego limpio, combate, límites del servidor.
 - [Todos los ajustes](all-settings.md): cada valor del archivo.
+
+</div>

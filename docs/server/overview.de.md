@@ -4,7 +4,7 @@
 
 # Serverüberblick
 
-<p>Was FISTILAND ausmacht, in einer Tabelle, und wo du jede Einstellung findest.</p>
+<p>FISTILAND... Wo ist das? Was ist das?</p>
 
 </div>
 
@@ -16,17 +16,23 @@
 </div>
 
 
-## :material-login: So trittst du bei { #join }
+<div class="fl-left" markdown>
 
-1. Starte SCUM und öffne die Serverliste.
-2. Suche nach **FISTILAND**.
-3. Tritt bei. Der Server ist ein frei zugänglicher Community-Server.
+## :material-login: Beitreten { #join }
 
-### Discord
+1. Starte SCUM und öffne die Serverliste über den Bereich **MEHRSPIELER**.
 
-Neuigkeiten, Änderungen, Truppsuche und Support: [discord.gg/RHkNGk6ZQN](https://discord.gg/RHkNGk6ZQN).
+2. Suche **FISTILAND** im Reiter **SUCHE** oben rechts, oder gib die Server-IP direkt in das weiße Feld unten rechts ein: <button type="button" class="fl-ip" data-copy="31.214.207.109:8159">31.214.207.109:8159</button> (das funktioniert viel besser).
 
-## :material-star-circle: Was FISTILAND besonders macht
+3. In beiden Fällen klickst du auf **VERBINDEN**. Es ist ein frei zugänglicher Community-Server.
+
+[:simple-discord: **DISCORD**](https://discord.gg/RHkNGk6ZQN){ .fl-discord }
+
+Komm auf unseren Discord für die neuesten Neuigkeiten und Änderungen, um einen Trupp zu suchen und natürlich für freundlichen, hilfsbereiten Community-Support.
+
+</div>
+
+## :material-star-circle: Einstellungen
 
 | Merkmal | FISTILAND |
 |---|---|
@@ -50,7 +56,7 @@ Neuigkeiten, Änderungen, Truppsuche und Support: [discord.gg/RHkNGk6ZQN](https:
 | Inaktive Charaktere | Bleiben erhalten, werden nie gelöscht |
 | Pay-to-win-Pakete | Keine |
 
-## :material-chart-line: Fertigkeitsfortschritt
+## :material-chart-line: Fortschritt
 
 | Multiplikator | Fertigkeiten |
 |---|---|
@@ -58,11 +64,19 @@ Neuigkeiten, Änderungen, Truppsuche und Support: [discord.gg/RHkNGk6ZQN](https:
 | x1 | Medizin, Nahkampfwaffen, Gewehre |
 | x0.5 | Alle anderen Fertigkeiten |
 
+<div class="fl-left" markdown>
+
 ## :material-lightbulb-on-outline: Philosophie
 
-In wenigen Stunden ausrüsten, dann die übrige Zeit um Gelände kämpfen. Fertigkeiten brauchen länger als Ausrüstung, der Fortschritt hält also an, und lästige Überlebensaufgaben stehen dem PvP nicht im Weg.
+In wenigen Stunden ausrüsten, dann den Rest der Zeit allein überleben oder mit dem Team eine Basis bauen, um sich um jeden Preis zu behaupten, Gruppen zu schikanieren und von ihnen zu leben oder ein Territorium bis zum Tod zu verteidigen... Und wieder aufstehen, um stärker zurückzukommen.
 
-## :material-format-list-bulleted: Jede Einstellung erklärt { #every-setting-explained }
+Fertigkeiten brauchen länger als anständige Ausrüstung, also nimm dir Zeit und achte auf deine Umgebung. Auch die Überlebensarbeit stört dich nicht... All das macht PvP einfacher und angenehmer, belohnt aber die Veteranen für ihre Ausdauer und Präsenz.
+
+</div>
+
+<div class="fl-left" markdown>
+
+## :material-format-list-bulleted: Erklärungen { #every-setting-explained }
 
 - [Gebiet](territory-wars.md): Flaggen, Basisgröße, Verfall, Raid-Schutz, Trupps.
 - [Respawn](respawn.md): Methoden, Preise, Wartezeiten.
@@ -74,3 +88,5 @@ In wenigen Stunden ausrüsten, dann die übrige Zeit um Gelände kämpfen. Ferti
 - [Bunker](bunkers.md): Zugangskarten und verlassene Bunker.
 - [Regeln](rules.md): Fairplay, Kampf, Servergrenzen.
 - [Alle Einstellungen](all-settings.md): jeder Wert der Datei.
+
+</div>

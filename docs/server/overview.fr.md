@@ -4,7 +4,7 @@
 
 # Aperçu du serveur
 
-<p>Ce qu'est FISTILAND en un tableau, et où trouver chaque réglage.</p>
+<p>FISTILAND... C'est où ? C'est quoi ?</p>
 
 </div>
 
@@ -16,17 +16,23 @@
 </div>
 
 
-## :material-login: Comment rejoindre { #join }
+<div class="fl-left" markdown>
 
-1. Lancez SCUM et ouvrez la liste des serveurs.
-2. Cherchez **FISTILAND**.
-3. Rejoignez. C'est un serveur communautaire en accès libre.
+## :material-login: Rejoindre { #join }
 
-### Discord
+1. Lancez SCUM et ouvrez la liste des serveurs par la section **MULTIJOUEUR**.
 
-Actualités, changements, recherche d'escouade et support : [discord.gg/RHkNGk6ZQN](https://discord.gg/RHkNGk6ZQN).
+2. Cherchez **FISTILAND** dans l'onglet **RECHERCHE** en haut à droite, ou inscrivez directement l'IP du serveur dans l'onglet blanc en bas à droite : <button type="button" class="fl-ip" data-copy="31.214.207.109:8159">31.214.207.109:8159</button> (ça fonctionne beaucoup mieux).
 
-## :material-star-circle: Ce qui distingue FISTILAND
+3. Dans les deux cas, cliquez sur **CONNEXION**. C'est un serveur communautaire en accès libre.
+
+[:simple-discord: **DISCORD**](https://discord.gg/RHkNGk6ZQN){ .fl-discord }
+
+Rejoignez-nous sur Discord pour bénéficier des dernières actualités, des derniers changements, rechercher une squad et, bien évidemment, profiter d'un support communautaire sympathique et agréable.
+
+</div>
+
+## :material-star-circle: Réglages
 
 | Caractéristique | FISTILAND |
 |---|---|
@@ -50,7 +56,7 @@ Actualités, changements, recherche d'escouade et support : [discord.gg/RHkNGk6Z
 | Personnages inactifs | Conservés, jamais supprimés |
 | Packs pay-to-win | Aucun |
 
-## :material-chart-line: Progression des compétences
+## :material-chart-line: Progression
 
 | Multiplicateur | Compétences |
 |---|---|
@@ -58,11 +64,19 @@ Actualités, changements, recherche d'escouade et support : [discord.gg/RHkNGk6Z
 | x1 | Médecine, Armes de mêlée, Fusils |
 | x0.5 | Toutes les autres compétences |
 
+<div class="fl-left" markdown>
+
 ## :material-lightbulb-on-outline: Philosophie
 
-S'équiper en quelques heures, puis passer le reste du temps à se battre pour le terrain. Les compétences demandent plus de temps que l'équipement, donc la progression dure, et les corvées de survie ne gênent pas le PvP.
+S'équiper en quelques heures, puis passer le reste du temps à survivre en solo ou à construire une base en équipe pour, quoi qu'il arrive, se battre, harceler les groupes pour vivre à leurs crochets ou défendre un territoire jusqu'à la mort... Et revivre, pour revenir encore plus fort.
 
-## :material-format-list-bulleted: Chaque réglage expliqué { #every-setting-explained }
+La progression des compétences demande plus de temps que de se faire un équipement digne de ce nom, donc prenez votre temps et soyez attentifs à votre environnement. Les corvées de survie ne vous gêneront pas non plus... Tout ça pour faciliter et rendre agréable le PvP, tout en avantageant les vétérans pour leur assiduité et leur présence.
+
+</div>
+
+<div class="fl-left" markdown>
+
+## :material-format-list-bulleted: Explications { #every-setting-explained }
 
 - [Territoire](territory-wars.md) : drapeaux, taille des bases, dégradation, protection contre les raids, escouades.
 - [Respawn](respawn.md) : méthodes, prix, temps d'attente.
@@ -74,3 +88,5 @@ S'équiper en quelques heures, puis passer le reste du temps à se battre pour l
 - [Bunkers](bunkers.md) : cartes d'accès et bunkers abandonnés.
 - [Règles](rules.md) : fair-play, combat, limites du serveur.
 - [Tous les réglages](all-settings.md) : chaque valeur du fichier.
+
+</div>

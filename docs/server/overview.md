@@ -4,7 +4,7 @@
 
 # Server overview
 
-<p>What FISTILAND is, in one table, and where to find every setting.</p>
+<p>FISTILAND... Where is it? What is it?</p>
 
 </div>
 
@@ -16,17 +16,23 @@
 </div>
 
 
-## :material-login: How to join { #join }
+<div class="fl-left" markdown>
 
-1. Start SCUM and open the server list.
-2. Search for **FISTILAND**.
-3. Join. The server is a free-access community server.
+## :material-login: Join { #join }
 
-### Discord
+1. Start SCUM and open the server list from the **MULTIPLAYER** section.
 
-News, changes, squad searches and support: [discord.gg/RHkNGk6ZQN](https://discord.gg/RHkNGk6ZQN).
+2. Search for **FISTILAND** in the **SEARCH** tab at the top right, or type the server IP straight into the white field at the bottom right: <button type="button" class="fl-ip" data-copy="31.214.207.109:8159">31.214.207.109:8159</button> (it works much better).
 
-## :material-star-circle: What makes FISTILAND different
+3. Either way, click **CONNECT**. It is a free-access community server.
+
+[:simple-discord: **DISCORD**](https://discord.gg/RHkNGk6ZQN){ .fl-discord }
+
+Join us on Discord for the latest news and changes, to look for a squad, and of course for friendly, helpful community support.
+
+</div>
+
+## :material-star-circle: Settings
 
 | Feature | FISTILAND |
 |---|---|
@@ -50,7 +56,7 @@ News, changes, squad searches and support: [discord.gg/RHkNGk6ZQN](https://disco
 | Inactive characters | Kept, never deleted |
 | Pay-to-win packs | None |
 
-## :material-chart-line: Skill progression
+## :material-chart-line: Progression
 
 | Multiplier | Skills |
 |---|---|
@@ -58,11 +64,19 @@ News, changes, squad searches and support: [discord.gg/RHkNGk6ZQN](https://disco
 | x1 | Medical, Melee weapons, Rifles |
 | x0.5 | All other skills |
 
+<div class="fl-left" markdown>
+
 ## :material-lightbulb-on-outline: Philosophy
 
-Gear up in a few hours, then spend the rest of the time fighting for ground. Skills take longer to build than gear, so progression lasts, and survival chores stay out of the way of the PvP.
+Gear up in a few hours, then spend the rest of the time surviving solo or building a base with your team, to fight whatever happens, harass the groups to live off their back, or defend a territory to the death... And come back to life, stronger than before.
 
-## :material-format-list-bulleted: Every setting explained
+Skills take longer to build than decent gear, so take your time and watch your surroundings. Survival chores will not get in your way either... All of this makes PvP easier and more enjoyable, while rewarding veterans for their dedication and their presence.
+
+</div>
+
+<div class="fl-left" markdown>
+
+## :material-format-list-bulleted: Explanations { #every-setting-explained }
 
 - [Territory](territory-wars.md): flags, base size, decay, raid protection, squads.
 - [Respawn](respawn.md): methods, prices, waiting times.
@@ -74,3 +88,5 @@ Gear up in a few hours, then spend the rest of the time fighting for ground. Ski
 - [Bunkers](bunkers.md): access cards and abandoned bunkers.
 - [Rules](rules.md): fair play, combat, server limits.
 - [All settings](all-settings.md): every value of the file.
+
+</div>

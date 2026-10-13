@@ -4,7 +4,7 @@
 
 # Panoramica del server
 
-<p>Cos'è FISTILAND in una tabella e dove trovare ogni impostazione.</p>
+<p>FISTILAND... Dov'è? Cos'è?</p>
 
 </div>
 
@@ -16,17 +16,23 @@
 </div>
 
 
-## :material-login: Come entrare { #join }
+<div class="fl-left" markdown>
 
-1. Avvia SCUM e apri l'elenco dei server.
-2. Cerca **FISTILAND**.
-3. Entra. È un server della community ad accesso libero.
+## :material-login: Entra { #join }
 
-### Discord
+1. Avvia SCUM e apri l'elenco dei server dalla sezione **MULTIGIOCATORE**.
 
-Novità, modifiche, ricerca di squadra e supporto: [discord.gg/RHkNGk6ZQN](https://discord.gg/RHkNGk6ZQN).
+2. Cerca **FISTILAND** nella scheda **RICERCA** in alto a destra, oppure inserisci direttamente l'IP del server nel campo bianco in basso a destra: <button type="button" class="fl-ip" data-copy="31.214.207.109:8159">31.214.207.109:8159</button> (funziona molto meglio).
 
-## :material-star-circle: Cosa rende diverso FISTILAND
+3. In entrambi i casi, clicca su **CONNETTI**. È un server della community ad accesso libero.
+
+[:simple-discord: **DISCORD**](https://discord.gg/RHkNGk6ZQN){ .fl-discord }
+
+Unisciti al nostro Discord per le ultime novità e modifiche, per cercare una squadra e, ovviamente, per un supporto della community simpatico e piacevole.
+
+</div>
+
+## :material-star-circle: Impostazioni
 
 | Caratteristica | FISTILAND |
 |---|---|
@@ -50,7 +56,7 @@ Novità, modifiche, ricerca di squadra e supporto: [discord.gg/RHkNGk6ZQN](https
 | Personaggi inattivi | Conservati, mai eliminati |
 | Pacchetti pay-to-win | Nessuno |
 
-## :material-chart-line: Progressione delle abilità
+## :material-chart-line: Progressione
 
 | Moltiplicatore | Abilità |
 |---|---|
@@ -58,11 +64,19 @@ Novità, modifiche, ricerca di squadra e supporto: [discord.gg/RHkNGk6ZQN](https
 | x1 | Medicina, Armi da mischia, Fucili |
 | x0.5 | Tutte le altre abilità |
 
+<div class="fl-left" markdown>
+
 ## :material-lightbulb-on-outline: Filosofia
 
-Equipaggiarsi in poche ore, poi passare il resto del tempo a combattere per il territorio. Le abilità richiedono più tempo dell'equipaggiamento, quindi la progressione dura, e le faccende di sopravvivenza non intralciano il PvP.
+Equipaggiarsi in poche ore, poi passare il resto del tempo a sopravvivere da soli o a costruire una base con la squadra per, qualunque cosa accada, combattere, tormentare i gruppi per vivere alle loro spalle o difendere un territorio fino alla morte... E rinascere, per tornare ancora più forti.
 
-## :material-format-list-bulleted: Ogni impostazione spiegata { #every-setting-explained }
+Le abilità richiedono più tempo di un equipaggiamento degno di questo nome, quindi prenditi il tuo tempo e fai attenzione all'ambiente. Nemmeno le faccende di sopravvivenza ti daranno fastidio... Tutto per rendere il PvP più semplice e piacevole, favorendo i veterani per la loro costanza e presenza.
+
+</div>
+
+<div class="fl-left" markdown>
+
+## :material-format-list-bulleted: Spiegazioni { #every-setting-explained }
 
 - [Territorio](territory-wars.md): bandiere, dimensione delle basi, degrado, protezione dai raid, squadre.
 - [Respawn](respawn.md): metodi, prezzi, tempi di attesa.
@@ -74,3 +88,5 @@ Equipaggiarsi in poche ore, poi passare il resto del tempo a combattere per il t
 - [Bunker](bunkers.md): tessere di accesso e bunker abbandonati.
 - [Regole](rules.md): fair play, combattimento, limiti del server.
 - [Tutte le impostazioni](all-settings.md): ogni valore del file.
+
+</div>
