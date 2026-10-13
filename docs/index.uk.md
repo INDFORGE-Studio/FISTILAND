@@ -15,7 +15,7 @@ hide:
 <div class="fl-stats">
   <div><b>14</b><span>Слотів</span></div>
   <div><b>EU</b><span>Регіон</span></div>
-  <div><b>PvP</b><span>Повний PvP</span></div>
+  <div><b>PvP</b><span>Повний</span></div>
   <div><b>x5</b><span>Луту</span></div>
   <div><b>10</b><span>Макс. загін</span></div>
 </div>
