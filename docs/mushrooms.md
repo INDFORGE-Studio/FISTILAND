@@ -51,7 +51,7 @@ These five are poisonous. Leave them on the ground unless you know what you are 
 
 <div class="fl-mush-fix">
 <p><b>Activated charcoal</b> speeds up the removal of every toxin while it works. One pill lasts about 4 minutes: take a single pill regularly.</p>
-<p><b>Vomit quickly.</b> The sooner after eating, the more toxin leaves your body. It also empties your stomach, painkillers and charcoal not yet absorbed, so use it with care.</p>
+<p><b>Vomit quickly.</b> The sooner after eating, the faster the toxins leave your body. It empties the stomach, so also the painkillers and the activated charcoal not yet absorbed: use it with care.</p>
 </div>
 
 <p class="fl-map-hint">Based on the game design notes from 2022. Values can change with updates. Icons are our own drawings.</p>

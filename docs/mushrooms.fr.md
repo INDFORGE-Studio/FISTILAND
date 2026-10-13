@@ -51,7 +51,7 @@ Ces cinq-là sont empoisonnés. Laissez-les au sol, sauf si vous savez ce que vo
 
 <div class="fl-mush-fix">
 <p>Le <b>charbon actif</b> accélère l’élimination de tous les toxiques tant qu’il agit. Un comprimé dure environ 4 minutes : prenez-en un seul, régulièrement.</p>
-<p><b>Vomissez vite.</b> Plus c’est rapide après le repas, plus de toxine quitte votre corps. Cela vide aussi l’estomac, les antidouleurs et le charbon pas encore absorbés : à utiliser avec prudence.</p>
+<p><b>Vomissez vite.</b> Plus c’est rapide après le repas, plus les toxines quittent votre corps rapidement. Cela vide l’estomac, donc aussi les antidouleurs et le charbon actif pas encore absorbés : à utiliser avec prudence.</p>
 </div>
 
 <p class="fl-map-hint">D’après les notes de conception du jeu de 2022. Les valeurs peuvent changer avec les mises à jour. Les icônes sont nos propres dessins.</p>

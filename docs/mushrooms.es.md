@@ -51,7 +51,7 @@ Estas cinco son venenosas. Déjelas en el suelo, salvo que sepa lo que hace.
 
 <div class="fl-mush-fix">
 <p>El <b>carbón activado</b> acelera la eliminación de todas las toxinas mientras actúa. Una pastilla dura unos 4 minutos: tome una sola, con regularidad.</p>
-<p><b>Vomite rápido.</b> Cuanto antes tras comer, más toxina sale de su cuerpo. También vacía el estómago, los analgésicos y el carbón aún no absorbidos, así que úselo con cuidado.</p>
+<p><b>Vomite rápido.</b> Cuanto antes tras comer, más rápido salen las toxinas de su cuerpo. Vacía el estómago, así que también los analgésicos y el carbón activado aún no absorbidos: úselo con cuidado.</p>
 </div>
 
 <p class="fl-map-hint">Basado en las notas de diseño del juego de 2022. Los valores pueden cambiar con las actualizaciones. Los iconos son dibujos propios.</p>

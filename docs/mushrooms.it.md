@@ -51,7 +51,7 @@ Questi cinque sono velenosi. Lasciali a terra, a meno che tu non sappia cosa sta
 
 <div class="fl-mush-fix">
 <p>Il <b>carbone attivo</b> accelera l’eliminazione di tutte le tossine finché agisce. Una pastiglia dura circa 4 minuti: prendine una sola, a intervalli regolari.</p>
-<p><b>Vomita subito.</b> Prima lo fai dopo aver mangiato, più tossina esce dal corpo. Svuota anche lo stomaco, gli antidolorifici e il carbone non ancora assorbiti, quindi usalo con cautela.</p>
+<p><b>Vomita subito.</b> Prima lo fai dopo aver mangiato, più in fretta le tossine lasciano il corpo. Svuota lo stomaco, quindi anche gli antidolorifici e il carbone attivo non ancora assorbiti: usalo con cautela.</p>
 </div>
 
 <p class="fl-map-hint">Basato sulle note di progettazione del gioco del 2022. I valori possono cambiare con gli aggiornamenti. Le icone sono disegni nostri.</p>

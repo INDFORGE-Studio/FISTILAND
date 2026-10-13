@@ -51,7 +51,7 @@ Diese fünf sind giftig. Lassen Sie sie liegen, außer Sie wissen genau, was Sie
 
 <div class="fl-mush-fix">
 <p><b>Aktivkohle</b> beschleunigt den Abbau aller Giftstoffe, solange sie wirkt. Eine Tablette hält etwa 4 Minuten: Nehmen Sie regelmäßig eine einzelne.</p>
-<p><b>Schnell erbrechen.</b> Je früher nach dem Essen, desto mehr Gift verlässt Ihren Körper. Dabei werden auch Magen, noch nicht aufgenommene Schmerzmittel und Kohle entleert, also mit Vorsicht.</p>
+<p><b>Schnell erbrechen.</b> Je früher nach dem Essen, desto schneller verlassen die Giftstoffe Ihren Körper. Das leert den Magen, also auch noch nicht aufgenommene Schmerzmittel und Aktivkohle: mit Vorsicht anwenden.</p>
 </div>
 
 <p class="fl-map-hint">Nach den Design-Notizen des Spiels von 2022. Werte können sich mit Updates ändern. Die Symbole sind unsere eigenen Zeichnungen.</p>

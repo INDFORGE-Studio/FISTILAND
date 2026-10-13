@@ -27,11 +27,11 @@ extra_javascript:
   - javascripts/fl-ip-v1.js
   - javascripts/fl-join-v1.js
   - javascripts/fl-discord-v1.js
-  - javascripts/fl-rank-v4.js
+  - javascripts/fl-rank-v5.js
   - javascripts/fl-trip-v1.js
 
 extra_css:
-  - stylesheets/fistiland-v56.css
+  - stylesheets/fistiland-v57.css
 
 extra:
   social:
