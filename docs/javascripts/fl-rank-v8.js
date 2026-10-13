@@ -16,12 +16,12 @@
     veteran: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 2h4l3 8.5-3.4 1.2zM18 2h-4l-3 8.5 3.4 1.2z" fill="currentColor" opacity=".7"/><path fill-rule="evenodd" fill="currentColor" d="M12 9.3a6.2 6.2 0 1 0 0 12.4 6.2 6.2 0 1 0 0-12.4zM12 12.1l.82 2.27 2.41.08-1.9 1.48.67 2.32L12 16.9l-2 1.35.67-2.32-1.9-1.48 2.41-.08z"/></svg>'
   };
   var T = {
-    en: { head: 'Easter Egg discovered!', rank: 'Rank unlocked', iron: 'Something has awakened on the home page...', master: 'You have reached the Master rank.', veteran: 'You took care of yourself. You are a Veteran.', lbl: 'Rank' },
-    fr: { head: 'Easter Egg découvert !', rank: 'Grade obtenu', iron: "Quelque chose s'est réveillé sur la page d'accueil...", master: 'Vous avez atteint le grade Master.', veteran: 'Vous avez pensé à vous soigner. Vous êtes Veteran.', lbl: 'Grade' },
-    de: { head: 'Easter Egg entdeckt!', rank: 'Rang erreicht', iron: 'Auf der Startseite ist etwas erwacht ...', master: 'Du hast den Rang Master erreicht.', veteran: 'Du hast dich behandelt. Du bist Veteran.', lbl: 'Rang' },
-    es: { head: '¡Easter Egg descubierto!', rank: 'Rango desbloqueado', iron: 'Algo se ha despertado en la página de inicio...', master: 'Has alcanzado el rango Master.', veteran: 'Te has curado a tiempo. Eres Veteran.', lbl: 'Rango' },
-    it: { head: 'Easter Egg scoperto!', rank: 'Grado ottenuto', iron: 'Qualcosa si è risvegliato nella pagina iniziale...', master: 'Hai raggiunto il grado Master.', veteran: 'Ti sei curato. Sei Veteran.', lbl: 'Grado' },
-    uk: { head: 'Знайдено пасхалку!', rank: 'Отримано ранг', iron: 'Щось прокинулося на головній сторінці...', master: 'Ви досягли рангу Master.', veteran: 'Ви подбали про своє лікування. Ви — Veteran.', lbl: 'Ранг' }
+    en: { head: 'Easter Egg discovered!', rank: 'Rank unlocked', iron: 'Something has awakened on the home page...', master: 'You have reached the Master rank.', veteran: 'You took care of yourself. You are a Veteran.', lbl: 'Rank', got: 'Unlocked', lock: 'Locked' },
+    fr: { head: 'Easter Egg découvert !', rank: 'Grade obtenu', iron: "Quelque chose s'est réveillé sur la page d'accueil...", master: 'Vous avez atteint le grade Master.', veteran: 'Vous avez pensé à vous soigner. Vous êtes Veteran.', lbl: 'Grade', got: 'Obtenu', lock: 'Verrouillé' },
+    de: { head: 'Easter Egg entdeckt!', rank: 'Rang erreicht', iron: 'Auf der Startseite ist etwas erwacht ...', master: 'Du hast den Rang Master erreicht.', veteran: 'Du hast dich behandelt. Du bist Veteran.', lbl: 'Rang', got: 'Erreicht', lock: 'Gesperrt' },
+    es: { head: '¡Easter Egg descubierto!', rank: 'Rango desbloqueado', iron: 'Algo se ha despertado en la página de inicio...', master: 'Has alcanzado el rango Master.', veteran: 'Te has curado a tiempo. Eres Veteran.', lbl: 'Rango', got: 'Desbloqueado', lock: 'Bloqueado' },
+    it: { head: 'Easter Egg scoperto!', rank: 'Grado ottenuto', iron: 'Qualcosa si è risvegliato nella pagina iniziale...', master: 'Hai raggiunto il grado Master.', veteran: 'Ti sei curato. Sei Veteran.', lbl: 'Grado', got: 'Ottenuto', lock: 'Bloccato' },
+    uk: { head: 'Знайдено пасхалку!', rank: 'Отримано ранг', iron: 'Щось прокинулося на головній сторінці...', master: 'Ви досягли рангу Master.', veteran: 'Ви подбали про своє лікування. Ви — Veteran.', lbl: 'Ранг', got: 'Отримано', lock: 'Закрито' }
   };
   var lang = (document.documentElement.lang || 'en').slice(0, 2);
   var L = T[lang] || T.en;
@@ -45,7 +45,22 @@
     rank: function () { return RANKS[rankIndex(load())]; }
   };
 
+  // Easter Eggs page: fill the rank cards and light up the ones already earned
+  function paintPage() {
+    var cards = document.querySelectorAll('.fl-eg-rank');
+    if (!cards.length) return;
+    var idx = rankIndex(state);
+    for (var i = 0; i < cards.length; i++) {
+      var c = cards[i], n = +c.getAttribute('data-r'), got = n <= idx;
+      var ico = c.querySelector('.fl-eg-ico'), st = c.querySelector('.fl-eg-st');
+      if (ico && !ico.firstChild) ico.innerHTML = ICONS[RANKS[n]];
+      if (st) st.textContent = got ? L.got : L.lock;
+      c.classList.toggle('is-got', got);
+    }
+  }
+
   function render(isNew) {
+    paintPage();
     var r = RANKS[rankIndex(state)];
     if (!badge) {
       var title = document.querySelector('.md-header__title');
