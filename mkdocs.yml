@@ -24,7 +24,7 @@ extra_javascript:
   - javascripts/fl-map-v5.js
 
 extra_css:
-  - stylesheets/fistiland-v35.css
+  - stylesheets/fistiland-v36.css
 
 extra:
   social:
@@ -75,6 +75,7 @@ plugins:
             Join: Rejoindre
             Admin: Admin
             Maps: Cartes
+            Mushrooms: Champignons
         - locale: de
           name: Deutsch
           build: true
@@ -95,6 +96,7 @@ plugins:
             Join: Beitreten
             Admin: Admin
             Maps: Karten
+            Mushrooms: Pilze
         - locale: es
           name: Español
           build: true
@@ -115,6 +117,7 @@ plugins:
             Join: Unirse
             Admin: Administración
             Maps: Mapas
+            Mushrooms: Setas
         - locale: it
           name: Italiano
           build: true
@@ -135,6 +138,7 @@ plugins:
             Join: Entra
             Admin: Admin
             Maps: Mappe
+            Mushrooms: Funghi
         - locale: uk
           name: Українська
           build: true
@@ -155,6 +159,7 @@ plugins:
             Join: Приєднатися
             Admin: Адміністрування
             Maps: Карти
+            Mushrooms: Гриби
 
 nav:
   - Home: index.md
@@ -171,5 +176,6 @@ nav:
       - Rules: server/rules.md
       - All settings: server/all-settings.md
   - Maps: maps.md
+  - Mushrooms: mushrooms.md
   - Join: join.md
   - Admin: admin.md
