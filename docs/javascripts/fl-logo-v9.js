@@ -101,10 +101,10 @@
       if (L2 > 0.02 || L3 > 0.02) {
         if (!dofOn) { root.classList.add('fl-dof'); dofOn = true; }
         // rainbow waves bend the surroundings (desktop only: the displacement filter is too heavy for phones)
-        var wp = VW >= 700 && (L2 > 0.25 || L3 > 0.02);
+        var wp = VW >= 700;
         root.classList.toggle('fl-warp', wp);
         if (wp) {
-          warpD.setAttribute('scale', (4 + 16 * L2 + 14 * L3).toFixed(1));
+          warpD.setAttribute('scale', (18 * L2 + 14 * L3).toFixed(1));
           warpT.setAttribute('baseFrequency', (0.004 + 0.0015 * Math.sin(T * 0.6)).toFixed(4) + ' ' + (0.009 + 0.003 * Math.cos(T * 0.45)).toFixed(4));
         }
         style.setProperty('--fl-blur', (L2 * 3.2 * (0.6 + 0.4 * Math.sin(T * 0.8 + 1))).toFixed(2) + 'px');
@@ -165,7 +165,7 @@
     var dt = Math.min(0.05, (t - last) / 1000); last = t; T = t / 1000;
     var k = 1 - Math.exp(-dt * (9 - 5 * L1));       // fatigue: the tilt follows the cursor more sluggishly
     rx += (trx - rx) * k; ry += (tryy - ry) * k; sc += ((act ? 1 : 0) - sc) * k;
-    hold = Math.max(0, Math.min(1, hold + (act ? dt / 8 : -dt / 2.5)));
+    hold = Math.max(0, Math.min(1, hold + (act ? dt / 8 : -dt / 3)));
     ie = hold * hold * (3 - 2 * hold);
     L1 = clamp01(ie / 0.34); L2 = clamp01((ie - 0.28) / 0.4); L3 = clamp01((ie - 0.6) / 0.4);
     var breathe = 0.03 * ie * Math.sin(T * 2.2);
