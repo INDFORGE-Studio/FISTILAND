@@ -62,7 +62,7 @@ plugins:
           build: true
           nav_translations:
             Home: Accueil
-            Server settings: Réglages du serveur
+            Server: Serveur
             Overview: Aperçu
             Territory: Territoire
             Respawn: Respawn
@@ -83,7 +83,7 @@ plugins:
           build: true
           nav_translations:
             Home: Start
-            Server settings: Servereinstellungen
+            Server: Server
             Overview: Überblick
             Territory: Gebiet
             Respawn: Respawn
@@ -104,7 +104,7 @@ plugins:
           build: true
           nav_translations:
             Home: Inicio
-            Server settings: Ajustes del servidor
+            Server: Servidor
             Overview: Resumen
             Territory: Territorio
             Respawn: Reaparición
@@ -125,7 +125,7 @@ plugins:
           build: true
           nav_translations:
             Home: Home
-            Server settings: Impostazioni del server
+            Server: Server
             Overview: Panoramica
             Territory: Territorio
             Respawn: Respawn
@@ -146,7 +146,7 @@ plugins:
           build: true
           nav_translations:
             Home: Головна
-            Server settings: Налаштування сервера
+            Server: Сервер
             Overview: Огляд
             Territory: Територія
             Respawn: Відродження
@@ -165,7 +165,7 @@ plugins:
 
 nav:
   - Home: index.md
-  - Server settings:
+  - Server:
       - Overview: server/overview.md
       - Territory: server/territory-wars.md
       - Respawn: server/respawn.md
