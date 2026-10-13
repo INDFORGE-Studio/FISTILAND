@@ -1,22 +1,22 @@
 (function () {
   var L = {
     en: { zin: 'Zoom in', zout: 'Zoom out', reset: 'Reset view', full: 'Full screen', fail: 'The map could not be loaded.', open: 'Open the image',
-      sat: 'Satellite map of the island', guide: 'Wildlife guide', layers: 'Layers', hab: 'Habitats', mut: 'Mutant sightings', openLegend: 'Open the legend as an image', poi: 'Places of interest', approx: 'Dashed marker: approximate position. No marker: only the sector is known; hover or tap the name to light it up.',
+      sat: 'Satellite map of the island', guide: 'Wildlife guide', layers: 'Layers', hab: 'Habitats', mut: 'Mutant sightings', openLegend: 'Open the legend as an image', poi: 'Places of interest', bk: 'Bunkers', bk1: 'Bunker', bkNote: 'One bunker per sector.', approx: 'Dashed marker: approximate position. No marker: only the sector is known; hover or tap the name to light it up.',
       sp: { bear: 'Bear', deer: 'Deer', wolf: 'Wolf', boar: 'Boar' } },
     fr: { zin: 'Zoom avant', zout: 'Zoom arrière', reset: 'Réinitialiser la vue', full: 'Plein écran', fail: 'La carte n’a pas pu être chargée.', open: 'Ouvrir l’image',
-      sat: 'Carte satellite de l’île', guide: 'Guide de la faune', layers: 'Calques', hab: 'Habitats', mut: 'Mutants repérés', openLegend: 'Ouvrir la légende en image', poi: 'Lieux d’intérêt', approx: 'Repère hachuré : position approximative. Sans repère : seul le secteur est connu ; survolez ou touchez le nom pour l’illuminer.',
+      sat: 'Carte satellite de l’île', guide: 'Guide de la faune', layers: 'Calques', hab: 'Habitats', mut: 'Mutants repérés', openLegend: 'Ouvrir la légende en image', poi: 'Lieux d’intérêt', bk: 'Bunkers', bk1: 'Bunker', bkNote: 'Un bunker par secteur.', approx: 'Repère hachuré : position approximative. Sans repère : seul le secteur est connu ; survolez ou touchez le nom pour l’illuminer.',
       sp: { bear: 'Ours', deer: 'Cerf', wolf: 'Loup', boar: 'Sanglier' } },
     de: { zin: 'Vergrößern', zout: 'Verkleinern', reset: 'Ansicht zurücksetzen', full: 'Vollbild', fail: 'Die Karte konnte nicht geladen werden.', open: 'Bild öffnen',
-      sat: 'Satellitenkarte der Insel', guide: 'Tierführer', layers: 'Ebenen', hab: 'Lebensräume', mut: 'Mutanten-Sichtungen', openLegend: 'Legende als Bild öffnen', poi: 'Interessante Orte', approx: 'Gestrichelte Markierung: ungefähre Position. Ohne Markierung: nur der Sektor ist bekannt; Namen überfahren oder antippen, um ihn hervorzuheben.',
+      sat: 'Satellitenkarte der Insel', guide: 'Tierführer', layers: 'Ebenen', hab: 'Lebensräume', mut: 'Mutanten-Sichtungen', openLegend: 'Legende als Bild öffnen', poi: 'Interessante Orte', bk: 'Bunker', bk1: 'Bunker', bkNote: 'Ein Bunker pro Sektor.', approx: 'Gestrichelte Markierung: ungefähre Position. Ohne Markierung: nur der Sektor ist bekannt; Namen überfahren oder antippen, um ihn hervorzuheben.',
       sp: { bear: 'Bär', deer: 'Hirsch', wolf: 'Wolf', boar: 'Wildschwein' } },
     es: { zin: 'Acercar', zout: 'Alejar', reset: 'Restablecer la vista', full: 'Pantalla completa', fail: 'No se pudo cargar el mapa.', open: 'Abrir la imagen',
-      sat: 'Mapa satelital de la isla', guide: 'Guía de fauna', layers: 'Capas', hab: 'Hábitats', mut: 'Mutantes avistados', openLegend: 'Abrir la leyenda como imagen', poi: 'Lugares de interés', approx: 'Marcador discontinuo: posición aproximada. Sin marcador: solo se conoce el sector; pase el cursor o toque el nombre para iluminarlo.',
+      sat: 'Mapa satelital de la isla', guide: 'Guía de fauna', layers: 'Capas', hab: 'Hábitats', mut: 'Mutantes avistados', openLegend: 'Abrir la leyenda como imagen', poi: 'Lugares de interés', bk: 'Búnkeres', bk1: 'Búnker', bkNote: 'Un búnker por sector.', approx: 'Marcador discontinuo: posición aproximada. Sin marcador: solo se conoce el sector; pase el cursor o toque el nombre para iluminarlo.',
       sp: { bear: 'Oso', deer: 'Ciervo', wolf: 'Lobo', boar: 'Jabalí' } },
     it: { zin: 'Ingrandisci', zout: 'Riduci', reset: 'Reimposta la vista', full: 'Schermo intero', fail: 'Impossibile caricare la mappa.', open: 'Apri l’immagine',
-      sat: 'Mappa satellitare dell’isola', guide: 'Guida alla fauna', layers: 'Livelli', hab: 'Habitat', mut: 'Mutanti avvistati', openLegend: 'Apri la legenda come immagine', poi: 'Luoghi di interesse', approx: 'Segnaposto tratteggiato: posizione approssimativa. Senza segnaposto: si conosce solo il settore; passa sopra il nome o toccalo per evidenziarlo.',
+      sat: 'Mappa satellitare dell’isola', guide: 'Guida alla fauna', layers: 'Livelli', hab: 'Habitat', mut: 'Mutanti avvistati', openLegend: 'Apri la legenda come immagine', poi: 'Luoghi di interesse', bk: 'Bunker', bk1: 'Bunker', bkNote: 'Un bunker per settore.', approx: 'Segnaposto tratteggiato: posizione approssimativa. Senza segnaposto: si conosce solo il settore; passa sopra il nome o toccalo per evidenziarlo.',
       sp: { bear: 'Orso', deer: 'Cervo', wolf: 'Lupo', boar: 'Cinghiale' } },
     uk: { zin: 'Збільшити', zout: 'Зменшити', reset: 'Скинути вигляд', full: 'На весь екран', fail: 'Не вдалося завантажити карту.', open: 'Відкрити зображення',
-      sat: 'Супутникова карта острова', guide: 'Довідник фауни', layers: 'Шари', hab: 'Середовища', mut: 'Мутанти на карті', openLegend: 'Відкрити легенду як зображення', poi: 'Цікаві місця', approx: 'Пунктирний маркер: приблизна позиція. Без маркера: відомий лише сектор; наведіть курсор або торкніться назви, щоб підсвітити його.',
+      sat: 'Супутникова карта острова', guide: 'Довідник фауни', layers: 'Шари', hab: 'Середовища', mut: 'Мутанти на карті', openLegend: 'Відкрити легенду як зображення', poi: 'Цікаві місця', bk: 'Бункери', bk1: 'Бункер', bkNote: 'Один бункер на сектор.', approx: 'Пунктирний маркер: приблизна позиція. Без маркера: відомий лише сектор; наведіть курсор або торкніться назви, щоб підсвітити його.',
       sp: { bear: 'Ведмідь', deer: 'Олень', wolf: 'Вовк', boar: 'Кабан' } }
   };
   var lang = (document.documentElement.lang || 'en').slice(0, 2);
@@ -154,7 +154,8 @@
       '<div class="fl-island__bar"><span class="fl-island__cap">' + T.layers + '</span>' +
       '<label class="fl-island__tg"><input type="checkbox" data-l="habitats" checked><span class="fl-island__sw">' + habSw + '</span>' + T.hab + '</label>' +
       '<label class="fl-island__tg"><input type="checkbox" data-l="mutants" checked><span class="fl-island__sw">' + mutSw + '</span>' + T.mut + '</label>' +
-      (root.getAttribute('data-poi') ? '<label class="fl-island__tg"><input type="checkbox" data-l="poi" checked><span class="fl-island__sw"><i style="background:#e8631c"></i></span>' + T.poi + '</label>' : '') + '</div>' +
+      (root.getAttribute('data-poi') ? '<label class="fl-island__tg"><input type="checkbox" data-l="poi" checked><span class="fl-island__sw"><i style="background:#e8631c"></i></span>' + T.poi + '</label>' : '') +
+      (root.getAttribute('data-bunkers') ? '<label class="fl-island__tg"><input type="checkbox" data-l="bunkers" checked><span class="fl-island__sw"><i style="background:#8a2f0f"></i></span>' + T.bk + '</label>' : '') + '</div>' +
       '<div class="fl-island__body">' +
       '<div class="fl-map fl-island__map"><div class="fl-map__stage">' +
       '<img class="fl-island__base" alt="' + T.sat + '" draggable="false" src="' + preview + '">' +
@@ -164,6 +165,7 @@
       '<aside class="fl-island__side">' +
       '<a href="' + legend + '" target="_blank" rel="noopener" title="' + T.openLegend + '"><img class="fl-island__legend" alt="' + T.guide + '" src="' + legend + '"></a>' +
       '<div class="fl-island__mut" data-l="mutants"><b>' + T.mut + '</b><ul>' + mutRows + '</ul></div>' +
+      (root.getAttribute('data-bunkers') ? '<div class="fl-island__mut" data-l="bunkers"><b>' + T.bk + '</b><p class="fl-island__note">' + T.bkNote + '</p></div>' : '') +
       '<div class="fl-island__mut fl-island__poi" data-l="poi" hidden><b>' + T.poi + '</b><ul></ul><p>' + T.approx + '</p></div>' +
       '</aside></div>';
 
@@ -243,6 +245,27 @@
         poiBox.hidden = false;
         var cb = root.querySelector('input[data-l="poi"]');
         if (cb && !cb.checked) { layer.classList.add('is-off'); secs.classList.add('is-off'); poiBox.classList.add('is-off'); }
+      }).catch(function () {});
+    }
+
+    var bkUrl = root.getAttribute('data-bunkers');
+    if (bkUrl) {
+      fetch(bkUrl).then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); }).then(function (data) {
+        var layer = document.createElement('div');
+        layer.className = 'fl-island__pois';
+        layer.setAttribute('data-l', 'bunkers');
+        data.bunkers.forEach(function (b) {
+          var m = document.createElement('span');
+          m.className = 'fl-bk';
+          m.style.left = (b.x * 100) + '%';
+          m.style.top = (b.y * 100) + '%';
+          m.title = T.bk1 + ' ' + b.sector;
+          m.innerHTML = '<svg viewBox="0 0 24 24" aria-hidden="true"><rect x="1.5" y="1.5" width="21" height="21"/><path d="M12 5.5a5.6 5.6 0 0 0-3.8 9.7v2.3h7.6v-2.3A5.6 5.6 0 0 0 12 5.5z"/><circle cx="9.7" cy="11.3" r="1.5"/><circle cx="14.3" cy="11.3" r="1.5"/></svg>';
+          layer.appendChild(m);
+        });
+        stage.appendChild(layer);
+        var cb = root.querySelector('input[data-l="bunkers"]');
+        if (cb && !cb.checked) { layer.classList.add('is-off'); }
       }).catch(function () {});
     }
 
