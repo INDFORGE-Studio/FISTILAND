@@ -11,6 +11,11 @@
 
 Назви показано без префікса `scum.`. Сторінки категорій пояснюють налаштування, що формують ігровий процес: [Територія](territory-wars.md), [Відродження](respawn.md), [Економіка](economy.md), [Прогрес](progression.md), [Виживання](survival.md), [Вороги](enemies.md), [Події](events.md), [Бункери](bunkers.md), [Правила](rules.md).
 
+| Файл | Який | Що це |
+|---|---|---|
+| [ServerSettings_SCUM.ini](../downloads/ServerSettings_SCUM.ini){ download="ServerSettings_SCUM.ini" } | <span class="fl-st fl-wh-sc">:material-gamepad-variant: SCUM</span> | Файл, з яким стартує новий орендований сервер, без змін. |
+| [ServerSettings_FISTILAND.ini](../downloads/ServerSettings_FISTILAND.ini){ download="ServerSettings_FISTILAND.ini" } | <span class="fl-st fl-wh-fl">:material-shield-star: FISTILAND</span> | Налаштування сервера FISTILAND. |
+
 
 ## Загальні
 

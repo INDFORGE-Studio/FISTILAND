@@ -11,6 +11,11 @@
 
 Les noms sont affichés sans le préfixe `scum.`. Les pages par catégorie expliquent les réglages qui façonnent le gameplay : [Territoire](territory-wars.md), [Respawn](respawn.md), [Économie](economy.md), [Progression](progression.md), [Survie](survival.md), [Ennemis](enemies.md), [Événements](events.md), [Bunkers](bunkers.md), [Règles](rules.md).
 
+| Fichier | Lequel | Ce que c'est |
+|---|---|---|
+| [ServerSettings_SCUM.ini](../downloads/ServerSettings_SCUM.ini){ download="ServerSettings_SCUM.ini" } | <span class="fl-st fl-wh-sc">:material-gamepad-variant: SCUM</span> | Le fichier d'un nouveau serveur hébergé, intact. |
+| [ServerSettings_FISTILAND.ini](../downloads/ServerSettings_FISTILAND.ini){ download="ServerSettings_FISTILAND.ini" } | <span class="fl-st fl-wh-fl">:material-shield-star: FISTILAND</span> | Les réglages du serveur FISTILAND. |
+
 
 ## Général
 
