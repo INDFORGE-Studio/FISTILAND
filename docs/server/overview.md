@@ -11,7 +11,7 @@
 <div class="fl-facts">
 <div><b>14</b><span>Slots</span></div>
 <div><b>EU</b><span>Region</span></div>
-<div><b>PvP</b><span>Full PvP</span></div>
+<div><b>PvP</b><span>Full</span></div>
 <div><b>x5</b><span>Loot</span></div>
 </div>
 
