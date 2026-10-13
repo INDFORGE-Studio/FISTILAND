@@ -4,7 +4,7 @@
 
 # Mapas
 
-<p>Dónde vive cada animal y dónde merodean los mutantes, redibujados al estilo de FISTILAND a partir de los paneles informativos del juego.</p>
+<p>Dónde vive cada animal y dónde merodean los mutantes, en el mapa satelital de la isla.</p>
 
 </div>
 
@@ -16,17 +16,9 @@
 </div>
 
 
-## :material-paw: Fauna de la isla
+## :material-map-search: Mapa de la isla
 
-Busque un animal en la tabla. Los puntos de colores indican sus biomas: azul para el mediterráneo, amarillo para la pradera continental, verde para el bosque continental, blanco para la montaña. Las marcas dicen si también entra en zonas urbanas y pueblos, y el sol y la luna indican cuándo está activo.
+Active o desactive las capas. La capa de hábitats muestra los cuatro biomas: mediterráneo (MED), pradera (PRA), bosque (FOR) y montaña (MON). En la tabla, cada animal tiene puntos para sus biomas, marcas para zonas urbanas (URB) y pueblos (VIL), y marcas para el día (DAY) y la noche (NGT). Las zonas son aproximadas y no se indican puntos de aparición exactos. Los mutantes avistados son zonas, no puntos exactos: las posiciones tienen un margen de un sector. Los sectores van de 4 a 0 de izquierda a derecha y de D a Z de arriba abajo.
 
-<div class="fl-map" data-src="/FISTILAND/assets/maps/wildlife-guide-es.svg?v=3"><noscript><a href="/FISTILAND/assets/maps/wildlife-guide-es.svg">Abrir la imagen</a></noscript></div>
-<p class="fl-map-hint">Haga zoom con los botones, Ctrl + rueda o dos dedos. Doble clic para acercar, arrastre para mover.</p>
-
-
-## :material-skull-crossbones: Mutantes avistados
-
-Dónde se han visto osos, ciervos, lobos y jabalíes mutantes. Cada marcador es una zona, no un punto exacto: las posiciones son aproximadas, con un margen de un sector. Los sectores van de 4 a 0 de izquierda a derecha y de D a Z de arriba abajo.
-
-<div class="fl-map" data-src="/FISTILAND/assets/maps/mutant-sightings-es.svg?v=3"><noscript><a href="/FISTILAND/assets/maps/mutant-sightings-es.svg">Abrir la imagen</a></noscript></div>
+<div class="fl-island" data-base="/FISTILAND/assets/maps/SatMap_SCUM.jpg?v=1" data-preview="/FISTILAND/assets/maps/satmap-preview.jpg?v=1" data-habitats="/FISTILAND/assets/maps/wildlife-habitats-overlay.png?v=1" data-mutants="/FISTILAND/assets/maps/mutants-sightings-overlay.png?v=1" data-legend="/FISTILAND/assets/maps/wildlife-legend-{lang}.png?v=1"></div>
 <p class="fl-map-hint">Haga zoom con los botones, Ctrl + rueda o dos dedos. Doble clic para acercar, arrastre para mover.</p>

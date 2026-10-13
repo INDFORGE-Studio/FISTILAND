@@ -4,7 +4,7 @@
 
 # Mappe
 
-<p>Dove vive ogni animale e dove si aggirano i mutanti, ridisegnati nello stile FISTILAND dai pannelli informativi del gioco.</p>
+<p>Dove vive ogni animale e dove si aggirano i mutanti, sulla mappa satellitare dell'isola.</p>
 
 </div>
 
@@ -16,17 +16,9 @@
 </div>
 
 
-## :material-paw: Fauna dell'isola
+## :material-map-search: Mappa dell'isola
 
-Cerca un animale nella tabella. I punti colorati indicano i suoi biomi: blu per il mediterraneo, giallo per la prateria continentale, verde per la foresta continentale, bianco per la montagna. Le spunte dicono se entra anche nelle zone urbane e nei villaggi, e sole e luna indicano quando è attivo.
+Attiva o disattiva i livelli. Il livello degli habitat mostra i quattro biomi: mediterraneo (MED), prateria (PRA), foresta (FOR) e montagna (MON). Nella tabella, ogni animale ha punti per i suoi biomi, spunte per le zone urbane (URB) e i villaggi (VIL), e spunte per il giorno (DAY) e la notte (NGT). Le zone sono approssimative e non si indicano punti di comparsa esatti. I mutanti avvistati sono aree, non punti esatti: le posizioni sono precise entro circa un settore. I settori vanno da 4 a 0 da sinistra a destra e da D a Z dall'alto in basso.
 
-<div class="fl-map" data-src="/FISTILAND/assets/maps/wildlife-guide-it.svg?v=3"><noscript><a href="/FISTILAND/assets/maps/wildlife-guide-it.svg">Apri l'immagine</a></noscript></div>
-<p class="fl-map-hint">Ingrandisci con i pulsanti, Ctrl + rotella o due dita. Doppio clic per ingrandire, trascina per spostare.</p>
-
-
-## :material-skull-crossbones: Mutanti avvistati
-
-Dove sono stati visti orsi, cervi, lupi e cinghiali mutanti. Ogni segnaposto è un'area, non un punto esatto: le posizioni sono approssimative, entro circa un settore. I settori vanno da 4 a 0 da sinistra a destra e da D a Z dall'alto in basso.
-
-<div class="fl-map" data-src="/FISTILAND/assets/maps/mutant-sightings-it.svg?v=3"><noscript><a href="/FISTILAND/assets/maps/mutant-sightings-it.svg">Apri l'immagine</a></noscript></div>
+<div class="fl-island" data-base="/FISTILAND/assets/maps/SatMap_SCUM.jpg?v=1" data-preview="/FISTILAND/assets/maps/satmap-preview.jpg?v=1" data-habitats="/FISTILAND/assets/maps/wildlife-habitats-overlay.png?v=1" data-mutants="/FISTILAND/assets/maps/mutants-sightings-overlay.png?v=1" data-legend="/FISTILAND/assets/maps/wildlife-legend-{lang}.png?v=1"></div>
 <p class="fl-map-hint">Ingrandisci con i pulsanti, Ctrl + rotella o due dita. Doppio clic per ingrandire, trascina per spostare.</p>

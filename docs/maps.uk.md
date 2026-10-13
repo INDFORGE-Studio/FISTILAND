@@ -4,7 +4,7 @@
 
 # Карти
 
-<p>Де живе кожна тварина і де блукають мутанти, перемальовано в стилі FISTILAND за інформаційними стендами з гри.</p>
+<p>Де живе кожна тварина і де блукають мутанти, на супутниковій карті острова.</p>
 
 </div>
 
@@ -16,17 +16,9 @@
 </div>
 
 
-## :material-paw: Фауна острова
+## :material-map-search: Карта острова
 
-Знайдіть тварину в таблиці. Кольорові крапки показують її біоми: синій — середземноморський, жовтий — континентальний луг, зелений — континентальний ліс, білий — гори. Галочки показують, чи заходить вона також у міста та села, а сонце й місяць — коли вона активна.
+Вмикайте й вимикайте шари. Шар середовищ показує чотири біоми: середземноморський (MED), луг (PRA), ліс (FOR) і гори (MON). У таблиці в кожної тварини є крапки для її біомів, галочки для міст (URB) і сіл (VIL) та галочки для дня (DAY) і ночі (NGT). Зони приблизні, точні місця появи не вказано. Мутанти на карті — це зони, а не точні точки: позиції точні приблизно до одного сектора. Сектори йдуть від 4 до 0 зліва направо та від D до Z зверху вниз.
 
-<div class="fl-map" data-src="/FISTILAND/assets/maps/wildlife-guide-uk.svg?v=3"><noscript><a href="/FISTILAND/assets/maps/wildlife-guide-uk.svg">Відкрити зображення</a></noscript></div>
-<p class="fl-map-hint">Масштабуйте кнопками, Ctrl + коліщатко або двома пальцями. Подвійний клік — збільшити, перетягніть, щоб зсунути.</p>
-
-
-## :material-skull-crossbones: Мутанти на карті
-
-Де бачили мутованих ведмедів, оленів, вовків і кабанів. Кожен маркер — це зона, а не точна точка: позиції приблизні, з точністю приблизно до одного сектора. Сектори йдуть від 4 до 0 зліва направо та від D до Z зверху вниз.
-
-<div class="fl-map" data-src="/FISTILAND/assets/maps/mutant-sightings-uk.svg?v=3"><noscript><a href="/FISTILAND/assets/maps/mutant-sightings-uk.svg">Відкрити зображення</a></noscript></div>
+<div class="fl-island" data-base="/FISTILAND/assets/maps/SatMap_SCUM.jpg?v=1" data-preview="/FISTILAND/assets/maps/satmap-preview.jpg?v=1" data-habitats="/FISTILAND/assets/maps/wildlife-habitats-overlay.png?v=1" data-mutants="/FISTILAND/assets/maps/mutants-sightings-overlay.png?v=1" data-legend="/FISTILAND/assets/maps/wildlife-legend-{lang}.png?v=1"></div>
 <p class="fl-map-hint">Масштабуйте кнопками, Ctrl + коліщатко або двома пальцями. Подвійний клік — збільшити, перетягніть, щоб зсунути.</p>

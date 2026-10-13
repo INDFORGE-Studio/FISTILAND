@@ -4,7 +4,7 @@
 
 # Maps
 
-<p>Where each animal lives and where mutants roam, redrawn in FISTILAND style from the in-game information boards.</p>
+<p>Where each animal lives and where mutants roam, on the satellite map of the island.</p>
 
 </div>
 
@@ -16,17 +16,9 @@
 </div>
 
 
-## :material-paw: Island wildlife
+## :material-map-search: Island map
 
-Find an animal in the table. The coloured dots show the biomes it lives in: blue for Mediterranean, yellow for continental meadow, green for continental forest, white for mountain. The ticks say whether it also comes into urban areas and villages, and the sun and moon say when it is active.
+Switch the layers on and off. The habitats layer shows the four biomes: Mediterranean (MED), meadow (PRA), forest (FOR) and mountain (MON). In the table, each animal has dots for its biomes, ticks for urban areas (URB) and villages (VIL), and ticks for day (DAY) and night (NGT). Zones are approximate and no exact spawn point is implied. Mutant sightings are areas, not exact spots: positions are accurate to about one sector. Sectors run from 4 to 0 left to right and from D to Z top to bottom.
 
-<div class="fl-map" data-src="/FISTILAND/assets/maps/wildlife-guide-en.svg?v=3"><noscript><a href="/FISTILAND/assets/maps/wildlife-guide-en.svg">Open the image</a></noscript></div>
-<p class="fl-map-hint">Zoom with the buttons, Ctrl + scroll or two fingers. Double-click to zoom in, drag to move.</p>
-
-
-## :material-skull-crossbones: Mutant sightings
-
-Where mutant bears, deer, wolves and boars have been seen. Each marker is an area, not an exact spot: positions are approximate, to about one sector. Sectors run from 4 to 0 left to right and from D to Z top to bottom.
-
-<div class="fl-map" data-src="/FISTILAND/assets/maps/mutant-sightings-en.svg?v=3"><noscript><a href="/FISTILAND/assets/maps/mutant-sightings-en.svg">Open the image</a></noscript></div>
+<div class="fl-island" data-base="/FISTILAND/assets/maps/SatMap_SCUM.jpg?v=1" data-preview="/FISTILAND/assets/maps/satmap-preview.jpg?v=1" data-habitats="/FISTILAND/assets/maps/wildlife-habitats-overlay.png?v=1" data-mutants="/FISTILAND/assets/maps/mutants-sightings-overlay.png?v=1" data-legend="/FISTILAND/assets/maps/wildlife-legend-{lang}.png?v=1"></div>
 <p class="fl-map-hint">Zoom with the buttons, Ctrl + scroll or two fingers. Double-click to zoom in, drag to move.</p>

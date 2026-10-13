@@ -21,10 +21,10 @@ theme:
 
 extra_javascript:
   - javascripts/fl-copy-v4.js
-  - javascripts/fl-map-v1.js
+  - javascripts/fl-map-v2.js
 
 extra_css:
-  - stylesheets/fistiland-v30.css
+  - stylesheets/fistiland-v31.css
 
 extra:
   social:
