@@ -720,7 +720,6 @@ html[lang="uk"] .md-header__option .md-select > button::before { background-imag
   mask: url("../assets/logo-home-v4.png") center / 100% 100% no-repeat;
 }
 .fl-logo-fx.is-on .fl-logo-shine { opacity: 1; }
-.fl-logo-sparks { position: fixed; left: 0; top: 0; width: 100vw; height: 100vh; pointer-events: none; }
 @keyframes fl-punch {
   0% { transform: scale(1); }
   14% { transform: scale(.87) translateY(3%); }
@@ -735,21 +734,6 @@ html[lang="uk"] .md-header__option .md-select > button::before { background-imag
 .md-typeset a.fl-discord .twemoji { transition: transform .2s ease, filter .2s ease; }
 .md-typeset a.fl-discord:hover .twemoji { transform: scale(1.18); filter: drop-shadow(0 0 7px rgba(140, 196, 60, .6)); }
 
-/* Logo hover "trip": colour ghosts that orbit the logo as the effect builds up */
-.md-typeset .fl-hero .fl-logo-tilt > .fl-logo-ghost {
-  position: absolute; left: 0; top: 0; width: 100% !important; height: 100% !important; max-width: none; margin: 0;
-  object-fit: contain; opacity: 0; pointer-events: none; mix-blend-mode: screen; filter: none;
-}
-.md-typeset .fl-hero .fl-logo-tilt > .fl-logo-ghost.g1 { filter: hue-rotate(140deg) saturate(2.2); }
-.md-typeset .fl-hero .fl-logo-tilt > .fl-logo-ghost.g2 { filter: hue-rotate(250deg) saturate(2.2); }
-
-/* ---- Home logo trip: distorted copy fades in over the clean logo; depth of field through a backdrop layer ---- */
-.fl-logo-trip { position: absolute; inset: 0; opacity: 0; visibility: hidden; pointer-events: none; }
-.md-typeset .fl-hero .fl-logo-trip > .fl-logo-trip-img {
-  position: absolute; left: 0; top: 0; width: 100% !important; height: 100% !important; max-width: none; margin: 0;
-  object-fit: contain; filter: none; transition: none;
-}
-.fl-logo-dof { position: fixed; inset: 0; pointer-events: none; visibility: hidden; }
 
 /* ---- Rank badge (header centre) and Easter Egg hint ---- */
 .md-header__inner { position: relative; }
@@ -792,3 +776,21 @@ html[lang="uk"] .md-header__option .md-select > button::before { background-imag
 .md-social__link[href*="discord"]:hover { transform: scale(1.18); filter: drop-shadow(0 0 7px rgba(140, 196, 60, .6)); }
 .md-social__link[href*="discord"]:hover svg { opacity: 0; }
 .md-social__link[href*="discord"]:hover::after { opacity: 1; }
+
+/* ---- Hallucination effect (home logo, toxic mushrooms): distorted copy fades in over the clean picture ---- */
+.fl-trip-host { position: relative; }
+.fl-trip-host > .fl-logo-ghost {
+  position: absolute; left: 0; top: 0; width: 100% !important; height: 100% !important; max-width: none; margin: 0;
+  object-fit: contain; opacity: 0; pointer-events: none; mix-blend-mode: screen; filter: none;
+}
+.fl-trip-host > .fl-logo-ghost.g1 { filter: hue-rotate(140deg) saturate(2.2); }
+.fl-trip-host > .fl-logo-ghost.g2 { filter: hue-rotate(250deg) saturate(2.2); }
+.fl-trip-host > .fl-logo-trip { position: absolute; inset: 0; opacity: 0; visibility: hidden; pointer-events: none; }
+.fl-trip-host > .fl-logo-trip > .fl-logo-trip-img {
+  position: absolute; left: 0; top: 0; width: 100% !important; height: 100% !important; max-width: none; margin: 0;
+  object-fit: contain; filter: none; transition: none;
+}
+.fl-trip-dof { position: fixed; inset: 0; z-index: 2; pointer-events: none; visibility: hidden; }
+.fl-trip-canvas { position: fixed; left: 0; top: 0; width: 100vw; height: 100vh; z-index: 3; pointer-events: none; }
+.fl-mush-ico { position: relative; display: block; flex: none; width: 4.4rem; height: 4.4rem; }
+.fl-mush-ico > svg:first-child { width: 100%; height: 100%; }
