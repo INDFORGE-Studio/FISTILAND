@@ -750,11 +750,3 @@ html.fl-live .md-main:has(.fl-home) > .md-main__inner { position: relative; z-in
 /* Server page Discord link: same hover as the header icon */
 .md-typeset a.fl-discord .twemoji { transition: transform .2s ease, filter .2s ease; }
 .md-typeset a.fl-discord:hover .twemoji { transform: scale(1.18); filter: drop-shadow(0 0 7px rgba(140, 196, 60, .6)); }
-
-/* Logo hover "trip": colour ghosts that orbit the logo as the effect builds up */
-.md-typeset .fl-hero .fl-logo-tilt > .fl-logo-ghost {
-  position: absolute; left: 0; top: 0; width: 100% !important; height: 100% !important; max-width: none; margin: 0;
-  object-fit: contain; opacity: 0; pointer-events: none; mix-blend-mode: screen; filter: none;
-}
-.md-typeset .fl-hero .fl-logo-tilt > .fl-logo-ghost.g1 { filter: hue-rotate(140deg) saturate(2.2); }
-.md-typeset .fl-hero .fl-logo-tilt > .fl-logo-ghost.g2 { filter: hue-rotate(250deg) saturate(2.2); }
