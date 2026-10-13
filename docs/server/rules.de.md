@@ -4,13 +4,13 @@
 
 # Regeln
 
-<p>Fairplay zuerst: nur Ego-Perspektive, kein Fadenkreuz, keine Pay-to-win-Pakete.</p>
+<p>Fairplay zuerst: kein Fadenkreuz, keine Pay-to-win-Pakete.</p>
 
 </div>
 
 <div class="fl-facts">
 <div><b>14</b><span>Slots</span></div>
-<div><b>Ego</b><span>Einzige Ansicht</span></div>
+<div><b>Ego + Third</b><span>Ansichten erlaubt</span></div>
 <div><b>Aus</b><span>Fadenkreuz</span></div>
 <div><b>x1.3</b><span>Spielerschaden</span></div>
 </div>
@@ -84,7 +84,7 @@ Diese beiden Punkte sind Regeln, keine Servereinstellungen: Sie beruhen darauf, 
 | `MaxPing` | 300 | Höchster erlaubter Ping in Millisekunden. |
 | `MaxNumberOfConsecutiveHighPingReadings` | 5 | Schlechte Messungen in Folge bis zur Entfernung. |
 | `WelcomeMessage` | FISTILAND PvP SERVER | Wird beim Beitritt eines Spielers angezeigt. |
-| `MessageOfTheDay` | More information on discord.gg/RHkNGk6ZQN | Im Chat wiederholte Nachricht. |
+| `MessageOfTheDay` | More information on indforge-studio.github.io/FISTILAND | Im Chat wiederholte Nachricht. |
 | `MessageOfTheDayCooldown` | 30 | Minuten zwischen zwei Wiederholungen. |
 | `AllowGlobalChat`, `AllowLocalChat`, `AllowSquadChat`, `AllowAdminChat` | True | Alle Chatkanäle sind offen. |
 | `LimitGlobalChat` | False | Der globale Chat hat keine Einschränkung. |

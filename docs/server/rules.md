@@ -4,13 +4,13 @@
 
 # Rules
 
-<p>Fair play first: first person only, no crosshair, no pay-to-win packs.</p>
+<p>Fair play first: no crosshair, no pay-to-win packs.</p>
 
 </div>
 
 <div class="fl-facts">
 <div><b>14</b><span>Slots</span></div>
-<div><b>1st person</b><span>Only view</span></div>
+<div><b>1st + 3rd</b><span>Views allowed</span></div>
 <div><b>Off</b><span>Crosshair</span></div>
 <div><b>x1.3</b><span>Player damage</span></div>
 </div>
@@ -84,7 +84,7 @@ These two are rules, not server settings: they rely on players respecting them.
 | `MaxPing` | 300 | Highest allowed ping in milliseconds. |
 | `MaxNumberOfConsecutiveHighPingReadings` | 5 | Bad readings in a row before removal. |
 | `WelcomeMessage` | FISTILAND PvP SERVER | Shown when a player joins. |
-| `MessageOfTheDay` | More information on discord.gg/RHkNGk6ZQN | Message repeated in the chat. |
+| `MessageOfTheDay` | More information on indforge-studio.github.io/FISTILAND | Message repeated in the chat. |
 | `MessageOfTheDayCooldown` | 30 | Minutes between two repeats. |
 | `AllowGlobalChat`, `AllowLocalChat`, `AllowSquadChat`, `AllowAdminChat` | True | All chat channels are open. |
 | `LimitGlobalChat` | False | Global chat has no restriction. |

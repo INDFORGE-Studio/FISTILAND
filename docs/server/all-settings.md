@@ -22,7 +22,7 @@ Names are shown without the `scum.` prefix. The category pages explain the setti
 | `PlaySafeIdProtection` | `False` |
 | `ServerPlaystyle` | `PVP` |
 | `WelcomeMessage` | `FISTILAND PvP SERVER` |
-| `MessageOfTheDay` | `More information on https://indforge-studio.github.io/FISTILAND/` |
+| `MessageOfTheDay` | `More information on indforge-studio.github.io/FISTILAND` |
 | `MessageOfTheDayCooldown` | `30.000000` |
 | `MinServerTickRate` | `5` |
 | `MaxServerTickRate` | `35` |

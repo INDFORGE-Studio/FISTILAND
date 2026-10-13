@@ -4,13 +4,13 @@
 
 # Правила
 
-<p>Насамперед чесна гра: лише вигляд від першої особи, без прицілу, без pay-to-win наборів.</p>
+<p>Насамперед чесна гра: без прицілу, без pay-to-win наборів.</p>
 
 </div>
 
 <div class="fl-facts">
 <div><b>14</b><span>Слотів</span></div>
-<div><b>1-ша особа</b><span>Єдиний вигляд</span></div>
+<div><b>1-ша + 3-тя</b><span>Дозволені вигляди</span></div>
 <div><b>Вимк.</b><span>Приціл</span></div>
 <div><b>x1.3</b><span>Шкода між гравцями</span></div>
 </div>
@@ -84,7 +84,7 @@
 | `MaxPing` | 300 | Найвищий дозволений пінг у мілісекундах. |
 | `MaxNumberOfConsecutiveHighPingReadings` | 5 | Кількість поганих вимірів поспіль до вилучення. |
 | `WelcomeMessage` | FISTILAND PvP SERVER | Показується, коли гравець приєднується. |
-| `MessageOfTheDay` | More information on discord.gg/RHkNGk6ZQN | Повідомлення, що повторюється в чаті. |
+| `MessageOfTheDay` | More information on indforge-studio.github.io/FISTILAND | Повідомлення, що повторюється в чаті. |
 | `MessageOfTheDayCooldown` | 30 | Хвилини між двома повторами. |
 | `AllowGlobalChat`, `AllowLocalChat`, `AllowSquadChat`, `AllowAdminChat` | True | Усі канали чату відкриті. |
 | `LimitGlobalChat` | False | Глобальний чат не має обмежень. |

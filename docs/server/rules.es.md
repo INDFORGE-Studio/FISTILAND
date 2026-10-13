@@ -4,13 +4,13 @@
 
 # Reglas
 
-<p>Juego limpio ante todo: solo primera persona, sin mira, sin paquetes pay-to-win.</p>
+<p>Juego limpio ante todo: sin mira, sin paquetes pay-to-win.</p>
 
 </div>
 
 <div class="fl-facts">
 <div><b>14</b><span>Slots</span></div>
-<div><b>1.ª pers.</b><span>Única vista</span></div>
+<div><b>1.ª + 3.ª</b><span>Vistas permitidas</span></div>
 <div><b>No</b><span>Mira</span></div>
 <div><b>x1.3</b><span>Daño entre jugadores</span></div>
 </div>
@@ -84,7 +84,7 @@ Estas dos son reglas, no ajustes del servidor: dependen de que los jugadores las
 | `MaxPing` | 300 | Ping máximo permitido en milisegundos. |
 | `MaxNumberOfConsecutiveHighPingReadings` | 5 | Lecturas malas seguidas antes de la expulsión. |
 | `WelcomeMessage` | FISTILAND PvP SERVER | Se muestra cuando un jugador se une. |
-| `MessageOfTheDay` | More information on discord.gg/RHkNGk6ZQN | Mensaje repetido en el chat. |
+| `MessageOfTheDay` | More information on indforge-studio.github.io/FISTILAND | Mensaje repetido en el chat. |
 | `MessageOfTheDayCooldown` | 30 | Minutos entre dos repeticiones. |
 | `AllowGlobalChat`, `AllowLocalChat`, `AllowSquadChat`, `AllowAdminChat` | True | Todos los canales de chat están abiertos. |
 | `LimitGlobalChat` | False | El chat global no tiene restricciones. |

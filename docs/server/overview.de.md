@@ -52,7 +52,7 @@ Komm auf unseren Discord für die neuesten Neuigkeiten und Änderungen, um einen
 | Raid-Schutz | Offline-Schutz, bis zu 8 Stunden |
 | Neue Spieler | Zu Beginn geschützt |
 | Nächte | Kurz |
-| Ansicht | Nur Ego-Perspektive, kein Fadenkreuz |
+| Ansicht | Ego- und Third-Person-Perspektive, kein Fadenkreuz |
 | Inaktive Charaktere | Bleiben erhalten, werden nie gelöscht |
 | Pay-to-win-Pakete | Keine |
 

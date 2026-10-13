@@ -52,7 +52,7 @@ Rejoignez-nous sur Discord pour bénéficier des dernières actualités, des der
 | Protection contre les raids | Protection hors ligne, jusqu'à 8 heures |
 | Nouveaux joueurs | Protégés au départ |
 | Nuits | Courtes |
-| Vue | Première personne uniquement, pas de réticule |
+| Vue | Première et troisième personne, pas de réticule |
 | Personnages inactifs | Conservés, jamais supprimés |
 | Packs pay-to-win | Aucun |
 

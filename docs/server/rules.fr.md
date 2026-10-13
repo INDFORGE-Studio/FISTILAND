@@ -4,13 +4,13 @@
 
 # Règles
 
-<p>Le fair-play d'abord : première personne uniquement, pas de réticule, aucun pack pay-to-win.</p>
+<p>Le fair-play d'abord : pas de réticule, aucun pack pay-to-win.</p>
 
 </div>
 
 <div class="fl-facts">
 <div><b>14</b><span>Slots</span></div>
-<div><b>1re pers.</b><span>Seule vue</span></div>
+<div><b>1re + 3e</b><span>Vues autorisées</span></div>
 <div><b>Off</b><span>Réticule</span></div>
 <div><b>x1.3</b><span>Dégâts entre joueurs</span></div>
 </div>
@@ -84,7 +84,7 @@ Ces deux points sont des règles, pas des réglages du serveur : elles reposent 
 | `MaxPing` | 300 | Ping maximum autorisé en millisecondes. |
 | `MaxNumberOfConsecutiveHighPingReadings` | 5 | Mauvaises mesures d'affilée avant l'expulsion. |
 | `WelcomeMessage` | FISTILAND PvP SERVER | Affiché quand un joueur se connecte. |
-| `MessageOfTheDay` | More information on discord.gg/RHkNGk6ZQN | Message répété dans le chat. |
+| `MessageOfTheDay` | More information on indforge-studio.github.io/FISTILAND | Message répété dans le chat. |
 | `MessageOfTheDayCooldown` | 30 | Minutes entre deux répétitions. |
 | `AllowGlobalChat`, `AllowLocalChat`, `AllowSquadChat`, `AllowAdminChat` | True | Tous les canaux de chat sont ouverts. |
 | `LimitGlobalChat` | False | Le chat global n'a aucune restriction. |

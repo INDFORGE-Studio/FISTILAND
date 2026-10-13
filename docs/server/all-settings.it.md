@@ -22,7 +22,7 @@ I nomi sono mostrati senza il prefisso `scum.`. Le pagine per categoria spiegano
 | `PlaySafeIdProtection` | `False` |
 | `ServerPlaystyle` | `PVP` |
 | `WelcomeMessage` | `FISTILAND PvP SERVER` |
-| `MessageOfTheDay` | `More information on https://indforge-studio.github.io/FISTILAND/` |
+| `MessageOfTheDay` | `More information on indforge-studio.github.io/FISTILAND` |
 | `MessageOfTheDayCooldown` | `30.000000` |
 | `MinServerTickRate` | `5` |
 | `MaxServerTickRate` | `35` |

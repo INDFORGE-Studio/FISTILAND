@@ -52,7 +52,7 @@ Join us on Discord for the latest news and changes, to look for a squad, and of 
 | Raid protection | Offline protection, up to 8 hours |
 | New players | Protected at the start |
 | Nights | Short |
-| View | First person only, no crosshair |
+| View | First and third person, no crosshair |
 | Inactive characters | Kept, never deleted |
 | Pay-to-win packs | None |
 

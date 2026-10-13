@@ -52,7 +52,7 @@ Unisciti al nostro Discord per le ultime novità e modifiche, per cercare una sq
 | Protezione dai raid | Protezione offline, fino a 8 ore |
 | Nuovi giocatori | Protetti all'inizio |
 | Notti | Brevi |
-| Visuale | Solo prima persona, nessun mirino |
+| Visuale | Prima e terza persona, nessun mirino |
 | Personaggi inattivi | Conservati, mai eliminati |
 | Pacchetti pay-to-win | Nessuno |
 

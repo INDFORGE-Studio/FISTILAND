@@ -52,7 +52,7 @@
 | Protección contra asaltos | Protección sin conexión, hasta 8 horas |
 | Jugadores nuevos | Protegidos al empezar |
 | Noches | Cortas |
-| Vista | Solo primera persona, sin mira |
+| Vista | Primera y tercera persona, sin mira |
 | Personajes inactivos | Se conservan, nunca se eliminan |
 | Paquetes pay-to-win | Ninguno |
 
