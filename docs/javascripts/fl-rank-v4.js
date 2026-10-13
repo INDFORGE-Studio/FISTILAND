@@ -13,12 +13,12 @@
     master: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2.5 18.5 4 7l5 4.6L12 4l3 7.6L20 7l1.5 11.5z" fill="currentColor"/><path d="M3.5 21h17" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" fill="none"/></svg>'
   };
   var T = {
-    en: { head: 'Easter Egg discovered!', rank: 'Rank unlocked', iron: 'Something stirs on the home page logo...', master: 'You have reached the Master rank.', lbl: 'Rank' },
-    fr: { head: 'Easter Egg découvert !', rank: 'Grade obtenu', iron: "Quelque chose s'éveille sur le logo de l'accueil...", master: 'Vous avez atteint le grade Master.', lbl: 'Grade' },
-    de: { head: 'Easter Egg entdeckt!', rank: 'Rang erreicht', iron: 'Auf dem Logo der Startseite regt sich etwas ...', master: 'Du hast den Rang Master erreicht.', lbl: 'Rang' },
-    es: { head: '¡Easter Egg descubierto!', rank: 'Rango desbloqueado', iron: 'Algo se mueve en el logo de la portada...', master: 'Has alcanzado el rango Master.', lbl: 'Rango' },
-    it: { head: 'Easter Egg scoperto!', rank: 'Grado ottenuto', iron: 'Qualcosa si muove nel logo della home...', master: 'Hai raggiunto il grado Master.', lbl: 'Grado' },
-    uk: { head: 'Знайдено пасхалку!', rank: 'Отримано ранг', iron: 'Щось ворушиться в логотипі на головній...', master: 'Ви досягли рангу Master.', lbl: 'Ранг' }
+    en: { head: 'Easter Egg discovered!', rank: 'Rank unlocked', iron: 'Something has awakened on the home page...', master: 'You have reached the Master rank.', lbl: 'Rank' },
+    fr: { head: 'Easter Egg découvert !', rank: 'Grade obtenu', iron: "Quelque chose s'est réveillé sur la page d'accueil...", master: 'Vous avez atteint le grade Master.', lbl: 'Grade' },
+    de: { head: 'Easter Egg entdeckt!', rank: 'Rang erreicht', iron: 'Auf der Startseite ist etwas erwacht ...', master: 'Du hast den Rang Master erreicht.', lbl: 'Rang' },
+    es: { head: '¡Easter Egg descubierto!', rank: 'Rango desbloqueado', iron: 'Algo se ha despertado en la página de inicio...', master: 'Has alcanzado el rango Master.', lbl: 'Rango' },
+    it: { head: 'Easter Egg scoperto!', rank: 'Grado ottenuto', iron: 'Qualcosa si è risvegliato nella pagina iniziale...', master: 'Hai raggiunto il grado Master.', lbl: 'Grado' },
+    uk: { head: 'Знайдено пасхалку!', rank: 'Отримано ранг', iron: 'Щось прокинулося на головній сторінці...', master: 'Ви досягли рангу Master.', lbl: 'Ранг' }
   };
   var lang = (document.documentElement.lang || 'en').slice(0, 2);
   var L = T[lang] || T.en;
