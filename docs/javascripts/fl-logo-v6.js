@@ -141,5 +141,7 @@
 
   fx.addEventListener('pointerenter', function (e) { act = true; fx.classList.add('is-on'); move(e); punch(); start(); });
   fx.addEventListener('pointermove', function (e) { if (act) move(e); });
-  fx.addEventListener('pointerleave', function () { act = false; trx = 0; tryy = 0; fx.classList.remove('is-on'); start(); });
+  function leave() { act = false; trx = 0; tryy = 0; fx.classList.remove('is-on'); start(); }
+  fx.addEventListener('pointerleave', leave);
+  fx.addEventListener('pointercancel', leave);
 })();
