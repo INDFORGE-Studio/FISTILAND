@@ -25,7 +25,7 @@ extra_javascript:
   - javascripts/fl-cards-v1.js
   - javascripts/fl-mush-v1.js
   - javascripts/fl-ip-v1.js
-  - javascripts/fl-bgfx-v2.js
+  - javascripts/fl-bgfx-v3.js
 
 extra_css:
   - stylesheets/fistiland-v45.css
