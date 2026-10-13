@@ -27,10 +27,10 @@ extra_javascript:
   - javascripts/fl-ip-v1.js
   - javascripts/fl-join-v1.js
   - javascripts/fl-discord-v1.js
-  - javascripts/fl-logo-v6.js
+  - javascripts/fl-logo-v7.js
 
 extra_css:
-  - stylesheets/fistiland-v51.css
+  - stylesheets/fistiland-v52.css
 
 extra:
   social:
