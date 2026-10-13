@@ -640,3 +640,12 @@ html[lang="uk"] .md-header__option .md-select > button::before { background-imag
   .fl-card p { display: block !important; font-size: .85rem; line-height: 1.4; }
   .fl-card:hover { transform: none; }
 }
+
+/* Touch screens: a tap opens the values, a second tap closes them (no sticky focus) */
+@media (hover: none) {
+  .fl-mush:hover .fl-mush__stats, .fl-mush:focus .fl-mush__stats, .fl-mush:focus-within .fl-mush__stats { display: none; }
+  .fl-mush.is-open .fl-mush__stats { display: block; }
+  .fl-mush:hover, .fl-mush:focus, .fl-mush:focus-within { z-index: auto; border-color: var(--fl-line); }
+  .fl-mush.is-tox:hover, .fl-mush.is-tox:focus, .fl-mush.is-tox:focus-within { border-color: #8a2f0f; }
+  .fl-mush.is-open { z-index: 30; border-color: var(--fl-orange) !important; }
+}
