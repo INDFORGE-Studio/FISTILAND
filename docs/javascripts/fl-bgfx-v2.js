@@ -7,7 +7,6 @@
   if (!script || !script.src) return;
   var imgUrl = script.src.replace(/javascripts\/[^\/]*$/, 'assets/bg-v3.jpg');
   var freeze = /[?&]flt=([\d.]+)/.exec(location.search);
-  if (!freeze && window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
 
   var canvas = document.createElement('canvas');
   canvas.className = 'fl-bgfx';
