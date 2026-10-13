@@ -24,3 +24,4 @@ Schalten Sie die Ebenen ein und aus. Die Ebene der Lebensräume zeigt die vier B
 <p class="fl-map-hint">Zoomen mit den Schaltflächen, Strg + Mausrad oder zwei Fingern. Doppelklick zum Vergrößern, ziehen zum Verschieben.</p>
 <p class="fl-map-hint">Interessante Orte: Positionen aus dem Community-Wiki <a href="https://scum.wiki.gg/wiki/Map">scum.wiki.gg</a> (<a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a>), von Hand auf unsere Karte übertragen und unter derselben Lizenz geteilt. SCUM und seine Inhalte gehören ihren jeweiligen Eigentümern.</p>
 <p class="fl-map-hint">Bunker: einer pro Sektor, Positionen von einer Community-Karte übernommen (auf etwa ein Prozent der Karte genau).</p>
+<p class="fl-cc"><a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="license noopener" target="_blank" title="CC BY-NC-SA 4.0"><img src="/FISTILAND/assets/cc-by-nc-sa-v1.svg" alt="CC BY-NC-SA 4.0" width="88" height="31"></a></p>

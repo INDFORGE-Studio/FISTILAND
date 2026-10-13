@@ -24,3 +24,4 @@ Attiva o disattiva i livelli. Il livello degli habitat mostra i quattro biomi: m
 <p class="fl-map-hint">Ingrandisci con i pulsanti, Ctrl + rotella o due dita. Doppio clic per ingrandire, trascina per spostare.</p>
 <p class="fl-map-hint">Luoghi di interesse: posizioni dal wiki della comunità <a href="https://scum.wiki.gg/wiki/Map">scum.wiki.gg</a> (<a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a>), collocate a mano sulla nostra mappa e condivise con la stessa licenza. SCUM e i suoi contenuti appartengono ai rispettivi proprietari.</p>
 <p class="fl-map-hint">Bunker: uno per settore, posizioni rilevate da una mappa della comunità (precise entro circa l’uno per cento della mappa).</p>
+<p class="fl-cc"><a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="license noopener" target="_blank" title="CC BY-NC-SA 4.0"><img src="/FISTILAND/assets/cc-by-nc-sa-v1.svg" alt="CC BY-NC-SA 4.0" width="88" height="31"></a></p>

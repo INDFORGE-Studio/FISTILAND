@@ -24,3 +24,4 @@ Switch the layers on and off. The habitats layer shows the four biomes: Mediterr
 <p class="fl-map-hint">Zoom with the buttons, Ctrl + scroll or two fingers. Double-click to zoom in, drag to move.</p>
 <p class="fl-map-hint">Places of interest: positions from the community wiki <a href="https://scum.wiki.gg/wiki/Map">scum.wiki.gg</a> (<a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a>), placed by hand on our map and shared under the same licence. SCUM and its content belong to their respective owners.</p>
 <p class="fl-map-hint">Bunkers: one per sector, positions read from a community map (accurate to about one percent of the map).</p>
+<p class="fl-cc"><a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="license noopener" target="_blank" title="CC BY-NC-SA 4.0"><img src="/FISTILAND/assets/cc-by-nc-sa-v1.svg" alt="CC BY-NC-SA 4.0" width="88" height="31"></a></p>

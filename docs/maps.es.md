@@ -24,3 +24,4 @@ Active o desactive las capas. La capa de hábitats muestra los cuatro biomas: me
 <p class="fl-map-hint">Haga zoom con los botones, Ctrl + rueda o dos dedos. Doble clic para acercar, arrastre para mover.</p>
 <p class="fl-map-hint">Lugares de interés: posiciones del wiki de la comunidad <a href="https://scum.wiki.gg/wiki/Map">scum.wiki.gg</a> (<a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a>), colocadas a mano en nuestro mapa y compartidas bajo la misma licencia. SCUM y su contenido pertenecen a sus respectivos propietarios.</p>
 <p class="fl-map-hint">Búnkeres: uno por sector, posiciones tomadas de un mapa de la comunidad (precisión de aproximadamente uno por ciento del mapa).</p>
+<p class="fl-cc"><a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="license noopener" target="_blank" title="CC BY-NC-SA 4.0"><img src="/FISTILAND/assets/cc-by-nc-sa-v1.svg" alt="CC BY-NC-SA 4.0" width="88" height="31"></a></p>

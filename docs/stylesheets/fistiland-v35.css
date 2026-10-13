@@ -592,3 +592,7 @@ html[lang="uk"] .md-header__option .md-select > button::before { background-imag
 .fl-bk path { fill: #f4ece3; }
 .fl-bk circle { fill: #0d0c0b; }
 .fl-island__note { margin: .5rem 0 0; font-size: .8rem; color: #e0d6cc; }
+
+.fl-cc { margin: .8rem 0 0; line-height: 0; }
+.fl-cc img { display: block; border: 0; opacity: .92; transition: opacity .15s; }
+.fl-cc a:hover img { opacity: 1; }

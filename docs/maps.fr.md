@@ -24,3 +24,4 @@ Activez ou désactivez les calques. Le calque des habitats montre les quatre bio
 <p class="fl-map-hint">Zoomez avec les boutons, Ctrl + molette ou deux doigts. Double-clic pour zoomer, glissez pour déplacer.</p>
 <p class="fl-map-hint">Lieux d'intérêt : positions issues du wiki communautaire <a href="https://scum.wiki.gg/wiki/Map">scum.wiki.gg</a> (<a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a>), placées à la main sur notre carte et partagées sous la même licence. SCUM et son contenu appartiennent à leurs propriétaires respectifs.</p>
 <p class="fl-map-hint">Bunkers : un par secteur, positions relevées sur une carte communautaire (précises à environ un pour cent de la carte).</p>
+<p class="fl-cc"><a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="license noopener" target="_blank" title="CC BY-NC-SA 4.0"><img src="/FISTILAND/assets/cc-by-nc-sa-v1.svg" alt="CC BY-NC-SA 4.0" width="88" height="31"></a></p>
