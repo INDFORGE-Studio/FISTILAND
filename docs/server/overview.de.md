@@ -16,6 +16,16 @@
 </div>
 
 
+## :material-login: So trittst du bei { #join }
+
+1. Starte SCUM und öffne die Serverliste.
+2. Suche nach **FISTILAND**.
+3. Tritt bei. Der Server ist ein frei zugänglicher Community-Server.
+
+### Discord
+
+Neuigkeiten, Änderungen, Truppsuche und Support: [discord.gg/RHkNGk6ZQN](https://discord.gg/RHkNGk6ZQN).
+
 ## :material-star-circle: Was FISTILAND besonders macht
 
 | Merkmal | FISTILAND |

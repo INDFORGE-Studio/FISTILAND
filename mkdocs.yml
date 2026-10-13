@@ -74,7 +74,6 @@ plugins:
             Bunkers: Bunkers
             Rules: Règles
             All settings: Tous les réglages
-            Join: Rejoindre
             Admin: Admin
             Maps: Cartes
             Mushrooms: Champignons
@@ -95,7 +94,6 @@ plugins:
             Bunkers: Bunker
             Rules: Regeln
             All settings: Alle Einstellungen
-            Join: Beitreten
             Admin: Admin
             Maps: Karten
             Mushrooms: Pilze
@@ -116,7 +114,6 @@ plugins:
             Bunkers: Búnkeres
             Rules: Reglas
             All settings: Todos los ajustes
-            Join: Unirse
             Admin: Administración
             Maps: Mapas
             Mushrooms: Setas
@@ -137,7 +134,6 @@ plugins:
             Bunkers: Bunker
             Rules: Regole
             All settings: Tutte le impostazioni
-            Join: Entra
             Admin: Admin
             Maps: Mappe
             Mushrooms: Funghi
@@ -158,7 +154,6 @@ plugins:
             Bunkers: Бункери
             Rules: Правила
             All settings: Усі налаштування
-            Join: Приєднатися
             Admin: Адміністрування
             Maps: Карти
             Mushrooms: Гриби
@@ -179,5 +174,4 @@ nav:
       - All settings: server/all-settings.md
   - Maps: maps.md
   - Mushrooms: mushrooms.md
-  - Join: join.md
   - Admin: admin.md

@@ -16,6 +16,16 @@
 </div>
 
 
+## :material-login: How to join { #join }
+
+1. Start SCUM and open the server list.
+2. Search for **FISTILAND**.
+3. Join. The server is a free-access community server.
+
+### Discord
+
+News, changes, squad searches and support: [discord.gg/RHkNGk6ZQN](https://discord.gg/RHkNGk6ZQN).
+
 ## :material-star-circle: What makes FISTILAND different
 
 | Feature | FISTILAND |

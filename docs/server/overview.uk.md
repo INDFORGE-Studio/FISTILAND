@@ -16,6 +16,16 @@
 </div>
 
 
+## :material-login: Як приєднатися { #join }
+
+1. Запустіть SCUM і відкрийте список серверів.
+2. Знайдіть **FISTILAND**.
+3. Приєднуйтесь. Це спільнотний сервер із вільним доступом.
+
+### Discord
+
+Новини, зміни, пошук загону та підтримка: [discord.gg/RHkNGk6ZQN](https://discord.gg/RHkNGk6ZQN).
+
 ## :material-star-circle: Чим FISTILAND відрізняється
 
 | Особливість | FISTILAND |

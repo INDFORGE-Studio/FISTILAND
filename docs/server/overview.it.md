@@ -16,6 +16,16 @@
 </div>
 
 
+## :material-login: Come entrare { #join }
+
+1. Avvia SCUM e apri l'elenco dei server.
+2. Cerca **FISTILAND**.
+3. Entra. È un server della community ad accesso libero.
+
+### Discord
+
+Novità, modifiche, ricerca di squadra e supporto: [discord.gg/RHkNGk6ZQN](https://discord.gg/RHkNGk6ZQN).
+
 ## :material-star-circle: Cosa rende diverso FISTILAND
 
 | Caratteristica | FISTILAND |

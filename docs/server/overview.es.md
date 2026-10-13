@@ -16,6 +16,16 @@
 </div>
 
 
+## :material-login: Cómo unirse { #join }
+
+1. Inicia SCUM y abre la lista de servidores.
+2. Busca **FISTILAND**.
+3. Únete. Es un servidor comunitario de acceso libre.
+
+### Discord
+
+Novedades, cambios, búsqueda de escuadra y soporte: [discord.gg/RHkNGk6ZQN](https://discord.gg/RHkNGk6ZQN).
+
 ## :material-star-circle: Qué hace diferente a FISTILAND
 
 | Característica | FISTILAND |
