@@ -1,22 +1,22 @@
 (function () {
   var L = {
     en: { zin: 'Zoom in', zout: 'Zoom out', reset: 'Reset view', full: 'Full screen', fail: 'The map could not be loaded.', open: 'Open the image',
-      sat: 'Satellite map of the island', guide: 'Wildlife guide', layers: 'Layers', hab: 'Habitats', mut: 'Mutant sightings', openLegend: 'Open the legend as an image',
+      sat: 'Satellite map of the island', guide: 'Wildlife guide', layers: 'Layers', hab: 'Habitats', mut: 'Mutant sightings', openLegend: 'Open the legend as an image', poi: 'Places of interest', approx: 'Dashed marker: approximate position',
       sp: { bear: 'Bear', deer: 'Deer', wolf: 'Wolf', boar: 'Boar' } },
     fr: { zin: 'Zoom avant', zout: 'Zoom arrière', reset: 'Réinitialiser la vue', full: 'Plein écran', fail: 'La carte n’a pas pu être chargée.', open: 'Ouvrir l’image',
-      sat: 'Carte satellite de l’île', guide: 'Guide de la faune', layers: 'Calques', hab: 'Habitats', mut: 'Mutants repérés', openLegend: 'Ouvrir la légende en image',
+      sat: 'Carte satellite de l’île', guide: 'Guide de la faune', layers: 'Calques', hab: 'Habitats', mut: 'Mutants repérés', openLegend: 'Ouvrir la légende en image', poi: 'Lieux d’intérêt', approx: 'Repère hachuré : position approximative',
       sp: { bear: 'Ours', deer: 'Cerf', wolf: 'Loup', boar: 'Sanglier' } },
     de: { zin: 'Vergrößern', zout: 'Verkleinern', reset: 'Ansicht zurücksetzen', full: 'Vollbild', fail: 'Die Karte konnte nicht geladen werden.', open: 'Bild öffnen',
-      sat: 'Satellitenkarte der Insel', guide: 'Tierführer', layers: 'Ebenen', hab: 'Lebensräume', mut: 'Mutanten-Sichtungen', openLegend: 'Legende als Bild öffnen',
+      sat: 'Satellitenkarte der Insel', guide: 'Tierführer', layers: 'Ebenen', hab: 'Lebensräume', mut: 'Mutanten-Sichtungen', openLegend: 'Legende als Bild öffnen', poi: 'Interessante Orte', approx: 'Gestrichelte Markierung: ungefähre Position',
       sp: { bear: 'Bär', deer: 'Hirsch', wolf: 'Wolf', boar: 'Wildschwein' } },
     es: { zin: 'Acercar', zout: 'Alejar', reset: 'Restablecer la vista', full: 'Pantalla completa', fail: 'No se pudo cargar el mapa.', open: 'Abrir la imagen',
-      sat: 'Mapa satelital de la isla', guide: 'Guía de fauna', layers: 'Capas', hab: 'Hábitats', mut: 'Mutantes avistados', openLegend: 'Abrir la leyenda como imagen',
+      sat: 'Mapa satelital de la isla', guide: 'Guía de fauna', layers: 'Capas', hab: 'Hábitats', mut: 'Mutantes avistados', openLegend: 'Abrir la leyenda como imagen', poi: 'Lugares de interés', approx: 'Marcador discontinuo: posición aproximada',
       sp: { bear: 'Oso', deer: 'Ciervo', wolf: 'Lobo', boar: 'Jabalí' } },
     it: { zin: 'Ingrandisci', zout: 'Riduci', reset: 'Reimposta la vista', full: 'Schermo intero', fail: 'Impossibile caricare la mappa.', open: 'Apri l’immagine',
-      sat: 'Mappa satellitare dell’isola', guide: 'Guida alla fauna', layers: 'Livelli', hab: 'Habitat', mut: 'Mutanti avvistati', openLegend: 'Apri la legenda come immagine',
+      sat: 'Mappa satellitare dell’isola', guide: 'Guida alla fauna', layers: 'Livelli', hab: 'Habitat', mut: 'Mutanti avvistati', openLegend: 'Apri la legenda come immagine', poi: 'Luoghi di interesse', approx: 'Segnaposto tratteggiato: posizione approssimativa',
       sp: { bear: 'Orso', deer: 'Cervo', wolf: 'Lupo', boar: 'Cinghiale' } },
     uk: { zin: 'Збільшити', zout: 'Зменшити', reset: 'Скинути вигляд', full: 'На весь екран', fail: 'Не вдалося завантажити карту.', open: 'Відкрити зображення',
-      sat: 'Супутникова карта острова', guide: 'Довідник фауни', layers: 'Шари', hab: 'Середовища', mut: 'Мутанти на карті', openLegend: 'Відкрити легенду як зображення',
+      sat: 'Супутникова карта острова', guide: 'Довідник фауни', layers: 'Шари', hab: 'Середовища', mut: 'Мутанти на карті', openLegend: 'Відкрити легенду як зображення', poi: 'Цікаві місця', approx: 'Пунктирний маркер: приблизна позиція',
       sp: { bear: 'Ведмідь', deer: 'Олень', wolf: 'Вовк', boar: 'Кабан' } }
   };
   var lang = (document.documentElement.lang || 'en').slice(0, 2);
@@ -153,7 +153,8 @@
     root.innerHTML =
       '<div class="fl-island__bar"><span class="fl-island__cap">' + T.layers + '</span>' +
       '<label class="fl-island__tg"><input type="checkbox" data-l="habitats" checked><span class="fl-island__sw">' + habSw + '</span>' + T.hab + '</label>' +
-      '<label class="fl-island__tg"><input type="checkbox" data-l="mutants" checked><span class="fl-island__sw">' + mutSw + '</span>' + T.mut + '</label></div>' +
+      '<label class="fl-island__tg"><input type="checkbox" data-l="mutants" checked><span class="fl-island__sw">' + mutSw + '</span>' + T.mut + '</label>' +
+      (root.getAttribute('data-poi') ? '<label class="fl-island__tg"><input type="checkbox" data-l="poi" checked><span class="fl-island__sw"><i style="background:#e8631c"></i></span>' + T.poi + '</label>' : '') + '</div>' +
       '<div class="fl-island__body">' +
       '<div class="fl-map fl-island__map"><div class="fl-map__stage">' +
       '<img class="fl-island__base" alt="' + T.sat + '" draggable="false" src="' + preview + '">' +
@@ -163,6 +164,7 @@
       '<aside class="fl-island__side">' +
       '<a href="' + legend + '" target="_blank" rel="noopener" title="' + T.openLegend + '"><img class="fl-island__legend" alt="' + T.guide + '" src="' + legend + '"></a>' +
       '<div class="fl-island__mut" data-l="mutants"><b>' + T.mut + '</b><ul>' + mutRows + '</ul></div>' +
+      '<div class="fl-island__mut fl-island__poi" data-l="poi" hidden><b>' + T.poi + '</b><ol></ol><p>' + T.approx + '</p></div>' +
       '</aside></div>';
 
     var box = root.querySelector('.fl-island__map');
@@ -177,6 +179,35 @@
       im.src = base;
     }
     zoomer(box, stage, root, loadFull);
+
+    var poiUrl = root.getAttribute('data-poi');
+    if (poiUrl) {
+      fetch(poiUrl).then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); }).then(function (data) {
+        var layer = document.createElement('div');
+        layer.className = 'fl-island__pois';
+        layer.setAttribute('data-l', 'poi');
+        var list = root.querySelector('.fl-island__poi ol');
+        data.places.forEach(function (p, i) {
+          var name = p.name[lang] || p.name.en;
+          var n = i + 1;
+          var m = document.createElement('span');
+          m.className = 'fl-poi' + (p.exact ? '' : ' is-approx');
+          m.style.left = (p.x * 100) + '%';
+          m.style.top = (p.y * 100) + '%';
+          m.title = n + '. ' + name;
+          m.innerHTML = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 1.5L22.5 12 12 22.5 1.5 12z"/><text x="12" y="15.6" text-anchor="middle">' + n + '</text></svg>';
+          layer.appendChild(m);
+          var li = document.createElement('li');
+          li.textContent = name;
+          if (!p.exact) li.className = 'is-approx';
+          list.appendChild(li);
+        });
+        stage.appendChild(layer);
+        root.querySelector('.fl-island__poi').hidden = false;
+        var cb = root.querySelector('input[data-l="poi"]');
+        if (cb && !cb.checked) { layer.classList.add('is-off'); root.querySelector('.fl-island__poi').classList.add('is-off'); }
+      }).catch(function () {});
+    }
 
     root.querySelectorAll('input[data-l]').forEach(function (cb) {
       cb.addEventListener('change', function () {

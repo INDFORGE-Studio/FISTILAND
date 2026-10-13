@@ -1,0 +1,19 @@
+{
+  "source": "scum.wiki.gg (CC BY-NC-SA 4.0); positions placed by hand on the FISTILAND map. exact=true when the place is visible on the base map.",
+  "places": [
+    { "x": 0.100, "y": 0.028, "exact": true,  "name": { "en": "Military airfield", "fr": "Aérodrome militaire", "de": "Militärflugplatz", "es": "Aeródromo militar", "it": "Aeroporto militare", "uk": "Військовий аеродром" } },
+    { "x": 0.564, "y": 0.422, "exact": true,  "name": { "en": "Airport", "fr": "Aéroport", "de": "Flughafen", "es": "Aeropuerto", "it": "Aeroporto", "uk": "Аеропорт" } },
+    { "x": 0.224, "y": 0.424, "exact": false, "name": { "en": "Boot camp", "fr": "Camp d’entraînement", "de": "Ausbildungslager", "es": "Campo de entrenamiento", "it": "Campo di addestramento", "uk": "Навчальний табір" } },
+    { "x": 0.680, "y": 0.412, "exact": false, "name": { "en": "Factory", "fr": "Usine", "de": "Fabrik", "es": "Fábrica", "it": "Fabbrica", "uk": "Завод" } },
+    { "x": 0.530, "y": 0.476, "exact": false, "name": { "en": "Gun range", "fr": "Stand de tir", "de": "Schießstand", "es": "Campo de tiro", "it": "Poligono di tiro", "uk": "Тир" } },
+    { "x": 0.480, "y": 0.300, "exact": false, "name": { "en": "Prison", "fr": "Prison", "de": "Gefängnis", "es": "Prisión", "it": "Prigione", "uk": "В’язниця" } },
+    { "x": 0.344, "y": 0.464, "exact": false, "name": { "en": "Train yard", "fr": "Gare de triage", "de": "Rangierbahnhof", "es": "Estación de maniobras", "it": "Scalo ferroviario", "uk": "Залізничне депо" } },
+    { "x": 0.482, "y": 0.638, "exact": false, "name": { "en": "Cheese factory", "fr": "Fromagerie", "de": "Käserei", "es": "Quesería", "it": "Caseificio", "uk": "Сироварня" } },
+    { "x": 0.700, "y": 0.100, "exact": false, "name": { "en": "Mine", "fr": "Mine", "de": "Bergwerk", "es": "Mina", "it": "Miniera", "uk": "Шахта" } },
+    { "x": 0.260, "y": 0.384, "exact": false, "name": { "en": "Hunting camp", "fr": "Camp de chasse", "de": "Jagdlager", "es": "Campamento de caza", "it": "Accampamento di caccia", "uk": "Мисливський табір" } },
+    { "x": 0.503, "y": 0.223, "exact": true,  "name": { "en": "Outpost (safe zone) C2", "fr": "Avant-poste (zone sûre) C2", "de": "Außenposten (sichere Zone) C2", "es": "Puesto avanzado (zona segura) C2", "it": "Avamposto (zona sicura) C2", "uk": "Форпост (безпечна зона) C2" } },
+    { "x": 0.032, "y": 0.555, "exact": true,  "name": { "en": "Outpost (safe zone) B4", "fr": "Avant-poste (zone sûre) B4", "de": "Außenposten (sichere Zone) B4", "es": "Puesto avanzado (zona segura) B4", "it": "Avamposto (zona sicura) B4", "uk": "Форпост (безпечна зона) B4" } },
+    { "x": 0.806, "y": 0.772, "exact": true,  "name": { "en": "Outpost (safe zone) A0", "fr": "Avant-poste (zone sûre) A0", "de": "Außenposten (sichere Zone) A0", "es": "Puesto avanzado (zona segura) A0", "it": "Avamposto (zona sicura) A0", "uk": "Форпост (безпечна зона) A0" } },
+    { "x": 0.398, "y": 0.851, "exact": true,  "name": { "en": "Outpost (safe zone) Z3", "fr": "Avant-poste (zone sûre) Z3", "de": "Außenposten (sichere Zone) Z3", "es": "Puesto avanzado (zona segura) Z3", "it": "Avamposto (zona sicura) Z3", "uk": "Форпост (безпечна зона) Z3" } }
+  ]
+}

@@ -564,3 +564,17 @@ html[lang="uk"] .md-header__option .md-select > button::before { background-imag
   .fl-island__side { width: 100%; margin-top: .8rem; }
   .fl-island:fullscreen .fl-island__map { width: 100%; }
 }
+
+/* ---- Island map: places of interest ---- */
+.fl-island__pois { position: absolute; inset: 0; pointer-events: none; }
+.fl-poi { position: absolute; width: 3%; aspect-ratio: 1; transform: translate(-50%, -50%); pointer-events: auto; cursor: help; }
+.fl-poi svg { display: block; width: 100%; height: 100%; overflow: visible; filter: drop-shadow(0 1px 1px rgba(0, 0, 0, .8)); }
+.fl-poi path { fill: #e8631c; stroke: #0d0c0b; stroke-width: 1.4; stroke-linejoin: miter; }
+.fl-poi text { fill: #0d0c0b; font: 700 10px Oswald, sans-serif; }
+.fl-poi.is-approx path { fill: rgba(13, 12, 11, .82); stroke: #ff7a33; stroke-dasharray: 3 2; }
+.fl-poi.is-approx text { fill: #ff7a33; }
+.fl-island__poi ol { margin: .5rem 0 0; padding-left: 1.5rem; font-size: .82rem; color: #e0d6cc; }
+.fl-island__poi li { margin: .2rem 0; }
+.fl-island__poi li::marker { color: #ff7a33; font-family: Oswald, sans-serif; font-weight: 600; }
+.fl-island__poi li.is-approx::marker { color: #8a7f75; }
+.fl-island__poi p { margin: .6rem 0 0; font-size: .7rem; line-height: 1.4; color: #8a7f75; }
