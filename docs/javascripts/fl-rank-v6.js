@@ -53,26 +53,28 @@
       badge = document.createElement('div');
       badge.className = 'fl-rank';
       title.parentNode.insertBefore(badge, title.nextSibling);
+      // hover (or tap) the badge to see the message again
+      badge.addEventListener('pointerenter', function () { var i = rankIndex(state); if (i) showHint(i, true); });
+      badge.addEventListener('pointerleave', function () { clearTimeout(hintTimer); hintTimer = setTimeout(function () { if (hint) hint.classList.remove('is-on'); }, 1500); });
     }
     document.documentElement.setAttribute('data-fl-rank', r);
     if (!r) { badge.classList.remove('is-on'); return; }
     badge.setAttribute('data-rank', r);
     badge.innerHTML = ICONS[r] + '<span>' + NAMES[r] + '</span>';
-    badge.title = L.lbl + ' ' + NAMES[r];
-    badge.classList.add('is-on');
+        badge.classList.add('is-on');
     if (isNew) { badge.classList.remove('is-new'); void badge.offsetWidth; badge.classList.add('is-new'); }
   }
 
   var hint = null, hintTimer = 0;
-  function showHint(idx) {
+  function showHint(idx, again) {
     var r = RANKS[idx];
     if (!hint) { hint = document.createElement('div'); hint.className = 'fl-hint'; hint.setAttribute('role', 'status'); document.body.appendChild(hint); }
     hint.setAttribute('data-rank', r);
     var sub = idx === 4 ? L.veteran : idx === 3 ? L.master : L.rank + ' : ' + NAMES[r].toUpperCase() + (idx === 2 ? '<br>' + L.iron : '');
-    hint.innerHTML = ICONS[r] + '<div><b>' + L.head + '</b><span>' + sub + '</span></div>';
+    hint.innerHTML = ICONS[r] + '<div><b>' + (again ? L.lbl + ' : ' + NAMES[r].toUpperCase() : L.head) + '</b><span>' + sub + '</span></div>';
     hint.classList.remove('is-on'); void hint.offsetWidth; hint.classList.add('is-on');
     clearTimeout(hintTimer);
-    hintTimer = setTimeout(function () { hint.classList.remove('is-on'); }, 6000);
+    hintTimer = setTimeout(function () { hint.classList.remove('is-on'); }, again ? 7000 : 10000);
   }
 
   function found(name) {
