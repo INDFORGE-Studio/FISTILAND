@@ -4,7 +4,7 @@
 
 # Easter Eggs
 
-<p>Kleine Geheimnisse, überall im Wiki versteckt. Findest du sie alle?</p>
+<p>Kleine Geheimnisse haben sich auf unsere Website geschlichen. Kannst du sie alle entdecken?</p>
 
 </div>
 
@@ -14,14 +14,7 @@ Ein Easter Egg ist eine versteckte Überraschung, die die Entwickler für alle h
 
 ## :material-help-circle-outline: Die Jagd
 
-Es gibt vier Geheimnisse. Wir verraten nicht, wo sie sind, nur dass das Wiki auf Neugierige reagiert.
-
-<div class="fl-eg-grid">
-<div class="fl-eg-card"><i>1</i><p>Am Rand der Seite wacht immer etwas. Es mag es nicht, bemerkt zu werden.</p></div>
-<div class="fl-eg-card"><i>2</i><p>Nicht alles, was im Wald wächst, ist zum Anfassen gedacht.</p></div>
-<div class="fl-eg-card"><i>3</i><p>Das Logo im Herzen der Startseite hat mehr als ein Gesicht. Das zweite braucht Geduld und einen abgehärteten Besucher.</p></div>
-<div class="fl-eg-card"><i>4</i><p>Denk nach dem Sturm daran, dich um dich selbst zu kümmern.</p></div>
-</div>
+Es gibt 4 Geheimnisse. Wir verraten nicht, wo sie sind, nur dass die Website auf Neugierige reagiert.
 
 ## :material-trophy: Ränge
 
@@ -38,4 +31,4 @@ Vier Ränge. Sobald du einen erreichst, erscheint er in der Mitte der Kopfzeile 
 
 - Dein Fortschritt wird nur in diesem Browser gespeichert. Nichts wird an den Server gesendet. Wenn du die Websitedaten löschst oder das Gerät wechselst, beginnst du von vorn.
 - Alles funktioniert auf dem Handy genauso wie am PC.
-- Bitte keine Spoiler: Lass Neue sie selbst finden.
+- Tipp: Tritt dem Discord bei und versuche, ein Mitglied zu überzeugen, dir zu erklären, wie du sie schnell bekommst.

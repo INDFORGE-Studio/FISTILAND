@@ -5,7 +5,7 @@
   //  Master : the hallucination of the home logo, which only exists once Iron is reached
 //  Veteran: treating yourself (click on one of the two remedy boxes of the Mushrooms page), only possible once Master
   // Progress is kept in this browser (localStorage).
-  var KEY = 'fl-eggs-4';
+  var KEY = 'fl-eggs-5';
   var RANKS = ['', 'rookie', 'iron', 'master', 'veteran'];
   var NAMES = { rookie: 'Rookie', iron: 'Iron', master: 'Master', veteran: 'Veteran' };
   var ICONS = {
@@ -16,12 +16,12 @@
     veteran: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 2h4l3 8.5-3.4 1.2zM18 2h-4l-3 8.5 3.4 1.2z" fill="currentColor" opacity=".7"/><path fill-rule="evenodd" fill="currentColor" d="M12 9.3a6.2 6.2 0 1 0 0 12.4 6.2 6.2 0 1 0 0-12.4zM12 12.1l.82 2.27 2.41.08-1.9 1.48.67 2.32L12 16.9l-2 1.35.67-2.32-1.9-1.48 2.41-.08z"/></svg>'
   };
   var T = {
-    en: { head: 'Easter Egg discovered!', rank: 'Rank unlocked', iron: 'Something has awakened on the home page...', master: 'You have reached the Master rank.', veteran: 'You took care of yourself. You are a Veteran.', lbl: 'Rank', got: 'Unlocked', lock: 'Locked' },
-    fr: { head: 'Easter Egg découvert !', rank: 'Grade obtenu', iron: "Quelque chose s'est réveillé sur la page d'accueil...", master: 'Vous avez atteint le grade Master.', veteran: 'Vous avez pensé à vous soigner. Vous êtes Veteran.', lbl: 'Grade', got: 'Obtenu', lock: 'Verrouillé' },
-    de: { head: 'Easter Egg entdeckt!', rank: 'Rang erreicht', iron: 'Auf der Startseite ist etwas erwacht ...', master: 'Du hast den Rang Master erreicht.', veteran: 'Du hast dich behandelt. Du bist Veteran.', lbl: 'Rang', got: 'Erreicht', lock: 'Gesperrt' },
-    es: { head: '¡Easter Egg descubierto!', rank: 'Rango desbloqueado', iron: 'Algo se ha despertado en la página de inicio...', master: 'Has alcanzado el rango Master.', veteran: 'Te has curado a tiempo. Eres Veteran.', lbl: 'Rango', got: 'Desbloqueado', lock: 'Bloqueado' },
-    it: { head: 'Easter Egg scoperto!', rank: 'Grado ottenuto', iron: 'Qualcosa si è risvegliato nella pagina iniziale...', master: 'Hai raggiunto il grado Master.', veteran: 'Ti sei curato. Sei Veteran.', lbl: 'Grado', got: 'Ottenuto', lock: 'Bloccato' },
-    uk: { head: 'Знайдено пасхалку!', rank: 'Отримано ранг', iron: 'Щось прокинулося на головній сторінці...', master: 'Ви досягли рангу Master.', veteran: 'Ви подбали про своє лікування. Ви — Veteran.', lbl: 'Ранг', got: 'Отримано', lock: 'Закрито' }
+    en: { head: 'Easter Egg discovered!', rank: 'Rank unlocked', iron: 'Something has awakened on the home page...', master: 'You have reached the Master rank.', veteran: 'You took care of yourself. You are a Veteran. A new button has appeared in the header.', lbl: 'Rank', got: 'Unlocked', lock: 'Locked' },
+    fr: { head: 'Easter Egg découvert !', rank: 'Grade obtenu', iron: "Quelque chose s'est réveillé sur la page d'accueil...", master: 'Vous avez atteint le grade Master.', veteran: 'Vous avez pensé à vous soigner. Vous êtes Veteran. Un nouveau bouton est apparu en haut de la page.', lbl: 'Grade', got: 'Obtenu', lock: 'Verrouillé' },
+    de: { head: 'Easter Egg entdeckt!', rank: 'Rang erreicht', iron: 'Auf der Startseite ist etwas erwacht ...', master: 'Du hast den Rang Master erreicht.', veteran: 'Du hast dich behandelt. Du bist Veteran. In der Kopfzeile ist ein neuer Button erschienen.', lbl: 'Rang', got: 'Erreicht', lock: 'Gesperrt' },
+    es: { head: '¡Easter Egg descubierto!', rank: 'Rango desbloqueado', iron: 'Algo se ha despertado en la página de inicio...', master: 'Has alcanzado el rango Master.', veteran: 'Te has curado a tiempo. Eres Veteran. Ha aparecido un botón nuevo en la cabecera.', lbl: 'Rango', got: 'Desbloqueado', lock: 'Bloqueado' },
+    it: { head: 'Easter Egg scoperto!', rank: 'Grado ottenuto', iron: 'Qualcosa si è risvegliato nella pagina iniziale...', master: 'Hai raggiunto il grado Master.', veteran: "Ti sei curato. Sei Veteran. Nell'intestazione è comparso un nuovo pulsante.", lbl: 'Grado', got: 'Ottenuto', lock: 'Bloccato' },
+    uk: { head: 'Знайдено пасхалку!', rank: 'Отримано ранг', iron: 'Щось прокинулося на головній сторінці...', master: 'Ви досягли рангу Master.', veteran: "Ви подбали про своє лікування. Ви — Veteran. У шапці з'явилася нова кнопка.", lbl: 'Ранг', got: 'Отримано', lock: 'Закрито' }
   };
   var lang = (document.documentElement.lang || 'en').slice(0, 2);
   var L = T[lang] || T.en;
@@ -36,7 +36,7 @@
     return n;
   }
 
-  try { localStorage.removeItem('fl-eggs'); localStorage.removeItem('fl-eggs-2'); localStorage.removeItem('fl-eggs-3'); } catch (e) {}
+  try { localStorage.removeItem('fl-eggs'); localStorage.removeItem('fl-eggs-2'); localStorage.removeItem('fl-eggs-3'); localStorage.removeItem('fl-eggs-4'); } catch (e) {}
   var state = load();
   var badge = null;
 
@@ -73,6 +73,7 @@
       badge.addEventListener('pointerleave', function () { clearTimeout(hintTimer); hintTimer = setTimeout(function () { if (hint) hint.classList.remove('is-on'); }, 1500); });
     }
     document.documentElement.setAttribute('data-fl-rank', r);
+    document.dispatchEvent(new Event('fl-rank-change'));
     if (!r) { badge.classList.remove('is-on'); return; }
     badge.setAttribute('data-rank', r);
     badge.innerHTML = ICONS[r] + '<span>' + NAMES[r] + '</span>';

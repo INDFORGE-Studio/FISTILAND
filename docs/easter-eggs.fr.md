@@ -4,24 +4,17 @@
 
 # Easter Eggs
 
-<p>De petits secrets cachés un peu partout sur le wiki. Saurez-vous tous les trouver ?</p>
+<p>Des petits secrets se sont glissés sur notre site Internet. Sauras-tu tous les découvrir ?</p>
 
 </div>
 
 ## :material-magnify: C'est quoi, un Easter Egg ?
 
-Un Easter Egg est une surprise cachée par les développeurs pour ceux qui sont assez curieux pour la trouver. C'est une tradition de longue date dans le jeu vidéo. Nous en avons laissé quelques-uns sur ce wiki. Ils ne changent rien au serveur et ne donnent rien en jeu : la seule récompense, c'est la fierté et un grade.
+Un Easter Egg est une surprise cachée par les développeurs pour ceux qui sont assez curieux pour les trouver. C'est une tradition de longue date dans le jeu vidéo. Nous en avons laissé quelques-uns sur ce wiki. Ils ne changent rien au serveur et ne donnent rien en jeu : la seule récompense, c'est la fierté et un grade.
 
 ## :material-help-circle-outline: La chasse
 
-Il y a quatre secrets. Nous ne dirons pas où ils sont, seulement que le wiki réagit aux curieux.
-
-<div class="fl-eg-grid">
-<div class="fl-eg-card"><i>1</i><p>Quelque chose veille toujours au bord de la page. Il n'aime pas qu'on le remarque.</p></div>
-<div class="fl-eg-card"><i>2</i><p>Tout ce qui pousse dans la forêt n'est pas fait pour être touché.</p></div>
-<div class="fl-eg-card"><i>3</i><p>Le logo au cœur de la page d'accueil a plus d'un visage. Le second demande de la patience, et un visiteur aguerri.</p></div>
-<div class="fl-eg-card"><i>4</i><p>Après la tempête, pensez à prendre soin de vous.</p></div>
-</div>
+Il y a 4 secrets. Nous ne dirons pas où ils sont, seulement que le site internet réagit aux curieux.
 
 ## :material-trophy: Les grades
 
@@ -38,4 +31,4 @@ Quatre grades. Dès que vous en obtenez un, il s'affiche au centre de l'en-tête
 
 - Votre progression est enregistrée dans ce navigateur uniquement. Rien n'est envoyé au serveur. Effacer les données du site, ou changer d'appareil, vous fait repartir de zéro.
 - Tout fonctionne de la même façon sur téléphone et sur PC.
-- Pas de spoilers, s'il vous plaît : laissez les nouveaux les trouver seuls.
+- Tips : rejoignez le Discord pour essayer de convaincre un membre de vous expliquer comment les obtenir rapidement.

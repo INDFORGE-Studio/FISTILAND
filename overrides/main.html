@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block extrahead %}
+  {{ super() }}
+  <script>
+    /* Veteran skin: applied before the first paint to avoid a flash. Same storage keys as fl-rank / fl-theme. */
+    (function () {
+      try {
+        var s = JSON.parse(localStorage.getItem('fl-eggs-5') || '{}');
+        var t = localStorage.getItem('fl-theme');
+        if (t && /^(survivalist|forces|demonic|zombie)$/.test(t) && s.discord && s.mushroom && s.master && s.veteran) {
+          document.documentElement.setAttribute('data-fl-theme', t);
+        }
+      } catch (e) {}
+    })();
+  </script>
+{% endblock %}

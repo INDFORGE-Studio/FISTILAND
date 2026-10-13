@@ -4,7 +4,7 @@
 
 # Easter Eggs
 
-<p>Pequeños secretos escondidos por toda la wiki. ¿Podrás encontrarlos todos?</p>
+<p>Unos pequeños secretos se han colado en nuestro sitio web. ¿Sabrás descubrirlos todos?</p>
 
 </div>
 
@@ -14,14 +14,7 @@ Un Easter Egg es una sorpresa escondida por los desarrolladores para quienes tie
 
 ## :material-help-circle-outline: La búsqueda
 
-Hay cuatro secretos. No diremos dónde están, solo que la wiki reacciona a los curiosos.
-
-<div class="fl-eg-grid">
-<div class="fl-eg-card"><i>1</i><p>Algo vigila siempre desde el borde de la página. No le gusta que lo noten.</p></div>
-<div class="fl-eg-card"><i>2</i><p>No todo lo que crece en el bosque está hecho para tocarse.</p></div>
-<div class="fl-eg-card"><i>3</i><p>El logo del corazón de la página de inicio tiene más de una cara. La segunda exige paciencia y un visitante curtido.</p></div>
-<div class="fl-eg-card"><i>4</i><p>Después de la tormenta, acuérdate de cuidarte.</p></div>
-</div>
+Hay 4 secretos. No diremos dónde están, solo que el sitio web reacciona a los curiosos.
 
 ## :material-trophy: Rangos
 
@@ -38,4 +31,4 @@ Cuatro rangos. En cuanto consigues uno, aparece en el centro de la cabecera y te
 
 - Tu progreso se guarda solo en este navegador. No se envía nada al servidor. Si borras los datos del sitio o cambias de dispositivo, empiezas de cero.
 - Todo funciona igual en el móvil y en el PC.
-- Sin spoilers, por favor: deja que los recién llegados los encuentren solos.
+- Consejo: únete al Discord e intenta convencer a un miembro de que te explique cómo conseguirlos rápido.
