@@ -608,3 +608,16 @@ html[lang="uk"] .md-header__option .md-select > button::before { background-imag
 .fl-mush.is-tox .fl-mush__tag { color: #fff; background: #a82a1c; }
 .fl-mush-fix { display: grid; grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr)); gap: .8rem; margin: 1rem 0; }
 .fl-mush-fix p { margin: 0; padding: .9rem 1rem; background: #181513; border: 1px solid var(--fl-line); border-top: 3px solid var(--fl-orange); font-size: .86rem; line-height: 1.55; color: #e0d6cc; }
+
+/* ---- Mushrooms: values shown on hover / tap ---- */
+.fl-mush { cursor: help; outline: none; }
+.fl-mush:hover, .fl-mush:focus, .fl-mush:focus-within { z-index: 30; border-color: var(--fl-orange); }
+.fl-mush__stats { display: none; position: absolute; left: -1px; right: -1px; bottom: calc(100% + 8px); z-index: 40; padding: .55rem .7rem .6rem; background: #0d0c0b; border: 1px solid var(--fl-orange); border-top: 3px solid var(--fl-orange); text-align: left; box-shadow: 0 8px 18px rgba(0, 0, 0, .65); }
+.fl-mush:hover .fl-mush__stats, .fl-mush:focus .fl-mush__stats, .fl-mush:focus-within .fl-mush__stats { display: block; }
+.fl-mush__stats::after { content: ""; position: absolute; left: 50%; bottom: -7px; width: 12px; height: 12px; background: #0d0c0b; border-right: 1px solid var(--fl-orange); border-bottom: 1px solid var(--fl-orange); transform: translateX(-50%) rotate(45deg); }
+.fl-mush__stats div { display: grid; grid-template-columns: 1.15rem 1fr auto; align-items: center; gap: .45rem; padding: .16rem 0; font-size: .74rem; color: #e0d6cc; border-bottom: 1px solid rgba(58, 45, 36, .55); }
+.fl-mush__stats div:last-child { border-bottom: 0; }
+.fl-mush__stats svg { width: 1.05rem; height: 1.05rem; fill: #ff7a33; color: #ff7a33; filter: none; }
+.fl-mush__stats .erb { font: 600 .56rem Oswald, sans-serif; letter-spacing: .04em; color: #ff7a33; font-style: normal; }
+.fl-mush__stats em { font-style: normal; font-family: Oswald, sans-serif; font-weight: 500; letter-spacing: .03em; color: #fff; white-space: nowrap; }
+.fl-mush__stats span { line-height: 1.2; }
