@@ -528,12 +528,14 @@ html[lang="uk"] .md-header__option .md-select > button::before { background-imag
 .fl-map__stage { width: 100%; transform-origin: 0 0; }
 .fl-map__stage svg { display: block; width: 100%; height: auto; }
 .fl-map__fail { padding: 2rem; text-align: center; color: #b9aea3; }
-.fl-map__ctl { position: absolute; top: .6rem; right: .6rem; display: flex; gap: .3rem; z-index: 2; }
+.fl-map__ctl { display: flex; gap: .4rem; margin-left: auto; }
+.fl-map__tools { display: flex; justify-content: flex-end; margin: 1rem 0 .4rem; }
+.fl-map__tools + .fl-map { margin-top: 0; }
 .fl-map__ctl button {
   display: inline-flex; align-items: center; justify-content: center;
-  width: 2rem; height: 2rem; padding: 0;
-  background: rgba(13, 12, 11, .82); color: var(--fl-orange-hot);
-  border: 1px solid rgba(var(--fl-or-rgb), .55); border-radius: 6px; cursor: pointer;
+  width: 2.4rem; height: 2.4rem; padding: 0;
+  background: var(--fl-ink); color: var(--fl-orange-hot);
+  border: 1px solid rgba(var(--fl-or-rgb), .55); border-radius: 2px; cursor: pointer;
   transition: background .15s, color .15s;
 }
 .fl-map__ctl button:hover { background: var(--fl-orange); color: var(--fl-ink); }

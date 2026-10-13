@@ -34,7 +34,7 @@
   var I_FULL = icon('M5 5h5v2H7v3H5zm9 0h5v5h-2V7h-3zM5 14h2v3h3v2H5zm12 0h2v5h-5v-2h3z');
 
   // Pan and zoom on `box` (the clipping frame) moving `stage`; `fsEl` is the element sent to full screen.
-  function zoomer(box, stage, fsEl, onZoom) {
+  function zoomer(box, stage, fsEl, onZoom, host) {
     var ctl = document.createElement('div');
     ctl.className = 'fl-map__ctl';
     ctl.innerHTML =
@@ -42,7 +42,13 @@
       '<button type="button" data-a="out" title="' + T.zout + '" aria-label="' + T.zout + '">' + I_MINUS + '</button>' +
       '<button type="button" data-a="reset" title="' + T.reset + '" aria-label="' + T.reset + '">' + I_RESET + '</button>' +
       '<button type="button" data-a="full" title="' + T.full + '" aria-label="' + T.full + '">' + I_FULL + '</button>';
-    box.appendChild(ctl);
+    // the buttons live outside the picture: in the given bar, or in a bar just above the frame
+    if (!host) {
+      host = document.createElement("div");
+      host.className = "fl-map__tools";
+      box.parentNode.insertBefore(host, box);
+    }
+    host.appendChild(ctl);
 
     var s = 1, x = 0, y = 0, notified = false;
     function size() { return { w: box.clientWidth, h: box.clientHeight }; }
@@ -184,7 +190,7 @@
       im.onload = function () { baseImg.src = base; };
       im.src = base;
     }
-    zoomer(box, stage, root, loadFull);
+    zoomer(box, stage, root, loadFull, root.querySelector(".fl-island__bar"));
 
     var poiUrl = root.getAttribute('data-poi');
     if (poiUrl) {
