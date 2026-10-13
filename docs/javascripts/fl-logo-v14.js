@@ -53,7 +53,7 @@
   size();
   window.addEventListener('resize', size);
 
-  var act = false, running = false, last = 0, punchAt = -1e9, hold = 0, dwell = 0, ie = 0, T = 0, tripSent = false;
+  var act = false, running = false, last = 0, punchAt = -1e9, hold = 0, dwell = 0, ie = 0, T = 0, tripSent = false, fistSent = false;
   var trx = 0, tryy = 0, rx = 0, ry = 0, sc = 0;
   var L1 = 0, L2 = 0, L3 = 0, hueAcc = 0, orbAcc = 0, waveAcc = 0;
   var parts = [];
@@ -126,7 +126,8 @@
     // the classic effect comes first; the hallucination only starts after about 3 s on the logo, then builds up over ~9 s
     if (act) {
       dwell += dt; hold = Math.max(hold, clamp01((dwell - 3) / 9));
-      if (!tripSent && dwell > 3) { tripSent = true; egg('trip'); }
+      if (!fistSent && dwell > 1.5) { fistSent = true; egg('fist'); }
+      if (!tripSent && dwell > 10) { tripSent = true; egg('trip'); }
     } else { dwell = Math.max(0, dwell - dt * 3); hold = clamp01(hold - dt / 3); }
     ie = hold * hold * (3 - 2 * hold);
     L1 = clamp01(ie / 0.34); L2 = clamp01((ie - 0.28) / 0.4); L3 = clamp01((ie - 0.6) / 0.4);
@@ -205,7 +206,7 @@
   }
 
   function leave() { act = false; trx = 0; tryy = 0; fx.classList.remove('is-on'); start(); }
-  fx.addEventListener('pointerenter', function (e) { act = true; fx.classList.add('is-on'); move(e); punch(); egg('fist'); start(); });
+  fx.addEventListener('pointerenter', function (e) { act = true; fx.classList.add('is-on'); move(e); punch(); start(); });
   fx.addEventListener('pointermove', function (e) { if (act) move(e); });
   fx.addEventListener('pointerleave', leave);
   fx.addEventListener('pointercancel', leave);

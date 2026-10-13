@@ -1,7 +1,7 @@
 (function () {
   // Easter Eggs and ranks. The rank only depends on HOW MANY eggs were found, never on the order:
   // 1 egg = Rookie, 2 eggs = Iron, 3 eggs = Master. Progress is kept in this browser (localStorage).
-  var KEY = 'fl-eggs';
+  var KEY = 'fl-eggs-2';
   var EGGS = ['fist', 'discord', 'trip'];
   var RANKS = ['', 'rookie', 'iron', 'master'];
   var NAMES = { rookie: 'Rookie', iron: 'Iron', master: 'Master' };
@@ -27,6 +27,7 @@
   function save(o) { try { localStorage.setItem(KEY, JSON.stringify(o)); } catch (e) {} }
   function count(o) { var n = 0; EGGS.forEach(function (k) { if (o[k]) n++; }); return n; }
 
+  try { localStorage.removeItem('fl-eggs'); } catch (e) {}
   var state = load();
   var badge = null;
 
@@ -71,10 +72,17 @@
 
   window.addEventListener('fl-egg', function (e) { found(e.detail); });
 
-  // Discord logos (header, footer, join section): first pointer pass = egg
+  // Discord logos (header, footer, join section): the zombie has to be seen, so the pointer must stay about 2 s on the logo
+  var dTimer = 0;
   document.addEventListener('pointerover', function (e) {
     var t = e.target;
-    if (t && t.closest && t.closest('.fl-hd-discord, .md-social__link[href*="discord"], a.fl-discord')) found('discord');
+    if (t && t.closest && t.closest('.fl-hd-discord, .md-social__link[href*="discord"], a.fl-discord')) {
+      clearTimeout(dTimer); dTimer = setTimeout(function () { found('discord'); }, 2000);
+    }
+  });
+  document.addEventListener('pointerout', function (e) {
+    var t = e.target;
+    if (e.pointerType !== 'touch' && t && t.closest && t.closest('.fl-hd-discord, .md-social__link[href*="discord"], a.fl-discord')) clearTimeout(dTimer);
   });
 
   window.addEventListener('storage', function (e) { if (e.key === KEY) { state = load(); render(false); } });
