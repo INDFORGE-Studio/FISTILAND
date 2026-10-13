@@ -10,14 +10,16 @@
   tilt.appendChild(img); tilt.appendChild(shine); fx.appendChild(tilt); fx.appendChild(cv);
   var ctx = cv.getContext('2d');
 
-  var W = 0, H = 0, dpr = 1;
+  var W = 0, H = 0, VW = 0, VH = 0, LX = 0, LY = 0, dpr = 1;
   function size() {
-    var r = fx.getBoundingClientRect();
-    W = r.width; H = r.height; dpr = Math.min(2, window.devicePixelRatio || 1);
-    cv.width = Math.max(1, Math.round(W * 1.8 * dpr)); cv.height = Math.max(1, Math.round(H * 1.8 * dpr));
+    dpr = Math.min(1.5, window.devicePixelRatio || 1);
+    VW = window.innerWidth; VH = window.innerHeight;
+    cv.width = Math.max(1, Math.round(VW * dpr)); cv.height = Math.max(1, Math.round(VH * dpr));
+    rect();
   }
+  function rect() { var r = fx.getBoundingClientRect(); LX = r.left; LY = r.top; W = r.width; H = r.height; }
   size();
-  if (window.ResizeObserver) new ResizeObserver(size).observe(fx); else window.addEventListener('resize', size);
+  window.addEventListener("resize", size);
 
   var act = false, running = false, last = 0, punchAt = -1e9;
   var trx = 0, tryy = 0, rx = 0, ry = 0, sc = 0;
@@ -26,7 +28,7 @@
   function rnd(a, b) { return a + Math.random() * (b - a); }
 
   function ember() {
-    parts.push({ x: 0.4 * W + rnd(0.08, 0.92) * W, y: 0.4 * H + rnd(0.5, 1) * H, vx: rnd(-14, 14), vy: -rnd(30, 95),
+    parts.push({ x: LX + rnd(0.08, 0.92) * W, y: LY + rnd(0.5, 1) * H, vx: rnd(-14, 14), vy: -rnd(30, 95),
       g: 0, drag: 0, life: rnd(0.9, 1.8), age: 0, s: rnd(0.8, 2.4) });
   }
 
@@ -35,13 +37,14 @@
     if (now - punchAt < 700) return;
     punchAt = now;
     fx.classList.remove('is-punch'); void fx.offsetWidth; fx.classList.add('is-punch');
-    var cx = 0.4 * W + W / 2, cy = 0.4 * H + H / 2;
+    rect();
+    var cx = LX + W / 2, cy = LY + H / 2, far = Math.sqrt(VW * VW + VH * VH) * 0.62;
     for (var i = 0; i < 70; i++) {
       var a = rnd(0, Math.PI * 2), v = rnd(110, 420);
       parts.push({ x: cx, y: cy, vx: Math.cos(a) * v, vy: Math.sin(a) * v, g: 220, drag: 1.6, life: rnd(0.5, 1.2), age: 0, s: rnd(0.8, 2.8) });
     }
-    rings.push({ cx: cx, cy: cy, age: 0, dur: 0.6, r0: 0.25 * H, r1: 0.95 * H, c: '255,122,51', w: 4 });
-    rings.push({ cx: cx, cy: cy, age: -0.12, dur: 0.6, r0: 0.25 * H, r1: 1.15 * H, c: '255,235,200', w: 2 });
+    rings.push({ cx: cx, cy: cy, age: 0, dur: 1.1, r0: 0.25 * H, r1: far, c: '255,122,51', w: 4 });
+    rings.push({ cx: cx, cy: cy, age: -0.14, dur: 1.2, r0: 0.25 * H, r1: far * 1.15, c: '255,235,200', w: 2 });
     start();
   }
 
@@ -51,6 +54,7 @@
     rx += (trx - rx) * k; ry += (tryy - ry) * k; sc += ((act ? 1 : 0) - sc) * k;
     tilt.style.transform = 'perspective(800px) rotateX(' + rx.toFixed(2) + 'deg) rotateY(' + ry.toFixed(2) + 'deg) scale(' + (1 + 0.06 * sc).toFixed(3) + ')';
 
+    rect();
     if (act) { var n = 90 * dt, c = Math.floor(n); if (Math.random() < n - c) c++; while (c-- > 0) ember(); }
 
     var cw = cv.width, ch = cv.height;
@@ -66,7 +70,7 @@
       var rr = rg.r0 + (rg.r1 - rg.r0) * e;
       ctx.strokeStyle = 'rgba(' + rg.c + ',' + (0.85 * (1 - p)).toFixed(3) + ')';
       ctx.lineWidth = Math.max(0.5, rg.w * (1 - p));
-      ctx.beginPath(); ctx.ellipse(rg.cx, rg.cy, rr * W / H, rr, 0, 0, Math.PI * 2); ctx.stroke();
+      ctx.beginPath(); ctx.arc(rg.cx, rg.cy, rr, 0, Math.PI * 2); ctx.stroke();
     }
 
     for (var j = parts.length - 1; j >= 0; j--) {

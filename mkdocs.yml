@@ -28,10 +28,10 @@ extra_javascript:
   - javascripts/fl-bgfx-v3.js
   - javascripts/fl-join-v1.js
   - javascripts/fl-discord-v1.js
-  - javascripts/fl-logo-v1.js
+  - javascripts/fl-logo-v2.js
 
 extra_css:
-  - stylesheets/fistiland-v47.css
+  - stylesheets/fistiland-v48.css
 
 extra:
   social:

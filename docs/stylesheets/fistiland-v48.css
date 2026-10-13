@@ -669,7 +669,7 @@ html[lang="uk"] .md-header__option .md-select > button::before { background-imag
 
 /* Discord link: the animated skull replaces the logo on hover */
 .md-typeset a.fl-discord .twemoji { position: relative; flex: none; }
-.md-typeset a.fl-discord .twemoji::after { content: ""; position: absolute; top: -.155rem; left: -.155rem; width: 2.21rem; height: 2.21rem; background: url("../assets/discord-zombie-v1.gif") center / contain no-repeat; opacity: 0; pointer-events: none; }
+.md-typeset a.fl-discord .twemoji::after { content: ""; position: absolute; top: -.155rem; left: -.155rem; width: 2.21rem; height: 2.21rem; background: url("../assets/discord-zombie-head-page-v1.gif") center / contain no-repeat; opacity: 0; pointer-events: none; }
 .md-typeset a.fl-discord:hover .twemoji::after { opacity: 1; }
 .md-typeset a.fl-discord:hover .twemoji svg { opacity: 0; }
 
@@ -736,7 +736,7 @@ html.fl-live .md-main:has(.fl-home) > .md-main__inner { position: relative; z-in
   mask: url("../assets/logo-home-v4.png") center / 100% 100% no-repeat;
 }
 .fl-logo-fx.is-on .fl-logo-shine { opacity: 1; }
-.fl-logo-sparks { position: absolute; left: -40%; top: -40%; width: 180%; height: 180%; pointer-events: none; }
+.fl-logo-sparks { position: fixed; left: 0; top: 0; width: 100vw; height: 100vh; pointer-events: none; }
 @keyframes fl-punch {
   0% { transform: scale(1); }
   14% { transform: scale(.87) translateY(3%); }
@@ -746,3 +746,7 @@ html.fl-live .md-main:has(.fl-home) > .md-main__inner { position: relative; z-in
   100% { transform: scale(1); }
 }
 .fl-logo-fx.is-punch .fl-logo { animation: fl-punch .6s cubic-bezier(.2, .8, .3, 1); }
+
+/* Server page Discord link: same hover as the header icon */
+.md-typeset a.fl-discord .twemoji { transition: transform .2s ease, filter .2s ease; }
+.md-typeset a.fl-discord:hover .twemoji { transform: scale(1.18); filter: drop-shadow(0 0 7px rgba(140, 196, 60, .6)); }
