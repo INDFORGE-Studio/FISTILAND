@@ -10,7 +10,7 @@ hide:
 <img class="fl-logo" src="/FISTILAND/assets/logo-home-v4.png" alt="FISTILAND - SCUM Server">
 <div class="fl-title fl-sr">FISTILAND</div>
 <p class="fl-lead">Tieni le tue zone, difendi la tua base, combatti per i rifornimenti. Sopravvivere è più facile: conta il combattimento.</p>
-<div><a class="fl-btn" href="server/overview/#join">Come entrare</a><a class="fl-btn ghost" href="https://discord.gg/RHkNGk6ZQN">Discord</a></div>
+<div><a class="fl-btn fl-join" href="server/overview/#join" data-copy="31.214.207.109:8159">Entra</a></div>
 
 <div class="fl-stats">
   <div><b>14</b><span>Slot</span></div>

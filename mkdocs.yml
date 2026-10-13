@@ -26,9 +26,11 @@ extra_javascript:
   - javascripts/fl-mush-v1.js
   - javascripts/fl-ip-v1.js
   - javascripts/fl-bgfx-v3.js
+  - javascripts/fl-join-v1.js
+  - javascripts/fl-discord-v1.js
 
 extra_css:
-  - stylesheets/fistiland-v45.css
+  - stylesheets/fistiland-v46.css
 
 extra:
   social:

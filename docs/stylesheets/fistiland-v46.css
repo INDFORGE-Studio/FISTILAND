@@ -689,3 +689,31 @@ html.fl-live .md-main:has(.fl-home)::after {
 }
 .md-main > canvas.fl-bgfx { position: absolute; inset: 0; width: 100%; height: 100%; z-index: 0; pointer-events: none; }
 html.fl-live .md-main:has(.fl-home) > .md-main__inner { position: relative; z-index: 2; }
+
+/* ---- Header Discord icon (next to the flag): logo -> zombie on hover ---- */
+.md-header__button.fl-hd-discord {
+  position: relative; display: flex; align-items: center; justify-content: center;
+  width: 2.5rem; height: 2.5rem; padding: 0; margin: .2rem .1rem; color: #f4f0ea; opacity: 1;
+  transition: transform .2s ease, filter .2s ease;
+}
+.fl-hd-discord svg { width: 1.7rem; height: 1.7rem; fill: currentColor; transition: opacity .12s; }
+.fl-hd-discord::after {
+  content: ""; position: absolute; top: 50%; left: 50%; width: 2rem; height: 2rem; margin: -1rem 0 0 -1rem;
+  background: url("../assets/discord-zombie-header-v1.gif") center / contain no-repeat; opacity: 0; pointer-events: none;
+}
+.fl-hd-discord:hover { opacity: 1; transform: scale(1.18) rotate(-6deg); filter: drop-shadow(0 0 7px rgba(140, 196, 60, .6)); }
+.fl-hd-discord:hover svg { opacity: 0; }
+.fl-hd-discord:hover::after { opacity: 1; }
+
+/* ---- Copy confirmation toast (join page) ---- */
+.fl-toast {
+  position: fixed; left: 50%; bottom: 2rem; z-index: 20; transform: translate(-50%, 1rem);
+  padding: .7rem 1.4rem; background: #14110f; color: #fff; border: 2px solid var(--fl-orange); border-radius: 2px;
+  font: 600 .8rem Oswald, sans-serif; letter-spacing: .08em; box-shadow: 0 6px 24px rgba(0, 0, 0, .6);
+  opacity: 0; transition: opacity .3s, transform .3s; pointer-events: none;
+}
+.fl-toast.is-on { opacity: 1; transform: translate(-50%, 0); }
+
+/* ---- Anchored titles: leave room under the header line when a link scrolls to them ---- */
+.md-typeset :target { --md-scroll-margin: 5.4rem; }
+@media screen and (min-width: 76.25em) { .md-typeset :target { --md-scroll-margin: 7.6rem; } }
