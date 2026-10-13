@@ -51,7 +51,7 @@
   var act = false, running = false, last = 0, punchAt = -1e9, hold = 0, ie = 0, T = 0, dirty = false, dofOn = false;
   var trx = 0, tryy = 0, rx = 0, ry = 0, sc = 0;
   var L1 = 0, L2 = 0, L3 = 0;
-  var parts = [], crow = null, nextCrow = 0;
+  var parts = [];
 
   function rnd(a, b) { return a + Math.random() * (b - a); }
   function clamp01(v) { return v < 0 ? 0 : v > 1 ? 1 : v; }
@@ -123,43 +123,6 @@
     }
   }
 
-  function newCrow() {
-    var dir = Math.random() < 0.5 ? 1 : -1, s = (VW < 700 ? 22 : 34) * rnd(0.85, 1.2);
-    crow = { dir: dir, s: s, t0: T, dur: rnd(5, 7), y0: VH * rnd(0.18, 0.42), amp: VH * rnd(0.03, 0.07), ph: rnd(0, 6) };
-  }
-
-  function drawCrow() {
-    var p = (T - crow.t0) / crow.dur;
-    if (p >= 1) { crow = null; nextCrow = T + rnd(4, 9); return; }
-    var s = crow.s * (0.8 + 0.5 * p);
-    var x = crow.dir > 0 ? -s * 2 + p * (VW + s * 4) : VW + s * 2 - p * (VW + s * 4);
-    var y = crow.y0 + Math.sin(p * 6.5 + crow.ph) * crow.amp - p * VH * 0.08;
-    var fl = Math.sin(T * 13 + crow.ph);             // flap
-    var phi = 0.2 + 0.85 * fl;                       // wing angle
-    var fade = Math.min(1, p * 8, (1 - p) * 8) * Math.min(1, L3 * 1.6);
-    var hue = ((T * 60) % 360).toFixed(0);
-    ctx.save();
-    ctx.globalCompositeOperation = 'source-over';
-    ctx.translate(x, y); ctx.scale(crow.dir, 1);
-    ctx.globalAlpha = fade;
-    ctx.fillStyle = '#080609'; ctx.strokeStyle = 'hsla(' + hue + ',100%,60%,0.75)'; ctx.lineWidth = 1.2;
-    ctx.shadowColor = 'hsla(' + hue + ',100%,60%,0.8)'; ctx.shadowBlur = s * 0.5;
-    // tail
-    ctx.beginPath(); ctx.moveTo(-s * 0.45, -s * 0.02); ctx.lineTo(-s * 0.95, -s * 0.12 + fl * s * 0.05); ctx.lineTo(-s * 0.92, s * 0.1 + fl * s * 0.05); ctx.lineTo(-s * 0.4, s * 0.07); ctx.closePath(); ctx.fill(); ctx.stroke();
-    // body + head + beak
-    ctx.beginPath(); ctx.ellipse(0, 0, s * 0.55, s * 0.2, -0.1, 0, Math.PI * 2); ctx.fill(); ctx.stroke();
-    ctx.beginPath(); ctx.arc(s * 0.58, -s * 0.07, s * 0.14, 0, Math.PI * 2); ctx.fill(); ctx.stroke();
-    ctx.beginPath(); ctx.moveTo(s * 0.68, -s * 0.12); ctx.lineTo(s * 0.9, -s * 0.05); ctx.lineTo(s * 0.68, -s * 0.0); ctx.closePath(); ctx.fill(); ctx.stroke();
-    // wings (far one slightly out of phase)
-    for (var w = 0; w < 2; w++) {
-      var ph2 = w ? phi * 0.7 - 0.15 : phi, L = s * (w ? 1.15 : 1.35), cx = Math.cos(ph2), sy = Math.sin(ph2);
-      ctx.beginPath(); ctx.moveTo(s * 0.18, -s * 0.1);
-      ctx.quadraticCurveTo(s * 0.1 + L * 0.55 * cx * 0.4, -s * 0.1 - L * sy * 0.95, -s * 0.05 + L * 0.2 * cx, -s * 0.1 - L * sy * 1.05 + s * 0.05);
-      ctx.quadraticCurveTo(-s * 0.2 + L * 0.35 * cx, -s * 0.1 - L * sy * 0.35, -s * 0.3, -s * 0.02);
-      ctx.closePath(); ctx.fill(); ctx.stroke();
-    }
-    ctx.restore();
-  }
 
   function frame(t) {
     var dt = Math.min(0.05, (t - last) / 1000); last = t; T = t / 1000;
@@ -177,7 +140,6 @@
 
     if (act) { var n = 90 * (1 + 2 * ie) * dt, c = Math.floor(n); if (Math.random() < n - c) c++; while (c-- > 0) ember(); }
 
-    if (ie > 0.55 && !crow && T > nextCrow) newCrow();
 
     ctx.setTransform(1, 0, 0, 1, 0, 0); ctx.clearRect(0, 0, cv.width, cv.height);
     ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
@@ -228,9 +190,8 @@
       ctx.beginPath(); ctx.arc(q.x, q.y, q.s * 3, 0, Math.PI * 2); ctx.fill();
     }
 
-    if (crow) drawCrow();
 
-    if (act || parts.length || crow || ie > 0.003 || hold > 0 || Math.abs(rx) > 0.05 || Math.abs(ry) > 0.05 || sc > 0.01) requestAnimationFrame(frame);
+    if (act || parts.length || ie > 0.003 || hold > 0 || Math.abs(rx) > 0.05 || Math.abs(ry) > 0.05 || sc > 0.01) requestAnimationFrame(frame);
     else { running = false; tilt.style.transform = ''; ie = 0; L1 = L2 = L3 = 0; trip(); ctx.setTransform(1, 0, 0, 1, 0, 0); ctx.clearRect(0, 0, cv.width, cv.height); }
   }
   function start() { if (!running) { running = true; last = performance.now(); requestAnimationFrame(frame); } }
