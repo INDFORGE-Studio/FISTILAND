@@ -28,9 +28,10 @@ extra_javascript:
   - javascripts/fl-bgfx-v3.js
   - javascripts/fl-join-v1.js
   - javascripts/fl-discord-v1.js
+  - javascripts/fl-logo-v1.js
 
 extra_css:
-  - stylesheets/fistiland-v46.css
+  - stylesheets/fistiland-v47.css
 
 extra:
   social:
