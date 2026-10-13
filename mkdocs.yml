@@ -27,7 +27,7 @@ extra_javascript:
   - javascripts/fl-ip-v1.js
   - javascripts/fl-join-v1.js
   - javascripts/fl-discord-v1.js
-  - javascripts/fl-logo-v10.js
+  - javascripts/fl-logo-v11.js
 
 extra_css:
   - stylesheets/fistiland-v54.css

@@ -48,7 +48,7 @@
   size();
   window.addEventListener('resize', size);
 
-  var act = false, running = false, last = 0, punchAt = -1e9, hold = 0, ie = 0, T = 0, dirty = false, dofOn = false;
+  var act = false, running = false, last = 0, punchAt = -1e9, hold = 0, dwell = 0, ie = 0, T = 0, dirty = false, dofOn = false;
   var trx = 0, tryy = 0, rx = 0, ry = 0, sc = 0;
   var L1 = 0, L2 = 0, L3 = 0;
   var parts = [];
@@ -128,7 +128,8 @@
     var dt = Math.min(0.05, (t - last) / 1000); last = t; T = t / 1000;
     var k = 1 - Math.exp(-dt * (9 - 5 * L1));       // fatigue: the tilt follows the cursor more sluggishly
     rx += (trx - rx) * k; ry += (tryy - ry) * k; sc += ((act ? 1 : 0) - sc) * k;
-    hold = Math.max(0, Math.min(1, hold + (act ? dt / 8 : -dt / 3)));
+    // the classic effect comes first; the hallucination only starts after about 3 s on the logo, then builds up over ~9 s
+    if (act) { dwell += dt; hold = Math.max(hold, clamp01((dwell - 3) / 9)); } else { dwell = Math.max(0, dwell - dt * 3); hold = clamp01(hold - dt / 3); }
     ie = hold * hold * (3 - 2 * hold);
     L1 = clamp01(ie / 0.34); L2 = clamp01((ie - 0.28) / 0.4); L3 = clamp01((ie - 0.6) / 0.4);
     var breathe = 0.03 * ie * Math.sin(T * 2.2);
