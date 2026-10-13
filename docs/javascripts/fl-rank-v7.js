@@ -5,7 +5,7 @@
   //  Master : the hallucination of the home logo, which only exists once Iron is reached
 //  Veteran: treating yourself (click on one of the two remedy boxes of the Mushrooms page), only possible once Master
   // Progress is kept in this browser (localStorage).
-  var KEY = 'fl-eggs-3';
+  var KEY = 'fl-eggs-4';
   var RANKS = ['', 'rookie', 'iron', 'master', 'veteran'];
   var NAMES = { rookie: 'Rookie', iron: 'Iron', master: 'Master', veteran: 'Veteran' };
   var ICONS = {
@@ -36,7 +36,7 @@
     return n;
   }
 
-  try { localStorage.removeItem('fl-eggs'); localStorage.removeItem('fl-eggs-2'); } catch (e) {}
+  try { localStorage.removeItem('fl-eggs'); localStorage.removeItem('fl-eggs-2'); localStorage.removeItem('fl-eggs-3'); } catch (e) {}
   var state = load();
   var badge = null;
 

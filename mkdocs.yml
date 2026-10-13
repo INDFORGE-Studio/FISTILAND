@@ -27,7 +27,7 @@ extra_javascript:
   - javascripts/fl-ip-v1.js
   - javascripts/fl-join-v1.js
   - javascripts/fl-discord-v1.js
-  - javascripts/fl-rank-v6.js
+  - javascripts/fl-rank-v7.js
   - javascripts/fl-trip-v1.js
 
 extra_css:
