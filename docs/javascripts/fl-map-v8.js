@@ -21,6 +21,43 @@
   };
   var lang = (document.documentElement.lang || 'en').slice(0, 2);
   var T = L[lang] || L.en;
+
+  // Wildlife legend: names, groups, biomes and presence labels
+  var LG = {
+    en: { an: ['Rabbit', 'Chicken', 'Horse', 'Donkey', 'Deer', 'Bear', 'Goat', 'Wolf', 'Boar'], grp: ['Non-hostile', 'Dangerous'],
+      bio: ['Mediterranean', 'Meadow', 'Forest', 'Mountain'], pres: ['Urban areas', 'Villages', 'Day', 'Night'],
+      hab: 'Habitats', when: 'Seen', hint: 'Tap an animal to see where it lives on the map. Tap again to clear.', img: 'Open the legend as an image' },
+    fr: { an: ['Lapin', 'Poule', 'Cheval', 'Âne', 'Cerf', 'Ours', 'Chèvre', 'Loup', 'Sanglier'], grp: ['Non hostiles', 'Dangereux'],
+      bio: ['Méditerranéen', 'Prairie', 'Forêt', 'Montagne'], pres: ['Zones urbaines', 'Villages', 'Jour', 'Nuit'],
+      hab: 'Habitats', when: 'Présence', hint: 'Touchez un animal pour voir où il vit sur la carte. Touchez-le à nouveau pour effacer.', img: 'Ouvrir la légende en image' },
+    de: { an: ['Kaninchen', 'Huhn', 'Pferd', 'Esel', 'Hirsch', 'Bär', 'Ziege', 'Wolf', 'Wildschwein'], grp: ['Friedlich', 'Gefährlich'],
+      bio: ['Mittelmeer', 'Wiese', 'Wald', 'Gebirge'], pres: ['Städte', 'Dörfer', 'Tag', 'Nacht'],
+      hab: 'Lebensräume', when: 'Vorkommen', hint: 'Tippe auf ein Tier, um seinen Lebensraum auf der Karte zu sehen. Erneut tippen zum Löschen.', img: 'Legende als Bild öffnen' },
+    es: { an: ['Conejo', 'Gallina', 'Caballo', 'Burro', 'Ciervo', 'Oso', 'Cabra', 'Lobo', 'Jabalí'], grp: ['No hostiles', 'Peligrosos'],
+      bio: ['Mediterráneo', 'Pradera', 'Bosque', 'Montaña'], pres: ['Zonas urbanas', 'Pueblos', 'Día', 'Noche'],
+      hab: 'Hábitats', when: 'Presencia', hint: 'Toca un animal para ver dónde vive en el mapa. Tócalo de nuevo para borrar.', img: 'Abrir la leyenda como imagen' },
+    it: { an: ['Coniglio', 'Gallina', 'Cavallo', 'Asino', 'Cervo', 'Orso', 'Capra', 'Lupo', 'Cinghiale'], grp: ['Non ostili', 'Pericolosi'],
+      bio: ['Mediterraneo', 'Prateria', 'Foresta', 'Montagna'], pres: ['Aree urbane', 'Villaggi', 'Giorno', 'Notte'],
+      hab: 'Habitat', when: 'Presenza', hint: 'Tocca un animale per vedere dove vive sulla mappa. Toccalo di nuovo per cancellare.', img: 'Apri la legenda come immagine' },
+    uk: { an: ['Кролик', 'Курка', 'Кінь', 'Осел', 'Олень', 'Ведмідь', 'Коза', 'Вовк', 'Кабан'], grp: ['Не агресивні', 'Небезпечні'],
+      bio: ['Середземномор’я', 'Луки', 'Ліс', 'Гори'], pres: ['Міста', 'Села', 'День', 'Ніч'],
+      hab: 'Середовища', when: 'Поява', hint: 'Торкніться тварини, щоб побачити, де вона живе на карті. Торкніться ще раз, щоб прибрати.', img: 'Відкрити легенду як зображення' }
+  };
+  var G = LG[lang] || LG.en;
+  // k: icon file, g: group, b: MED PRA FOR MON, p: URB VIL DAY NGT
+  var ANIMALS = [
+    { k: 'rabbit', g: 0, b: [1, 1, 1, 1], p: [1, 1, 1, 1] },
+    { k: 'chicken', g: 0, b: [1, 0, 0, 0], p: [1, 1, 1, 0] },
+    { k: 'horse', g: 0, b: [0, 1, 0, 0], p: [1, 1, 1, 0] },
+    { k: 'donkey', g: 0, b: [1, 0, 0, 0], p: [0, 1, 1, 0] },
+    { k: 'deer', g: 0, b: [0, 1, 1, 1], p: [0, 0, 1, 1] },
+    { k: 'bear', g: 1, b: [0, 1, 1, 1], p: [0, 0, 0, 1] },
+    { k: 'goat', g: 1, b: [1, 0, 0, 1], p: [1, 1, 1, 0] },
+    { k: 'wolf', g: 1, b: [0, 1, 1, 1], p: [0, 0, 0, 1] },
+    { k: 'boar', g: 1, b: [1, 1, 1, 0], p: [1, 1, 1, 1] }
+  ];
+  // overlay colour of each biome (MED, PRA, FOR, MON)
+  var BIOME_RGB = [[0, 255, 248], [255, 174, 0], [105, 212, 0], [255, 255, 255]];
   var MAX = 8;
   var SPECIES = { bear: '#a82a1c', deer: '#c9892a', wolf: '#4f6f8f', boar: '#6a8a3a' };
   var HABITATS = ['#5d7a78', '#b0752a', '#55672f', '#a89d8a'];
@@ -144,6 +181,145 @@
     });
   }
 
+  // Wildlife legend: one row per animal. Tapping an animal shows where it lives (habitat overlay kept only for its biomes).
+  function initLegend(root, stage, legendUrl) {
+    var box = root.querySelector('.fl-leg');
+    var base = (root.getAttribute('data-habitats') || '').split('?')[0].replace(/[^\/]*$/, '') + 'animals/';
+    var sw = HABITATS;
+    function dots(b) {
+      return b.map(function (v, i) { return '<i' + (v ? ' class="on" style="background:' + sw[i] + '"' : '') + '></i>'; }).join('');
+    }
+    function detail(a) {
+      var hb = a.b.map(function (v, i) { return v ? '<span class="fl-chip"><i style="background:' + sw[i] + '"></i>' + G.bio[i] + '</span>' : ''; }).join('');
+      var pr = a.p.map(function (v, i) { return '<span class="fl-chip ' + (v ? 'is-yes' : 'is-no') + '">' + (v ? '✓ ' : '– ') + G.pres[i] + '</span>'; }).join('');
+      return '<div><small>' + G.hab + '</small>' + hb + '</div><div><small>' + G.when + '</small>' + pr + '</div>';
+    }
+    var h = '<b class="fl-leg__t">' + T.guide + '</b><p class="fl-leg__hint">' + G.hint + '</p><div class="fl-leg__bio">';
+    sw.forEach(function (c, i) {
+      h += '<button type="button" class="fl-bio" data-b="' + i + '" aria-pressed="false"><i style="background:' + c + '"></i>' + G.bio[i] + '</button>';
+    });
+    h += '</div><div class="fl-leg__info" aria-live="polite"></div>';
+    G.grp.forEach(function (gname, gi) {
+      h += '<div class="fl-leg__g"><h5>' + gname + '</h5><div class="fl-leg__rows">';
+      ANIMALS.forEach(function (a, ai) {
+        if (a.g !== gi) return;
+        var ext = a.k === 'donkey' ? 'svg' : 'png';
+        h += '<div class="fl-an" data-a="' + ai + '"><button type="button" class="fl-an__hd" aria-expanded="false">' +
+          '<img src="' + base + a.k + '-v1.' + ext + '" alt="" width="40" height="40" draggable="false">' +
+          '<span class="n">' + G.an[ai] + '</span><span class="d">' + dots(a.b) + '</span></button>' +
+          '<div class="fl-an__bd">' + detail(a) + '</div></div>';
+      });
+      h += '</div></div>';
+    });
+    h += '<a class="fl-leg__img" href="' + legendUrl + '" target="_blank" rel="noopener">' + G.img + '</a>';
+    box.innerHTML = h;
+
+    var info = box.querySelector('.fl-leg__info');
+    var hab = root.querySelector('input[data-l="habitats"]');
+    var selA = -1, selB = [0, 0, 0, 0], auto = false;
+    var CW = 1024, cls = null, src = null, cv = null, ctx = null, failed = false, loading = false;
+
+    function ensureLayer(on) {
+      if (on && !hab.checked) { hab.checked = true; hab.dispatchEvent(new Event('change')); auto = true; }
+      else if (!on && auto && hab.checked) { hab.checked = false; hab.dispatchEvent(new Event('change')); auto = false; }
+      else if (!on) { auto = false; }
+    }
+    // Reads the habitat picture once, at reduced size, and tags every pixel with its biome.
+    function prepare(done) {
+      if (cls) { done(); return; }
+      if (failed || loading) return;
+      var holder = root.querySelector('img.fl-island__ov[data-l="habitats"]');
+      var im = new Image();
+      loading = true;
+      function run() {
+        try {
+          var c = document.createElement('canvas');
+          c.width = c.height = CW;
+          var x = c.getContext('2d', { willReadFrequently: true });
+          x.drawImage(im, 0, 0, CW, CW);
+          src = x.getImageData(0, 0, CW, CW);
+          var d = src.data, n = CW * CW, t = new Uint8Array(n);
+          for (var p = 0; p < n; p++) {
+            var q = p * 4;
+            if (d[q + 3] < 6) continue;
+            var best = 0, bd = 1e9;
+            for (var k = 0; k < 4; k++) {
+              var dr = d[q] - BIOME_RGB[k][0], dg = d[q + 1] - BIOME_RGB[k][1], db = d[q + 2] - BIOME_RGB[k][2];
+              var dd = dr * dr + dg * dg + db * db;
+              if (dd < bd) { bd = dd; best = k; }
+            }
+            t[p] = best + 1;
+          }
+          cls = t;
+          cv = document.createElement('canvas');
+          cv.width = cv.height = CW;
+          cv.className = 'fl-island__ov';
+          cv.setAttribute('data-l', 'habitats');
+          if (!hab.checked) cv.classList.add('is-off');
+          ctx = cv.getContext('2d');
+          holder.parentNode.insertBefore(cv, holder.nextSibling);
+          loading = false;
+          done();
+        } catch (e) { failed = true; loading = false; }
+      }
+      im.onload = run;
+      im.onerror = function () { failed = true; loading = false; };
+      im.src = (root.getAttribute('data-habitats') || '').replace(/wildlife-habitats-overlay.png/, 'wildlife-habitats-1024-v1.png');
+    }
+    function paint() {
+      var any = selB.indexOf(1) >= 0;
+      root.classList.toggle('is-hab-filter', any && !!cls);
+      if (!any || !cls) return;
+      var out = ctx.createImageData(CW, CW), o = out.data, s = src.data, n = CW * CW;
+      for (var p = 0; p < n; p++) {
+        var c = cls[p];
+        if (c && selB[c - 1]) {
+          var q = p * 4;
+          o[q] = s[q]; o[q + 1] = s[q + 1]; o[q + 2] = s[q + 2];
+          o[q + 3] = Math.min(255, s[q + 3] * 1.9 + 25);
+        }
+      }
+      ctx.putImageData(out, 0, 0);
+    }
+    function render() {
+      box.querySelectorAll('.fl-an').forEach(function (r) {
+        var on = (+r.getAttribute('data-a')) === selA;
+        r.classList.toggle('is-sel', on);
+        r.classList.toggle('is-dim', selA >= 0 && !on);
+        r.querySelector('.fl-an__hd').setAttribute('aria-expanded', on ? 'true' : 'false');
+      });
+      box.querySelectorAll('.fl-bio').forEach(function (b) {
+        var on = !!selB[+b.getAttribute('data-b')];
+        b.classList.toggle('is-on', on);
+        b.setAttribute('aria-pressed', on ? 'true' : 'false');
+      });
+      info.innerHTML = selA >= 0 ? '<b>' + G.an[selA] + '</b>' + detail(ANIMALS[selA]) : '';
+      box.classList.toggle('has-sel', selA >= 0);
+    }
+    function apply() {
+      render();
+      if (selB.indexOf(1) < 0) { root.classList.remove('is-hab-filter'); ensureLayer(false); return; }
+      ensureLayer(true);
+      prepare(paint);
+    }
+    box.addEventListener('click', function (e) {
+      var hd = e.target.closest('.fl-an__hd');
+      if (hd) {
+        var ai = +hd.parentNode.getAttribute('data-a');
+        if (selA === ai) { selA = -1; selB = [0, 0, 0, 0]; } else { selA = ai; selB = ANIMALS[ai].b.slice(); }
+        apply();
+        return;
+      }
+      var bi = e.target.closest('.fl-bio');
+      if (bi) {
+        var i = +bi.getAttribute('data-b');
+        selA = -1;
+        selB[i] = selB[i] ? 0 : 1;
+        apply();
+      }
+    });
+  }
+
   // The island map: satellite base picture, two switchable overlays and the wildlife legend.
   function initIsland(root) {
     var base = root.getAttribute('data-base');
@@ -169,7 +345,7 @@
       '<img class="fl-island__ov" data-l="mutants" alt="" draggable="false" src="' + root.getAttribute('data-mutants') + '">' +
       '</div></div>' +
       '<aside class="fl-island__side">' +
-      '<a href="' + legend + '" target="_blank" rel="noopener" title="' + T.openLegend + '"><img class="fl-island__legend" alt="' + T.guide + '" src="' + legend + '"></a>' +
+      '<div class="fl-leg"></div>' +
       '<div class="fl-island__mut" data-l="mutants"><b>' + T.mut + '</b><ul>' + mutRows + '</ul></div>' +
       (root.getAttribute('data-bunkers') ? '<div class="fl-island__mut" data-l="bunkers"><b>' + T.bk + '</b><p class="fl-island__note">' + T.bkNote + '</p></div>' : '') +
       '<div class="fl-island__mut fl-island__poi" data-l="poi" hidden><b>' + T.poi + '</b><ul></ul><p>' + T.approx + '</p></div>' +
@@ -191,6 +367,7 @@
       im.src = base;
     }
     zoomer(box, stage, root, loadFull, root.querySelector(".fl-island__bar"));
+    initLegend(root, stage, legend);
 
     var poiUrl = root.getAttribute('data-poi');
     if (poiUrl) {
