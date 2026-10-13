@@ -749,3 +749,5 @@ html.fl-dof .fl-home > :not(.fl-hero) {
   filter: blur(var(--fl-blur, 0px));
   transform: translate(var(--fl-sx, 0px), var(--fl-sy, 0px)) rotate(var(--fl-sr, 0deg));
 }
+html.fl-dof.fl-warp .fl-home .fl-hero > :not(.fl-logo-fx),
+html.fl-dof.fl-warp .fl-home > :not(.fl-hero) { filter: url(#fl-warp) blur(var(--fl-blur, 0px)); }

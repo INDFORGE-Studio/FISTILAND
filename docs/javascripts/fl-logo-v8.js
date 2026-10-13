@@ -31,9 +31,10 @@
     '<feColorMatrix in="d" values="0 0 0 0 0  0 1 0 0 0  0 0 0 0 0  0 0 0 1 0" result="g"/>' +
     '<feColorMatrix in="d" values="0 0 0 0 0  0 0 0 0 0  0 0 1 0 0  0 0 0 1 0" result="b"/>' +
     '<feOffset id="fl-ca-r" in="r" dx="0" dy="0" result="ro"/><feOffset id="fl-ca-b" in="b" dx="0" dy="0" result="bo"/>' +
-    '<feBlend in="ro" in2="g" mode="screen" result="rg"/><feBlend in="rg" in2="bo" mode="screen"/></filter>';
+    '<feBlend in="ro" in2="g" mode="screen" result="rg"/><feBlend in="rg" in2="bo" mode="screen"/></filter>' +
+    '<filter id="fl-warp" x="-5%" y="-5%" width="110%" height="110%"><feTurbulence id="fl-warp-t" type="fractalNoise" baseFrequency="0.004 0.009" numOctaves="1" seed="9" result="w"/><feDisplacementMap id="fl-warp-d" in="SourceGraphic" in2="w" scale="0" xChannelSelector="R" yChannelSelector="B"/></filter>';
   document.body.appendChild(svg);
-  var melT = svg.querySelector('#fl-melt-t'), melD = svg.querySelector('#fl-melt-d'), caR = svg.querySelector('#fl-ca-r'), caB = svg.querySelector('#fl-ca-b');
+  var melT = svg.querySelector('#fl-melt-t'), melD = svg.querySelector('#fl-melt-d'), caR = svg.querySelector('#fl-ca-r'), caB = svg.querySelector('#fl-ca-b'), warpT = svg.querySelector('#fl-warp-t'), warpD = svg.querySelector('#fl-warp-d');
   var root = document.documentElement, style = root.style;
 
   var W = 0, H = 0, VW = 0, VH = 0, LX = 0, LY = 0, dpr = 1;
@@ -99,6 +100,13 @@
       // the rest of the page loses focus and starts to sway (depth of field, disorientation)
       if (L2 > 0.02 || L3 > 0.02) {
         if (!dofOn) { root.classList.add('fl-dof'); dofOn = true; }
+        // rainbow waves bend the surroundings (desktop only: the displacement filter is too heavy for phones)
+        var wp = VW >= 700 && (L2 > 0.25 || L3 > 0.02);
+        root.classList.toggle('fl-warp', wp);
+        if (wp) {
+          warpD.setAttribute('scale', (4 + 16 * L2 + 14 * L3).toFixed(1));
+          warpT.setAttribute('baseFrequency', (0.004 + 0.0015 * Math.sin(T * 0.6)).toFixed(4) + ' ' + (0.009 + 0.003 * Math.cos(T * 0.45)).toFixed(4));
+        }
         style.setProperty('--fl-blur', (L2 * 3.2 * (0.6 + 0.4 * Math.sin(T * 0.8 + 1))).toFixed(2) + 'px');
         style.setProperty('--fl-sx', (Math.sin(T * 0.9) * 7 * L3 * small).toFixed(1) + 'px');
         style.setProperty('--fl-sy', (Math.cos(T * 0.7) * 4 * L3 * small).toFixed(1) + 'px');
@@ -110,7 +118,7 @@
       dirty = false;
     }
     if (dofOn && L2 <= 0.02 && L3 <= 0.02) {
-      root.classList.remove('fl-dof'); dofOn = false;
+      root.classList.remove('fl-dof'); root.classList.remove('fl-warp'); dofOn = false;
       style.removeProperty('--fl-blur'); style.removeProperty('--fl-sx'); style.removeProperty('--fl-sy'); style.removeProperty('--fl-sr');
     }
   }
@@ -192,6 +200,19 @@
       gr.addColorStop(0, 'hsla(' + hu.toFixed(0) + ',100%,55%,0)');
       gr.addColorStop(1, 'hsla(' + ((hu + 90) % 360).toFixed(0) + ',100%,50%,' + (0.3 * ie).toFixed(3) + ')');
       ctx.fillStyle = gr; ctx.fillRect(0, 0, VW, VH);
+    }
+
+    // rainbow waves rolling over the whole screen (stage 2 and 3)
+    if (L2 > 0.01) {
+      var N = 12, bh = VH / N, al = 0.07 * L2 + 0.05 * L3, step = Math.max(16, Math.round(VW / 48));
+      for (var b = -1; b <= N; b++) {
+        var yc = b * bh + (T * 25) % bh + Math.sin(T * 0.8 + b * 0.7) * bh * 0.5, amp = bh * (0.25 + 0.35 * L3), kx = 0.006 + 0.002 * Math.sin(T * 0.3 + b);
+        ctx.fillStyle = 'hsla(' + (((b * 30 + T * 40) % 360 + 360) % 360).toFixed(0) + ',100%,55%,' + al.toFixed(3) + ')';
+        ctx.beginPath();
+        for (var x = 0; x <= VW + step; x += step) ctx.lineTo(x, yc + Math.sin(x * kx + T * 1.5 + b) * amp);
+        for (var x2 = VW + step; x2 >= 0; x2 -= step) ctx.lineTo(x2, yc + bh * 0.9 + Math.sin(x2 * kx + T * 1.5 + b + 0.6) * amp);
+        ctx.closePath(); ctx.fill();
+      }
     }
 
     for (var j = parts.length - 1; j >= 0; j--) {
