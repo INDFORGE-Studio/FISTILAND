@@ -186,19 +186,40 @@
     var box = root.querySelector('.fl-leg');
     var base = (root.getAttribute('data-habitats') || '').split('?')[0].replace(/[^\/]*$/, '') + 'animals/';
     var sw = HABITATS;
-    function dots(b) {
-      return b.map(function (v, i) { return '<i' + (v ? ' class="on" style="background:' + sw[i] + '"' : '') + '></i>'; }).join('');
+    // line icons: biomes (MED, PRA, FOR, MON) then presence (URB, VIL, DAY, NGT)
+    var IC = [
+      '<path d="M2.5 8.5c2.4 0 2.4-2 4.8-2s2.4 2 4.8 2 2.4-2 4.8-2 2.4 2 4.8 2M2.5 13.5c2.4 0 2.4-2 4.8-2s2.4 2 4.8 2 2.4-2 4.8-2 2.4 2 4.8 2M2.5 18.5c2.4 0 2.4-2 4.8-2s2.4 2 4.8 2 2.4-2 4.8-2 2.4 2 4.8 2"/>',
+      '<path d="M4.5 21c0-6 1-10.500 3-14M12 21V4M19.500 21c0-6-1-10.500-3-14"/><path d="M2.500 21h19"/>',
+      '<path d="M12 2.500 6.500 10.500h3L4.500 17h5.500v4.500h4V17h5.500l-5-6.500h3z" fill="currentColor" stroke="none"/>',
+      '<path d="M1.500 20.500 9 7l4 7 3-4 7.500 10.500z" fill="currentColor" stroke="none"/>',
+      '<path d="M4 21V9h6v12M10 21V3h10v18M13.500 7h3M13.500 11h3M13.500 15h3M7 13v0"/>',
+      '<path d="M3 11.500 12 3.500l9 8M5.500 10v11h13V10M10 21v-6h4v6"/>',
+      '<circle cx="12" cy="12" r="4"/><path d="M12 2.500v3M12 18.500v3M2.500 12h3M18.500 12h3M5.300 5.300l2.100 2.100M16.600 16.600l2.100 2.100M18.700 5.300l-2.100 2.100M7.400 16.600l-2.100 2.100"/>',
+      '<path d="M20.500 14.500A8.500 8.500 0 0 1 9.500 3.500a8.500 8.500 0 1 0 11 11z" fill="currentColor" stroke="none"/>'
+    ];
+    function ico(i) { return '<svg viewBox="0 0 24 24" aria-hidden="true">' + IC[i] + '</svg>'; }
+    var NAMES = G.bio.concat(G.pres);
+    function marks(a) {
+      var m = '';
+      a.b.forEach(function (v, i) { m += '<span class="m b' + i + (v ? ' on' : '') + '" title="' + G.bio[i] + '">' + ico(i) + '</span>'; });
+      m += '<span class="sp"></span>';
+      a.p.forEach(function (v, i) { m += '<span class="m p' + (v ? ' on' : '') + '" title="' + G.pres[i] + '">' + ico(4 + i) + '</span>'; });
+      return m;
     }
     function detail(a) {
-      var hb = a.b.map(function (v, i) { return v ? '<span class="fl-chip"><i style="background:' + sw[i] + '"></i>' + G.bio[i] + '</span>' : ''; }).join('');
-      var pr = a.p.map(function (v, i) { return '<span class="fl-chip ' + (v ? 'is-yes' : 'is-no') + '">' + (v ? '✓ ' : '– ') + G.pres[i] + '</span>'; }).join('');
+      var hb = a.b.map(function (v, i) { return v ? '<span class="fl-chip b' + i + '">' + ico(i) + G.bio[i] + '</span>' : ''; }).join('');
+      var pr = a.p.map(function (v, i) { return '<span class="fl-chip ' + (v ? 'is-yes' : 'is-no') + '">' + ico(4 + i) + G.pres[i] + '</span>'; }).join('');
       return '<div><small>' + G.hab + '</small>' + hb + '</div><div><small>' + G.when + '</small>' + pr + '</div>';
     }
-    var h = '<b class="fl-leg__t">' + T.guide + '</b><p class="fl-leg__hint">' + G.hint + '</p><div class="fl-leg__bio">';
+    var h = '<b class="fl-leg__t">' + T.guide + '</b><p class="fl-leg__hint">' + G.hint + '</p>';
+    // column heads: the four biome icons filter the map, the four presence icons are labels
+    h += '<div class="fl-leg__cap"><span>' + G.hab + '</span><span>' + G.when + '</span></div><div class="fl-leg__bio">';
     sw.forEach(function (c, i) {
-      h += '<button type="button" class="fl-bio" data-b="' + i + '" aria-pressed="false"><i style="background:' + c + '"></i>' + G.bio[i] + '</button>';
+      h += '<button type="button" class="fl-bio b' + i + '" data-b="' + i + '" aria-pressed="false" title="' + G.bio[i] + '">' + ico(i) + '<span class="nm">' + G.bio[i] + '</span></button>';
     });
-    h += '</div><div class="fl-leg__info" aria-live="polite"></div>';
+    h += '<span class="sp"></span>';
+    G.pres.forEach(function (nm, i) { h += '<span class="fl-pr" title="' + nm + '">' + ico(4 + i) + '</span>'; });
+    h += '</div>';
     G.grp.forEach(function (gname, gi) {
       h += '<div class="fl-leg__g"><h5>' + gname + '</h5><div class="fl-leg__rows">';
       ANIMALS.forEach(function (a, ai) {
@@ -206,12 +227,11 @@
         var ext = a.k === 'donkey' ? 'svg' : 'png';
         h += '<div class="fl-an" data-a="' + ai + '"><button type="button" class="fl-an__hd" aria-expanded="false">' +
           '<img src="' + base + a.k + '-v1.' + ext + '" alt="" width="40" height="40" draggable="false">' +
-          '<span class="n">' + G.an[ai] + '</span><span class="d">' + dots(a.b) + '</span></button>' +
-          '<div class="fl-an__bd">' + detail(a) + '</div></div>';
+          '<span class="n">' + G.an[ai] + '</span><span class="d">' + marks(a) + '</span></button></div>';
       });
       h += '</div></div>';
     });
-    h += '<a class="fl-leg__img" href="' + legendUrl + '" target="_blank" rel="noopener">' + G.img + '</a>';
+    h += '<div class="fl-leg__info" aria-live="polite"></div>';
     box.innerHTML = h;
 
     var info = box.querySelector('.fl-leg__info');
@@ -465,6 +485,14 @@
       });
     });
   }
+
+  // Title tooltips (hover on a PC, tap on a phone)
+  document.querySelectorAll('.fl-tip').forEach(function (t) {
+    t.addEventListener('click', function (e) { e.stopPropagation(); t.classList.toggle('is-open'); });
+  });
+  document.addEventListener('click', function () {
+    document.querySelectorAll('.fl-tip.is-open').forEach(function (t) { t.classList.remove('is-open'); });
+  });
 
   document.querySelectorAll('.fl-map[data-src]').forEach(initSvg);
   document.querySelectorAll('.fl-island[data-base]').forEach(initIsland);

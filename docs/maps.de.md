@@ -16,9 +16,7 @@
 </div>
 
 
-## :material-map-search: Inselkarte
-
-Schalten Sie die Ebenen ein und aus. Die Ebene der Lebensräume zeigt die vier Biome: Mediterran (MED), Wiese (PRA), Wald (FOR) und Gebirge (MON). In der Tabelle hat jedes Tier Punkte für seine Biome, Haken für Städte (URB) und Dörfer (VIL) sowie Haken für Tag (DAY) und Nacht (NGT). Die Zonen sind ungefähr, genaue Spawnpunkte sind nicht gemeint. Mutanten-Sichtungen sind Gebiete, keine genauen Punkte: Die Positionen sind auf etwa einen Sektor genau. Die Sektoren laufen von links nach rechts von 4 bis 0 und von oben nach unten von D bis Z.
+## :material-map-search: Inselkarte { .fl-tip tabindex="0" data-tip="Schalten Sie die Ebenen ein und aus. Die Ebene der Lebensräume zeigt die vier Biome: Mediterran, Wiese, Wald und Gebirge. In der Legende zeigt jedes Tier leuchtende Symbole für seine Biome, Städte, Dörfer, Tag und Nacht. Die Zonen sind ungefähr, genaue Spawnpunkte sind nicht gemeint. Mutanten-Sichtungen sind Gebiete, keine genauen Punkte: Die Positionen sind auf etwa einen Sektor genau. Die Sektoren laufen von links nach rechts von 4 bis 0 und von oben nach unten von D bis Z." }
 
 <div class="fl-island" data-base="/FISTILAND/assets/maps/SatMap_SCUM.jpg?v=1" data-preview="/FISTILAND/assets/maps/satmap-preview.jpg?v=1" data-habitats="/FISTILAND/assets/maps/wildlife-habitats-overlay.png?v=2" data-mutants="/FISTILAND/assets/maps/mutants-sightings-overlay.png?v=2" data-poi="/FISTILAND/assets/maps/poi.json?v=3" data-bunkers="/FISTILAND/assets/maps/bunkers.json?v=1" data-legend="/FISTILAND/assets/maps/wildlife-legend-{lang}.png?v=2"></div>
 <p class="fl-map-hint">Zoomen mit den Schaltflächen, Strg + Mausrad oder zwei Fingern. Doppelklick zum Vergrößern, ziehen zum Verschieben.</p>

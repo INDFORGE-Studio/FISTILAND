@@ -16,9 +16,7 @@
 </div>
 
 
-## :material-map-search: Карта острова
-
-Вмикайте й вимикайте шари. Шар середовищ показує чотири біоми: середземноморський (MED), луг (PRA), ліс (FOR) і гори (MON). У таблиці в кожної тварини є крапки для її біомів, галочки для міст (URB) і сіл (VIL) та галочки для дня (DAY) і ночі (NGT). Зони приблизні, точні місця появи не вказано. Мутанти на карті — це зони, а не точні точки: позиції точні приблизно до одного сектора. Сектори йдуть від 4 до 0 зліва направо та від D до Z зверху вниз.
+## :material-map-search: Карта острова { .fl-tip tabindex="0" data-tip="Вмикайте й вимикайте шари. Шар середовищ показує чотири біоми: середземноморський, луг, ліс і гори. У легенді кожна тварина має підсвічені значки для її біомів, міст, сіл, дня і ночі. Зони приблизні, точні місця появи не вказано. Мутанти на карті — це зони, а не точні точки: позиції точні приблизно до одного сектора. Сектори йдуть від 4 до 0 зліва направо та від D до Z зверху вниз." }
 
 <div class="fl-island" data-base="/FISTILAND/assets/maps/SatMap_SCUM.jpg?v=1" data-preview="/FISTILAND/assets/maps/satmap-preview.jpg?v=1" data-habitats="/FISTILAND/assets/maps/wildlife-habitats-overlay.png?v=2" data-mutants="/FISTILAND/assets/maps/mutants-sightings-overlay.png?v=2" data-poi="/FISTILAND/assets/maps/poi.json?v=3" data-bunkers="/FISTILAND/assets/maps/bunkers.json?v=1" data-legend="/FISTILAND/assets/maps/wildlife-legend-{lang}.png?v=2"></div>
 <p class="fl-map-hint">Масштабуйте кнопками, Ctrl + коліщатко або двома пальцями. Подвійний клік — збільшити, перетягніть, щоб зсунути.</p>

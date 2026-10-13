@@ -16,9 +16,7 @@
 </div>
 
 
-## :material-map-search: Carte de l'île
-
-Activez ou désactivez les calques. Le calque des habitats montre les quatre biomes : méditerranéen (MED), prairie (PRA), forêt (FOR) et montagne (MON). Dans le tableau, chaque animal a des points pour ses biomes, des coches pour les zones urbaines (URB) et les villages (VIL), et des coches pour le jour (DAY) et la nuit (NGT). Les zones sont approximatives et aucun point d'apparition exact n'est revendiqué. Les mutants repérés sont des zones, pas des points exacts : les positions sont justes à environ un secteur près. Les secteurs vont de 4 à 0 de gauche à droite et de D à Z de haut en bas.
+## :material-map-search: Carte de l'île { .fl-tip tabindex="0" data-tip="Activez ou désactivez les calques. Le calque des habitats montre les quatre biomes : méditerranéen, prairie, forêt et montagne. Dans la légende, chaque animal affiche des icônes allumées pour ses biomes, les zones urbaines, les villages, le jour et la nuit. Les zones sont approximatives et aucun point d'apparition exact n'est revendiqué. Les mutants repérés sont des zones, pas des points exacts : les positions sont justes à environ un secteur près. Les secteurs vont de 4 à 0 de gauche à droite et de D à Z de haut en bas." }
 
 <div class="fl-island" data-base="/FISTILAND/assets/maps/SatMap_SCUM.jpg?v=1" data-preview="/FISTILAND/assets/maps/satmap-preview.jpg?v=1" data-habitats="/FISTILAND/assets/maps/wildlife-habitats-overlay.png?v=2" data-mutants="/FISTILAND/assets/maps/mutants-sightings-overlay.png?v=2" data-poi="/FISTILAND/assets/maps/poi.json?v=3" data-bunkers="/FISTILAND/assets/maps/bunkers.json?v=1" data-legend="/FISTILAND/assets/maps/wildlife-legend-{lang}.png?v=2"></div>
 <p class="fl-map-hint">Zoomez avec les boutons, Ctrl + molette ou deux doigts. Double-clic pour zoomer, glissez pour déplacer.</p>

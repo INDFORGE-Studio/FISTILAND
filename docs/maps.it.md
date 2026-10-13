@@ -16,9 +16,7 @@
 </div>
 
 
-## :material-map-search: Mappa dell'isola
-
-Attiva o disattiva i livelli. Il livello degli habitat mostra i quattro biomi: mediterraneo (MED), prateria (PRA), foresta (FOR) e montagna (MON). Nella tabella, ogni animale ha punti per i suoi biomi, spunte per le zone urbane (URB) e i villaggi (VIL), e spunte per il giorno (DAY) e la notte (NGT). Le zone sono approssimative e non si indicano punti di comparsa esatti. I mutanti avvistati sono aree, non punti esatti: le posizioni sono precise entro circa un settore. I settori vanno da 4 a 0 da sinistra a destra e da D a Z dall'alto in basso.
+## :material-map-search: Mappa dell'isola { .fl-tip tabindex="0" data-tip="Attiva o disattiva i livelli. Il livello degli habitat mostra i quattro biomi: mediterraneo, prateria, foresta e montagna. Nella legenda, ogni animale mostra icone accese per i suoi biomi, le zone urbane, i villaggi, il giorno e la notte. Le zone sono approssimative e non si indicano punti di comparsa esatti. I mutanti avvistati sono aree, non punti esatti: le posizioni sono precise entro circa un settore. I settori vanno da 4 a 0 da sinistra a destra e da D a Z dall'alto in basso." }
 
 <div class="fl-island" data-base="/FISTILAND/assets/maps/SatMap_SCUM.jpg?v=1" data-preview="/FISTILAND/assets/maps/satmap-preview.jpg?v=1" data-habitats="/FISTILAND/assets/maps/wildlife-habitats-overlay.png?v=2" data-mutants="/FISTILAND/assets/maps/mutants-sightings-overlay.png?v=2" data-poi="/FISTILAND/assets/maps/poi.json?v=3" data-bunkers="/FISTILAND/assets/maps/bunkers.json?v=1" data-legend="/FISTILAND/assets/maps/wildlife-legend-{lang}.png?v=2"></div>
 <p class="fl-map-hint">Ingrandisci con i pulsanti, Ctrl + rotella o due dita. Doppio clic per ingrandire, trascina per spostare.</p>
