@@ -17,7 +17,7 @@ hide:
   <div><b>EU</b><span>Region</span></div>
   <div><b>PvP</b><span>Full</span></div>
   <div><b>x5</b><span>Loot</span></div>
-  <div><b>10</b><span>Squad max</span></div>
+  <div><b>10</b><span>Squad</span></div>
 </div>
 </div>
 

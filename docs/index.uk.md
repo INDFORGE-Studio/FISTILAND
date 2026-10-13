@@ -17,7 +17,7 @@ hide:
   <div><b>EU</b><span>Регіон</span></div>
   <div><b>PvP</b><span>Повний</span></div>
   <div><b>x5</b><span>Луту</span></div>
-  <div><b>10</b><span>Макс. загін</span></div>
+  <div><b>10</b><span>Загін</span></div>
 </div>
 </div>
 
