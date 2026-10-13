@@ -77,7 +77,7 @@ Jede Datei gibt es in zwei Versionen, damit du sie vergleichen kannst. **FISTILA
 | Datei | Welche | Was es ist |
 |---|---|---|
 | [ServerSettings_FISTILAND.ini](downloads/ServerSettings_FISTILAND.ini){ download="ServerSettings_FISTILAND.ini" } | <span class="fl-st fl-wh-fl">:material-shield-star: FISTILAND</span> | Die Einstellungen des FISTILAND-Servers. |
-| [ServerSettings_SCUM.ini](downloads/ServerSettings_SCUM.ini){ download="ServerSettings_SCUM.ini" } | <span class="fl-st fl-wh-sc">:material-gamepad-variant: SCUM</span> | Die Datei, mit der ein neuer gemieteter Server startet, unverändert. |
+| [ServerSettings_SCUM.ini](downloads/ServerSettings_SCUM.ini){ download="ServerSettings_SCUM.ini" } | <span class="fl-st fl-wh-sc">:material-gamepad-variant: SCUM</span> | Die Standardeinstellungen. |
 | [EconomyOverride_FISTILAND.json](downloads/EconomyOverride_FISTILAND.json){ download="EconomyOverride_FISTILAND.json" } | <span class="fl-st fl-wh-fl">:material-shield-star: FISTILAND</span> | Händlereinstellungen von FISTILAND: keine Fame-Anforderung, Händler immer mit Ware und Geld, feste Preise. |
 | [EconomyOverride_SCUM.json](downloads/EconomyOverride_SCUM.json){ download="EconomyOverride_SCUM.json" } | <span class="fl-st fl-wh-sc">:material-gamepad-variant: SCUM</span> | Die Händlerdatei mit den Startwerten des Spiels. |
 | [SCUM_item_codes_1.3.4.2.txt](downloads/SCUM_item_codes_1.3.4.2.txt){ download="SCUM_item_codes_1.3.4.2.txt" } | <span class="fl-st fl-wh-da">:material-database: Daten</span> | Alle 2.572 Item-Codes der Spielversion 1.3.4.2, einer pro Zeile (aus dem Befehl `#ListItems`). |

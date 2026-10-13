@@ -13,7 +13,7 @@ Names are shown without the `scum.` prefix. The category pages explain the setti
 
 | File | Which one | What it is |
 |---|---|---|
-| [ServerSettings_SCUM.ini](../downloads/ServerSettings_SCUM.ini){ download="ServerSettings_SCUM.ini" } | <span class="fl-st fl-wh-sc">:material-gamepad-variant: SCUM</span> | The file a new hosted server starts with, untouched. |
+| [ServerSettings_SCUM.ini](../downloads/ServerSettings_SCUM.ini){ download="ServerSettings_SCUM.ini" } | <span class="fl-st fl-wh-sc">:material-gamepad-variant: SCUM</span> | The default settings. |
 | [ServerSettings_FISTILAND.ini](../downloads/ServerSettings_FISTILAND.ini){ download="ServerSettings_FISTILAND.ini" } | <span class="fl-st fl-wh-fl">:material-shield-star: FISTILAND</span> | The settings of the FISTILAND server. |
 
 

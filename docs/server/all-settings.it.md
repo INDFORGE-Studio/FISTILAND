@@ -13,7 +13,7 @@ I nomi sono mostrati senza il prefisso `scum.`. Le pagine per categoria spiegano
 
 | File | Quale | Cos'è |
 |---|---|---|
-| [ServerSettings_SCUM.ini](../downloads/ServerSettings_SCUM.ini){ download="ServerSettings_SCUM.ini" } | <span class="fl-st fl-wh-sc">:material-gamepad-variant: SCUM</span> | Il file con cui parte un nuovo server a noleggio, intatto. |
+| [ServerSettings_SCUM.ini](../downloads/ServerSettings_SCUM.ini){ download="ServerSettings_SCUM.ini" } | <span class="fl-st fl-wh-sc">:material-gamepad-variant: SCUM</span> | Le impostazioni predefinite. |
 | [ServerSettings_FISTILAND.ini](../downloads/ServerSettings_FISTILAND.ini){ download="ServerSettings_FISTILAND.ini" } | <span class="fl-st fl-wh-fl">:material-shield-star: FISTILAND</span> | Le impostazioni del server FISTILAND. |
 
 
