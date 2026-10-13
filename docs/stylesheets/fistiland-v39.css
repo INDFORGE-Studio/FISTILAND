@@ -621,3 +621,22 @@ html[lang="uk"] .md-header__option .md-select > button::before { background-imag
 .fl-mush__stats .erb { font: 600 .56rem Oswald, sans-serif; letter-spacing: .04em; color: #ff7a33; font-style: normal; }
 .fl-mush__stats em { font-style: normal; font-family: Oswald, sans-serif; font-weight: 500; letter-spacing: .03em; color: #fff; white-space: nowrap; }
 .fl-mush__stats span { line-height: 1.2; }
+
+/* ---- Phones: the home page fits the screen; cards are full width and tappable ---- */
+.fl-stats > div { min-width: 0; }
+.fl-stats span { overflow-wrap: anywhere; }
+.fl-card { -webkit-tap-highlight-color: rgba(232, 99, 28, .25); touch-action: manipulation; }
+@media (hover: none) { .fl-card:hover { transform: none; } }
+@media (max-width: 40em) {
+  .fl-stats { grid-template-columns: repeat(5, minmax(0, 1fr)); width: calc(100vw - 2rem); }
+  .fl-stats div { padding: .55rem .15rem; }
+  .fl-stats b { font-size: 1.3rem; }
+  .fl-stats span { font-size: .55rem; letter-spacing: .04em; }
+  .fl-home, .md-main:has(.fl-home) { overflow-x: clip; }
+  .fl-grid { grid-template-columns: 1fr; gap: .7rem; padding: .4rem 1rem 1.2rem; }
+  .fl-card { display: flex; flex-direction: column; justify-content: center; padding: 1rem 1.1rem; min-height: 4.8rem; }
+  .fl-card strong { font-size: 1.15rem; margin: .25rem 0 .1rem; }
+  .fl-card .twemoji, .fl-card svg { width: 1.6rem; height: 1.6rem; }
+  .fl-card p { display: block !important; font-size: .85rem; line-height: 1.4; }
+  .fl-card:hover { transform: none; }
+}

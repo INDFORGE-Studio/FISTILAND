@@ -22,9 +22,10 @@ theme:
 extra_javascript:
   - javascripts/fl-copy-v4.js
   - javascripts/fl-map-v5.js
+  - javascripts/fl-cards-v1.js
 
 extra_css:
-  - stylesheets/fistiland-v38.css
+  - stylesheets/fistiland-v39.css
 
 extra:
   social:
