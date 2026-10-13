@@ -672,3 +672,20 @@ html[lang="uk"] .md-header__option .md-select > button::before { background-imag
 .md-typeset a.fl-discord .twemoji::after { content: ""; position: absolute; top: -.155rem; left: -.155rem; width: 2.21rem; height: 2.21rem; background: url("../assets/discord-zombie-v1.gif") center / contain no-repeat; opacity: 0; pointer-events: none; }
 .md-typeset a.fl-discord:hover .twemoji::after { opacity: 1; }
 .md-typeset a.fl-discord:hover .twemoji svg { opacity: 0; }
+
+/* Home: animated background (canvas added by fl-bgfx-v1.js); the dark veil moves above it */
+html.fl-live .md-main:has(.fl-home) {
+  position: relative;
+  isolation: isolate;
+  background: url("../assets/bg-v3.jpg") center / cover no-repeat;
+}
+html.fl-live .md-main:has(.fl-home)::after {
+  content: "";
+  position: absolute; inset: 0; z-index: 1; pointer-events: none;
+  background:
+    radial-gradient(ellipse 42% 34% at 50% 36%, rgba(13,12,11,.40) 0%, rgba(13,12,11,0) 100%),
+    radial-gradient(ellipse at 50% 42%, rgba(13,12,11,0) 0%, rgba(13,12,11,.30) 100%),
+    linear-gradient(180deg, rgba(13,12,11,.05) 0%, rgba(13,12,11,.72) 100%);
+}
+.md-main > canvas.fl-bgfx { position: absolute; inset: 0; width: 100%; height: 100%; z-index: 0; pointer-events: none; }
+html.fl-live .md-main:has(.fl-home) > .md-main__inner { position: relative; z-index: 2; }
