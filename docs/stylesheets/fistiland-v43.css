@@ -666,3 +666,9 @@ html[lang="uk"] .md-header__option .md-select > button::before { background-imag
 .md-typeset a.fl-discord:hover { color: #fff; }
 .md-typeset a.fl-discord .twemoji, .md-typeset a.fl-discord svg { width: 1.9rem; height: 1.9rem; fill: currentColor; }
 .md-typeset a.fl-discord strong { font-weight: 600; }
+
+/* Discord link: the animated skull replaces the logo on hover */
+.md-typeset a.fl-discord .twemoji { position: relative; flex: none; }
+.md-typeset a.fl-discord .twemoji::after { content: ""; position: absolute; top: -.35rem; left: -.35rem; width: 2.6rem; height: 2.6rem; background: url("../assets/discord-skull-v1.gif") center / contain no-repeat; opacity: 0; pointer-events: none; }
+.md-typeset a.fl-discord:hover .twemoji::after { opacity: 1; }
+.md-typeset a.fl-discord:hover .twemoji svg { opacity: 0; }
