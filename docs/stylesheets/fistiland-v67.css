@@ -885,6 +885,8 @@ a.md-tabs__link[href*="easter-eggs"]::after, a.md-nav__link[href*="easter-eggs"]
   .fl-island__side { overflow-x: hidden; }
   .fl-leg { min-width: 0; }
   .fl-an__hd .n { display: none; }
+  /* the column heads are explained in each animal's info card */
+  .fl-leg__cap, .fl-leg__bio { display: none; }
   .fl-an .fl-leg__info { margin: 0 .4rem .45rem; }
 }
 
