@@ -742,7 +742,7 @@ html[data-fl-theme="survivalist"] .fl-dvhost { --dv-glow: 169, 187, 85; }
 html[data-fl-theme="forces"] .fl-dvhost { --dv-glow: 59, 224, 122; }
 html[data-fl-theme="demonic"] .fl-dvhost { --dv-glow: 255, 58, 46; }
 .fl-hd-discord:hover, .md-social__link.fl-dvhost:hover, .md-typeset a.fl-discord:hover .twemoji { opacity: 1; transform: scale(1.18); filter: drop-shadow(0 0 7px rgba(var(--dv-glow), .75)); }
-.fl-dvhost .twemoji > svg { display: none; }
+.fl-dvhost .twemoji > svg, .md-social__link.fl-dvhost > svg { display: none; }
 .fl-dvhost .twemoji { display: inline-flex; align-items: center; justify-content: center; }
 .md-typeset a.fl-discord .fl-dv { width: 2.2rem; height: 2.2rem; margin: -.15rem; }
 .md-social__link .fl-dv { width: 1.8rem; height: 1.8rem; }
