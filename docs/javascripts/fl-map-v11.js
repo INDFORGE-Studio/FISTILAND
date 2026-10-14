@@ -26,22 +26,22 @@
   var LG = {
     en: { an: ['Rabbit', 'Chicken', 'Horse', 'Donkey', 'Deer', 'Bear', 'Goat', 'Wolf', 'Boar'], grp: ['Non-hostile', 'Dangerous'],
       bio: ['Mediterranean', 'Meadow', 'Forest', 'Mountain'], pres: ['Urban areas', 'Villages', 'Day', 'Night'],
-      hab: 'Habitats', when: 'Seen', hint: 'Tap an animal to see where it lives on the map. Tap again to clear.', img: 'Open the legend as an image' },
+      hab: 'Habitats', when: 'Seen', hint: ['- Click an animal to show its info.', '- Click again to remove.'], hintT: ['- Tap an animal to show its info.', '- Tap again to remove.'], img: 'Open the legend as an image' },
     fr: { an: ['Lapin', 'Poule', 'Cheval', 'Âne', 'Cerf', 'Ours', 'Chèvre', 'Loup', 'Sanglier'], grp: ['Non hostiles', 'Dangereux'],
       bio: ['Méditerranéen', 'Prairie', 'Forêt', 'Montagne'], pres: ['Zones urbaines', 'Villages', 'Jour', 'Nuit'],
-      hab: 'Habitats', when: 'Présence', hint: 'Touchez un animal pour voir où il vit sur la carte. Touchez-le à nouveau pour effacer.', img: 'Ouvrir la légende en image' },
+      hab: 'Habitats', when: 'Présence', hint: ["- Cliquer sur l'animal pour afficher les infos.", '- Cliquer à nouveau pour retirer.'], hintT: ["- Toucher l'animal pour afficher les infos.", '- Toucher à nouveau pour retirer.'], img: 'Ouvrir la légende en image' },
     de: { an: ['Kaninchen', 'Huhn', 'Pferd', 'Esel', 'Hirsch', 'Bär', 'Ziege', 'Wolf', 'Wildschwein'], grp: ['Friedlich', 'Gefährlich'],
       bio: ['Mittelmeer', 'Wiese', 'Wald', 'Gebirge'], pres: ['Städte', 'Dörfer', 'Tag', 'Nacht'],
-      hab: 'Lebensräume', when: 'Vorkommen', hint: 'Tippe auf ein Tier, um seinen Lebensraum auf der Karte zu sehen. Erneut tippen zum Löschen.', img: 'Legende als Bild öffnen' },
+      hab: 'Lebensräume', when: 'Vorkommen', hint: ['- Tier anklicken, um die Infos anzuzeigen.', '- Erneut anklicken zum Entfernen.'], hintT: ['- Tier antippen, um die Infos anzuzeigen.', '- Erneut antippen zum Entfernen.'], img: 'Legende als Bild öffnen' },
     es: { an: ['Conejo', 'Gallina', 'Caballo', 'Burro', 'Ciervo', 'Oso', 'Cabra', 'Lobo', 'Jabalí'], grp: ['No hostiles', 'Peligrosos'],
       bio: ['Mediterráneo', 'Pradera', 'Bosque', 'Montaña'], pres: ['Zonas urbanas', 'Pueblos', 'Día', 'Noche'],
-      hab: 'Hábitats', when: 'Presencia', hint: 'Toca un animal para ver dónde vive en el mapa. Tócalo de nuevo para borrar.', img: 'Abrir la leyenda como imagen' },
+      hab: 'Hábitats', when: 'Presencia', hint: ['- Haz clic en el animal para ver su info.', '- Haz clic de nuevo para quitarla.'], hintT: ['- Toca el animal para ver su info.', '- Toca de nuevo para quitarla.'], img: 'Abrir la leyenda como imagen' },
     it: { an: ['Coniglio', 'Gallina', 'Cavallo', 'Asino', 'Cervo', 'Orso', 'Capra', 'Lupo', 'Cinghiale'], grp: ['Non ostili', 'Pericolosi'],
       bio: ['Mediterraneo', 'Prateria', 'Foresta', 'Montagna'], pres: ['Aree urbane', 'Villaggi', 'Giorno', 'Notte'],
-      hab: 'Habitat', when: 'Presenza', hint: 'Tocca un animale per vedere dove vive sulla mappa. Toccalo di nuovo per cancellare.', img: 'Apri la legenda come immagine' },
+      hab: 'Habitat', when: 'Presenza', hint: ["- Clicca sull'animale per vedere le info.", '- Clicca di nuovo per rimuovere.'], hintT: ["- Tocca l'animale per vedere le info.", '- Tocca di nuovo per rimuovere.'], img: 'Apri la legenda come immagine' },
     uk: { an: ['Кролик', 'Курка', 'Кінь', 'Осел', 'Олень', 'Ведмідь', 'Коза', 'Вовк', 'Кабан'], grp: ['Не агресивні', 'Небезпечні'],
       bio: ['Середземномор’я', 'Луки', 'Ліс', 'Гори'], pres: ['Міста', 'Села', 'День', 'Ніч'],
-      hab: 'Середовища', when: 'Поява', hint: 'Торкніться тварини, щоб побачити, де вона живе на карті. Торкніться ще раз, щоб прибрати.', img: 'Відкрити легенду як зображення' }
+      hab: 'Середовища', when: 'Поява', hint: ['- Натисніть на тварину, щоб побачити інформацію.', '- Натисніть ще раз, щоб прибрати.'], hintT: ['- Торкніться тварини, щоб побачити інформацію.', '- Торкніться ще раз, щоб прибрати.'], img: 'Відкрити легенду як зображення' }
   };
   var G = LG[lang] || LG.en;
   // k: icon file, g: group, b: MED PRA FOR MON, p: URB VIL DAY NGT
@@ -211,7 +211,7 @@
       var pr = a.p.map(function (v, i) { return '<span class="fl-chip ' + (v ? 'is-yes' : 'is-no') + '">' + ico(4 + i) + G.pres[i] + '</span>'; }).join('');
       return '<div><small>' + G.hab + '</small>' + hb + '</div><div><small>' + G.when + '</small>' + pr + '</div>';
     }
-    var h = '<b class="fl-leg__t">' + T.guide + '</b><p class="fl-leg__hint">' + G.hint + '</p>';
+    var h = '<b class="fl-leg__t">' + T.guide + '</b><p class="fl-leg__hint"><span class="c">' + G.hint.join('<br>') + '</span><span class="t">' + G.hintT.join('<br>') + '</span></p>';
     // column heads: the four biome icons filter the map, the four presence icons are labels
     h += '<div class="fl-leg__cap"><span>' + G.hab + '</span><span>' + G.when + '</span></div><div class="fl-leg__bio">';
     sw.forEach(function (c, i) {
