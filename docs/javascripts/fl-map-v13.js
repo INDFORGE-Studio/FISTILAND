@@ -366,9 +366,10 @@
     var legend = (root.getAttribute('data-legend') || '').replace('{lang}', L[lang] ? lang : 'en');
 
     var habSw = HABITATS.map(function (c) { return '<i style="background:' + c + '"></i>'; }).join('');
-    var mutSw = Object.keys(SPECIES).map(function (k) { return '<i style="background:' + SPECIES[k] + '"></i>'; }).join('');
+    // legend rows show the same paw-print icons as the markers on the map
+    var iconDir = (root.getAttribute('data-mutants') || '').replace(/[^\/]*$/, '') + 'animals/';
     var mutRows = Object.keys(SPECIES).map(function (k) {
-      return '<li><i style="background:' + SPECIES[k] + '"></i>' + T.sp[k] + '</li>';
+      return '<li><img class="fl-island__mi" src="' + iconDir + 'mut-' + k + '-v1.png" alt="" width="32" height="32" draggable="false">' + T.sp[k] + '</li>';
     }).join('');
 
     root.innerHTML =

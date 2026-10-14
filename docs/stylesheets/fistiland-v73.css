@@ -563,6 +563,7 @@ html[lang="uk"] .md-header__option .md-select > button::before { background-imag
 .fl-island__mut ul { list-style: none; margin: .5rem 0 0; padding: 0; }
 .fl-island__mut li { display: flex; align-items: center; gap: .55rem; margin: .25rem 0; font-size: .82rem; color: #e0d6cc; }
 .fl-island__mut i { width: .9rem; height: .9rem; }
+.fl-island__mi { flex: none; display: block; width: 2rem; height: 2rem; }
 .fl-island:fullscreen { background: var(--fl-ink); padding: .8rem; overflow: auto; }
 .fl-island:fullscreen .fl-island__map { flex: none; width: min(68vw, calc(100vh - 7rem)); }
 .fl-island__map:fullscreen { width: auto; }
