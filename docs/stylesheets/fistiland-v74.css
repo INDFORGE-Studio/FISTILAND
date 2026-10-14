@@ -797,9 +797,9 @@ html[data-fl-rank="veteran"] .fl-logo-shine {
   position: fixed; left: 50%; top: 4.2rem; z-index: 12; max-width: calc(100vw - 2rem); display: flex; align-items: center; gap: .8rem;
   padding: .65rem 1.1rem; background: var(--fl-bar); color: #f4ece3; border: 2px solid var(--rk, var(--fl-orange)); border-radius: 2px;
   box-shadow: 0 6px 24px rgba(0, 0, 0, .65), 0 0 18px -4px var(--rk, var(--fl-orange));
-  opacity: 0; transform: translate(-50%, -1rem); pointer-events: none; transition: opacity .35s, transform .35s;
+  opacity: 0; transform: translate(-50%, -1rem); pointer-events: none; transition: opacity .1s, transform .1s;
 }
-.fl-hint.is-on { opacity: 1; transform: translate(-50%, 0); }
+.fl-hint.is-on { opacity: 1; transform: translate(-50%, 0); transition: opacity .25s, transform .25s; }
 .fl-hint svg { width: 2.2rem; height: 2.2rem; flex: none; color: var(--rk); filter: drop-shadow(0 0 6px var(--rk)); }
 .fl-hint div { display: flex; flex-direction: column; line-height: 1.25; }
 .fl-hint b { font: 600 .85rem Oswald, sans-serif; letter-spacing: .08em; text-transform: uppercase; color: #fff; }

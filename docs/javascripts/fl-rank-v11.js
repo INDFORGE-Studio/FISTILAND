@@ -16,12 +16,12 @@
     veteran: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 2h4l3 8.5-3.4 1.2zM18 2h-4l-3 8.5 3.4 1.2z" fill="currentColor" opacity=".7"/><path fill-rule="evenodd" fill="currentColor" d="M12 9.3a6.2 6.2 0 1 0 0 12.4 6.2 6.2 0 1 0 0-12.4zM12 12.1l.82 2.27 2.41.08-1.9 1.48.67 2.32L12 16.9l-2 1.35.67-2.32-1.9-1.48 2.41-.08z"/></svg>'
   };
   var T = {
-    en: { head: 'Easter Egg discovered!', rank: 'Rank unlocked', iron: 'Something has awakened on the home page...', master: 'You have reached the Master rank.', veteran: 'You took care of yourself. You are a Veteran. A new button has appeared in the header.', lbl: 'Rank', got: 'Unlocked', lock: 'Locked' },
-    fr: { head: 'Easter Egg découvert !', rank: 'Grade obtenu', iron: "Quelque chose s'est réveillé sur la page d'accueil...", master: 'Vous avez atteint le grade Master.', veteran: 'Vous avez pensé à vous soigner. Vous êtes Veteran. Un nouveau bouton est apparu en haut de la page.', lbl: 'Grade', got: 'Obtenu', lock: 'Verrouillé' },
-    de: { head: 'Easter Egg entdeckt!', rank: 'Rang erreicht', iron: 'Auf der Startseite ist etwas erwacht ...', master: 'Du hast den Rang Master erreicht.', veteran: 'Du hast dich behandelt. Du bist Veteran. In der Kopfzeile ist ein neuer Button erschienen.', lbl: 'Rang', got: 'Erreicht', lock: 'Gesperrt' },
-    es: { head: '¡Easter Egg descubierto!', rank: 'Rango desbloqueado', iron: 'Algo se ha despertado en la página de inicio...', master: 'Has alcanzado el rango Master.', veteran: 'Te has curado a tiempo. Eres Veteran. Ha aparecido un botón nuevo en la cabecera.', lbl: 'Rango', got: 'Desbloqueado', lock: 'Bloqueado' },
-    it: { head: 'Easter Egg scoperto!', rank: 'Grado ottenuto', iron: 'Qualcosa si è risvegliato nella pagina iniziale...', master: 'Hai raggiunto il grado Master.', veteran: "Ti sei curato. Sei Veteran. Nell'intestazione è comparso un nuovo pulsante.", lbl: 'Grado', got: 'Ottenuto', lock: 'Bloccato' },
-    uk: { head: 'Знайдено пасхалку!', rank: 'Отримано ранг', iron: 'Щось прокинулося на головній сторінці...', master: 'Ви досягли рангу Master.', veteran: "Ви подбали про своє лікування. Ви — Veteran. У шапці з'явилася нова кнопка.", lbl: 'Ранг', got: 'Отримано', lock: 'Закрито' }
+    en: { title: 'RANK {R} UNLOCKED', rookie: 'Will the adventure lead you to the right places?', iron: 'Oh! You have awakened something on the home page', master: "You're mad... You really need treatment!", veteran: 'Every victory has its reward! A new interactive button is on your home page.', got: 'Unlocked', lock: 'Locked' },
+    fr: { title: 'GRADE {R} OBTENU', rookie: "L'aventure va-t-elle vous mener aux bons endroits ?", iron: "Oh ! Vous avez réveillé quelque chose sur la page d'accueil", master: 'Vous êtes dingue... Il faut vraiment vous soigner !', veteran: 'Chaque victoire a sa récompense ! Un nouveau bouton interactif est sur votre page d’accueil.', got: 'Obtenu', lock: 'Verrouillé' },
+    de: { title: 'RANG {R} ERREICHT', rookie: 'Wird dich das Abenteuer an die richtigen Orte führen?', iron: 'Oh! Du hast auf der Startseite etwas geweckt', master: 'Du bist verrückt ... Du brauchst wirklich eine Behandlung!', veteran: 'Jeder Sieg hat seine Belohnung! Auf deiner Startseite ist ein neuer interaktiver Button.', got: 'Erreicht', lock: 'Gesperrt' },
+    es: { title: 'RANGO {R} DESBLOQUEADO', rookie: '¿Te llevará la aventura a los lugares correctos?', iron: '¡Oh! Has despertado algo en la página de inicio', master: 'Estás loco... ¡De verdad necesitas curarte!', veteran: '¡Cada victoria tiene su recompensa! Hay un nuevo botón interactivo en tu página de inicio.', got: 'Desbloqueado', lock: 'Bloqueado' },
+    it: { title: 'GRADO {R} OTTENUTO', rookie: "L'avventura ti porterà nei posti giusti?", iron: 'Oh! Hai risvegliato qualcosa nella pagina iniziale', master: 'Sei pazzo... Hai davvero bisogno di curarti!', veteran: 'Ogni vittoria ha la sua ricompensa! Un nuovo pulsante interattivo è nella tua pagina iniziale.', got: 'Ottenuto', lock: 'Bloccato' },
+    uk: { title: 'РАНГ {R} ОТРИМАНО', rookie: 'Чи приведе вас пригода в потрібні місця?', iron: 'О! Ви щось розбудили на головній сторінці', master: 'Ви божевільні... Вам справді потрібне лікування!', veteran: 'Кожна перемога має свою нагороду! На вашій головній сторінці з’явилася нова інтерактивна кнопка.', got: 'Отримано', lock: 'Закрито' }
   };
   var lang = (document.documentElement.lang || 'en').slice(0, 2);
   var L = T[lang] || T.en;
@@ -69,8 +69,13 @@
       badge.className = 'fl-rank';
       title.parentNode.insertBefore(badge, title.nextSibling);
       // hover (or tap) the badge to see the message again
-      badge.addEventListener('pointerenter', function () { var i = rankIndex(state); if (i) showHint(i, true); });
-      badge.addEventListener('pointerleave', function () { clearTimeout(hintTimer); hintTimer = setTimeout(function () { if (hint) hint.classList.remove('is-on'); }, 1500); });
+      // mouse: shown while the pointer is on the badge, gone as soon as it leaves; touch: timed (no "leave")
+      badge.addEventListener('pointerenter', function (e) { var i = rankIndex(state); if (i) showHint(i, e.pointerType === 'touch' ? 'tap' : 'hover'); });
+      badge.addEventListener('pointerleave', function (e) {
+        if (e.pointerType === 'touch') return;
+        clearTimeout(hintTimer);
+        if (hint) hint.classList.remove('is-on');
+      });
       // double-click (or double-tap) the badge: start again from zero
       badge.addEventListener('dblclick', function () {
         try { localStorage.removeItem(KEY); } catch (e) {}
@@ -94,11 +99,10 @@
     var r = RANKS[idx];
     if (!hint) { hint = document.createElement('div'); hint.className = 'fl-hint'; hint.setAttribute('role', 'status'); document.body.appendChild(hint); }
     hint.setAttribute('data-rank', r);
-    var sub = idx === 4 ? L.veteran : idx === 3 ? L.master : L.rank + ' : ' + NAMES[r].toUpperCase() + (idx === 2 ? '<br>' + L.iron : '');
-    hint.innerHTML = ICONS[r] + '<div><b>' + (again ? L.lbl + ' : ' + NAMES[r].toUpperCase() : L.head) + '</b><span>' + sub + '</span></div>';
+    hint.innerHTML = ICONS[r] + '<div><b>' + L.title.replace('{R}', NAMES[r].toUpperCase()) + '</b><span>' + L[r] + '</span></div>';
     hint.classList.remove('is-on'); void hint.offsetWidth; hint.classList.add('is-on');
     clearTimeout(hintTimer);
-    hintTimer = setTimeout(function () { hint.classList.remove('is-on'); }, again ? 7000 : 10000);
+    if (again !== 'hover') hintTimer = setTimeout(function () { hint.classList.remove('is-on'); }, again ? 7000 : 10000);
   }
 
   function found(name) {
