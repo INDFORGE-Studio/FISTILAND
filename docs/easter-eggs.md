@@ -29,7 +29,6 @@ Four ranks. Once you earn one, it appears at the centre of the header and stays 
 
 ## :material-information-outline: Good to know
 
-- Your progress is saved in this browser only. Nothing is sent to the server. Clearing your site data, or switching device, starts you over.
-- Double-click (or double-tap) your rank at the top of the page to reset everything and start again from zero.
+- Your progress is saved in this browser only. Nothing is sent to the server. Clearing your site data, switching device, or double-clicking your rank at the top of the page starts you over.
 - Everything works the same on a phone and on a PC.
 - Tip: join the Discord and try to convince a member to explain how to get them quickly.
