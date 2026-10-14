@@ -225,7 +225,7 @@
       ANIMALS.forEach(function (a, ai) {
         if (a.g !== gi) return;
         var ext = a.k === 'donkey' ? 'svg' : 'png';
-        h += '<div class="fl-an" data-a="' + ai + '"><button type="button" class="fl-an__hd" aria-expanded="false">' +
+        h += '<div class="fl-an" data-a="' + ai + '"><button type="button" class="fl-an__hd" aria-expanded="false" title="' + G.an[ai] + '" aria-label="' + G.an[ai] + '">' +
           '<img src="' + base + a.k + '-v1.' + ext + '" alt="" width="40" height="40" draggable="false">' +
           '<span class="n">' + G.an[ai] + '</span><span class="d">' + marks(a) + '</span></button></div>';
       });
@@ -236,6 +236,7 @@
 
     var info = box.querySelector('.fl-leg__info');
     var hab = root.querySelector('input[data-l="habitats"]');
+    var wide = window.matchMedia('(min-width: 701px)');
     var selA = -1, selB = [0, 0, 0, 0], auto = false;
     var CW = 1024, cls = null, src = null, cv = null, ctx = null, failed = false, loading = false;
 
@@ -315,6 +316,19 @@
       });
       info.innerHTML = selA >= 0 ? '<b>' + G.an[selA] + '</b>' + detail(ANIMALS[selA]) : '';
       box.classList.toggle('has-sel', selA >= 0);
+      placeInfo();
+    }
+    // On a PC the info card opens right under the chosen animal; on a phone it stays at the top of the legend.
+    function placeInfo() {
+      var row = selA >= 0 && wide.matches ? box.querySelector('.fl-an[data-a="' + selA + '"]') : null;
+      if (row) {
+        row.appendChild(info);
+        var side = root.querySelector('.fl-island__side');
+        if (side) {
+          var r = info.getBoundingClientRect(), sr = side.getBoundingClientRect();
+          if (r.bottom > sr.bottom) side.scrollTop += r.bottom - sr.bottom + 8;
+        }
+      } else if (info.parentNode !== box) box.appendChild(info);
     }
     function apply() {
       render();
@@ -322,6 +336,11 @@
       ensureLayer(true);
       prepare(paint);
     }
+    // unticking the layer hides the legend and clears the choice
+    hab.addEventListener('change', function () {
+      if (!hab.checked && (selA >= 0 || selB.indexOf(1) >= 0)) { selA = -1; selB = [0, 0, 0, 0]; apply(); }
+    });
+    if (wide.addEventListener) wide.addEventListener('change', placeInfo);
     box.addEventListener('click', function (e) {
       var hd = e.target.closest('.fl-an__hd');
       if (hd) {
@@ -365,7 +384,7 @@
       '<img class="fl-island__ov" data-l="mutants" alt="" draggable="false" src="' + root.getAttribute('data-mutants') + '">' +
       '</div></div>' +
       '<aside class="fl-island__side">' +
-      '<div class="fl-leg"></div>' +
+      '<div class="fl-leg" data-l="habitats"></div>' +
       '<div class="fl-island__mut" data-l="mutants"><b>' + T.mut + '</b><ul>' + mutRows + '</ul></div>' +
       (root.getAttribute('data-bunkers') ? '<div class="fl-island__mut" data-l="bunkers"><b>' + T.bk + '</b><p class="fl-island__note">' + T.bkNote + '</p></div>' : '') +
       '<div class="fl-island__mut fl-island__poi" data-l="poi" hidden><b>' + T.poi + '</b><ul></ul><p>' + T.approx + '</p></div>' +
