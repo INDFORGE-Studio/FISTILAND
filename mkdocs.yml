@@ -33,7 +33,7 @@ extra_javascript:
   - javascripts/fl-trip-v2.js
 
 extra_css:
-  - stylesheets/fistiland-v68.css
+  - stylesheets/fistiland-v69.css
   - stylesheets/fl-themes-v1.css
 
 extra:

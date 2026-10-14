@@ -889,8 +889,6 @@ a.md-tabs__link[href*="easter-eggs"]::after, a.md-nav__link[href*="easter-eggs"]
   .fl-island__side { overflow-x: hidden; }
   .fl-leg { min-width: 0; }
   .fl-an__hd .n { display: none; }
-  /* the column heads are explained in each animal's info card */
-  .fl-leg__cap, .fl-leg__bio { display: none; }
   .fl-an .fl-leg__info { margin: 0 .4rem .45rem; }
 }
 
@@ -910,6 +908,8 @@ a.md-tabs__link[href*="easter-eggs"]::after, a.md-nav__link[href*="easter-eggs"]
 .fl-leg__bio .fl-bio.b0 { grid-column: 3; } .fl-leg__bio .fl-bio.b1 { grid-column: 4; } .fl-leg__bio .fl-bio.b2 { grid-column: 5; } .fl-leg__bio .fl-bio.b3 { grid-column: 6; }
 .fl-leg__bio .sp { display: none; }
 .fl-leg__bio .fl-pr:nth-of-type(2) { grid-column: 8; } .fl-leg__bio .fl-pr:nth-of-type(3) { grid-column: 9; } .fl-leg__bio .fl-pr:nth-of-type(4) { grid-column: 10; } .fl-leg__bio .fl-pr:nth-of-type(5) { grid-column: 11; }
+/* PC: the column heads are explained in each animal's info card (declared after the grid rules above so it wins) */
+@media (min-width: 701px) { .fl-leg__cap, .fl-leg__bio { display: none; } }
 .fl-bio { display: inline-flex; align-items: center; justify-content: center; width: 1.3rem; height: 1.3rem; background: none; border: 1px solid transparent; color: var(--c, #8a7f75); cursor: pointer; transition: border-color .15s, background .15s; }
 .fl-bio .nm { display: none; }
 .fl-bio svg, .fl-pr svg, .fl-an .m svg, .fl-chip svg { width: 100%; height: 100%; fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
