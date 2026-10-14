@@ -34,7 +34,7 @@ extra_javascript:
   - javascripts/fl-trip-v2.js
 
 extra_css:
-  - stylesheets/fistiland-v77.css
+  - stylesheets/fistiland-v78.css
   - stylesheets/fl-themes-v1.css
 
 extra:

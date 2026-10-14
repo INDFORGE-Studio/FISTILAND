@@ -744,7 +744,7 @@ html[data-fl-theme="zombie"] .fl-hd-discord:hover { filter: drop-shadow(0 0 7px 
 html[data-fl-theme="survivalist"] .fl-hd-discord:hover { filter: drop-shadow(0 0 7px rgba(169, 187, 85, .7)); }
 html[data-fl-theme="forces"] .fl-hd-discord:hover { filter: drop-shadow(0 0 8px rgba(59, 224, 122, .8)); }
 html[data-fl-theme="demonic"] .fl-hd-discord:hover { filter: drop-shadow(0 0 8px rgba(255, 58, 46, .85)); }
-.fl-hd-discord:hover .fl-dv { animation: fl-dshake .32s linear infinite; }
+.fl-hd-discord:hover .fl-dv { animation: fl-dshake .9s ease-in-out infinite; }
 @keyframes fl-dshake {
   0%, 100% { transform: translate(0, 0) rotate(0); }
   15% { transform: translate(-1.4px, .9px) rotate(-6deg); }
