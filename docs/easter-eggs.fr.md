@@ -30,5 +30,6 @@ Quatre grades. Dès que vous en obtenez un, il s'affiche au centre de l'en-tête
 ## :material-information-outline: À savoir
 
 - Votre progression est enregistrée dans ce navigateur uniquement. Rien n'est envoyé au serveur. Effacer les données du site, ou changer d'appareil, vous fait repartir de zéro.
+- Double-cliquez (ou touchez deux fois) sur votre grade en haut de la page pour tout réinitialiser et repartir de zéro.
 - Tout fonctionne de la même façon sur téléphone et sur PC.
 - Tips : rejoignez le Discord pour essayer de convaincre un membre de vous expliquer comment les obtenir rapidement.

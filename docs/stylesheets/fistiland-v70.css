@@ -751,6 +751,7 @@ html[data-fl-rank="veteran"] .fl-logo-shine {
 .fl-rank {
   display: none; align-items: center; gap: .45rem; flex: none; margin: 0 .3rem; color: var(--rk, #9bc16a);
   font: 600 .72rem Oswald, sans-serif; letter-spacing: .14em; text-transform: uppercase; cursor: help;
+  touch-action: manipulation; user-select: none; -webkit-user-select: none;
 }
 .fl-rank.is-on { display: inline-flex; }
 .fl-rank svg { width: 1.5rem; height: 1.5rem; flex: none; filter: drop-shadow(0 0 5px currentColor); }

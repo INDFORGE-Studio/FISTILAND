@@ -30,5 +30,6 @@ Quattro gradi. Appena ne ottieni uno, appare al centro dell'intestazione e ti se
 ## :material-information-outline: Da sapere
 
 - I tuoi progressi sono salvati solo in questo browser. Non viene inviato nulla al server. Cancellando i dati del sito, o cambiando dispositivo, ricominci da zero.
+- Fai doppio clic (o tocca due volte) sul tuo grado in alto nella pagina per azzerare tutto e ricominciare da zero.
 - Tutto funziona allo stesso modo su telefono e su PC.
 - Consiglio: entra nel Discord e prova a convincere un membro a spiegarti come ottenerli in fretta.

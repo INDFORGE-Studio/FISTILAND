@@ -30,5 +30,6 @@ Vier Ränge. Sobald du einen erreichst, erscheint er in der Mitte der Kopfzeile 
 ## :material-information-outline: Gut zu wissen
 
 - Dein Fortschritt wird nur in diesem Browser gespeichert. Nichts wird an den Server gesendet. Wenn du die Websitedaten löschst oder das Gerät wechselst, beginnst du von vorn.
+- Doppelklicke (oder tippe doppelt) oben auf der Seite auf deinen Rang, um alles zurückzusetzen und von vorn zu beginnen.
 - Alles funktioniert auf dem Handy genauso wie am PC.
 - Tipp: Tritt dem Discord bei und versuche, ein Mitglied zu überzeugen, dir zu erklären, wie du sie schnell bekommst.

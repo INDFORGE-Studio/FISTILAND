@@ -71,6 +71,14 @@
       // hover (or tap) the badge to see the message again
       badge.addEventListener('pointerenter', function () { var i = rankIndex(state); if (i) showHint(i, true); });
       badge.addEventListener('pointerleave', function () { clearTimeout(hintTimer); hintTimer = setTimeout(function () { if (hint) hint.classList.remove('is-on'); }, 1500); });
+      // double-click (or double-tap) the badge: start again from zero
+      badge.addEventListener('dblclick', function () {
+        try { localStorage.removeItem(KEY); } catch (e) {}
+        state = {};
+        clearTimeout(hintTimer);
+        if (hint) hint.classList.remove('is-on');
+        render(false);
+      });
     }
     document.documentElement.setAttribute('data-fl-rank', r);
     document.dispatchEvent(new Event('fl-rank-change'));

@@ -30,5 +30,6 @@ Cuatro rangos. En cuanto consigues uno, aparece en el centro de la cabecera y te
 ## :material-information-outline: Conviene saber
 
 - Tu progreso se guarda solo en este navegador. No se envía nada al servidor. Si borras los datos del sitio o cambias de dispositivo, empiezas de cero.
+- Haz doble clic (o toca dos veces) en tu rango en la parte superior de la página para reiniciarlo todo y empezar de cero.
 - Todo funciona igual en el móvil y en el PC.
 - Consejo: únete al Discord e intenta convencer a un miembro de que te explique cómo conseguirlos rápido.

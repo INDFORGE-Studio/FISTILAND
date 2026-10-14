@@ -28,12 +28,12 @@ extra_javascript:
   - javascripts/fl-ip-v1.js
   - javascripts/fl-join-v1.js
   - javascripts/fl-discord-v1.js
-  - javascripts/fl-rank-v9.js
+  - javascripts/fl-rank-v10.js
   - javascripts/fl-theme-v1.js
   - javascripts/fl-trip-v2.js
 
 extra_css:
-  - stylesheets/fistiland-v69.css
+  - stylesheets/fistiland-v70.css
   - stylesheets/fl-themes-v1.css
 
 extra:
