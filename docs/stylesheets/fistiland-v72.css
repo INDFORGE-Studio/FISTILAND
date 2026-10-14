@@ -600,9 +600,35 @@ html[lang="uk"] .md-header__option .md-select > button::before { background-imag
 .fl-bk circle { fill: var(--fl-ink); }
 .fl-island__note { margin: .5rem 0 0; font-size: .8rem; color: #e0d6cc; }
 
-.fl-cc { margin: .8rem 0 0; line-height: 0; }
-.fl-cc img { display: block; border: 0; opacity: .92; transition: opacity .15s; }
-.fl-cc a:hover img { opacity: 1; }
+/* ---- Licence badge: centred at the bottom of every page, legal notice as a tooltip ---- */
+.fl-cc-site { position: relative; line-height: 0; z-index: 5; }
+.fl-cc-site a { display: block; }
+.fl-cc-site img { display: block; border: 0; opacity: .92; transition: opacity .15s; }
+.fl-cc-site a:hover img, .fl-cc-site.is-open img { opacity: 1; }
+.fl-cc-tip {
+  display: none; position: absolute; left: 50%; bottom: calc(100% + 10px); transform: translateX(-50%);
+  width: min(27rem, calc(100vw - 1.6rem)); padding: .8rem 1rem;
+  background: var(--fl-panel); border: 1px solid var(--fl-line); border-top: 3px solid var(--fl-orange);
+  box-shadow: 0 6px 22px rgba(0, 0, 0, .6);
+  font: 400 .76rem/1.55 Inter, sans-serif; letter-spacing: 0; text-transform: none; text-align: left; color: #e0d6cc;
+}
+.fl-cc-tip b { display: block; margin-bottom: .35rem; font: 600 .8rem Oswald, sans-serif; letter-spacing: .1em; text-transform: uppercase; color: #fff; }
+.fl-cc-tip p { margin: 0 0 .45rem; }
+.fl-cc-tip span { color: var(--fl-orange-hot); font-size: .72rem; }
+.fl-cc-site.is-open .fl-cc-tip { display: block; }
+@media (hover: hover) {
+  .fl-cc-site:hover .fl-cc-tip, .fl-cc-site:focus-within .fl-cc-tip { display: block; }
+}
+.md-footer-meta__inner { position: relative; align-items: center; min-height: 3rem; }
+.md-footer-meta__inner .fl-cc-site { margin: .4rem auto; }
+@media (min-width: 701px) {
+  .md-footer-meta__inner .fl-cc-site { position: absolute; left: 50%; top: 50%; margin: 0; transform: translate(-50%, -50%); }
+}
+@media (max-width: 700px) {
+  .md-footer-meta__inner .fl-cc-site { order: 3; flex: 0 0 100%; display: flex; justify-content: center; }
+}
+.md-main:has(.fl-home) { position: relative; padding-bottom: 2.8rem; }
+.fl-cc-site.is-home { position: absolute; left: 50%; bottom: .6rem; transform: translateX(-50%); }
 
 /* ---- Mushrooms page ---- */
 .fl-mush-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(11.5rem, 1fr)); gap: .8rem; margin: 1rem 0 1.8rem; }
