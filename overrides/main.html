@@ -15,4 +15,22 @@
       } catch (e) {}
     })();
   </script>
+  <script>
+    /* Language memory: the language picked in the selector is kept in this browser and applied on the next visit,
+       before the first paint. Cleared by the rank badge double-click (fl-rank). */
+    (function () {
+      try {
+        var cur = (document.documentElement.lang || 'en').slice(0, 2);
+        var want = localStorage.getItem('fl-lang');
+        if (want && /^(en|fr|de|es|it|uk)$/.test(want) && want !== cur) {
+          var a = document.querySelector('link[rel="alternate"][hreflang="' + want + '"]');
+          if (a && a.href) { location.replace(a.href + location.search + location.hash); return; }
+        }
+        document.addEventListener('click', function (e) {
+          var l = e.target && e.target.closest ? e.target.closest('.md-select__link[hreflang]') : null;
+          if (l) { try { localStorage.setItem('fl-lang', l.getAttribute('hreflang')); } catch (x) {} }
+        }, true);
+      } catch (e) {}
+    })();
+  </script>
 {% endblock %}
