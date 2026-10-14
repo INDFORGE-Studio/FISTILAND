@@ -715,9 +715,6 @@ html[lang="uk"] .md-header__option .md-select > button::before { background-imag
 
 /* Discord link: the animated skull replaces the logo on hover */
 .md-typeset a.fl-discord .twemoji { position: relative; flex: none; }
-.md-typeset a.fl-discord .twemoji::after { content: ""; position: absolute; top: -.155rem; left: -.155rem; width: 2.21rem; height: 2.21rem; background: url("../assets/discord-zombie-head-page-v1.gif") center / contain no-repeat; opacity: 0; pointer-events: none; }
-.md-typeset a.fl-discord:hover .twemoji::after { opacity: 1; }
-.md-typeset a.fl-discord:hover .twemoji svg { opacity: 0; }
 
 
 /* ---- Header Discord icon (next to the flag): one fixed character per skin, trembling on hover ---- */
@@ -726,25 +723,31 @@ html[lang="uk"] .md-header__option .md-select > button::before { background-imag
   width: 2.5rem; height: 2.5rem; padding: 0; margin: .2rem .1rem; opacity: 1;
   transition: transform .2s ease, filter .2s ease;
 }
-.fl-hd-discord .fl-dv { display: none; width: 2rem; height: 2rem; transform-origin: 50% 60%; }
-.fl-hd-discord .fl-dv svg { display: block; width: 100%; height: 100%; overflow: visible; }
-.fl-hd-discord .fl-dv-z { background: url("../assets/discord-zombie-still-v1.png") center / contain no-repeat; }
-.fl-hd-discord .fl-dv-o { display: block; }
-.fl-hd-discord .fl-dv-z { display: none; }
-html[data-fl-theme="zombie"] .fl-hd-discord .fl-dv-z { display: block; }
-html[data-fl-theme="zombie"] .fl-hd-discord .fl-dv-o,
-html[data-fl-theme="survivalist"] .fl-hd-discord .fl-dv-o,
-html[data-fl-theme="forces"] .fl-hd-discord .fl-dv-o,
-html[data-fl-theme="demonic"] .fl-hd-discord .fl-dv-o { display: none; }
-html[data-fl-theme="survivalist"] .fl-hd-discord .fl-dv-s,
-html[data-fl-theme="forces"] .fl-hd-discord .fl-dv-f,
-html[data-fl-theme="demonic"] .fl-hd-discord .fl-dv-d { display: block; }
-.fl-hd-discord:hover { opacity: 1; transform: scale(1.18); filter: drop-shadow(0 0 7px rgba(232, 99, 28, .75)); }
-html[data-fl-theme="zombie"] .fl-hd-discord:hover { filter: drop-shadow(0 0 7px rgba(140, 196, 60, .6)); }
-html[data-fl-theme="survivalist"] .fl-hd-discord:hover { filter: drop-shadow(0 0 7px rgba(169, 187, 85, .7)); }
-html[data-fl-theme="forces"] .fl-hd-discord:hover { filter: drop-shadow(0 0 8px rgba(59, 224, 122, .8)); }
-html[data-fl-theme="demonic"] .fl-hd-discord:hover { filter: drop-shadow(0 0 8px rgba(255, 58, 46, .85)); }
-.fl-hd-discord:hover .fl-dv { animation: fl-dshake .9s ease-in-out infinite; }
+.fl-dvhost .fl-dv { display: none; width: 2rem; height: 2rem; transform-origin: 50% 60%; }
+.fl-dvhost .fl-dv svg { display: block; width: 100%; height: 100%; overflow: visible; }
+.fl-dvhost .fl-dv-z { background: url("../assets/discord-zombie-still-v1.png") center / contain no-repeat; }
+.fl-dvhost .fl-dv-o { display: block; }
+.fl-dvhost .fl-dv-z { display: none; }
+html[data-fl-theme="zombie"] .fl-dvhost .fl-dv-z { display: block; }
+html[data-fl-theme="zombie"] .fl-dvhost .fl-dv-o,
+html[data-fl-theme="survivalist"] .fl-dvhost .fl-dv-o,
+html[data-fl-theme="forces"] .fl-dvhost .fl-dv-o,
+html[data-fl-theme="demonic"] .fl-dvhost .fl-dv-o { display: none; }
+html[data-fl-theme="survivalist"] .fl-dvhost .fl-dv-s,
+html[data-fl-theme="forces"] .fl-dvhost .fl-dv-f,
+html[data-fl-theme="demonic"] .fl-dvhost .fl-dv-d { display: block; }
+.fl-dvhost { --dv-glow: 232, 99, 28; }
+html[data-fl-theme="zombie"] .fl-dvhost { --dv-glow: 140, 196, 60; }
+html[data-fl-theme="survivalist"] .fl-dvhost { --dv-glow: 169, 187, 85; }
+html[data-fl-theme="forces"] .fl-dvhost { --dv-glow: 59, 224, 122; }
+html[data-fl-theme="demonic"] .fl-dvhost { --dv-glow: 255, 58, 46; }
+.fl-hd-discord:hover, .md-social__link.fl-dvhost:hover, .md-typeset a.fl-discord:hover .twemoji { opacity: 1; transform: scale(1.18); filter: drop-shadow(0 0 7px rgba(var(--dv-glow), .75)); }
+.fl-dvhost .twemoji > svg { display: none; }
+.fl-dvhost .twemoji { display: inline-flex; align-items: center; justify-content: center; }
+.md-typeset a.fl-discord .fl-dv { width: 2.2rem; height: 2.2rem; margin: -.15rem; }
+.md-social__link .fl-dv { width: 1.8rem; height: 1.8rem; }
+.md-typeset a.fl-discord .fl-dv svg { width: 100%; height: 100%; }
+.fl-dvhost:hover .fl-dv { animation: fl-dshake .9s ease-in-out infinite; }
 @keyframes fl-dshake {
   0%, 100% { transform: translate(0, 0) rotate(0); }
   15% { transform: translate(-1.4px, .9px) rotate(-6deg); }
@@ -802,7 +805,6 @@ html[data-fl-rank="veteran"] .fl-logo-shine {
 
 /* Server page Discord link: same hover as the header icon */
 .md-typeset a.fl-discord .twemoji { transition: transform .2s ease, filter .2s ease; }
-.md-typeset a.fl-discord:hover .twemoji { transform: scale(1.18); filter: drop-shadow(0 0 7px rgba(140, 196, 60, .6)); }
 
 
 /* ---- Rank badge (header centre) and Easter Egg hint ---- */
@@ -840,13 +842,6 @@ html[data-fl-rank="veteran"] .fl-logo-shine {
 
 /* Footer Discord icon: zombie head on hover, like the header one */
 .md-social__link[href*="discord"] { position: relative; transition: transform .2s ease, filter .2s ease; }
-.md-social__link[href*="discord"]::after {
-  content: ""; position: absolute; top: 50%; left: 50%; width: 1.7rem; height: 1.7rem; margin: -.85rem 0 0 -.85rem;
-  background: url("../assets/discord-zombie-head-footer-v1.gif") center / contain no-repeat; opacity: 0; pointer-events: none;
-}
-.md-social__link[href*="discord"]:hover { transform: scale(1.18); filter: drop-shadow(0 0 7px rgba(140, 196, 60, .6)); }
-.md-social__link[href*="discord"]:hover svg { opacity: 0; }
-.md-social__link[href*="discord"]:hover::after { opacity: 1; }
 
 /* ---- Hallucination effect (home logo, toxic mushrooms): distorted copy fades in over the clean picture ---- */
 .fl-trip-host { position: relative; }
