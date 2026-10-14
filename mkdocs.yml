@@ -32,7 +32,7 @@ extra_javascript:
   - javascripts/fl-rank-v12.js
   - javascripts/fl-theme-v1.js
   - javascripts/fl-trip-v2.js
-  - javascripts/fl-lamp-v6.js
+  - javascripts/fl-lamp-v7.js
 
 extra_css:
   - stylesheets/fistiland-v80.css
