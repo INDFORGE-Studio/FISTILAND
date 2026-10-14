@@ -6,7 +6,7 @@
   var conn = navigator.connection || {};
   if (conn.saveData) return;
 
-  var base = (location.pathname.match(/^(.*?\/FISTILAND\/)/) || ['', '/'])[1] + 'assets/home-loop-v1';
+  var base = (location.pathname.match(/^(.*?\/FISTILAND\/)/) || ['', '/'])[1] + 'assets/home-loop-v2';
   var box = document.createElement('div');
   box.className = 'fl-bgvid';
   box.setAttribute('aria-hidden', 'true');
