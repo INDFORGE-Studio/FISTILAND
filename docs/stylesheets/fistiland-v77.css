@@ -728,14 +728,19 @@ html[lang="uk"] .md-header__option .md-select > button::before { background-imag
 }
 .fl-hd-discord .fl-dv { display: none; width: 2rem; height: 2rem; transform-origin: 50% 60%; }
 .fl-hd-discord .fl-dv svg { display: block; width: 100%; height: 100%; overflow: visible; }
-.fl-hd-discord .fl-dv-z { display: block; background: url("../assets/discord-zombie-still-v1.png") center / contain no-repeat; }
-html[data-fl-theme="survivalist"] .fl-hd-discord .fl-dv-z,
-html[data-fl-theme="forces"] .fl-hd-discord .fl-dv-z,
-html[data-fl-theme="demonic"] .fl-hd-discord .fl-dv-z { display: none; }
+.fl-hd-discord .fl-dv-z { background: url("../assets/discord-zombie-still-v1.png") center / contain no-repeat; }
+.fl-hd-discord .fl-dv-o { display: block; }
+.fl-hd-discord .fl-dv-z { display: none; }
+html[data-fl-theme="zombie"] .fl-hd-discord .fl-dv-z { display: block; }
+html[data-fl-theme="zombie"] .fl-hd-discord .fl-dv-o,
+html[data-fl-theme="survivalist"] .fl-hd-discord .fl-dv-o,
+html[data-fl-theme="forces"] .fl-hd-discord .fl-dv-o,
+html[data-fl-theme="demonic"] .fl-hd-discord .fl-dv-o { display: none; }
 html[data-fl-theme="survivalist"] .fl-hd-discord .fl-dv-s,
 html[data-fl-theme="forces"] .fl-hd-discord .fl-dv-f,
 html[data-fl-theme="demonic"] .fl-hd-discord .fl-dv-d { display: block; }
-.fl-hd-discord:hover { opacity: 1; transform: scale(1.18); filter: drop-shadow(0 0 7px rgba(140, 196, 60, .6)); }
+.fl-hd-discord:hover { opacity: 1; transform: scale(1.18); filter: drop-shadow(0 0 7px rgba(232, 99, 28, .75)); }
+html[data-fl-theme="zombie"] .fl-hd-discord:hover { filter: drop-shadow(0 0 7px rgba(140, 196, 60, .6)); }
 html[data-fl-theme="survivalist"] .fl-hd-discord:hover { filter: drop-shadow(0 0 7px rgba(169, 187, 85, .7)); }
 html[data-fl-theme="forces"] .fl-hd-discord:hover { filter: drop-shadow(0 0 8px rgba(59, 224, 122, .8)); }
 html[data-fl-theme="demonic"] .fl-hd-discord:hover { filter: drop-shadow(0 0 8px rgba(255, 58, 46, .85)); }

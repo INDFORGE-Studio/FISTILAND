@@ -7,7 +7,21 @@
   // One variant per skin; the CSS shows the one matching html[data-fl-theme].
   var ZOMBIE = '<span class="fl-dv fl-dv-z"></span>';
 
-  var SURVIVALIST = '<span class="fl-dv fl-dv-s">' + SV +
+  var FISTILAND = '<span class="fl-dv fl-dv-o">' + SV +
+    '<defs><clipPath id="fl-dc-o"><path d="' + B + '"/></clipPath>' +
+    '<linearGradient id="fl-dg-o" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f07a2a"/><stop offset="1" stop-color="#9a3d10"/></linearGradient>' +
+    '<pattern id="fl-dp-o" width="3.4" height="3.4" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="1.7" height="3.4" fill="#17110c"/></pattern></defs>' +
+    '<path d="' + B + '" fill="url(#fl-dg-o)"/>' +
+    '<g clip-path="url(#fl-dc-o)"><ellipse cx="5" cy="9" rx="3.2" ry="2.2" fill="#3a1a08" opacity=".5"/><ellipse cx="18.5" cy="17" rx="3.6" ry="2.4" fill="#3a1a08" opacity=".55"/>' +
+    '<ellipse cx="11" cy="20" rx="5" ry="1.8" fill="#2b1a0e" opacity=".6"/><ellipse cx="19" cy="6.5" rx="2.2" ry="1.4" fill="#2b1a0e" opacity=".4"/>' +
+    '<rect x="0" y="6.2" width="24" height="2.6" fill="url(#fl-dp-o)" opacity=".85"/><path d="M3 18.5L9 11M15 20l5-5" stroke="#f4d9bc" stroke-opacity=".28" stroke-width=".4" fill="none"/></g>' +
+    '<path d="' + B + '" fill="none" stroke="#2b1a0e" stroke-width=".9"/>' +
+    '<ellipse cx="8" cy="13.4" rx="2.3" ry="2.5" fill="#17110c"/><ellipse cx="16" cy="13.4" rx="2.3" ry="2.5" fill="#17110c"/>' +
+    '<circle cx="8" cy="13.4" r="1.05" fill="#ffb347"/><circle cx="16" cy="13.4" r="1.05" fill="#ffb347"/>' +
+    '<circle cx="3.6" cy="6.6" r=".45" fill="#2b1a0e"/><circle cx="20.4" cy="6.6" r=".45" fill="#2b1a0e"/>' +
+    '</svg></span>';
+
+  var SURVIVALIST ='<span class="fl-dv fl-dv-s">' + SV +
     '<defs><clipPath id="fl-dc-s"><path d="' + B + '"/></clipPath></defs>' +
     '<path d="' + B + '" fill="#7b8a3a"/>' +
     '<g clip-path="url(#fl-dc-s)"><ellipse cx="6" cy="8" rx="3.4" ry="2.1" fill="#4a5a22"/><ellipse cx="17.5" cy="7" rx="3.8" ry="2.3" fill="#5b4a2a"/>' +
@@ -44,6 +58,6 @@
   a.href = 'https://discord.gg/RHkNGk6ZQN';
   a.target = '_blank'; a.rel = 'noopener';
   a.title = 'Discord'; a.setAttribute('aria-label', 'Discord');
-  a.innerHTML = ZOMBIE + SURVIVALIST + FORCES + DEMONIC;
+  a.innerHTML = FISTILAND + ZOMBIE + SURVIVALIST + FORCES + DEMONIC;
   opt.parentNode.insertBefore(a, opt.nextSibling);
 })();
