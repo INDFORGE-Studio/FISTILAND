@@ -378,6 +378,7 @@
       (root.getAttribute('data-poi') ? '<label class="fl-island__tg"><input type="checkbox" data-l="poi">' + T.poi + '</label>' : '') +
       (root.getAttribute('data-bunkers') ? '<label class="fl-island__tg"><input type="checkbox" data-l="bunkers">' + T.bk + '</label>' : '') + '</div>' +
       '<div class="fl-island__body">' +
+      '<div class="fl-island__rail"></div>' +
       '<div class="fl-map fl-island__map"><div class="fl-map__stage">' +
       '<img class="fl-island__base" alt="' + T.sat + '" draggable="false" src="' + preview + '">' +
       '<img class="fl-island__ov" data-l="habitats" alt="" draggable="false" src="' + root.getAttribute('data-habitats') + '">' +
@@ -405,7 +406,7 @@
       im.onload = function () { baseImg.src = base; };
       im.src = base;
     }
-    zoomer(box, stage, root, loadFull, root.querySelector(".fl-island__bar"));
+    zoomer(box, stage, root, loadFull, root.querySelector('.fl-island__rail'));
     initLegend(root, stage, legend);
 
     var poiUrl = root.getAttribute('data-poi');

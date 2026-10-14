@@ -879,7 +879,12 @@ a.md-tabs__link[href*="easter-eggs"]::after, a.md-nav__link[href*="easter-eggs"]
 .fl-island__tg { gap: .4rem; padding: .22rem .55rem; font-size: .74rem; letter-spacing: .05em; }
 .fl-map__ctl { gap: .3rem; }
 .fl-map__ctl button { width: 2.1rem; height: 2.1rem; }
+/* zoom buttons: a column left of the map on PC, a row above the map on phone */
+.fl-island__rail { flex: none; }
+.fl-island__rail .fl-map__ctl { margin: 0 0 .6rem; }
 @media (min-width: 701px) {
+  .fl-island__rail { align-self: flex-start; }
+  .fl-island__rail .fl-map__ctl { flex-direction: column; margin: 0; }
   .fl-island__bar { flex-wrap: nowrap; }
   .fl-island__body { align-items: stretch; }
   /* every legend as tall as the map: the side column takes the map height and scrolls if it has more to show */
