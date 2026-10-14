@@ -8,6 +8,21 @@
 
   function egg(name) { try { window.dispatchEvent(new CustomEvent('fl-egg', { detail: name })); } catch (e) {} }
   function iron() { return !!(window.flRank && window.flRank.hasIron()); }
+  // a Veteran has already cured themselves: the home logo no longer hallucinates for them, and its base effect takes the theme colour
+  function veteran() { return !!(window.flRank && window.flRank.rank() === 'veteran'); }
+  var tone = null;
+  function readTone() {
+    function rgb(n) {
+      var v = getComputedStyle(document.documentElement).getPropertyValue(n).split(',').map(function (x) { return parseInt(x, 10); });
+      return v.length === 3 && !v.some(isNaN) ? v : null;
+    }
+    var o = rgb('--fl-or-rgb'), h = rgb('--fl-hot-rgb');
+    tone = veteran() && o && h ? { o: o, h: h, l: h.map(function (c) { return Math.round(c + (255 - c) * 0.45); }) } : null;
+  }
+  // particle colour: bright theme tone when fresh, deeper theme tone when old
+  function toneRgb(f) {
+    return Math.round(tone.o[0] + (tone.l[0] - tone.o[0]) * f) + ',' + Math.round(tone.o[1] + (tone.l[1] - tone.o[1]) * f) + ',' + Math.round(tone.o[2] + (tone.l[2] - tone.o[2]) * f);
+  }
 
   // ---- shared layers: screen canvas, backdrop blur layer, SVG filter ----
   var cv = document.createElement('canvas'); cv.className = 'fl-trip-canvas'; cv.setAttribute('aria-hidden', 'true');
@@ -96,7 +111,7 @@
   function ember() {
     var mush = cur && cur.kind === 'mush';
     parts.push({ x: LX + rnd(0.08, 0.92) * W, y: LY + rnd(0.5, 1) * H, vx: rnd(-14, 14), vy: -rnd(30, 95) * (1 + ie),
-      g: 0, drag: 0, life: rnd(0.9, 1.8), age: 0, s: rnd(0.8, 2.4) * (1 + ie), hue: (mush || Math.random() < ie) ? rnd(0, 360) : -1 });
+      g: 0, drag: 0, life: rnd(0.9, 1.8), age: 0, s: rnd(0.8, 2.4) * (1 + ie), hue: (mush || Math.random() < ie) ? rnd(0, 360) : -1, th: !mush && !!tone });
   }
 
   function punch() {
@@ -108,7 +123,7 @@
     var cx = LX + W / 2, cy = LY + H / 2;
     for (var i = 0; i < 70; i++) {
       var a = rnd(0, Math.PI * 2), v = rnd(110, 420);
-      parts.push({ x: cx, y: cy, vx: Math.cos(a) * v, vy: Math.sin(a) * v, g: 220, drag: 1.6, life: rnd(0.5, 1.2), age: 0, s: rnd(0.8, 2.8), hue: -1 });
+      parts.push({ x: cx, y: cy, vx: Math.cos(a) * v, vy: Math.sin(a) * v, g: 220, drag: 1.6, life: rnd(0.5, 1.2), age: 0, s: rnd(0.8, 2.8), hue: -1, th: !!tone });
     }
     start();
   }
@@ -165,7 +180,7 @@
     var k = 1 - Math.exp(-dt * (9 - 5 * L1));       // fatigue: the tilt follows the cursor more sluggishly
     rx += (trx - rx) * k; ry += (tryy - ry) * k; sc += ((act && isLogo ? 1 : 0) - sc) * k;
     // the hallucination exists on the home logo only for Iron players; toxic mushrooms always trigger it
-    var enabled = act && cur && (cur.kind === 'mush' || iron());
+    var enabled = act && cur && (cur.kind === 'mush' || (iron() && !veteran()));
     if (enabled) {
       dwell += dt; hold = Math.max(hold, clamp01((dwell - cur.delay) / cur.ramp));
       if (isLogo && !masterSent && dwell > cur.delay) { masterSent = true; egg('master'); }
@@ -226,10 +241,13 @@
       var d = Math.exp(-q.drag * dt);
       q.vx = q.vx * d + Math.sin(T * 3 + q.y * 0.02) * 40 * ie * dt * 10; q.vy = q.vy * d + q.g * dt; q.x += q.vx * dt; q.y += q.vy * dt;
       var f = 1 - q.age / q.life;
+      var th = q.th && tone;
       ctx.fillStyle = q.hue >= 0 ? 'hsla(' + q.hue.toFixed(0) + ',100%,62%,' + (0.9 * f).toFixed(3) + ')'
+        : th ? 'rgba(' + toneRgb(f) + ',' + (0.9 * f).toFixed(3) + ')'
         : 'rgba(255,' + Math.round(70 + 150 * f) + ',' + Math.round(20 + 110 * f * f) + ',' + (0.9 * f).toFixed(3) + ')';
       ctx.beginPath(); ctx.arc(q.x, q.y, q.s * (0.5 + 0.5 * f), 0, Math.PI * 2); ctx.fill();
-      ctx.fillStyle = q.hue >= 0 ? 'hsla(' + q.hue.toFixed(0) + ',100%,60%,' + (0.18 * f).toFixed(3) + ')' : 'rgba(255,110,30,' + (0.18 * f).toFixed(3) + ')';
+      ctx.fillStyle = q.hue >= 0 ? 'hsla(' + q.hue.toFixed(0) + ',100%,60%,' + (0.18 * f).toFixed(3) + ')'
+        : th ? 'rgba(' + tone.h.join(',') + ',' + (0.18 * f).toFixed(3) + ')' : 'rgba(255,110,30,' + (0.18 * f).toFixed(3) + ')';
       ctx.beginPath(); ctx.arc(q.x, q.y, q.s * 3, 0, Math.PI * 2); ctx.fill();
     }
 
@@ -243,7 +261,7 @@
 
   function enter(S) {
     if (cur && cur !== S) clearLayers(cur);
-    cur = S; act = true; rect(); start();
+    cur = S; act = true; readTone(); rect(); start();
   }
   function leave(S) { if (cur === S) { act = false; trx = 0; tryy = 0; start(); } }
 

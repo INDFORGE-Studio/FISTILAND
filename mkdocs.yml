@@ -30,10 +30,10 @@ extra_javascript:
   - javascripts/fl-discord-v1.js
   - javascripts/fl-rank-v9.js
   - javascripts/fl-theme-v1.js
-  - javascripts/fl-trip-v1.js
+  - javascripts/fl-trip-v2.js
 
 extra_css:
-  - stylesheets/fistiland-v67.css
+  - stylesheets/fistiland-v68.css
   - stylesheets/fl-themes-v1.css
 
 extra:
