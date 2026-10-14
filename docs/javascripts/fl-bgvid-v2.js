@@ -5,7 +5,6 @@
   if (!home || !main) return;
   var conn = navigator.connection || {};
   if (conn.saveData) return;
-  try { if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return; } catch (e) {}
 
   var base = (location.pathname.match(/^(.*?\/FISTILAND\/)/) || ['', '/'])[1] + 'assets/home-loop-v1';
   var box = document.createElement('div');

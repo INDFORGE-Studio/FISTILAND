@@ -29,7 +29,7 @@ extra_javascript:
   - javascripts/fl-join-v1.js
   - javascripts/fl-discord-v1.js
   - javascripts/fl-cc-v1.js
-  - javascripts/fl-bgvid-v1.js
+  - javascripts/fl-bgvid-v2.js
   - javascripts/fl-rank-v11.js
   - javascripts/fl-theme-v1.js
   - javascripts/fl-trip-v2.js
