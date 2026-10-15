@@ -247,7 +247,7 @@
   </script>
   <script>
     /* Veteran skin: applied before the first paint to avoid a flash. Same storage keys as fl-rank / fl-theme.
-       Effects follow the visitor's choice, or the system's reduced-motion setting when there is none. */
+       Effects are on unless the visitor switched them off in the skin panel. */
     (function () {
       try {
         var s = JSON.parse(localStorage.getItem('fl-eggs-5') || '{}');
@@ -256,7 +256,7 @@
           document.documentElement.setAttribute('data-fl-theme', t);
         }
         var f = localStorage.getItem('fl-fx');
-        if (f === 'off' || (f !== 'on' && window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches)) {
+        if (f === 'off') {
           document.documentElement.classList.add('fl-fx-off');
         }
       } catch (e) {}
