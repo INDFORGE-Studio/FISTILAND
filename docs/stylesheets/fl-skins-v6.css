@@ -382,6 +382,10 @@ html[data-fl-theme="forces"] {
       linear-gradient(var(--c), var(--c)) 0 100% / 26px 2px no-repeat, linear-gradient(var(--c), var(--c)) 0 100% / 2px 26px no-repeat,
       linear-gradient(var(--c), var(--c)) 100% 100% / 26px 2px no-repeat, linear-gradient(var(--c), var(--c)) 100% 100% / 2px 26px no-repeat;
   }
+  & .fl-fx .fx-hud {
+    inset: auto 0 0 0; height: 40px; display: flex; justify-content: space-between; align-items: flex-end; padding: 0 18px 12px; background: linear-gradient(0deg, rgba(0, 12, 5, .9), transparent); font: 500 .58rem/1 "Roboto Mono", monospace; letter-spacing: .14em; text-transform: uppercase; color: rgba(109, 255, 158, .8); text-shadow: 0 0 6px rgba(109, 255, 158, .6);
+    & span { white-space: nowrap; }
+  }
 }
 @keyframes fl-sweep { from { transform: translateY(-20vh); } to { transform: translateY(115vh); } }
 @keyframes fl-type { from { clip-path: inset(0 100% 0 0); } to { clip-path: inset(0 0 0 0); } }

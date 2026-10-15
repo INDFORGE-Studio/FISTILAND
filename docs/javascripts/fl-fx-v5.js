@@ -10,7 +10,8 @@
 
   var LAYERS = {
     survivalist: '<i class="fx-grain"></i><canvas></canvas><i class="fx-vig"></i>',
-    forces: '<i class="fx-grain"></i><canvas></canvas><i class="fx-scan"></i><i class="fx-sweep"></i><i class="fx-vig"></i><i class="fx-brk"></i>',
+    forces: '<i class="fx-grain"></i><canvas></canvas><i class="fx-scan"></i><i class="fx-sweep"></i><i class="fx-vig"></i><i class="fx-brk"></i>' +
+      '<div class="fx-hud"><span class="l">NVG ON</span><span class="r"></span></div>',
     demonic: '<canvas></canvas><i class="fx-vig"></i><i class="fx-flash"></i>',
     zombie: '<i class="fx-trefoil"></i><canvas></canvas><i class="fx-vig"></i>'
   };
@@ -154,11 +155,24 @@
     else if (!raf) { last = 0; raf = requestAnimationFrame(frame); }
   }
 
+  // HUD (Special Forces): a heading that follows the scroll position; the text is only touched when it changes
+  var hud = null, hs = 0, hv = '';
+  function hudHeading() {
+    if (!hud) return;
+    var max = Math.max(1, document.documentElement.scrollHeight - window.innerHeight);
+    var deg = clamp(Math.round((window.pageYOffset / max) * 359), 0, 359), dirs = ['N', 'NE', 'E', 'SE', 'S', 'SW', 'W', 'NW'];
+    var t = 'HDG ' + ('00' + deg).slice(-3) + '° ' + dirs[Math.round(deg / 45) % 8];
+    if (t !== hv) { hv = t; hud.textContent = t; }
+  }
+  function onScroll() { if (hs) return; hs = requestAnimationFrame(function () { hs = 0; hudHeading(); }); }
+
   function stop() {
+    hud = null; hv = '';
     cancelAnimationFrame(raf); raf = 0;
     if (host && host.parentNode) host.parentNode.removeChild(host);
     host = cv = g = null; P = [];
     window.removeEventListener('resize', onResize);
+    window.removeEventListener('scroll', onScroll);
     document.removeEventListener('pointerdown', onDown, true);
     document.removeEventListener('pointermove', onMove);
     document.removeEventListener('visibilitychange', onVis);
@@ -185,6 +199,8 @@
       document.addEventListener('visibilitychange', onVis);
       if (!document.hidden) raf = requestAnimationFrame(frame);
     }
+    hud = host.querySelector('.fx-hud .r');
+    if (hud) { hudHeading(); window.addEventListener('scroll', onScroll, { passive: true }); }
   }
 
   document.addEventListener('fl-skin-change', function (e) { start((e.detail && e.detail.skin) || ''); });
