@@ -5,7 +5,7 @@ site_url: https://indforge-studio.github.io/FISTILAND/
 theme:
   name: material
   custom_dir: overrides
-  logo: assets/logo-header-v5.png
+  logo: assets/icon-192-v1.png
   favicon: assets/favicon-v9.ico
   font:
     text: Inter
@@ -22,7 +22,7 @@ theme:
 
 extra_javascript:
   - javascripts/fl-copy-v4.js
-  - javascripts/fl-map-v21.js
+  - javascripts/fl-map-v22.js
   - javascripts/fl-cards-v1.js
   - javascripts/fl-mush-v1.js
   - javascripts/fl-ip-v1.js
@@ -35,7 +35,7 @@ extra_javascript:
   - javascripts/fl-lamp-v14.js
 
 extra_css:
-  - stylesheets/fistiland-v92.css
+  - stylesheets/fistiland-v93.css
   - stylesheets/fl-themes-v2.css
 
 extra:
