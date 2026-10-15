@@ -35,7 +35,7 @@ extra_javascript:
   - javascripts/fl-lamp-v14.js
 
 extra_css:
-  - stylesheets/fistiland-v84.css
+  - stylesheets/fistiland-v85.css
   - stylesheets/fl-themes-v2.css
 
 extra:
