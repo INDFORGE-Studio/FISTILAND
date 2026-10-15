@@ -1,3 +1,8 @@
+---
+search:
+  boost: 0.5
+---
+
 <div class="fl-page-hero fl-bg-e" markdown>
 
 :material-format-list-bulleted-square:

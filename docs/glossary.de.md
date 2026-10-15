@@ -1,3 +1,8 @@
+---
+search:
+  boost: 1.2
+---
+
 <div class="fl-page-hero fl-bg-e" markdown>
 
 :material-book-alphabet:

@@ -1,3 +1,8 @@
+---
+search:
+  boost: 1.5
+---
+
 <div class="fl-page-hero fl-bg-c" markdown>
 
 :material-frequently-asked-questions:

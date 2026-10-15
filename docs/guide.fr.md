@@ -1,3 +1,8 @@
+---
+search:
+  boost: 2
+---
+
 <div class="fl-page-hero fl-bg-a" markdown>
 
 :material-compass:
