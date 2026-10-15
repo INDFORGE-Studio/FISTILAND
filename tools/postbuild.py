@@ -196,8 +196,8 @@ def main():
             if "src" in a:
                 continue
             typ = (a.get("type") or "").lower()
-            if typ and typ not in ("text/javascript", "application/javascript", "module"):
-                continue  # JSON / speculation rules: data, not executed as script
+            if typ and typ not in ("text/javascript", "application/javascript", "module", "speculationrules"):
+                continue  # JSON data blocks are not executed; speculation rules are allowed by hash like a script
             code = m.group(2)
             if not code.strip():
                 continue
