@@ -372,7 +372,7 @@ html[data-fl-theme="forces"] {
   /* HUD and ambient layers */
   & .fl-fx .fx-grain { inset: -20%; background: var(--sk-noise-w); background-size: 200px; opacity: .08; animation: fl-grain .7s steps(6) infinite; }
   & .fl-fx .fx-scan { background: repeating-linear-gradient(0deg, rgba(0, 0, 0, .24) 0 1px, transparent 1px 3px); }
-  & .fl-fx .fx-sweep { inset: 0 0 auto 0; height: 16vh; background: linear-gradient(180deg, transparent, rgba(109, 255, 158, .06) 60%, rgba(109, 255, 158, .16) 98%, transparent); animation: fl-sweep 7s linear infinite; will-change: transform; }
+  & .fl-fx .fx-sweep { inset: 0 0 auto 0; height: 16vh; background: linear-gradient(180deg, transparent, rgba(109, 255, 158, .06) 60%, rgba(109, 255, 158, .16) 98%, transparent); animation: fl-sweep 14s linear infinite; will-change: transform; }
   & .fl-fx .fx-vig { background: radial-gradient(ellipse at center, transparent 58%, rgba(0, 22, 9, .36) 84%, rgba(0, 8, 3, .7) 100%); }
   & .fl-fx .fx-brk {
     inset: 10px; --c: rgba(109, 255, 158, .75);
@@ -387,7 +387,7 @@ html[data-fl-theme="forces"] {
     & span { white-space: nowrap; }
   }
 }
-@keyframes fl-sweep { from { transform: translateY(-20vh); } to { transform: translateY(115vh); } }
+@keyframes fl-sweep { from { transform: translateY(-20vh); } 50%, to { transform: translateY(115vh); } }
 @keyframes fl-type { from { clip-path: inset(0 100% 0 0); } to { clip-path: inset(0 0 0 0); } }
 
 /* ---------------------------------------------------------------------

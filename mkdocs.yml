@@ -41,7 +41,7 @@ extra_javascript:
 extra_css:
   - stylesheets/fl-fonts-v2.css
   - stylesheets/fistiland-v102.css
-  - stylesheets/fl-skins-v6.css
+  - stylesheets/fl-skins-v7.css
   - stylesheets/fl-zone-v1.css
 
 extra:
