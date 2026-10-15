@@ -832,8 +832,9 @@ html.fl-fx-off .fl-rank[data-rank="metamorph"] svg, html.fl-fx-off .fl-rank[data
   position: absolute; left: 0; top: 0; width: 100% !important; height: 100% !important; max-width: none; margin: 0;
   object-fit: contain; filter: none; transition: none;
 }
-/* While the hallucination runs, every other effect sleeps: skin layers hidden, all CSS animations frozen */
-html.fl-tripping .fl-fx, html.fl-tripping .fl-door-eyes { display: none !important; }
+/* While the hallucination runs, every other effect sleeps: the skin layers fade out (opacity driven by fl-trip), then they are hidden and
+   all CSS animations frozen; the way back is the reverse (see fl-trip) */
+html.fl-tripping .fl-fx, html.fl-tripping .fl-door-eyes { visibility: hidden; }
 html.fl-tripping *, html.fl-tripping *::before, html.fl-tripping *::after { animation-play-state: paused !important; }
 .fl-trip-dof { position: fixed; inset: 0; z-index: 2; pointer-events: none; visibility: hidden; }
 .fl-trip-canvas { position: fixed; left: 0; top: 0; width: 100vw; height: 100vh; z-index: 3; pointer-events: none; }

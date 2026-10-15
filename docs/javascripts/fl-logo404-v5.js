@@ -30,12 +30,35 @@
     [-117, 1, 0, [210, 180, 255], [183, 140, 255]]   // Métamorphe
   ];
   var pi = 0, col = PALETTE[0];
+  var root = document.documentElement;
+  // One shared colour: the logo, the title, the board border and the sparks all read it, so everything changes at the same instant
+  // (each element eases to it with the same 1.1 s transition).
   function paint() {
     col = PALETTE[pi];
     lg.style.setProperty('--h', col[0] + 'deg'); lg.style.setProperty('--s', col[1]); lg.style.setProperty('--z', col[2]);
     lg.style.setProperty('--hot', col[3].join(',')); lg.style.setProperty('--or', col[4].join(','));
+    root.style.setProperty('--pc', col[4].join(',')); root.style.setProperty('--ph', col[3].join(','));
+    root.style.setProperty('--pd', col[4].map(function (v) { return Math.round(v * .38); }).join(','));
   }
-  setInterval(function () { if (!document.hidden) { pi = (pi + 1) % PALETTE.length; paint(); } }, 2400);
+
+  // Until the toxic mushroom of the snake game is touched, the page keeps the classic orange look with no glitch.
+  // Then (and for good, until the page is reloaded) the colours walk through the skins and ranks, together with the glitches.
+  var psy = false, h1 = document.querySelector('h1');
+  function glitchAll() {
+    if (document.hidden) return;
+    lg.classList.remove('glitch'); if (h1) h1.classList.remove('glitch');
+    void lg.offsetWidth;
+    lg.classList.add('glitch'); if (h1) h1.classList.add('glitch');
+    setTimeout(function () { lg.classList.remove('glitch'); if (h1) h1.classList.remove('glitch'); }, 620);
+  }
+  function glitchLoop() { setTimeout(function () { glitchAll(); glitchLoop(); }, rnd(3200, 7500)); }
+  document.addEventListener('fl-psy', function () {
+    if (psy) return;
+    psy = true; root.classList.add('psy');
+    pi = 1; paint(); glitchAll();
+    setInterval(function () { if (!document.hidden) { pi = (pi + 1) % PALETTE.length; paint(); } }, 2400);
+    glitchLoop();
+  });
 
   var cv = document.createElement('canvas'); cv.className = 'fx'; cv.setAttribute('aria-hidden', 'true');
   document.body.appendChild(cv);
@@ -112,19 +135,6 @@
   lg.addEventListener('pointerleave', leave);
   lg.addEventListener('pointercancel', leave);
 
-  // ---- glitch on the "404 ERROR" title, now and then ----
-  var h1 = document.querySelector('h1');
-  if (h1) {
-    var glitch = function () {
-      if (!document.hidden) {
-        h1.classList.remove('glitch'); void h1.offsetWidth; h1.classList.add('glitch');
-        setTimeout(function () { h1.classList.remove('glitch'); }, 560);
-      }
-      setTimeout(glitch, rnd(2800, 7500));
-    };
-    setTimeout(glitch, rnd(1200, 2600));
-  }
-
   // ---- the five Discord characters wander behind the content; a click on one makes it vanish in sparks ----
   if (typeof window.flDiscordVariants !== 'function') return;
   var TONES = [   // same order as the characters: FISTILAND, Zombie, Survivalist, Forces, Demonic
@@ -158,6 +168,8 @@
         wk.gone = true; wk.el.classList.add('gone');
         setTimeout(function () { if (wk.el.parentNode) wk.el.parentNode.removeChild(wk.el); }, 220);
         walkers = walkers.filter(function (o) { return o !== wk; });
+        // the last one is gone: the snake board turns into the invaders game
+        if (!walkers.length) setTimeout(function () { document.dispatchEvent(new Event('fl-invaders')); }, 380);
       });
     })(walkers[walkers.length - 1]);
   }

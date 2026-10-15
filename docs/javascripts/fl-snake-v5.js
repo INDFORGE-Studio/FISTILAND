@@ -8,6 +8,11 @@
   var HOME = cv.getAttribute('data-home') || '/';
 
   var shift = false;   // true when this win just unlocked the last rank
+  var halted = false;  // the board has been handed over to the invaders game (fl-invaders): the snake stops and no rank can come from it
+
+  // The invaders game takes over the board once every wandering Discord character has been cleared. Refused while a win is being
+  // celebrated, so a rank that was just earned is never lost on the way.
+  window.flSnake = { halt: function () { if (halted || state === 'won' || state === 'gone') return false; halted = true; return true; } };
 
   // Clearing the level is the hidden speed run: it grants every rank at once, up to the last one. The wiki's rank script (fl-rank)
   // announces it on the next page. Same storage key and flags as fl-rank. Returns false when the visitor already holds the last rank.
@@ -118,6 +123,7 @@
 
   var last = 0;
   function frame(t) {
+    if (halted) return;
     requestAnimationFrame(frame);
     if (state === 'play') {
       if (started) {
@@ -136,7 +142,7 @@
   }
 
   document.addEventListener('keydown', function (e) {
-    if (e.ctrlKey || e.metaKey || e.altKey) return;
+    if (halted || e.ctrlKey || e.metaKey || e.altKey) return;
     var k = e.key, d = null;
     if (k === 'ArrowUp' || k === 'w' || k === 'W' || k === 'z' || k === 'Z') d = [0, -1];
     else if (k === 'ArrowDown' || k === 's' || k === 'S') d = [0, 1];
@@ -154,12 +160,13 @@
   // swipe (touch, pen or a mouse drag): each stroke of 18 px or more along an axis is one turn
   var ax = 0, ay = 0, down = false;
   cv.addEventListener('pointerdown', function (e) {
-    // a tap on (or right next to) the mushroom sets the borders of the board ablaze with a rainbow
+    if (halted) return;
+    // a tap on (or right next to) the mushroom wakes the page up: colours walking together, glitches (listened to by fl-logo404)
     var r = cv.getBoundingClientRect(), inner = r.width - 4;
-    if (food && inner > 0 && Math.abs(Math.floor((e.clientX - r.left - 2) / inner * N) - food.x) <= 1 && Math.abs(Math.floor((e.clientY - r.top - 2) / inner * N) - food.y) <= 1 && cv.parentNode) cv.parentNode.classList.add('rain');
+    if (food && inner > 0 && Math.abs(Math.floor((e.clientX - r.left - 2) / inner * N) - food.x) <= 1 && Math.abs(Math.floor((e.clientY - r.top - 2) / inner * N) - food.y) <= 1) document.dispatchEvent(new Event('fl-psy'));
     down = true; ax = e.clientX; ay = e.clientY; try { cv.setPointerCapture(e.pointerId); } catch (x) {} cv.focus({ preventScroll: true }); });
   cv.addEventListener('pointermove', function (e) {
-    if (!down) return;
+    if (!down || halted) return;
     var dx = e.clientX - ax, dy = e.clientY - ay;
     if (Math.max(Math.abs(dx), Math.abs(dy)) < 18) return;
     if (Math.abs(dx) > Math.abs(dy)) turn(dx > 0 ? 1 : -1, 0); else turn(0, dy > 0 ? 1 : -1);

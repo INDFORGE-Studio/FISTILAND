@@ -175,11 +175,22 @@
   }
 
   // While the hallucination runs, every other effect of the site is paused (class + event): the screen filters need the whole budget.
-  var tripOn = false, rootEl = document.documentElement;
+  // The hand-over is progressive: the skin layers fade out over half a second while they still move, and only once they are invisible
+  // does the class (animations frozen, particles stopped) land. On the way back everything wakes up first, then the layers fade in.
+  var tripOn = false, rootEl = document.documentElement, fo = 0, tripWant = false;
+  var fxLive = document.getElementsByClassName('fl-fx'), eyesLive = document.getElementsByClassName('fl-door-eyes');
   function tripFlag(on) {
     if (on === tripOn) return;
     tripOn = on; rootEl.classList.toggle('fl-tripping', on);
     try { document.dispatchEvent(new CustomEvent('fl-trip', { detail: { on: on } })); } catch (e) {}
+  }
+  function fade(enabled, ie, dt) {
+    if (enabled) tripWant = ie > 0.02; else if (ie < 0.12) tripWant = false;   // hysteresis: the layers come back while the effect is dying out
+    fo = clamp01(fo + (tripWant ? dt / 0.55 : -dt / 0.9));
+    var o = 1 - fo * fo * (3 - 2 * fo), v = fo > 0 ? o.toFixed(3) : '', i;
+    for (i = 0; i < fxLive.length; i++) fxLive[i].style.opacity = v;
+    if (!rootEl.classList.contains('fl-lamp-on')) for (i = 0; i < eyesLive.length; i++) eyesLive[i].style.opacity = v;
+    tripFlag(fo >= 1);
   }
 
   function frame(t) {
@@ -194,7 +205,7 @@
       if (isLogo && !masterSent && dwell > cur.delay) { masterSent = true; egg('master'); }
     } else { dwell = Math.max(0, dwell - dt * 3); hold = clamp01(hold - dt / 3); }
     ie = hold * hold * (3 - 2 * hold);
-    tripFlag(ie > 0.02);
+    fade(enabled, ie, dt);
     L1 = clamp01(ie / 0.34); L2 = clamp01((ie - 0.28) / 0.4); L3 = clamp01((ie - 0.6) / 0.4);
     hueAcc = (hueAcc + dt * 90 * ie) % 360; orbAcc += dt * 1.7 * (1 - L2); waveAcc += dt * 25;
     if (logo) {
@@ -260,10 +271,10 @@
       ctx.beginPath(); ctx.arc(q.x, q.y, q.s * 3, 0, Math.PI * 2); ctx.fill();
     }
 
-    if (act || parts.length || ie > 0.003 || hold > 0 || Math.abs(rx) > 0.05 || Math.abs(ry) > 0.05 || sc > 0.01) requestAnimationFrame(frame);
+    if (act || parts.length || ie > 0.003 || hold > 0 || fo > 0 || Math.abs(rx) > 0.05 || Math.abs(ry) > 0.05 || sc > 0.01) requestAnimationFrame(frame);
     else {
       running = false; if (logo) logo.tilt.style.transform = '';
-      ie = 0; L1 = L2 = L3 = 0; tripFlag(false); update(); clearLayers(cur); ctx.setTransform(1, 0, 0, 1, 0, 0); ctx.clearRect(0, 0, cv.width, cv.height);
+      ie = 0; L1 = L2 = L3 = 0; tripWant = false; tripFlag(false); update(); clearLayers(cur); ctx.setTransform(1, 0, 0, 1, 0, 0); ctx.clearRect(0, 0, cv.width, cv.height);
     }
   }
   function start() { if (!running) { running = true; last = performance.now(); requestAnimationFrame(frame); } }

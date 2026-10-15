@@ -34,12 +34,12 @@ extra_javascript:
   - javascripts/fl-rank-v18.js
   - javascripts/fl-theme-v11.js
   - javascripts/fl-fx-v7.js
-  - javascripts/fl-trip-v3.js
+  - javascripts/fl-trip-v4.js
   - javascripts/fl-lamp-v16.js
 
 extra_css:
   - stylesheets/fl-fonts-v2.css
-  - stylesheets/fistiland-v106.css
+  - stylesheets/fistiland-v107.css
   - stylesheets/fl-skins-v10.css
   - stylesheets/fl-home-bg-v1.css
 
