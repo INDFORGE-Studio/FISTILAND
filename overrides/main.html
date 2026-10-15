@@ -196,19 +196,42 @@
   <link rel="icon" type="image/png" sizes="192x192" href="{{ base_url }}/assets/icon-192-v1.png">
   <link rel="apple-touch-icon" sizes="180x180" href="{{ base_url }}/assets/apple-touch-icon-v1.png">
   <meta name="theme-color" content="#ff6a00">
+  <meta name="color-scheme" content="dark">
+  <meta name="referrer" content="strict-origin">
+  <link rel="manifest" href="{{ base_url }}/manifest.webmanifest">
+  {#- Fonts used above the fold are fetched at once instead of after the stylesheet has been parsed. -#}
+  <link rel="preload" href="{{ base_url }}/assets/fonts/inter-normal-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="{{ base_url }}/assets/fonts/oswald-normal-latin.woff2" as="font" type="font/woff2" crossorigin>
+  {% if page and seo_slug == 'home' %}
+  <link rel="preload" href="{{ base_url }}/assets/bg-v3.jpg" as="image" fetchpriority="high">
+  <link rel="preload" href="{{ base_url }}/assets/logo-home-v4.png" as="image" fetchpriority="high">
+  {% endif %}
+  {#- Pages the visitor is about to open are fetched on hover (Chromium); nothing runs before the click. -#}
+  <script type="speculationrules">{"prefetch":[{"where":{"and":[{"href_matches":"/FISTILAND/*"},{"not":{"href_matches":"/FISTILAND/assets/*"}},{"not":{"href_matches":"/FISTILAND/downloads/*"}}]},"eagerness":"moderate"}]}</script>
   <meta name="google-site-verification" content="QHqd_O3h8uMdWb9oJcl34dZEn6MUcaqY0ZV5EKq0tWU">
   <meta property="og:site_name" content="FISTILAND SCUM SERVER">
   <meta property="og:type" content="website">
   <meta property="og:image" content="{{ config.site_url }}assets/icon-512-v1.png">
+  <meta property="og:image:width" content="512">
+  <meta property="og:image:height" content="512">
+  <meta property="og:image:alt" content="FISTILAND, SCUM server: barbed-wire fist shield">
   <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="{{ seo_title }}">
+  <meta name="twitter:description" content="{{ (page.meta.description if page and page.meta is defined and page.meta.description else config.site_description) }}">
+  <meta name="twitter:image" content="{{ config.site_url }}assets/icon-512-v1.png">
   <script>
-    /* Veteran skin: applied before the first paint to avoid a flash. Same storage keys as fl-rank / fl-theme. */
+    /* Veteran skin: applied before the first paint to avoid a flash. Same storage keys as fl-rank / fl-theme.
+       Effects follow the visitor's choice, or the system's reduced-motion setting when there is none. */
     (function () {
       try {
         var s = JSON.parse(localStorage.getItem('fl-eggs-5') || '{}');
         var t = localStorage.getItem('fl-theme');
         if (t && /^(survivalist|forces|demonic|zombie)$/.test(t) && s.discord && s.mushroom && s.master && s.veteran) {
           document.documentElement.setAttribute('data-fl-theme', t);
+        }
+        var f = localStorage.getItem('fl-fx');
+        if (f === 'off' || (f !== 'on' && window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches)) {
+          document.documentElement.classList.add('fl-fx-off');
         }
       } catch (e) {}
     })();

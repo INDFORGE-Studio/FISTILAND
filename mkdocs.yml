@@ -16,7 +16,12 @@ theme:
     - navigation.tabs
     - navigation.top
     - search.suggest
+    - search.highlight
+    - search.share
     - content.code.copy
+    - content.code.annotate
+    - content.tabs.link
+    - content.tooltips
 
 extra_javascript:
   - javascripts/fl-copy-v6.js
@@ -28,14 +33,15 @@ extra_javascript:
   - javascripts/fl-discord-v4.js
   - javascripts/fl-cc-v11.js
   - javascripts/fl-rank-v15.js
-  - javascripts/fl-theme-v4.js
+  - javascripts/fl-theme-v5.js
+  - javascripts/fl-fx-v1.js
   - javascripts/fl-trip-v2.js
   - javascripts/fl-lamp-v14.js
 
 extra_css:
-  - stylesheets/fl-fonts-v1.css
-  - stylesheets/fistiland-v100.css
-  - stylesheets/fl-themes-v2.css
+  - stylesheets/fl-fonts-v2.css
+  - stylesheets/fistiland-v101.css
+  - stylesheets/fl-skins-v1.css
 
 extra:
   social:
@@ -44,10 +50,26 @@ extra:
       name: FISTILAND on Discord
 
 markdown_extensions:
+  - abbr
   - admonition
   - attr_list
+  - def_list
+  - footnotes
   - md_in_html
   - tables
+  - pymdownx.details
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
   - toc:
       permalink: false
   - pymdownx.emoji:
