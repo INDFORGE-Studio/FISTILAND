@@ -14,11 +14,7 @@
     setTimeout(function () { location.assign(HOME); }, pointer === 'mouse' ? 0 : 450);
   });
 
-  // The hover effect is always there, like on the home page. The ambient motion (colour walk, glitches, wanderers) stops when effects are off or reduced motion is asked.
-  var ambient = true;
-  try { if (localStorage.getItem('fl-fx') === 'off') ambient = false; } catch (e) {}
-  if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) ambient = false;
-  if (!ambient) lg.classList.add('calm');
+  // This page is an Easter Egg playground with no settings panel: everything always plays, whatever the skin panel says.
 
   // The logo walks through the colours of the five skins and the five ranks: [hue-rotate deg, saturate, sepia, hot rgb, base rgb]
   var PALETTE = [
@@ -39,7 +35,7 @@
     lg.style.setProperty('--h', col[0] + 'deg'); lg.style.setProperty('--s', col[1]); lg.style.setProperty('--z', col[2]);
     lg.style.setProperty('--hot', col[3].join(',')); lg.style.setProperty('--or', col[4].join(','));
   }
-  if (ambient) setInterval(function () { if (!document.hidden) { pi = (pi + 1) % PALETTE.length; paint(); } }, 2400);
+  setInterval(function () { if (!document.hidden) { pi = (pi + 1) % PALETTE.length; paint(); } }, 2400);
 
   var cv = document.createElement('canvas'); cv.className = 'fx'; cv.setAttribute('aria-hidden', 'true');
   document.body.appendChild(cv);
@@ -116,8 +112,6 @@
   lg.addEventListener('pointerleave', leave);
   lg.addEventListener('pointercancel', leave);
 
-  if (!ambient) return;
-
   // ---- glitch on the "404 ERROR" title, now and then ----
   var h1 = document.querySelector('h1');
   if (h1) {
@@ -144,16 +138,18 @@
   document.body.appendChild(layer);
   var walkers = [];
   var probe = document.createElement('div');
-  for (var wi = 0; wi < TONES.length; wi++) {
+  var COUNT = VW < 600 ? 8 : 12;   // like little bubbles all over the page: every character several times
+  for (var wi = 0; wi < COUNT; wi++) {
+    var ci = wi % TONES.length;
     probe.innerHTML = window.flDiscordVariants();   // fresh copy each time: unique ids in the pictures
-    var pic = probe.children[wi];
+    var pic = probe.children[ci];
     if (!pic) continue;
     var el = document.createElement('span'); el.className = 'wd';
-    el.style.setProperty('--dv', TONES[wi][3].join(','));
+    el.style.setProperty('--dv', TONES[ci][3].join(','));
     pic.className += ' on'; el.appendChild(pic);
     layer.appendChild(el);
-    var ang = rnd(0, Math.PI * 2), sp = rnd(26, 58);
-    walkers.push({ el: el, tone: TONES[wi], x: rnd(0, Math.max(1, VW - 60)), y: rnd(0, Math.max(1, VH - 60)), vx: Math.cos(ang) * sp, vy: Math.sin(ang) * sp, sp: sp, turn: rnd(0.8, 2.6), ph: rnd(0, 6.28), tilt: rnd(5, 11), s: 0 });
+    var ang = rnd(0, Math.PI * 2), sp = rnd(16, 42);
+    walkers.push({ el: el, tone: TONES[ci], x: rnd(0, Math.max(1, VW - 60)), y: rnd(0, Math.max(1, VH - 60)), vx: Math.cos(ang) * sp, vy: Math.sin(ang) * sp, sp: sp, turn: rnd(0.8, 2.6), ph: rnd(0, 6.28), tilt: rnd(5, 11), s: 0 });
     (function (wk) {
       wk.el.addEventListener('pointerdown', function (e) {
         e.preventDefault();

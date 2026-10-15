@@ -153,7 +153,11 @@
 
   // swipe (touch, pen or a mouse drag): each stroke of 18 px or more along an axis is one turn
   var ax = 0, ay = 0, down = false;
-  cv.addEventListener('pointerdown', function (e) { down = true; ax = e.clientX; ay = e.clientY; try { cv.setPointerCapture(e.pointerId); } catch (x) {} cv.focus({ preventScroll: true }); });
+  cv.addEventListener('pointerdown', function (e) {
+    // a tap on (or right next to) the mushroom sets the borders of the board ablaze with a rainbow
+    var r = cv.getBoundingClientRect(), inner = r.width - 4;
+    if (food && inner > 0 && Math.abs(Math.floor((e.clientX - r.left - 2) / inner * N) - food.x) <= 1 && Math.abs(Math.floor((e.clientY - r.top - 2) / inner * N) - food.y) <= 1 && cv.parentNode) cv.parentNode.classList.add('rain');
+    down = true; ax = e.clientX; ay = e.clientY; try { cv.setPointerCapture(e.pointerId); } catch (x) {} cv.focus({ preventScroll: true }); });
   cv.addEventListener('pointermove', function (e) {
     if (!down) return;
     var dx = e.clientX - ax, dy = e.clientY - ay;
