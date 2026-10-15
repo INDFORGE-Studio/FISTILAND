@@ -9,13 +9,13 @@
 
   var shift = false;   // true when this win just unlocked the last rank
 
-  // Winning as a Veteran (the four secrets found) grants the last rank. The wiki's rank script (fl-rank) announces it on the next page.
-  // Same storage key and flags as fl-rank.
+  // Clearing the level is the hidden speed run: it grants every rank at once, up to the last one. The wiki's rank script (fl-rank)
+  // announces it on the next page. Same storage key and flags as fl-rank. Returns false when the visitor already holds the last rank.
   function grantMeta() {
     try {
       var o = JSON.parse(localStorage.getItem('fl-eggs-5') || '{}');
-      if (!o || typeof o !== 'object' || !(o.discord && o.mushroom && o.master && o.veteran) || o.meta) return false;
-      o.meta = 1; o.metaNew = 1;
+      if (!o || typeof o !== 'object' || o.meta) return false;
+      o.discord = o.mushroom = o.master = o.veteran = o.meta = o.metaNew = 1;
       localStorage.setItem('fl-eggs-5', JSON.stringify(o));
       return true;
     } catch (e) { return false; }

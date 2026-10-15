@@ -4,7 +4,7 @@
   //  Iron      : the other one of the two
   //  Master    : the hallucination of the home logo, which only exists once Iron is reached
   //  Veteran   : treating yourself (click on one of the two remedy boxes of the Mushrooms page), only possible once Master
-  //  Metamorph : clearing the level of the snake game hidden on the 404 page, only counted once Veteran (the 404 page
+  //  Metamorph : clearing the level of the snake game hidden on the 404 page; it grants every rank at once (the 404 page
   //              writes the `meta` flags below, the next page load announces the rank)
   // Progress is kept in this browser (localStorage).
   var KEY = 'fl-eggs-5';
