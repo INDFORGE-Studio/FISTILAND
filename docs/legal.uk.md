@@ -41,10 +41,11 @@ FISTILAND (INDFORGE Studio), https://indforge-studio.github.io/FISTILAND/ - CC B
 - **SCUM.** Гра, її назви, логотипи та ігрові матеріали належать Gamepires та його партнерам і не охоплюються цією ліцензією. FISTILAND — незалежний проєкт фанатів, не пов'язаний із ними й не схвалений ними. Див. [умови SCUM](https://scumgame.com/index.php/legal/terms-conditions/).
 - **scum.wiki.gg.** Частина інформації на наших мапах походить із [scum.wiki.gg](https://scum.wiki.gg/) за ліцензією [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.uk) і адаптована для нашої мапи. Авторство залишається за цією вікі.
 - **Сторонні інструменти та торгові марки.** Цей сайт створено за допомогою [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/) (ліцензія MIT) і розміщено на GitHub. Назва й логотип GitHub є торговими марками GitHub, Inc.; їх показано лише для вказівки на хостинг, без жодного натяку на схвалення.
+- **Шрифти.** Inter, Oswald, Roboto Mono, Metal Mania і Creepster поширюються за ліцензією SIL Open Font License 1.1, Special Elite — за ліцензією Apache 2.0. Вони розміщені на цьому сайті; дивіться [тексти ліцензій](https://github.com/INDFORGE-Studio/FISTILAND/tree/main/docs/assets/fonts/licenses).
 
 ## :material-shield-lock: Персональні дані
 
-Сайт некомерційний: без реклами, без продажів, без cookie та без аналітики. Ваша мова, скін, ранг та інші налаштування зберігаються лише у вашому браузері й ніколи не надсилаються нам. Хостинг-провайдер може зберігати технічні журнали, як-от вашу IP-адресу, відповідно до [політики конфіденційності GitHub](https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement). Посилання на інші сайти (Discord, scum.wiki.gg тощо) ведуть до сервісів зі своїми правилами.
+Сайт некомерційний: без реклами, без продажів, без cookie та без аналітики. Ваша мова, скін, ранг та інші налаштування зберігаються лише у вашому браузері й ніколи не надсилаються нам. Шрифти надаються самим цим сайтом, тому ваш браузер не надсилає жодних запитів до Google чи інших третіх сторін, щоб їх показати. Хостинг-провайдер може зберігати технічні журнали, як-от вашу IP-адресу, відповідно до [політики конфіденційності GitHub](https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement). Посилання на інші сайти (Discord, scum.wiki.gg тощо) ведуть до сервісів зі своїми правилами.
 
 ## :material-message-text: Контакти
 

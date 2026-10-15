@@ -41,10 +41,11 @@ FISTILAND (INDFORGE Studio), https://indforge-studio.github.io/FISTILAND/ - CC B
 - **SCUM.** El juego, sus nombres, logotipos y elementos de juego pertenecen a Gamepires y a sus socios y no están cubiertos por esta licencia. FISTILAND es un proyecto de fans independiente, sin vínculo ni respaldo de ellos. Consulta las [condiciones de SCUM](https://scumgame.com/index.php/legal/terms-conditions/).
 - **scum.wiki.gg.** Parte de la información de nuestros mapas procede de [scum.wiki.gg](https://scum.wiki.gg/) bajo la licencia [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.es), adaptada para nuestro mapa. Sigue atribuida a ese wiki.
 - **Herramientas y marcas de terceros.** Este sitio se ha creado con [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/) (licencia MIT) y se aloja en GitHub. El nombre y el logotipo de GitHub son marcas de GitHub, Inc., mostrados solo para indicar el alojamiento, sin sugerir ningún respaldo.
+- **Fuentes tipográficas.** Inter, Oswald, Roboto Mono, Metal Mania y Creepster están bajo la SIL Open Font License 1.1, y Special Elite bajo la Apache License 2.0. Se alojan en este sitio; consulta los [textos de las licencias](https://github.com/INDFORGE-Studio/FISTILAND/tree/main/docs/assets/fonts/licenses).
 
 ## :material-shield-lock: Datos personales
 
-El sitio no tiene fines comerciales: sin publicidad, sin ventas, sin cookies y sin analítica. Tu idioma, tu skin, tu rango y otras preferencias se guardan solo en tu navegador y nunca se nos envían. El proveedor de alojamiento puede conservar registros técnicos, como tu dirección IP, según la [política de privacidad de GitHub](https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement). Los enlaces a otros sitios (Discord, scum.wiki.gg, etc.) llevan a servicios con sus propias políticas.
+El sitio no tiene fines comerciales: sin publicidad, sin ventas, sin cookies y sin analítica. Tu idioma, tu skin, tu rango y otras preferencias se guardan solo en tu navegador y nunca se nos envían. Las fuentes se sirven desde este mismo sitio, por lo que tu navegador no envía ninguna petición a Google ni a otros terceros para mostrarlas. El proveedor de alojamiento puede conservar registros técnicos, como tu dirección IP, según la [política de privacidad de GitHub](https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement). Los enlaces a otros sitios (Discord, scum.wiki.gg, etc.) llevan a servicios con sus propias políticas.
 
 ## :material-message-text: Contacto
 

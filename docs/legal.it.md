@@ -41,10 +41,11 @@ FISTILAND (INDFORGE Studio), https://indforge-studio.github.io/FISTILAND/ - CC B
 - **SCUM.** Il gioco, i suoi nomi, loghi ed elementi di gioco appartengono a Gamepires e ai suoi partner e non sono coperti da questa licenza. FISTILAND è un progetto di fan indipendente, non affiliato né approvato da loro. Vedi i [termini di SCUM](https://scumgame.com/index.php/legal/terms-conditions/).
 - **scum.wiki.gg.** Alcune informazioni delle nostre mappe provengono da [scum.wiki.gg](https://scum.wiki.gg/) con licenza [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.it), adattate per la nostra mappa. Restano attribuite a quel wiki.
 - **Strumenti e marchi di terzi.** Questo sito è costruito con [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/) (licenza MIT) ed è ospitato su GitHub. Il nome e il logo di GitHub sono marchi di GitHub, Inc., mostrati solo per indicare l'hosting, senza alcun avallo implicito.
+- **Font.** Inter, Oswald, Roboto Mono, Metal Mania e Creepster sono con licenza SIL Open Font License 1.1, Special Elite con licenza Apache 2.0. Sono ospitati su questo sito; vedi i [testi delle licenze](https://github.com/INDFORGE-Studio/FISTILAND/tree/main/docs/assets/fonts/licenses).
 
 ## :material-shield-lock: Dati personali
 
-Il sito non ha scopi commerciali: nessuna pubblicità, nessuna vendita, nessun cookie e nessuna analisi. La tua lingua, la tua skin, il tuo grado e altre preferenze sono salvati solo nel tuo browser e non ci vengono mai inviati. Il fornitore di hosting può conservare log tecnici, come il tuo indirizzo IP, secondo l'[informativa sulla privacy di GitHub](https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement). I link ad altri siti (Discord, scum.wiki.gg e così via) portano a servizi con regole proprie.
+Il sito non ha scopi commerciali: nessuna pubblicità, nessuna vendita, nessun cookie e nessuna analisi. La tua lingua, la tua skin, il tuo grado e altre preferenze sono salvati solo nel tuo browser e non ci vengono mai inviati. I font sono serviti da questo stesso sito, quindi il tuo browser non invia alcuna richiesta a Google o ad altri terzi per mostrarli. Il fornitore di hosting può conservare log tecnici, come il tuo indirizzo IP, secondo l'[informativa sulla privacy di GitHub](https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement). I link ad altri siti (Discord, scum.wiki.gg e così via) portano a servizi con regole proprie.
 
 ## :material-message-text: Contatti
 

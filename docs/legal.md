@@ -41,10 +41,11 @@ FISTILAND (INDFORGE Studio), https://indforge-studio.github.io/FISTILAND/ - CC B
 - **SCUM.** The game, its names, logos and in-game assets belong to Gamepires and its partners and are not covered by this licence. FISTILAND is an independent fan project, not affiliated with or endorsed by them. See the [SCUM terms](https://scumgame.com/index.php/legal/terms-conditions/).
 - **scum.wiki.gg.** Some information on our maps comes from [scum.wiki.gg](https://scum.wiki.gg/) under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/), adapted for our map. It stays credited to that wiki.
 - **Third-party tools and marks.** This site is built with [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/) (MIT licence) and hosted on GitHub. The GitHub name and logo are trademarks of GitHub, Inc., shown only to indicate hosting, with no endorsement implied.
+- **Fonts.** Inter, Oswald, Roboto Mono, Metal Mania and Creepster are under the SIL Open Font License 1.1, Special Elite under the Apache License 2.0. They are hosted on this site; see the [licence texts](https://github.com/INDFORGE-Studio/FISTILAND/tree/main/docs/assets/fonts/licenses).
 
 ## :material-shield-lock: Personal data
 
-The site is non-commercial: no advertising, no sales, no cookies and no analytics. Your language, skin, rank and similar preferences are stored in your own browser only and are never sent to us. The host may keep technical logs such as your IP address, as described in the [GitHub privacy statement](https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement). Links to other sites (Discord, scum.wiki.gg and so on) lead to services with their own policies.
+The site is non-commercial: no advertising, no sales, no cookies and no analytics. Your language, skin, rank and similar preferences are stored in your own browser only and are never sent to us. Fonts are served from this site itself, so your browser sends no request to Google or any other third party to display it. The host may keep technical logs such as your IP address, as described in the [GitHub privacy statement](https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement). Links to other sites (Discord, scum.wiki.gg and so on) lead to services with their own policies.
 
 ## :material-message-text: Contact
 

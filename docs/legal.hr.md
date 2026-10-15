@@ -41,10 +41,11 @@ FISTILAND (INDFORGE Studio), https://indforge-studio.github.io/FISTILAND/ - CC B
 - **SCUM.** Igra, njezini nazivi, logotipi i elementi igre pripadaju tvrtki Gamepires i njezinim partnerima i nisu obuhvaćeni ovom licencom. FISTILAND je neovisan projekt obožavatelja, nije povezan s njima niti ga oni podržavaju. Pogledajte [uvjete igre SCUM](https://scumgame.com/index.php/legal/terms-conditions/).
 - **scum.wiki.gg.** Neke informacije na našim kartama potječu sa stranice [scum.wiki.gg](https://scum.wiki.gg/) pod licencom [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.hr), prilagođene za našu kartu. I dalje se pripisuju tom wikiju.
 - **Alati i žigovi trećih strana.** Ova je stranica izrađena pomoću [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/) (licenca MIT) i smještena na GitHubu. Naziv i logotip GitHub žigovi su tvrtke GitHub, Inc., prikazani samo kao oznaka hostinga, bez ikakvog sugeriranja podrške.
+- **Fontovi.** Inter, Oswald, Roboto Mono, Metal Mania i Creepster pod licencom su SIL Open Font License 1.1, a Special Elite pod licencom Apache 2.0. Smješteni su na ovoj stranici; pogledajte [tekstove licenci](https://github.com/INDFORGE-Studio/FISTILAND/tree/main/docs/assets/fonts/licenses).
 
 ## :material-shield-lock: Osobni podaci
 
-Stranica je nekomercijalna: bez oglasa, bez prodaje, bez kolačića i bez analitike. Vaš jezik, skin, rang i slične postavke spremaju se samo u vašem vlastitom pregledniku i nikad se ne šalju nama. Pružatelj hostinga može čuvati tehničke zapise, poput vaše IP adrese, kako je opisano u [GitHubovoj politici privatnosti](https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement). Poveznice na druge stranice (Discord, scum.wiki.gg i slično) vode na usluge s vlastitim pravilima.
+Stranica je nekomercijalna: bez oglasa, bez prodaje, bez kolačića i bez analitike. Vaš jezik, skin, rang i slične postavke spremaju se samo u vašem vlastitom pregledniku i nikad se ne šalju nama. Fontovi se poslužuju s same ove stranice, pa vaš preglednik ne šalje nikakav zahtjev Googleu ni drugim trećim stranama da bi ih prikazao. Pružatelj hostinga može čuvati tehničke zapise, poput vaše IP adrese, kako je opisano u [GitHubovoj politici privatnosti](https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement). Poveznice na druge stranice (Discord, scum.wiki.gg i slično) vode na usluge s vlastitim pravilima.
 
 ## :material-message-text: Kontakt
 
