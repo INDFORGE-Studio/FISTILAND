@@ -57,7 +57,7 @@
     '<g clip-path="url(#fl-eg-eyeclip)"><g class="fl-eg-iris"><circle cx="12" cy="12" r="5" fill="currentColor"/>' +
     '<g class="fl-eg-pup"><path d="M12 8.9v6.2" stroke="#0d0c0b" stroke-width="2.2" stroke-linecap="round"/><circle cx="10.3" cy="10.3" r="1.1" fill="#fff" opacity=".85"/></g></g></g>' +
     '<path d="' + ALMOND + '" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg>';
-  var tip = null, eyeTimer = 0, blinkTimer = 0;
+  var tip = null, blinkTimer = 0;
 
   function rnd(a, b) { return a + Math.random() * (b - a); }
   function eyeLive(eye) {
@@ -65,20 +65,21 @@
     return eye.isConnected && !document.hidden && !document.documentElement.classList.contains('fl-fx-off') &&
       !document.documentElement.classList.contains('fl-tripping');
   }
-  // The eye looks around in every direction at random (now and then straight ahead) and blinks like an eyelid, sometimes twice in a row.
-  function eyeLoop(eye) {
-    var svg = eye.firstChild;
-    function look() {
-      if (!eye.isConnected) return;
-      if (eyeLive(eye)) {
-        var a = rnd(0, 6.2832), d = Math.random() < .15 ? 0 : rnd(.45, 1);
-        svg.style.setProperty('--dx', (Math.cos(a) * d * 6).toFixed(2));
-        svg.style.setProperty('--dy', (Math.sin(a) * d * 3.1).toFixed(2));
-      }
-      eyeTimer = setTimeout(look, rnd(450, 1900));
+  // The eye is still until the pointer is over the frame; then the iris follows the pointer (small travel, always clear of the eyelid)
+  // and the eye blinks now and then, sometimes twice in a row. A tap does the same on touch screens, for a moment.
+  function eyeHover(frame, eye) {
+    var svg = eye.firstChild, over = false, restT = 0;
+    function aim(e) {
+      if (!eyeLive(eye)) return;
+      var r = eye.getBoundingClientRect();
+      var vx = (e.clientX - (r.left + r.width / 2)) / 130, vy = (e.clientY - (r.top + r.height / 2)) / 130;
+      var l = Math.sqrt(vx * vx + vy * vy);
+      if (l > 1) { vx /= l; vy /= l; }
+      svg.style.setProperty('--dx', (vx * 2).toFixed(2));
+      svg.style.setProperty('--dy', (vy * 1.1).toFixed(2));
     }
     function blink(again) {
-      if (!eye.isConnected) return;
+      if (!over || !eye.isConnected) return;
       if (eyeLive(eye)) {
         eye.classList.add('is-blink');
         setTimeout(function () { eye.classList.remove('is-blink'); }, 160);
@@ -86,8 +87,21 @@
       }
       blinkTimer = setTimeout(blink, rnd(1800, 5200));
     }
-    look();
-    blinkTimer = setTimeout(blink, rnd(1200, 3000));
+    function enter(e) {
+      clearTimeout(restT);
+      if (!over) { over = true; clearTimeout(blinkTimer); blinkTimer = setTimeout(blink, rnd(700, 1800)); }
+      aim(e);
+    }
+    function rest() {
+      over = false; clearTimeout(blinkTimer); clearTimeout(restT);
+      eye.classList.remove('is-blink');
+      svg.style.setProperty('--dx', 0); svg.style.setProperty('--dy', 0);
+    }
+    frame.addEventListener('pointerenter', function (e) { if (e.pointerType !== 'touch') enter(e); });
+    frame.addEventListener('pointermove', function (e) { if (e.pointerType !== 'touch') enter(e); else if (over) aim(e); });
+    frame.addEventListener('pointerleave', function (e) { if (e.pointerType !== 'touch') rest(); });
+    frame.addEventListener('pointerdown', function (e) { if (e.pointerType === 'touch') { enter(e); restT = setTimeout(rest, 3500); } });
+    frame.addEventListener('pointercancel', rest);
   }
 
   // Tooltip that follows the pointer while it is inside the frame (a tap shows it on touch screens).
@@ -122,10 +136,10 @@
     var eye = document.createElement('span'); eye.className = 'fl-eg-ico'; eye.innerHTML = EYE;
     wrap.parentNode.insertBefore(f, wrap);
     f.appendChild(eye); f.appendChild(wrap);
-    buildTip(f); eyeLoop(eye);
+    buildTip(f); eyeHover(f, eye);
   }
   function dropFrame(frame, wrap) {
-    clearTimeout(eyeTimer); clearTimeout(blinkTimer);
+    clearTimeout(blinkTimer);
     if (tip && tip.parentNode) tip.parentNode.removeChild(tip);
     tip = null;
     frame.parentNode.insertBefore(wrap, frame); frame.parentNode.removeChild(frame);

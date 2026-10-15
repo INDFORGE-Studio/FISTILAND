@@ -35,7 +35,7 @@ extra_javascript:
   - javascripts/fl-join-v3.js
   - javascripts/fl-discord-v5.js
   - javascripts/fl-cc-v11.js
-  - javascripts/fl-rank-v19.js
+  - javascripts/fl-rank-v20.js
   - javascripts/fl-theme-v12.js
   - javascripts/fl-fx-v7.js
   - javascripts/fl-trip-v4.js
@@ -44,7 +44,7 @@ extra_javascript:
 
 extra_css:
   - stylesheets/fl-fonts-v2.css
-  - stylesheets/fistiland-v109.css
+  - stylesheets/fistiland-v110.css
   - stylesheets/fl-skins-v10.css
   - stylesheets/fl-home-bg-v1.css
   - stylesheets/fl-extras-v2.css
