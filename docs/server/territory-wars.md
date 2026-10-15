@@ -81,15 +81,15 @@ Turrets attack prisoners, puppets (zombies), vehicles, sentries, animals and arm
 | `LockProtectionDamageMultiplier` | 1 | Damage dealt by locks to people who fail to pick them. |
 | `BaseBuildingDestructionLogDamageThreshold` | 20 | Damage level above which base destruction is logged. |
 
-## :material-calculator:  { #calculator }
+## :material-calculator: Base size calculator { #calculator }
 
 <div class="fl-calc" data-base="300" data-extra="17" data-exp="75" data-max="10">
-<label class="fl-calc__row" hidden><span></span> <b class="fl-calc__n">1</b><input type="range" min="1" max="10" value="1"></label>
+<label class="fl-calc__row" hidden><span>Squad members</span> <b class="fl-calc__n">1</b><input type="range" min="1" max="10" value="1"></label>
 <div class="fl-facts">
-<div><b data-out="flag">300</b><span></span></div>
-<div><b data-out="exp">375</b><span></span></div>
+<div><b data-out="flag">300</b><span>Elements per flag</span></div>
+<div><b data-out="exp">375</b><span>With expansion kits</span></div>
 </div>
-<p class="fl-calc__note"></p>
+<p class="fl-calc__note">300 elements, plus 17 for every squad member after the first. Expansion kits add up to 75 more per flag.</p>
 </div>
 
 ## :material-link-variant: Related pages

@@ -19,6 +19,17 @@
 .fl-checks .task-list-item.fl-done { opacity: .6; }
 .fl-checks .task-list-item.fl-done > a, .fl-checks .task-list-item.fl-done > strong { text-decoration: none; }
 .fl-checks .task-list-control { cursor: pointer; }
+/* an empty ring until ticked, then a filled one */
+.md-typeset .fl-checks .task-list-indicator::before {
+  background-color: rgba(var(--fl-or-rgb), .75);
+  -webkit-mask-image: url("data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2m0 18c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8'/%3E%3C/svg%3E");
+  mask-image: url("data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2m0 18c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8'/%3E%3C/svg%3E");
+}
+.md-typeset .fl-checks [type="checkbox"]:checked + .task-list-indicator::before {
+  background-color: var(--fl-orange-hot);
+  -webkit-mask-image: url("data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2m-2 15-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8z'/%3E%3C/svg%3E");
+  mask-image: url("data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2m-2 15-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8z'/%3E%3C/svg%3E");
+}
 .fl-checks .fl-ip { cursor: pointer; }
 .fl-checks__bar {
   position: relative; display: flex; align-items: center; justify-content: flex-end; height: 1.5rem; margin: 0 0 1.4rem;

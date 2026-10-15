@@ -81,15 +81,15 @@ Les tourelles attaquent les prisonniers, les marionnettes (zombies), les véhicu
 | `LockProtectionDamageMultiplier` | 1 | Dégâts infligés par les serrures à ceux qui échouent à les crocheter. |
 | `BaseBuildingDestructionLogDamageThreshold` | 20 | Niveau de dégâts au-delà duquel la destruction de base est journalisée. |
 
-## :material-calculator:  { #calculator }
+## :material-calculator: Calculateur de taille de base { #calculator }
 
 <div class="fl-calc" data-base="300" data-extra="17" data-exp="75" data-max="10">
-<label class="fl-calc__row" hidden><span></span> <b class="fl-calc__n">1</b><input type="range" min="1" max="10" value="1"></label>
+<label class="fl-calc__row" hidden><span>Membres de l'escouade</span> <b class="fl-calc__n">1</b><input type="range" min="1" max="10" value="1"></label>
 <div class="fl-facts">
-<div><b data-out="flag">300</b><span></span></div>
-<div><b data-out="exp">375</b><span></span></div>
+<div><b data-out="flag">300</b><span>Éléments par drapeau</span></div>
+<div><b data-out="exp">375</b><span>Avec les kits d'extension</span></div>
 </div>
-<p class="fl-calc__note"></p>
+<p class="fl-calc__note">300 éléments, plus 17 par membre d'escouade après le premier. Les kits d'extension en ajoutent jusqu'à 75 de plus par drapeau.</p>
 </div>
 
 ## :material-link-variant: Pages liées

@@ -28,12 +28,12 @@
 | `EnableFog` | True | Mgła jest renderowana. |
 
 <div class="fl-day">
-<div class="fl-day__bar" role="img" aria-label="00:00-05:00 , 05:00-22:30 , 22:30-24:00 "><i class="n1"></i><i class="d"></i><i class="n2"></i></div>
+<div class="fl-day__bar" role="img" aria-label="00:00-05:00 Noc, 05:00-22:30 Dzień, 22:30-24:00 Noc"><i class="n1">Noc</i><i class="d">Dzień</i><i class="n2"></i></div>
 <div class="fl-day__ticks" aria-hidden="true"><span class="t0">00:00</span><span class="t1">05:00</span><span class="t2">22:30</span><span class="t3">24:00</span></div>
 <div class="fl-facts">
-<div><b>4 h 33</b><span></span></div>
-<div><b>1 h 42</b><span></span></div>
-<div><b>6 h 15</b><span></span></div>
+<div><b>4 h 33</b><span>Dzień, w czasie rzeczywistym</span></div>
+<div><b>1 h 42</b><span>Noc, w czasie rzeczywistym</span></div>
+<div><b>6 h 15</b><span>Cała doba, w czasie rzeczywistym</span></div>
 </div>
 </div>
 

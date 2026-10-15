@@ -81,15 +81,15 @@ Wieżyczki atakują więźniów, marionetki (zombie), pojazdy, strażników, zwi
 | `LockProtectionDamageMultiplier` | 1 | Obrażenia zadawane przez zamki osobom, którym nie uda się ich otworzyć. |
 | `BaseBuildingDestructionLogDamageThreshold` | 20 | Poziom obrażeń, powyżej którego rejestrowane jest zniszczenie bazy. |
 
-## :material-calculator:  { #calculator }
+## :material-calculator: Kalkulator rozmiaru bazy { #calculator }
 
 <div class="fl-calc" data-base="300" data-extra="17" data-exp="75" data-max="10">
-<label class="fl-calc__row" hidden><span></span> <b class="fl-calc__n">1</b><input type="range" min="1" max="10" value="1"></label>
+<label class="fl-calc__row" hidden><span>Członkowie drużyny</span> <b class="fl-calc__n">1</b><input type="range" min="1" max="10" value="1"></label>
 <div class="fl-facts">
-<div><b data-out="flag">300</b><span></span></div>
-<div><b data-out="exp">375</b><span></span></div>
+<div><b data-out="flag">300</b><span>Elementów na flagę</span></div>
+<div><b data-out="exp">375</b><span>Z zestawami rozbudowy</span></div>
 </div>
-<p class="fl-calc__note"></p>
+<p class="fl-calc__note">300 elementów, plus 17 za każdego członka drużyny po pierwszym. Zestawy rozbudowy dodają do 75 więcej na flagę.</p>
 </div>
 
 ## :material-link-variant: Powiązane strony

@@ -81,15 +81,15 @@ Geschütztürme greifen Gefangene, Puppets (Zombies), Fahrzeuge, Wächter, Tiere
 | `LockProtectionDamageMultiplier` | 1 | Schaden, den Schlösser an Personen verursachen, die beim Knacken scheitern. |
 | `BaseBuildingDestructionLogDamageThreshold` | 20 | Schadensstufe, ab der die Zerstörung einer Basis protokolliert wird. |
 
-## :material-calculator:  { #calculator }
+## :material-calculator: Basisgrößen-Rechner { #calculator }
 
 <div class="fl-calc" data-base="300" data-extra="17" data-exp="75" data-max="10">
-<label class="fl-calc__row" hidden><span></span> <b class="fl-calc__n">1</b><input type="range" min="1" max="10" value="1"></label>
+<label class="fl-calc__row" hidden><span>Truppmitglieder</span> <b class="fl-calc__n">1</b><input type="range" min="1" max="10" value="1"></label>
 <div class="fl-facts">
-<div><b data-out="flag">300</b><span></span></div>
-<div><b data-out="exp">375</b><span></span></div>
+<div><b data-out="flag">300</b><span>Elemente pro Flagge</span></div>
+<div><b data-out="exp">375</b><span>Mit Erweiterungssets</span></div>
 </div>
-<p class="fl-calc__note"></p>
+<p class="fl-calc__note">300 Elemente, dazu 17 für jedes Truppmitglied nach dem ersten. Erweiterungssets fügen pro Flagge bis zu 75 hinzu.</p>
 </div>
 
 ## :material-link-variant: Verwandte Seiten

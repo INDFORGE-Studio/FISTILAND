@@ -81,15 +81,15 @@ Las torretas atacan a prisioneros, marionetas (zombis), vehículos, centinelas, 
 | `LockProtectionDamageMultiplier` | 1 | Daño que causan las cerraduras a quien falla al forzarlas. |
 | `BaseBuildingDestructionLogDamageThreshold` | 20 | Nivel de daño a partir del cual se registra la destrucción de la base. |
 
-## :material-calculator:  { #calculator }
+## :material-calculator: Calculadora de tamaño de base { #calculator }
 
 <div class="fl-calc" data-base="300" data-extra="17" data-exp="75" data-max="10">
-<label class="fl-calc__row" hidden><span></span> <b class="fl-calc__n">1</b><input type="range" min="1" max="10" value="1"></label>
+<label class="fl-calc__row" hidden><span>Miembros de la escuadra</span> <b class="fl-calc__n">1</b><input type="range" min="1" max="10" value="1"></label>
 <div class="fl-facts">
-<div><b data-out="flag">300</b><span></span></div>
-<div><b data-out="exp">375</b><span></span></div>
+<div><b data-out="flag">300</b><span>Elementos por bandera</span></div>
+<div><b data-out="exp">375</b><span>Con kits de ampliación</span></div>
 </div>
-<p class="fl-calc__note"></p>
+<p class="fl-calc__note">300 elementos, más 17 por cada miembro de la escuadra después del primero. Los kits de ampliación añaden hasta 75 más por bandera.</p>
 </div>
 
 ## :material-link-variant: Páginas relacionadas
