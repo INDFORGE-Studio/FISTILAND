@@ -22,20 +22,20 @@ theme:
 
 extra_javascript:
   - javascripts/fl-copy-v4.js
-  - javascripts/fl-map-v15.js
+  - javascripts/fl-map-v16.js
   - javascripts/fl-cards-v1.js
   - javascripts/fl-mush-v1.js
   - javascripts/fl-ip-v1.js
   - javascripts/fl-join-v1.js
   - javascripts/fl-discord-v4.js
-  - javascripts/fl-cc-v3.js
+  - javascripts/fl-cc-v4.js
   - javascripts/fl-rank-v13.js
   - javascripts/fl-theme-v2.js
   - javascripts/fl-trip-v2.js
   - javascripts/fl-lamp-v14.js
 
 extra_css:
-  - stylesheets/fistiland-v86.css
+  - stylesheets/fistiland-v87.css
   - stylesheets/fl-themes-v2.css
 
 extra:
