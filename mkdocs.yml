@@ -22,13 +22,13 @@ theme:
 
 extra_javascript:
   - javascripts/fl-copy-v6.js
-  - javascripts/fl-map-v25.js
+  - javascripts/fl-map-v26.js
   - javascripts/fl-cards-v1.js
   - javascripts/fl-mush-v1.js
   - javascripts/fl-ip-v3.js
   - javascripts/fl-join-v3.js
   - javascripts/fl-discord-v4.js
-  - javascripts/fl-cc-v9.js
+  - javascripts/fl-cc-v10.js
   - javascripts/fl-rank-v15.js
   - javascripts/fl-theme-v4.js
   - javascripts/fl-trip-v2.js
