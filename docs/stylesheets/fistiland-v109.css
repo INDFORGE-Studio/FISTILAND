@@ -890,9 +890,9 @@ a.md-tabs__link[href*="easter-eggs"]::after, a.md-nav__link[href*="easter-eggs"]
 /* the eye takes the colour of the frame; its iris slides around and the whole eye squashes shut when it blinks (see fl-rank.js) */
 .fl-eg-meta > .fl-eg-ico { width: 3.8rem; height: 3.8rem; margin: 0 auto .9rem; color: inherit; opacity: 1; filter: drop-shadow(0 0 7px currentColor); }
 .fl-eg-meta > .fl-eg-ico svg { transition: transform .16s ease-out; transform-origin: 50% 50%; --dx: 0; --dy: 0; }
-.fl-eg-meta > .fl-eg-ico.is-blink svg { transform: scaleY(.08); transition-duration: .07s; }
+.fl-eg-meta > .fl-eg-ico.is-blink svg { transform: scaleY(.04); transition-duration: .08s; }
 .fl-eg-iris { transform: translate(calc(var(--dx) * 1px), calc(var(--dy) * 1px)); transition: transform .32s cubic-bezier(.3, 1.35, .5, 1); }
-.fl-eg-pup { transform: translate(calc(var(--dx) * .22px), calc(var(--dy) * .22px)); transition: transform .32s cubic-bezier(.3, 1.35, .5, 1); }
+.fl-eg-pup { transform: translate(calc(var(--dx) * .4px), calc(var(--dy) * .4px)); transition: transform .32s cubic-bezier(.3, 1.35, .5, 1); }
 html.fl-fx-off .fl-eg-meta { animation: none; }
 @media (prefers-reduced-motion: reduce) { .fl-eg-meta { animation: none; } }
 /* tooltip following the pointer inside the frame */

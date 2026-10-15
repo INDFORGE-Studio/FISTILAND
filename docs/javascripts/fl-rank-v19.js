@@ -61,29 +61,30 @@
 
   function rnd(a, b) { return a + Math.random() * (b - a); }
   function eyeLive(eye) {
+    // follows the "Effects" switch of the skin panel like the rest of the site (a tiny eyelid blink, not a flash)
     return eye.isConnected && !document.hidden && !document.documentElement.classList.contains('fl-fx-off') &&
-      !document.documentElement.classList.contains('fl-tripping') && !(window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches);
+      !document.documentElement.classList.contains('fl-tripping');
   }
-  // The eye looks around at random (sometimes straight ahead) and blinks now and then, sometimes twice in a row.
+  // The eye looks around in every direction at random (now and then straight ahead) and blinks like an eyelid, sometimes twice in a row.
   function eyeLoop(eye) {
     var svg = eye.firstChild;
     function look() {
       if (!eye.isConnected) return;
       if (eyeLive(eye)) {
-        var c = Math.random() < .15;
-        svg.style.setProperty('--dx', c ? 0 : rnd(-4.4, 4.4).toFixed(2));
-        svg.style.setProperty('--dy', c ? 0 : rnd(-2.2, 2.2).toFixed(2));
+        var a = rnd(0, 6.2832), d = Math.random() < .15 ? 0 : rnd(.45, 1);
+        svg.style.setProperty('--dx', (Math.cos(a) * d * 6).toFixed(2));
+        svg.style.setProperty('--dy', (Math.sin(a) * d * 3.1).toFixed(2));
       }
-      eyeTimer = setTimeout(look, rnd(500, 2200));
+      eyeTimer = setTimeout(look, rnd(450, 1900));
     }
     function blink(again) {
       if (!eye.isConnected) return;
       if (eyeLive(eye)) {
         eye.classList.add('is-blink');
-        setTimeout(function () { eye.classList.remove('is-blink'); }, 140);
-        if (again !== false && Math.random() < .25) { blinkTimer = setTimeout(function () { blink(false); }, 300); return; }
+        setTimeout(function () { eye.classList.remove('is-blink'); }, 160);
+        if (again !== false && Math.random() < .25) { blinkTimer = setTimeout(function () { blink(false); }, 380); return; }
       }
-      blinkTimer = setTimeout(blink, rnd(1800, 6000));
+      blinkTimer = setTimeout(blink, rnd(1800, 5200));
     }
     look();
     blinkTimer = setTimeout(blink, rnd(1200, 3000));
