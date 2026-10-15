@@ -4,7 +4,7 @@
   // Nothing is created for the default look. Paused when the tab is hidden, thinned out when the device struggles.
   var root = document.documentElement;
   var host = null, cv = null, g = null, raf = 0, skin = '', P = [];
-  var W = 0, H = 0, DPR = 1, last = 0, frames = 0, spent = 0, slow = 0, nextTracer = 0, lowEnd = false;
+  var W = 0, H = 0, DPR = 1, last = 0, frames = 0, spent = 0, slow = 0, lowEnd = false;
   var mouse = { x: -1e4, y: -1e4 };
   var SPR = {};
 
@@ -56,7 +56,7 @@
     P = [];
     var A = W * H, small = W < 640, f = small ? .6 : 1, i, n;
     if (skin === 'survivalist') { n = clamp(A / 52000, 8, 30) * f; for (i = 0; i < n; i++) P.push(make('firefly')); for (i = 0; i < (small ? 8 : 16); i++) P.push(make('campember')); }
-    else if (skin === 'forces') { n = clamp(A / 110000, 5, 14) * f; for (i = 0; i < n; i++) P.push(make('dust')); nextTracer = performance.now() + rnd(4000, 9000); }
+    else if (skin === 'forces') { n = clamp(A / 110000, 5, 14) * f; for (i = 0; i < n; i++) P.push(make('dust')); }
     else if (skin === 'demonic') { n = clamp(A / 15000, 24, 90) * f; for (i = 0; i < n; i++) P.push(make('ember')); }
     else if (skin === 'zombie') { n = clamp(A / 34000, 12, 40) * f; for (i = 0; i < n; i++) P.push(make('spore')); for (i = 0; i < (small ? 2 : 3); i++) P.push(make('fly')); }
   }
@@ -76,11 +76,6 @@
         sp: sprite(skin === 'zombie' ? pick(['180,232,60', '142,27,20']) : skin === 'demonic' ? pick(['255,190,80', '255,90,40']) : pick(['255,200,110', '255,150,60']), .18)
       });
     }
-  }
-
-  function tracer() {
-    var fromLeft = Math.random() < .5, y0 = rnd(H * .05, H * .6), sp = rnd(26, 38), ang = rnd(.12, .5) * (Math.random() < .5 ? 1 : -1);
-    P.push({ k: 'tracer', x: fromLeft ? -20 : W + 20, y: y0, vx: (fromLeft ? 1 : -1) * sp * Math.cos(ang), vy: sp * Math.sin(ang), life: 1, len: rnd(.9, 1.6) });
   }
 
   function draw(t, k) {
@@ -115,12 +110,6 @@
           g.globalAlpha = p.life; g.strokeStyle = 'rgba(109,255,158,1)'; g.lineWidth = 1.5; g.beginPath(); g.arc(p.x, p.y, p.r, 0, 6.283); g.stroke();
           g.beginPath(); g.moveTo(p.x - p.r - 9, p.y); g.lineTo(p.x - p.r + 3, p.y); g.moveTo(p.x + p.r - 3, p.y); g.lineTo(p.x + p.r + 9, p.y);
           g.moveTo(p.x, p.y - p.r - 9); g.lineTo(p.x, p.y - p.r + 3); g.moveTo(p.x, p.y + p.r - 3); g.lineTo(p.x, p.y + p.r + 9); g.stroke(); g.globalAlpha = 1; continue;
-        case 'tracer':
-          p.x += p.vx * k; p.y += p.vy * k; p.life -= .02 * k;
-          if (p.life <= 0 || p.x < -200 || p.x > W + 200) { P.splice(i, 1); continue; }
-          var gr = g.createLinearGradient(p.x, p.y, p.x - p.vx * 5 * p.len, p.y - p.vy * 5 * p.len);
-          gr.addColorStop(0, 'rgba(190,255,215,.95)'); gr.addColorStop(1, 'rgba(109,255,158,0)');
-          g.globalAlpha = Math.min(1, p.life * 2); g.strokeStyle = gr; g.lineWidth = 1.3; g.beginPath(); g.moveTo(p.x, p.y); g.lineTo(p.x - p.vx * 5 * p.len, p.y - p.vy * 5 * p.len); g.stroke(); g.globalAlpha = 1; continue;
         case 'fly':
           var dx = p.tx - p.x, dy = p.ty - p.y, d = Math.sqrt(dx * dx + dy * dy) + .01, mx = p.x - mouse.x, my = p.y - mouse.y, md = Math.sqrt(mx * mx + my * my);
           if (d < 14) { p.tx = rnd(0, W); p.ty = rnd(0, H); }
@@ -135,7 +124,6 @@
       g.drawImage(p.sp, p.x - s, p.y - s, s * 2, s * 2);
     }
     g.globalAlpha = 1;
-    if (skin === 'forces' && t >= nextTracer) { tracer(); nextTracer = t + rnd(9000, 22000); }
   }
 
   function frame(t) {
