@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 40" width="60" height="40">
+<defs>
+<filter id="dirty" x="0" y="0" width="100%" height="100%" color-interpolation-filters="sRGB">
+  <feTurbulence type="fractalNoise" baseFrequency="0.07" numOctaves="2" seed="4" result="warp"/>
+  <feDisplacementMap in="SourceGraphic" in2="warp" scale="2.4" xChannelSelector="R" yChannelSelector="G" result="shape"/>
+  <feColorMatrix in="shape" type="saturate" values="0.6" result="desat"/>
+  <feComponentTransfer in="desat" result="dark"><feFuncR type="linear" slope="0.8"/><feFuncG type="linear" slope="0.78"/><feFuncB type="linear" slope="0.74"/></feComponentTransfer>
+  <feTurbulence type="fractalNoise" baseFrequency="0.04" numOctaves="3" seed="9" result="stainN"/>
+  <feColorMatrix in="stainN" type="matrix" values="0 0 0 0 0.18  0 0 0 0 0.10  0 0 0 0 0.04  0 0 0 2.4 -0.95" result="stain"/>
+  <feTurbulence type="fractalNoise" baseFrequency="1.2" numOctaves="1" seed="2" result="grainN"/>
+  <feColorMatrix in="grainN" type="matrix" values="0 0 0 0 0.06  0 0 0 0 0.04  0 0 0 0 0.03  0 0 0 3.4 -1.7" result="specks"/>
+  <feMerge result="dirt"><feMergeNode in="dark"/><feMergeNode in="stain"/><feMergeNode in="specks"/></feMerge>
+  <feComposite in="dirt" in2="shape" operator="in"/>
+</filter>
+<clipPath id="t"><path d="M30,15 h30 v15 z v15 h-30 z h-30 v-15 z v-15 h30 z"/></clipPath>
+</defs>
+<g filter="url(#dirty)">
+<rect width="60" height="20" fill="#f4efe6"/><rect y="20" width="60" height="20" fill="#DC143C"/>
+<g stroke="#e9dccb" stroke-opacity=".28" stroke-width=".5" fill="none"><path d="M6,34 L22,12"/><path d="M38,38 L52,22"/><path d="M12,5 L19,9"/></g>
+<rect x=".8" y=".8" width="58.4" height="38.4" fill="none" stroke="#2b1a0e" stroke-opacity=".75" stroke-width="1.6"/>
+</g>
+</svg>

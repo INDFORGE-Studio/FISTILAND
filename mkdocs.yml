@@ -21,21 +21,21 @@ theme:
     - content.code.copy
 
 extra_javascript:
-  - javascripts/fl-copy-v5.js
-  - javascripts/fl-map-v24.js
+  - javascripts/fl-copy-v6.js
+  - javascripts/fl-map-v25.js
   - javascripts/fl-cards-v1.js
   - javascripts/fl-mush-v1.js
-  - javascripts/fl-ip-v2.js
-  - javascripts/fl-join-v2.js
+  - javascripts/fl-ip-v3.js
+  - javascripts/fl-join-v3.js
   - javascripts/fl-discord-v4.js
-  - javascripts/fl-cc-v7.js
-  - javascripts/fl-rank-v14.js
-  - javascripts/fl-theme-v3.js
+  - javascripts/fl-cc-v8.js
+  - javascripts/fl-rank-v15.js
+  - javascripts/fl-theme-v4.js
   - javascripts/fl-trip-v2.js
   - javascripts/fl-lamp-v14.js
 
 extra_css:
-  - stylesheets/fistiland-v97.css
+  - stylesheets/fistiland-v98.css
   - stylesheets/fl-themes-v2.css
 
 extra:
@@ -147,6 +147,26 @@ plugins:
             Admin: Admin
             Maps: Mappe
             Mushrooms: Funghi
+        - locale: pl
+          name: Polski
+          build: true
+          nav_translations:
+            Home: Strona główna
+            Server: Serwer
+            Overview: Przegląd
+            Territory: Terytorium
+            Respawn: Respawn
+            Economy: Ekonomia
+            Progression: Rozwój
+            Survival: Przetrwanie
+            Enemies: Wrogowie
+            Events: Wydarzenia
+            Bunkers: Bunkry
+            Rules: Zasady
+            All settings: Wszystkie ustawienia
+            Admin: Administracja
+            Maps: Mapy
+            Mushrooms: Grzyby
         - locale: uk
           name: Українська
           build: true

@@ -2,7 +2,7 @@
 
 {#- Search snippets: one description per page and language, and a real title for the home page. -#}
 {% set seo_lang = (config.theme.language or 'en')[:2] %}
-{% set seo_locales = {'en': 'en_GB', 'fr': 'fr_FR', 'de': 'de_DE', 'es': 'es_ES', 'it': 'it_IT', 'uk': 'uk_UA', 'hr': 'hr_HR'} %}
+{% set seo_locales = {'en': 'en_GB', 'fr': 'fr_FR', 'de': 'de_DE', 'es': 'es_ES', 'it': 'it_IT', 'uk': 'uk_UA', 'hr': 'hr_HR', 'pl': 'pl_PL'} %}
 {% set seo_title_home = {
   'en': 'SCUM PvP server (EU): territory wars, loot x5, no mechs',
   'fr': 'Serveur SCUM PvP (EU) : guerres de territoire, loot x5, sans mechs',
@@ -10,6 +10,7 @@
   'es': 'Servidor SCUM PvP (UE): guerras de territorio, loot x5, sin mechs',
   'it': 'Server SCUM PvP (UE): guerre di territorio, loot x5, niente mech',
   'hr': 'SCUM PvP poslužitelj (EU): ratovi za teritorij, loot x5, bez mechova',
+  'pl': 'Serwer SCUM PvP (UE): wojny o terytorium, loot x5, bez mechów',
   'uk': 'PvP-сервер SCUM (ЄС): війни за територію, лут x5, без мехів'
 } %}
 {% set seo_desc = {
@@ -20,6 +21,7 @@
     'es': 'FISTILAND, servidor SCUM PvP europeo basado en guerras de territorio. Loot x5, reapariciones rápidas, supervivencia más fácil, sin mechs.',
     'it': 'FISTILAND, server SCUM PvP europeo basato sulle guerre di territorio. Loot x5, respawn rapidi, sopravvivenza più facile, niente mech.',
     'hr': 'FISTILAND, europski PvP poslužitelj za SCUM izgrađen oko ratova za teritorij. Loot x5, brzi respawn, lakše preživljavanje, bez mechova.',
+    'pl': 'FISTILAND, europejski serwer SCUM PvP zbudowany wokół wojen o terytorium. Loot x5, szybki respawn, łatwiejsze przetrwanie, bez mechów.',
     'uk': 'FISTILAND — європейський PvP-сервер SCUM із війнами за територію. Лут x5, швидке відродження, легше виживання, без мехів.'},
   'overview': {
     'en': 'What FISTILAND is and where it runs: a European PvP SCUM server with territory wars, loot x5 and no mechs.',
@@ -28,6 +30,7 @@
     'es': 'Qué es FISTILAND y dónde funciona: un servidor SCUM PvP europeo con guerras de territorio, loot x5 y sin mechs.',
     'it': 'Cos\'è FISTILAND e dove gira: un server SCUM PvP europeo con guerre di territorio, loot x5 e niente mech.',
     'hr': 'Što je FISTILAND i gdje radi: europski PvP poslužitelj za SCUM s ratovima za teritorij, lootom x5 i bez mechova.',
+    'pl': 'Czym jest FISTILAND i gdzie działa: europejski serwer SCUM PvP z wojnami o terytorium, lootem x5 i bez mechów.',
     'uk': 'Що таке FISTILAND і де він працює: європейський PvP-сервер SCUM із війнами за територію, лутом x5 та без мехів.'},
   'territory-wars': {
     'en': 'Territory wars on FISTILAND: a base-versus-base SCUM server where the ground you hold is what you fight for.',
@@ -36,6 +39,7 @@
     'es': 'Guerras de territorio en FISTILAND: un servidor SCUM de base contra base donde se lucha por el terreno que se controla.',
     'it': 'Guerre di territorio su FISTILAND: un server SCUM base contro base dove si combatte per il terreno che si controlla.',
     'hr': 'Ratovi za teritorij na FISTILAND-u: SCUM poslužitelj baza protiv baze u kojem se bori za tlo koje držiš.',
+    'pl': 'Wojny o terytorium na FISTILAND: serwer SCUM baza przeciw bazie, na którym walczy się o ziemię, którą się trzyma.',
     'uk': 'Війни за територію на FISTILAND: сервер SCUM «база проти бази», де б\'ються за землю, яку утримуєш.'},
   'respawn': {
     'en': 'Respawn on FISTILAND: a lost fight costs minutes, not an evening. Respawn options and their prices.',
@@ -44,6 +48,7 @@
     'es': 'Reaparición en FISTILAND: perder un combate cuesta minutos, no una noche. Opciones de reaparición y sus precios.',
     'it': 'Respawn su FISTILAND: uno scontro perso costa minuti, non una serata. Opzioni di respawn e relativi prezzi.',
     'hr': 'Respawn na FISTILAND-u: izgubljena borba košta minute, a ne cijelu večer. Mogućnosti respawna i njihove cijene.',
+    'pl': 'Respawn na FISTILAND: przegrana walka kosztuje minuty, a nie cały wieczór. Opcje respawnu i ich ceny.',
     'uk': 'Відродження на FISTILAND: програний бій коштує хвилин, а не цілого вечора. Варіанти відродження та їхні ціни.'},
   'economy': {
     'en': 'FISTILAND economy: plentiful loot and cheap traders so you gear up in a few hours.',
@@ -52,6 +57,7 @@
     'es': 'Economía de FISTILAND: mucho loot y comerciantes baratos para equiparte en pocas horas.',
     'it': 'Economia di FISTILAND: loot abbondante e mercanti economici per equipaggiarsi in poche ore.',
     'hr': 'Ekonomija FISTILAND-a: obilje loota i jeftini trgovci, pa se opremiš za nekoliko sati.',
+    'pl': 'Ekonomia FISTILAND: mnóstwo lootu i tani handlarze, więc skompletujesz sprzęt w kilka godzin.',
     'uk': 'Економіка FISTILAND: багато луту та дешеві торговці, щоб екіпіруватися за кілька годин.'},
   'progression': {
     'en': 'FISTILAND progression: gear comes fast, skills take longer. Experience multipliers for each skill.',
@@ -60,6 +66,7 @@
     'es': 'Progresión en FISTILAND: el equipo llega rápido, las habilidades tardan más. Multiplicadores de experiencia por habilidad.',
     'it': 'Progressione su FISTILAND: l\'equipaggiamento arriva in fretta, le abilità richiedono più tempo. Moltiplicatori di esperienza per abilità.',
     'hr': 'Napredak na FISTILAND-u: oprema stiže brzo, vještine traju dulje. Množitelji iskustva za svaku vještinu.',
+    'pl': 'Rozwój na FISTILAND: sprzęt przychodzi szybko, umiejętności wymagają więcej czasu. Mnożniki doświadczenia dla każdej umiejętności.',
     'uk': 'Прогрес на FISTILAND: спорядження приходить швидко, навички розвиваються довше. Множники досвіду для кожної навички.'},
   'survival': {
     'en': 'Survival on FISTILAND: a light layer on top of the PvP, with short nights, small chores and limited vehicles.',
@@ -68,6 +75,7 @@
     'es': 'Supervivencia en FISTILAND: una capa ligera sobre el PvP, con noches cortas, pocas tareas y vehículos limitados.',
     'it': 'Sopravvivenza su FISTILAND: uno strato leggero sopra il PvP, con notti brevi, poche incombenze e veicoli limitati.',
     'hr': 'Preživljavanje na FISTILAND-u: lagani sloj povrh PvP-a, s kratkim noćima, malim obvezama i ograničenim vozilima.',
+    'pl': 'Przetrwanie na FISTILAND: lekka warstwa nad PvP, z krótkimi nocami, drobnymi obowiązkami i ograniczoną liczbą pojazdów.',
     'uk': 'Виживання на FISTILAND: легкий шар поверх PvP з короткими ночами, мінімумом побутових клопотів і обмеженим транспортом.'},
   'enemies': {
     'en': 'Enemies on FISTILAND: the real opponents are other players; zombies and armed NPCs are there to be handled.',
@@ -76,6 +84,7 @@
     'es': 'Enemigos en FISTILAND: los verdaderos rivales son los demás jugadores; zombis y NPC armados están para manejarlos.',
     'it': 'Nemici su FISTILAND: i veri avversari sono gli altri giocatori; zombie e NPC armati vanno gestiti, non temuti.',
     'hr': 'Neprijatelji na FISTILAND-u: pravi protivnici su drugi igrači; zombiji i naoružani NPC-ovi tu su da ih svladaš.',
+    'pl': 'Wrogowie na FISTILAND: prawdziwi przeciwnicy to inni gracze; zombie i uzbrojone NPC są po to, by sobie z nimi radzić.',
     'uk': 'Вороги на FISTILAND: справжні суперники — інші гравці; зомбі та озброєні NPC — з ними можна впоратися.'},
   'events': {
     'en': 'FISTILAND events: cargo drops give every squad a reason to leave its base. No mechs, no dropships.',
@@ -84,6 +93,7 @@
     'es': 'Eventos en FISTILAND: los lanzamientos de carga dan a cada escuadra una razón para salir de su base. Sin mechs ni naves.',
     'it': 'Eventi su FISTILAND: i lanci di carico danno a ogni squadra un motivo per lasciare la base. Niente mech né navette.',
     'hr': 'Događaji na FISTILAND-u: zračni teret daje svakoj ekipi razlog da napusti bazu. Bez mechova i desantnih letjelica.',
+    'pl': 'Wydarzenia na FISTILAND: zrzuty zaopatrzenia dają każdej drużynie powód, by opuścić bazę. Bez mechów i desantowców.',
     'uk': 'Події на FISTILAND: вантажні скиди дають кожному загону привід залишити базу. Без мехів і десантних кораблів.'},
   'bunkers': {
     'en': 'FISTILAND bunkers: access cards open the Killbox and Apex facilities, the best loot on the map.',
@@ -92,6 +102,7 @@
     'es': 'Búnkeres de FISTILAND: las tarjetas de acceso abren las instalaciones Killbox y Apex, el mejor loot del mapa.',
     'it': 'Bunker di FISTILAND: le tessere di accesso aprono le strutture Killbox e Apex, il miglior loot della mappa.',
     'hr': 'Bunkeri FISTILAND-a: pristupne kartice otvaraju objekte Killbox i Apex, najbolji loot na karti.',
+    'pl': 'Bunkry FISTILAND: karty dostępu otwierają obiekty Killbox i Apex, najlepszy loot na mapie.',
     'uk': 'Бункери FISTILAND: карти доступу відчиняють об\'єкти Killbox та Apex з найкращим лутом на мапі.'},
   'rules': {
     'en': 'FISTILAND server rules: fair play first, no crosshair, no pay-to-win packs.',
@@ -100,6 +111,7 @@
     'es': 'Reglas del servidor FISTILAND: juego limpio ante todo, sin mira, sin paquetes pay-to-win.',
     'it': 'Regole del server FISTILAND: prima di tutto il fair play, niente mirino, niente pacchetti pay-to-win.',
     'hr': 'Pravila FISTILAND poslužitelja: fer igra na prvom mjestu, bez nišana, bez pay-to-win paketa.',
+    'pl': 'Zasady serwera FISTILAND: fair play przede wszystkim, bez celownika, bez pakietów pay-to-win.',
     'uk': 'Правила сервера FISTILAND: чесна гра насамперед, без прицілу, без pay-to-win наборів.'},
   'all-settings': {
     'en': 'Every value of the FISTILAND SCUM server\'s ServerSettings.ini as it runs today, searchable.',
@@ -108,6 +120,7 @@
     'es': 'Todos los valores del ServerSettings.ini del servidor SCUM FISTILAND tal como funcionan hoy, con búsqueda.',
     'it': 'Tutti i valori del ServerSettings.ini del server SCUM FISTILAND così come girano oggi, con ricerca.',
     'hr': 'Sve vrijednosti iz datoteke ServerSettings.ini SCUM poslužitelja FISTILAND onako kako trenutno rade, s pretraživanjem.',
+    'pl': 'Każda wartość z pliku ServerSettings.ini serwera SCUM FISTILAND w obecnym kształcie, z wyszukiwarką.',
     'uk': 'Усі значення ServerSettings.ini сервера SCUM FISTILAND у поточному вигляді, з пошуком.'},
   'admin': {
     'en': 'SCUM server admin guide: what we checked while running FISTILAND, plus our settings files to download.',
@@ -116,6 +129,7 @@
     'es': 'Guía de admin para servidores SCUM: lo que comprobamos al gestionar FISTILAND, y nuestros archivos de ajustes para descargar.',
     'it': 'Guida admin per server SCUM: cosa abbiamo verificato gestendo FISTILAND, più i nostri file di impostazioni da scaricare.',
     'hr': 'Vodič za administratore SCUM poslužitelja: što smo provjerili vodeći FISTILAND, plus naše datoteke postavki za preuzimanje.',
+    'pl': 'Poradnik administratora serwera SCUM: co sprawdziliśmy, prowadząc FISTILAND, oraz nasze pliki ustawień do pobrania.',
     'uk': 'Посібник адміністратора сервера SCUM: що ми перевірили, запускаючи FISTILAND, і наші файли налаштувань для завантаження.'},
   'maps': {
     'en': 'SCUM maps: where each animal lives and where mutants roam, on the satellite map of the island.',
@@ -124,6 +138,7 @@
     'es': 'Mapas de SCUM: dónde vive cada animal y dónde merodean los mutantes, en el mapa satelital de la isla.',
     'it': 'Mappe di SCUM: dove vive ogni animale e dove si aggirano i mutanti, sulla mappa satellitare dell\'isola.',
     'hr': 'SCUM karte: gdje živi koja životinja i gdje lutaju mutanti, na satelitskoj karti otoka.',
+    'pl': 'Mapy SCUM: gdzie żyje każde zwierzę i gdzie wędrują mutanty, na satelitarnej mapie wyspy.',
     'uk': 'Мапи SCUM: де живе кожна тварина і де блукають мутанти, на супутниковій мапі острова.'},
   'mushrooms': {
     'en': 'SCUM mushrooms: which ones you can eat and which ones you must leave alone.',
@@ -132,6 +147,7 @@
     'es': 'Setas de SCUM: cuáles puedes comer y cuáles debes dejar en paz.',
     'it': 'Funghi di SCUM: quali puoi mangiare e quali è meglio lasciare stare.',
     'hr': 'SCUM gljive: koje možeš jesti, a koje je bolje ostaviti na miru.',
+    'pl': 'Grzyby w SCUM: które można jeść, a które lepiej zostawić w spokoju.',
     'uk': 'Гриби в SCUM: які можна їсти, а які краще не чіпати.'},
   'easter-eggs': {
     'en': 'Little secrets have slipped onto the FISTILAND website. Can you discover them all?',
@@ -140,6 +156,7 @@
     'es': 'Pequeños secretos se han colado en la web de FISTILAND. ¿Podrás descubrirlos todos?',
     'it': 'Piccoli segreti si sono nascosti nel sito di FISTILAND. Riuscirai a scoprirli tutti?',
     'hr': 'Mali tajni sadržaji uvukli su se na web stranicu FISTILAND. Možeš li ih sve otkriti?',
+    'pl': 'Małe sekrety zakradły się na stronę FISTILAND. Czy uda ci się znaleźć je wszystkie?',
     'uk': 'На сайті FISTILAND сховалися маленькі секрети. Чи зможеш знайти їх усі?'},
   'legal': {
     'en': 'Legal notice and licence of the FISTILAND website: publisher, hosting, CC BY-NC-SA 4.0 and how to credit us.',
@@ -148,11 +165,12 @@
     'es': 'Aviso legal y licencia del sitio FISTILAND: editor, alojamiento, CC BY-NC-SA 4.0 y cómo citarnos.',
     'it': 'Note legali e licenza del sito FISTILAND: editore, hosting, CC BY-NC-SA 4.0 e come citarci.',
     'hr': 'Pravne informacije i licenca web stranice FISTILAND: izdavač, hosting, CC BY-NC-SA 4.0 i kako nas navesti kao izvor.',
+    'pl': 'Informacje prawne i licencja strony FISTILAND: wydawca, hosting, CC BY-NC-SA 4.0 i jak nas wskazać jako źródło.',
     'uk': 'Правова інформація та ліцензія сайту FISTILAND: видавець, хостинг, CC BY-NC-SA 4.0 і як вказувати авторство.'}
 } %}
 {% set seo_parts = page.url.strip('/').split('/') if page and page.url is defined else [''] %}
 {% set seo_last = seo_parts[-1] %}
-{% set seo_slug = 'home' if seo_last in ['', 'fr', 'de', 'es', 'it', 'uk', 'hr'] else seo_last %}
+{% set seo_slug = 'home' if seo_last in ['', 'fr', 'de', 'es', 'it', 'uk', 'hr', 'pl'] else seo_last %}
 {% if page and page.meta is defined and seo_slug in seo_desc %}
   {% set _ = page.meta.update({'description': seo_desc[seo_slug].get(seo_lang, seo_desc[seo_slug]['en'])}) %}
 {% endif %}
@@ -202,7 +220,7 @@
       try {
         var cur = (document.documentElement.lang || 'en').slice(0, 2);
         var want = localStorage.getItem('fl-lang');
-        if (want && /^(en|fr|de|es|it|uk|hr)$/.test(want) && want !== cur) {
+        if (want && /^(en|fr|de|es|it|uk|hr|pl)$/.test(want) && want !== cur) {
           var a = document.querySelector('link[rel="alternate"][hreflang="' + want + '"]');
           if (a && a.href) { location.replace(a.href + location.search + location.hash); return; }
         }
