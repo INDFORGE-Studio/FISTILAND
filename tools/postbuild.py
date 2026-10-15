@@ -225,6 +225,8 @@ def main():
         if "Content-Security-Policy" in txt:
             continue
         m = CHARSET_RE.search(txt)
+        if not m and re.fullmatch(r"google[0-9a-f]+\.html", page.name):
+            continue  # Search Console ownership file: a bare text file, not a page
         if not m:
             errors.append(f"{page.relative_to(SITE)}: no <meta charset> to anchor the CSP")
             continue
