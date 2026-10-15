@@ -90,3 +90,5 @@ Fertigkeiten brauchen länger als anständige Ausrüstung, also nimm dir Zeit un
 - [Alle Einstellungen](all-settings.md): jeder Wert der Datei.
 
 </div>
+
+--8<-- "abbr.de.md"

@@ -6,10 +6,19 @@
   "start_url": "/FISTILAND/",
   "scope": "/FISTILAND/",
   "display": "standalone",
+  "lang": "en",
+  "dir": "ltr",
+  "categories": ["games", "entertainment"],
   "background_color": "#0d0c0b",
   "theme_color": "#ff6a00",
   "icons": [
     { "src": "assets/icon-192-v1.png", "sizes": "192x192", "type": "image/png" },
     { "src": "assets/icon-512-v1.png", "sizes": "512x512", "type": "image/png" }
+  ],
+  "shortcuts": [
+    { "name": "New player guide", "short_name": "Guide", "url": "/FISTILAND/guide/", "icons": [{ "src": "assets/icon-192-v1.png", "sizes": "192x192", "type": "image/png" }] },
+    { "name": "Server rules", "short_name": "Rules", "url": "/FISTILAND/server/rules/", "icons": [{ "src": "assets/icon-192-v1.png", "sizes": "192x192", "type": "image/png" }] },
+    { "name": "Respawn prices", "short_name": "Respawn", "url": "/FISTILAND/server/respawn/", "icons": [{ "src": "assets/icon-192-v1.png", "sizes": "192x192", "type": "image/png" }] },
+    { "name": "Maps", "short_name": "Maps", "url": "/FISTILAND/maps/", "icons": [{ "src": "assets/icon-192-v1.png", "sizes": "192x192", "type": "image/png" }] }
   ]
 }

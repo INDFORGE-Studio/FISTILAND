@@ -27,6 +27,16 @@
 | `NighttimeDarkness` | 0 | Livello di oscurità della notte, lasciato al valore predefinito del gioco. Le notti restano buie, portate una luce. |
 | `EnableFog` | True | La nebbia viene mostrata. |
 
+<div class="fl-day">
+<div class="fl-day__bar" role="img" aria-label="00:00-05:00 , 05:00-22:30 , 22:30-24:00 "><i class="n1"></i><i class="d"></i><i class="n2"></i></div>
+<div class="fl-day__ticks" aria-hidden="true"><span class="t0">00:00</span><span class="t1">05:00</span><span class="t2">22:30</span><span class="t3">24:00</span></div>
+<div class="fl-facts">
+<div><b>4 h 33</b><span></span></div>
+<div><b>1 h 42</b><span></span></div>
+<div><b>6 h 15</b><span></span></div>
+</div>
+</div>
+
 ## :material-heart-pulse: Corpo e oggetti
 
 | Impostazione | Valore | Cosa fa |

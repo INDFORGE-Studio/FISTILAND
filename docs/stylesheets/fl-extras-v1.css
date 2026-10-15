@@ -1,0 +1,81 @@
+/* Extras v1: reading progress, tickable checklist, base size calculator, day/night bar, glossary, last-updated line.
+   Colours come from the shared tokens (--fl-orange, --fl-line...), so every skin carries them. */
+
+/* ---- Reading progress: a thin line along the header that fills while the page scrolls (pure CSS, no script) ---- */
+@supports (animation-timeline: scroll()) {
+  @media (prefers-reduced-motion: no-preference) {
+    .md-header::after {
+      content: ""; position: absolute; left: 0; right: 0; bottom: -2px; height: 2px; z-index: 1; pointer-events: none;
+      background: #ffd9a8; background: color-mix(in srgb, var(--fl-orange-hot) 45%, #fff);
+      transform: scaleX(0); transform-origin: 0 50%;
+      animation: fl-progress linear both; animation-timeline: scroll(root block);
+    }
+  }
+}
+@keyframes fl-progress { to { transform: scaleX(1); } }
+
+/* ---- Tickable checklist (guide) ---- */
+.fl-checks .task-list-item { cursor: pointer; transition: opacity .2s ease; }
+.fl-checks .task-list-item.fl-done { opacity: .6; }
+.fl-checks .task-list-item.fl-done > a, .fl-checks .task-list-item.fl-done > strong { text-decoration: none; }
+.fl-checks .task-list-control { cursor: pointer; }
+.fl-checks .fl-ip { cursor: pointer; }
+.fl-checks__bar {
+  position: relative; display: flex; align-items: center; justify-content: flex-end; height: 1.5rem; margin: 0 0 1.4rem;
+  border: 1px solid var(--fl-line); background: rgba(24, 21, 19, .9); overflow: hidden;
+}
+.fl-checks__bar i { position: absolute; inset: 0 auto 0 0; width: 0; background: linear-gradient(90deg, var(--fl-rust), var(--fl-orange)); transition: width .35s ease; }
+.fl-checks__bar span { position: relative; padding: 0 .6rem; font: 600 .68rem/1 Oswald, sans-serif; letter-spacing: .16em; color: #fff; text-shadow: 0 1px 2px rgba(0, 0, 0, .8); }
+
+/* ---- Base size calculator ---- */
+.fl-calc { margin: 0 0 2rem; padding: 1rem; background: rgba(24, 21, 19, .55); border: 1px solid var(--fl-line); border-left: 4px solid var(--fl-orange); }
+.fl-calc .fl-facts { margin-bottom: .8rem; }
+.fl-calc__row { display: flex; align-items: center; flex-wrap: wrap; gap: .5rem .9rem; margin: 0 0 1rem; font: 600 .72rem/1.3 Oswald, sans-serif; letter-spacing: .14em; text-transform: uppercase; color: #b9aea3; }
+.fl-calc__row[hidden] { display: none; }
+.fl-calc__n { min-width: 2ch; font: 600 1.7rem/1 Oswald, sans-serif; text-align: center; color: var(--fl-orange-hot); }
+.fl-calc__row input[type="range"] { flex: 1 1 12rem; min-height: 2.4rem; margin: 0; accent-color: var(--fl-orange); cursor: pointer; }
+.fl-calc__note { margin: 0; font-size: .74rem; color: #b9aea3; }
+
+/* ---- Day / night bar (Survival) ---- */
+.fl-day { margin: 0 0 2rem; }
+.fl-day__bar { display: flex; height: 2.4rem; border: 1px solid var(--fl-line); overflow: hidden; }
+.fl-day__bar i { display: flex; align-items: center; justify-content: center; overflow: hidden; white-space: nowrap; font: 600 .62rem/1 Oswald, sans-serif; font-style: normal; letter-spacing: .16em; text-transform: uppercase; }
+.fl-day__bar .n1 { width: 20.8333%; background: linear-gradient(90deg, #070605, #1b1612); color: #8d8176; }
+.fl-day__bar .d { width: 72.9167%; background: linear-gradient(90deg, #8a4a14, #e8a03c 18%, #ffd08a 50%, #e8a03c 82%, #8a4a14); color: #2a1604; }
+.fl-day__bar .n2 { width: 6.25%; background: linear-gradient(90deg, #1b1612, #070605); }
+.fl-day__ticks { position: relative; height: 1.1rem; margin: .3rem 0 1rem; font-size: .64rem; letter-spacing: .08em; color: #b9aea3; }
+.fl-day__ticks span { position: absolute; top: 0; white-space: nowrap; transform: translateX(-50%); }
+.fl-day__ticks .t0 { left: 0; transform: none; }
+.fl-day__ticks .t1 { left: 20.8333%; }
+.fl-day__ticks .t2 { left: 93.75%; }
+.fl-day__ticks .t3 { display: none; }
+.fl-day .fl-facts { margin-bottom: 0; }
+
+/* ---- Glossary (definition lists) ---- */
+.md-typeset dl dt {
+  margin-top: 1.1rem; font: 600 .9rem/1.3 Oswald, "Inter", sans-serif; letter-spacing: .1em; text-transform: uppercase; color: var(--fl-orange-hot);
+}
+.md-typeset dl dd { margin: .25rem 0 0; padding: 0 0 0 1rem; border-left: 2px solid var(--fl-line); }
+
+/* ---- Last-updated line (added at build time) ---- */
+.fl-updated { margin: 2.2rem 0 0; font-size: .68rem; letter-spacing: .08em; text-transform: uppercase; color: #8d8176; }
+.fl-updated time { color: #b9aea3; }
+
+/* ---- Offline note shown by the page script once the wiki is stored for offline use ---- */
+.fl-offline-toast {
+  position: fixed; left: 50%; bottom: 1rem; z-index: 40; max-width: min(26rem, calc(100vw - 2rem)); padding: .6rem 1rem; transform: translate(-50%, 1rem);
+  background: rgba(10, 8, 6, .95); color: #f1ede6; border: 1px solid var(--fl-orange); font: 500 .74rem/1.4 Inter, sans-serif; text-align: center;
+  box-shadow: 0 6px 24px rgba(0, 0, 0, .6); opacity: 0; pointer-events: none; transition: opacity .3s ease, transform .3s ease;
+}
+.fl-offline-toast.is-on { opacity: 1; transform: translate(-50%, 0); }
+
+@media print {
+  .fl-checks__bar, .fl-calc__row, .fl-offline-toast, .md-header::after { display: none !important; }
+  .fl-day__bar, .fl-calc { border-color: #000 !important; }
+  .fl-day__bar i { background: none !important; color: #000 !important; }
+  .md-typeset dl dt { color: #000 !important; }
+  .fl-updated, .fl-updated time { color: #000 !important; }
+}
+@media (forced-colors: active) {
+  .fl-day__bar, .fl-calc, .fl-checks__bar { border: 1px solid CanvasText; }
+}

@@ -90,3 +90,5 @@ Las habilidades tardan más en subir que un equipo digno de ese nombre, así que
 - [Todos los ajustes](all-settings.md): cada valor del archivo.
 
 </div>
+
+--8<-- "abbr.es.md"

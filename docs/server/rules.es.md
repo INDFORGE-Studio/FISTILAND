@@ -92,3 +92,5 @@ Estas dos son reglas, no ajustes del servidor: dependen de que los jugadores las
 ---
 
 [Todas las páginas de ajustes](overview.md#every-setting-explained) | [Lista completa de valores](all-settings.md)
+
+--8<-- "abbr.es.md"

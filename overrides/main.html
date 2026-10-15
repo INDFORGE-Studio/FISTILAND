@@ -168,7 +168,34 @@
     'it': 'Note legali e licenza del sito FISTILAND: editore, hosting, CC BY-NC-SA 4.0 e come citarci.',
     'hr': 'Pravne informacije i licenca web stranice FISTILAND: izdavač, hosting, CC BY-NC-SA 4.0 i kako nas navesti kao izvor.',
     'pl': 'Informacje prawne i licencja strony FISTILAND: wydawca, hosting, CC BY-NC-SA 4.0 i jak nas wskazać jako źródło.',
-    'uk': 'Правова інформація та ліцензія сайту FISTILAND: видавець, хостинг, CC BY-NC-SA 4.0 і як вказувати авторство.'}
+    'uk': 'Правова інформація та ліцензія сайту FISTILAND: видавець, хостинг, CC BY-NC-SA 4.0 і як вказувати авторство.'},
+  'guide': {
+    'en': 'New player guide for FISTILAND: your first hour, from joining to bunkers, with a checklist you can tick.',
+    'fr': 'Guide du nouveau joueur sur FISTILAND : votre première heure, de l\'arrivée aux bunkers, avec une liste à cocher.',
+    'de': 'Leitfaden für neue Spieler auf FISTILAND: deine erste Stunde, vom Beitreten bis zu den Bunkern, mit abhakbarer Checkliste.',
+    'es': 'Guía del jugador nuevo en FISTILAND: tu primera hora, de unirte a los búnkeres, con una lista que puedes marcar.',
+    'it': 'Guida per i nuovi giocatori su FISTILAND: la tua prima ora, dall\'ingresso ai bunker, con una lista da spuntare.',
+    'hr': 'Vodič za nove igrače na FISTILAND-u: tvoj prvi sat, od pridruživanja do bunkera, s popisom koji možeš označavati.',
+    'pl': 'Poradnik dla nowych graczy na FISTILAND: twoja pierwsza godzina, od dołączenia po bunkry, z listą do odhaczania.',
+    'uk': 'Посібник для нових гравців FISTILAND: ваша перша година, від входу до бункерів, зі списком для позначок.'},
+  'faq': {
+    'en': 'FISTILAND FAQ: joining, PvP, bases and raids, respawn, loot, cargo drops and how this website works.',
+    'fr': 'FAQ de FISTILAND : rejoindre, PvP, bases et raids, respawn, loot, largages et fonctionnement de ce site.',
+    'de': 'FISTILAND-FAQ: Beitreten, PvP, Basen und Raids, Respawn, Loot, Versorgungsabwürfe und wie diese Website funktioniert.',
+    'es': 'Preguntas frecuentes de FISTILAND: unirse, PvP, bases y asaltos, reaparición, loot, lanzamientos y cómo funciona este sitio.',
+    'it': 'FAQ di FISTILAND: entrare, PvP, basi e raid, respawn, loot, lanci di rifornimenti e come funziona questo sito.',
+    'hr': 'Česta pitanja o FISTILAND-u: pridruživanje, PvP, baze i napadi, respawn, loot, zračni tereti i kako radi ova stranica.',
+    'pl': 'FAQ FISTILAND: dołączanie, PvP, bazy i rajdy, respawn, loot, zrzuty zaopatrzenia i jak działa ta strona.',
+    'uk': 'Часті запитання про FISTILAND: приєднання, PvP, бази та рейди, відродження, лут, повітряні скиди та як працює цей сайт.'},
+  'glossary': {
+    'en': 'FISTILAND glossary: flag, BCU, cargo drop, fame points, offline protection and the other words of the server, in plain language.',
+    'fr': 'Glossaire de FISTILAND : drapeau, BCU, largage, points de renommée, protection hors ligne et les autres mots du serveur, en langage clair.',
+    'de': 'FISTILAND-Glossar: Flagge, BCU, Versorgungsabwurf, Ruhmpunkte, Offline-Schutz und die anderen Wörter des Servers in einfacher Sprache.',
+    'es': 'Glosario de FISTILAND: bandera, BCU, lanzamiento, puntos de fama, protección sin conexión y las demás palabras del servidor, en lenguaje sencillo.',
+    'it': 'Glossario di FISTILAND: bandiera, BCU, lancio, punti fama, protezione offline e le altre parole del server, in parole semplici.',
+    'hr': 'Pojmovnik FISTILAND-a: zastava, BCU, zračni teret, bodovi slave, offline zaštita i ostale riječi poslužitelja, jednostavnim jezikom.',
+    'pl': 'Słowniczek FISTILAND: flaga, BCU, zrzut zaopatrzenia, punkty sławy, ochrona offline i inne słowa serwera, prostym językiem.',
+    'uk': 'Глосарій FISTILAND: прапор, BCU, повітряний скид, очки слави, офлайн-захист та інші слова сервера простою мовою.'}
 } %}
 {% set seo_parts = page.url.strip('/').split('/') if page and page.url is defined else [''] %}
 {% set seo_last = seo_parts[-1] %}
@@ -192,7 +219,12 @@
   {% endif %}
   {% if page and seo_slug == 'home' %}
   <script type="application/ld+json">{{ {"@context": "https://schema.org", "@type": "WebSite", "name": config.site_name, "url": config.site_url, "inLanguage": seo_lang, "description": page.meta.description} | tojson }}</script>
+  <script type="application/ld+json">{{ {"@context": "https://schema.org", "@type": "GameServer", "name": config.site_name, "url": config.site_url, "description": page.meta.description, "game": {"@type": "VideoGame", "name": "SCUM"}, "sameAs": ["https://discord.gg/RHkNGk6ZQN"]} | tojson }}</script>
+  {% elif page and page.canonical_url %}
+  <script type="application/ld+json">{{ {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "FISTILAND", "item": config.site_url ~ ('' if seo_lang == 'en' else seo_lang ~ '/')}, {"@type": "ListItem", "position": 2, "name": (page.title | striptags), "item": page.canonical_url}]} | tojson }}</script>
   {% endif %}
+  <link rel="alternate" type="text/plain" href="{{ fl_base }}llms.txt" title="llms.txt">
+
   <link rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">
   <link rel="icon" type="image/png" sizes="32x32" href="{{ fl_base }}assets/icon-32-v1.png">
   <link rel="icon" type="image/png" sizes="192x192" href="{{ fl_base }}assets/icon-192-v1.png">
@@ -213,14 +245,15 @@
   <meta name="google-site-verification" content="QHqd_O3h8uMdWb9oJcl34dZEn6MUcaqY0ZV5EKq0tWU">
   <meta property="og:site_name" content="FISTILAND SCUM SERVER">
   <meta property="og:type" content="website">
-  <meta property="og:image" content="{{ config.site_url }}assets/icon-512-v1.png">
-  <meta property="og:image:width" content="512">
-  <meta property="og:image:height" content="512">
-  <meta property="og:image:alt" content="FISTILAND, SCUM server: barbed-wire fist shield">
-  <meta name="twitter:card" content="summary">
+  <meta property="og:image" content="{{ config.site_url }}assets/og-banner-v1.jpg">
+  <meta property="og:image:type" content="image/jpeg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="FISTILAND, SCUM server: barbed-wire fist shield next to the words Territory wars">
+  <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="{{ seo_title }}">
   <meta name="twitter:description" content="{{ (page.meta.description if page and page.meta is defined and page.meta.description else config.site_description) }}">
-  <meta name="twitter:image" content="{{ config.site_url }}assets/icon-512-v1.png">
+  <meta name="twitter:image" content="{{ config.site_url }}assets/og-banner-v1.jpg">
   <script>
     /* Two requests of the theme are redirected to the right file, before the theme starts:
        - it asks every alternate-language address for its own sitemap.xml: with one sitemap at the site root those

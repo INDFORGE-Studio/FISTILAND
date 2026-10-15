@@ -92,3 +92,5 @@ Ova dva pravila nisu postavke poslužitelja: oslanjaju se na to da ih igrači po
 ---
 
 [Sve stranice postavki poslužitelja](overview.md#every-setting-explained) | [Potpuni popis vrijednosti](all-settings.md)
+
+--8<-- "abbr.hr.md"

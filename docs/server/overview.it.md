@@ -90,3 +90,5 @@ Le abilità richiedono più tempo di un equipaggiamento degno di questo nome, qu
 - [Tutte le impostazioni](all-settings.md): ogni valore del file.
 
 </div>
+
+--8<-- "abbr.it.md"

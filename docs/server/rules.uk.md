@@ -92,3 +92,5 @@
 ---
 
 [Усі сторінки налаштувань](overview.md#every-setting-explained) | [Повний список значень](all-settings.md)
+
+--8<-- "abbr.uk.md"

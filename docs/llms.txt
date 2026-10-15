@@ -1,0 +1,40 @@
+# FISTILAND SCUM Server
+
+> FISTILAND is a European PvP SCUM server built around territory wars: loot x5, fast respawns, easier survival, squads of up to 10, no mechs. This wiki explains every server setting and is written in 8 languages (English, Español, Français, Deutsch, Italiano, Polski, Українська, Hrvatski).
+
+To join: open SCUM, go to MULTIPLAYER, search for "FISTILAND" or type the server address 31.214.207.109:8159, then click CONNECT. Community: https://discord.gg/RHkNGk6ZQN
+
+## Start here
+
+- [New player guide](https://indforge-studio.github.io/FISTILAND/guide/): the first hour on the server, step by step.
+- [FAQ](https://indforge-studio.github.io/FISTILAND/faq/): short answers about joining, PvP, bases, respawn, loot and events.
+- [Glossary](https://indforge-studio.github.io/FISTILAND/glossary/): the words used by the server.
+
+## Server settings
+
+- [Overview](https://indforge-studio.github.io/FISTILAND/server/overview/): what the server is, how to join, summary of the settings.
+- [Territory](https://indforge-studio.github.io/FISTILAND/server/territory-wars/): flags, base size, decay, raid protection, squads.
+- [Respawn](https://indforge-studio.github.io/FISTILAND/server/respawn/): methods, prices and waiting times.
+- [Economy](https://indforge-studio.github.io/FISTILAND/server/economy/): loot, trader prices, quests.
+- [Progression](https://indforge-studio.github.io/FISTILAND/server/progression/): skill multipliers and fame points.
+- [Survival](https://indforge-studio.github.io/FISTILAND/server/survival/): day and night, vehicles, animals.
+- [Enemies](https://indforge-studio.github.io/FISTILAND/server/enemies/): zombies and armed NPCs.
+- [Events](https://indforge-studio.github.io/FISTILAND/server/events/): cargo drops, no mechs.
+- [Bunkers](https://indforge-studio.github.io/FISTILAND/server/bunkers/): access cards and abandoned bunkers.
+- [Rules](https://indforge-studio.github.io/FISTILAND/server/rules/): fair play and server limits.
+- [All settings](https://indforge-studio.github.io/FISTILAND/server/all-settings/): every value of the server's ServerSettings.ini.
+
+## More
+
+- [Maps](https://indforge-studio.github.io/FISTILAND/maps/): animal habitats and mutant sightings on the satellite map.
+- [Mushrooms](https://indforge-studio.github.io/FISTILAND/mushrooms/): which mushrooms are safe to eat.
+- [Admin guide](https://indforge-studio.github.io/FISTILAND/admin/): SCUM server administration notes and downloadable settings files.
+- [Legal notice and licence](https://indforge-studio.github.io/FISTILAND/legal/)
+
+## Other languages
+
+Each page exists under a language prefix: /es/, /fr/, /de/, /it/, /pl/, /uk/, /hr/ (for example https://indforge-studio.github.io/FISTILAND/fr/guide/). English is the root.
+
+## Licence
+
+Text, maps and images are CC BY-NC-SA 4.0 (credit: "FISTILAND (INDFORGE Studio)", non-commercial, share alike). SCUM and its assets belong to Gamepires and are not covered by this licence.

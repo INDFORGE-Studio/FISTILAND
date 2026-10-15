@@ -21,6 +21,11 @@ theme:
     - content.code.annotate
     - content.tabs.link
     - content.tooltips
+    - content.footnote.tooltips
+    - navigation.footer
+    - navigation.path
+    - toc.follow
+    - search.share
 
 extra_javascript:
   - javascripts/fl-copy-v6.js
@@ -36,12 +41,14 @@ extra_javascript:
   - javascripts/fl-fx-v7.js
   - javascripts/fl-trip-v4.js
   - javascripts/fl-lamp-v16.js
+  - javascripts/fl-extras-v1.js
 
 extra_css:
   - stylesheets/fl-fonts-v2.css
   - stylesheets/fistiland-v107.css
   - stylesheets/fl-skins-v10.css
   - stylesheets/fl-home-bg-v1.css
+  - stylesheets/fl-extras-v1.css
 
 extra:
   social:
@@ -65,6 +72,9 @@ markdown_extensions:
   - pymdownx.inlinehilite
   - pymdownx.keys
   - pymdownx.mark
+  - pymdownx.snippets:
+      base_path: includes
+      check_paths: true
   - pymdownx.superfences
   - pymdownx.tabbed:
       alternate_style: true
@@ -108,6 +118,10 @@ plugins:
             Admin: Administración
             Maps: Mapas
             Mushrooms: Setas
+            Guide: Guía
+            Help: Ayuda
+            FAQ: Preguntas frecuentes
+            Glossary: Glosario
         - locale: fr
           name: Français
           build: true
@@ -128,6 +142,10 @@ plugins:
             Admin: Admin
             Maps: Cartes
             Mushrooms: Champignons
+            Guide: Guide
+            Help: Aide
+            FAQ: FAQ
+            Glossary: Glossaire
         - locale: de
           name: Deutsch
           build: true
@@ -148,6 +166,10 @@ plugins:
             Admin: Admin
             Maps: Karten
             Mushrooms: Pilze
+            Guide: Leitfaden
+            Help: Hilfe
+            FAQ: FAQ
+            Glossary: Glossar
         - locale: it
           name: Italiano
           build: true
@@ -168,6 +190,10 @@ plugins:
             Admin: Admin
             Maps: Mappe
             Mushrooms: Funghi
+            Guide: Guida
+            Help: Aiuto
+            FAQ: FAQ
+            Glossary: Glossario
         - locale: pl
           name: Polski
           build: true
@@ -188,6 +214,10 @@ plugins:
             Admin: Administracja
             Maps: Mapy
             Mushrooms: Grzyby
+            Guide: Poradnik
+            Help: Pomoc
+            FAQ: FAQ
+            Glossary: Słowniczek
         - locale: uk
           name: Українська
           build: true
@@ -208,6 +238,10 @@ plugins:
             Admin: Адміністрування
             Maps: Карти
             Mushrooms: Гриби
+            Guide: Посібник
+            Help: Допомога
+            FAQ: Часті запитання
+            Glossary: Глосарій
         - locale: hr
           name: Hrvatski
           build: true
@@ -228,9 +262,14 @@ plugins:
             Admin: Administracija
             Maps: Karte
             Mushrooms: Gljive
+            Guide: Vodič
+            Help: Pomoć
+            FAQ: Česta pitanja
+            Glossary: Pojmovnik
 
 nav:
   - Home: index.md
+  - Guide: guide.md
   - Server:
       - Overview: server/overview.md
       - Territory: server/territory-wars.md
@@ -245,5 +284,8 @@ nav:
       - All settings: server/all-settings.md
   - Maps: maps.md
   - Mushrooms: mushrooms.md
+  - Help:
+      - FAQ: faq.md
+      - Glossary: glossary.md
   - Admin: admin.md
   - Easter Eggs: easter-eggs.md

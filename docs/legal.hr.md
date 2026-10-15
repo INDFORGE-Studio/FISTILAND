@@ -47,6 +47,8 @@ FISTILAND (INDFORGE Studio), https://indforge-studio.github.io/FISTILAND/ - CC B
 
 Stranica je nekomercijalna: bez oglasa, bez prodaje, bez kolačića i bez analitike. Vaš jezik, skin, rang i slične postavke spremaju se samo u vašem vlastitom pregledniku i nikad se ne šalju nama. Fontovi se poslužuju s same ove stranice, pa vaš preglednik ne šalje nikakav zahtjev Googleu ni drugim trećim stranama da bi ih prikazao. Pružatelj hostinga može čuvati tehničke zapise, poput vaše IP adrese, kako je opisano u [GitHubovoj politici privatnosti](https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement). Poveznice na druge stranice (Discord, scum.wiki.gg i slično) vode na usluge s vlastitim pravilima.
 
+Da bi radila bez veze, stranica sprema kopiju stranica koje otvorite u offline pohranu vašeg preglednika (service worker). Ništa se nigdje ne šalje, a brisanje podataka stranice u vašem pregledniku uklanja tu kopiju.
+
 ## :material-message-text: Kontakt
 
 Javite nam se na našem [Discordu](https://discord.gg/RHkNGk6ZQN) ili otvorite [prijavu na GitHubu](https://github.com/INDFORGE-Studio/FISTILAND/issues). Koristite te kanale za pitanja o licenci, zahtjeve za navođenje izvora ili zahtjeve za uklanjanje.

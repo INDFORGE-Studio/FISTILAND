@@ -5,24 +5,36 @@ Runs after `mkdocs build` and before anything is published:
   1. refuses the build if the site loads anything from another host (legal rule: no CDN, no
      Google Fonts, no analytics, no embeds) or if a local file reference is broken;
   2. checks the 8 language trees, the sitemap and the 404 page exist;
-  3. adds a Content-Security-Policy <meta> to every page, with the SHA-256 of each inline script,
+  3. adds a "last updated" line to every page and a real lastmod to the sitemap (date of the last commit
+     that touched the page's source file), FAQPage structured data to the FAQ pages, and the file list and
+     version of the offline cache to sw.js;
+  4. adds a Content-Security-Policy <meta> to every page, with the SHA-256 of each inline script,
      so only our own files and those exact inline scripts can run.
 
 Usage: python tools/postbuild.py [site_dir]
 """
 import base64
 import hashlib
+import html as htmllib
 import json
 import re
+import subprocess
 import sys
 from pathlib import Path
 from urllib.parse import unquote, urlparse
 
 SITE = Path(sys.argv[1] if len(sys.argv) > 1 else "site").resolve()
+ROOT = Path(__file__).resolve().parent.parent
+DOCS = ROOT / "docs"
 BASE_PATH = "/FISTILAND/"
 LANGS = ["es", "fr", "de", "it", "pl", "uk", "hr"]  # English is the root
 errors = []
 notes = []
+
+UPDATED = {
+    "en": "Last updated", "fr": "Dernière mise à jour", "de": "Zuletzt aktualisiert", "es": "Última actualización",
+    "it": "Ultimo aggiornamento", "pl": "Ostatnia aktualizacja", "uk": "Останнє оновлення", "hr": "Zadnje ažuriranje",
+}
 
 TAG_RE = re.compile(r"<(script|link|img|source|video|audio|iframe|embed|object|input|track)\b([^>]*)>", re.I | re.S)
 ATTR_RE = re.compile(r"""([a-zA-Z_:][-a-zA-Z0-9_:.]*)\s*=\s*(?:"([^"]*)"|'([^']*)'|([^\s>]+))""")
@@ -118,6 +130,146 @@ def split_search_index():
     notes.append("search indexes " + " ".join(sizes))
 
 
+def source_of(page):
+    """docs/ source file a built page comes from (None for pages that are not built from a source file)."""
+    rel = page.relative_to(SITE)
+    if rel.name != "index.html":
+        return None, None
+    parts = list(rel.parts[:-1])
+    lang = "en"
+    if parts and parts[0] in LANGS:
+        lang, parts = parts[0], parts[1:]
+    if parts and parts[0] in ("assets", "search", "javascripts", "stylesheets", "downloads"):
+        return None, None
+    stem = "/".join(parts) if parts else "index"
+    cand = DOCS / (stem + (".md" if lang == "en" else f".{lang}.md"))
+    return (cand if cand.is_file() else None), lang
+
+
+def git_date(path):
+    try:
+        out = subprocess.run(["git", "log", "-1", "--format=%cs", "--", str(path)], cwd=ROOT, capture_output=True, text=True, timeout=30).stdout.strip()
+    except Exception:
+        return None
+    return out if re.fullmatch(r"\d{4}-\d{2}-\d{2}", out) else None
+
+
+def is_shallow():
+    try:
+        return subprocess.run(["git", "rev-parse", "--is-shallow-repository"], cwd=ROOT, capture_output=True, text=True, timeout=30).stdout.strip() != "false"
+    except Exception:
+        return True
+
+
+def add_updated_dates(html_files):
+    """'Last updated' line at the bottom of each content page, real lastmod in the sitemap."""
+    if is_shallow():
+        notes.append("updated dates skipped (no full git history)")
+        return
+    site_url = "https://indforge-studio.github.io" + BASE_PATH
+    dates, added = {}, 0
+    for page in html_files:
+        src, lang = source_of(page)
+        if src is None:
+            continue
+        d = git_date(src)
+        if not d:
+            continue
+        rel = page.relative_to(SITE).parent.as_posix()
+        dates[site_url + ("" if rel == "." else rel + "/")] = d
+        if src.stem.split(".")[0] in ("index", "legal"):
+            continue  # the home page is a single screen, the legal page carries its own date
+        txt = page.read_bytes().decode("utf-8")
+        i = txt.rfind("</article>")
+        if i < 0 or "fl-updated" in txt:
+            continue
+        line = f'<p class="fl-updated">{UPDATED[lang]}: <time datetime="{d}">{d}</time></p>'
+        page.write_bytes((txt[:i] + line + txt[i:]).encode("utf-8"))
+        added += 1
+    sm = SITE / "sitemap.xml"
+    if sm.is_file() and dates:
+        def fix(m):
+            block = m.group(1)
+            loc = re.search(r"<loc>(.*?)</loc>", block)
+            d = dates.get(loc.group(1).strip()) if loc else None
+            if not d:
+                return m.group(0)
+            if "<lastmod>" in block:
+                block = re.sub(r"<lastmod>.*?</lastmod>", f"<lastmod>{d}</lastmod>", block)
+            else:
+                block = block.replace(loc.group(0), loc.group(0) + f"<lastmod>{d}</lastmod>", 1)
+            return "<url>" + block + "</url>"
+        sm.write_text(re.sub(r"<url>(.*?)</url>", fix, sm.read_text(encoding="utf-8"), flags=re.S), encoding="utf-8")
+    notes.append(f"updated line on {added} pages, lastmod for {len(dates)} urls")
+
+
+def add_faq_data(html_files):
+    """FAQPage structured data built from the question/answer blocks of the FAQ pages."""
+    n = 0
+    for page in html_files:
+        if page.parent.name != "faq":
+            continue
+        txt = page.read_bytes().decode("utf-8")
+        items = []
+        for m in re.finditer(r"<details\b[^>]*>\s*<summary\b[^>]*>(.*?)</summary>(.*?)</details>", txt, re.S):
+            q = re.sub(r"\s+", " ", htmllib.unescape(re.sub(r"<[^>]+>", " ", m.group(1)))).strip()
+            a = re.sub(r"\s+", " ", htmllib.unescape(re.sub(r"<[^>]+>", " ", m.group(2)))).strip()
+            if q and a:
+                items.append({"@type": "Question", "name": q, "acceptedAnswer": {"@type": "Answer", "text": a}})
+        if len(items) < 5:
+            errors.append(f"{page.relative_to(SITE)}: only {len(items)} questions found for the FAQ data")
+            continue
+        lang = (re.search(r'<html[^>]*\blang="([a-zA-Z-]+)"', txt) or [None, "en"])[1][:2]
+        data = {"@context": "https://schema.org", "@type": "FAQPage", "inLanguage": lang, "mainEntity": items}
+        blob = json.dumps(data, ensure_ascii=False, separators=(",", ":")).replace("</", "<\\/")
+        j = txt.find("</head>")
+        if j < 0:
+            errors.append(f"{page.relative_to(SITE)}: no </head> for the FAQ data")
+            continue
+        page.write_bytes((txt[:j] + f'<script type="application/ld+json">{blob}</script>' + txt[j:]).encode("utf-8"))
+        n += 1
+    if n < 8:
+        errors.append(f"FAQ data added to {n} pages, expected 8")
+    notes.append(f"FAQ data on {n} pages")
+
+
+def fill_service_worker():
+    """sw.js gets the list of files to keep at install time and a version that changes when any of them does."""
+    sw = SITE / "sw.js"
+    if not sw.is_file():
+        errors.append("missing sw.js")
+        return
+    pats = [
+        "assets/stylesheets/main.*.min.css", "assets/stylesheets/palette.*.min.css", "assets/javascripts/bundle.*.min.js",
+        "assets/javascripts/workers/search.*.min.js", "stylesheets/*.css", "javascripts/*.js",
+        "assets/fonts/inter-normal-latin.woff2", "assets/fonts/oswald-normal-latin.woff2", "assets/fonts/roboto-mono-normal-latin.woff2",
+        "assets/icon-192-v1.png", "assets/icon-32-v1.png", "assets/favicon-v10.ico", "manifest.webmanifest",
+    ]
+    only_404 = re.compile(r"(invaders|snake|logo404)")
+    files = []
+    for p in pats:
+        for f in sorted(SITE.glob(p)):
+            if f.is_file() and not only_404.search(f.name):
+                files.append(f.relative_to(SITE).as_posix())
+    pages = [""] + [lang + "/" for lang in LANGS] + ["guide/", "faq/"]
+    for pg in pages:
+        if not (SITE / pg / "index.html").is_file():
+            errors.append(f"sw.js: page to keep is missing: {pg or '/'}")
+    h = hashlib.sha1()
+    for f in files:
+        h.update(f.encode()); h.update((SITE / f).read_bytes())
+    h.update(sw.read_bytes())
+    version = h.hexdigest()[:10]
+    txt = sw.read_text(encoding="utf-8")
+    if "/* @version */" not in txt or "/* @precache */" not in txt:
+        errors.append("sw.js: markers for the version and file list not found")
+        return
+    txt = re.sub(r"var VERSION = '[^']*'; /\* @version \*/", f"var VERSION = '{version}'; /* @version */", txt)
+    txt = re.sub(r"var PRECACHE = \[.*?\]; /\* @precache \*/", lambda m: "var PRECACHE = " + json.dumps(files + pages) + "; /* @precache */", txt, flags=re.S)
+    sw.write_text(txt, encoding="utf-8")
+    notes.append(f"offline cache {version}: {len(files)} files + {len(pages)} pages")
+
+
 def main():
     if not SITE.is_dir():
         print(f"site folder not found: {SITE}")
@@ -127,12 +279,14 @@ def main():
     css_files = sorted(SITE.rglob("*.css"))
     js_files = sorted(SITE.rglob("*.js"))
     own_js = sorted((SITE / "javascripts").rglob("*.js")) if (SITE / "javascripts").is_dir() else []
+    if (SITE / "sw.js").is_file():
+        own_js.append(SITE / "sw.js")
     if not html_files:
         print("no html file found")
         return 2
 
     # ---- structure ----
-    for need in ["index.html", "404.html", "sitemap.xml", "search/search_index.json"]:
+    for need in ["index.html", "404.html", "sitemap.xml", "search/search_index.json", "sw.js", "manifest.webmanifest", "llms.txt", "assets/og-banner-v1.jpg"]:
         if not (SITE / need).exists():
             errors.append(f"missing {need}")
     for lang in LANGS:
@@ -215,6 +369,16 @@ def main():
     split_search_index()
     if errors:
         print("search index split failed:")
+        for e in errors:
+            print("  - " + e)
+        return 1
+
+    # ---- last-updated dates, FAQ structured data, offline cache list ----
+    add_updated_dates(html_files)
+    add_faq_data(html_files)
+    fill_service_worker()
+    if errors:
+        print("page extras failed:")
         for e in errors:
             print("  - " + e)
         return 1

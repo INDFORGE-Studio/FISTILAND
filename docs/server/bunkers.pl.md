@@ -45,3 +45,5 @@
 ---
 
 [Wszystkie strony ustawień serwera](overview.md#every-setting-explained) | [Pełna lista wartości](all-settings.md)
+
+--8<-- "abbr.pl.md"

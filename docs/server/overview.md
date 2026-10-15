@@ -90,3 +90,5 @@ Skills take longer to build than decent gear, so take your time and watch your s
 - [All settings](all-settings.md): every value of the file.
 
 </div>
+
+--8<-- "abbr.en.md"

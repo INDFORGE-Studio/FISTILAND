@@ -45,3 +45,5 @@
 ---
 
 [Alle Einstellungsseiten](overview.md#every-setting-explained) | [Vollständige Werteliste](all-settings.md)
+
+--8<-- "abbr.de.md"

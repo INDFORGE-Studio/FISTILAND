@@ -81,6 +81,17 @@ Las torretas atacan a prisioneros, marionetas (zombis), vehículos, centinelas, 
 | `LockProtectionDamageMultiplier` | 1 | Daño que causan las cerraduras a quien falla al forzarlas. |
 | `BaseBuildingDestructionLogDamageThreshold` | 20 | Nivel de daño a partir del cual se registra la destrucción de la base. |
 
+## :material-calculator:  { #calculator }
+
+<div class="fl-calc" data-base="300" data-extra="17" data-exp="75" data-max="10">
+<label class="fl-calc__row" hidden><span></span> <b class="fl-calc__n">1</b><input type="range" min="1" max="10" value="1"></label>
+<div class="fl-facts">
+<div><b data-out="flag">300</b><span></span></div>
+<div><b data-out="exp">375</b><span></span></div>
+</div>
+<p class="fl-calc__note"></p>
+</div>
+
 ## :material-link-variant: Páginas relacionadas
 
 [Reglas](rules.md) trata de las aeronaves y las minas. [Reaparición](respawn.md) trata de las reapariciones en el refugio.

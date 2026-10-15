@@ -47,6 +47,8 @@ FISTILAND (INDFORGE Studio), https://indforge-studio.github.io/FISTILAND/ - CC B
 
 Il sito non ha scopi commerciali: nessuna pubblicità, nessuna vendita, nessun cookie e nessuna analisi. La tua lingua, la tua skin, il tuo grado e altre preferenze sono salvati solo nel tuo browser e non ci vengono mai inviati. I font sono serviti da questo stesso sito, quindi il tuo browser non invia alcuna richiesta a Google o ad altri terzi per mostrarli. Il fornitore di hosting può conservare log tecnici, come il tuo indirizzo IP, secondo l'[informativa sulla privacy di GitHub](https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement). I link ad altri siti (Discord, scum.wiki.gg e così via) portano a servizi con regole proprie.
 
+Per funzionare senza connessione, il sito conserva una copia delle pagine che apri nell'archivio offline del tuo browser (un service worker). Non viene inviato nulla da nessuna parte, e cancellare i dati del sito nel tuo browser la rimuove.
+
 ## :material-message-text: Contatti
 
 Scrivici sul nostro [Discord](https://discord.gg/RHkNGk6ZQN) o apri una [segnalazione su GitHub](https://github.com/INDFORGE-Studio/FISTILAND/issues). Usa questi canali per domande sulla licenza, richieste di attribuzione o richieste di rimozione.

@@ -81,6 +81,17 @@ Kupole napadaju zatvorenike, marionete (zombije), vozila, stražare, životinje 
 | `LockProtectionDamageMultiplier` | 1 | Šteta koju brave nanose osobama koje ih ne uspiju obiti. |
 | `BaseBuildingDestructionLogDamageThreshold` | 20 | Razina štete iznad koje se bilježi uništenje baze. |
 
+## :material-calculator:  { #calculator }
+
+<div class="fl-calc" data-base="300" data-extra="17" data-exp="75" data-max="10">
+<label class="fl-calc__row" hidden><span></span> <b class="fl-calc__n">1</b><input type="range" min="1" max="10" value="1"></label>
+<div class="fl-facts">
+<div><b data-out="flag">300</b><span></span></div>
+<div><b data-out="exp">375</b><span></span></div>
+</div>
+<p class="fl-calc__note"></p>
+</div>
+
 ## :material-link-variant: Srodne stranice
 
 [Pravila](rules.md) pokrivaju zrakoplove i mine. [Respawn](respawn.md) pokriva respawn u skloništima.

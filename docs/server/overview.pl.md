@@ -90,3 +90,5 @@ Umiejętności budują się dłużej niż przyzwoity sprzęt, więc nie spiesz s
 - [Wszystkie ustawienia](all-settings.md): każda wartość z pliku.
 
 </div>
+
+--8<-- "abbr.pl.md"

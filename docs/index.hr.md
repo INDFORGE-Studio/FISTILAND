@@ -24,6 +24,12 @@ hide:
 <div class="fl-grid" markdown>
 
 <div class="fl-card" markdown>
+:material-compass:
+**[Vodič](guide.md)**
+<p>Tvoj prvi sat.</p>
+</div>
+
+<div class="fl-card" markdown>
 :material-flag:
 **[Teritorij](server/territory-wars.md)**
 <p>Zastave, baze i napadi.</p>

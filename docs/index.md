@@ -1,4 +1,4 @@
-﻿---
+---
 hide:
   - navigation
   - toc
@@ -22,6 +22,12 @@ hide:
 </div>
 
 <div class="fl-grid" markdown>
+
+<div class="fl-card" markdown>
+:material-compass:
+**[Guide](guide.md)**
+<p>Your first hour.</p>
+</div>
 
 <div class="fl-card" markdown>
 :material-flag:

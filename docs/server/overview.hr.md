@@ -90,3 +90,5 @@ Vještine se grade dulje od pristojne opreme, pa se nemoj žuriti i pazi na okol
 - [Sve postavke](all-settings.md): svaka vrijednost iz datoteke.
 
 </div>
+
+--8<-- "abbr.hr.md"

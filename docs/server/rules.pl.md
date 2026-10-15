@@ -92,3 +92,5 @@ Te dwie zasady nie są ustawieniami serwera: opierają się na tym, że gracze j
 ---
 
 [Wszystkie strony ustawień serwera](overview.md#every-setting-explained) | [Pełna lista wartości](all-settings.md)
+
+--8<-- "abbr.pl.md"

@@ -45,3 +45,5 @@
 ---
 
 [Sve stranice postavki poslužitelja](overview.md#every-setting-explained) | [Potpuni popis vrijednosti](all-settings.md)
+
+--8<-- "abbr.hr.md"

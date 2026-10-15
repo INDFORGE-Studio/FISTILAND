@@ -90,3 +90,5 @@ La progression des compétences demande plus de temps que de se faire un équipe
 - [Tous les réglages](all-settings.md) : chaque valeur du fichier.
 
 </div>
+
+--8<-- "abbr.fr.md"

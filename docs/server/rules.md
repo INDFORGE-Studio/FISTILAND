@@ -92,3 +92,5 @@ These two are rules, not server settings: they rely on players respecting them.
 ---
 
 [All server settings pages](overview.md#every-setting-explained) | [Full list of values](all-settings.md)
+
+--8<-- "abbr.en.md"

@@ -24,6 +24,12 @@ hide:
 <div class="fl-grid" markdown>
 
 <div class="fl-card" markdown>
+:material-compass:
+**[Leitfaden](guide.md)**
+<p>Deine erste Stunde.</p>
+</div>
+
+<div class="fl-card" markdown>
 :material-flag:
 **[Gebiet](server/territory-wars.md)**
 <p>Flaggen, Basen und Raids.</p>

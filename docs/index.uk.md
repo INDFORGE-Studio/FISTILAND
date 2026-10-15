@@ -24,6 +24,12 @@ hide:
 <div class="fl-grid" markdown>
 
 <div class="fl-card" markdown>
+:material-compass:
+**[Посібник](guide.md)**
+<p>Ваша перша година.</p>
+</div>
+
+<div class="fl-card" markdown>
 :material-flag:
 **[Територія](server/territory-wars.md)**
 <p>Прапори, бази та рейди.</p>

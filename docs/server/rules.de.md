@@ -92,3 +92,5 @@ Diese beiden Punkte sind Regeln, keine Servereinstellungen: Sie beruhen darauf, 
 ---
 
 [Alle Einstellungsseiten](overview.md#every-setting-explained) | [Vollständige Werteliste](all-settings.md)
+
+--8<-- "abbr.de.md"
