@@ -125,8 +125,9 @@ def main():
         txt = page.read_bytes().decode("utf-8")
         if INLINE_HANDLER_RE.search(txt):
             errors.append(f"{page.relative_to(SITE)}: inline event handler (blocked by the CSP)")
-        if re.search(r"""(?:href|src|action)\s*=\s*["']\s*javascript:""", txt, re.I):
-            errors.append(f"{page.relative_to(SITE)}: javascript: URL")
+        jm = re.search(r"""<[^<>]*\b(?:href|src|action)\s*=\s*["']\s*javascript:[^<>]*>""", txt, re.I)
+        if jm:
+            errors.append(f"{page.relative_to(SITE)}: javascript: URL in {jm.group(0)[:160]}")
         for m in TAG_RE.finditer(txt):
             tag, raw = m.group(1).lower(), m.group(2)
             a = attrs(raw)

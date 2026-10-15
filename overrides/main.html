@@ -2,6 +2,8 @@
 
 {#- Search snippets: one description per page and language, and a real title for the home page. -#}
 {% set seo_lang = (config.theme.language or 'en')[:2] %}
+{#- base_url is '.', '../..' or (on the 404 page) '/FISTILAND/': normalise it so a trailing slash is never doubled -#}
+{% set fl_base = (base_url ~ '/') | replace('//', '/') %}
 {% set seo_locales = {'en': 'en_GB', 'fr': 'fr_FR', 'de': 'de_DE', 'es': 'es_ES', 'it': 'it_IT', 'uk': 'uk_UA', 'hr': 'hr_HR', 'pl': 'pl_PL'} %}
 {% set seo_title_home = {
   'en': 'SCUM PvP server (EU): territory wars, loot x5, no mechs',
@@ -192,19 +194,19 @@
   <script type="application/ld+json">{{ {"@context": "https://schema.org", "@type": "WebSite", "name": config.site_name, "url": config.site_url, "inLanguage": seo_lang, "description": page.meta.description} | tojson }}</script>
   {% endif %}
   <link rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">
-  <link rel="icon" type="image/png" sizes="32x32" href="{{ base_url }}/assets/icon-32-v1.png">
-  <link rel="icon" type="image/png" sizes="192x192" href="{{ base_url }}/assets/icon-192-v1.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="{{ base_url }}/assets/apple-touch-icon-v1.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="{{ fl_base }}assets/icon-32-v1.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="{{ fl_base }}assets/icon-192-v1.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="{{ fl_base }}assets/apple-touch-icon-v1.png">
   <meta name="theme-color" content="#ff6a00">
   <meta name="color-scheme" content="dark">
   <meta name="referrer" content="strict-origin">
-  <link rel="manifest" href="{{ base_url }}/manifest.webmanifest">
+  <link rel="manifest" href="{{ fl_base }}manifest.webmanifest">
   {#- Fonts used above the fold are fetched at once instead of after the stylesheet has been parsed. -#}
-  <link rel="preload" href="{{ base_url }}/assets/fonts/inter-normal-latin.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="preload" href="{{ base_url }}/assets/fonts/oswald-normal-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="{{ fl_base }}assets/fonts/inter-normal-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="{{ fl_base }}assets/fonts/oswald-normal-latin.woff2" as="font" type="font/woff2" crossorigin>
   {% if page and seo_slug == 'home' %}
-  <link rel="preload" href="{{ base_url }}/assets/bg-v3.jpg" as="image" fetchpriority="high">
-  <link rel="preload" href="{{ base_url }}/assets/logo-home-v4.png" as="image" fetchpriority="high">
+  <link rel="preload" href="{{ fl_base }}assets/bg-v3.jpg" as="image" fetchpriority="high">
+  <link rel="preload" href="{{ fl_base }}assets/logo-home-v4.png" as="image" fetchpriority="high">
   {% endif %}
   {#- Pages the visitor is about to open are fetched on hover (Chromium); nothing runs before the click. -#}
   <script type="speculationrules">{"prefetch":[{"where":{"and":[{"href_matches":"/FISTILAND/*"},{"not":{"href_matches":"/FISTILAND/assets/*"}},{"not":{"href_matches":"/FISTILAND/downloads/*"}}]},"eagerness":"moderate"}]}</script>
