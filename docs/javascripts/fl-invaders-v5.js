@@ -194,6 +194,7 @@
 
   function finish(win) {
     on = false; keys.L = keys.R = keys.F = 0;
+    if (window.flMusic) window.flMusic.stop();
     var ov = el('div', 'ov'), bx = el('div', 'bx'), board = el('ol', 'top'), mine = null;
     ov.setAttribute('role', 'dialog'); ov.setAttribute('aria-modal', 'true'); ov.setAttribute('aria-label', win ? 'You win' : 'Game over');
     bx.appendChild(el('h2', '', win ? 'You win' : 'Game over'));
@@ -269,13 +270,45 @@
     });
   }
 
+  // ---- music: speaker icon (click = mute) and a volume slider; both choices are kept in this browser ----
+  var SND_KEY = 'fl-invaders-snd', ICON_ON = 'M3 9v6h4l5 5V4L7 9H3zm13.5 3A4.5 4.5 0 0 0 14 7.97v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z',
+    ICON_OFF = 'M16.5 12A4.5 4.5 0 0 0 14 7.97v2.21l2.45 2.45c.03-.2.05-.41.05-.63zm2.5 0c0 .94-.2 1.82-.54 2.64l1.51 1.51A8.8 8.8 0 0 0 21 12c0-4.28-2.99-7.86-7-8.77v2.06c2.89.86 5 3.54 5 6.71zM4.27 3L3 4.27 7.73 9H3v6h4l5 5v-6.73l4.25 4.25c-.67.52-1.42.93-2.25 1.18v2.06a8.99 8.99 0 0 0 3.69-1.81L19.73 21 21 19.73l-9-9L4.27 3zM12 4L9.91 6.09 12 8.18V4z';
+  function buildSound() {
+    var M = window.flMusic; if (!M) return;
+    var st = { v: .5, m: 0 };
+    try { var o = JSON.parse(localStorage.getItem(SND_KEY) || '{}'); if (typeof o.v === 'number' && o.v >= 0 && o.v <= 1) st.v = o.v; st.m = o.m ? 1 : 0; } catch (e) {}
+    var bar = el('div', 'snd'), btn = el('button'), rng = el('input');
+    btn.type = 'button'; btn.setAttribute('aria-label', 'Sound');
+    btn.innerHTML = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d=""/></svg>';
+    rng.type = 'range'; rng.min = '0'; rng.max = '100'; rng.step = '1'; rng.setAttribute('aria-label', 'Volume');
+    var path = btn.querySelector('path');
+    function sync() {
+      var off = st.m || st.v === 0;
+      path.setAttribute('d', off ? ICON_OFF : ICON_ON);
+      btn.setAttribute('aria-pressed', off ? 'true' : 'false'); btn.classList.toggle('off', off);
+      rng.value = String(Math.round((st.m ? 0 : st.v) * 100));
+      M.volume(st.v); M.mute(off);
+      try { localStorage.setItem(SND_KEY, JSON.stringify(st)); } catch (e) {}
+    }
+    btn.addEventListener('click', function () {
+      if (st.v === 0) { st.v = .5; st.m = 0; } else st.m = st.m ? 0 : 1;
+      sync(); if (btn.matches(':focus-visible') === false) btn.blur();
+    });
+    rng.addEventListener('input', function () { st.v = rng.value / 100; st.m = 0; sync(); });
+    rng.addEventListener('change', function () { rng.blur(); });
+    bar.appendChild(btn); bar.appendChild(rng);
+    game.appendChild(bar);
+    sync();
+  }
+
   function begin() {
     if (on || !window.flSnake || !window.flSnake.halt()) return;   // refused while the snake is celebrating a win
     on = true;
     cv.className = 'invade'; setTimeout(function () { cv.classList.remove('invade'); }, 720);
     cv.setAttribute('aria-label', 'Invaders');
     game.classList.add('inv');
-    buildPad(); newGame();
+    buildSound(); buildPad(); newGame();
+    if (window.flMusic) window.flMusic.start(function () { return level; });
     window.dispatchEvent(new Event('resize'));   // the board may have changed size with the pad: let the canvas bitmap follow
     last = performance.now(); requestAnimationFrame(loop);
   }
