@@ -67,6 +67,26 @@ plugins:
           name: English
           default: true
           build: true
+        - locale: es
+          name: Español
+          build: true
+          nav_translations:
+            Home: Inicio
+            Server: Servidor
+            Overview: Resumen
+            Territory: Territorio
+            Respawn: Reaparición
+            Economy: Economía
+            Progression: Progresión
+            Survival: Supervivencia
+            Enemies: Enemigos
+            Events: Eventos
+            Bunkers: Búnkeres
+            Rules: Reglas
+            All settings: Todos los ajustes
+            Admin: Administración
+            Maps: Mapas
+            Mushrooms: Setas
         - locale: fr
           name: Français
           build: true
@@ -107,26 +127,6 @@ plugins:
             Admin: Admin
             Maps: Karten
             Mushrooms: Pilze
-        - locale: es
-          name: Español
-          build: true
-          nav_translations:
-            Home: Inicio
-            Server: Servidor
-            Overview: Resumen
-            Territory: Territorio
-            Respawn: Reaparición
-            Economy: Economía
-            Progression: Progresión
-            Survival: Supervivencia
-            Enemies: Enemigos
-            Events: Eventos
-            Bunkers: Búnkeres
-            Rules: Reglas
-            All settings: Todos los ajustes
-            Admin: Administración
-            Maps: Mapas
-            Mushrooms: Setas
         - locale: it
           name: Italiano
           build: true
