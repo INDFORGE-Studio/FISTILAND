@@ -29,7 +29,7 @@
   // difficulty per level: 1 is the gentle original wave, 10 is a wall of fast, aimed fire that nobody is meant to survive
   function config(l) {
     var c = COLS[l - 1], r = ROWS[l - 1];
-    return { cols: c, rows: r, speed: 14 + 4 * (l - 1), boltMin: .7 - .062 * (l - 1), boltMax: 1.35 - .115 * (l - 1), boltV: 105 + 8 * (l - 1), aim: Math.max(0, (l - 2) * .09) };
+    return { cols: c, rows: r, top: 22 + Math.min(l - 1, 6) * 6, speed: 14 + 4 * (l - 1), boltMin: .7 - .062 * (l - 1), boltMax: 1.35 - .115 * (l - 1), boltV: 105 + 8 * (l - 1), aim: Math.max(0, (l - 2) * .09) };
   }
 
   function paintPips() {
@@ -77,7 +77,7 @@
     for (i = 0; i < mechs.length; i++) if (mechs[i].alive) { A++; m = mechs[i]; if (m.c < minC) minC = m.c; if (m.c > maxC) maxC = m.c; if (m.r > maxR) maxR = m.r; }
 
     // the wave slides in from the top, then sweeps from side to side, dropping a step at each edge and speeding up as it thins out
-    if (intro < 1) { intro = Math.min(1, intro + dt / 1.1); var e = 1 - Math.pow(1 - intro, 3); fy = -cfg.rows * 22 + (22 + cfg.rows * 22) * e; }
+    if (intro < 1) { intro = Math.min(1, intro + dt / 1.1); var e = 1 - Math.pow(1 - intro, 3); fy = -cfg.rows * 22 + (cfg.top + cfg.rows * 22) * e; }
     else {
       fx += dir * cfg.speed * (1 + 2.5 * (1 - A / total)) * dt;
       var left = fx + minC * 30, right = fx + maxC * 30 + MW;
@@ -90,7 +90,7 @@
       if (s.y < -8) { shots.splice(i, 1); continue; }
       for (j = 0; j < mechs.length; j++) {
         m = mechs[j];
-        if (m.alive && Math.abs(s.x - (mx(m) + MW / 2)) < MW / 2 + 1 && s.y > my(m) && s.y < my(m) + MH) {
+        if (m.alive && Math.abs(s.x - (mx(m) + MW / 2)) < MW / 2 + 1 && s.y + 6 > my(m) && s.y < my(m) + MH) {   // box overlap, so a slow frame never lets a shot slip through
           m.alive = false; kills++; score += 10 * level; boom(mx(m) + MW / 2, my(m) + MH / 2, '255,122,51'); shots.splice(i, 1);
           if (kills >= total) {
             score += 50 * level + 25 * level * lives;
@@ -101,7 +101,7 @@
         }
       }
     }
-    if (state !== 'play') return;
+    if (state !== 'play') { shots = []; return; }   // wave over: no shot is left hanging in mid-air
 
     if (intro >= 1) {
       nextBolt -= dt;
@@ -121,7 +121,7 @@
     for (i = bolts.length - 1; i >= 0; i--) {
       var b = bolts[i]; b.y += cfg.boltV * dt;
       if (b.y > FW + 8) { bolts.splice(i, 1); continue; }
-      if (hero.inv <= 0 && Math.abs(b.x - hero.x) < 6 && b.y > PY - 8 && b.y < PY + 10) {
+      if (hero.inv <= 0 && Math.abs(b.x - hero.x) < 6 && b.y + 6 > PY - 8 && b.y < PY + 10) {
         bolts.splice(i, 1); lives--; hero.inv = 1.3; flash = 1; boom(hero.x, PY, '255,58,46');
         if (lives <= 0) { state = 'lost'; stateAt = performance.now(); }
       }
@@ -181,7 +181,7 @@
   function loadTop() {
     try {
       var a = JSON.parse(localStorage.getItem(TOP_KEY) || '[]');
-      if (Array.isArray(a)) return a.filter(function (r) { return r && typeof r.n === 'string' && typeof r.s === 'number' && typeof r.l === 'number'; }).slice(0, 10);
+      if (Array.isArray(a)) return a.filter(function (r) { return r && typeof r.n === 'string' && typeof r.s === 'number' && typeof r.l === 'number'; }).map(function (r) { return { n: r.n.slice(0, NAME_MAX), s: r.s, l: r.l }; }).slice(0, 10);
     } catch (e) {}
     return [];
   }
@@ -276,6 +276,7 @@
     cv.setAttribute('aria-label', 'Invaders');
     game.classList.add('inv');
     buildPad(); newGame();
+    window.dispatchEvent(new Event('resize'));   // the board may have changed size with the pad: let the canvas bitmap follow
     last = performance.now(); requestAnimationFrame(loop);
   }
   document.addEventListener('fl-invaders', begin);
