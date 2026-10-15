@@ -28,14 +28,14 @@ extra_javascript:
   - javascripts/fl-ip-v3.js
   - javascripts/fl-join-v3.js
   - javascripts/fl-discord-v4.js
-  - javascripts/fl-cc-v8.js
+  - javascripts/fl-cc-v9.js
   - javascripts/fl-rank-v15.js
   - javascripts/fl-theme-v4.js
   - javascripts/fl-trip-v2.js
   - javascripts/fl-lamp-v14.js
 
 extra_css:
-  - stylesheets/fistiland-v98.css
+  - stylesheets/fistiland-v99.css
   - stylesheets/fl-themes-v2.css
 
 extra:
