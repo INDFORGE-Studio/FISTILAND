@@ -25,7 +25,6 @@ theme:
     - navigation.footer
     - navigation.path
     - toc.follow
-    - search.share
 
 extra_javascript:
   - javascripts/fl-copy-v6.js
