@@ -1100,10 +1100,10 @@ html[data-fl-theme="demonic"] .md-header__button.md-logo { --dv-glow: 255, 58, 4
 .md-header__button.md-logo:hover img, .md-header__button.md-logo:focus-visible img { animation: fl-dshake .9s ease-in-out infinite; transform-origin: 50% 60%; }
 
 /* Maps: licence badge, vector and fixed in the corner of the frame */
-.fl-island__cc { position: absolute; right: .6rem; bottom: .6rem; z-index: 4; display: block; line-height: 0; }
+.fl-island__cc { position: absolute; left: .6rem; bottom: .6rem; z-index: 4; display: block; line-height: 0; }
 .fl-island__cc img { display: block; width: 88px; height: auto; border: 0; opacity: .95; transition: opacity .15s; }
 .fl-island__cc:hover img, .fl-island__cc:focus-visible img { opacity: 1; }
-@media (max-width: 600px) { .fl-island__cc { right: .4rem; bottom: .4rem; } .fl-island__cc img { width: 64px; } }
+@media (max-width: 600px) { .fl-island__cc { left: .4rem; bottom: .4rem; } .fl-island__cc img { width: 64px; } }
 
 /* legal page link: scales icon (footer centre; top right next to the licence badge on the home page) */
 .fl-legal-ico { display: inline-flex; align-items: center; justify-content: center; width: 2.2rem; height: 2.2rem; border-radius: 6px; color: #6f655c; text-decoration: none; transition: color .15s, background .15s, box-shadow .15s, transform .15s; }

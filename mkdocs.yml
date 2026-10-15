@@ -44,10 +44,10 @@ extra_javascript:
 
 extra_css:
   - stylesheets/fl-fonts-v2.css
-  - stylesheets/fistiland-v107.css
+  - stylesheets/fistiland-v108.css
   - stylesheets/fl-skins-v10.css
   - stylesheets/fl-home-bg-v1.css
-  - stylesheets/fl-extras-v1.css
+  - stylesheets/fl-extras-v2.css
 
 extra:
   social:
