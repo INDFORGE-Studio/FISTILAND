@@ -382,15 +382,8 @@ html[data-fl-theme="forces"] {
       linear-gradient(var(--c), var(--c)) 0 100% / 26px 2px no-repeat, linear-gradient(var(--c), var(--c)) 0 100% / 2px 26px no-repeat,
       linear-gradient(var(--c), var(--c)) 100% 100% / 26px 2px no-repeat, linear-gradient(var(--c), var(--c)) 100% 100% / 2px 26px no-repeat;
   }
-  & .fl-fx .fx-hud {
-    inset: auto 0 0 0; height: 40px; display: flex; justify-content: space-between; align-items: flex-end; padding: 0 18px 12px; background: linear-gradient(0deg, rgba(0, 12, 5, .9), transparent); font: 500 .58rem/1 "Roboto Mono", monospace; letter-spacing: .14em; text-transform: uppercase; color: rgba(109, 255, 158, .8); text-shadow: 0 0 6px rgba(109, 255, 158, .6);
-    & span { white-space: nowrap; }
-    & .c { opacity: .85; }
-    & .dot { display: inline-block; width: .5em; height: .5em; margin-right: .6em; border-radius: 50%; background: #ff3a2e; box-shadow: 0 0 6px #ff3a2e; animation: fl-rec 1.4s steps(2) infinite; vertical-align: .05em; }
-  }
 }
 @keyframes fl-sweep { from { transform: translateY(-20vh); } to { transform: translateY(115vh); } }
-@keyframes fl-rec { 50% { opacity: .15; } }
 @keyframes fl-type { from { clip-path: inset(0 100% 0 0); } to { clip-path: inset(0 0 0 0); } }
 
 /* ---------------------------------------------------------------------
@@ -541,13 +534,9 @@ html[data-fl-theme="zombie"] {
    --------------------------------------------------------------------- */
 @media (max-width: 60em) {
   html[data-fl-theme] .fl-fx .fx-sigil, html[data-fl-theme] .fl-fx .fx-sweep, html[data-fl-theme] .fl-fx .fx-fog.b { display: none; }
-  html[data-fl-theme="forces"] .fl-fx .fx-hud .c { display: none; }
-  html[data-fl-theme="forces"] .fl-fx .fx-hud { height: 26px; padding-bottom: 8px; }
   html[data-fl-theme="survivalist"] .fl-card { transform: none; }
 }
 @media (max-width: 40em) {
-  html[data-fl-theme="forces"] .fl-fx .fx-hud .l { display: none; }
-  html[data-fl-theme="forces"] .fl-fx .fx-hud { justify-content: flex-end; }
   html[data-fl-theme="demonic"] .fl-card { clip-path: none; }
   html[data-fl-theme="demonic"] .fl-grid { filter: none; }
   .fl-theme-opt { grid-template-columns: 4.2rem 1fr 1.1rem; gap: .6rem; }

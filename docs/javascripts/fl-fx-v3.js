@@ -3,15 +3,14 @@
   // Ambient layers for the Veteran skins: CSS layers (styled in fl-skins) + one small canvas for particles.
   // Nothing is created for the default look. Paused when the tab is hidden, thinned out when the device struggles.
   var root = document.documentElement;
-  var host = null, cv = null, g = null, raf = 0, skin = '', P = [], hud = null, hudTimer = 0;
+  var host = null, cv = null, g = null, raf = 0, skin = '', P = [];
   var W = 0, H = 0, DPR = 1, last = 0, frames = 0, spent = 0, slow = 0, nextTracer = 0, lowEnd = false;
   var mouse = { x: -1e4, y: -1e4 };
   var SPR = {};
 
   var LAYERS = {
     survivalist: '<i class="fx-grain"></i><canvas></canvas><i class="fx-vig"></i>',
-    forces: '<i class="fx-grain"></i><canvas></canvas><i class="fx-scan"></i><i class="fx-sweep"></i><i class="fx-vig"></i><i class="fx-brk"></i>' +
-      '<div class="fx-hud"><span class="l"><i class="dot"></i>REC // NVG ON // FISTILAND</span><span class="c"></span><span class="r"></span></div>',
+    forces: '<i class="fx-grain"></i><canvas></canvas><i class="fx-scan"></i><i class="fx-sweep"></i><i class="fx-vig"></i><i class="fx-brk"></i>',
     demonic: '<canvas></canvas><i class="fx-vig"></i><i class="fx-flash"></i>',
     zombie: '<i class="fx-trefoil"></i><canvas></canvas><i class="fx-vig"></i>'
   };
@@ -159,20 +158,6 @@
   var rt = 0;
   function onResize() { clearTimeout(rt); rt = setTimeout(function () { if (!host) return; resize(); populate(); }, 160); }
 
-  // HUD (Special Forces): clock and a heading that follows the scroll position
-  function hudTick() {
-    if (!hud) return;
-    var r = hud.querySelector('.r'); if (r) r.textContent = 'ZULU ' + new Date().toISOString().slice(11, 19);
-  }
-  function hudHeading() {
-    if (!hud) return;
-    var c = hud.querySelector('.c'), max = Math.max(1, document.documentElement.scrollHeight - window.innerHeight);
-    var deg = Math.round((window.pageYOffset / max) * 359), dirs = ['N', 'NE', 'E', 'SE', 'S', 'SW', 'W', 'NW'];
-    if (c) c.textContent = 'HDG ' + ('00' + deg).slice(-3) + '° ' + dirs[Math.round(deg / 45) % 8];
-  }
-  var hs = 0;
-  function onScroll() { if (hs) return; hs = requestAnimationFrame(function () { hs = 0; hudHeading(); }); }
-
   function onDown(e) { if (host && cv) burst(e.clientX, e.clientY); }
   function onMove(e) { mouse.x = e.clientX; mouse.y = e.clientY; }
   function onVis() {
@@ -183,11 +168,9 @@
 
   function stop() {
     cancelAnimationFrame(raf); raf = 0;
-    clearInterval(hudTimer); hudTimer = 0; hud = null;
     if (host && host.parentNode) host.parentNode.removeChild(host);
     host = cv = g = null; P = [];
     window.removeEventListener('resize', onResize);
-    window.removeEventListener('scroll', onScroll);
     document.removeEventListener('pointerdown', onDown, true);
     document.removeEventListener('pointermove', onMove);
     document.removeEventListener('visibilitychange', onVis);
@@ -214,8 +197,6 @@
       document.addEventListener('visibilitychange', onVis);
       if (!document.hidden) raf = requestAnimationFrame(frame);
     }
-    hud = host.querySelector('.fx-hud');
-    if (hud) { hudTick(); hudHeading(); hudTimer = setInterval(hudTick, 1000); window.addEventListener('scroll', onScroll, { passive: true }); }
   }
 
   document.addEventListener('fl-skin-change', function (e) { start((e.detail && e.detail.skin) || ''); });
