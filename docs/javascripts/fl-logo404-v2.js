@@ -16,7 +16,28 @@
 
   var off = false;
   try { off = localStorage.getItem('fl-fx') === 'off'; } catch (e) {}
-  if (off || (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches)) return;
+  if (off || (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches)) { lg.classList.add('calm'); return; }
+
+  // The logo walks through the colours of the five skins and the five ranks, one after the other: [hue-rotate deg, saturate, sepia, hot rgb, base rgb]
+  var PALETTE = [
+    [0, 1, 0, [255, 122, 51], [232, 99, 28]],        // default orange
+    [24, .8, .18, [242, 193, 78], [200, 162, 74]],   // Survivalist skin
+    [120, 1, 0, [109, 255, 158], [47, 211, 107]],    // Forces skin
+    [-22, 1.2, 0, [255, 74, 54], [208, 20, 31]],     // Demonic skin
+    [80, 1, 0, [180, 232, 60], [124, 179, 66]],      // Zombie skin
+    [64, 1, 0, [190, 225, 140], [155, 193, 106]],    // Rookie
+    [0, .12, 0, [225, 230, 235], [195, 204, 212]],   // Iron
+    [18, 1.1, 0, [255, 214, 100], [242, 182, 50]],   // Master
+    [-14, 1.15, 0, [255, 130, 100], [255, 90, 60]],  // Veteran
+    [-117, 1, 0, [210, 180, 255], [183, 140, 255]]   // Métamorphe
+  ];
+  var pi = 0, col = PALETTE[0];
+  function paint() {
+    col = PALETTE[pi];
+    lg.style.setProperty('--h', col[0] + 'deg'); lg.style.setProperty('--s', col[1]); lg.style.setProperty('--z', col[2]);
+    lg.style.setProperty('--hot', col[3].join(',')); lg.style.setProperty('--or', col[4].join(','));
+  }
+  setInterval(function () { if (!document.hidden) { pi = (pi + 1) % PALETTE.length; paint(); } }, 2400);
 
   var cv = document.createElement('canvas'); cv.className = 'fx'; cv.setAttribute('aria-hidden', 'true');
   document.body.appendChild(cv);
@@ -42,7 +63,7 @@
     var cx = LX + W / 2, cy = LY + H / 2;
     for (var i = 0; i < 70; i++) {
       var a = rnd(0, Math.PI * 2), v = rnd(110, 420);
-      parts.push({ x: cx, y: cy, vx: Math.cos(a) * v, vy: Math.sin(a) * v, g: 220, drag: 1.6, life: rnd(0.5, 1.2), age: 0, s: rnd(0.8, 2.8) });
+      parts.push({ x: cx, y: cy, vx: Math.cos(a) * v, vy: Math.sin(a) * v, g: 220, drag: 1.6, life: rnd(0.5, 1.2), age: 0, s: rnd(0.8, 2.8), c: col });
     }
     start();
   }
@@ -55,7 +76,7 @@
     rect();
     if (act) {   // embers rising from the lower half of the logo
       var n = 90 * dt, c = Math.floor(n); if (Math.random() < n - c) c++;
-      while (c-- > 0) parts.push({ x: LX + rnd(0.08, 0.92) * W, y: LY + rnd(0.5, 1) * H, vx: rnd(-14, 14), vy: -rnd(30, 95), g: 0, drag: 0, life: rnd(0.9, 1.8), age: 0, s: rnd(0.8, 2.4) });
+      while (c-- > 0) parts.push({ x: LX + rnd(0.08, 0.92) * W, y: LY + rnd(0.5, 1) * H, vx: rnd(-14, 14), vy: -rnd(30, 95), g: 0, drag: 0, life: rnd(0.9, 1.8), age: 0, s: rnd(0.8, 2.4), c: col });
     }
     ctx.setTransform(1, 0, 0, 1, 0, 0); ctx.clearRect(0, 0, cv.width, cv.height);
     ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
@@ -66,9 +87,10 @@
       var d = Math.exp(-q.drag * dt);
       q.vx *= d; q.vy = q.vy * d + q.g * dt; q.x += q.vx * dt; q.y += q.vy * dt;
       var f = 1 - q.age / q.life;
-      ctx.fillStyle = 'rgba(255,' + Math.round(70 + 150 * f) + ',' + Math.round(20 + 110 * f * f) + ',' + (0.9 * f).toFixed(3) + ')';
+      var hot = q.c[3], base = q.c[4];   // bright when fresh, the deeper colour when old
+      ctx.fillStyle = 'rgba(' + Math.round(base[0] + (hot[0] - base[0]) * f) + ',' + Math.round(base[1] + (hot[1] - base[1]) * f) + ',' + Math.round(base[2] + (hot[2] - base[2]) * f) + ',' + (0.9 * f).toFixed(3) + ')';
       ctx.beginPath(); ctx.arc(q.x, q.y, q.s * (0.5 + 0.5 * f), 0, Math.PI * 2); ctx.fill();
-      ctx.fillStyle = 'rgba(255,110,30,' + (0.18 * f).toFixed(3) + ')';
+      ctx.fillStyle = 'rgba(' + hot.join(',') + ',' + (0.18 * f).toFixed(3) + ')';
       ctx.beginPath(); ctx.arc(q.x, q.y, q.s * 3, 0, Math.PI * 2); ctx.fill();
     }
     if (act || parts.length || Math.abs(rx) > 0.05 || Math.abs(ry) > 0.05 || sc > 0.01) requestAnimationFrame(frame);
