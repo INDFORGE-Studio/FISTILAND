@@ -1,3 +1,7 @@
+---
+title: Aviso legal y licencia
+---
+
 <div class="fl-page-hero fl-bg-c" markdown>
 
 :material-scale-balance:

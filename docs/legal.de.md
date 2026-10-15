@@ -1,3 +1,7 @@
+---
+title: Impressum & Lizenz
+---
+
 <div class="fl-page-hero fl-bg-c" markdown>
 
 :material-scale-balance:
