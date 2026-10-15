@@ -1,0 +1,8 @@
+/* Home: the photo is the background, still. (The animated fog layers were removed: too subtle to notice for their cost.) */
+.md-main:has(.fl-home) {
+  background:
+    radial-gradient(ellipse 42% 34% at 50% 36%, rgba(13,12,11,.40) 0%, rgba(13,12,11,0) 100%),
+    radial-gradient(ellipse at 50% 42%, rgba(13,12,11,0) 0%, rgba(13,12,11,.30) 100%),
+    linear-gradient(180deg, rgba(13,12,11,.05) 0%, rgba(13,12,11,.72) 100%),
+    url("../assets/fl-silent-zone-poster-v2.jpg") center / cover no-repeat;
+}
