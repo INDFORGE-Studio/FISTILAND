@@ -63,7 +63,13 @@
   display: flex; align-items: center; justify-content: space-between; gap: .8rem; margin-top: .8rem; padding: .55rem .35rem 0; border-top: 1px dashed var(--fl-line);
   font-size: .76rem; color: #b9aea3;
 }
-.fl-fx-row b { display: block; font: 600 .74rem Oswald, sans-serif; letter-spacing: .12em; text-transform: uppercase; color: #fff; }
+.fl-fx-row b { margin-right: auto; font: 600 .86rem Oswald, sans-serif; letter-spacing: .12em; text-transform: uppercase; color: #fff; }
+.fl-fx-st { display: inline-flex; align-items: center; gap: .35rem; font: 600 .74rem Oswald, sans-serif; letter-spacing: .08em; text-transform: uppercase; color: #8d8379; transition: color .2s; }
+.fl-fx-st svg { width: 1.05rem; height: 1.05rem; fill: none; stroke: currentColor; stroke-width: 1.9; stroke-linecap: round; stroke-linejoin: round; }
+.fl-fx-st .sl { display: none; }
+.fl-fx-row[data-on="true"] .fl-fx-st { color: var(--fl-orange-hot); }
+.fl-fx-row[data-on="true"] .fl-fx-st svg { filter: drop-shadow(0 0 4px rgba(var(--fl-hot-rgb), .6)); }
+.fl-fx-row[data-on="false"] .fl-fx-st .sl { display: inline; }
 .fl-fx-sw {
   position: relative; flex: none; width: 2.7rem; height: 1.5rem; padding: 0; border-radius: 1rem; border: 1px solid var(--fl-line); background: #0d0c0b; cursor: pointer; transition: background .2s, border-color .2s;
   &::after { content: ""; position: absolute; left: 2px; top: 2px; width: calc(1.5rem - 6px); height: calc(1.5rem - 6px); border-radius: 50%; background: #6f655c; transition: transform .2s, background .2s; }
@@ -112,7 +118,6 @@ html[data-fl-theme="survivalist"] {
   --sk-text: #e9dfc8; --sk-text-rgb: 233, 223, 200; --sk-dim: #b9ab8c; --sk-panel-rgb: 25, 21, 13; --sk-th: #231d11;
   --sk-code-bg: #15110a; --sk-code-fg: #eadfc4; --sk-c1: #f2c14e; --sk-c2: #9fb35a; --sk-c3: #e98a3c; --sk-c4: #8f8468;
   --sk-head: "Special Elite"; --sk-head-w: 400; --sk-track: .03em;
-  --sk-grade: #6e5a2a; --sk-grade-mode: color; --sk-grade-op: 1;
 }
 html[data-fl-theme="forces"] {
   --fl-orange: #2fd36b; --fl-orange-hot: #6dff9e; --fl-rust: #0f5a30; --fl-ink: #040705; --fl-panel: #09100b; --fl-line: #1b3324;
@@ -121,7 +126,6 @@ html[data-fl-theme="forces"] {
   --sk-text: #cdeedb; --sk-text-rgb: 205, 238, 219; --sk-dim: #8fb39d; --sk-panel-rgb: 9, 16, 11; --sk-th: #0c1a11;
   --sk-code-bg: #06100a; --sk-code-fg: #bff5d3; --sk-c1: #6dff9e; --sk-c2: #b6ffd0; --sk-c3: #3bd0c8; --sk-c4: #5f8f74;
   --sk-head: "Roboto Mono"; --sk-head-w: 700; --sk-track: .05em;
-  --sk-grade: #0b4a22; --sk-grade-mode: color; --sk-grade-op: 1;
 }
 html[data-fl-theme="demonic"] {
   --fl-orange: #d0141f; --fl-orange-hot: #ff4a36; --fl-rust: #6a0b10; --fl-ink: #090304; --fl-panel: #170a0c; --fl-line: #451519;
@@ -130,7 +134,6 @@ html[data-fl-theme="demonic"] {
   --sk-text: #f0dcd6; --sk-text-rgb: 240, 220, 214; --sk-dim: #b8908a; --sk-panel-rgb: 23, 10, 12; --sk-th: #220e11;
   --sk-code-bg: #120709; --sk-code-fg: #f3d9d2; --sk-c1: #ff6a3d; --sk-c2: #ffb02e; --sk-c3: #ff4a8a; --sk-c4: #a8756d;
   --sk-head: "Metal Mania"; --sk-head-w: 400; --sk-track: .05em;
-  --sk-grade: #7a0b12; --sk-grade-mode: color; --sk-grade-op: .82;
 }
 html[data-fl-theme="zombie"] {
   --fl-orange: #7cb342; --fl-orange-hot: #b4e83c; --fl-rust: #33591a; --fl-ink: #060905; --fl-panel: #0f150c; --fl-line: #27361e;
@@ -139,7 +142,6 @@ html[data-fl-theme="zombie"] {
   --sk-text: #dfe8d2; --sk-text-rgb: 223, 232, 210; --sk-dim: #98a88a; --sk-panel-rgb: 15, 21, 12; --sk-th: #16200f;
   --sk-code-bg: #0a0f08; --sk-code-fg: #d9efc0; --sk-c1: #b4e83c; --sk-c2: #e0f08a; --sk-c3: #d4733a; --sk-c4: #7d8f6c;
   --sk-head: "Creepster"; --sk-head-w: 400; --sk-track: .07em; --sk-blood: #8e1b14;
-  --sk-grade: #4d7a12; --sk-grade-mode: color; --sk-grade-op: .85;
 }
 
 html[data-fl-theme] [data-md-color-scheme="slate"] {
@@ -210,18 +212,13 @@ html[data-fl-theme] {
   & .fl-mush__stats { background: var(--fl-ink); }
   & .fl-cc-tip { background: var(--fl-panel); border-color: var(--fl-line); }
 
-  /* hero banner on content pages: tinted photo, text above */
+  /* hero banner on content pages: the photo keeps its own colours, text above */
   & .md-content .fl-page-hero {
     isolation: isolate; border-color: var(--fl-line); border-left-color: var(--fl-orange);
-    &::before { content: ""; position: absolute; inset: 0; z-index: -1; pointer-events: none; background: var(--sk-grade); mix-blend-mode: var(--sk-grade-mode); opacity: var(--sk-grade-op); }
   }
   & .md-content .fl-page-hero p { color: var(--sk-text); }
   & .md-content .fl-page-hero h1 { color: #fff; }
 
-  /* home photo graded to the skin */
-  & .md-main:has(.fl-home)::before { content: ""; position: absolute; inset: 0; z-index: -1; pointer-events: none; background: var(--sk-grade); mix-blend-mode: var(--sk-grade-mode); opacity: var(--sk-grade-op); }
-
-  & .md-main:has(.fl-home)::after { content: ""; position: absolute; inset: 0; z-index: -1; pointer-events: none; background: rgba(0, 0, 0, .2); }
 
   /* admonitions, details, code, kbd, tabs follow the skin through Material variables; shape here */
   & .md-typeset .admonition, & .md-typeset details {
@@ -278,7 +275,7 @@ html[data-fl-theme="survivalist"] {
   & .md-tabs { box-shadow: inset 0 -1px 0 var(--fl-line); }
   & .md-tabs__link { font-family: "Special Elite", Inter, sans-serif; letter-spacing: .03em; }
 
-  /* pinned notes */
+  /* field notes: slightly tilted, stitched border */
   & .fl-card {
     border: 1px solid var(--fl-line); border-top: 1px solid var(--fl-line); outline: 1px dashed rgba(var(--fl-hot-rgb), .28); outline-offset: -5px;
     background: linear-gradient(160deg, rgba(var(--sk-panel-rgb), .92), rgba(16, 13, 8, .94));
@@ -286,10 +283,6 @@ html[data-fl-theme="survivalist"] {
     &:nth-child(3n+1) { --rot: -.7deg; }
     &:nth-child(3n+2) { --rot: .5deg; }
     &:nth-child(3n) { --rot: -.25deg; }
-    &::before {
-      content: ""; position: absolute; left: 50%; top: -7px; width: 13px; height: 13px; margin-left: -6px; border-radius: 50%; z-index: 2; pointer-events: none;
-      background: radial-gradient(circle at 35% 30%, #ffe3a1 0 12%, #e5483a 40%, #7d1b12 100%); box-shadow: 0 3px 4px rgba(0, 0, 0, .6);
-    }
     &:hover { transform: rotate(0) translateY(-4px); border-color: var(--fl-orange-hot); box-shadow: 0 10px 22px rgba(0, 0, 0, .55); }
   }
   & .fl-card strong, & .fl-card b { font-family: "Special Elite", Oswald, sans-serif; text-transform: none; letter-spacing: .02em; font-weight: 400; font-size: .95rem; }
@@ -512,10 +505,8 @@ html[data-fl-theme="zombie"] {
   & .fl-btn:hover { background: linear-gradient(180deg, #b4e83c, #6aa52a); filter: drop-shadow(0 0 10px rgba(180, 232, 60, .8)); }
   & .fl-logo-fx { animation: fl-infect 9s steps(1) infinite; }
   & .md-content .fl-page-hero { border-left-color: var(--fl-orange-hot); }
-  & .md-content .fl-page-hero::after { content: ""; position: absolute; right: 7.5rem; top: -1px; width: 6.5rem; height: 5.2rem; pointer-events: none; opacity: .5;
-    background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 60 48' fill='none' stroke='%238e1b14' stroke-width='3.2' stroke-linecap='round'%3E%3Cpath d='M6 0C9 14 12 30 20 46'/%3E%3Cpath d='M22 0C25 14 28 30 36 46'/%3E%3Cpath d='M38 0C41 14 44 30 52 46'/%3E%3C/svg%3E") no-repeat right top / contain; }
   & .md-content:has(.fl-page-hero):not(:has(.fl-home)) .md-typeset h2::after { height: 5px; width: 6rem; border-radius: 0 0 4px 4px; background: radial-gradient(ellipse 4px 8px at 12px 0, var(--fl-orange-hot) 0 60%, transparent 66%), linear-gradient(var(--fl-orange), var(--fl-orange)) 0 0 / 100% 3px no-repeat; background-repeat: no-repeat; }
-  & .md-typeset hr { height: 22px; border: 0; background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 120 22' fill='none' stroke='%238e1b14' stroke-width='2.4' stroke-linecap='round'%3E%3Cpath d='M20 2c4 6 8 12 16 18M34 2c4 6 8 12 16 18M48 2c4 6 8 12 16 18'/%3E%3Cpath d='M70 20c8-4 12-9 16-18M84 20c8-4 12-9 16-18'/%3E%3C/svg%3E") center / auto 22px no-repeat; }
+  & .md-typeset hr { height: 14px; border: 0; background: radial-gradient(ellipse 4px 12px at 14% 0, var(--fl-orange-hot) 0 60%, transparent 66%), radial-gradient(ellipse 3px 7px at 52% 0, var(--fl-orange) 0 60%, transparent 66%), radial-gradient(ellipse 5px 13px at 83% 0, var(--fl-orange-hot) 0 60%, transparent 66%), linear-gradient(var(--fl-orange), var(--fl-orange)) 0 0 / 100% 2px no-repeat; background-repeat: no-repeat; filter: drop-shadow(0 0 4px rgba(var(--fl-hot-rgb), .45)); }
   & .md-typeset table:not([class]) th { border-bottom-color: var(--fl-orange-hot); }
   & .md-typeset table:not([class]) tbody tr:nth-child(odd):hover td { box-shadow: inset 3px 0 0 var(--sk-blood); }
 
@@ -550,7 +541,6 @@ html[data-fl-theme="zombie"] {
 @media (max-width: 40em) {
   html[data-fl-theme="forces"] .fl-fx .fx-hud .l { display: none; }
   html[data-fl-theme="forces"] .fl-fx .fx-hud { justify-content: flex-end; }
-  html[data-fl-theme="survivalist"] .fl-card::before { top: -6px; }
   html[data-fl-theme="demonic"] .fl-card { clip-path: none; }
   html[data-fl-theme="demonic"] .fl-grid { filter: none; }
   .fl-theme-opt { grid-template-columns: 4.2rem 1fr 1.1rem; gap: .6rem; }
@@ -560,3 +550,9 @@ html[data-fl-theme="zombie"] {
 @media (prefers-reduced-motion: reduce) { .fl-theme-logo { animation: none; } }
 html.fl-fx-off[data-fl-theme] *, html.fl-fx-off[data-fl-theme] *::before, html.fl-fx-off[data-fl-theme] *::after { animation: none !important; }
 html.fl-fx-off[data-fl-theme] .fl-theme-panel.is-on { animation: none !important; }
+/* Reactions to the visitor (hover, focus, click) keep working when the ambient effects are off */
+html.fl-fx-off[data-fl-theme] .fl-dvhost:hover .fl-dv,
+html.fl-fx-off[data-fl-theme] .md-header__button.md-logo:hover img,
+html.fl-fx-off[data-fl-theme] .md-header__button.md-logo:focus-visible img { animation: fl-dshake .9s ease-in-out infinite !important; }
+html.fl-fx-off[data-fl-theme] .fl-logo-fx.is-punch .fl-logo { animation: fl-punch .6s cubic-bezier(.2, .8, .3, 1) !important; }
+html.fl-fx-off[data-fl-theme] .fl-rank.is-new { animation: fl-rank-pop 1.6s ease-out !important; }

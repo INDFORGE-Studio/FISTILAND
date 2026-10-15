@@ -10,21 +10,21 @@
     zombie: '<path fill-rule="evenodd" fill="currentColor" stroke="none" d="M12 3a8 8 0 0 0-8 8c0 2.6 1.2 4.4 3 5.6V20h2.2v-2h1.6v2h2.4v-2h1.6v2H17v-3.4c1.8-1.2 3-3 3-5.6a8 8 0 0 0-8-8zM8.3 9.3a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7.4 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4z"/>'
   };
   var T = {
-    en: { title: 'Veteran skins', fx: 'Effects', fxd: 'Animations, particles and glow.', rm: 'Your system asks for reduced motion.', names: ['FISTILAND', 'Survivalist', 'Special Forces', 'Demonic', 'Zombie'],
+    en: { title: 'Veteran skins', fx: 'Effects', on: 'On', off: 'Off', names: ['FISTILAND', 'Survivalist', 'Special Forces', 'Demonic', 'Zombie'],
       tags: ['Back to the roots.', "Fire's lit. Stay warm.", 'Night vision on. Radio silence.', 'Welcome to the hot zone.', 'Braaains... and loot.'] },
-    fr: { title: 'Habillages Veteran', fx: 'Effets', fxd: 'Animations, particules et lueurs.', rm: 'Votre système demande de réduire les animations.', names: ['FISTILAND', 'Survivaliste', 'Forces spéciales', 'Démoniaque', 'Zombie'],
+    fr: { title: 'Habillages Veteran', fx: 'Effets', on: 'Activé', off: 'Désactivé', names: ['FISTILAND', 'Survivaliste', 'Forces spéciales', 'Démoniaque', 'Zombie'],
       tags: ['Retour aux sources.', 'Le feu est allumé. Restez au chaud.', 'Vision nocturne activée. Silence radio.', 'Bienvenue en enfer.', 'Cerveaaaux... et du loot.'] },
-    de: { title: 'Veteran-Skins', fx: 'Effekte', fxd: 'Animationen, Partikel und Leuchten.', rm: 'Dein System bittet um weniger Bewegung.', names: ['FISTILAND', 'Survivalist', 'Spezialeinheit', 'Dämonisch', 'Zombie'],
+    de: { title: 'Veteran-Skins', fx: 'Effekte', on: 'An', off: 'Aus', names: ['FISTILAND', 'Survivalist', 'Spezialeinheit', 'Dämonisch', 'Zombie'],
       tags: ['Zurück zu den Wurzeln.', 'Das Feuer brennt. Bleib warm.', 'Nachtsicht an. Funkstille.', 'Willkommen in der Hölle.', 'Gehiiirne... und Loot.'] },
-    es: { title: 'Skins Veteran', fx: 'Efectos', fxd: 'Animaciones, partículas y brillo.', rm: 'Tu sistema pide reducir el movimiento.', names: ['FISTILAND', 'Superviviente', 'Fuerzas especiales', 'Demoníaco', 'Zombi'],
+    es: { title: 'Skins Veteran', fx: 'Efectos', on: 'Activado', off: 'Desactivado', names: ['FISTILAND', 'Superviviente', 'Fuerzas especiales', 'Demoníaco', 'Zombi'],
       tags: ['Vuelta a los orígenes.', 'Fuego encendido. Mantente caliente.', 'Visión nocturna activada. Silencio de radio.', 'Bienvenido al infierno.', 'Cerebrooos... y botín.'] },
-    it: { title: 'Skin Veteran', fx: 'Effetti', fxd: 'Animazioni, particelle e bagliori.', rm: 'Il tuo sistema chiede meno movimento.', names: ['FISTILAND', 'Sopravvivenzista', 'Forze speciali', 'Demoniaco', 'Zombie'],
+    it: { title: 'Skin Veteran', fx: 'Effetti', on: 'Attivo', off: 'Disattivato', names: ['FISTILAND', 'Sopravvivenzista', 'Forze speciali', 'Demoniaco', 'Zombie'],
       tags: ['Ritorno alle origini.', 'Fuoco acceso. Resta al caldo.', 'Visione notturna attiva. Silenzio radio.', "Benvenuto all'inferno.", 'Cervelliii... e bottino.'] },
-    uk: { title: 'Скіни Veteran', fx: 'Ефекти', fxd: 'Анімації, частинки та сяйво.', rm: 'Ваша система просить зменшити рух.', names: ['FISTILAND', 'Виживальник', 'Спецпідрозділ', 'Демонічний', 'Зомбі'],
+    uk: { title: 'Скіни Veteran', fx: 'Ефекти', on: 'Увімк.', off: 'Вимк.', names: ['FISTILAND', 'Виживальник', 'Спецпідрозділ', 'Демонічний', 'Зомбі'],
       tags: ['Повернення до витоків.', 'Вогонь розпалено. Грійтеся.', 'Нічне бачення ввімкнено. Радіомовчання.', 'Ласкаво просимо в пекло.', 'Мозкииии... і лут.'] },
-    hr: { title: 'Veteran skinovi', fx: 'Efekti', fxd: 'Animacije, čestice i sjaj.', rm: 'Tvoj sustav traži smanjeno kretanje.', names: ['FISTILAND', 'Survivalist', 'Specijalne snage', 'Demonski', 'Zombi'],
+    hr: { title: 'Veteran skinovi', fx: 'Efekti', on: 'Uključeno', off: 'Isključeno', names: ['FISTILAND', 'Survivalist', 'Specijalne snage', 'Demonski', 'Zombi'],
       tags: ['Povratak korijenima.', 'Vatra je zapaljena. Ostani na toplom.', 'Noćni vid uključen. Radio šutnja.', 'Dobrodošao u pakao.', 'Mozgooove... i loot.'] },
-    pl: { title: 'Skórki Veteran', fx: 'Efekty', fxd: 'Animacje, cząsteczki i poświata.', rm: 'Twój system prosi o ograniczenie ruchu.', names: ['FISTILAND', 'Survivalista', 'Siły specjalne', 'Demoniczny', 'Zombie'],
+    pl: { title: 'Skórki Veteran', fx: 'Efekty', on: 'Włączone', off: 'Wyłączone', names: ['FISTILAND', 'Survivalista', 'Siły specjalne', 'Demoniczny', 'Zombie'],
       tags: ['Powrót do korzeni.', 'Ognisko płonie. Trzymaj się w cieple.', 'Noktowizor włączony. Cisza radiowa.', 'Witaj w piekle.', 'Mózgiiii... i loot.'] }
   };
   var lang = (document.documentElement.lang || 'en').slice(0, 2);
@@ -39,8 +39,8 @@
   function put(k, v) { try { if (v) localStorage.setItem(k, v); else localStorage.removeItem(k); } catch (e) {} }
   function saved() { var t = get(KEY); return IDS.indexOf(t) > 0 ? t : ''; }
   function isVeteran() { return !!(window.flRank && window.flRank.rank() === 'veteran'); }
-  // effects: on by default, off by default when the system asks for reduced motion; the switch overrides both
-  function fxOn() { var s = get(FXKEY); return s === 'on' ? true : s === 'off' ? false : !reduced(); }
+  // effects: on unless the visitor switched them off (a skin is an explicit choice); the panel mentions the system's reduced-motion request
+  function fxOn() { return get(FXKEY) !== 'off'; }
 
   function svg(id) {
     if (!id) return '<img class="fl-theme-logo" src="' + BASE + 'assets/icon-192-v1.png" alt="" width="28" height="28" draggable="false">';
@@ -49,7 +49,12 @@
 
   function paintFx() {
     root.classList.toggle('fl-fx-off', !fxOn());
-    if (fxSw) fxSw.setAttribute('aria-checked', fxOn() ? 'true' : 'false');
+    if (fxSw) {
+      fxSw.setAttribute('aria-checked', fxOn() ? 'true' : 'false');
+      var row = fxSw.parentNode, w = row.querySelector('.w');
+      row.setAttribute('data-on', fxOn() ? 'true' : 'false');
+      if (w) w.textContent = fxOn() ? L.on : L.off;
+    }
   }
   function announce() {
     try { document.dispatchEvent(new CustomEvent('fl-skin-change', { detail: { skin: current, fx: fxOn() } })); } catch (e) {}
@@ -86,7 +91,7 @@
   // animated switch: circular reveal from the button where the browser supports View Transitions
   function setTheme(id, animate) {
     if (!animate) { commit(id); return; }
-    if (document.startViewTransition && !reduced() && fxOn()) {
+    if (document.startViewTransition && fxOn()) {
       var r = btn ? btn.getBoundingClientRect() : null;
       root.style.setProperty('--vt-x', (r ? r.left + r.width / 2 : window.innerWidth - 40) + 'px');
       root.style.setProperty('--vt-y', (r ? r.top + r.height / 2 : 32) + 'px');
@@ -96,7 +101,7 @@
       if (vt && vt.finished) vt.finished.then(done, done); else done();
     } else {
       commit(id);
-      if (fxOn() && !reduced()) flash();
+      if (fxOn()) flash();
     }
   }
 
@@ -145,10 +150,12 @@
       h += '<button type="button" role="radio" aria-checked="false" tabindex="-1" class="fl-theme-opt" data-id="' + id + '">' +
         '<span class="pv">' + svg(id) + '</span><span class="tx"><b>' + L.names[i] + '</b><span>' + L.tags[i] + '</span></span><span class="ck"></span></button>';
     }
-    h += '</div><div class="fl-fx-row"><div><b>' + L.fx + '</b>' + (reduced() && !get(FXKEY) ? L.rm : L.fxd) + '</div><button type="button" role="switch" aria-checked="true" aria-label="' + L.fx + '" class="fl-fx-sw"></button></div>';
+    h += '</div><div class="fl-fx-row"><b>' + L.fx + '</b><span class="fl-fx-st" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 3l2.2 6.8L21 12l-6.8 2.2L12 21l-2.2-6.8L3 12l6.8-2.2z"/><path class="sl" d="M4 4l16 16"/></svg><span class="w"></span></span>' +
+      '<button type="button" role="switch" aria-checked="true" aria-label="' + L.fx + '" class="fl-fx-sw"></button></div>';
     panel.innerHTML = h;
     document.body.appendChild(panel);
     fxSw = panel.querySelector('.fl-fx-sw');
+    paintFx();
 
     btn.addEventListener('click', function (e) {
       e.stopPropagation();
