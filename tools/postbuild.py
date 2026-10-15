@@ -156,6 +156,9 @@ def main():
     # ---- css: no external url(), no @import of another host ----
     for css in css_files:
         txt = css.read_text(encoding="utf-8", errors="replace")
+        # inline data: images (SVG textures) may contain their own url(#id) references: not file references
+        txt = re.sub(r"""url\(\s*(["'])data:.*?\1\s*\)""", "url()", txt, flags=re.S)
+        txt = re.sub(r"url\(\s*data:[^)]*\)", "url()", txt)
         for m in CSS_IMPORT_RE.finditer(txt):
             if is_external(m.group(1)):
                 errors.append(f"{css.relative_to(SITE)}: external @import {m.group(1)}")
