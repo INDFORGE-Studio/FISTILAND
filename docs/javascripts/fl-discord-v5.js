@@ -58,6 +58,8 @@
     return FISTILAND + ZOMBIE + SURVIVALIST + FORCES + DEMONIC;
   }
 
+  window.flDiscordVariants = variants;   // the 404 page reuses the five characters
+
   // Header: a new icon next to the language selector
   var opt = document.querySelector('.md-header__option');
   if (opt && !document.querySelector('.fl-hd-discord')) {

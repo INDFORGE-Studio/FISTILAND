@@ -29,7 +29,7 @@ extra_javascript:
   - javascripts/fl-mush-v1.js
   - javascripts/fl-ip-v3.js
   - javascripts/fl-join-v3.js
-  - javascripts/fl-discord-v4.js
+  - javascripts/fl-discord-v5.js
   - javascripts/fl-cc-v11.js
   - javascripts/fl-rank-v16.js
   - javascripts/fl-theme-v10.js
