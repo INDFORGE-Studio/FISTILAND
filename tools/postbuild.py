@@ -12,6 +12,7 @@ Usage: python tools/postbuild.py [site_dir]
 """
 import base64
 import hashlib
+import json
 import re
 import sys
 from pathlib import Path
@@ -91,6 +92,30 @@ def check_ref(page, ref, what):
         return
     if not exists(t, ref):
         errors.append(f"{page.relative_to(SITE)}: broken {what}: {ref}")
+
+
+def split_search_index():
+    """search/search_index.json holds every language; write one index per language (en stays at the root)."""
+    src = SITE / "search" / "search_index.json"
+    data = json.loads(src.read_text(encoding="utf-8"))
+    buckets = {lang: [] for lang in ["en"] + LANGS}
+    for d in data["docs"]:
+        first = d["location"].split("/", 1)[0]
+        buckets[first if first in LANGS else "en"].append(d)
+    # languages the search library has a stemmer for; the others use the English one
+    stem = {"en": ["en"], "es": ["es"], "fr": ["fr"], "de": ["de"], "it": ["it"], "pl": ["en"], "uk": ["en"], "hr": ["en"]}
+    sizes = []
+    for lang, docs in buckets.items():
+        if len(docs) < 20:
+            errors.append(f"search index for '{lang}' has only {len(docs)} entries")
+            continue
+        cfg = dict(data["config"])
+        cfg["lang"] = stem[lang]
+        target = src if lang == "en" else SITE / lang / "search" / "search_index.json"
+        target.parent.mkdir(parents=True, exist_ok=True)
+        target.write_text(json.dumps({"config": cfg, "docs": docs}, ensure_ascii=False, separators=(",", ":")), encoding="utf-8")
+        sizes.append(f"{lang}:{len(docs)}")
+    notes.append("search indexes " + " ".join(sizes))
 
 
 def main():
@@ -184,6 +209,14 @@ def main():
             print("  - " + e)
         if len(errors) > 80:
             print(f"  ... and {len(errors) - 80} more")
+        return 1
+
+    # ---- one small search index per language (the theme's single index mixes the 8 languages) ----
+    split_search_index()
+    if errors:
+        print("search index split failed:")
+        for e in errors:
+            print("  - " + e)
         return 1
 
     # ---- Content-Security-Policy, one per page, with the hashes of its inline scripts ----

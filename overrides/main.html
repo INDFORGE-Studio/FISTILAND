@@ -222,12 +222,23 @@
   <meta name="twitter:description" content="{{ (page.meta.description if page and page.meta is defined and page.meta.description else config.site_description) }}">
   <meta name="twitter:image" content="{{ config.site_url }}assets/icon-512-v1.png">
   <script>
-    /* The theme asks every alternate-language address for its own sitemap.xml (to find the same page in another
-       language). With one sitemap at the site root those requests are 404s: send them to the real one instead. */
+    /* Two requests of the theme are redirected to the right file, before the theme starts:
+       - it asks every alternate-language address for its own sitemap.xml: with one sitemap at the site root those
+         were 404s, so they go to the real one;
+       - the search index of a language is its own small file (built by tools/postbuild.py), so a French page
+         only searches and only returns French pages. */
     (function () {
       try {
-        var root = (location.pathname.match(/^(.*?\/FISTILAND\/)/) || ['', '/'])[1] + 'sitemap.xml';
-        var fix = function (u) { var s = String(u); return /\/sitemap\.xml$/.test(s) && s.indexOf(location.origin + root) !== 0 && s.indexOf(location.origin) === 0 ? location.origin + root : u; };
+        var site = (location.pathname.match(/^(.*?\/FISTILAND\/)/) || ['', '/'])[1];
+        var root = site + 'sitemap.xml';
+        var lg = (document.documentElement.lang || 'en').slice(0, 2);
+        var fix = function (u) {
+          var s = String(u);
+          if (s.indexOf(location.origin) !== 0) return u;
+          if (/\/sitemap\.xml$/.test(s) && s.indexOf(location.origin + root) !== 0) return location.origin + root;
+          if (lg !== 'en' && /\/search\/search_index\.json$/.test(s)) return location.origin + site + lg + '/search/search_index.json';
+          return u;
+        };
         var open = XMLHttpRequest.prototype.open;
         XMLHttpRequest.prototype.open = function (m, u) { var a = [].slice.call(arguments); a[1] = fix(u); return open.apply(this, a); };
         if (window.fetch) { var f = window.fetch; window.fetch = function (u, o) { return f.call(this, typeof u === 'string' ? fix(u) : u, o); }; }
