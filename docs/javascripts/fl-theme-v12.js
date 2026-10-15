@@ -2,9 +2,9 @@
   'use strict';
   // Veteran skins: header button + panel (radio menu, keyboard, view transition) and the effects switch.
   var KEY = 'fl-theme', FXKEY = 'fl-fx';
-  // 'morph' is the secret fifth skin of the last rank: it walks through the four others on its own
+  // 'morph' is the secret sixth skin of the last rank: it walks through the other five on its own (the plain FISTILAND look, '', is one of them)
   var IDS = ['', 'survivalist', 'forces', 'demonic', 'zombie', 'morph'];
-  var CYCLE = ['survivalist', 'forces', 'demonic', 'zombie'], MORPH_MS = 16000;
+  var CYCLE = ['', 'survivalist', 'forces', 'demonic', 'zombie'], MORPH_MS = 16000;
   var ICON = {
     survivalist: '<path d="M12 4 3 20h18z"/><path d="M12 11.5 9 20h6z" fill="currentColor" stroke="none"/>',
     forces: '<circle cx="12" cy="12" r="6.5"/><path d="M12 2.5v6M12 15.5v6M2.5 12h6M15.5 12h6"/><circle cx="12" cy="12" r="1.3" fill="currentColor" stroke="none"/>',
@@ -33,7 +33,7 @@
   var lang = (document.documentElement.lang || 'en').slice(0, 2);
   var L = T[lang] || T.en;
   var root = document.documentElement;
-  var btn = null, panel = null, fxSw = null, tipEl = null, current = '', tip = '', shown = '', morphTimer = 0, builtMeta = false;
+  var btn = null, panel = null, fxSw = null, tipEl = null, current = '', tip = '', shown = null, morphTimer = 0, builtMeta = false;
   var BASE = (location.pathname.match(/^(.*?\/FISTILAND\/)/) || ['', '/'])[1];
   var rmq = window.matchMedia ? window.matchMedia('(prefers-reduced-motion: reduce)') : null;
 
@@ -65,14 +65,18 @@
     }
   }
   function announce() {
-    try { document.dispatchEvent(new CustomEvent('fl-skin-change', { detail: { skin: shown, fx: fxOn() } })); } catch (e) {}
+    try { document.dispatchEvent(new CustomEvent('fl-skin-change', { detail: { skin: shown || '', fx: fxOn() } })); } catch (e) {}
   }
 
   // Métamorphe skin: every MORPH_MS the site takes the shape of another skin (only while the page is visible, effects on and no reduced-motion request)
   function morphStep() {
     if (current !== 'morph' || document.hidden || root.classList.contains('fl-tripping')) return;
     var next = pickShape();
-    transition(function () { shown = next; root.setAttribute('data-fl-theme', shown); announce(); });
+    transition(function () {
+      shown = next;
+      if (shown) root.setAttribute('data-fl-theme', shown); else root.removeAttribute('data-fl-theme');
+      announce();
+    });
   }
   function armMorph() {
     clearInterval(morphTimer); morphTimer = 0;
@@ -81,8 +85,8 @@
 
   function commit(id) {
     current = id;
-    var early = root.getAttribute('data-fl-theme');   // set before the first paint by the inline script of main.html
-    shown = id === 'morph' ? (!shown && CYCLE.indexOf(early) >= 0 ? early : pickShape()) : id;
+    var early = window.flMorph0;   // form drawn before the first paint by the inline script of main.html ('' = plain FISTILAND look)
+    shown = id === 'morph' ? (shown === null && CYCLE.indexOf(early) >= 0 ? early : pickShape()) : id;
     if (shown) root.setAttribute('data-fl-theme', shown); else root.removeAttribute('data-fl-theme');
     put(KEY, id);
     if (btn) {
@@ -249,7 +253,7 @@
   });
   if (rmq && rmq.addEventListener) rmq.addEventListener('change', function () { paintFx(); armMorph(); announce(); });
 
-  window.flSkin = { get: function () { return shown; }, fx: fxOn };
+  window.flSkin = { get: function () { return shown || ''; }, fx: fxOn };
   paintFx();
   build();
 })();

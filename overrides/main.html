@@ -285,7 +285,7 @@
       try {
         var s = JSON.parse(localStorage.getItem('fl-eggs-5') || '{}');
         var t = localStorage.getItem('fl-theme');
-        if (t === 'morph' && s.meta) t = ['survivalist', 'forces', 'demonic', 'zombie'][Math.floor(Math.random() * 4)];   // Métamorphe skin: starts in a random form, fl-theme then takes over
+        if (t === 'morph' && s.meta) { t = ['', 'survivalist', 'forces', 'demonic', 'zombie'][Math.floor(Math.random() * 5)]; window.flMorph0 = t; }   // Métamorphe skin: starts in a random form (the plain look included), fl-theme then takes over
         if (t && /^(survivalist|forces|demonic|zombie)$/.test(t) && s.discord && s.mushroom && s.master && s.veteran) {
           document.documentElement.setAttribute('data-fl-theme', t);
         }
