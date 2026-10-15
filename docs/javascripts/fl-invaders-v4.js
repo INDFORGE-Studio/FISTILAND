@@ -2,11 +2,11 @@
   // 404 page: once every wandering Discord character is gone (fl-logo404 sends `fl-invaders`), the snake board turns into a tiny
   // invaders game: waves of mechas shoot at the SCUM prisoner (the visitor). Left / right to move, space to shoot (a pad shows on
   // touch screens). Ten levels, each harder than the last. Clearing a level goes to the next one; losing ends the run: the visitor
-  // may sign the score (8 characters at most) on a top 10 kept in this browser, then goes back to the home page.
+  // may sign the score (8 characters at most) on a top 3 kept in this browser, then goes back to the home page.
   // This game never grants any rank.
   var cv = document.getElementById('fl-snake'), pipsEl = document.getElementById('fl-pips');
   if (!cv || !cv.getContext) return;
-  var game = cv.parentNode, HOME = cv.getAttribute('data-home') || '/', FW = 300, PY = 268, PX = 1.6, LEVELS = 10, NAME_MAX = 8, TOP_KEY = 'fl-invaders-top';
+  var game = cv.parentNode, HOME = cv.getAttribute('data-home') || '/', FW = 300, PY = 268, PX = 1.6, LEVELS = 10, NAME_MAX = 8, TOPN = 3, TOP_KEY = 'fl-invaders-top';
   var ctx = cv.getContext('2d');
   var COLS = [4, 5, 5, 6, 6, 7, 7, 8, 8, 8], ROWS = [3, 3, 4, 4, 4, 4, 5, 5, 5, 5];
 
@@ -177,11 +177,11 @@
     else if (state === 'clear' && t - stateAt > 1500) { level++; lives = Math.min(3, lives + 1); setWave(); }
   }
 
-  // ---- end of the run: sign the score, show the top 10, go home ----
+  // ---- end of the run: sign the score, show the top 3, go home ----
   function loadTop() {
     try {
       var a = JSON.parse(localStorage.getItem(TOP_KEY) || '[]');
-      if (Array.isArray(a)) return a.filter(function (r) { return r && typeof r.n === 'string' && typeof r.s === 'number' && typeof r.l === 'number'; }).map(function (r) { return { n: r.n.slice(0, NAME_MAX), s: r.s, l: r.l }; }).slice(0, 10);
+      if (Array.isArray(a)) return a.filter(function (r) { return r && typeof r.n === 'string' && typeof r.s === 'number' && typeof r.l === 'number'; }).map(function (r) { return { n: r.n.slice(0, NAME_MAX), s: r.s, l: r.l }; }).slice(0, TOPN);
     } catch (e) {}
     return [];
   }
@@ -202,7 +202,7 @@
 
     function paintBoard(list) {
       board.textContent = '';
-      for (var i = 0; i < 10; i++) {
+      for (var i = 0; i < TOPN; i++) {
         var r = list[i], li = el('li', r && r === mine ? 'me' : '');
         li.appendChild(el('i', '', String(i + 1)));
         li.appendChild(el('span', '', r ? r.n : '- - -'));
@@ -227,12 +227,12 @@
         var list = loadTop(); mine = { n: n, s: score, l: win ? LEVELS : level };
         list.push(mine);
         list.sort(function (a, b) { return b.s - a.s; });
-        list = list.slice(0, 10); saveTop(list); paintBoard(list);
+        list = list.slice(0, TOPN); saveTop(list); paintBoard(list);
         form.parentNode.removeChild(form); form = null; home.focus();
       });
       bx.appendChild(form);
     }
-    bx.appendChild(el('h3', '', 'Top 10'));
+    bx.appendChild(el('h3', '', 'Top 3'));
     paintBoard(loadTop());
     bx.appendChild(board); bx.appendChild(home);
     ov.appendChild(bx); document.body.appendChild(ov);
