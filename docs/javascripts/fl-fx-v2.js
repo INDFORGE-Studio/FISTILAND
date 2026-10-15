@@ -12,7 +12,7 @@
     survivalist: '<i class="fx-grain"></i><canvas></canvas><i class="fx-vig"></i>',
     forces: '<i class="fx-grain"></i><canvas></canvas><i class="fx-scan"></i><i class="fx-sweep"></i><i class="fx-vig"></i><i class="fx-brk"></i>' +
       '<div class="fx-hud"><span class="l"><i class="dot"></i>REC // NVG ON // FISTILAND</span><span class="c"></span><span class="r"></span></div>',
-    demonic: '<canvas></canvas><i class="fx-eyes"></i><i class="fx-vig"></i><i class="fx-flash"></i>',
+    demonic: '<canvas></canvas><i class="fx-vig"></i><i class="fx-flash"></i>',
     zombie: '<i class="fx-trefoil"></i><canvas></canvas><i class="fx-vig"></i>'
   };
 
