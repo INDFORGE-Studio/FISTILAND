@@ -28,6 +28,8 @@
       border: 2px solid #3a2d24; border-top-color: #e8631c; box-shadow: 0 10px 30px rgba(0, 0, 0, .7); transition: border-color .2s; }
     canvas.dead { border-color: #b3261a; }
     canvas.won { border-color: #e8631c; box-shadow: 0 0 28px rgba(232, 99, 28, .6); }
+    canvas.morph { animation: shift 1.3s linear infinite; }
+    @keyframes shift { 0% { border-color: #ff3a2e; box-shadow: 0 0 30px #ff3a2e; } 25% { border-color: #f2c14e; box-shadow: 0 0 30px #f2c14e; } 50% { border-color: #3be07a; box-shadow: 0 0 30px #3be07a; } 75% { border-color: #a45cff; box-shadow: 0 0 30px #a45cff; } 100% { border-color: #ff3a2e; box-shadow: 0 0 30px #ff3a2e; } }
     .pips { display: flex; gap: .3rem; justify-content: center; flex-wrap: wrap; }
     .pips i { width: .6rem; height: .6rem; background: #2a221c; border: 1px solid #3a2d24; transform: rotate(45deg); transition: background .15s, border-color .15s; }
     .pips i.on { background: #e8631c; border-color: #ff7a33; }
@@ -43,6 +45,6 @@
       <div class="pips" id="fl-pips" aria-hidden="true"></div>
     </div>
   </main>
-  <script src="{{ fl_base }}javascripts/fl-snake-v1.js"></script>
+  <script src="{{ fl_base }}javascripts/fl-snake-v2.js"></script>
 </body>
 </html>

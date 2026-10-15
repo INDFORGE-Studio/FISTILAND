@@ -796,9 +796,15 @@ html[data-fl-rank="veteran"] .fl-logo-shine {
 .fl-rank[data-rank="master"], .fl-hint[data-rank="master"] { --rk: #f2b632; }
 @keyframes fl-rank-pop { 0% { filter: brightness(1); } 25% { filter: brightness(2.2) drop-shadow(0 0 12px var(--rk)); } 100% { filter: brightness(1); } }
 .fl-rank.is-new { animation: fl-rank-pop 1.6s ease-out; }
+/* Métamorphe: the last rank shifts through every colour */
+.fl-rank[data-rank="metamorph"], .fl-hint[data-rank="metamorph"], .fl-eg-rank[data-r="5"] { --rk: #b78cff; }
+@keyframes fl-meta-hue { from { filter: hue-rotate(0deg) drop-shadow(0 0 6px currentColor); } to { filter: hue-rotate(360deg) drop-shadow(0 0 6px currentColor); } }
+.fl-rank[data-rank="metamorph"] svg, .fl-rank[data-rank="metamorph"] span, .fl-hint[data-rank="metamorph"] svg, .fl-eg-rank[data-r="5"].is-got .fl-eg-ico { animation: fl-meta-hue 5s linear infinite; }
+html.fl-fx-off .fl-rank[data-rank="metamorph"] svg, html.fl-fx-off .fl-rank[data-rank="metamorph"] span, html.fl-fx-off .fl-hint[data-rank="metamorph"] svg, html.fl-fx-off .fl-eg-rank[data-r="5"].is-got .fl-eg-ico { animation: none; }
+@media (prefers-reduced-motion: reduce) { .fl-rank[data-rank="metamorph"] svg, .fl-rank[data-rank="metamorph"] span, .fl-hint[data-rank="metamorph"] svg, .fl-eg-rank[data-r="5"].is-got .fl-eg-ico { animation: none; } }
 
 .fl-hint {
-  position: fixed; left: 50%; top: 4.2rem; z-index: 12; max-width: calc(100vw - 2rem); display: flex; align-items: center; gap: .8rem;
+  position: fixed; left: 50%; top: 4.2rem; z-index: 12; width: max-content; max-width: calc(100vw - 2rem); display: flex; align-items: center; gap: .8rem;
   padding: .65rem 1.1rem; background: var(--fl-bar); color: #f4ece3; border: 2px solid var(--rk, var(--fl-orange)); border-radius: 2px;
   box-shadow: 0 6px 24px rgba(0, 0, 0, .65), 0 0 18px -4px var(--rk, var(--fl-orange));
   opacity: 0; transform: translate(-50%, -1rem); pointer-events: none; transition: opacity .1s, transform .1s;
