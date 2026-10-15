@@ -832,6 +832,9 @@ html.fl-fx-off .fl-rank[data-rank="metamorph"] svg, html.fl-fx-off .fl-rank[data
   position: absolute; left: 0; top: 0; width: 100% !important; height: 100% !important; max-width: none; margin: 0;
   object-fit: contain; filter: none; transition: none;
 }
+/* While the hallucination runs, every other effect sleeps: skin layers hidden, all CSS animations frozen */
+html.fl-tripping .fl-fx, html.fl-tripping .fl-door-eyes { display: none !important; }
+html.fl-tripping *, html.fl-tripping *::before, html.fl-tripping *::after { animation-play-state: paused !important; }
 .fl-trip-dof { position: fixed; inset: 0; z-index: 2; pointer-events: none; visibility: hidden; }
 .fl-trip-canvas { position: fixed; left: 0; top: 0; width: 100vw; height: 100vh; z-index: 3; pointer-events: none; }
 .fl-mush-ico { position: relative; display: block; flex: none; width: 4.4rem; height: 4.4rem; }
@@ -877,6 +880,11 @@ a.md-tabs__link[href*="easter-eggs"]::after, a.md-nav__link[href*="easter-eggs"]
 .fl-eg-rank[data-r="2"] { --rk: #c3ccd4; }
 .fl-eg-rank[data-r="3"] { --rk: #f2b632; }
 .fl-eg-rank[data-r="4"] { --rk: #ff5a3c; }
+/* Métamorphe: a wide banner above the four other cards */
+.fl-eg-rank[data-r="5"] { grid-column: 1 / -1; order: -1; padding: 1.5rem 1rem 1.2rem; gap: .5rem; }
+.fl-eg-rank[data-r="5"] .fl-eg-ico { width: 4.4rem; height: 4.4rem; }
+.fl-eg-rank[data-r="5"] b { font-size: 1.6rem; letter-spacing: .22em; padding-left: .22em; }
+.fl-eg-rank[data-r="5"] p { max-width: 34rem; font-size: .88rem; }
 .fl-eg-ico { display: block; width: 3.2rem; height: 3.2rem; color: var(--rk); opacity: .3; filter: grayscale(1); transition: opacity .4s, filter .4s; }
 .fl-eg-ico svg { width: 100%; height: 100%; }
 .fl-eg-rank b { font: 600 1rem Oswald, sans-serif; letter-spacing: .08em; text-transform: uppercase; color: #fff; }

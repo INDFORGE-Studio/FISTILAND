@@ -174,6 +174,14 @@
     }
   }
 
+  // While the hallucination runs, every other effect of the site is paused (class + event): the screen filters need the whole budget.
+  var tripOn = false, rootEl = document.documentElement;
+  function tripFlag(on) {
+    if (on === tripOn) return;
+    tripOn = on; rootEl.classList.toggle('fl-tripping', on);
+    try { document.dispatchEvent(new CustomEvent('fl-trip', { detail: { on: on } })); } catch (e) {}
+  }
+
   function frame(t) {
     var dt = Math.min(0.05, (t - last) / 1000); last = t; T = t / 1000;
     var isLogo = cur && cur.kind === 'logo';
@@ -186,6 +194,7 @@
       if (isLogo && !masterSent && dwell > cur.delay) { masterSent = true; egg('master'); }
     } else { dwell = Math.max(0, dwell - dt * 3); hold = clamp01(hold - dt / 3); }
     ie = hold * hold * (3 - 2 * hold);
+    tripFlag(ie > 0.02);
     L1 = clamp01(ie / 0.34); L2 = clamp01((ie - 0.28) / 0.4); L3 = clamp01((ie - 0.6) / 0.4);
     hueAcc = (hueAcc + dt * 90 * ie) % 360; orbAcc += dt * 1.7 * (1 - L2); waveAcc += dt * 25;
     if (logo) {
@@ -254,7 +263,7 @@
     if (act || parts.length || ie > 0.003 || hold > 0 || Math.abs(rx) > 0.05 || Math.abs(ry) > 0.05 || sc > 0.01) requestAnimationFrame(frame);
     else {
       running = false; if (logo) logo.tilt.style.transform = '';
-      ie = 0; L1 = L2 = L3 = 0; update(); clearLayers(cur); ctx.setTransform(1, 0, 0, 1, 0, 0); ctx.clearRect(0, 0, cv.width, cv.height);
+      ie = 0; L1 = L2 = L3 = 0; tripFlag(false); update(); clearLayers(cur); ctx.setTransform(1, 0, 0, 1, 0, 0); ctx.clearRect(0, 0, cv.width, cv.height);
     }
   }
   function start() { if (!running) { running = true; last = performance.now(); requestAnimationFrame(frame); } }

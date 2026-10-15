@@ -32,14 +32,14 @@ extra_javascript:
   - javascripts/fl-discord-v5.js
   - javascripts/fl-cc-v11.js
   - javascripts/fl-rank-v16.js
-  - javascripts/fl-theme-v10.js
-  - javascripts/fl-fx-v6.js
-  - javascripts/fl-trip-v2.js
+  - javascripts/fl-theme-v11.js
+  - javascripts/fl-fx-v7.js
+  - javascripts/fl-trip-v3.js
   - javascripts/fl-lamp-v16.js
 
 extra_css:
   - stylesheets/fl-fonts-v2.css
-  - stylesheets/fistiland-v103.css
+  - stylesheets/fistiland-v104.css
   - stylesheets/fl-skins-v10.css
   - stylesheets/fl-home-bg-v1.css
 

@@ -149,11 +149,13 @@
 
   function onDown(e) { if (host && cv) burst(e.clientX, e.clientY); }
   function onMove(e) { mouse.x = e.clientX; mouse.y = e.clientY; }
+  var tripping = false;   // the hallucination of the home logo / toxic mushrooms owns the whole budget: the particles sleep meanwhile
   function onVis() {
     if (!host || !cv) return;
-    if (document.hidden) { cancelAnimationFrame(raf); raf = 0; }
+    if (document.hidden || tripping) { cancelAnimationFrame(raf); raf = 0; }
     else if (!raf) { last = 0; raf = requestAnimationFrame(frame); }
   }
+  document.addEventListener('fl-trip', function (e) { tripping = !!(e.detail && e.detail.on); onVis(); });
 
   // HUD (Special Forces): a heading that follows the scroll position; the text is only touched when it changes
   var hud = null, hs = 0, hv = '';
@@ -197,7 +199,7 @@
       document.addEventListener('pointerdown', onDown, true);
       document.addEventListener('pointermove', onMove, { passive: true });
       document.addEventListener('visibilitychange', onVis);
-      if (!document.hidden) raf = requestAnimationFrame(frame);
+      if (!document.hidden && !tripping) raf = requestAnimationFrame(frame);
     }
     hud = host.querySelector('.fx-hud .r');
     if (hud) { hudHeading(); window.addEventListener('scroll', onScroll, { passive: true }); }

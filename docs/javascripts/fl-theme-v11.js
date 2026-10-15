@@ -70,7 +70,7 @@
 
   // Métamorphe skin: every MORPH_MS the site takes the shape of another skin (only while the page is visible, effects on and no reduced-motion request)
   function morphStep() {
-    if (current !== 'morph' || document.hidden) return;
+    if (current !== 'morph' || document.hidden || root.classList.contains('fl-tripping')) return;
     var next = pickShape();
     transition(function () { shown = next; root.setAttribute('data-fl-theme', shown); announce(); });
   }
