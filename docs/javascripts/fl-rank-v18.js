@@ -50,28 +50,91 @@
   };
 
   // Easter Eggs page: fill the rank cards and light up the ones already earned.
-  // The last rank has no card: once earned, it is a frame built here around the four others (the eye on top, the name on the border,
-  // the border walking through the colours of every rank), so the public page never mentions it.
+  // The last rank has no card: once earned, it is a frame built here around the four others (a living eye on top, the border walking
+  // through the colours of every rank, the details in a tooltip that follows the pointer), so the public page never mentions it.
+  var ALMOND = 'M1.8 12C5 6.9 8.5 4.4 12 4.4s7 2.5 10.2 7.6c-3.2 5.1-6.7 7.6-10.2 7.6S5 17.1 1.8 12z';
+  var EYE = '<svg viewBox="0 0 24 24" aria-hidden="true"><defs><clipPath id="fl-eg-eyeclip"><path d="' + ALMOND + '"/></clipPath></defs>' +
+    '<g clip-path="url(#fl-eg-eyeclip)"><g class="fl-eg-iris"><circle cx="12" cy="12" r="5" fill="currentColor"/>' +
+    '<g class="fl-eg-pup"><path d="M12 8.9v6.2" stroke="#0d0c0b" stroke-width="2.2" stroke-linecap="round"/><circle cx="10.3" cy="10.3" r="1.1" fill="#fff" opacity=".85"/></g></g></g>' +
+    '<path d="' + ALMOND + '" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg>';
+  var tip = null, eyeTimer = 0, blinkTimer = 0;
+
+  function rnd(a, b) { return a + Math.random() * (b - a); }
+  function eyeLive(eye) {
+    return eye.isConnected && !document.hidden && !document.documentElement.classList.contains('fl-fx-off') &&
+      !document.documentElement.classList.contains('fl-tripping') && !(window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches);
+  }
+  // The eye looks around at random (sometimes straight ahead) and blinks now and then, sometimes twice in a row.
+  function eyeLoop(eye) {
+    var svg = eye.firstChild;
+    function look() {
+      if (!eye.isConnected) return;
+      if (eyeLive(eye)) {
+        var c = Math.random() < .15;
+        svg.style.setProperty('--dx', c ? 0 : rnd(-4.4, 4.4).toFixed(2));
+        svg.style.setProperty('--dy', c ? 0 : rnd(-2.2, 2.2).toFixed(2));
+      }
+      eyeTimer = setTimeout(look, rnd(500, 2200));
+    }
+    function blink(again) {
+      if (!eye.isConnected) return;
+      if (eyeLive(eye)) {
+        eye.classList.add('is-blink');
+        setTimeout(function () { eye.classList.remove('is-blink'); }, 140);
+        if (again !== false && Math.random() < .25) { blinkTimer = setTimeout(function () { blink(false); }, 300); return; }
+      }
+      blinkTimer = setTimeout(blink, rnd(1800, 6000));
+    }
+    look();
+    blinkTimer = setTimeout(blink, rnd(1200, 3000));
+  }
+
+  // Tooltip that follows the pointer while it is inside the frame (a tap shows it on touch screens).
+  function buildTip(frame) {
+    tip = document.createElement('div'); tip.className = 'fl-eg-tip'; tip.setAttribute('role', 'status');
+    var b = document.createElement('b'); b.textContent = NAMES.metamorph;
+    var p = document.createElement('p'); p.textContent = L.card;
+    var s = document.createElement('small'); s.textContent = L.got;
+    tip.appendChild(b); tip.appendChild(p); tip.appendChild(s);
+    document.body.appendChild(tip);
+    var hideT = 0;
+    function place(e) {
+      tip.style.setProperty('--tc', getComputedStyle(frame).color);
+      var w = tip.offsetWidth, h = tip.offsetHeight, vw = document.documentElement.clientWidth, vh = window.innerHeight;
+      var x = e.clientX + 16, y = e.clientY + 20;
+      if (x + w > vw - 8) x = Math.max(8, e.clientX - w - 12);
+      if (y + h > vh - 8) y = Math.max(8, e.clientY - h - 14);
+      tip.style.transform = 'translate(' + Math.round(x) + 'px,' + Math.round(y) + 'px)';
+    }
+    function show(e) { place(e); tip.classList.add('is-on'); }
+    function hide() { clearTimeout(hideT); tip.classList.remove('is-on'); }
+    frame.addEventListener('pointerenter', function (e) { if (e.pointerType !== 'touch') show(e); });
+    frame.addEventListener('pointermove', function (e) { if (e.pointerType !== 'touch' || tip.classList.contains('is-on')) show(e); });
+    frame.addEventListener('pointerleave', function (e) { if (e.pointerType !== 'touch') hide(); });
+    frame.addEventListener('pointerdown', function (e) {
+      if (e.pointerType !== 'touch') return;
+      show(e); clearTimeout(hideT); hideT = setTimeout(hide, 3500);
+    });
+  }
   function buildFrame(wrap) {
     var f = document.createElement('div'); f.className = 'fl-eg-meta';
-    var name = document.createElement('b'); name.className = 'fl-eg-mn'; name.setAttribute('aria-label', NAMES.metamorph);
-    NAMES.metamorph.split('').forEach(function (ch, i) {
-      var s = document.createElement('i'); s.setAttribute('aria-hidden', 'true'); s.style.setProperty('--i', i); s.textContent = ch; name.appendChild(s);
-    });
-    var eye = document.createElement('span'); eye.className = 'fl-eg-ico'; eye.innerHTML = ICONS.metamorph;
-    var foot = document.createElement('div'); foot.className = 'fl-eg-mf';
-    var p = document.createElement('p'); p.textContent = L.card;
-    var st = document.createElement('small'); st.className = 'fl-eg-st'; st.textContent = L.got;
-    foot.appendChild(p); foot.appendChild(st);
+    var eye = document.createElement('span'); eye.className = 'fl-eg-ico'; eye.innerHTML = EYE;
     wrap.parentNode.insertBefore(f, wrap);
-    f.appendChild(name); f.appendChild(eye); f.appendChild(wrap); f.appendChild(foot);
+    f.appendChild(eye); f.appendChild(wrap);
+    buildTip(f); eyeLoop(eye);
+  }
+  function dropFrame(frame, wrap) {
+    clearTimeout(eyeTimer); clearTimeout(blinkTimer);
+    if (tip && tip.parentNode) tip.parentNode.removeChild(tip);
+    tip = null;
+    frame.parentNode.insertBefore(wrap, frame); frame.parentNode.removeChild(frame);
   }
   function paintPage() {
     var wrap = document.querySelector('.fl-eg-ranks');
     if (!wrap) return;
     var idx = rankIndex(state), frame = wrap.parentNode.classList.contains('fl-eg-meta') ? wrap.parentNode : null;
     if (idx >= 5 && !frame) buildFrame(wrap);
-    else if (idx < 5 && frame) { frame.parentNode.insertBefore(wrap, frame); frame.parentNode.removeChild(frame); }
+    else if (idx < 5 && frame) dropFrame(frame, wrap);
     var cards = wrap.querySelectorAll('.fl-eg-rank');
     for (var i = 0; i < cards.length; i++) {
       var c = cards[i], n = +c.getAttribute('data-r'), got = n <= idx;

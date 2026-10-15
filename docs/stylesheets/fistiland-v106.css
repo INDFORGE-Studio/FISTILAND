@@ -799,9 +799,9 @@ html[data-fl-rank="veteran"] .fl-logo-shine {
 /* Métamorphe: the last rank shifts through every colour */
 .fl-rank[data-rank="metamorph"], .fl-hint[data-rank="metamorph"], .fl-eg-meta { --rk: #b78cff; }
 @keyframes fl-meta-hue { from { filter: hue-rotate(0deg) drop-shadow(0 0 6px currentColor); } to { filter: hue-rotate(360deg) drop-shadow(0 0 6px currentColor); } }
-.fl-rank[data-rank="metamorph"] svg, .fl-rank[data-rank="metamorph"] span, .fl-hint[data-rank="metamorph"] svg, .fl-eg-meta > .fl-eg-ico { animation: fl-meta-hue 5s linear infinite; }
-html.fl-fx-off .fl-rank[data-rank="metamorph"] svg, html.fl-fx-off .fl-rank[data-rank="metamorph"] span, html.fl-fx-off .fl-hint[data-rank="metamorph"] svg, html.fl-fx-off .fl-eg-meta > .fl-eg-ico { animation: none; }
-@media (prefers-reduced-motion: reduce) { .fl-rank[data-rank="metamorph"] svg, .fl-rank[data-rank="metamorph"] span, .fl-hint[data-rank="metamorph"] svg, .fl-eg-meta > .fl-eg-ico { animation: none; } }
+.fl-rank[data-rank="metamorph"] svg, .fl-rank[data-rank="metamorph"] span, .fl-hint[data-rank="metamorph"] svg { animation: fl-meta-hue 5s linear infinite; }
+html.fl-fx-off .fl-rank[data-rank="metamorph"] svg, html.fl-fx-off .fl-rank[data-rank="metamorph"] span, html.fl-fx-off .fl-hint[data-rank="metamorph"] svg { animation: none; }
+@media (prefers-reduced-motion: reduce) { .fl-rank[data-rank="metamorph"] svg, .fl-rank[data-rank="metamorph"] span, .fl-hint[data-rank="metamorph"] svg { animation: none; } }
 
 .fl-hint {
   position: fixed; left: 50%; top: 4.2rem; z-index: 12; width: max-content; max-width: calc(100vw - 2rem); display: flex; align-items: center; gap: .8rem;
@@ -882,30 +882,28 @@ a.md-tabs__link[href*="easter-eggs"]::after, a.md-nav__link[href*="easter-eggs"]
 .fl-eg-rank[data-r="4"] { --rk: #ff5a3c; }
 /* Métamorphe: a frame around the four other cards. The eye hangs inside at the top, the name sits on the top border (each letter
    walks through the colour of every rank), the phrase and the status on the bottom border, and the border itself turns through all the rank colours. */
-.fl-eg-meta { position: relative; margin: 2.4rem 0 2.6rem; padding: 1.5rem .9rem 1.6rem; border-radius: .35rem; box-shadow: 0 0 30px -12px #b78cff; }
-.fl-eg-meta::before {
-  content: ""; position: absolute; inset: 0; padding: 2px; border-radius: inherit; pointer-events: none;
-  background: conic-gradient(from var(--fl-a), #b78cff, #9bc16a, #c3ccd4, #f2b632, #ff5a3c, #b78cff);
-  -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0); -webkit-mask-composite: xor; mask-composite: exclude;
-  animation: fl-rainbow 7s linear infinite;
-}
-.fl-eg-meta > .fl-eg-ico { width: 3.6rem; height: 3.6rem; margin: .2rem auto .9rem; opacity: 1; filter: drop-shadow(0 0 8px #b78cff); }
+.fl-eg-meta { position: relative; margin: 1.6rem 0 1.8rem; padding: 1.1rem .9rem 1.2rem; border: 2px solid currentColor; border-radius: .35rem; color: #b78cff; box-shadow: 0 0 26px -10px currentColor, inset 0 0 26px -16px currentColor; animation: fl-eg-cyc 14s linear infinite; }
+@keyframes fl-eg-cyc { 0%, 100% { color: #b78cff; } 20% { color: #9bc16a; } 40% { color: #c3ccd4; } 60% { color: #f2b632; } 80% { color: #ff5a3c; } }
+.fl-eg-meta .fl-eg-rank { color: #e0d6cc; }
 .fl-eg-meta .fl-eg-ranks { margin: 0; }
-.fl-eg-mn {
-  position: absolute; left: 50%; top: 0; z-index: 1; transform: translate(-50%, -50%); padding: 0 .9rem; white-space: nowrap;
-  background: var(--fl-ink); font: 600 1.05rem/1.6 Oswald, sans-serif; letter-spacing: .26em; text-transform: uppercase;
+/* the eye takes the colour of the frame; its iris slides around and the whole eye squashes shut when it blinks (see fl-rank.js) */
+.fl-eg-meta > .fl-eg-ico { width: 3.8rem; height: 3.8rem; margin: 0 auto .9rem; color: inherit; opacity: 1; filter: drop-shadow(0 0 7px currentColor); }
+.fl-eg-meta > .fl-eg-ico svg { transition: transform .16s ease-out; transform-origin: 50% 50%; --dx: 0; --dy: 0; }
+.fl-eg-meta > .fl-eg-ico.is-blink svg { transform: scaleY(.08); transition-duration: .07s; }
+.fl-eg-iris { transform: translate(calc(var(--dx) * 1px), calc(var(--dy) * 1px)); transition: transform .32s cubic-bezier(.3, 1.35, .5, 1); }
+.fl-eg-pup { transform: translate(calc(var(--dx) * .22px), calc(var(--dy) * .22px)); transition: transform .32s cubic-bezier(.3, 1.35, .5, 1); }
+html.fl-fx-off .fl-eg-meta { animation: none; }
+@media (prefers-reduced-motion: reduce) { .fl-eg-meta { animation: none; } }
+/* tooltip following the pointer inside the frame */
+.fl-eg-tip {
+  position: fixed; left: 0; top: 0; z-index: 13; display: flex; flex-direction: column; gap: .2rem; max-width: min(18rem, calc(100vw - 1rem));
+  padding: .55rem .85rem .6rem; background: var(--fl-bar); border: 2px solid var(--tc, #b78cff); border-radius: 2px; pointer-events: none;
+  box-shadow: 0 6px 24px rgba(0, 0, 0, .65), 0 0 16px -4px var(--tc, #b78cff); opacity: 0; transition: opacity .15s;
 }
-.fl-eg-mn i { font-style: normal; color: #b78cff; animation: fl-eg-ltr 7s linear infinite; animation-delay: calc(var(--i) * -.55s); }
-@keyframes fl-eg-ltr { 0%, 100% { color: #b78cff; } 20% { color: #9bc16a; } 40% { color: #c3ccd4; } 60% { color: #f2b632; } 80% { color: #ff5a3c; } }
-.fl-eg-mf { display: flex; flex-direction: column; align-items: center; gap: .3rem; padding-top: 1rem; text-align: center; }
-.fl-eg-mf p { margin: 0; font-size: .82rem; font-style: italic; color: #cfc4b9; }
-.fl-eg-mf .fl-eg-st { margin: 0; padding: 0; color: #b78cff; }
-@media (min-width: 48rem) {
-  .fl-eg-mf { position: absolute; left: 0; right: 0; bottom: 0; transform: translateY(50%); flex-direction: row; justify-content: center; gap: .7rem; padding: 0; pointer-events: none; }
-  .fl-eg-mf > * { background: var(--fl-ink); padding: 0 .8rem; line-height: 1.7; }
-}
-html.fl-fx-off .fl-eg-meta::before, html.fl-fx-off .fl-eg-mn i { animation: none; }
-@media (prefers-reduced-motion: reduce) { .fl-eg-meta::before, .fl-eg-mn i { animation: none; } }
+.fl-eg-tip.is-on { opacity: 1; }
+.fl-eg-tip b { font: 600 .9rem Oswald, sans-serif; letter-spacing: .2em; text-transform: uppercase; color: var(--tc, #b78cff); }
+.fl-eg-tip p { margin: 0; font-size: .78rem; font-style: italic; line-height: 1.4; color: #e0d6cc; }
+.fl-eg-tip small { font: 500 .68rem Oswald, sans-serif; letter-spacing: .14em; text-transform: uppercase; color: var(--tc, #b78cff); }
 .fl-eg-ico { display: block; width: 3.2rem; height: 3.2rem; color: var(--rk); opacity: .3; filter: grayscale(1); transition: opacity .4s, filter .4s; }
 .fl-eg-ico svg { width: 100%; height: 100%; }
 .fl-eg-rank b { font: 600 1rem Oswald, sans-serif; letter-spacing: .08em; text-transform: uppercase; color: #fff; }
