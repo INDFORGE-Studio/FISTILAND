@@ -21,21 +21,21 @@ theme:
     - content.code.copy
 
 extra_javascript:
-  - javascripts/fl-copy-v4.js
-  - javascripts/fl-map-v23.js
+  - javascripts/fl-copy-v5.js
+  - javascripts/fl-map-v24.js
   - javascripts/fl-cards-v1.js
   - javascripts/fl-mush-v1.js
-  - javascripts/fl-ip-v1.js
-  - javascripts/fl-join-v1.js
+  - javascripts/fl-ip-v2.js
+  - javascripts/fl-join-v2.js
   - javascripts/fl-discord-v4.js
-  - javascripts/fl-cc-v6.js
-  - javascripts/fl-rank-v13.js
-  - javascripts/fl-theme-v2.js
+  - javascripts/fl-cc-v7.js
+  - javascripts/fl-rank-v14.js
+  - javascripts/fl-theme-v3.js
   - javascripts/fl-trip-v2.js
   - javascripts/fl-lamp-v14.js
 
 extra_css:
-  - stylesheets/fistiland-v96.css
+  - stylesheets/fistiland-v97.css
   - stylesheets/fl-themes-v2.css
 
 extra:
@@ -167,6 +167,26 @@ plugins:
             Admin: Адміністрування
             Maps: Карти
             Mushrooms: Гриби
+        - locale: hr
+          name: Hrvatski
+          build: true
+          nav_translations:
+            Home: Početna
+            Server: Poslužitelj
+            Overview: Pregled
+            Territory: Teritorij
+            Respawn: Respawn
+            Economy: Ekonomija
+            Progression: Napredak
+            Survival: Preživljavanje
+            Enemies: Neprijatelji
+            Events: Događaji
+            Bunkers: Bunkeri
+            Rules: Pravila
+            All settings: Sve postavke
+            Admin: Administracija
+            Maps: Karte
+            Mushrooms: Gljive
 
 nav:
   - Home: index.md
