@@ -1092,16 +1092,9 @@ html[data-fl-theme="demonic"] .md-header__button.md-logo { --dv-glow: 255, 58, 4
 html { scrollbar-color: rgba(var(--fl-or-rgb), .55) var(--fl-ink); scrollbar-width: thin; }
 a:focus-visible, button:focus-visible, summary:focus-visible, [tabindex]:focus-visible { outline: 2px solid var(--fl-orange-hot); outline-offset: 2px; border-radius: 2px; }
 
-/* 404 page */
-.fl-404 ul { list-style: none; display: grid; grid-template-columns: repeat(auto-fit, minmax(17rem, 1fr)); gap: .6rem; margin: 1.4rem 0 0 !important; padding: 0 !important; }
-.fl-404 li { margin: 0 !important; }
-.fl-404 a { display: block; padding: .8rem 1rem; background: var(--fl-panel); border: 1px solid var(--fl-line); border-left: 4px solid var(--fl-orange); color: #e0d6cc; text-align: left; transition: transform .15s, border-color .15s; }
-.fl-404 a:hover, .fl-404 a:focus-visible { transform: translateX(3px); border-color: var(--fl-orange-hot); color: #fff; }
-.fl-404 a strong { color: var(--fl-orange-hot); }
-
 /* High-contrast / forced colours: keep borders so the cards stay readable */
 @media (forced-colors: active) {
-  .fl-card, .fl-stats, .fl-facts div, .fl-mush, .fl-eg-card, .fl-eg-rank, .fl-404 a { border: 1px solid CanvasText; }
+  .fl-card, .fl-stats, .fl-facts div, .fl-mush, .fl-eg-card, .fl-eg-rank { border: 1px solid CanvasText; }
   .fl-btn { border: 2px solid ButtonText; }
 }
 

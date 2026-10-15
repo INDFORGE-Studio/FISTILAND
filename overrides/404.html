@@ -1,0 +1,47 @@
+{#- Standalone 404 page: it is served at any depth and for any language, so it carries its own head, absolute paths and no theme chrome. -#}
+{% set fl_base = (base_url ~ '/') | replace('//', '/') %}
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="robots" content="noindex">
+  <meta name="color-scheme" content="dark">
+  <meta name="theme-color" content="#ff6a00">
+  <title>404 - FISTILAND SCUM SERVER</title>
+  <link rel="icon" href="{{ fl_base }}assets/favicon-v9.ico">
+  <link rel="icon" type="image/png" sizes="192x192" href="{{ fl_base }}assets/icon-192-v1.png">
+  <link rel="stylesheet" href="{{ fl_base }}stylesheets/fl-fonts-v2.css">
+  <style>
+    html { background: #0d0c0b; color-scheme: dark; }
+    body { margin: 0; min-height: 100vh; min-height: 100svh; display: grid; place-items: center; padding: 1.5rem 1rem; box-sizing: border-box; color: #e0d6cc; font: 400 1rem/1.5 Inter, "Inter Fallback", sans-serif;
+      background: radial-gradient(ellipse at 50% 30%, rgba(13, 12, 11, .35), rgba(13, 12, 11, .92) 70%), linear-gradient(180deg, rgba(13, 12, 11, .5), #0d0c0b), url("{{ fl_base }}assets/bg-v3.jpg") center / cover no-repeat; }
+    main { width: min(46rem, 100%); text-align: center; }
+    img { display: block; width: min(15rem, 60vw); height: auto; margin: 0 auto .6rem; filter: drop-shadow(0 8px 24px rgba(0, 0, 0, .7)); }
+    h1 { margin: 0; font: 700 clamp(4rem, 16vw, 7.5rem)/1 Oswald, sans-serif; letter-spacing: .08em; color: #fff; text-shadow: 0 4px 0 #8a2f0f, 0 10px 30px rgba(0, 0, 0, .75); }
+    p { margin: .4rem 0 1.6rem; font-size: 1.1rem; color: #f4ece3; text-shadow: 0 2px 14px rgba(0, 0, 0, .85); }
+    ul { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(16.5rem, 1fr)); gap: .6rem; }
+    a { display: block; padding: .75rem 1rem; text-align: left; text-decoration: none; color: #e0d6cc; background: rgba(24, 21, 19, .9); border: 1px solid #3a2d24; border-left: 4px solid #e8631c; transition: transform .15s, border-color .15s; }
+    a:hover, a:focus-visible { transform: translateX(3px); border-color: #ff7a33; color: #fff; outline: none; }
+    a b { color: #ff7a33; }
+    @media (prefers-reduced-motion: reduce) { a { transition: none; } }
+  </style>
+</head>
+<body>
+  <main>
+    <img src="{{ fl_base }}assets/logo-home-v4.png" alt="FISTILAND SCUM SERVER" width="480" height="300">
+    <h1>404</h1>
+    <p>This place is not on the map. Wrong turn, soldier.</p>
+    <ul>
+      <li><a href="{{ fl_base }}"><b>English</b> · Page not found, back to the map</a></li>
+      <li><a href="{{ fl_base }}es/"><b>Español</b> · Página no encontrada, volver al mapa</a></li>
+      <li><a href="{{ fl_base }}fr/"><b>Français</b> · Page introuvable, retour à la carte</a></li>
+      <li><a href="{{ fl_base }}de/"><b>Deutsch</b> · Seite nicht gefunden, zurück zur Karte</a></li>
+      <li><a href="{{ fl_base }}it/"><b>Italiano</b> · Pagina non trovata, torna alla mappa</a></li>
+      <li><a href="{{ fl_base }}pl/"><b>Polski</b> · Nie znaleziono strony, wróć do mapy</a></li>
+      <li><a href="{{ fl_base }}uk/"><b>Українська</b> · Сторінку не знайдено, повернутися до мапи</a></li>
+      <li><a href="{{ fl_base }}hr/"><b>Hrvatski</b> · Stranica nije pronađena, natrag na kartu</a></li>
+    </ul>
+  </main>
+</body>
+</html>
