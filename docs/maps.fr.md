@@ -1,20 +1,4 @@
-<div class="fl-page-hero fl-bg-c" markdown>
-
-:material-map-search:
-
-# Cartes
-
-<p>Où vit chaque animal et où rôdent les mutants, sur la carte satellite de l'île.</p>
-
-</div>
-
-<div class="fl-facts">
-<div><b>9</b><span>Animaux</span></div>
-<div><b>4</b><span>Biomes</span></div>
-<div><b>16</b><span>Mutants repérés</span></div>
-<div><b>5×5</b><span>Secteurs</span></div>
-</div>
-
+﻿# Cartes { .fl-sr-only }
 
 ## :material-map-search: Carte de l'île { .fl-tip tabindex="0" data-tip="Activez ou désactivez les calques. Le calque des habitats montre les quatre biomes : méditerranéen, prairie, forêt et montagne. Dans la légende, chaque animal affiche des icônes allumées pour ses biomes, les zones urbaines, les villages, le jour et la nuit. Les zones sont approximatives et aucun point d'apparition exact n'est revendiqué. Les mutants repérés sont des zones, pas des points exacts : les positions sont justes à environ un secteur près. Les secteurs vont de 4 à 0 de gauche à droite et de D à Z de haut en bas. Zoomez avec les boutons, Ctrl + molette ou deux doigts. Double-clic pour zoomer, glissez pour déplacer." }
 

@@ -1,20 +1,4 @@
-<div class="fl-page-hero fl-bg-c" markdown>
-
-:material-map-search:
-
-# Maps
-
-<p>Where each animal lives and where mutants roam, on the satellite map of the island.</p>
-
-</div>
-
-<div class="fl-facts">
-<div><b>9</b><span>Animals</span></div>
-<div><b>4</b><span>Biomes</span></div>
-<div><b>16</b><span>Mutant sightings</span></div>
-<div><b>5×5</b><span>Sectors</span></div>
-</div>
-
+﻿# Maps { .fl-sr-only }
 
 ## :material-map-search: Island map { .fl-tip tabindex="0" data-tip="Switch the layers on and off. The habitats layer shows the four biomes: Mediterranean, meadow, forest and mountain. In the legend, each animal shows lit icons for its biomes, urban areas, villages, day and night. Zones are approximate and no exact spawn point is implied. Mutant sightings are areas, not exact spots: positions are accurate to about one sector. Sectors run from 4 to 0 left to right and from D to Z top to bottom. Zoom with the buttons, Ctrl + scroll or two fingers. Double-click to zoom in, drag to move." }
 

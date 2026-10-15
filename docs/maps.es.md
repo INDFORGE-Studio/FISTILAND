@@ -1,20 +1,4 @@
-<div class="fl-page-hero fl-bg-c" markdown>
-
-:material-map-search:
-
-# Mapas
-
-<p>Dónde vive cada animal y dónde merodean los mutantes, en el mapa satelital de la isla.</p>
-
-</div>
-
-<div class="fl-facts">
-<div><b>9</b><span>Animales</span></div>
-<div><b>4</b><span>Biomas</span></div>
-<div><b>16</b><span>Mutantes avistados</span></div>
-<div><b>5×5</b><span>Sectores</span></div>
-</div>
-
+﻿# Mapas { .fl-sr-only }
 
 ## :material-map-search: Mapa de la isla { .fl-tip tabindex="0" data-tip="Active o desactive las capas. La capa de hábitats muestra los cuatro biomas: mediterráneo, pradera, bosque y montaña. En la leyenda, cada animal muestra iconos iluminados para sus biomas, zonas urbanas, pueblos, día y noche. Las zonas son aproximadas y no se indican puntos de aparición exactos. Los mutantes avistados son zonas, no puntos exactos: las posiciones tienen un margen de un sector. Los sectores van de 4 a 0 de izquierda a derecha y de D a Z de arriba abajo. Haga zoom con los botones, Ctrl + rueda o dos dedos. Doble clic para acercar, arrastre para mover." }
 

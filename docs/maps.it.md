@@ -1,20 +1,4 @@
-<div class="fl-page-hero fl-bg-c" markdown>
-
-:material-map-search:
-
-# Mappe
-
-<p>Dove vive ogni animale e dove si aggirano i mutanti, sulla mappa satellitare dell'isola.</p>
-
-</div>
-
-<div class="fl-facts">
-<div><b>9</b><span>Animali</span></div>
-<div><b>4</b><span>Biomi</span></div>
-<div><b>16</b><span>Mutanti avvistati</span></div>
-<div><b>5×5</b><span>Settori</span></div>
-</div>
-
+﻿# Mappe { .fl-sr-only }
 
 ## :material-map-search: Mappa dell'isola { .fl-tip tabindex="0" data-tip="Attiva o disattiva i livelli. Il livello degli habitat mostra i quattro biomi: mediterraneo, prateria, foresta e montagna. Nella legenda, ogni animale mostra icone accese per i suoi biomi, le zone urbane, i villaggi, il giorno e la notte. Le zone sono approssimative e non si indicano punti di comparsa esatti. I mutanti avvistati sono aree, non punti esatti: le posizioni sono precise entro circa un settore. I settori vanno da 4 a 0 da sinistra a destra e da D a Z dall'alto in basso. Ingrandisci con i pulsanti, Ctrl + rotella o due dita. Doppio clic per ingrandire, trascina per spostare." }
 

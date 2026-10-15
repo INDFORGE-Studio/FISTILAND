@@ -1,20 +1,4 @@
-<div class="fl-page-hero fl-bg-c" markdown>
-
-:material-map-search:
-
-# Karten
-
-<p>Wo welches Tier lebt und wo Mutanten umherstreifen, auf der Satellitenkarte der Insel.</p>
-
-</div>
-
-<div class="fl-facts">
-<div><b>9</b><span>Tiere</span></div>
-<div><b>4</b><span>Biome</span></div>
-<div><b>16</b><span>Mutanten-Sichtungen</span></div>
-<div><b>5×5</b><span>Sektoren</span></div>
-</div>
-
+﻿# Karten { .fl-sr-only }
 
 ## :material-map-search: Inselkarte { .fl-tip tabindex="0" data-tip="Schalten Sie die Ebenen ein und aus. Die Ebene der Lebensräume zeigt die vier Biome: Mediterran, Wiese, Wald und Gebirge. In der Legende zeigt jedes Tier leuchtende Symbole für seine Biome, Städte, Dörfer, Tag und Nacht. Die Zonen sind ungefähr, genaue Spawnpunkte sind nicht gemeint. Mutanten-Sichtungen sind Gebiete, keine genauen Punkte: Die Positionen sind auf etwa einen Sektor genau. Die Sektoren laufen von links nach rechts von 4 bis 0 und von oben nach unten von D bis Z. Zoomen mit den Schaltflächen, Strg + Mausrad oder zwei Fingern. Doppelklick zum Vergrößern, ziehen zum Verschieben." }
 
