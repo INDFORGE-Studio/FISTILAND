@@ -142,7 +142,7 @@
 /* Desktops: ten cards on one row, titles scale with the width */
 @media (min-width: 100.01em) {
   .fl-card { container-type: inline-size; }
-  .fl-grid .fl-card strong { font-size: clamp(8px, 10cqw, .88rem) !important; letter-spacing: .02em !important; }
+  .fl-grid .fl-card strong { font-size: clamp(8px, 11.5cqw, 1.05rem) !important; letter-spacing: .02em !important; }
 }
 /* Medium screens: 5 + 5 cards */
 @media (max-width: 100em) {
