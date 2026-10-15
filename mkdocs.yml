@@ -22,7 +22,7 @@ theme:
 
 extra_javascript:
   - javascripts/fl-copy-v4.js
-  - javascripts/fl-map-v19.js
+  - javascripts/fl-map-v20.js
   - javascripts/fl-cards-v1.js
   - javascripts/fl-mush-v1.js
   - javascripts/fl-ip-v1.js
