@@ -797,11 +797,11 @@ html[data-fl-rank="veteran"] .fl-logo-shine {
 @keyframes fl-rank-pop { 0% { filter: brightness(1); } 25% { filter: brightness(2.2) drop-shadow(0 0 12px var(--rk)); } 100% { filter: brightness(1); } }
 .fl-rank.is-new { animation: fl-rank-pop 1.6s ease-out; }
 /* Métamorphe: the last rank shifts through every colour */
-.fl-rank[data-rank="metamorph"], .fl-hint[data-rank="metamorph"], .fl-eg-rank[data-r="5"] { --rk: #b78cff; }
+.fl-rank[data-rank="metamorph"], .fl-hint[data-rank="metamorph"], .fl-eg-meta { --rk: #b78cff; }
 @keyframes fl-meta-hue { from { filter: hue-rotate(0deg) drop-shadow(0 0 6px currentColor); } to { filter: hue-rotate(360deg) drop-shadow(0 0 6px currentColor); } }
-.fl-rank[data-rank="metamorph"] svg, .fl-rank[data-rank="metamorph"] span, .fl-hint[data-rank="metamorph"] svg, .fl-eg-rank[data-r="5"].is-got .fl-eg-ico { animation: fl-meta-hue 5s linear infinite; }
-html.fl-fx-off .fl-rank[data-rank="metamorph"] svg, html.fl-fx-off .fl-rank[data-rank="metamorph"] span, html.fl-fx-off .fl-hint[data-rank="metamorph"] svg, html.fl-fx-off .fl-eg-rank[data-r="5"].is-got .fl-eg-ico { animation: none; }
-@media (prefers-reduced-motion: reduce) { .fl-rank[data-rank="metamorph"] svg, .fl-rank[data-rank="metamorph"] span, .fl-hint[data-rank="metamorph"] svg, .fl-eg-rank[data-r="5"].is-got .fl-eg-ico { animation: none; } }
+.fl-rank[data-rank="metamorph"] svg, .fl-rank[data-rank="metamorph"] span, .fl-hint[data-rank="metamorph"] svg, .fl-eg-meta > .fl-eg-ico { animation: fl-meta-hue 5s linear infinite; }
+html.fl-fx-off .fl-rank[data-rank="metamorph"] svg, html.fl-fx-off .fl-rank[data-rank="metamorph"] span, html.fl-fx-off .fl-hint[data-rank="metamorph"] svg, html.fl-fx-off .fl-eg-meta > .fl-eg-ico { animation: none; }
+@media (prefers-reduced-motion: reduce) { .fl-rank[data-rank="metamorph"] svg, .fl-rank[data-rank="metamorph"] span, .fl-hint[data-rank="metamorph"] svg, .fl-eg-meta > .fl-eg-ico { animation: none; } }
 
 .fl-hint {
   position: fixed; left: 50%; top: 4.2rem; z-index: 12; width: max-content; max-width: calc(100vw - 2rem); display: flex; align-items: center; gap: .8rem;
@@ -880,11 +880,32 @@ a.md-tabs__link[href*="easter-eggs"]::after, a.md-nav__link[href*="easter-eggs"]
 .fl-eg-rank[data-r="2"] { --rk: #c3ccd4; }
 .fl-eg-rank[data-r="3"] { --rk: #f2b632; }
 .fl-eg-rank[data-r="4"] { --rk: #ff5a3c; }
-/* Métamorphe: a wide banner above the four other cards */
-.fl-eg-rank[data-r="5"] { grid-column: 1 / -1; order: -1; padding: 1.5rem 1rem 1.2rem; gap: .5rem; }
-.fl-eg-rank[data-r="5"] .fl-eg-ico { width: 4.4rem; height: 4.4rem; }
-.fl-eg-rank[data-r="5"] b { font-size: 1.6rem; letter-spacing: .22em; padding-left: .22em; }
-.fl-eg-rank[data-r="5"] p { max-width: 34rem; font-size: .88rem; }
+/* Métamorphe: a frame around the four other cards. The eye hangs inside at the top, the name sits on the top border (each letter
+   walks through the colour of every rank), the phrase and the status on the bottom border, and the border itself turns through all the rank colours. */
+.fl-eg-meta { position: relative; margin: 2.4rem 0 2.6rem; padding: 1.5rem .9rem 1.6rem; border-radius: .35rem; box-shadow: 0 0 30px -12px #b78cff; }
+.fl-eg-meta::before {
+  content: ""; position: absolute; inset: 0; padding: 2px; border-radius: inherit; pointer-events: none;
+  background: conic-gradient(from var(--fl-a), #b78cff, #9bc16a, #c3ccd4, #f2b632, #ff5a3c, #b78cff);
+  -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0); -webkit-mask-composite: xor; mask-composite: exclude;
+  animation: fl-rainbow 7s linear infinite;
+}
+.fl-eg-meta > .fl-eg-ico { width: 3.6rem; height: 3.6rem; margin: .2rem auto .9rem; opacity: 1; filter: drop-shadow(0 0 8px #b78cff); }
+.fl-eg-meta .fl-eg-ranks { margin: 0; }
+.fl-eg-mn {
+  position: absolute; left: 50%; top: 0; z-index: 1; transform: translate(-50%, -50%); padding: 0 .9rem; white-space: nowrap;
+  background: var(--fl-ink); font: 600 1.05rem/1.6 Oswald, sans-serif; letter-spacing: .26em; text-transform: uppercase;
+}
+.fl-eg-mn i { font-style: normal; color: #b78cff; animation: fl-eg-ltr 7s linear infinite; animation-delay: calc(var(--i) * -.55s); }
+@keyframes fl-eg-ltr { 0%, 100% { color: #b78cff; } 20% { color: #9bc16a; } 40% { color: #c3ccd4; } 60% { color: #f2b632; } 80% { color: #ff5a3c; } }
+.fl-eg-mf { display: flex; flex-direction: column; align-items: center; gap: .3rem; padding-top: 1rem; text-align: center; }
+.fl-eg-mf p { margin: 0; font-size: .82rem; font-style: italic; color: #cfc4b9; }
+.fl-eg-mf .fl-eg-st { margin: 0; padding: 0; color: #b78cff; }
+@media (min-width: 48rem) {
+  .fl-eg-mf { position: absolute; left: 0; right: 0; bottom: 0; transform: translateY(50%); flex-direction: row; justify-content: center; gap: .7rem; padding: 0; pointer-events: none; }
+  .fl-eg-mf > * { background: var(--fl-ink); padding: 0 .8rem; line-height: 1.7; }
+}
+html.fl-fx-off .fl-eg-meta::before, html.fl-fx-off .fl-eg-mn i { animation: none; }
+@media (prefers-reduced-motion: reduce) { .fl-eg-meta::before, .fl-eg-mn i { animation: none; } }
 .fl-eg-ico { display: block; width: 3.2rem; height: 3.2rem; color: var(--rk); opacity: .3; filter: grayscale(1); transition: opacity .4s, filter .4s; }
 .fl-eg-ico svg { width: 100%; height: 100%; }
 .fl-eg-rank b { font: 600 1rem Oswald, sans-serif; letter-spacing: .08em; text-transform: uppercase; color: #fff; }

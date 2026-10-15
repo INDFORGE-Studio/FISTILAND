@@ -50,22 +50,28 @@
   };
 
   // Easter Eggs page: fill the rank cards and light up the ones already earned.
-  // The last rank has no card until it is earned: it is created here, so the public page never mentions it.
+  // The last rank has no card: once earned, it is a frame built here around the four others (the eye on top, the name on the border,
+  // the border walking through the colours of every rank), so the public page never mentions it.
+  function buildFrame(wrap) {
+    var f = document.createElement('div'); f.className = 'fl-eg-meta';
+    var name = document.createElement('b'); name.className = 'fl-eg-mn'; name.setAttribute('aria-label', NAMES.metamorph);
+    NAMES.metamorph.split('').forEach(function (ch, i) {
+      var s = document.createElement('i'); s.setAttribute('aria-hidden', 'true'); s.style.setProperty('--i', i); s.textContent = ch; name.appendChild(s);
+    });
+    var eye = document.createElement('span'); eye.className = 'fl-eg-ico'; eye.innerHTML = ICONS.metamorph;
+    var foot = document.createElement('div'); foot.className = 'fl-eg-mf';
+    var p = document.createElement('p'); p.textContent = L.card;
+    var st = document.createElement('small'); st.className = 'fl-eg-st'; st.textContent = L.got;
+    foot.appendChild(p); foot.appendChild(st);
+    wrap.parentNode.insertBefore(f, wrap);
+    f.appendChild(name); f.appendChild(eye); f.appendChild(wrap); f.appendChild(foot);
+  }
   function paintPage() {
     var wrap = document.querySelector('.fl-eg-ranks');
     if (!wrap) return;
-    var idx = rankIndex(state), secret = wrap.querySelector('.fl-eg-rank[data-r="5"]');
-    if (idx >= 5 && !secret) {
-      secret = document.createElement('div');
-      secret.className = 'fl-eg-rank';
-      secret.setAttribute('data-r', '5');
-      secret.innerHTML = '<span class="fl-eg-ico"></span><b></b><p></p><small class="fl-eg-st"></small>';
-      secret.querySelector('b').textContent = NAMES.metamorph;
-      secret.querySelector('p').textContent = L.card;
-      wrap.appendChild(secret);
-    } else if (idx < 5 && secret) {
-      wrap.removeChild(secret);
-    }
+    var idx = rankIndex(state), frame = wrap.parentNode.classList.contains('fl-eg-meta') ? wrap.parentNode : null;
+    if (idx >= 5 && !frame) buildFrame(wrap);
+    else if (idx < 5 && frame) { frame.parentNode.insertBefore(wrap, frame); frame.parentNode.removeChild(frame); }
     var cards = wrap.querySelectorAll('.fl-eg-rank');
     for (var i = 0; i < cards.length; i++) {
       var c = cards[i], n = +c.getAttribute('data-r'), got = n <= idx;
