@@ -35,7 +35,7 @@ extra_javascript:
   - javascripts/fl-theme-v8.js
   - javascripts/fl-fx-v1.js
   - javascripts/fl-trip-v2.js
-  - javascripts/fl-lamp-v14.js
+  - javascripts/fl-lamp-v15.js
   - javascripts/fl-zone-v1.js
 
 extra_css:

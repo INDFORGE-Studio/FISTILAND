@@ -68,12 +68,10 @@
       btn.innerHTML = svg(id);
       tip = L.title + ' : ' + L.names[IDS.indexOf(id)];
       btn.setAttribute('aria-label', tip);
-      if (btn.hasAttribute('title')) btn.title = tip;
-      else {
-        // The theme's tooltip is showing: it took the title away and holds its own copy of the text
-        var bub = document.querySelectorAll('.md-tooltip2__inner');
-        for (var b = 0; b < bub.length; b++) if (bub[b].textContent.indexOf(L.title + ' : ') === 0) bub[b].textContent = tip;
-      }
+      // If the theme's tooltip is showing it holds its own copy of the text: update that copy too
+      var bub = document.querySelectorAll('.md-tooltip2__inner'), shown = false;
+      for (var b = 0; b < bub.length; b++) if (bub[b].textContent.indexOf(L.title + ' : ') === 0) { bub[b].textContent = tip; shown = true; }
+      if (!shown || btn.hasAttribute('title')) btn.title = tip;
     }
     if (panel) {
       var opts = panel.querySelectorAll('.fl-theme-opt');

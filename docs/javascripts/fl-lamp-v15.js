@@ -7,7 +7,9 @@
   if (!btn || !main || !document.querySelector('.fl-home')) return;
 
   // Background image geometry (bg-v3.jpg) and the openings of the bunker, in image pixels
-  var IW = 1920, IH = 1072;
+  // The picture shown is the poster (1672x941); the openings below were measured on its 1920x1072 original, so the lamp
+  // scales x and y separately onto the poster
+  var IW = 1672, IH = 941, KX = 1672 / 1920, KY = 941 / 1072;
   // The dark openings (door and window) exactly as drawn by hand on the picture: this image is white inside them
   var BASE = document.currentScript ? document.currentScript.src : location.href;
   var OPEN_URL = new URL('../assets/lamp-mask-v1.png', BASE).href;
@@ -149,9 +151,9 @@
 
     var m = level;
     if (m <= .005) return;
-    var s = Math.max(W / IW, H / IH);
+    var s = Math.max(W / IW, H / IH), sx = s * KX, sy = s * KY;
     var ox = (W - IW * s) / 2, oy = (H - IH * s) / 2;
-    ctx.setTransform(s / 2, 0, 0, s / 2, ox / 2, oy / 2);
+    ctx.setTransform(sx / 2, 0, 0, sy / 2, ox / 2, oy / 2);
 
     // colour: sliding to orange when the lamp is starved
     var t0 = LAMP;
@@ -163,7 +165,7 @@
     // the upper left, so the left side and the top of the doorway are the brightest
     ictx.setTransform(1, 0, 0, 1, 0, 0);
     ictx.clearRect(0, 0, cw, ch);
-    ictx.setTransform(s / 2, 0, 0, s / 2, ox / 2, oy / 2);
+    ictx.setTransform(sx / 2, 0, 0, sy / 2, ox / 2, oy / 2);
     ictx.globalCompositeOperation = 'source-over';
     function ic_(a) { return c(a); }
     var g = ictx.createRadialGradient(SRC.x, SRC.y, 20, SRC.x, SRC.y, 290);
