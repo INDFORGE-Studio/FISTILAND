@@ -1,5 +1,5 @@
 {
-  "source": "One bunker per sector; positions read from a community map (about one percent of the map wide).",
+  "source": "One bunker per sector; positions from the community wiki scum.wiki.gg (about one percent of the map wide).",
   "bunkers": [
     { "sector": "D4", "x": 0.1419, "y": 0.0459 }, { "sector": "D3", "x": 0.3153, "y": 0.0503 }, { "sector": "D2", "x": 0.5660, "y": 0.0360 },
     { "sector": "D1", "x": 0.7600, "y": 0.0514 }, { "sector": "D0", "x": 0.9785, "y": 0.0150 },
