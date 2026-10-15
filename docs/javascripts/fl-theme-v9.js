@@ -10,27 +10,27 @@
     zombie: '<path fill-rule="evenodd" fill="currentColor" stroke="none" d="M12 3a8 8 0 0 0-8 8c0 2.6 1.2 4.4 3 5.6V20h2.2v-2h1.6v2h2.4v-2h1.6v2H17v-3.4c1.8-1.2 3-3 3-5.6a8 8 0 0 0-8-8zM8.3 9.3a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7.4 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4z"/>'
   };
   var T = {
-    en: { title: 'Veteran skins', fx: 'Effects', on: 'On', off: 'Off', names: ['FISTILAND', 'Survivalist', 'Special Forces', 'Demonic', 'Zombie'],
+    en: { title: 'Veteran skins', tip: 'Skin', fx: 'Effects', on: 'On', off: 'Off', names: ['FISTILAND', 'Survivalist', 'Special Forces', 'Demonic', 'Zombie'],
       tags: ['Back to the roots.', "Fire's lit. Stay warm.", 'Night vision on. Radio silence.', 'Welcome to the hot zone.', 'Braaains... and loot.'] },
-    fr: { title: 'Habillages Veteran', fx: 'Effets', on: 'Activé', off: 'Désactivé', names: ['FISTILAND', 'Survivaliste', 'Forces spéciales', 'Démoniaque', 'Zombie'],
+    fr: { title: 'Habillages Veteran', tip: 'Habillage', fx: 'Effets', on: 'Activé', off: 'Désactivé', names: ['FISTILAND', 'Survivaliste', 'Forces spéciales', 'Démoniaque', 'Zombie'],
       tags: ['Retour aux sources.', 'Le feu est allumé. Restez au chaud.', 'Vision nocturne activée. Silence radio.', 'Bienvenue en enfer.', 'Cerveaaaux... et du loot.'] },
-    de: { title: 'Veteran-Skins', fx: 'Effekte', on: 'An', off: 'Aus', names: ['FISTILAND', 'Survivalist', 'Spezialeinheit', 'Dämonisch', 'Zombie'],
+    de: { title: 'Veteran-Skins', tip: 'Skin', fx: 'Effekte', on: 'An', off: 'Aus', names: ['FISTILAND', 'Survivalist', 'Spezialeinheit', 'Dämonisch', 'Zombie'],
       tags: ['Zurück zu den Wurzeln.', 'Das Feuer brennt. Bleib warm.', 'Nachtsicht an. Funkstille.', 'Willkommen in der Hölle.', 'Gehiiirne... und Loot.'] },
-    es: { title: 'Skins Veteran', fx: 'Efectos', on: 'Activado', off: 'Desactivado', names: ['FISTILAND', 'Superviviente', 'Fuerzas especiales', 'Demoníaco', 'Zombi'],
+    es: { title: 'Skins Veteran', tip: 'Skin', fx: 'Efectos', on: 'Activado', off: 'Desactivado', names: ['FISTILAND', 'Superviviente', 'Fuerzas especiales', 'Demoníaco', 'Zombi'],
       tags: ['Vuelta a los orígenes.', 'Fuego encendido. Mantente caliente.', 'Visión nocturna activada. Silencio de radio.', 'Bienvenido al infierno.', 'Cerebrooos... y botín.'] },
-    it: { title: 'Skin Veteran', fx: 'Effetti', on: 'Attivo', off: 'Disattivato', names: ['FISTILAND', 'Sopravvivenzista', 'Forze speciali', 'Demoniaco', 'Zombie'],
+    it: { title: 'Skin Veteran', tip: 'Skin', fx: 'Effetti', on: 'Attivo', off: 'Disattivato', names: ['FISTILAND', 'Sopravvivenzista', 'Forze speciali', 'Demoniaco', 'Zombie'],
       tags: ['Ritorno alle origini.', 'Fuoco acceso. Resta al caldo.', 'Visione notturna attiva. Silenzio radio.', "Benvenuto all'inferno.", 'Cervelliii... e bottino.'] },
-    uk: { title: 'Скіни Veteran', fx: 'Ефекти', on: 'Увімк.', off: 'Вимк.', names: ['FISTILAND', 'Виживальник', 'Спецпідрозділ', 'Демонічний', 'Зомбі'],
+    uk: { title: 'Скіни Veteran', tip: 'Скін', fx: 'Ефекти', on: 'Увімк.', off: 'Вимк.', names: ['FISTILAND', 'Виживальник', 'Спецпідрозділ', 'Демонічний', 'Зомбі'],
       tags: ['Повернення до витоків.', 'Вогонь розпалено. Грійтеся.', 'Нічне бачення ввімкнено. Радіомовчання.', 'Ласкаво просимо в пекло.', 'Мозкииии... і лут.'] },
-    hr: { title: 'Veteran skinovi', fx: 'Efekti', on: 'Uključeno', off: 'Isključeno', names: ['FISTILAND', 'Survivalist', 'Specijalne snage', 'Demonski', 'Zombi'],
+    hr: { title: 'Veteran skinovi', tip: 'Skin', fx: 'Efekti', on: 'Uključeno', off: 'Isključeno', names: ['FISTILAND', 'Survivalist', 'Specijalne snage', 'Demonski', 'Zombi'],
       tags: ['Povratak korijenima.', 'Vatra je zapaljena. Ostani na toplom.', 'Noćni vid uključen. Radio šutnja.', 'Dobrodošao u pakao.', 'Mozgooove... i loot.'] },
-    pl: { title: 'Skórki Veteran', fx: 'Efekty', on: 'Włączone', off: 'Wyłączone', names: ['FISTILAND', 'Survivalista', 'Siły specjalne', 'Demoniczny', 'Zombie'],
+    pl: { title: 'Skórki Veteran', tip: 'Skórka', fx: 'Efekty', on: 'Włączone', off: 'Wyłączone', names: ['FISTILAND', 'Survivalista', 'Siły specjalne', 'Demoniczny', 'Zombie'],
       tags: ['Powrót do korzeni.', 'Ognisko płonie. Trzymaj się w cieple.', 'Noktowizor włączony. Cisza radiowa.', 'Witaj w piekle.', 'Mózgiiii... i loot.'] }
   };
   var lang = (document.documentElement.lang || 'en').slice(0, 2);
   var L = T[lang] || T.en;
   var root = document.documentElement;
-  var btn = null, panel = null, fxSw = null, current = '', tip = '';
+  var btn = null, panel = null, fxSw = null, tipEl = null, current = '', tip = '';
   var BASE = (location.pathname.match(/^(.*?\/FISTILAND\/)/) || ['', '/'])[1];
   var rmq = window.matchMedia ? window.matchMedia('(prefers-reduced-motion: reduce)') : null;
 
@@ -66,12 +66,9 @@
     put(KEY, id);
     if (btn) {
       btn.innerHTML = svg(id);
-      tip = L.title + ' : ' + L.names[IDS.indexOf(id)];
+      tip = L.tip + ' : ' + L.names[IDS.indexOf(id)];
       btn.setAttribute('aria-label', tip);
-      // If the theme's tooltip is showing it holds its own copy of the text: update that copy too
-      var bub = document.querySelectorAll('.md-tooltip2__inner'), shown = false;
-      for (var b = 0; b < bub.length; b++) if (bub[b].textContent.indexOf(L.title + ' : ') === 0) { bub[b].textContent = tip; shown = true; }
-      if (!shown || btn.hasAttribute('title')) btn.title = tip;
+      if (tipEl && tipEl.classList.contains('is-on')) showTip();
     }
     if (panel) {
       var opts = panel.querySelectorAll('.fl-theme-opt');
@@ -109,9 +106,20 @@
     }
   }
 
+  function showTip() {
+    if (!btn || !tipEl || !tip || (panel && panel.classList.contains('is-on'))) return;
+    tipEl.textContent = tip;
+    var r = btn.getBoundingClientRect(), w = tipEl.offsetWidth, x = r.left + r.width / 2 - w / 2;
+    tipEl.style.left = Math.max(8, Math.min(x, document.documentElement.clientWidth - w - 8)) + 'px';
+    tipEl.style.top = (r.bottom + 10) + 'px';
+    tipEl.classList.add('is-on');
+  }
+  function hideTip() { if (tipEl) tipEl.classList.remove('is-on'); }
+
   function opts() { return panel ? Array.prototype.slice.call(panel.querySelectorAll('.fl-theme-opt')) : []; }
   function openPanel() {
     if (!panel) return;
+    hideTip();
     panel.classList.add('is-on');
     btn.setAttribute('aria-expanded', 'true');
     var o = opts().filter(function (x) { return x.getAttribute('aria-checked') === 'true'; })[0] || opts()[0];
@@ -141,8 +149,12 @@
     btn.setAttribute('aria-haspopup', 'dialog');
     btn.setAttribute('aria-expanded', 'false');
     btn.setAttribute('aria-controls', 'fl-theme-panel');
-    // When the tooltip closes the theme puts back the title it had read when it opened: keep the current one
-    if (window.MutationObserver) new MutationObserver(function () { if (tip && btn.hasAttribute('title') && btn.title !== tip) btn.title = tip; }).observe(btn, { attributes: true, attributeFilter: ['title'] });
+    // Own tooltip (no title attribute: the theme's tooltip keeps a stale copy of the text it first read)
+    if (!tipEl) { tipEl = document.createElement('div'); tipEl.className = 'fl-hd-tip'; tipEl.setAttribute('aria-hidden', 'true'); document.body.appendChild(tipEl); }
+    btn.addEventListener('pointerenter', function (e) { if (e.pointerType === 'mouse') showTip(); });
+    btn.addEventListener('pointerleave', hideTip);
+    btn.addEventListener('focus', function () { if (btn.matches && btn.matches(':focus-visible')) showTip(); });
+    btn.addEventListener('blur', hideTip);
     anchor.parentNode.insertBefore(btn, anchor.nextSibling);
 
     panel = document.createElement('div');
