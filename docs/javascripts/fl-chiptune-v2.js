@@ -3,7 +3,7 @@
   // third-party tune, so there is nothing to license. A minor, eight bars (Am F C G Am F Dm E), looping; it speeds up a little
   // with every level. window.flMusic: start(getLevel), stop(), volume(v), mute(m).
   var AC = window.AudioContext || window.webkitAudioContext;
-  if (!AC) { window.flMusic = { start: function () {}, stop: function () {}, volume: function () {}, mute: function () {} }; return; }
+  if (!AC) { window.flMusic = { start: function () {}, stop: function () {}, sfx: function () {}, volume: function () {}, mute: function () {} }; return; }
 
   var ctx = null, master = null, comp = null, noise = null, timer = 0, step = 0, nextT = 0, getLevel = null;
   var vol = .5, muted = false, running = false;
@@ -102,8 +102,15 @@
   // a browser may keep the context suspended until the first touch / key press after the game has started
   ['pointerdown', 'keydown'].forEach(function (n) { document.addEventListener(n, function () { if (running) resume(); }, true); });
 
+  // short rising jingle (airdrop and pick-up)
+  function sfx() {
+    if (!running || !ctx || ctx.state !== 'running') return;
+    var t = ctx.currentTime + .02;
+    [76, 81, 88, 93].forEach(function (m, i) { tone('square', hz(m), t + i * .07, .16, .16, 3200); });
+  }
+
   window.flMusic = {
-    start: start, stop: stop,
+    start: start, stop: stop, sfx: sfx,
     volume: function (v) { vol = Math.max(0, Math.min(1, v)); setGain(); },
     mute: function (m) { muted = !!m; setGain(); }
   };

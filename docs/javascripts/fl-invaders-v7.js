@@ -23,6 +23,8 @@
 
   var on = false, keys = { L: 0, R: 0, F: 0 };
   var hero, shots, bolts, mechs, parts, kills, total, lives, level, score, cfg, state, stateAt, fx, fy, dir, nextBolt, intro, flash, banner, last = 0, shotAt = 0;
+  // airdrop: reach level 5 without losing a single life and a supply crate falls; catching it gives a second gun for the rest of the run
+  var DROP_LEVEL = 5, lostLife = false, armed = false, drop = null, dropIn = 0;
 
   function rnd(a, b) { return a + Math.random() * (b - a); }
 
@@ -43,10 +45,12 @@
     total = mechs.length;
     banner = { t: 'LEVEL ' + level, age: 0 };
     state = 'play'; stateAt = 0;
+    if (level === DROP_LEVEL && !lostLife && !armed && !drop) dropIn = 2.4;
     paintPips();
   }
   function newGame() {
     level = 1; score = 0; lives = 3; parts = []; flash = 0;
+    lostLife = false; armed = false; drop = null; dropIn = 0;
     hero = { x: FW / 2, inv: 0 };
     pipsEl.textContent = '';
     for (var i = 0; i < LEVELS; i++) pipsEl.appendChild(document.createElement('i'));
@@ -55,8 +59,10 @@
 
   function fire() {
     var now = performance.now();
-    if (!on || state !== 'play' || now - shotAt < 330 || shots.length >= 3) return;
-    shotAt = now; shots.push({ x: hero.x, y: PY - 8 });
+    if (!on || state !== 'play' || now - shotAt < 330 || shots.length >= (armed ? 6 : 3)) return;
+    shotAt = now;
+    if (armed) { shots.push({ x: hero.x - 6, y: PY - 8 }); shots.push({ x: hero.x + 6, y: PY - 8 }); }
+    else shots.push({ x: hero.x, y: PY - 8 });
   }
   function boom(x, y, c) {
     for (var i = 0; i < 9; i++) { var a = rnd(0, 6.283), v = rnd(30, 90); parts.push({ x: x, y: y, vx: Math.cos(a) * v, vy: Math.sin(a) * v, life: rnd(.3, .6), age: 0, c: c }); }
@@ -71,6 +77,19 @@
     if (flash > 0) flash = Math.max(0, flash - dt * 2.4);
     if (banner) { banner.age += dt; if (banner.age > 1.5) banner = null; }
     for (i = parts.length - 1; i >= 0; i--) { var q = parts[i]; q.age += dt; if (q.age >= q.life) { parts.splice(i, 1); continue; } q.x += q.vx * dt; q.y += q.vy * dt; }
+    // the supply crate: it floats down on its parachute, then waits on the ground until the prisoner walks into it
+    if (dropIn > 0) {
+      dropIn -= dt;
+      if (dropIn <= 0) { drop = { x0: rnd(26, FW - 26), x: 0, y: -30, age: 0, landed: false }; drop.x = drop.x0; banner = { t: 'AIRDROP', age: 0 }; if (window.flMusic) window.flMusic.sfx(); }
+    }
+    if (drop) {
+      drop.age += dt;
+      if (!drop.landed) { drop.y += 38 * dt; drop.x = drop.x0 + Math.sin(drop.age * 1.8) * 7; if (drop.y >= PY + 4) { drop.y = PY + 4; drop.landed = true; drop.x0 = drop.x; } }
+      if (state === 'play' && Math.abs(drop.x - hero.x) < HW / 2 + 5 && drop.y + 8 >= PY - 8) {
+        armed = true; boom(drop.x, drop.y, '255,200,70'); boom(drop.x, drop.y, '255,200,70'); drop = null;
+        banner = { t: 'DOUBLE GUN', age: 0 }; if (window.flMusic) window.flMusic.sfx();
+      }
+    }
     if (state !== 'play') return;
     if (keys.F) fire();
 
@@ -122,7 +141,7 @@
       var b = bolts[i]; b.y += cfg.boltV * dt;
       if (b.y > FW + 8) { bolts.splice(i, 1); continue; }
       if (hero.inv <= 0 && Math.abs(b.x - hero.x) < 6 && b.y + 6 > PY - 8 && b.y < PY + 10) {
-        bolts.splice(i, 1); lives--; hero.inv = 1.3; flash = 1; boom(hero.x, PY, '255,58,46');
+        bolts.splice(i, 1); lives--; lostLife = true; hero.inv = 1.3; flash = 1; boom(hero.x, PY, '255,58,46');
         if (lives <= 0) { state = 'lost'; stateAt = performance.now(); }
       }
     }
@@ -146,7 +165,23 @@
       var m = mechs[i]; if (!m.alive) continue;
       spr(MECHA, mx(m), my(m), { '#': steel[m.r % steel.length], e: eye });
     }
-    if (state !== 'lost' && (hero.inv <= 0 || Math.floor(t / 70) % 2)) spr(HERO, hero.x - HW / 2, PY - 8, SK);
+    if (drop) {
+      var dx = drop.x, dy = drop.y;
+      if (!drop.landed) {
+        ctx.fillStyle = '#ff7a1c'; ctx.beginPath(); ctx.arc(dx, dy - 11, 11, Math.PI, 0); ctx.fill();
+        ctx.fillStyle = 'rgba(13,12,11,.35)'; ctx.fillRect(dx - 3.7, dy - 21, 1.4, 10); ctx.fillRect(dx + 2.3, dy - 21, 1.4, 10);
+        ctx.strokeStyle = 'rgba(232,214,196,.75)'; ctx.lineWidth = .6; ctx.beginPath();
+        ctx.moveTo(dx - 11, dy - 11); ctx.lineTo(dx - 4, dy); ctx.moveTo(dx + 11, dy - 11); ctx.lineTo(dx + 4, dy); ctx.moveTo(dx, dy - 11); ctx.lineTo(dx, dy); ctx.stroke();
+      } else {
+        ctx.fillStyle = 'rgba(255,200,70,' + (.18 + .14 * Math.sin(t / 160)).toFixed(3) + ')'; ctx.fillRect(dx - 8, dy - 3, 16, 14);
+      }
+      ctx.fillStyle = '#6b7a3a'; ctx.fillRect(dx - 5, dy, 10, 8);
+      ctx.fillStyle = '#3b4420'; ctx.fillRect(dx - 5, dy + 3.2, 10, 1.6); ctx.fillRect(dx - .8, dy, 1.6, 8);
+    }
+    if (state !== 'lost' && (hero.inv <= 0 || Math.floor(t / 70) % 2)) {
+      spr(HERO, hero.x - HW / 2, PY - 8, SK);
+      if (armed) { ctx.fillStyle = SK.g; ctx.fillRect(hero.x - HW / 2, PY - 8, PX, PX * 4); ctx.fillStyle = SK.o; ctx.fillRect(hero.x - HW / 2 + PX, PY - 8 + PX * 4, PX, PX); }
+    }
     ctx.fillStyle = '#ffb347';
     for (i = 0; i < shots.length; i++) ctx.fillRect(shots[i].x - .8, shots[i].y, 1.6, 6);
     ctx.fillStyle = '#ff3a2e';
