@@ -56,7 +56,7 @@
   function populate() {
     P = [];
     var A = W * H, small = W < 640, f = small ? .6 : 1, i, n;
-    if (skin === 'survivalist') { n = clamp(A / 52000, 8, 30) * f; for (i = 0; i < n; i++) P.push(make('firefly')); for (i = 0; i < (small ? 8 : 16); i++) P.push(make('campember')); }
+    if (skin === 'survivalist') { n = clamp(A / 90000, 6, 16) * f; for (i = 0; i < n; i++) P.push(make('firefly')); for (i = 0; i < (small ? 5 : 9); i++) P.push(make('campember')); }
     else if (skin === 'forces') { n = clamp(A / 110000, 5, 14) * f; for (i = 0; i < n; i++) P.push(make('dust')); }
     else if (skin === 'demonic') { n = clamp(A / 15000, 24, 90) * f; for (i = 0; i < n; i++) P.push(make('ember')); }
     else if (skin === 'zombie') { n = clamp(A / 34000, 12, 40) * f; for (i = 0; i < n; i++) P.push(make('spore')); for (i = 0; i < (small ? 2 : 3); i++) P.push(make('fly')); }

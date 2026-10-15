@@ -7,7 +7,7 @@
         ['Places of interest', 'numbered markers; hover or tap a name in the list to light it up on the map. Dashed marker: approximate position. No marker: only the sector is known.'],
         ['Bunkers', 'one per sector, positions from the community wiki scum.wiki.gg (accurate to about one percent of the map).'],
         ['Sectors', 'from 4 to 0 left to right and from D to Z top to bottom.'],
-        ['Zoom', 'buttons, Ctrl + scroll or two fingers. Double-click to zoom in, drag to move.']], hab: 'Wildlife habitats', mut: 'Mutant sightings', openLegend: 'Open the legend as an image', poi: 'Places of interest', bk: 'Bunkers', bk1: 'Bunker', bkNote: 'One bunker per sector.', approx: 'Dashed marker: approximate position. No marker: only the sector is known; hover or tap the name to light it up.',
+        ['Zoom', 'buttons, Ctrl + scroll or two fingers. Double-click to zoom in, drag to move.']], hab: 'Wildlife habitats', mut: 'Mutant sightings', openLegend: 'Open the legend as an image', poi: 'Places of interest', bk: 'Bunkers', bk1: 'Bunker',
       sp: { bear: 'Bear', deer: 'Deer', wolf: 'Wolf', boar: 'Boar' } },
     fr: { zin: 'Zoom avant', zout: 'Zoom arrière', reset: 'Réinitialiser la vue', full: 'Plein écran', fail: 'La carte n’a pas pu être chargée.', open: 'Ouvrir l’image',
       sat: 'Carte satellite de l’île', guide: 'Guide de la faune', title: 'Carte de l’île', info: 'Fonctionnement', tip: [
@@ -16,7 +16,7 @@
         ['Lieux d’intérêt', 'repères numérotés ; survolez ou touchez un nom de la liste pour l’illuminer sur la carte. Repère hachuré : position approximative. Sans repère : seul le secteur est connu.'],
         ['Bunkers', 'un par secteur, positions issues du wiki communautaire scum.wiki.gg (précises à environ un pour cent de la carte).'],
         ['Secteurs', 'de 4 à 0 de gauche à droite et de D à Z de haut en bas.'],
-        ['Zoom', 'boutons, Ctrl + molette ou deux doigts. Double-clic pour zoomer, glissez pour déplacer.']], hab: 'Habitats de la faune', mut: 'Mutants repérés', openLegend: 'Ouvrir la légende en image', poi: 'Lieux d’intérêt', bk: 'Bunkers', bk1: 'Bunker', bkNote: 'Un bunker par secteur.', approx: 'Repère hachuré : position approximative. Sans repère : seul le secteur est connu ; survolez ou touchez le nom pour l’illuminer.',
+        ['Zoom', 'boutons, Ctrl + molette ou deux doigts. Double-clic pour zoomer, glissez pour déplacer.']], hab: 'Habitats de la faune', mut: 'Mutants repérés', openLegend: 'Ouvrir la légende en image', poi: 'Lieux d’intérêt', bk: 'Bunkers', bk1: 'Bunker',
       sp: { bear: 'Ours', deer: 'Cerf', wolf: 'Loup', boar: 'Sanglier' } },
     de: { zin: 'Vergrößern', zout: 'Verkleinern', reset: 'Ansicht zurücksetzen', full: 'Vollbild', fail: 'Die Karte konnte nicht geladen werden.', open: 'Bild öffnen',
       sat: 'Satellitenkarte der Insel', guide: 'Tierführer', title: 'Inselkarte', info: 'So funktioniert es', tip: [
@@ -25,7 +25,7 @@
         ['Interessante Orte', 'nummerierte Markierungen; einen Namen in der Liste überfahren oder antippen, um ihn auf der Karte hervorzuheben. Gestrichelte Markierung: ungefähre Position. Ohne Markierung: nur der Sektor ist bekannt.'],
         ['Bunker', 'einer pro Sektor, Positionen aus dem Community-Wiki scum.wiki.gg (auf etwa ein Prozent der Karte genau).'],
         ['Sektoren', 'von links nach rechts von 4 bis 0 und von oben nach unten von D bis Z.'],
-        ['Zoom', 'Schaltflächen, Strg + Mausrad oder zwei Finger. Doppelklick zum Vergrößern, ziehen zum Verschieben.']], hab: 'Lebensräume der Tiere', mut: 'Mutanten-Sichtungen', openLegend: 'Legende als Bild öffnen', poi: 'Interessante Orte', bk: 'Bunker', bk1: 'Bunker', bkNote: 'Ein Bunker pro Sektor.', approx: 'Gestrichelte Markierung: ungefähre Position. Ohne Markierung: nur der Sektor ist bekannt; Namen überfahren oder antippen, um ihn hervorzuheben.',
+        ['Zoom', 'Schaltflächen, Strg + Mausrad oder zwei Finger. Doppelklick zum Vergrößern, ziehen zum Verschieben.']], hab: 'Lebensräume der Tiere', mut: 'Mutanten-Sichtungen', openLegend: 'Legende als Bild öffnen', poi: 'Interessante Orte', bk: 'Bunker', bk1: 'Bunker',
       sp: { bear: 'Bär', deer: 'Hirsch', wolf: 'Wolf', boar: 'Wildschwein' } },
     es: { zin: 'Acercar', zout: 'Alejar', reset: 'Restablecer la vista', full: 'Pantalla completa', fail: 'No se pudo cargar el mapa.', open: 'Abrir la imagen',
       sat: 'Mapa satelital de la isla', guide: 'Guía de fauna', title: 'Mapa de la isla', info: 'Cómo funciona', tip: [
@@ -34,7 +34,7 @@
         ['Lugares de interés', 'marcadores numerados; pase el cursor o toque un nombre de la lista para iluminarlo en el mapa. Marcador discontinuo: posición aproximada. Sin marcador: solo se conoce el sector.'],
         ['Búnkeres', 'uno por sector, posiciones del wiki de la comunidad scum.wiki.gg (precisión de aproximadamente uno por ciento del mapa).'],
         ['Sectores', 'de 4 a 0 de izquierda a derecha y de D a Z de arriba abajo.'],
-        ['Zoom', 'botones, Ctrl + rueda o dos dedos. Doble clic para acercar, arrastre para mover.']], hab: 'Hábitats de la fauna', mut: 'Mutantes avistados', openLegend: 'Abrir la leyenda como imagen', poi: 'Lugares de interés', bk: 'Búnkeres', bk1: 'Búnker', bkNote: 'Un búnker por sector.', approx: 'Marcador discontinuo: posición aproximada. Sin marcador: solo se conoce el sector; pase el cursor o toque el nombre para iluminarlo.',
+        ['Zoom', 'botones, Ctrl + rueda o dos dedos. Doble clic para acercar, arrastre para mover.']], hab: 'Hábitats de la fauna', mut: 'Mutantes avistados', openLegend: 'Abrir la leyenda como imagen', poi: 'Lugares de interés', bk: 'Búnkeres', bk1: 'Búnker',
       sp: { bear: 'Oso', deer: 'Ciervo', wolf: 'Lobo', boar: 'Jabalí' } },
     it: { zin: 'Ingrandisci', zout: 'Riduci', reset: 'Reimposta la vista', full: 'Schermo intero', fail: 'Impossibile caricare la mappa.', open: 'Apri l’immagine',
       sat: 'Mappa satellitare dell’isola', guide: 'Guida alla fauna', title: 'Mappa dell’isola', info: 'Come funziona', tip: [
@@ -43,7 +43,7 @@
         ['Luoghi di interesse', 'segnaposto numerati; passa sopra o tocca un nome dell’elenco per evidenziarlo sulla mappa. Segnaposto tratteggiato: posizione approssimativa. Senza segnaposto: si conosce solo il settore.'],
         ['Bunker', 'uno per settore, posizioni dal wiki della comunità scum.wiki.gg (precise entro circa l’uno per cento della mappa).'],
         ['Settori', 'da 4 a 0 da sinistra a destra e da D a Z dall’alto in basso.'],
-        ['Zoom', 'pulsanti, Ctrl + rotella o due dita. Doppio clic per ingrandire, trascina per spostare.']], hab: 'Habitat della fauna', mut: 'Mutanti avvistati', openLegend: 'Apri la legenda come immagine', poi: 'Luoghi di interesse', bk: 'Bunker', bk1: 'Bunker', bkNote: 'Un bunker per settore.', approx: 'Segnaposto tratteggiato: posizione approssimativa. Senza segnaposto: si conosce solo il settore; passa sopra il nome o toccalo per evidenziarlo.',
+        ['Zoom', 'pulsanti, Ctrl + rotella o due dita. Doppio clic per ingrandire, trascina per spostare.']], hab: 'Habitat della fauna', mut: 'Mutanti avvistati', openLegend: 'Apri la legenda come immagine', poi: 'Luoghi di interesse', bk: 'Bunker', bk1: 'Bunker',
       sp: { bear: 'Orso', deer: 'Cervo', wolf: 'Lupo', boar: 'Cinghiale' } },
     uk: { zin: 'Збільшити', zout: 'Зменшити', reset: 'Скинути вигляд', full: 'На весь екран', fail: 'Не вдалося завантажити карту.', open: 'Відкрити зображення',
       sat: 'Супутникова карта острова', guide: 'Довідник фауни', title: 'Карта острова', info: 'Як це працює', tip: [
@@ -52,7 +52,7 @@
         ['Цікаві місця', 'пронумеровані маркери; наведіть курсор або торкніться назви у списку, щоб підсвітити її на карті. Пунктирний маркер: приблизна позиція. Без маркера: відомий лише сектор.'],
         ['Бункери', 'по одному на сектор, позиції з вікі спільноти scum.wiki.gg (точність приблизно один відсоток карти).'],
         ['Сектори', 'від 4 до 0 зліва направо та від D до Z зверху вниз.'],
-        ['Масштаб', 'кнопки, Ctrl + коліщатко або два пальці. Подвійний клік — збільшити, перетягніть, щоб зсунути.']], hab: 'Середовища фауни', mut: 'Мутанти на карті', openLegend: 'Відкрити легенду як зображення', poi: 'Цікаві місця', bk: 'Бункери', bk1: 'Бункер', bkNote: 'Один бункер на сектор.', approx: 'Пунктирний маркер: приблизна позиція. Без маркера: відомий лише сектор; наведіть курсор або торкніться назви, щоб підсвітити його.',
+        ['Масштаб', 'кнопки, Ctrl + коліщатко або два пальці. Подвійний клік — збільшити, перетягніть, щоб зсунути.']], hab: 'Середовища фауни', mut: 'Мутанти на карті', openLegend: 'Відкрити легенду як зображення', poi: 'Цікаві місця', bk: 'Бункери', bk1: 'Бункер',
       sp: { bear: 'Ведмідь', deer: 'Олень', wolf: 'Вовк', boar: 'Кабан' } },
     hr: { zin: 'Povećaj', zout: 'Smanji', reset: 'Vrati prikaz', full: 'Cijeli zaslon', fail: 'Karta se nije mogla učitati.', open: 'Otvori sliku',
       sat: 'Satelitska karta otoka', guide: 'Vodič kroz faunu', title: 'Karta otoka', info: 'Kako radi', tip: [
@@ -61,7 +61,7 @@
         ['Zanimljiva mjesta', 'numerirane oznake; zadrži pokazivač ili dodirni naziv na popisu da ga istakneš na karti. Iscrtkana oznaka: približan položaj. Bez oznake: poznat je samo sektor.'],
         ['Bunkeri', 'jedan po sektoru, položaji s wikija zajednice scum.wiki.gg (točni do otprilike jedan posto karte).'],
         ['Sektori', 'od 4 do 0 slijeva nadesno i od D do Z odozgo prema dolje.'],
-        ['Zoom', 'gumbi, Ctrl + kotačić ili dva prsta. Dvoklik za povećanje, povuci za pomicanje.']], hab: 'Staništa faune', mut: 'Uočeni mutanti', openLegend: 'Otvori legendu kao sliku', poi: 'Zanimljiva mjesta', bk: 'Bunkeri', bk1: 'Bunker', bkNote: 'Jedan bunker po sektoru.', approx: 'Iscrtkana oznaka: približan položaj. Bez oznake: poznat je samo sektor; zadrži pokazivač ili dodirni naziv da ga istakneš.',
+        ['Zoom', 'gumbi, Ctrl + kotačić ili dva prsta. Dvoklik za povećanje, povuci za pomicanje.']], hab: 'Staništa faune', mut: 'Uočeni mutanti', openLegend: 'Otvori legendu kao sliku', poi: 'Zanimljiva mjesta', bk: 'Bunkeri', bk1: 'Bunker',
       sp: { bear: 'Medvjed', deer: 'Jelen', wolf: 'Vuk', boar: 'Divlja svinja' } },
     pl: { zin: 'Przybliż', zout: 'Oddal', reset: 'Resetuj widok', full: 'Pełny ekran', fail: 'Nie udało się wczytać mapy.', open: 'Otwórz obraz',
       sat: 'Satelitarna mapa wyspy', guide: 'Przewodnik po faunie', title: 'Mapa wyspy', info: 'Jak to działa', tip: [
@@ -70,7 +70,7 @@
         ['Ciekawe miejsca', 'ponumerowane znaczniki; najedź kursorem lub dotknij nazwy na liście, aby podświetlić ją na mapie. Znacznik przerywany: pozycja przybliżona. Brak znacznika: znany jest tylko sektor.'],
         ['Bunkry', 'jeden na sektor, pozycje z wiki społeczności scum.wiki.gg (dokładne do około jednego procenta mapy).'],
         ['Sektory', 'od 4 do 0 od lewej do prawej i od D do Z od góry do dołu.'],
-        ['Zoom', 'przyciski, Ctrl + kółko lub dwa palce. Podwójne kliknięcie przybliża, przeciągnij, aby przesunąć.']], hab: 'Siedliska fauny', mut: 'Zauważone mutanty', openLegend: 'Otwórz legendę jako obraz', poi: 'Ciekawe miejsca', bk: 'Bunkry', bk1: 'Bunkier', bkNote: 'Jeden bunkier na sektor.', approx: 'Znacznik przerywany: pozycja przybliżona. Brak znacznika: znany jest tylko sektor; najedź kursorem lub dotknij nazwy, aby ją podświetlić.',
+        ['Zoom', 'przyciski, Ctrl + kółko lub dwa palce. Podwójne kliknięcie przybliża, przeciągnij, aby przesunąć.']], hab: 'Siedliska fauny', mut: 'Zauważone mutanty', openLegend: 'Otwórz legendę jako obraz', poi: 'Ciekawe miejsca', bk: 'Bunkry', bk1: 'Bunkier',
       sp: { bear: 'Niedźwiedź', deer: 'Jeleń', wolf: 'Wilk', boar: 'Dzik' } }
   };
   var lang = (document.documentElement.lang || 'en').slice(0, 2);

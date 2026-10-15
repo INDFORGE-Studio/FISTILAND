@@ -260,7 +260,7 @@ html[data-fl-theme] :is(body:not(:has(.fl-home)), .fl-home)::after { content: ""
    --------------------------------------------------------------------- */
 html[data-fl-theme="survivalist"] {
   --sk-radius: 2px;
-  & body { background-image: var(--sk-noise-w); background-size: 220px; background-blend-mode: soft-light; }
+
   & .md-typeset h1, & .md-typeset h2, & .md-typeset h3 { text-transform: none; text-shadow: 0 1px 0 rgba(0, 0, 0, .6); }
   & .md-typeset h1 { text-transform: uppercase; }
   & .md-typeset a:not(.md-button):not(.fl-discord):not(.fl-btn) { text-decoration: underline dashed; text-decoration-thickness: 1px; text-underline-offset: .22em; text-decoration-color: rgba(var(--fl-hot-rgb), .55); }
@@ -318,7 +318,7 @@ html[data-fl-theme="survivalist"] {
     }
   }
   & .fl-fx .fx-vig { background: radial-gradient(ellipse at 50% 45%, transparent 60%, rgba(20, 12, 4, .3) 88%, rgba(8, 5, 2, .55) 100%); }
-  & .fl-fx .fx-grain { inset: -20%; background: var(--sk-noise-w); background-size: 240px; opacity: .05; animation: fl-grain 1s steps(5) infinite; }
+  & .fl-fx .fx-grain { background: var(--sk-noise-w); background-size: 240px; opacity: .05; }
 }
 @keyframes fl-fire { 0%, 100% { opacity: .82; transform: scale(1) translate3d(0, 0, 0); } 30% { opacity: 1; transform: scale(1.05) translate3d(1%, -1%, 0); } 60% { opacity: .74; transform: scale(.97) translate3d(-1%, 0, 0); } }
 @keyframes fl-fire2 { 0%, 100% { opacity: .7; transform: scale(1); } 25% { opacity: 1; transform: scale(1.12) translateY(-3%); } 50% { opacity: .6; transform: scale(.94); } 75% { opacity: .95; transform: scale(1.06) translateY(-2%); } }
