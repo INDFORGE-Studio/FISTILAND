@@ -179,7 +179,7 @@
       });
       // double-click (or double-tap) the badge: start again from zero
       badge.addEventListener('dblclick', function () {
-        try { localStorage.removeItem(KEY); localStorage.removeItem('fl-lang'); } catch (e) {}
+        try { localStorage.removeItem(KEY); localStorage.removeItem('fl-lang'); localStorage.removeItem('fl-invaders-top'); } catch (e) {}
         state = {};
         clearTimeout(hintTimer);
         if (hint) hint.classList.remove('is-on');
