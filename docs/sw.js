@@ -64,6 +64,23 @@ function networkFirst(req) {
   return fetch(req).then(function (res) { return keep(req, res); }).catch(function () { return caches.match(req); });
 }
 
+// the page lists what it loaded (images, fonts, itself) so a first visit is kept completely, even what loaded before this worker took over
+self.addEventListener('message', function (e) {
+  var d = e.data;
+  if (!d || !Array.isArray(d.keep)) return;
+  e.waitUntil(caches.open(CACHE).then(function (c) {
+    return Promise.all(d.keep.slice(0, 120).map(function (u) {
+      var url;
+      try { url = new URL(u, self.location.href); } catch (x) { return null; }
+      if (url.origin !== self.location.origin || url.pathname.indexOf(ROOT) !== 0 || SKIP.test(url.pathname) || /\/sw\.js$/.test(url.pathname)) return null;
+      return c.match(url.href).then(function (hit) {
+        if (hit) return null;
+        return fetch(url.href).then(function (res) { return res && res.ok && res.type === 'basic' ? c.put(url.href, res) : null; }).catch(function () { return null; });
+      });
+    }));
+  }));
+});
+
 self.addEventListener('fetch', function (e) {
   var req = e.request;
   if (req.method !== 'GET' || req.headers.has('range')) return;

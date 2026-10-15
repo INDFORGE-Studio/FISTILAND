@@ -75,6 +75,9 @@
 }
 .md-typeset dl dd { margin: .25rem 0 0; padding: 0 0 0 1rem; border-left: 2px solid var(--fl-line); }
 
+/* ---- Settings tables: the value column never collapses to one letter per line on a phone ---- */
+.md-typeset table:not([class]) tr > :nth-child(2):not(:last-child) { min-width: 5.6rem; overflow-wrap: normal; }
+
 /* ---- Last-updated line (added at build time) ---- */
 .fl-updated { margin: 2.2rem 0 0; font-size: .68rem; letter-spacing: .08em; text-transform: uppercase; color: #8d8176; }
 .fl-updated time { color: #b9aea3; }

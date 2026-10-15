@@ -104,7 +104,14 @@
     var src = document.currentScript && document.currentScript.src, sw = null, scope = null;
     if (src && /javascripts\/[^\/]*$/.test(src)) { sw = src.replace(/javascripts\/[^\/]*$/, 'sw.js'); scope = sw.replace(/sw\.js$/, ''); }
     if (sw) {
-      var reg = function () { navigator.serviceWorker.register(sw, { scope: scope }).catch(function () {}); };
+      var reg = function () {
+        navigator.serviceWorker.register(sw, { scope: scope }).catch(function () {});
+        navigator.serviceWorker.ready.then(function (r) {   // hand the worker the list of what this page used, so it is kept for offline use
+          var list = [location.origin + location.pathname + location.search];
+          try { performance.getEntriesByType('resource').forEach(function (e) { if (e.name.indexOf(scope) === 0) list.push(e.name); }); } catch (x) {}
+          if (r.active) r.active.postMessage({ keep: list.slice(0, 120) });
+        }).catch(function () {});
+      };
       var go = function () { (window.requestIdleCallback || function (f) { setTimeout(f, 1500); })(reg); };
       if (document.readyState === 'complete') go(); else window.addEventListener('load', go);
     }
