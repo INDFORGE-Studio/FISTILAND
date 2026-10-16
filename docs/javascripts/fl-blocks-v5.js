@@ -1,6 +1,6 @@
 (function () {
   // 404 page: BUNKER. Reached when the wandering Discord characters are wiped out family by family (fl-logo404 sends `fl-blocks`). Loot crates fall into a
-  // bunker; fill a whole row to seal it. The crates are our own set of seven (three- to five-block shapes), the board is
+  // bunker; fill a whole row to seal it. The crates are our own set of fifteen (two- to five-block shapes), the board is
   // 8 x 14. Arrows / WASD (space = drop) or the pad on touch screens. Game over: a result card (fl-arcade) with a
   // copy-to-clipboard button. Nothing is saved. This game never grants any rank.
   var cv = document.getElementById('fl-snake'), pipsEl = document.getElementById('fl-pips');
@@ -17,12 +17,22 @@
     [[0, 0], [0, 1], [0, 2], [1, 2]],
     [[0, 0], [1, 0], [0, 1], [1, 1], [0, 2]],
     [[0, 0], [2, 0], [0, 1], [1, 1], [2, 1]],
-    [[1, 0], [0, 1], [1, 1], [2, 1], [1, 2]]
+    [[1, 0], [0, 1], [1, 1], [2, 1], [1, 2]],
+    [[0, 0], [1, 0]],                                   // 7  ammo box
+    [[0, 0], [0, 1], [0, 2], [1, 2], [2, 2]],           // 8  corner crate
+    [[0, 0], [0, 1], [1, 1], [1, 2], [2, 2]],           // 9  staircase
+    [[0, 0], [1, 0], [2, 0], [1, 1], [1, 2]],           // 10 hammer
+    [[0, 0], [1, 0], [1, 1], [1, 2], [2, 2]],           // 11 zigzag
+    [[0, 0], [0, 1], [1, 1], [1, 2], [1, 3]],           // 12 lightning
+    [[0, 0], [0, 1], [0, 2], [0, 3], [1, 1]],           // 13 flagpole
+    [[1, 0], [2, 0], [0, 1], [1, 1], [1, 2]]            // 14 scrap heap
   ];
-  var BAG = [0, 0, 0, 1, 1, 1, 2, 2, 3, 3, 4, 5, 6];   // small crates come up more often
+  var BAG = [0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 2, 2, 2, 2, 3, 3, 3, 3, 7, 7, 7, 7, 4, 5, 6, 8, 9, 10, 11, 12, 13, 14];   // small crates come up more often
   var COLORS = [
     { b: '#e8631c', l: '#ff9a5c', d: '#8a3a0f' }, { b: '#6b7a3a', l: '#93a552', d: '#3b4420' }, { b: '#8f9aa3', l: '#bcc5cc', d: '#4e5760' }, { b: '#a8402a', l: '#d66a50', d: '#5c2014' },
-    { b: '#d9a63a', l: '#f2cb6e', d: '#7a5a14' }, { b: '#a89a6c', l: '#cfc296', d: '#5a5034' }, { b: '#3f5a3c', l: '#62855d', d: '#223320' }
+    { b: '#d9a63a', l: '#f2cb6e', d: '#7a5a14' }, { b: '#a89a6c', l: '#cfc296', d: '#5a5034' }, { b: '#3f5a3c', l: '#62855d', d: '#223320' },
+    { b: '#b8732e', l: '#dc9a58', d: '#69401a' }, { b: '#5a7a8a', l: '#86a6b6', d: '#2e4350' }, { b: '#7a2a2a', l: '#a85454', d: '#401212' }, { b: '#c9b45a', l: '#e6d488', d: '#756626' },
+    { b: '#4a6a5a', l: '#74947f', d: '#26392f' }, { b: '#8a6a4a', l: '#b08e6c', d: '#4a3622' }, { b: '#9a9a52', l: '#c0c07c', d: '#52522a' }, { b: '#a06060', l: '#c88888', d: '#582e2e' }
   ];
 
   var on = false, last = 0, grid, cur, next, acc, soft, score, lines, level, state, stateAt, full, flash, banner, parts, padBuilt = false;
