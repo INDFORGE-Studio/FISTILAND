@@ -1,12 +1,12 @@
 (function () {
   // 404 page: BUNKER. Reached when a long pong rally makes the court collapse (fl-pong sends `fl-blocks`). Loot crates fall into a
   // bunker; fill a whole row to seal it. The crates are our own set of seven (three- to five-block shapes), the board is
-  // 8 x 14. Arrows / WASD (space = drop) or the pad on touch screens. Game over: sign the fame score on a top 3 kept in this
-  // browser. This game never grants any rank.
+  // 8 x 14. Arrows / WASD (space = drop) or the pad on touch screens. Game over: a result card (fl-arcade) with a
+  // copy-to-clipboard button. Nothing is saved. This game never grants any rank.
   var cv = document.getElementById('fl-snake'), pipsEl = document.getElementById('fl-pips');
   if (!cv || !cv.getContext) return;
   var game = cv.parentNode, ctx = cv.getContext('2d'), HOME = cv.getAttribute('data-home') || '/';
-  var FW = 300, COLS = 8, ROWS = 14, C = 20, BX = 34, BY = 10, LEVELS = 10, TOP_KEY = 'fl-blocks-top';
+  var FW = 300, COLS = 8, ROWS = 14, C = 20, BX = 34, BY = 10, LEVELS = 10;
   var FONT = 'ui-monospace, Consolas, Menlo, monospace';
 
   // crates: each shape is a list of [x, y] cells
@@ -180,7 +180,7 @@
 
   function finish() {
     if (window.flMusic) window.flMusic.stop();
-    var o = { title: 'Game over', score: score, line: 'SEALED ' + lines + '  ·  LEVEL ' + level, top: { key: TOP_KEY, level: level }, replay: restart, home: HOME };
+    var o = { game: 'BUNKER', icon: '📦', title: 'Game over', win: false, score: score, stats: [['SEALED', lines], ['LEVEL', level]], tiers: [500, 1500, 3500, 7000], home: HOME };
     if (window.flArcade) window.flArcade.finish(o); else location.assign(HOME);
   }
   function restart() {
