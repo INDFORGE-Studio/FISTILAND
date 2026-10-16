@@ -29,7 +29,7 @@
 
   function shareText(o, g) {
     var lines = [
-      '☣ FISTILAND · SCUM SERVER ☣',
+      '☣️ FISTILAND · SCUM SERVER ☣️',
       (o.icon || '🎮') + ' ' + o.game + ' — ' + o.title.toUpperCase(),
       '🏆 FAME ' + o.score + ' · ' + g[0]
     ];
