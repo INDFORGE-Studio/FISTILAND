@@ -1,16 +1,15 @@
 (function () {
   // 404 page: KILLBOX DUEL. After 30 seconds without any input the snake board turns into an attract-mode pong played by two
   // machines (INSERT COIN). A tap, a click or an arrow / W / S key takes the left paddle: the SCUM prisoner's riot shield against a
-  // mecha plate, a toxic mushroom for a ball. First to 7 wins. A rally of 20 hits in a human match makes the whole court collapse
-  // into the next game (fl-blocks). This game never grants any rank.
+  // mecha plate, a toxic mushroom for a ball. First to 7 wins, then the result card. This game never grants any rank.
   var cv = document.getElementById('fl-snake'), pipsEl = document.getElementById('fl-pips');
   if (!cv || !cv.getContext) return;
   var ctx = cv.getContext('2d'), HOME = cv.getAttribute('data-home') || '/';
-  var FW = 300, IDLE = 30000, WIN = 7, GOAL = 20, PH = 44, PW = 6, LX = 16, RX = 284, TOP = 6, BOT = 294;
+  var FW = 300, IDLE = 30000, WIN = 7, PH = 44, PW = 6, LX = 16, RX = 284, TOP = 6, BOT = 294;
   var FONT = 'ui-monospace, Consolas, Menlo, monospace';
 
   var on = false, demo = false, last = 0, lastAct = performance.now(), flash = 0, shake = 0;
-  var L, R, ball, sl, sr, rally, best = 0, state, stateAt, serveIn, banner, pieces, trail, sparks;
+  var L, R, ball, sl, sr, rally, best = 0, state, stateAt, serveIn, banner, trail, sparks;
   var keys = { U: 0, D: 0 }, ptr = null;
 
   function rnd(a, b) { return a + Math.random() * (b - a); }
@@ -24,7 +23,7 @@
   }
   function newMatch(dir) {
     sl = 0; sr = 0; best = 0; L = { x: LX, y: FW / 2, off: 0 }; R = { x: RX, y: FW / 2, off: 0 };
-    sparks = []; pieces = null; flash = 0; shake = 0; state = 'play'; stateAt = 0; serve(dir);
+    sparks = []; flash = 0; shake = 0; state = 'play'; stateAt = 0; serve(dir);
   }
 
   function spark(x, y, c, n) { for (var i = 0; i < n; i++) { var a = rnd(0, 6.283), v = rnd(25, 80); sparks.push({ x: x, y: y, vx: Math.cos(a) * v, vy: Math.sin(a) * v, life: rnd(.25, .5), age: 0, c: c }); } }
@@ -38,7 +37,6 @@
     (p === L ? R : L).off = rnd(-1, 1) * PH * (demo ? .62 : .4);   // the machines of the attract mode are sloppy enough to lose points
     spark(ball.x, ball.y, p === L ? '255,122,28' : '170,180,188', 6); shake = Math.max(shake, .1);
     sfx('hit');
-    if (!demo && rally >= GOAL) crash();
   }
 
   function point(leftScored) {
@@ -49,21 +47,6 @@
       if (demo) { sl = 0; sr = 0; } else { state = 'over'; stateAt = performance.now(); ball.vx = ball.vy = 0; ball.x = FW / 2; ball.y = FW / 2; return; }
     }
     serve(leftScored ? 1 : -1);
-  }
-
-  // the court falls apart into loose blocks: the hand-over to the next game
-  function crash() {
-    state = 'crash'; stateAt = performance.now(); flash = 1; shake = .6; sfx('crash');
-    pieces = [];
-    function add(x, y, c) { pieces.push({ x: x - 3, y: y - 3, vx: rnd(-40, 40), vy: rnd(-90, -10), c: c }); }
-    var i;
-    for (i = 0; i < 7; i++) { add(L.x, L.y - PH / 2 + 3 + i * 6, '#ff7a1c'); add(R.x, R.y - PH / 2 + 3 + i * 6, '#aab4bc'); }
-    for (i = 0; i < 12; i++) add(FW / 2, 14 + i * 24, '#8a7a68');
-    for (i = 0; i < 6; i++) add(i * 60, TOP - 2, '#ff7a1c');
-    for (i = 0; i < 6; i++) add(i * 60 + 30, BOT + 2, '#ff7a1c');
-    add(ball.x, ball.y, '#ffb347');
-    ball.vx = ball.vy = 0;
-    banner = { t: '?!', age: 0 };
   }
 
   function aiMove(p, dt, speed, toward) {
@@ -78,11 +61,6 @@
     if (flash > 0) flash = Math.max(0, flash - dt * 2);
     if (shake > 0) shake = Math.max(0, shake - dt);
     for (i = sparks.length - 1; i >= 0; i--) { var q = sparks[i]; q.age += dt; if (q.age >= q.life) { sparks.splice(i, 1); continue; } q.x += q.vx * dt; q.y += q.vy * dt; }
-    if (state === 'crash') {
-      for (i = 0; i < pieces.length; i++) { var c = pieces[i]; c.vy += 430 * dt; c.x += c.vx * dt; c.y += c.vy * dt; }
-      if (performance.now() - stateAt > 1700) handOver();
-      return;
-    }
     // the left paddle: the visitor (finger / mouse position, or keys), or a slow machine in attract mode
     if (demo) aiMove(L, dt, 90, ball.vx < 0);
     else {
@@ -117,34 +95,29 @@
     var k = cv.width / FW, sx = shake > 0 ? rnd(-1, 1) * shake * 8 : 0, sy = shake > 0 ? rnd(-1, 1) * shake * 8 : 0, i;
     ctx.setTransform(1, 0, 0, 1, 0, 0); ctx.clearRect(0, 0, cv.width, cv.height);
     ctx.setTransform(k, 0, 0, k, sx * k, sy * k);
-    var crashing = state === 'crash';
     // bunker walls: hazard stripes top and bottom
-    if (!crashing) for (i = 0; i < FW; i += 12) {
+    for (i = 0; i < FW; i += 12) {
       ctx.fillStyle = '#ff7a1c'; ctx.fillRect(i, 0, 6, TOP - 1); ctx.fillRect(i + 6, BOT + 1, 6, TOP - 1);
       ctx.fillStyle = '#2a1a10'; ctx.fillRect(i + 6, 0, 6, TOP - 1); ctx.fillRect(i, BOT + 1, 6, TOP - 1);
     }
     // barbed wire along the middle
-    if (!crashing) { ctx.fillStyle = 'rgba(232,214,196,.22)'; for (i = 14; i < FW - 8; i += 12) { ctx.fillRect(FW / 2 - 1, i, 2, 6); if ((i / 12 | 0) % 2) ctx.fillRect(FW / 2 - 3, i + 2, 6, 1.4); } }
+    ctx.fillStyle = 'rgba(232,214,196,.22)'; for (i = 14; i < FW - 8; i += 12) { ctx.fillRect(FW / 2 - 1, i, 2, 6); if ((i / 12 | 0) % 2) ctx.fillRect(FW / 2 - 3, i + 2, 6, 1.4); }
     // scores
     ctx.font = '700 26px ' + FONT; ctx.textBaseline = 'top'; ctx.textAlign = 'center';
     ctx.globalAlpha = demo ? .3 : .9;
-    if (!crashing) { ctx.fillStyle = '#ff7a1c'; ctx.fillText(String(sl), FW / 2 - 40, 14); ctx.fillStyle = '#aab4bc'; ctx.fillText(String(sr), FW / 2 + 40, 14); }
+    ctx.fillStyle = '#ff7a1c'; ctx.fillText(String(sl), FW / 2 - 40, 14); ctx.fillStyle = '#aab4bc'; ctx.fillText(String(sr), FW / 2 + 40, 14);
     ctx.globalAlpha = 1;
 
-    if (crashing) {
-      for (i = 0; i < pieces.length; i++) { ctx.fillStyle = pieces[i].c; ctx.fillRect(pieces[i].x, pieces[i].y, 6, 6); }
-    } else {
-      // the prisoner's riot shield (left, orange) and the mecha plate (right, steel, red eye)
-      ctx.fillStyle = '#ff7a1c'; ctx.fillRect(L.x - PW / 2, L.y - PH / 2, PW, PH);
-      ctx.fillStyle = '#2a1a10'; ctx.fillRect(L.x - PW / 2, L.y - PH / 2 + 4, PW, 1.5); ctx.fillRect(L.x - PW / 2, L.y + PH / 2 - 5.5, PW, 1.5);
-      ctx.fillStyle = '#ffd9a8'; ctx.fillRect(L.x - PW / 2 + 1, L.y - 3, 2, 6);
-      ctx.fillStyle = '#aab4bc'; ctx.fillRect(R.x - PW / 2, R.y - PH / 2, PW, PH);
-      ctx.fillStyle = '#6f7a84'; ctx.fillRect(R.x - PW / 2, R.y - PH / 2 + 4, PW, 1.5); ctx.fillRect(R.x - PW / 2, R.y + PH / 2 - 5.5, PW, 1.5);
-      ctx.fillStyle = Math.floor(t / 300) % 2 ? '#ff3a2e' : '#ff8a5c'; ctx.fillRect(R.x - 1.5, R.y - 2, 3, 4);
-      // spores behind the mushroom, then the mushroom
-      for (i = 0; i < trail.length; i++) { ctx.fillStyle = 'rgba(255,179,71,' + (.06 + i * .05).toFixed(2) + ')'; ctx.fillRect(trail[i].x - 2, trail[i].y - 2, 4, 4); }
-      if (serveIn <= 0 || Math.floor(t / 110) % 2) mushroom(ball.x, ball.y - 1);
-    }
+    // the prisoner's riot shield (left, orange) and the mecha plate (right, steel, red eye)
+    ctx.fillStyle = '#ff7a1c'; ctx.fillRect(L.x - PW / 2, L.y - PH / 2, PW, PH);
+    ctx.fillStyle = '#2a1a10'; ctx.fillRect(L.x - PW / 2, L.y - PH / 2 + 4, PW, 1.5); ctx.fillRect(L.x - PW / 2, L.y + PH / 2 - 5.5, PW, 1.5);
+    ctx.fillStyle = '#ffd9a8'; ctx.fillRect(L.x - PW / 2 + 1, L.y - 3, 2, 6);
+    ctx.fillStyle = '#aab4bc'; ctx.fillRect(R.x - PW / 2, R.y - PH / 2, PW, PH);
+    ctx.fillStyle = '#6f7a84'; ctx.fillRect(R.x - PW / 2, R.y - PH / 2 + 4, PW, 1.5); ctx.fillRect(R.x - PW / 2, R.y + PH / 2 - 5.5, PW, 1.5);
+    ctx.fillStyle = Math.floor(t / 300) % 2 ? '#ff3a2e' : '#ff8a5c'; ctx.fillRect(R.x - 1.5, R.y - 2, 3, 4);
+    // spores behind the mushroom, then the mushroom
+    for (i = 0; i < trail.length; i++) { ctx.fillStyle = 'rgba(255,179,71,' + (.06 + i * .05).toFixed(2) + ')'; ctx.fillRect(trail[i].x - 2, trail[i].y - 2, 4, 4); }
+    if (serveIn <= 0 || Math.floor(t / 110) % 2) mushroom(ball.x, ball.y - 1);
     for (i = 0; i < sparks.length; i++) { var q = sparks[i]; ctx.fillStyle = 'rgba(' + q.c + ',' + (1 - q.age / q.life).toFixed(2) + ')'; ctx.fillRect(q.x - 1, q.y - 1, 2, 2); }
 
     ctx.textAlign = 'center';
@@ -170,7 +143,6 @@
     requestAnimationFrame(loop);
     var dt = Math.min(.05, (t - last) / 1000); last = t;
     update(dt);
-    if (!on) return;   // the court has just collapsed into the next game
     draw(t);
     if (state === 'over' && !cv.getAttribute('data-ended') && t - stateAt > 900) { cv.setAttribute('data-ended', '1'); finish(sl >= WIN); }
   }
@@ -182,13 +154,6 @@
       stats: [['MATCH', sl + '-' + sr], ['BEST RALLY', best]], tiers: [150, 350, 600, 900], home: HOME
     };
     if (window.flArcade) window.flArcade.finish(o); else location.assign(HOME);
-  }
-
-  // the court has collapsed: hand the board over to the blocks game
-  function handOver() {
-    on = false; pieces = null;
-    if (window.flMusic) window.flMusic.stop();
-    document.dispatchEvent(new Event('fl-blocks'));
   }
 
   function startHuman() {
