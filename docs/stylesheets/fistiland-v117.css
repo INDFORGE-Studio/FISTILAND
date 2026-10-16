@@ -1066,7 +1066,7 @@ canvas.fl-island__ov { position: absolute; inset: 0; width: 100%; height: 100%; 
 }
 
 /* ---- Island map, full screen: the picture takes the whole height, the legends become dockable panels ----
-   100cqmin = the smaller side of the screen. Landscape: the map is centred, the two docks use the space left and right.
+   Landscape: the map is centred under its bar, the two docks use the space left and right.
    Portrait: the docks sit above and below. A panel can also be dragged out and left floating over the map. */
 html.fl-fs-lock, html.fl-fs-lock body { overflow: hidden; }
 .fl-dock, .fl-pn__hd { display: none; }
@@ -1079,16 +1079,30 @@ html.fl-fs-lock, html.fl-fs-lock body { overflow: hidden; }
 .fl-island.is-fs.is-moving { cursor: grabbing; }
 .fl-island.is-fs .fl-island__strip, .fl-island.is-fs .fl-island__foot { display: none !important; }
 
+/* geometry. Nothing sits on the picture: the bar is a strip above the map, the zoom buttons a column beside it.
+   --fl-b = bar height (measured by JS), --fl-s = side of the square map, --fl-ml = free width on each side of it.
+   Landscape: bar on top, map under it, zoom column outside its left edge. */
+.fl-island.is-fs {
+  --fl-b: var(--fl-barh, 3.2rem);
+  --fl-s: max(10rem, min(calc(100cqw - 6rem), calc(100cqh - var(--fl-b))));
+  --fl-ml: calc((100cqw - var(--fl-s)) / 2);
+  --fl-bt: calc((100cqh - var(--fl-s) - var(--fl-b)) / 2);
+}
+
 /* top bar: the logo (with its popup) and the layer toggles, as wide as the map */
 .fl-island.is-fs .fl-island__bar {
   position: absolute; z-index: 30; box-sizing: border-box; margin: 0;
-  left: calc((100cqw - 100cqmin) / 2); top: calc((100cqh - 100cqmin) / 2); width: 100cqmin;
+  left: var(--fl-ml); top: var(--fl-bt); width: var(--fl-s);
   background: var(--fl-panel);
   background: color-mix(in srgb, var(--fl-panel) 90%, transparent);
   -webkit-backdrop-filter: blur(3px); backdrop-filter: blur(3px);
   border-bottom: 1px solid var(--fl-line);
 }
-.fl-island.is-fs .fl-island__tip { width: min(46rem, calc(100cqmin - 1rem)); max-height: calc(100cqh - var(--fl-barh, 3.6rem) - 1.5rem); overflow-y: auto; }
+@media (orientation: landscape) and (max-height: 720px) {
+  /* low screens: a bar only as wide as the map would wrap onto many rows and eat the height, so it may be wider than the map (still never over it) */
+  .fl-island.is-fs .fl-island__bar { width: min(calc(100cqw - 1rem), 42rem); left: calc((100cqw - min(calc(100cqw - 1rem), 42rem)) / 2); }
+}
+.fl-island.is-fs .fl-island__tip { width: min(46rem, calc(var(--fl-s) - 1rem)); max-height: calc(100cqh - var(--fl-barh, 3.6rem) - 1.5rem); overflow-y: auto; }
 .fl-island.is-fs .fl-island__ttl { padding: .3rem .7rem; }
 .fl-island.is-fs .fl-island__lg .ico { width: 1.9rem; height: 1.9rem; }
 .fl-island.is-fs .fl-island__tgs { flex: 1; min-width: 0; gap: .25rem .35rem; padding: .35rem .5rem; }
@@ -1100,13 +1114,13 @@ html.fl-fs-lock, html.fl-fs-lock body { overflow: hidden; }
   .fl-island.is-fs .fl-island__tg { padding: .1rem .3rem; font-size: .6rem; letter-spacing: .02em; }
 }
 
-/* the map: a square as large as the screen allows, zoom buttons in a column at its top left under the bar */
+/* the map: a square as large as the screen allows, zoom buttons in a column just outside its top left corner */
 .fl-island.is-fs .fl-island__body {
   position: absolute; display: block; margin: 0;
-  left: calc((100cqw - 100cqmin) / 2); top: calc((100cqh - 100cqmin) / 2); width: 100cqmin; height: 100cqmin;
+  left: var(--fl-ml); top: calc(var(--fl-bt) + var(--fl-b)); width: var(--fl-s); height: var(--fl-s);
 }
 .fl-island.is-fs .fl-island__map { width: 100%; height: 100%; aspect-ratio: auto; flex: none; touch-action: none; box-shadow: 0 0 0 1px var(--fl-line), 0 0 60px rgba(0, 0, 0, .7); }
-.fl-island.is-fs .fl-island__rail { position: absolute; left: .5rem; top: calc(var(--fl-barh, 3.6rem) + .6rem); z-index: 12; }
+.fl-island.is-fs .fl-island__rail { position: absolute; left: -2.6rem; top: .4rem; z-index: 12; }
 .fl-island.is-fs .fl-island__rail .fl-map__ctl { flex-direction: column; margin: 0; }
 
 /* the two docks */
@@ -1115,15 +1129,21 @@ html.fl-fs-lock, html.fl-fs-lock body { overflow: hidden; }
   overflow-x: hidden; overflow-y: auto; overscroll-behavior: contain; touch-action: pan-y;
   scrollbar-width: thin; scrollbar-color: var(--fl-orange) transparent;
 }
-.fl-island.is-fs .fl-dock--a { left: 0; top: 0; bottom: 0; width: max(calc((100cqw - 100cqmin) / 2), 8rem); }
-.fl-island.is-fs .fl-dock--b { right: 0; top: 0; bottom: 0; width: max(calc((100cqw - 100cqmin) / 2), 8rem); }
+.fl-island.is-fs .fl-dock--a { left: 0; top: 0; bottom: 0; width: max(calc(var(--fl-ml) - 3rem), 6rem); }
+.fl-island.is-fs .fl-dock--b { right: 0; top: 0; bottom: 0; width: max(var(--fl-ml), 6rem); }
 @media (orientation: portrait) {
-  /* portrait: the map is not full height anyway, so the bar moves to the top of the screen, then come the top dock, the map and the bottom dock */
-  .fl-island.is-fs .fl-island__bar { left: 0; top: 0; width: 100%; }
-  .fl-island.is-fs .fl-island__body { top: calc(var(--fl-barh, 3rem) + (100cqh - var(--fl-barh, 3rem) - 100cqmin) / 2); }
-  .fl-island.is-fs .fl-island__rail { top: .6rem; }
-  .fl-island.is-fs .fl-dock--a, .fl-island.is-fs .fl-dock--b { left: 0; right: 0; width: auto; height: max(calc((100cqh - var(--fl-barh, 3rem) - 100cqmin) / 2), 5rem); }
-  .fl-island.is-fs .fl-dock--a { top: var(--fl-barh, 3rem); bottom: auto; }
+  /* portrait: header = bar + a row of zoom buttons (--fl-h), then the top dock, the map and the bottom dock share what is left */
+  .fl-island.is-fs {
+    --fl-h: calc(var(--fl-b) + 2.8rem);
+    --fl-s: max(10rem, min(100cqw, calc(100cqh - var(--fl-h))));
+    --fl-g: calc((100cqh - var(--fl-h) - var(--fl-s)) / 2);
+  }
+  .fl-island.is-fs .fl-island__bar { top: 0; }
+  .fl-island.is-fs .fl-island__body { top: calc(var(--fl-h) + var(--fl-g)); }
+  .fl-island.is-fs .fl-island__rail { left: 0; top: calc(var(--fl-b) + .2rem - var(--fl-h) - var(--fl-g)); }
+  .fl-island.is-fs .fl-island__rail .fl-map__ctl { flex-direction: row; }
+  .fl-island.is-fs .fl-dock--a, .fl-island.is-fs .fl-dock--b { left: 0; right: 0; width: auto; height: max(var(--fl-g), 5rem); }
+  .fl-island.is-fs .fl-dock--a { top: var(--fl-h); bottom: auto; }
   .fl-island.is-fs .fl-dock--b { top: auto; bottom: 0; }
   .fl-pn__b[data-d="a"] svg, .fl-pn__b[data-d="b"] svg { transform: rotate(90deg); }
 }
@@ -1173,7 +1193,7 @@ html.fl-fs-lock, html.fl-fs-lock body { overflow: hidden; }
 .fl-island.is-fs .fl-leg__t, .fl-island.is-fs .fl-island__mut > b { display: none; }
 .fl-island.is-fs .fl-leg__cols { display: block; }
 .fl-island.is-fs .fl-leg__g + .fl-leg__g { margin-top: .6rem; }
-.fl-island.is-fs .fl-leg__rows { display: grid; grid-template-columns: repeat(auto-fill, minmax(5.6rem, 1fr)); gap: .4rem; }
+.fl-island.is-fs .fl-leg__rows { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(5.6rem, 100%), 1fr)); gap: .4rem; }
 .fl-island.is-fs .fl-an { width: auto; }
 .fl-island.is-fs .fl-island__mut .lst { flex-direction: column; gap: .35rem; }
 .fl-island.is-fs .fl-island__poi { flex: 1 1 14rem; min-height: 9rem; }
