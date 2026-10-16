@@ -28,7 +28,7 @@ theme:
 
 extra_javascript:
   - javascripts/fl-copy-v6.js
-  - javascripts/fl-map-v27.js
+  - javascripts/fl-map-v28.js
   - javascripts/fl-cards-v1.js
   - javascripts/fl-mush-v1.js
   - javascripts/fl-ip-v3.js
@@ -44,7 +44,7 @@ extra_javascript:
 
 extra_css:
   - stylesheets/fl-fonts-v2.css
-  - stylesheets/fistiland-v115.css
+  - stylesheets/fistiland-v116.css
   - stylesheets/fl-skins-v10.css
   - stylesheets/fl-home-bg-v1.css
   - stylesheets/fl-extras-v2.css

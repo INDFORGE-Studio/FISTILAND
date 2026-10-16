@@ -993,9 +993,6 @@ html.fl-fx-off .fl-eg-meta { animation: none; }
 .fl-island.is-hab-filter img.fl-island__ov[data-l="habitats"] { display: none; }
 .fl-island:not(.is-hab-filter) canvas.fl-island__ov { display: none; }
 canvas.fl-island__ov { position: absolute; inset: 0; width: 100%; height: 100%; pointer-events: none; }
-.fl-island:fullscreen { background: var(--fl-ink); padding: .8rem; overflow: auto; }
-.fl-island:fullscreen .fl-island__body { justify-content: center; }
-.fl-island:fullscreen .fl-island__foot { display: none; }
 
 /* thanks: two cards to the sites that help us keep the map accurate */
 .fl-island__foot { display: flex; flex-wrap: wrap; align-items: center; gap: .6rem 1rem; margin-top: 1.4rem; padding: 1rem 0 1.2rem; border-top: 1px solid var(--fl-line); }
@@ -1010,9 +1007,6 @@ canvas.fl-island__ov { position: absolute; inset: 0; width: 100%; height: 100%; 
 .fl-card__go { position: absolute; right: .7rem; top: .6rem; width: 1.1rem; height: 1.1rem; fill: #6f655c; transition: fill .15s, transform .15s; }
 .fl-island .fl-card:hover .fl-card__go { fill: var(--fl-orange-hot); transform: translate(2px, -2px); }
 .fl-island__own { flex: 1 1 14rem; margin-left: auto; max-width: 22rem; font-size: .68rem; line-height: 1.4; color: #6f655c; text-align: right; }
-.fl-island:fullscreen .fl-island__rail { position: static; }
-.fl-island:fullscreen .fl-island__map { flex: none; width: min(calc(100vw - 5rem), calc(100vh - 8rem)); }
-.fl-island__map:fullscreen { width: auto; }
 
 /* wildlife legend (clickable): a tap on an animal or a biome shows its habitats on the map */
 .fl-leg { display: flex; flex-direction: column; gap: .5rem; min-width: 0; padding: .55rem .9rem .65rem; }
@@ -1060,7 +1054,6 @@ canvas.fl-island__ov { position: absolute; inset: 0; width: 100%; height: 100%; 
   .fl-island__body { display: block; }
   .fl-island__rail { position: static; }
   .fl-island__rail .fl-map__ctl { flex-direction: row; margin: 0 0 .6rem; }
-  .fl-island:fullscreen .fl-island__map { width: 100%; }
   .fl-island__poi .lst { grid-template-columns: 1fr; max-height: 14rem; }
   .fl-leg__info { order: -1; }
   .fl-island__foot { flex-direction: column; align-items: stretch; }
@@ -1071,6 +1064,122 @@ canvas.fl-island__ov { position: absolute; inset: 0; width: 100%; height: 100%; 
   .fl-an { width: auto; }
   .fl-an__hd .d { display: none; }
 }
+
+/* ---- Island map, full screen: the picture takes the whole height, the legends become dockable panels ----
+   100cqmin = the smaller side of the screen. Landscape: the map is centred, the two docks use the space left and right.
+   Portrait: the docks sit above and below. A panel can also be dragged out and left floating over the map. */
+html.fl-fs-lock, html.fl-fs-lock body { overflow: hidden; }
+.fl-dock, .fl-pn__hd { display: none; }
+.fl-island.is-fs {
+  position: fixed; inset: 0; z-index: 500; width: 100%; height: 100%; margin: 0;
+  box-sizing: border-box; overflow: hidden; container-type: size;
+  background: var(--fl-ink); overscroll-behavior: none;
+  user-select: none; -webkit-user-select: none;
+}
+.fl-island.is-fs.is-moving { cursor: grabbing; }
+.fl-island.is-fs .fl-island__strip, .fl-island.is-fs .fl-island__foot { display: none !important; }
+
+/* top bar: the logo (with its popup) and the layer toggles, as wide as the map */
+.fl-island.is-fs .fl-island__bar {
+  position: absolute; z-index: 30; box-sizing: border-box; margin: 0;
+  left: calc((100cqw - 100cqmin) / 2); top: calc((100cqh - 100cqmin) / 2); width: 100cqmin;
+  background: var(--fl-panel);
+  background: color-mix(in srgb, var(--fl-panel) 90%, transparent);
+  -webkit-backdrop-filter: blur(3px); backdrop-filter: blur(3px);
+  border-bottom: 1px solid var(--fl-line);
+}
+.fl-island.is-fs .fl-island__tip { width: min(46rem, calc(100cqmin - 1rem)); max-height: calc(100cqh - var(--fl-barh, 3.6rem) - 1.5rem); overflow-y: auto; }
+.fl-island.is-fs .fl-island__ttl { padding: .3rem .7rem; }
+.fl-island.is-fs .fl-island__lg .ico { width: 1.9rem; height: 1.9rem; }
+.fl-island.is-fs .fl-island__tgs { flex: 1; min-width: 0; gap: .25rem .35rem; padding: .35rem .5rem; }
+.fl-island.is-fs .fl-island__tg { padding: .15rem .45rem; gap: .3rem; font-size: .68rem; letter-spacing: .04em; }
+@media (max-height: 520px), (max-width: 480px) {
+  .fl-island.is-fs .fl-island__ttl { padding: .2rem .45rem; }
+  .fl-island.is-fs .fl-island__lg .ico { width: 1.6rem; height: 1.6rem; }
+  .fl-island.is-fs .fl-island__tgs { gap: .2rem .25rem; padding: .25rem .35rem; }
+  .fl-island.is-fs .fl-island__tg { padding: .1rem .3rem; font-size: .6rem; letter-spacing: .02em; }
+}
+
+/* the map: a square as large as the screen allows, zoom buttons in a column at its top left under the bar */
+.fl-island.is-fs .fl-island__body {
+  position: absolute; display: block; margin: 0;
+  left: calc((100cqw - 100cqmin) / 2); top: calc((100cqh - 100cqmin) / 2); width: 100cqmin; height: 100cqmin;
+}
+.fl-island.is-fs .fl-island__map { width: 100%; height: 100%; aspect-ratio: auto; flex: none; touch-action: none; box-shadow: 0 0 0 1px var(--fl-line), 0 0 60px rgba(0, 0, 0, .7); }
+.fl-island.is-fs .fl-island__rail { position: absolute; left: .5rem; top: calc(var(--fl-barh, 3.6rem) + .6rem); z-index: 12; }
+.fl-island.is-fs .fl-island__rail .fl-map__ctl { flex-direction: column; margin: 0; }
+
+/* the two docks */
+.fl-island.is-fs .fl-dock {
+  display: flex; flex-direction: column; gap: .5rem; position: absolute; box-sizing: border-box; padding: .5rem;
+  overflow-x: hidden; overflow-y: auto; overscroll-behavior: contain; touch-action: pan-y;
+  scrollbar-width: thin; scrollbar-color: var(--fl-orange) transparent;
+}
+.fl-island.is-fs .fl-dock--a { left: 0; top: 0; bottom: 0; width: max(calc((100cqw - 100cqmin) / 2), 8rem); }
+.fl-island.is-fs .fl-dock--b { right: 0; top: 0; bottom: 0; width: max(calc((100cqw - 100cqmin) / 2), 8rem); }
+@media (orientation: portrait) {
+  /* portrait: the map is not full height anyway, so the bar moves to the top of the screen, then come the top dock, the map and the bottom dock */
+  .fl-island.is-fs .fl-island__bar { left: 0; top: 0; width: 100%; }
+  .fl-island.is-fs .fl-island__body { top: calc(var(--fl-barh, 3rem) + (100cqh - var(--fl-barh, 3rem) - 100cqmin) / 2); }
+  .fl-island.is-fs .fl-island__rail { top: .6rem; }
+  .fl-island.is-fs .fl-dock--a, .fl-island.is-fs .fl-dock--b { left: 0; right: 0; width: auto; height: max(calc((100cqh - var(--fl-barh, 3rem) - 100cqmin) / 2), 5rem); }
+  .fl-island.is-fs .fl-dock--a { top: var(--fl-barh, 3rem); bottom: auto; }
+  .fl-island.is-fs .fl-dock--b { top: auto; bottom: 0; }
+  .fl-pn__b[data-d="a"] svg, .fl-pn__b[data-d="b"] svg { transform: rotate(90deg); }
+}
+.fl-island.is-fs.is-moving .fl-dock { outline: 1px dashed rgba(var(--fl-or-rgb), .5); outline-offset: -3px; }
+.fl-island.is-fs .fl-dock.is-hl { outline: 2px dashed var(--fl-orange); background: rgba(var(--fl-or-rgb), .1); }
+.fl-island.is-fs .fl-dock.is-hl::after {
+  content: attr(data-hint); position: absolute; left: .5rem; right: .5rem; bottom: .5rem; padding: .35rem .5rem; text-align: center;
+  font: 600 .72rem Oswald, sans-serif; letter-spacing: .1em; text-transform: uppercase; color: var(--fl-ink); background: var(--fl-orange); pointer-events: none;
+}
+
+/* a panel: header (grip, title, collapse, dock left / right) then the legend itself */
+.fl-island.is-fs .fl-pn {
+  position: relative; box-sizing: border-box; flex: 0 0 auto; flex-direction: column; flex-wrap: nowrap; align-items: stretch;
+  gap: .55rem; min-width: 0; padding: 0 0 .65rem;
+  background: var(--fl-panel);
+  background: color-mix(in srgb, var(--fl-panel) 95%, transparent);
+  border: 1px solid var(--fl-line); border-top: 2px solid var(--fl-orange);
+  box-shadow: 0 8px 22px rgba(0, 0, 0, .55);
+}
+.fl-island.is-fs .fl-pn > :not(.fl-pn__hd) { margin: 0 .7rem; }
+.fl-island.is-fs .fl-pn.is-off { display: none !important; }
+.fl-island.is-fs .fl-pn.is-min { padding-bottom: 0; }
+.fl-island.is-fs .fl-pn.is-min > :not(.fl-pn__hd) { display: none !important; }
+.fl-island.is-fs .fl-pn.is-min .fl-pn__hd { border-bottom-color: transparent; }
+.fl-island.is-fs .fl-pn__hd {
+  display: flex; flex-wrap: wrap; position: sticky; top: 0; z-index: 3; flex: 0 0 auto; align-items: center; gap: .25rem; margin: 0;
+  padding: .3rem .35rem .3rem .55rem; background: #1d1814; border-bottom: 1px solid var(--fl-line);
+  cursor: grab; touch-action: none; user-select: none; -webkit-user-select: none;
+}
+.fl-island.is-fs.is-moving .fl-pn__hd { cursor: grabbing; }
+.fl-pn__grip { display: flex; flex: 1 1 7rem; align-items: center; gap: .45rem; min-width: 0; color: var(--fl-orange-hot); }
+.fl-pn__grip svg { flex: none; width: 1rem; height: 1rem; fill: currentColor; opacity: .75; }
+.fl-island .fl-pn__hd b { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; font: 600 .76rem Oswald, sans-serif; letter-spacing: .06em; text-transform: uppercase; color: #fff; }
+.fl-pn__b { flex: none; display: inline-flex; align-items: center; justify-content: center; width: 1.7rem; height: 1.7rem; padding: 0; background: var(--fl-ink); border: 1px solid var(--fl-line); color: #b5a99c; cursor: pointer; transition: border-color .15s, color .15s, background .15s; }
+.fl-pn__b svg { display: block; width: 1.05rem; height: 1.05rem; transition: transform .15s; }
+.fl-pn__b:hover, .fl-pn__b:focus-visible { border-color: var(--fl-orange); color: var(--fl-orange-hot); outline: none; }
+.fl-pn__b.is-on { border-color: var(--fl-orange); color: var(--fl-orange-hot); background: #1d1814; }
+.fl-island.is-fs .fl-pn.is-min .fl-pn__b[data-d="min"] svg { transform: rotate(-90deg); }
+@media (pointer: coarse) { .fl-pn__b { width: 2rem; height: 2rem; } .fl-pn__b svg { width: 1.15rem; height: 1.15rem; } }
+
+/* floating or being dragged: over the map */
+.fl-island.is-fs .fl-pn.is-float, .fl-island.is-fs .fl-pn.is-dragging { width: min(21rem, 80cqw); max-height: calc(100cqh - 1rem); overflow-x: hidden; overflow-y: auto; scrollbar-width: thin; scrollbar-color: var(--fl-orange) transparent; }
+.fl-island.is-fs .fl-pn.is-float { position: absolute; z-index: 25; }
+.fl-island.is-fs .fl-pn.is-dragging { position: fixed; z-index: 40; opacity: .94; box-shadow: 0 16px 36px rgba(0, 0, 0, .75), 0 0 0 1px var(--fl-orange); }
+
+/* the legends inside a panel: one column, tiles fill the width */
+.fl-island.is-fs .fl-leg__t, .fl-island.is-fs .fl-island__mut > b { display: none; }
+.fl-island.is-fs .fl-leg__cols { display: block; }
+.fl-island.is-fs .fl-leg__g + .fl-leg__g { margin-top: .6rem; }
+.fl-island.is-fs .fl-leg__rows { display: grid; grid-template-columns: repeat(auto-fill, minmax(5.6rem, 1fr)); gap: .4rem; }
+.fl-island.is-fs .fl-an { width: auto; }
+.fl-island.is-fs .fl-island__mut .lst { flex-direction: column; gap: .35rem; }
+.fl-island.is-fs .fl-island__poi { flex: 1 1 14rem; min-height: 9rem; }
+.fl-island.is-fs .fl-island__poi.is-min { flex: 0 0 auto; min-height: 0; }
+.fl-island.is-fs .fl-island__poi .lst { display: grid; flex: 1 1 0; min-height: 0; max-height: none; grid-template-columns: 1fr; align-content: start; }
+.fl-island.is-fs .fl-island__poi.is-float .lst, .fl-island.is-fs .fl-island__poi.is-dragging .lst { flex: 0 1 auto; max-height: min(22rem, 55cqh); }
 
 /* footer centre: legal page link (scales icon), with the licence badge above it when the badge sits in the footer */
 .md-footer-meta__inner .fl-foot-c { display: flex; flex-direction: column; align-items: center; gap: .3rem; margin: .5rem auto; text-align: center; }

@@ -76,6 +76,19 @@
   var lang = (document.documentElement.lang || 'en').slice(0, 2);
   var T = L[lang] || L.en;
 
+  // Full-screen panels: dock sides, drag handle, collapse, exit
+  var LP = {
+    en: { dl: 'Dock on the left', dr: 'Dock on the right', dt: 'Dock at the top', db: 'Dock at the bottom', grab: 'Drag to move it, drop it on a side to dock it', min: 'Collapse or expand', exit: 'Exit full screen' },
+    fr: { dl: 'Ancrer à gauche', dr: 'Ancrer à droite', dt: 'Ancrer en haut', db: 'Ancrer en bas', grab: 'Glisser pour le déplacer, déposer sur un côté pour l’ancrer', min: 'Réduire ou développer', exit: 'Quitter le plein écran' },
+    de: { dl: 'Links andocken', dr: 'Rechts andocken', dt: 'Oben andocken', db: 'Unten andocken', grab: 'Ziehen zum Verschieben, an einer Seite ablegen zum Andocken', min: 'Ein- oder ausklappen', exit: 'Vollbild beenden' },
+    es: { dl: 'Anclar a la izquierda', dr: 'Anclar a la derecha', dt: 'Anclar arriba', db: 'Anclar abajo', grab: 'Arrastra para moverlo, suéltalo en un lado para anclarlo', min: 'Contraer o expandir', exit: 'Salir de pantalla completa' },
+    it: { dl: 'Aggancia a sinistra', dr: 'Aggancia a destra', dt: 'Aggancia in alto', db: 'Aggancia in basso', grab: 'Trascina per spostarlo, rilascialo su un lato per agganciarlo', min: 'Comprimi o espandi', exit: 'Esci dallo schermo intero' },
+    uk: { dl: 'Закріпити ліворуч', dr: 'Закріпити праворуч', dt: 'Закріпити вгорі', db: 'Закріпити внизу', grab: 'Перетягніть, щоб перемістити, і відпустіть біля краю, щоб закріпити', min: 'Згорнути або розгорнути', exit: 'Вийти з повного екрана' },
+    hr: { dl: 'Prikvači lijevo', dr: 'Prikvači desno', dt: 'Prikvači gore', db: 'Prikvači dolje', grab: 'Povuci za pomicanje, ispusti uz rub za prikvačivanje', min: 'Sažmi ili proširi', exit: 'Izlaz iz cijelog zaslona' },
+    pl: { dl: 'Przypnij po lewej', dr: 'Przypnij po prawej', dt: 'Przypnij u góry', db: 'Przypnij na dole', grab: 'Przeciągnij, aby przenieść, upuść przy krawędzi, aby przypiąć', min: 'Zwiń lub rozwiń', exit: 'Zamknij pełny ekran' }
+  };
+  var P = LP[lang] || LP.en;
+
   // Thanks cards (bottom of the page) and the data licence line shown in the explanations
   var WIKI = '<a href="https://scum.wiki.gg/wiki/Map" target="_blank" rel="noopener">scum.wiki.gg</a>';
   var CCBY = '<a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" rel="noopener">CC BY-NC-SA 4.0</a>';
@@ -157,9 +170,14 @@
   var I_OUT = '<svg class="fl-card__go" viewBox="0 0 24 24" aria-hidden="true"><path d="M19 19H5V5h7V3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z"/></svg>';
   var I_BK = '<svg class="fl-island__bi" viewBox="0 0 24 24" aria-hidden="true"><rect x="1.5" y="1.5" width="21" height="21"/><path d="M12 5.5a5.6 5.6 0 0 0-3.8 9.7v2.3h7.6v-2.3A5.6 5.6 0 0 0 12 5.5z"/><circle cx="9.7" cy="11.3" r="1.5"/><circle cx="14.3" cy="11.3" r="1.5"/></svg>';
   var I_FULL = icon('M5 5h5v2H7v3H5zm9 0h5v5h-2V7h-3zM5 14h2v3h3v2H5zm12 0h2v5h-5v-2h3z');
+  var I_FULLX = icon('M8 5h2v5H5V8h3zm6 0h2v3h3v2h-5zM5 14h5v5H8v-3H5zm9 0h5v2h-3v3h-2z');
+  var I_GRIP = '<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="9" cy="6" r="1.7"/><circle cx="15" cy="6" r="1.7"/><circle cx="9" cy="12" r="1.7"/><circle cx="15" cy="12" r="1.7"/><circle cx="9" cy="18" r="1.7"/><circle cx="15" cy="18" r="1.7"/></svg>';
+  var I_DOCK_A = '<svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="1.5" fill="none" stroke="currentColor" stroke-width="2"/><rect x="3" y="4" width="7" height="16" fill="currentColor"/></svg>';
+  var I_DOCK_B = '<svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="1.5" fill="none" stroke="currentColor" stroke-width="2"/><rect x="14" y="4" width="7" height="16" fill="currentColor"/></svg>';
+  var I_CHEV = '<svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M7 10l5 5 5-5z"/></svg>';
 
   // Pan and zoom on `box` (the clipping frame) moving `stage`; `fsEl` is the element sent to full screen.
-  function zoomer(box, stage, fsEl, onZoom, host, onReset) {
+  function zoomer(box, stage, fsEl, onZoom, host, onReset, onFull) {
     var ctl = document.createElement('div');
     ctl.className = 'fl-map__ctl';
     ctl.innerHTML =
@@ -204,6 +222,7 @@
       if (a === 'in') zoomAt(c.x, c.y, 1.6);
       else if (a === 'out') zoomAt(c.x, c.y, 1 / 1.6);
       else if (a === 'reset') { s = 1; x = 0; y = 0; apply(); if (onReset) onReset(); }
+      else if (a === 'full' && onFull) onFull();
       else if (a === 'full') {
         if (document.fullscreenElement) document.exitFullscreen();
         else if (fsEl.requestFullscreen) { if (onZoom) onZoom(); fsEl.requestFullscreen(); }
@@ -250,6 +269,7 @@
     box.addEventListener('pointerup', up);
     box.addEventListener('pointercancel', up);
     document.addEventListener('fullscreenchange', function () { s = 1; x = 0; y = 0; apply(); });
+    fsEl.addEventListener('flfs', function () { s = 1; x = 0; y = 0; apply(); });
     window.addEventListener('resize', apply);
   }
 
@@ -428,6 +448,218 @@
     });
   }
 
+  // Full screen of the island map: the picture fills the screen and the legends become panels that dock
+  // on the left / right (top / bottom on a portrait screen) or float anywhere. Returns the full-screen toggle.
+  function initFull(root, tipOpen, loadFull) {
+    var KEY = 'fl-map-dock';
+    var DEF = { habitats: 'a', mutants: 'b', bunkers: 'b', poi: 'b' };
+    var NAME = { habitats: T.guide, mutants: T.mut, bunkers: T.bk, poi: T.poi };
+    var strip = root.querySelector('.fl-island__strip');
+    var bar = root.querySelector('.fl-island__bar');
+    var btn = root.querySelector('.fl-island__rail [data-a="full"]');
+    var portrait = window.matchMedia ? window.matchMedia('(orientation: portrait)') : null;
+    var saved = {};
+    try { saved = JSON.parse(localStorage.getItem(KEY) || '{}') || {}; } catch (e) { saved = {}; }
+
+    function mk(cls) { var d = document.createElement('div'); d.className = cls; return d; }
+    function clamp(v, lo, hi) { return Math.max(lo, Math.min(hi, v)); }
+    var dock = { a: mk('fl-dock fl-dock--a'), b: mk('fl-dock fl-dock--b') };
+    root.appendChild(dock.a);
+    root.appendChild(dock.b);
+
+    var panels = [];
+    Array.prototype.forEach.call(strip.children, function (el) {
+      var k = el.getAttribute('data-l');
+      if (!k || !NAME[k]) return;
+      var sv = saved[k] || {};
+      var p = {
+        k: k, el: el, min: !!sv.m,
+        side: (sv.d === 'a' || sv.d === 'b' || sv.d === 'f') ? sv.d : DEF[k],
+        x: typeof sv.x === 'number' ? clamp(sv.x, 0, .8) : .1,
+        y: typeof sv.y === 'number' ? clamp(sv.y, 0, .85) : .15
+      };
+      el.classList.add('fl-pn');
+      p.hd = mk('fl-pn__hd');
+      p.hd.innerHTML = '<span class="fl-pn__grip" title="' + P.grab + '">' + I_GRIP + '<b>' + NAME[k] + '</b></span>' +
+        '<button type="button" class="fl-pn__b" data-d="min" title="' + P.min + '" aria-label="' + P.min + '">' + I_CHEV + '</button>' +
+        '<button type="button" class="fl-pn__b" data-d="a">' + I_DOCK_A + '</button>' +
+        '<button type="button" class="fl-pn__b" data-d="b">' + I_DOCK_B + '</button>';
+      el.insertBefore(p.hd, el.firstChild);
+      panels.push(p);
+      bind(p);
+    });
+
+    // button labels follow the screen orientation: left / right, or top / bottom
+    function titles() {
+      var por = !!(portrait && portrait.matches);
+      var la = por ? P.dt : P.dl, lb = por ? P.db : P.dr;
+      dock.a.setAttribute('data-hint', la);
+      dock.b.setAttribute('data-hint', lb);
+      panels.forEach(function (p) {
+        [['a', la], ['b', lb]].forEach(function (s) {
+          var b = p.hd.querySelector('[data-d="' + s[0] + '"]');
+          b.setAttribute('title', s[1]);
+          b.setAttribute('aria-label', s[1]);
+        });
+      });
+    }
+    function state(p) {
+      p.el.classList.toggle('is-min', p.min);
+      p.hd.querySelector('[data-d="min"]').setAttribute('aria-expanded', p.min ? 'false' : 'true');
+      ['a', 'b'].forEach(function (s) { p.hd.querySelector('[data-d="' + s + '"]').classList.toggle('is-on', p.side === s); });
+    }
+    function save() {
+      var o = {};
+      panels.forEach(function (p) { o[p.k] = { d: p.side, x: Math.round(p.x * 1000) / 1000, y: Math.round(p.y * 1000) / 1000, m: p.min ? 1 : 0 }; });
+      try { localStorage.setItem(KEY, JSON.stringify(o)); } catch (e) {}
+    }
+    function reset(el) {
+      el.classList.remove('is-float', 'is-dragging');
+      el.style.left = el.style.top = el.style.width = el.style.zIndex = '';
+    }
+    // puts a panel where its state says: in a dock (before `next`) or floating
+    function place(p, next) {
+      reset(p.el);
+      if (p.side === 'f') {
+        p.el.classList.add('is-float');
+        p.el.style.left = (p.x * 100) + '%';
+        p.el.style.top = (p.y * 100) + '%';
+        root.appendChild(p.el);
+      } else {
+        dock[p.side].insertBefore(p.el, next || null);
+      }
+      state(p);
+    }
+    function zone(e) {
+      var r;
+      for (var s in dock) {
+        r = dock[s].getBoundingClientRect();
+        if (e.clientX >= r.left && e.clientX <= r.right && e.clientY >= r.top && e.clientY <= r.bottom) return s;
+      }
+      return null;
+    }
+    function before(d, e, self) {
+      var kids = d.children;
+      for (var i = 0; i < kids.length; i++) {
+        if (kids[i] === self) continue;
+        var r = kids[i].getBoundingClientRect();
+        if (r.height && e.clientY < r.top + r.height / 2) return kids[i];
+      }
+      return null;
+    }
+
+    function bind(p) {
+      var hd = p.hd, drag = null;
+      hd.addEventListener('click', function (e) {
+        var b = e.target.closest('.fl-pn__b'); if (!b) return;
+        var d = b.getAttribute('data-d');
+        if (d === 'min') { p.min = !p.min; state(p); }
+        else if (p.side !== d) { p.side = d; place(p); }
+        save();
+      });
+      hd.addEventListener('dblclick', function (e) {
+        if (e.target.closest('.fl-pn__b')) return;
+        p.min = !p.min; state(p); save();
+      });
+      hd.addEventListener('pointerdown', function (e) {
+        if (e.target.closest('.fl-pn__b') || (e.pointerType === 'mouse' && e.button !== 0)) return;
+        var r = p.el.getBoundingClientRect();
+        drag = { id: e.pointerId, ox: e.clientX - r.left, oy: e.clientY - r.top, sx: e.clientX, sy: e.clientY, w: r.width, on: false };
+        try { hd.setPointerCapture(e.pointerId); } catch (err) {}
+      });
+      hd.addEventListener('pointermove', function (e) {
+        if (!drag || e.pointerId !== drag.id) return;
+        if (!drag.on) {
+          if (Math.hypot(e.clientX - drag.sx, e.clientY - drag.sy) < 6) return;
+          drag.on = true;
+          p.el.style.width = drag.w + 'px';
+          p.el.classList.add('is-dragging');
+          root.classList.add('is-moving');
+        }
+        var rr = root.getBoundingClientRect();
+        p.el.style.left = clamp(e.clientX - rr.left - drag.ox, 0, rr.width - 70) + 'px';
+        p.el.style.top = clamp(e.clientY - rr.top - drag.oy, 0, rr.height - 44) + 'px';
+        var z = zone(e);
+        dock.a.classList.toggle('is-hl', z === 'a');
+        dock.b.classList.toggle('is-hl', z === 'b');
+      });
+      function end(e) {
+        if (!drag || e.pointerId !== drag.id) return;
+        var moved = drag.on;
+        drag = null;
+        try { hd.releasePointerCapture(e.pointerId); } catch (err) {}
+        if (!moved) return;
+        root.classList.remove('is-moving');
+        dock.a.classList.remove('is-hl');
+        dock.b.classList.remove('is-hl');
+        var z = e.type === 'pointercancel' ? null : zone(e);
+        if (z) {
+          p.side = z;
+          place(p, before(dock[z], e, p.el));
+        } else {
+          var rr = root.getBoundingClientRect(), w = p.el.getBoundingClientRect();
+          p.side = 'f';
+          p.x = clamp((w.left - rr.left) / rr.width, 0, .8);
+          p.y = clamp((w.top - rr.top) / rr.height, 0, .85);
+          place(p);
+        }
+        save();
+      }
+      hd.addEventListener('pointerup', end);
+      hd.addEventListener('pointercancel', end);
+    }
+
+    var fsOn = false, fb = false;
+    function setFs(on, fallback) {
+      if (on === fsOn) return;
+      fsOn = on;
+      fb = on && !!fallback;
+      root.classList.toggle('is-fs', on);
+      document.documentElement.classList.toggle('fl-fs-lock', fb);
+      tipOpen(false);
+      if (on) { panels.forEach(function (p) { place(p); }); titles(); }
+      else { panels.forEach(function (p) { reset(p.el); strip.appendChild(p.el); }); }
+      var lbl = on ? P.exit : T.full;
+      btn.innerHTML = on ? I_FULLX : I_FULL;
+      btn.setAttribute('title', lbl);
+      btn.setAttribute('aria-label', lbl);
+      root.dispatchEvent(new Event('flfs'));
+    }
+    function toggle() {
+      if (fsOn) {
+        var ex = document.exitFullscreen || document.webkitExitFullscreen;
+        if (fb || !ex) setFs(false); else ex.call(document);
+        return;
+      }
+      loadFull();
+      var req = root.requestFullscreen || root.webkitRequestFullscreen;
+      // no Fullscreen API (iPhone) or refused: the same layout, pinned over the page
+      if (!req) { setFs(true, true); return; }
+      try {
+        var pr = req.call(root);
+        if (pr && pr.catch) pr.catch(function () { setFs(true, true); });
+      } catch (err) { setFs(true, true); }
+    }
+    function fsChange() {
+      var fe = document.fullscreenElement || document.webkitFullscreenElement;
+      if (fe === root) setFs(true, false);
+      else if (fsOn && !fb) setFs(false);
+    }
+    document.addEventListener('fullscreenchange', fsChange);
+    document.addEventListener('webkitfullscreenchange', fsChange);
+    document.addEventListener('keydown', function (e) { if (e.key === 'Escape' && fsOn && fb) setFs(false); });
+    window.addEventListener('resize', function () { if (fsOn) titles(); });
+    if (portrait && portrait.addEventListener) portrait.addEventListener('change', titles);
+
+    // the zoom buttons sit under the top bar, whatever its height
+    function barH() { root.style.setProperty('--fl-barh', bar.offsetHeight + 'px'); }
+    if (window.ResizeObserver) new ResizeObserver(barH).observe(bar);
+    window.addEventListener('resize', barH);
+    barH();
+    titles();
+    return toggle;
+  }
+
   // The island map: satellite base picture, two switchable overlays and the wildlife legend.
   function initIsland(root) {
     var base = root.getAttribute('data-base');
@@ -525,8 +757,10 @@
       var pl = root.querySelector('.fl-island__poi .lst'); if (pl) pl.scrollTop = 0;
       tipOpen(false);
     }
-    zoomer(box, stage, root, loadFull, root.querySelector('.fl-island__rail'), resetAll);
+    var toggleFull = null;
+    zoomer(box, stage, root, loadFull, root.querySelector('.fl-island__rail'), resetAll, function () { if (toggleFull) toggleFull(); });
     initLegend(root, stage, legend);
+    toggleFull = initFull(root, tipOpen, loadFull);
 
     var poiUrl = root.getAttribute('data-poi');
     if (poiUrl) {
