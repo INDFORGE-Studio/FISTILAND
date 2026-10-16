@@ -153,7 +153,7 @@
   .fl-title { font-size: clamp(2.6rem, 7vw, 5rem); }
   .fl-lead { font-size: 1rem; margin-bottom: .8rem; }
   .fl-stats { margin-top: 1rem; }
-  .fl-card p { display: none; }
+  .fl-card p + p { display: none; }   /* only the description: the first paragraph holds the icon and the title */
 }
 /* Phones: scrolling is fine */
 @media (max-width: 40em) {
@@ -293,10 +293,10 @@ html[lang="hr"] .md-header__option .md-select > button::before { background-imag
 .fl-stats b { font-size: clamp(1.2rem, 3.2vh, 1.6rem); }
 .fl-stats div { padding-top: clamp(.35rem, 1.1vh, .65rem); padding-bottom: clamp(.35rem, 1.1vh, .65rem); }
 .fl-grid { padding-bottom: clamp(.4rem, 1.5vh, 1rem); }
-@media (max-height: 760px) { .fl-card p { display: none; } }
+@media (max-height: 760px) { .fl-card p + p { display: none; } }
 
 /* Desktop: no scrollbar on the home page */
-@media (min-width: 62em) and (min-height: 560px) {
+@media (min-width: 100.01em) and (min-height: 600px) {   /* one row of cards: fits one screen. Two rows (narrower) may need a scroll. */
   html:has(.fl-home) { overflow-y: hidden; }
 }
 
@@ -1283,3 +1283,14 @@ a:focus-visible, button:focus-visible, summary:focus-visible, [tabindex]:focus-v
 }
 /* Tooltips (Material content.tooltips): always above the neighbouring buttons, never cut by them */
 .md-tooltip2, .md-tooltip2--active { z-index: 30; }
+
+/* ---- Home v19: short or narrow desktops (two rows of cards) ----
+   The cards used to be cut off: every paragraph of a card was hidden on short windows (icon and title included) and the
+   second row sat below the fold of a page that could not scroll. Now only the description hides, the page scrolls when it
+   does not fit, the logo is smaller to make it fit more often, and the band reserved for the notice only stays on narrow screens. */
+@media (min-width: 62em) and (max-width: 100em) {
+  .md-typeset .fl-hero .fl-logo { height: clamp(110px, 33vh, 420px) !important; }
+}
+@media (min-width: 76.25em) {
+  .md-main:has(.fl-home) { padding-bottom: 0; }
+}
