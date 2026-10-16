@@ -20,6 +20,7 @@
     var a = rnd(-.35, .35);
     ball = { x: FW / 2, y: FW / 2, sp: 150, vx: Math.cos(a) * 150 * dir, vy: Math.sin(a) * 150 };
     rally = 0; serveIn = .9; trail = [];
+    if (L) { L.off = rnd(-1, 1) * PH * (demo ? .62 : .4); R.off = rnd(-1, 1) * PH * (demo ? .62 : .4); }   // fresh aim at every serve: a machine that keeps missing never gets a hit from the other side to re-roll it
   }
   function newMatch(dir) {
     sl = 0; sr = 0; best = 0; L = { x: LX, y: FW / 2, off: 0 }; R = { x: RX, y: FW / 2, off: 0 };
