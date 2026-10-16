@@ -30,7 +30,7 @@
 
   function paddleHit(p, dir) {
     var off = clamp((ball.y - p.y) / (PH / 2), -1.1, 1.1), a = off * .85;
-    ball.sp = Math.min(330, ball.sp * 1.05);
+    ball.sp = Math.min(demo ? 240 : 330, ball.sp * 1.05);   // the attract mode stays playable for two machines
     ball.vx = dir * Math.cos(a) * ball.sp; ball.vy = Math.sin(a) * ball.sp;
     ball.x = p.x + dir * (PW / 2 + 3.2);
     rally++; if (rally > best) best = rally;
@@ -62,13 +62,13 @@
     if (shake > 0) shake = Math.max(0, shake - dt);
     for (i = sparks.length - 1; i >= 0; i--) { var q = sparks[i]; q.age += dt; if (q.age >= q.life) { sparks.splice(i, 1); continue; } q.x += q.vx * dt; q.y += q.vy * dt; }
     // the left paddle: the visitor (finger / mouse position, or keys), or a slow machine in attract mode
-    if (demo) aiMove(L, dt, 90, ball.vx < 0);
+    if (demo) aiMove(L, dt, 105, ball.vx < 0);
     else {
       if (ptr !== null) L.y += clamp(ptr - L.y, -430 * dt, 430 * dt);
       else L.y += (keys.D - keys.U) * 200 * dt;
       L.y = clamp(L.y, PH / 2 + TOP, BOT - PH / 2);
     }
-    aiMove(R, dt, 120 + 4 * sl, ball.vx > 0);
+    aiMove(R, dt, demo ? 105 : 120 + 4 * sl, ball.vx > 0);   // demo: both machines equal, so neither side wins on a loop
     if (state !== 'play') return;
     if (serveIn > 0) { serveIn -= dt; return; }
     trail.push({ x: ball.x, y: ball.y }); if (trail.length > 5) trail.shift();
