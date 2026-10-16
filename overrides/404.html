@@ -62,7 +62,7 @@
     .wd.gone { pointer-events: none; }
     .wd.gone .fl-dv { animation: wdgone .22s ease-out forwards; }
     @keyframes wdgone { to { transform: scale(1.7); opacity: 0; } }
-    .game { --g: min(88vw, max(12rem, calc(100vh - 24rem)), 26rem); --g: min(88vw, max(12rem, calc(100svh - 24rem)), 26rem); display: flex; flex-direction: column; align-items: center; gap: .6rem; }
+    .game { --g: min(88vw, max(12rem, calc(100vh - 27.5rem)), 26rem); --g: min(88vw, max(12rem, calc(100svh - 27.5rem)), 26rem); display: flex; flex-direction: column; align-items: center; gap: .6rem; }
     canvas { display: block; width: var(--g); height: var(--g); box-sizing: border-box; touch-action: none; cursor: pointer; -webkit-tap-highlight-color: transparent; outline: none; background-color: rgba(10, 8, 6, .82);
       background-image: linear-gradient(rgba(255, 255, 255, .035) 1px, transparent 1px), linear-gradient(90deg, rgba(255, 255, 255, .035) 1px, transparent 1px); background-size: 5% 5%;
       border: 2px solid #3a2d24; border-top-color: #e8631c; box-shadow: 0 10px 30px rgba(0, 0, 0, .7); transition: border-color .2s; }
@@ -77,9 +77,8 @@
     canvas.invade { animation: invin .7s steps(1); }
     @keyframes invin { 0% { filter: brightness(2.2) hue-rotate(60deg); transform: skewX(-6deg); } 20% { filter: none; transform: skewX(5deg) scaleY(.92); } 40% { filter: brightness(1.6); transform: none; } 60% { filter: hue-rotate(-50deg); transform: skewX(-3deg); } 80% { filter: brightness(1.3); transform: none; } 100% { filter: none; transform: none; } }
     .game.inv { --g: min(88vw, max(12rem, calc(100vh - 32rem)), 26rem); --g: min(88vw, max(12rem, calc(100svh - 32rem)), 26rem); }
-    /* music: speaker (click = mute) and volume slider under the board, only while the invaders game runs */
-    .snd { display: none; align-items: center; gap: .6rem; width: var(--g); max-width: 100%; justify-content: center; }
-    .game.inv .snd { display: flex; }
+    /* music: speaker (click = mute) and volume slider under the board, for both games (built by fl-chiptune) */
+    .snd { display: flex; align-items: center; gap: .6rem; width: var(--g); max-width: 100%; justify-content: center; }
     .snd button { flex: none; width: 2.75rem; height: 2.4rem; padding: 0; display: grid; place-items: center; color: rgb(var(--pc)); background: rgba(10, 8, 6, .82); border: 2px solid #3a2d24; border-top-color: rgb(var(--pc)); cursor: pointer; touch-action: manipulation; -webkit-tap-highlight-color: transparent; transition: color 1.1s ease, border-color 1.1s ease; }
     .snd button.off { color: #7d6f62; }
     .snd button svg { width: 1.35rem; height: 1.35rem; fill: currentColor; pointer-events: none; }
@@ -123,9 +122,9 @@
       <div class="pips" id="fl-pips" aria-hidden="true"></div>
     </div>
   </main>
-  <script src="{{ fl_base }}javascripts/fl-snake-v5.js"></script>
-  <script src="{{ fl_base }}javascripts/fl-chiptune-v3.js"></script>
-  <script src="{{ fl_base }}javascripts/fl-invaders-v7.js"></script>
+  <script src="{{ fl_base }}javascripts/fl-chiptune-v4.js"></script>
+  <script src="{{ fl_base }}javascripts/fl-snake-v6.js"></script>
+  <script src="{{ fl_base }}javascripts/fl-invaders-v8.js"></script>
   <script src="{{ fl_base }}javascripts/fl-discord-v5.js"></script>
   <script src="{{ fl_base }}javascripts/fl-logo404-v5.js"></script>
 </body>

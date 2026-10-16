@@ -58,8 +58,17 @@
     cv.width = cv.height = cs * N;
   }
 
+  // the music (fl-chiptune) starts with the first move, which is a user gesture, and speeds up as mushrooms are eaten
+  var musicOn = false;
+  function wake() {
+    if (musicOn || !window.flMusic) return;
+    musicOn = true;
+    window.flMusic.start(function () { return 1 + Math.min(4, (eaten / 3) | 0); }, 'snake');
+  }
+
   function turn(dx, dy) {
     if (state !== 'play') return;
+    wake();
     var last = queue.length ? queue[queue.length - 1] : dir;
     if (dx === last.x && dy === last.y) { started = true; return; }   // the way the snake already faces: starts the game if it was waiting
     if (queue.length > 1) return;
@@ -81,6 +90,7 @@
     snake.unshift({ x: nx, y: ny });
     if (!grow) { snake.pop(); return; }
     eaten++; paintPips();
+    if (window.flMusic) window.flMusic.sfx('eat');
     if (eaten >= goal()) {
       state = 'won'; stateAt = performance.now();
       shift = grantMeta();
@@ -177,5 +187,6 @@
 
   window.addEventListener('resize', function () { size(); });
   buildPips(); reset(); size();
+  if (window.flMusic && window.flMusic.bar) window.flMusic.bar(cv.parentNode);   // speaker + volume under the board
   requestAnimationFrame(frame);
 })();
