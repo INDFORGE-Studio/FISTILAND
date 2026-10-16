@@ -1,12 +1,12 @@
 (function () {
   // 404 page: once every wandering Discord character is gone (fl-logo404 sends `fl-invaders`), the snake board turns into a tiny
   // invaders game: waves of mechas shoot at the SCUM prisoner (the visitor). Left / right to move, space to shoot (a pad shows on
-  // touch screens). Ten levels, each harder than the last. Clearing a level goes to the next one; losing ends the run: the visitor
-  // may sign the score (8 characters at most) on a top 3 kept in this browser, then goes back to the home page.
+  // touch screens). Ten levels, each harder than the last. Clearing a level goes to the next one; losing ends the run: a result card
+  // (fl-arcade) with a copy-to-clipboard button, nothing is saved, then the visitor goes home.
   // This game never grants any rank.
   var cv = document.getElementById('fl-snake'), pipsEl = document.getElementById('fl-pips');
   if (!cv || !cv.getContext) return;
-  var game = cv.parentNode, HOME = cv.getAttribute('data-home') || '/', FW = 300, PY = 268, PX = 1.6, LEVELS = 10, NAME_MAX = 8, TOPN = 3, TOP_KEY = 'fl-invaders-top';
+  var game = cv.parentNode, HOME = cv.getAttribute('data-home') || '/', FW = 300, PY = 268, PX = 1.6, LEVELS = 10;
   var ctx = cv.getContext('2d');
   var COLS = [4, 5, 5, 6, 6, 7, 7, 8, 8, 8], ROWS = [3, 3, 4, 4, 4, 4, 5, 5, 5, 5];
 
@@ -22,7 +22,7 @@
   var FONT = 'ui-monospace, Consolas, Menlo, monospace';
 
   var on = false, keys = { L: 0, R: 0, F: 0 };
-  var hero, shots, bolts, mechs, parts, kills, total, lives, level, score, cfg, state, stateAt, fx, fy, dir, nextBolt, intro, flash, banner, last = 0, shotAt = 0;
+  var hero, shots, bolts, mechs, parts, kills, totalKills = 0, total, lives, level, score, cfg, state, stateAt, fx, fy, dir, nextBolt, intro, flash, banner, last = 0, shotAt = 0;
   // airdrop: reach level 5 without losing a single life and a supply crate falls; catching it gives a second gun for the rest of the run
   var DROP_LEVEL = 5, lostLife = false, armed = false, drop = null, dropIn = 0;
 
@@ -49,7 +49,7 @@
     paintPips();
   }
   function newGame() {
-    level = 1; score = 0; lives = 3; parts = []; flash = 0;
+    level = 1; score = 0; totalKills = 0; lives = 3; parts = []; flash = 0;
     lostLife = false; armed = false; drop = null; dropIn = 0;
     hero = { x: FW / 2, inv: 0 };
     pipsEl.textContent = '';
@@ -110,7 +110,7 @@
       for (j = 0; j < mechs.length; j++) {
         m = mechs[j];
         if (m.alive && Math.abs(s.x - (mx(m) + MW / 2)) < MW / 2 + 1 && s.y + 6 > my(m) && s.y < my(m) + MH) {   // box overlap, so a slow frame never lets a shot slip through
-          m.alive = false; kills++; score += 10 * level; boom(mx(m) + MW / 2, my(m) + MH / 2, '255,122,51'); shots.splice(i, 1);
+          m.alive = false; kills++; totalKills++; score += 10 * level; boom(mx(m) + MW / 2, my(m) + MH / 2, '255,122,51'); shots.splice(i, 1);
           if (kills >= total) {
             score += 50 * level + 25 * level * lives;
             state = level >= LEVELS ? 'victory' : 'clear'; stateAt = performance.now(); bolts = [];
@@ -212,68 +212,15 @@
     else if (state === 'clear' && t - stateAt > 1500) { level++; lives = Math.min(3, lives + 1); setWave(); }
   }
 
-  // ---- end of the run: sign the score, show the top 3, go home ----
-  function loadTop() {
-    try {
-      var a = JSON.parse(localStorage.getItem(TOP_KEY) || '[]');
-      if (Array.isArray(a)) return a.filter(function (r) { return r && typeof r.n === 'string' && typeof r.s === 'number' && typeof r.l === 'number'; }).map(function (r) { return { n: r.n.slice(0, NAME_MAX), s: r.s, l: r.l }; }).slice(0, TOPN);
-    } catch (e) {}
-    return [];
-  }
-  function saveTop(list) { try { localStorage.setItem(TOP_KEY, JSON.stringify(list)); } catch (e) {} }
-  function clean(v) {
-    try { v = v.replace(new RegExp('[^\\p{L}\\p{N} _.\\-]', 'gu'), ''); } catch (e) { v = v.replace(/[^A-Za-z0-9 _.\-]/g, ''); }
-    return v.toUpperCase().slice(0, NAME_MAX);
-  }
-  function el(tag, cls, txt) { var n = document.createElement(tag); if (cls) n.className = cls; if (txt != null) n.textContent = txt; return n; }
-
+  // ---- end of the run: result card (fl-arcade) with a copy button, then home ----
   function finish(win) {
     on = false; keys.L = keys.R = keys.F = 0;
     if (window.flMusic) window.flMusic.stop();
-    var ov = el('div', 'ov'), bx = el('div', 'bx'), board = el('ol', 'top'), mine = null;
-    ov.setAttribute('role', 'dialog'); ov.setAttribute('aria-modal', 'true'); ov.setAttribute('aria-label', win ? 'You win' : 'Game over');
-    bx.appendChild(el('h2', '', win ? 'You win' : 'Game over'));
-    var sc = el('p', 'sc', 'SCORE '); sc.appendChild(el('b', '', String(score))); sc.appendChild(document.createTextNode('  ·  LEVEL ')); sc.appendChild(el('b', '', String(win ? LEVELS : level)));
-    bx.appendChild(sc);
-
-    function paintBoard(list) {
-      board.textContent = '';
-      for (var i = 0; i < TOPN; i++) {
-        var r = list[i], li = el('li', r && r === mine ? 'me' : '');
-        li.appendChild(el('i', '', String(i + 1)));
-        li.appendChild(el('span', '', r ? r.n : '- - -'));
-        li.appendChild(el('b', '', r ? String(r.s) : ''));
-        li.appendChild(el('em', '', r ? 'L' + r.l : ''));
-        board.appendChild(li);
-      }
-    }
-    var home = el('a', 'hm', 'Home'); home.href = HOME;
-
-    var form = null, input = null;
-    if (score > 0) {
-      form = el('form', 'nm'); input = el('input'); input.type = 'text'; input.maxLength = NAME_MAX; input.placeholder = 'NAME';
-      input.setAttribute('autocomplete', 'off'); input.setAttribute('autocapitalize', 'characters'); input.setAttribute('spellcheck', 'false'); input.setAttribute('aria-label', 'Name');
-      var ok = el('button', '', 'OK'); ok.type = 'submit';
-      form.appendChild(input); form.appendChild(ok);
-      input.addEventListener('input', function () { var c = clean(input.value); if (c !== input.value) input.value = c; });
-      form.addEventListener('submit', function (e) {
-        e.preventDefault();
-        var n = clean(input.value).replace(/\s+/g, ' ').trim();
-        if (!n) { input.focus(); return; }
-        var list = loadTop(); mine = { n: n, s: score, l: win ? LEVELS : level };
-        list.push(mine);
-        list.sort(function (a, b) { return b.s - a.s; });
-        list = list.slice(0, TOPN); saveTop(list); paintBoard(list);
-        form.parentNode.removeChild(form); form = null; home.focus();
-      });
-      bx.appendChild(form);
-    }
-    bx.appendChild(el('h3', '', 'Top 3'));
-    paintBoard(loadTop());
-    bx.appendChild(board); bx.appendChild(home);
-    ov.appendChild(bx); document.body.appendChild(ov);
-    if (input) { try { input.focus({ preventScroll: true }); } catch (e) {} }
-    document.addEventListener('keydown', function (e) { if (e.key === 'Enter' && !form && e.target === document.body) location.assign(HOME); });
+    var o = {
+      game: 'MECHA INVADERS', icon: '👾', title: win ? 'You win' : 'Game over', win: win, score: score,
+      stats: [['LEVEL', win ? LEVELS : level], ['MECHAS DOWN', totalKills]], tiers: [300, 1000, 2500, 6000], home: HOME
+    };
+    if (window.flArcade) window.flArcade.finish(o); else location.assign(HOME);
   }
 
   // ---- controls ----
