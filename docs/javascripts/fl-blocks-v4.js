@@ -1,5 +1,5 @@
 (function () {
-  // 404 page: BUNKER. Reached when a long pong rally makes the court collapse (fl-pong sends `fl-blocks`). Loot crates fall into a
+  // 404 page: BUNKER. Reached when the wandering Discord characters are wiped out family by family (fl-logo404 sends `fl-blocks`). Loot crates fall into a
   // bunker; fill a whole row to seal it. The crates are our own set of seven (three- to five-block shapes), the board is
   // 8 x 14. Arrows / WASD (space = drop) or the pad on touch screens. Game over: a result card (fl-arcade) with a
   // copy-to-clipboard button. Nothing is saved. This game never grants any rank.
@@ -236,7 +236,7 @@
   }
 
   function begin() {
-    if (on) return;
+    if (on || !window.flSnake || !window.flSnake.halt()) return;   // refused while the snake is celebrating a win
     on = true;
     cv.className = 'invade'; setTimeout(function () { cv.classList.remove('invade'); }, 720);
     cv.setAttribute('aria-label', 'Blocks');

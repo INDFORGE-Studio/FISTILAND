@@ -146,7 +146,14 @@
   ];
   var layer = document.createElement('div'); layer.className = 'wl'; layer.setAttribute('aria-hidden', 'true');
   document.body.appendChild(layer);
-  var walkers = [];
+  var walkers = [], order = [];   // order = family index of each character, in the order they were wiped
+  function byFamily(seq) {   // true when every family was cleared in one unbroken run (no family comes back after another started)
+    var done = {}, prev = -1;
+    for (var i = 0; i < seq.length; i++) {
+      if (seq[i] !== prev) { if (done[seq[i]]) return false; if (prev >= 0) done[prev] = true; prev = seq[i]; }
+    }
+    return true;
+  }
   var probe = document.createElement('div');
   var COUNT = VW < 600 ? 8 : 12;   // like little bubbles all over the page: every character several times
   for (var wi = 0; wi < COUNT; wi++) {
@@ -159,7 +166,7 @@
     pic.className += ' on'; el.appendChild(pic);
     layer.appendChild(el);
     var ang = rnd(0, Math.PI * 2), sp = rnd(16, 42);
-    walkers.push({ el: el, tone: TONES[ci], x: rnd(0, Math.max(1, VW - 60)), y: rnd(0, Math.max(1, VH - 60)), vx: Math.cos(ang) * sp, vy: Math.sin(ang) * sp, sp: sp, turn: rnd(0.8, 2.6), ph: rnd(0, 6.28), tilt: rnd(5, 11), s: 0 });
+    walkers.push({ el: el, ci: ci, tone: TONES[ci], x: rnd(0, Math.max(1, VW - 60)), y: rnd(0, Math.max(1, VH - 60)), vx: Math.cos(ang) * sp, vy: Math.sin(ang) * sp, sp: sp, turn: rnd(0.8, 2.6), ph: rnd(0, 6.28), tilt: rnd(5, 11), s: 0 });
     (function (wk) {
       wk.el.addEventListener('pointerdown', function (e) {
         e.preventDefault();
@@ -168,8 +175,10 @@
         wk.gone = true; wk.el.classList.add('gone');
         setTimeout(function () { if (wk.el.parentNode) wk.el.parentNode.removeChild(wk.el); }, 220);
         walkers = walkers.filter(function (o) { return o !== wk; });
-        // the last one is gone: the snake board turns into the invaders game
-        if (!walkers.length) setTimeout(function () { document.dispatchEvent(new Event('fl-invaders')); }, 380);
+        order.push(wk.ci);
+        // the last one is gone: the snake board turns into a game. Whole families wiped one after the other (any count, any
+        // family order) open the bunker blocks; any other order opens the invaders.
+        if (!walkers.length) setTimeout(function () { document.dispatchEvent(new Event(byFamily(order) ? 'fl-blocks' : 'fl-invaders')); }, 380);
       });
     })(walkers[walkers.length - 1]);
   }
