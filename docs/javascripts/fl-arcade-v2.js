@@ -1,6 +1,7 @@
 (function () {
   // Shared end-of-run screen for the 404 mini games (pong, blocks): title, fame score, optional top 3 kept in this browser
-  // (8-character name), REPLAY and HOME buttons. window.flArcade.finish({ title, line, score, top: { key, level }, replay, home })
+  // (8-character name) and a HOME button (no replay: a run always ends back home, Enter goes there too).
+  // window.flArcade.finish({ title, line, score, top: { key, level }, home })
   var NAME_MAX = 8, TOPN = 3;
 
   function el(tag, cls, txt) { var n = document.createElement(tag); if (cls) n.className = cls; if (txt != null) n.textContent = txt; return n; }
@@ -26,7 +27,6 @@
     if (o.line) sc.appendChild(document.createTextNode((o.score != null ? '  ·  ' : '') + o.line));
     bx.appendChild(sc);
 
-    function close() { if (ov.parentNode) ov.parentNode.removeChild(ov); }
     if (o.top) {
       var key = o.top.key;
       board = el('ol', 'top');
@@ -55,7 +55,7 @@
           list.push(mine); list.sort(function (a, b) { return b.s - a.s; }); list = list.slice(0, TOPN);
           saveTop(key, list); paint(list);
           form.parentNode.removeChild(form); form = null;
-          if (replayBtn) replayBtn.focus(); else home.focus();
+          home.focus();
         });
         bx.appendChild(form);
       }
@@ -64,16 +64,12 @@
       bx.appendChild(board);
     }
 
-    var replayBtn = null, home = el('a', 'hm', 'Home'); home.href = o.home || '/';
-    if (o.replay) {
-      replayBtn = el('button', '', 'Replay'); replayBtn.type = 'button';
-      replayBtn.addEventListener('click', function () { close(); o.replay(); });
-      acts.appendChild(replayBtn);
-    }
+    var home = el('a', 'hm', 'Home'); home.href = o.home || '/';
     acts.appendChild(home);
     bx.appendChild(acts);
     ov.appendChild(bx); document.body.appendChild(ov);
-    try { (input || replayBtn || home).focus({ preventScroll: true }); } catch (e) {}
+    document.addEventListener('keydown', function (e) { if (e.key === 'Enter' && !form && e.target === document.body) location.assign(o.home || '/'); });
+    try { (input || home).focus({ preventScroll: true }); } catch (e) {}
   }
 
   window.flArcade = { finish: finish };

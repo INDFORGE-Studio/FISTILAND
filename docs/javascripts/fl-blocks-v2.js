@@ -180,7 +180,7 @@
 
   function finish() {
     if (window.flMusic) window.flMusic.stop();
-    var o = { title: 'Game over', score: score, line: 'SEALED ' + lines + '  ·  LEVEL ' + level, top: { key: TOP_KEY, level: level }, replay: restart, home: HOME };
+    var o = { title: 'Game over', score: score, line: 'SEALED ' + lines + '  ·  LEVEL ' + level, top: { key: TOP_KEY, level: level }, home: HOME };
     if (window.flArcade) window.flArcade.finish(o); else location.assign(HOME);
   }
   function restart() {

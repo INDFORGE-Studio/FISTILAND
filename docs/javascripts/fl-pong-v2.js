@@ -1,12 +1,12 @@
 (function () {
   // 404 page: KILLBOX DUEL. After 30 seconds without any input the snake board turns into an attract-mode pong played by two
   // machines (INSERT COIN). A tap, a click or an arrow / W / S key takes the left paddle: the SCUM prisoner's riot shield against a
-  // mecha plate, a toxic mushroom for a ball. First to 7 wins. A rally of 12 hits in a human match makes the whole court collapse
+  // mecha plate, a toxic mushroom for a ball. First to 7 wins. A rally of 20 hits in a human match makes the whole court collapse
   // into the next game (fl-blocks). This game never grants any rank.
   var cv = document.getElementById('fl-snake'), pipsEl = document.getElementById('fl-pips');
   if (!cv || !cv.getContext) return;
   var ctx = cv.getContext('2d'), HOME = cv.getAttribute('data-home') || '/';
-  var FW = 300, IDLE = 30000, WIN = 7, GOAL = 12, REC_KEY = 'fl-pong-best', PH = 44, PW = 6, LX = 16, RX = 284, TOP = 6, BOT = 294;
+  var FW = 300, IDLE = 30000, WIN = 7, GOAL = 20, REC_KEY = 'fl-pong-best', PH = 44, PW = 6, LX = 16, RX = 284, TOP = 6, BOT = 294;
   var FONT = 'ui-monospace, Consolas, Menlo, monospace';
 
   var on = false, demo = false, last = 0, lastAct = performance.now(), flash = 0, shake = 0;
@@ -180,7 +180,7 @@
     if (window.flMusic) window.flMusic.stop();
     var rec = Math.max(record(), best);
     try { localStorage.setItem(REC_KEY, String(rec)); } catch (e) {}
-    var o = { title: win ? 'You win' : 'Game over', score: sl * 100 + best * 10 + (win ? 200 : 0), line: 'BEST RALLY ' + best + '  ·  RECORD ' + rec, replay: startHuman, home: HOME };
+    var o = { title: win ? 'You win' : 'Game over', score: sl * 100 + best * 10 + (win ? 200 : 0), line: 'BEST RALLY ' + best + '  ·  RECORD ' + rec, home: HOME };
     if (window.flArcade) window.flArcade.finish(o); else location.assign(HOME);
   }
 
