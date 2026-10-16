@@ -179,7 +179,7 @@
       });
       // double-click (or double-tap) the badge: start again from zero
       badge.addEventListener('dblclick', function () {
-        try { localStorage.removeItem(KEY); localStorage.removeItem('fl-lang'); localStorage.removeItem('fl-invaders-top'); } catch (e) {}
+        try { localStorage.removeItem(KEY); localStorage.removeItem('fl-lang'); localStorage.removeItem('fl-invaders-top'); localStorage.removeItem('fl-blocks-top'); localStorage.removeItem('fl-pong-best'); } catch (e) {}
         state = {};
         clearTimeout(hintTimer);
         if (hint) hint.classList.remove('is-on');

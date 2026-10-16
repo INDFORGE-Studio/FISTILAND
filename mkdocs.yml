@@ -35,7 +35,7 @@ extra_javascript:
   - javascripts/fl-join-v3.js
   - javascripts/fl-discord-v5.js
   - javascripts/fl-cc-v11.js
-  - javascripts/fl-rank-v21.js
+  - javascripts/fl-rank-v22.js
   - javascripts/fl-theme-v12.js
   - javascripts/fl-fx-v7.js
   - javascripts/fl-trip-v5.js

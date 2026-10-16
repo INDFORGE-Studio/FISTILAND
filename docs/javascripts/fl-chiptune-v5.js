@@ -3,7 +3,8 @@
   // Everything (melodies, chords, bass lines, drum patterns) is written from scratch, so there is nothing to license.
   //   'snake'    : retro-synthwave in D minor, 16 bars (pumping 16th bass, four on the floor, detuned saws, dotted echo).
   //   'invaders' : dark "Killbox" industrial in E phrygian, 16 bars (countdown ticks, gritty chugging riff, sub bass, siren, drone).
-  // Both speed up with the level they are given. window.flMusic: start(getLevel, song), stop(), sfx(kind), volume(v), mute(m),
+  //   'pong'     : bright 8-bit march in C, 16 bars.   'blocks' : slow cold arpeggios and a bell lead in E minor, 16 bars.
+  // Every song speeds up with the level it is given. window.flMusic: start(getLevel, song), stop(), sfx(kind), volume(v), mute(m),
   // bar(container) which adds the speaker button and the volume slider (the choice is kept in this browser).
   var AC = window.AudioContext || window.webkitAudioContext;
   if (!AC) { window.flMusic = { start: function () {}, stop: function () {}, sfx: function () {}, volume: function () {}, mute: function () {}, bar: function () {} }; return; }
@@ -169,9 +170,67 @@
     if (ln) voice(hard ? 'sawtooth' : 'square', hz(76 + ln[0]), t, sd * ln[1] * .96, hard ? .13 : .08, hard ? 3200 : 2200, { det: [-10, 10], atk: hard ? .012 : .08, rel: .12, echo: .5, sus: .8, q: 1.5 });
   }
 
+  // ---- songs 3 and 4: pong ("Killbox Duel", bright 8-bit march in C) and blocks ("Bunker", slow cold arpeggios in E minor) ----
+  // bars as [bass root, minor flag, lead [[step, semitones above the song's base note, length in steps]]]
+  var DUEL = [
+    [48, 0, [[0, 4, 1], [2, 7, 1], [4, 12, 2], [8, 7, 1], [10, 4, 1], [12, 7, 3]]],
+    [43, 0, [[0, 2, 1], [2, 7, 1], [4, 11, 2], [8, 7, 1], [10, 2, 1], [12, 7, 3]]],
+    [45, 1, [[0, 4, 1], [2, 9, 1], [4, 12, 2], [8, 9, 1], [10, 4, 1], [12, 9, 3]]],
+    [41, 0, [[0, 5, 1], [2, 9, 1], [4, 12, 2], [8, 9, 1], [10, 5, 1], [12, 12, 1], [14, 9, 1]]],
+    [48, 0, [[0, 7, 2], [2, 4, 1], [3, 7, 1], [4, 12, 4], [8, 11, 2], [10, 12, 2], [12, 16, 4]]],
+    [43, 0, [[0, 14, 2], [2, 11, 1], [3, 14, 1], [4, 7, 4], [8, 11, 2], [10, 14, 2], [12, 19, 4]]],
+    [41, 0, [[0, 12, 2], [2, 9, 1], [3, 12, 1], [4, 17, 4], [8, 16, 2], [10, 12, 2], [12, 9, 4]]],
+    [43, 0, [[0, 14, 2], [2, 11, 2], [4, 7, 2], [6, 11, 2], [8, 14, 4], [12, 7, 2], [14, 2, 2]]],
+    [45, 1, [[0, 9, 2], [2, 12, 2], [4, 16, 2], [6, 12, 2], [8, 9, 2], [10, 12, 2], [12, 16, 4]]],
+    [41, 0, [[0, 9, 2], [2, 12, 2], [4, 17, 2], [6, 12, 2], [8, 9, 2], [10, 12, 2], [12, 17, 4]]],
+    [48, 0, [[0, 7, 2], [2, 12, 2], [4, 16, 2], [6, 12, 2], [8, 7, 2], [10, 12, 2], [12, 19, 4]]],
+    [43, 0, [[0, 11, 2], [2, 14, 2], [4, 19, 2], [6, 14, 2], [8, 11, 2], [10, 14, 2], [12, 19, 4]]],
+    [45, 1, [[0, 16, 4], [4, 14, 2], [6, 12, 2], [8, 9, 4], [12, 12, 2], [14, 16, 2]]],
+    [41, 0, [[0, 17, 4], [4, 16, 2], [6, 12, 2], [8, 9, 4], [12, 12, 2], [14, 17, 2]]],
+    [43, 0, [[0, 14, 2], [2, 11, 2], [4, 7, 2], [6, 11, 2], [8, 14, 2], [10, 16, 2], [12, 14, 4]]],
+    [48, 0, [[0, 16, 2], [2, 12, 2], [4, 7, 2], [6, 4, 2], [8, 0, 8]]]
+  ];
+  var BUNKER = [
+    [40, 1, [[0, 0, 4], [6, 2, 2], [8, 7, 4], [14, 5, 2]]],
+    [36, 0, [[0, 4, 4], [6, 2, 2], [8, 0, 4], [12, -5, 4]]],
+    [43, 0, [[0, 7, 4], [6, 5, 2], [8, 2, 4], [12, 0, 4]]],
+    [38, 0, [[0, 2, 4], [6, 5, 2], [8, 9, 4], [14, 7, 2]]],
+    [40, 1, [[0, 12, 6], [8, 7, 4], [12, 4, 2], [14, 7, 2]]],
+    [36, 0, [[0, 12, 4], [4, 11, 2], [6, 7, 2], [8, 4, 8]]],
+    [38, 0, [[0, 9, 4], [4, 7, 2], [6, 2, 2], [8, 5, 4], [12, 2, 4]]],
+    [35, 0, [[0, 11, 4], [4, 7, 2], [6, 2, 2], [8, -1, 8]]],
+    [40, 1, [[0, 7, 2], [2, 12, 2], [4, 11, 2], [6, 7, 2], [8, 4, 2], [10, 7, 2], [12, 12, 4]]],
+    [36, 0, [[0, 4, 2], [2, 7, 2], [4, 12, 2], [6, 7, 2], [8, 4, 2], [10, 0, 2], [12, 4, 4]]],
+    [43, 0, [[0, 2, 2], [2, 7, 2], [4, 11, 2], [6, 7, 2], [8, 2, 2], [10, 7, 2], [12, 14, 4]]],
+    [38, 0, [[0, 9, 2], [2, 14, 2], [4, 9, 2], [6, 5, 2], [8, 2, 2], [10, 5, 2], [12, 9, 4]]],
+    [40, 1, [[0, 16, 4], [4, 14, 2], [6, 12, 2], [8, 11, 4], [12, 7, 4]]],
+    [36, 0, [[0, 16, 4], [4, 12, 2], [6, 11, 2], [8, 7, 4], [12, 4, 4]]],
+    [38, 0, [[0, 14, 2], [2, 9, 2], [4, 5, 2], [6, 9, 2], [8, 14, 4], [12, 17, 2]]],
+    [35, 0, [[0, 15, 2], [2, 11, 2], [4, 7, 2], [6, 3, 2], [8, -1, 2], [10, 3, 2], [12, 7, 2], [14, 11, 2]]]
+  ];
+  // one small engine for both: o = { base, lead (waveform), leadPeak, leadLp, det, echo, kicks, kicksB, pump, bass, arp, arpPeak, pad }
+  function makeLight(BARS, o) {
+    var B = BARS.map(function (b) { var lead = []; b[2].forEach(function (n) { lead[n[0]] = [n[1], n[2]]; }); return { r: b[0], m: b[1], lead: lead }; });
+    return function (i, t, sd) {
+      var bi = (i >> 4) & 15, s = i & 15, b = B[bi], chorus = bi >= 8, iv = b.m ? [0, 3, 7, 12] : [0, 4, 7, 12], ks = chorus ? o.kicksB : o.kicks;
+      if (ks.indexOf(s) >= 0) { kick(t, o.deep); if (o.pump) duck(t, sd); }
+      if (s === 4 || s === 12) { if (o.snare) snare(t); else hit(t, .1, .2, 'bandpass', 1800); }
+      if (s % 2 === 0) hit(t, .03, .06, 'highpass', 7500);
+      if (s % 2 === 0) voice(o.bass, hz(b.r + (s % 4 === 2 ? 12 : 0)), t, sd * 1.6, .3, 650, { atk: .004, rel: .04, bus: comp });
+      if (o.pad && s === 0) for (var k = 0; k < 3; k++) voice('sawtooth', hz(b.r + 24 + iv[k]), t, sd * 15, .05, 900, { det: [-9, 9], atk: .25, rel: .4 });
+      if (chorus || o.arpAlways) voice(o.arp, hz(b.r + 36 + iv[ARP[(s >> 1) & 7]]), t, sd * .9, o.arpPeak, 2600, { atk: .004, rel: .05, echo: o.echo });
+      var ln = b.lead[s];
+      if (ln) voice(o.lead, hz(o.base + ln[0]), t, sd * ln[1] * .95, o.leadPeak, o.leadLp, { det: o.det, atk: .01, rel: .08, echo: o.echo, sus: .85 });
+    };
+  }
+  var playDuel = makeLight(DUEL, { base: 72, lead: 'square', leadPeak: .13, leadLp: 3400, echo: .3, kicks: [0, 8], kicksB: [0, 6, 8, 14], pump: true, bass: 'triangle', arp: 'square', arpPeak: .045, snare: false });
+  var playBunker = makeLight(BUNKER, { base: 76, lead: 'triangle', leadPeak: .2, leadLp: 3000, det: [-6, 6], echo: .55, kicks: [0, 8], kicksB: [0, 8, 14], pump: true, deep: true, snare: true, pad: true, bass: 'triangle', arp: 'square', arpPeak: .04, arpAlways: true });
+
   var SONGS = {
     snake: { play: playSynth, bpm: function (l) { return Math.min(158, 118 + 4 * (l - 1)); } },
-    invaders: { play: playKill, bpm: function (l) { return Math.min(162, 126 + 4 * (l - 1)); } }
+    invaders: { play: playKill, bpm: function (l) { return Math.min(162, 126 + 4 * (l - 1)); } },
+    pong: { play: playDuel, bpm: function (l) { return Math.min(168, 128 + 5 * (l - 1)); } },
+    blocks: { play: playBunker, bpm: function (l) { return Math.min(150, 100 + 5 * (l - 1)); } }
   };
 
   // ---- engine -----------------------------------------------------------------------------------------------------------
@@ -235,11 +294,12 @@
   // a browser may keep the context suspended until the first touch / key press after the game has started
   ['pointerdown', 'keydown'].forEach(function (n) { document.addEventListener(n, function () { if (running) resume(); }, true); });
 
-  // short jingles: 'eat' = two quick notes (a mushroom), default = rising four (airdrop and pick-up)
+  // short jingles, a few notes each; default = rising four (airdrop and pick-up)
+  var SFX = { eat: [88, 95], hit: [81], wall: [69], serve: [64, 76], score: [64, 57, 50], line: [76, 83, 88, 95], land: [48], rot: [84], crash: [60, 53, 46, 39, 32] };
   function sfx(kind) {
     if (!running || !ctx || ctx.state !== 'running') return;
-    var t = ctx.currentTime + .02, notes = kind === 'eat' ? [88, 95] : [76, 81, 88, 93];
-    notes.forEach(function (m, i) { voice('square', hz(m), t + i * .07, .1, kind === 'eat' ? .1 : .16, 3200, { atk: .004, rel: .06, bus: comp }); });
+    var t = ctx.currentTime + .02, notes = SFX[kind] || [76, 81, 88, 93], soft = kind in SFX && kind !== 'line';
+    notes.forEach(function (m, i) { voice(kind === 'land' || kind === 'crash' ? 'sawtooth' : 'square', hz(m), t + i * (kind === 'crash' ? .11 : .07), kind === 'crash' ? .14 : .1, soft ? .1 : .16, kind === 'land' ? 500 : 3200, { atk: .004, rel: .06, bus: comp }); });
   }
 
   // ---- speaker button + volume slider ----------------------------------------------------------------------------------
