@@ -38,7 +38,7 @@ extra_javascript:
   - javascripts/fl-rank-v21.js
   - javascripts/fl-theme-v12.js
   - javascripts/fl-fx-v7.js
-  - javascripts/fl-trip-v4.js
+  - javascripts/fl-trip-v5.js
   - javascripts/fl-lamp-v16.js
   - javascripts/fl-extras-v1.js
 

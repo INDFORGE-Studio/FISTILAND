@@ -301,6 +301,21 @@
     function logoLeave() { fxEl.classList.remove('is-on'); leave(logo); }
     fxEl.addEventListener('pointerleave', logoLeave);
     fxEl.addEventListener('pointercancel', logoLeave);
+
+    // touch screens: a long press opens the browser's image menu, so a quick double tap does the job of the long hover
+    fxEl.style.webkitTouchCallout = 'none'; fxEl.style.touchAction = 'manipulation';
+    fxEl.addEventListener('contextmenu', function (e) { if (lastTouch && performance.now() - lastTouch < 1500) e.preventDefault(); });
+    fxEl.addEventListener('dragstart', function (e) { e.preventDefault(); });
+    var lastTouch = 0, tapT = -1e9, tapX = 0, tapY = 0;
+    fxEl.addEventListener('pointerdown', function (e) {
+      if (e.pointerType !== 'touch') return;
+      var now = performance.now(); lastTouch = now;
+      var again = now - tapT < 450 && Math.abs(e.clientX - tapX) < 48 && Math.abs(e.clientY - tapY) < 48;
+      tapT = again ? -1e9 : now; tapX = e.clientX; tapY = e.clientY;
+      if (!again) return;
+      enter(logo); punch();
+      if (iron() && !veteran()) { hold = Math.max(hold, 0.62); if (!masterSent) { masterSent = true; egg('master'); } }
+    });
   }
 
   // ---- toxic mushrooms: mouse hover / keyboard focus; on touch screens the card is open after a tap ----
