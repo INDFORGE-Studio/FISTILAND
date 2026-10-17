@@ -39,7 +39,7 @@ Pridruži nam se na Discordu za najnovije vijesti i promjene, za traženje ekipe
 | Loot | x5 |
 | Respawn | Brz |
 | Cijene trgovaca | Povoljne |
-| Napredak vještina | Produžen, vidi tablicu ispod |
+| Napredak vještina | Standardan, brži za streličarstvo i vožnju |
 | Preživljavanje | Lakše |
 | Ekipe | Najviše 10 igrača |
 | Mechovi | Nema |
@@ -60,9 +60,8 @@ Pridruži nam se na Discordu za najnovije vijesti i promjene, za traženje ekipe
 
 | Množitelj | Vještine |
 |---|---|
-| x1.5 | Streličarstvo, Vožnja, Motocikl |
-| x1 | Medicina, Hladno oružje, Puške |
-| x0.5 | Sve ostale vještine |
+| x1.5 | Streličarstvo, Vožnja |
+| x1 | Sve ostale vještine |
 
 <div class="fl-left" markdown>
 
@@ -70,7 +69,7 @@ Pridruži nam se na Discordu za najnovije vijesti i promjene, za traženje ekipe
 
 Opremi se za nekoliko sati, a ostatak vremena preživljavaj sam ili gradi bazu sa svojom ekipom: bori se protiv svega što se dogodi, uznemiravaj grupe i živi na njihov račun ili brani teritorij do kraja... I vrati se u život, jači nego prije.
 
-Vještine se grade dulje od pristojne opreme, pa se nemoj žuriti i pazi na okolinu. Ni obveze preživljavanja neće ti smetati... Sve to PvP čini lakšim i ugodnijim, a veterane nagrađuje za njihovu predanost i prisutnost.
+Nemoj se žuriti i pazi na okolinu. Ni obveze preživljavanja neće ti smetati... Sve to PvP čini lakšim i ugodnijim, a veterane nagrađuje za njihovu predanost i prisutnost.
 
 </div>
 

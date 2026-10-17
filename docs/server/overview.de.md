@@ -39,7 +39,7 @@ Komm auf unseren Discord für die neuesten Neuigkeiten und Änderungen, um einen
 | Loot | x5 |
 | Respawns | Schnell |
 | Händlerpreise | Attraktiv |
-| Fertigkeitsfortschritt | Verlängert, siehe Tabelle unten |
+| Fertigkeitsfortschritt | Standard, schneller für Bogenschießen und Fahren |
 | Überleben | Leichter |
 | Trupps | Höchstens 10 Spieler |
 | Mechs | Keine |
@@ -60,9 +60,8 @@ Komm auf unseren Discord für die neuesten Neuigkeiten und Änderungen, um einen
 
 | Multiplikator | Fertigkeiten |
 |---|---|
-| x1.5 | Bogenschießen, Fahren, Motorrad |
-| x1 | Medizin, Nahkampfwaffen, Gewehre |
-| x0.5 | Alle anderen Fertigkeiten |
+| x1.5 | Bogenschießen, Fahren |
+| x1 | Alle anderen Fertigkeiten |
 
 <div class="fl-left" markdown>
 
@@ -70,7 +69,7 @@ Komm auf unseren Discord für die neuesten Neuigkeiten und Änderungen, um einen
 
 In wenigen Stunden ausrüsten, dann den Rest der Zeit allein überleben oder mit dem Team eine Basis bauen, um sich um jeden Preis zu behaupten, Gruppen zu schikanieren und von ihnen zu leben oder ein Territorium bis zum Tod zu verteidigen... Und wieder aufstehen, um stärker zurückzukommen.
 
-Fertigkeiten brauchen länger als anständige Ausrüstung, also nimm dir Zeit und achte auf deine Umgebung. Auch die Überlebensarbeit stört dich nicht... All das macht PvP einfacher und angenehmer, belohnt aber die Veteranen für ihre Ausdauer und Präsenz.
+Nimm dir Zeit und achte auf deine Umgebung. Auch die Überlebensarbeit stört dich nicht... All das macht PvP einfacher und angenehmer, belohnt aber die Veteranen für ihre Ausdauer und Präsenz.
 
 </div>
 

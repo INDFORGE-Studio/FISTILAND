@@ -4,14 +4,13 @@
 
 # Fortschritt
 
-<p>Ausrüstung kommt schnell, Fertigkeiten brauchen länger. Ein Multiplikator skaliert die für jede Fertigkeit gewonnene Erfahrung.</p>
+<p>Ein Multiplikator skaliert die für jede Fertigkeit gewonnene Erfahrung. Alles läuft im Standardtempo, Bogenschießen und Fahren etwas schneller.</p>
 
 </div>
 
 <div class="fl-facts">
-<div><b>x1.5</b><span>Bogenschießen, Fahren, Motorrad</span></div>
-<div><b>x1</b><span>Medizin, Nahkampf, Gewehre</span></div>
-<div><b>x0.5</b><span>Alle anderen Fertigkeiten</span></div>
+<div><b>x1.5</b><span>Bogenschießen, Fahren</span></div>
+<div><b>x1</b><span>Alle anderen Fertigkeiten</span></div>
 <div><b>50%</b><span>Ruhm, der bei einem Kill genommen wird</span></div>
 </div>
 
@@ -20,9 +19,8 @@
 
 | Multiplikator | Fertigkeiten |
 |---|---|
-| **1.5** | Bogenschießen (`ArcherySkillMultiplier`), Fahren (`DrivingSkillMultiplier`), Motorrad (`MotorcycleSkillMultiplier`) |
-| **1** | Aufmerksamkeit, Kochen, Ausdauer, Landwirtschaft, Medizin, Nahkampfwaffen, Gewehre, Laufen, Überleben |
-| **0.5** | Luftfahrt, Faustkampf, Tarnung, Sprengstoff, Technik, Handfeuerwaffen, Scharfschießen, Schleichen, Diebstahl |
+| **1.5** | Bogenschießen (`ArcherySkillMultiplier`), Fahren (`DrivingSkillMultiplier`) |
+| **1** | Aufmerksamkeit, Kochen, Ausdauer, Landwirtschaft, Medizin, Nahkampfwaffen, Gewehre, Laufen, Überleben, Luftfahrt, Faustkampf, Tarnung, Sprengstoff, Technik, Handfeuerwaffen, Scharfschießen, Schleichen, Diebstahl, Motorrad |
 
 Der Name der Einstellung ist der Name der Fertigkeit gefolgt von `SkillMultiplier`, zum Beispiel `RiflesSkillMultiplier=1`.
 

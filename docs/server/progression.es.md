@@ -4,14 +4,13 @@
 
 # Progresión
 
-<p>El equipo llega rápido, las habilidades tardan más. Un multiplicador escala la experiencia ganada en cada habilidad.</p>
+<p>Un multiplicador escala la experiencia ganada en cada habilidad. Todo avanza al ritmo estándar, el tiro con arco y la conducción un poco más rápido.</p>
 
 </div>
 
 <div class="fl-facts">
-<div><b>x1.5</b><span>Tiro con arco, conducción, motocicleta</span></div>
-<div><b>x1</b><span>Medicina, cuerpo a cuerpo, rifles</span></div>
-<div><b>x0.5</b><span>Todas las demás habilidades</span></div>
+<div><b>x1.5</b><span>Tiro con arco, conducción</span></div>
+<div><b>x1</b><span>Todas las demás habilidades</span></div>
 <div><b>50%</b><span>Fama que se quita en una baja</span></div>
 </div>
 
@@ -20,9 +19,8 @@
 
 | Multiplicador | Habilidades |
 |---|---|
-| **1.5** | Tiro con arco (`ArcherySkillMultiplier`), Conducción (`DrivingSkillMultiplier`), Motocicleta (`MotorcycleSkillMultiplier`) |
-| **1** | Percepción, Cocina, Resistencia, Agricultura, Medicina, Armas cuerpo a cuerpo, Rifles, Carrera, Supervivencia |
-| **0.5** | Aviación, Pelea, Camuflaje, Demolición, Ingeniería, Armas cortas, Francotirador, Sigilo, Robo |
+| **1.5** | Tiro con arco (`ArcherySkillMultiplier`), Conducción (`DrivingSkillMultiplier`) |
+| **1** | Percepción, Cocina, Resistencia, Agricultura, Medicina, Armas cuerpo a cuerpo, Rifles, Carrera, Supervivencia, Aviación, Pelea, Camuflaje, Demolición, Ingeniería, Armas cortas, Francotirador, Sigilo, Robo, Motocicleta |
 
 El nombre del ajuste es el nombre de la habilidad seguido de `SkillMultiplier`, por ejemplo `RiflesSkillMultiplier=1`.
 

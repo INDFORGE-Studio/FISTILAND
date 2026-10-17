@@ -45,7 +45,7 @@ W ustawieniach zombie nazywane są marionetkami (puppets).
 | `ArmedNPCHealthMultiplier` | 0.1 | Zdrowie: wystarczy jedna dobrze umieszczona kula. |
 | `ArmedNPCDamageMultiplier` | 0.5 | Zadawane obrażenia. |
 | `ArmedNPCRunningSpeedMultiplier` | 0.9 | Prędkość biegu. |
-| `ArmedNPCSpreadMultiplier` | 1 | Rozrzut broni. |
+| `ArmedNPCSpreadMultiplier` | 1.5 | Rozrzut broni. |
 | `ProbabilityForArmedNPCToDropItemFromHandsWhenSearched` | 1 | Przeszukane NPC zawsze upuszcza to, co trzyma. |
 | `MinimumDurabilityOfArmedNPCsDroppedItemFromHands` / `MaximumDurabilityOfArmedNPCsDroppedItemFromHands` | 0.2 / 0.3 | Stan tych przedmiotów. |
 | `MaxAllowedNPCs` | -1 | Brak limitu uzbrojonych NPC. |

@@ -39,7 +39,7 @@ Dołącz do nas na Discordzie po najnowsze wieści i zmiany, by szukać drużyny
 | Loot | x5 |
 | Respawn | Szybki |
 | Ceny handlarzy | Atrakcyjne |
-| Rozwój umiejętności | Wydłużony, zobacz tabelę poniżej |
+| Rozwój umiejętności | Standardowy, szybszy dla łucznictwa i prowadzenia pojazdów |
 | Przetrwanie | Łatwiejsze |
 | Drużyny | Maksymalnie 10 graczy |
 | Mechy | Brak |
@@ -60,9 +60,8 @@ Dołącz do nas na Discordzie po najnowsze wieści i zmiany, by szukać drużyny
 
 | Mnożnik | Umiejętności |
 |---|---|
-| x1.5 | Łucznictwo, Prowadzenie pojazdów, Motocykl |
-| x1 | Medycyna, Broń biała, Karabiny |
-| x0.5 | Wszystkie pozostałe umiejętności |
+| x1.5 | Łucznictwo, Prowadzenie pojazdów |
+| x1 | Wszystkie pozostałe umiejętności |
 
 <div class="fl-left" markdown>
 
@@ -70,7 +69,7 @@ Dołącz do nas na Discordzie po najnowsze wieści i zmiany, by szukać drużyny
 
 Skompletuj sprzęt w kilka godzin, a resztę czasu spędź na przetrwaniu w pojedynkę albo na budowie bazy z drużyną: walcz z tym, co się trafi, nękaj grupy i żyj na ich koszt albo broń terytorium do końca... I wracaj do życia, silniejszy niż wcześniej.
 
-Umiejętności budują się dłużej niż przyzwoity sprzęt, więc nie spiesz się i patrz na otoczenie. Obowiązki związane z przetrwaniem też nie będą ci przeszkadzać... To wszystko sprawia, że PvP jest łatwiejsze i przyjemniejsze, a weteranów nagradza za zaangażowanie i obecność.
+Nie spiesz się i patrz na otoczenie. Obowiązki związane z przetrwaniem też nie będą ci przeszkadzać... To wszystko sprawia, że PvP jest łatwiejsze i przyjemniejsze, a weteranów nagradza za zaangażowanie i obecność.
 
 </div>
 

@@ -4,14 +4,13 @@
 
 # Progression
 
-<p>Gear comes fast, skills take longer. A multiplier scales the experience earned for each skill.</p>
+<p>A multiplier scales the experience earned for each skill. Everything runs at the standard rate, archery and driving a little faster.</p>
 
 </div>
 
 <div class="fl-facts">
-<div><b>x1.5</b><span>Archery, driving, motorcycle</span></div>
-<div><b>x1</b><span>Medical, melee, rifles</span></div>
-<div><b>x0.5</b><span>All other skills</span></div>
+<div><b>x1.5</b><span>Archery, driving</span></div>
+<div><b>x1</b><span>All other skills</span></div>
 <div><b>50%</b><span>Fame taken on a kill</span></div>
 </div>
 
@@ -20,9 +19,8 @@
 
 | Multiplier | Skills |
 |---|---|
-| **1.5** | Archery (`ArcherySkillMultiplier`), Driving (`DrivingSkillMultiplier`), Motorcycle (`MotorcycleSkillMultiplier`) |
-| **1** | Awareness, Cooking, Endurance, Farming, Medical, Melee weapons, Rifles, Running, Survival |
-| **0.5** | Aviation, Brawling, Camouflage, Demolition, Engineering, Handgun, Sniping, Stealth, Thievery |
+| **1.5** | Archery (`ArcherySkillMultiplier`), Driving (`DrivingSkillMultiplier`) |
+| **1** | Awareness, Cooking, Endurance, Farming, Medical, Melee weapons, Rifles, Running, Survival, Aviation, Brawling, Camouflage, Demolition, Engineering, Handgun, Sniping, Stealth, Thievery, Motorcycle |
 
 The setting name is the skill name followed by `SkillMultiplier`, for example `RiflesSkillMultiplier=1`.
 

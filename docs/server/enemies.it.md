@@ -45,7 +45,7 @@ Nelle impostazioni gli zombie si chiamano marionette (puppets).
 | `ArmedNPCHealthMultiplier` | 0.1 | Salute: basta un solo proiettile ben piazzato. |
 | `ArmedNPCDamageMultiplier` | 0.5 | Danno inflitto. |
 | `ArmedNPCRunningSpeedMultiplier` | 0.9 | Velocità di corsa. |
-| `ArmedNPCSpreadMultiplier` | 1 | Dispersione delle armi. |
+| `ArmedNPCSpreadMultiplier` | 1.5 | Dispersione delle armi. |
 | `ProbabilityForArmedNPCToDropItemFromHandsWhenSearched` | 1 | Un PNG perquisito lascia sempre cadere ciò che tiene in mano. |
 | `MinimumDurabilityOfArmedNPCsDroppedItemFromHands` / `MaximumDurabilityOfArmedNPCsDroppedItemFromHands` | 0.2 / 0.3 | Condizione di quegli oggetti. |
 | `MaxAllowedNPCs` | -1 | Nessun limite di PNG armati. |

@@ -39,7 +39,7 @@ Join us on Discord for the latest news and changes, to look for a squad, and of 
 | Loot | x5 |
 | Respawns | Fast |
 | Trader prices | Attractive |
-| Skill progression | Extended, see the table below |
+| Skill progression | Standard, faster for archery and driving |
 | Survival | Easier |
 | Squads | 10 players max |
 | Mechs | None |
@@ -60,9 +60,8 @@ Join us on Discord for the latest news and changes, to look for a squad, and of 
 
 | Multiplier | Skills |
 |---|---|
-| x1.5 | Archery, Driving, Motorcycle |
-| x1 | Medical, Melee weapons, Rifles |
-| x0.5 | All other skills |
+| x1.5 | Archery, Driving |
+| x1 | All other skills |
 
 <div class="fl-left" markdown>
 
@@ -70,7 +69,7 @@ Join us on Discord for the latest news and changes, to look for a squad, and of 
 
 Gear up in a few hours, then spend the rest of the time surviving solo or building a base with your team, to fight whatever happens, harass the groups to live off their back, or defend a territory to the death... And come back to life, stronger than before.
 
-Skills take longer to build than decent gear, so take your time and watch your surroundings. Survival chores will not get in your way either... All of this makes PvP easier and more enjoyable, while rewarding veterans for their dedication and their presence.
+Take your time and watch your surroundings. Survival chores will not get in your way either... All of this makes PvP easier and more enjoyable, while rewarding veterans for their dedication and their presence.
 
 </div>
 

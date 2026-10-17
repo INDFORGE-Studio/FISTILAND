@@ -45,7 +45,7 @@ Los zombis se llaman marionetas (puppets) en los ajustes.
 | `ArmedNPCHealthMultiplier` | 0.1 | Salud: basta una sola bala bien colocada. |
 | `ArmedNPCDamageMultiplier` | 0.5 | Daño que causan. |
 | `ArmedNPCRunningSpeedMultiplier` | 0.9 | Velocidad de carrera. |
-| `ArmedNPCSpreadMultiplier` | 1 | Dispersión de las armas. |
+| `ArmedNPCSpreadMultiplier` | 1.5 | Dispersión de las armas. |
 | `ProbabilityForArmedNPCToDropItemFromHandsWhenSearched` | 1 | Un PNJ registrado siempre suelta lo que lleva en las manos. |
 | `MinimumDurabilityOfArmedNPCsDroppedItemFromHands` / `MaximumDurabilityOfArmedNPCsDroppedItemFromHands` | 0.2 / 0.3 | Estado de esos objetos. |
 | `MaxAllowedNPCs` | -1 | Sin límite de PNJ armados. |

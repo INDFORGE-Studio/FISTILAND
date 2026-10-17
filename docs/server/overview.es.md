@@ -39,7 +39,7 @@
 | Loot | x5 |
 | Reapariciones | Rápidas |
 | Precios de los comerciantes | Atractivos |
-| Progresión de habilidades | Ampliada, ver la tabla de abajo |
+| Progresión de habilidades | Estándar, más rápida para tiro con arco y conducción |
 | Supervivencia | Más fácil |
 | Escuadras | 10 jugadores como máximo |
 | Mechs | Ninguno |
@@ -60,9 +60,8 @@
 
 | Multiplicador | Habilidades |
 |---|---|
-| x1.5 | Tiro con arco, Conducción, Motocicleta |
-| x1 | Medicina, Armas cuerpo a cuerpo, Rifles |
-| x0.5 | Todas las demás habilidades |
+| x1.5 | Tiro con arco, Conducción |
+| x1 | Todas las demás habilidades |
 
 <div class="fl-left" markdown>
 
@@ -70,7 +69,7 @@
 
 Equiparte en unas horas y pasar el resto del tiempo sobreviviendo en solitario o construyendo una base en equipo para, pase lo que pase, luchar, hostigar a los grupos para vivir a su costa o defender un territorio hasta la muerte... Y revivir, para volver aún más fuerte.
 
-Las habilidades tardan más en subir que un equipo digno de ese nombre, así que tómate tu tiempo y vigila tu entorno. Las tareas de supervivencia tampoco te estorbarán... Todo para facilitar el PvP y hacerlo agradable, favoreciendo a los veteranos por su constancia y su presencia.
+Tómate tu tiempo y vigila tu entorno. Las tareas de supervivencia tampoco te estorbarán... Todo para facilitar el PvP y hacerlo agradable, favoreciendo a los veteranos por su constancia y su presencia.
 
 </div>
 

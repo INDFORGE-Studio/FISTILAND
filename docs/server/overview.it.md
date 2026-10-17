@@ -39,7 +39,7 @@ Unisciti al nostro Discord per le ultime novità e modifiche, per cercare una sq
 | Loot | x5 |
 | Respawn | Veloci |
 | Prezzi dei mercanti | Convenienti |
-| Progressione delle abilità | Estesa, vedi la tabella sotto |
+| Progressione delle abilità | Standard, più veloce per tiro con l'arco e guida |
 | Sopravvivenza | Più facile |
 | Squadre | Massimo 10 giocatori |
 | Mech | Nessuno |
@@ -60,9 +60,8 @@ Unisciti al nostro Discord per le ultime novità e modifiche, per cercare una sq
 
 | Moltiplicatore | Abilità |
 |---|---|
-| x1.5 | Tiro con l'arco, Guida, Moto |
-| x1 | Medicina, Armi da mischia, Fucili |
-| x0.5 | Tutte le altre abilità |
+| x1.5 | Tiro con l'arco, Guida |
+| x1 | Tutte le altre abilità |
 
 <div class="fl-left" markdown>
 
@@ -70,7 +69,7 @@ Unisciti al nostro Discord per le ultime novità e modifiche, per cercare una sq
 
 Equipaggiarsi in poche ore, poi passare il resto del tempo a sopravvivere da soli o a costruire una base con la squadra per, qualunque cosa accada, combattere, tormentare i gruppi per vivere alle loro spalle o difendere un territorio fino alla morte... E rinascere, per tornare ancora più forti.
 
-Le abilità richiedono più tempo di un equipaggiamento degno di questo nome, quindi prenditi il tuo tempo e fai attenzione all'ambiente. Nemmeno le faccende di sopravvivenza ti daranno fastidio... Tutto per rendere il PvP più semplice e piacevole, favorendo i veterani per la loro costanza e presenza.
+Prenditi il tuo tempo e fai attenzione all'ambiente. Nemmeno le faccende di sopravvivenza ti daranno fastidio... Tutto per rendere il PvP più semplice e piacevole, favorendo i veterani per la loro costanza e presenza.
 
 </div>
 
