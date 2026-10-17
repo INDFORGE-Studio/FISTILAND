@@ -4,14 +4,13 @@
 
 # Progression
 
-<p>L'équipement arrive vite, les compétences demandent plus de temps. Un multiplicateur ajuste l'expérience gagnée pour chaque compétence.</p>
+<p>Un multiplicateur ajuste l'expérience gagnée pour chaque compétence. Tout progresse au rythme standard, le tir à l'arc et la conduite un peu plus vite.</p>
 
 </div>
 
 <div class="fl-facts">
-<div><b>x1.5</b><span>Tir à l'arc, conduite, moto</span></div>
-<div><b>x1</b><span>Médecine, mêlée, fusils</span></div>
-<div><b>x0.5</b><span>Toutes les autres compétences</span></div>
+<div><b>x1.5</b><span>Tir à l'arc, conduite</span></div>
+<div><b>x1</b><span>Toutes les autres compétences</span></div>
 <div><b>50%</b><span>Renommée prise lors d'un kill</span></div>
 </div>
 
@@ -20,9 +19,8 @@
 
 | Multiplicateur | Compétences |
 |---|---|
-| **1.5** | Tir à l'arc (`ArcherySkillMultiplier`), Conduite (`DrivingSkillMultiplier`), Moto (`MotorcycleSkillMultiplier`) |
-| **1** | Vigilance, Cuisine, Endurance, Agriculture, Médecine, Armes de mêlée, Fusils, Course, Survie |
-| **0.5** | Aviation, Bagarre, Camouflage, Démolition, Ingénierie, Armes de poing, Tir de précision, Discrétion, Vol |
+| **1.5** | Tir à l'arc (`ArcherySkillMultiplier`), Conduite (`DrivingSkillMultiplier`) |
+| **1** | Vigilance, Cuisine, Endurance, Agriculture, Médecine, Armes de mêlée, Fusils, Course, Survie, Aviation, Bagarre, Camouflage, Démolition, Ingénierie, Armes de poing, Tir de précision, Discrétion, Vol, Moto |
 
 Le nom du réglage est le nom de la compétence suivi de `SkillMultiplier`, par exemple `RiflesSkillMultiplier=1`.
 

@@ -27,7 +27,7 @@ I nomi sono mostrati senza il prefisso `scum.`. Le pagine per categoria spiegano
 | Impostazione | Valore |
 |---|---|
 | `ServerName` | `[EU] FISTILAND - Loot x5 - PvP` |
-| `ServerDescription` | `Active EU community PvP server built around territory wars. Loot x5, fast respawns, cheap prices, long skill progression (x0.5), easier survival, squads of 10 max, no pay-to-win packs. No mechs, light zombies, easy armed NPCs, plenty of game to hunt. 3 flags per player, 2 turrets per base, 6 Killbox + 6 Apex keycards, short nights, no crosshair. Hold zones, defend your base, fight over cargo drops. Join our Discord: RHkNGk6ZQN` |
+| `ServerDescription` | `Active EU community PvP server built around territory wars. Loot x5, fast respawns, cheap prices, skills x1 (archery, driving x1.5), easier survival, squads of 10 max, no pay-to-win packs. No mechs, light zombies, easy armed NPCs, plenty of game to hunt. 3 flags per player, 2 turrets per base, 6 Killbox + 6 Apex keycards, short nights, no crosshair. Hold zones, defend your base, fight over cargo drops. Join our Discord: RHkNGk6ZQN` |
 | `MaxPlayers` | `14` |
 | `PlaySafeIdProtection` | `False` |
 | `ServerPlaystyle` | `PVP` |
@@ -122,7 +122,7 @@ I nomi sono mostrati senza il prefisso `scum.`. Le pagine per categoria spiegano
 | `ArmedNPCDifficultyLevel` | `2` |
 | `ArmedNPCHealthMultiplier` | `0.100000` |
 | `ArmedNPCDamageMultiplier` | `0.500000` |
-| `ArmedNPCSpreadMultiplier` | `1.000000` |
+| `ArmedNPCSpreadMultiplier` | `1.500000` |
 | `ArmedNPCRunningSpeedMultiplier` | `0.900000` |
 | `ArmedNPCNetCullDistanceOverride` | `-1.000000` |
 | `ProbabilityForArmedNPCToDropItemFromHandsWhenSearched` | `1.000000` |
@@ -431,26 +431,26 @@ I nomi sono mostrati senza il prefisso `scum.`. Le pagine per categoria spiegano
 | `FirstPlantHarvestAdditionalChance` | `1.000000` |
 | `EnableSelectedSkillsPromotion` | `True` |
 | `ArcherySkillMultiplier` | `1.500000` |
-| `AviationSkillMultiplier` | `0.500000` |
+| `AviationSkillMultiplier` | `1.000000` |
 | `AwarenessSkillMultiplier` | `1.000000` |
-| `BrawlingSkillMultiplier` | `0.500000` |
-| `CamouflageSkillMultiplier` | `0.500000` |
+| `BrawlingSkillMultiplier` | `1.000000` |
+| `CamouflageSkillMultiplier` | `1.000000` |
 | `CookingSkillMultiplier` | `1.000000` |
-| `DemolitionSkillMultiplier` | `0.500000` |
+| `DemolitionSkillMultiplier` | `1.000000` |
 | `DrivingSkillMultiplier` | `1.500000` |
 | `EnduranceSkillMultiplier` | `1.000000` |
-| `EngineeringSkillMultiplier` | `0.500000` |
+| `EngineeringSkillMultiplier` | `1.000000` |
 | `FarmingSkillMultiplier` | `1.000000` |
-| `HandgunSkillMultiplier` | `0.500000` |
+| `HandgunSkillMultiplier` | `1.000000` |
 | `MedicalSkillMultiplier` | `1.000000` |
 | `MeleeWeaponsSkillMultiplier` | `1.000000` |
-| `MotorcycleSkillMultiplier` | `1.500000` |
+| `MotorcycleSkillMultiplier` | `1.000000` |
 | `RiflesSkillMultiplier` | `1.000000` |
 | `RunningSkillMultiplier` | `1.000000` |
-| `SnipingSkillMultiplier` | `0.500000` |
-| `StealthSkillMultiplier` | `0.500000` |
+| `SnipingSkillMultiplier` | `1.000000` |
+| `StealthSkillMultiplier` | `1.000000` |
 | `SurvivalSkillMultiplier` | `1.000000` |
-| `ThieverySkillMultiplier` | `0.500000` |
+| `ThieverySkillMultiplier` | `1.000000` |
 | `QuestsEnabled` | `True` |
 | `QuestsGlobalCycleDuration` | `23:59:59` |
 | `MaxQuestsPerCyclePerTrader` | `5` |

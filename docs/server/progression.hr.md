@@ -4,14 +4,13 @@
 
 # Napredak
 
-<p>Oprema stiže brzo, vještine traju dulje. Množitelj skalira iskustvo zarađeno za svaku vještinu.</p>
+<p>Množitelj skalira iskustvo zarađeno za svaku vještinu. Sve napreduje standardnom brzinom, streličarstvo i vožnja malo brže.</p>
 
 </div>
 
 <div class="fl-facts">
-<div><b>x1.5</b><span>Streličarstvo, vožnja, motocikl</span></div>
-<div><b>x1</b><span>Medicina, hladno oružje, puške</span></div>
-<div><b>x0.5</b><span>Sve ostale vještine</span></div>
+<div><b>x1.5</b><span>Streličarstvo, vožnja</span></div>
+<div><b>x1</b><span>Sve ostale vještine</span></div>
 <div><b>50%</b><span>Slave oduzeto pri ubojstvu</span></div>
 </div>
 
@@ -20,9 +19,8 @@
 
 | Množitelj | Vještine |
 |---|---|
-| **1.5** | Streličarstvo (`ArcherySkillMultiplier`), Vožnja (`DrivingSkillMultiplier`), Motocikl (`MotorcycleSkillMultiplier`) |
-| **1** | Svjesnost, Kuhanje, Izdržljivost, Uzgoj, Medicina, Hladno oružje, Puške, Trčanje, Preživljavanje |
-| **0.5** | Zrakoplovstvo, Tučnjava, Kamuflaža, Rušenje, Inženjerstvo, Pištolj, Snajper, Prikrivenost, Krađa |
+| **1.5** | Streličarstvo (`ArcherySkillMultiplier`), Vožnja (`DrivingSkillMultiplier`) |
+| **1** | Svjesnost, Kuhanje, Izdržljivost, Uzgoj, Medicina, Hladno oružje, Puške, Trčanje, Preživljavanje, Zrakoplovstvo, Tučnjava, Kamuflaža, Rušenje, Inženjerstvo, Pištolj, Snajper, Prikrivenost, Krađa, Motocikl |
 
 Naziv postavke je naziv vještine praćen s `SkillMultiplier`, na primjer `RiflesSkillMultiplier=1`.
 

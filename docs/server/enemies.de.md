@@ -45,7 +45,7 @@ Zombies heißen in den Einstellungen Puppets.
 | `ArmedNPCHealthMultiplier` | 0.1 | Gesundheit: Eine einzige gut platzierte Kugel genügt. |
 | `ArmedNPCDamageMultiplier` | 0.5 | Verursachter Schaden. |
 | `ArmedNPCRunningSpeedMultiplier` | 0.9 | Laufgeschwindigkeit. |
-| `ArmedNPCSpreadMultiplier` | 1 | Streuung der Waffen. |
+| `ArmedNPCSpreadMultiplier` | 1.5 | Streuung der Waffen. |
 | `ProbabilityForArmedNPCToDropItemFromHandsWhenSearched` | 1 | Ein durchsuchter NPC lässt immer fallen, was er in den Händen hält. |
 | `MinimumDurabilityOfArmedNPCsDroppedItemFromHands` / `MaximumDurabilityOfArmedNPCsDroppedItemFromHands` | 0.2 / 0.3 | Zustand dieser Gegenstände. |
 | `MaxAllowedNPCs` | -1 | Keine Begrenzung bewaffneter NPCs. |

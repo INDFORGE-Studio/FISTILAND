@@ -45,7 +45,7 @@ U postavkama se zombiji zovu marionete (puppets).
 | `ArmedNPCHealthMultiplier` | 0.1 | Zdravlje: dovoljan je jedan dobro smješten metak. |
 | `ArmedNPCDamageMultiplier` | 0.5 | Nanesena šteta. |
 | `ArmedNPCRunningSpeedMultiplier` | 0.9 | Brzina trčanja. |
-| `ArmedNPCSpreadMultiplier` | 1 | Rasipanje oružja. |
+| `ArmedNPCSpreadMultiplier` | 1.5 | Rasipanje oružja. |
 | `ProbabilityForArmedNPCToDropItemFromHandsWhenSearched` | 1 | Pretražen NPC uvijek ispušta ono što drži. |
 | `MinimumDurabilityOfArmedNPCsDroppedItemFromHands` / `MaximumDurabilityOfArmedNPCsDroppedItemFromHands` | 0.2 / 0.3 | Stanje tih predmeta. |
 | `MaxAllowedNPCs` | -1 | Bez ograničenja naoružanih NPC-ova. |

@@ -39,7 +39,7 @@ Rejoignez-nous sur Discord pour bénéficier des dernières actualités, des der
 | Loot | x5 |
 | Respawns | Rapides |
 | Prix des marchands | Attractifs |
-| Progression des compétences | Étendue, voir le tableau ci-dessous |
+| Progression des compétences | Standard, plus rapide pour le tir à l'arc et la conduite |
 | Survie | Plus facile |
 | Escouades | 10 joueurs maximum |
 | Mécas | Aucun |
@@ -60,9 +60,8 @@ Rejoignez-nous sur Discord pour bénéficier des dernières actualités, des der
 
 | Multiplicateur | Compétences |
 |---|---|
-| x1.5 | Tir à l'arc, Conduite, Moto |
-| x1 | Médecine, Armes de mêlée, Fusils |
-| x0.5 | Toutes les autres compétences |
+| x1.5 | Tir à l'arc, Conduite |
+| x1 | Toutes les autres compétences |
 
 <div class="fl-left" markdown>
 
@@ -70,7 +69,7 @@ Rejoignez-nous sur Discord pour bénéficier des dernières actualités, des der
 
 S'équiper en quelques heures, puis passer le reste du temps à survivre en solo ou à construire une base en équipe pour, quoi qu'il arrive, se battre, harceler les groupes pour vivre à leurs crochets ou défendre un territoire jusqu'à la mort... Et revivre, pour revenir encore plus fort.
 
-La progression des compétences demande plus de temps que de se faire un équipement digne de ce nom, donc prenez votre temps et soyez attentifs à votre environnement. Les corvées de survie ne vous gêneront pas non plus... Tout ça pour faciliter et rendre agréable le PvP, tout en avantageant les vétérans pour leur assiduité et leur présence.
+Prenez votre temps et soyez attentifs à votre environnement. Les corvées de survie ne vous gêneront pas non plus... Tout ça pour faciliter et rendre agréable le PvP, tout en avantageant les vétérans pour leur assiduité et leur présence.
 
 </div>
 

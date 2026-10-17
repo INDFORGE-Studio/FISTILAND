@@ -4,14 +4,13 @@
 
 # Progressione
 
-<p>L'equipaggiamento arriva in fretta, le abilità richiedono più tempo. Un moltiplicatore regola l'esperienza guadagnata per ogni abilità.</p>
+<p>Un moltiplicatore regola l'esperienza guadagnata per ogni abilità. Tutto procede a ritmo standard, tiro con l'arco e guida un po' più veloci.</p>
 
 </div>
 
 <div class="fl-facts">
-<div><b>x1.5</b><span>Tiro con l'arco, guida, moto</span></div>
-<div><b>x1</b><span>Medicina, mischia, fucili</span></div>
-<div><b>x0.5</b><span>Tutte le altre abilità</span></div>
+<div><b>x1.5</b><span>Tiro con l'arco, guida</span></div>
+<div><b>x1</b><span>Tutte le altre abilità</span></div>
 <div><b>50%</b><span>Fama sottratta con un'uccisione</span></div>
 </div>
 
@@ -20,9 +19,8 @@
 
 | Moltiplicatore | Abilità |
 |---|---|
-| **1.5** | Tiro con l'arco (`ArcherySkillMultiplier`), Guida (`DrivingSkillMultiplier`), Moto (`MotorcycleSkillMultiplier`) |
-| **1** | Percezione, Cucina, Resistenza, Agricoltura, Medicina, Armi da mischia, Fucili, Corsa, Sopravvivenza |
-| **0.5** | Aviazione, Rissa, Mimetismo, Demolizione, Ingegneria, Pistole, Tiro di precisione, Furtività, Furto |
+| **1.5** | Tiro con l'arco (`ArcherySkillMultiplier`), Guida (`DrivingSkillMultiplier`) |
+| **1** | Percezione, Cucina, Resistenza, Agricoltura, Medicina, Armi da mischia, Fucili, Corsa, Sopravvivenza, Aviazione, Rissa, Mimetismo, Demolizione, Ingegneria, Pistole, Tiro di precisione, Furtività, Furto, Moto |
 
 Il nome dell'impostazione è il nome dell'abilità seguito da `SkillMultiplier`, per esempio `RiflesSkillMultiplier=1`.
 

@@ -45,7 +45,7 @@ Les zombies s'appellent des marionnettes (puppets) dans les réglages.
 | `ArmedNPCHealthMultiplier` | 0.1 | Santé : une seule balle bien placée suffit. |
 | `ArmedNPCDamageMultiplier` | 0.5 | Dégâts infligés. |
 | `ArmedNPCRunningSpeedMultiplier` | 0.9 | Vitesse de course. |
-| `ArmedNPCSpreadMultiplier` | 1 | Dispersion des armes. |
+| `ArmedNPCSpreadMultiplier` | 1.5 | Dispersion des armes. |
 | `ProbabilityForArmedNPCToDropItemFromHandsWhenSearched` | 1 | Un PNJ fouillé lâche toujours ce qu'il tient. |
 | `MinimumDurabilityOfArmedNPCsDroppedItemFromHands` / `MaximumDurabilityOfArmedNPCsDroppedItemFromHands` | 0.2 / 0.3 | État de ces objets. |
 | `MaxAllowedNPCs` | -1 | Aucune limite de PNJ armés. |

@@ -45,7 +45,7 @@
 | `ArmedNPCHealthMultiplier` | 0.1 | Здоров'я: достатньо однієї влучної кулі. |
 | `ArmedNPCDamageMultiplier` | 0.5 | Завдана шкода. |
 | `ArmedNPCRunningSpeedMultiplier` | 0.9 | Швидкість бігу. |
-| `ArmedNPCSpreadMultiplier` | 1 | Розкид зброї. |
+| `ArmedNPCSpreadMultiplier` | 1.5 | Розкид зброї. |
 | `ProbabilityForArmedNPCToDropItemFromHandsWhenSearched` | 1 | Обшуканий NPC завжди випускає те, що тримає в руках. |
 | `MinimumDurabilityOfArmedNPCsDroppedItemFromHands` / `MaximumDurabilityOfArmedNPCsDroppedItemFromHands` | 0.2 / 0.3 | Стан цих предметів. |
 | `MaxAllowedNPCs` | -1 | Кількість озброєних NPC не обмежена. |

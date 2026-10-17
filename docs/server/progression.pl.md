@@ -4,14 +4,13 @@
 
 # Rozwój
 
-<p>Sprzęt przychodzi szybko, umiejętności wymagają więcej czasu. Mnożnik skaluje doświadczenie zdobywane w każdej umiejętności.</p>
+<p>Mnożnik skaluje doświadczenie zdobywane w każdej umiejętności. Wszystko rozwija się w standardowym tempie, łucznictwo i prowadzenie pojazdów nieco szybciej.</p>
 
 </div>
 
 <div class="fl-facts">
-<div><b>x1.5</b><span>Łucznictwo, prowadzenie pojazdów, motocykl</span></div>
-<div><b>x1</b><span>Medycyna, broń biała, karabiny</span></div>
-<div><b>x0.5</b><span>Wszystkie pozostałe umiejętności</span></div>
+<div><b>x1.5</b><span>Łucznictwo, prowadzenie pojazdów</span></div>
+<div><b>x1</b><span>Wszystkie pozostałe umiejętności</span></div>
 <div><b>50%</b><span>Sławy odbierane przy zabójstwie</span></div>
 </div>
 
@@ -20,9 +19,8 @@
 
 | Mnożnik | Umiejętności |
 |---|---|
-| **1.5** | Łucznictwo (`ArcherySkillMultiplier`), Prowadzenie pojazdów (`DrivingSkillMultiplier`), Motocykl (`MotorcycleSkillMultiplier`) |
-| **1** | Czujność, Gotowanie, Wytrzymałość, Uprawa, Medycyna, Broń biała, Karabiny, Bieganie, Przetrwanie |
-| **0.5** | Lotnictwo, Bijatyka, Kamuflaż, Wyburzanie, Inżynieria, Pistolet, Snajping, Skradanie, Złodziejstwo |
+| **1.5** | Łucznictwo (`ArcherySkillMultiplier`), Prowadzenie pojazdów (`DrivingSkillMultiplier`) |
+| **1** | Czujność, Gotowanie, Wytrzymałość, Uprawa, Medycyna, Broń biała, Karabiny, Bieganie, Przetrwanie, Lotnictwo, Bijatyka, Kamuflaż, Wyburzanie, Inżynieria, Pistolet, Snajping, Skradanie, Złodziejstwo, Motocykl |
 
 Nazwa ustawienia to nazwa umiejętności z dopiskiem `SkillMultiplier`, na przykład `RiflesSkillMultiplier=1`.
 
