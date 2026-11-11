@@ -14,7 +14,7 @@ search:
 </div>
 
 <div class="fl-facts">
-<div><b>14</b><span>Slot</span></div>
+<div><b>20</b><span>Slot</span></div>
 <div><b>x5</b><span>Loot</span></div>
 <div><b>10</b><span>Per squadra</span></div>
 <div><b>3</b><span>Bandiere per giocatore</span></div>

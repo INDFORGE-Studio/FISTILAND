@@ -9,7 +9,7 @@
 </div>
 
 <div class="fl-facts">
-<div><b>14</b><span>Miejsc</span></div>
+<div><b>20</b><span>Miejsc</span></div>
 <div><b>1. + 3.</b><span>Dozwolone widoki</span></div>
 <div><b>Wył.</b><span>Celownik</span></div>
 <div><b>x1.3</b><span>Obrażenia między graczami</span></div>
@@ -76,7 +76,7 @@ Te dwie zasady nie są ustawieniami serwera: opierają się na tym, że gracze j
 
 | Ustawienie | Wartość | Co robi |
 |---|---|---|
-| `MaxPlayers` | 14 | Miejsca dla graczy. |
+| `MaxPlayers` | 20 | Miejsca dla graczy. |
 | `ServerPlaystyle` | PVP | Deklarowany styl gry. |
 | `MaxServerTickRate` | 35 | Aktualizacje serwera na sekundę przy graczach online. |
 | `MinServerTickRate` | 5 | Aktualizacje serwera na sekundę, gdy jest pusty. |

@@ -25,7 +25,7 @@ search:
 
 ??? question "Koliko igrača može biti na poslužitelju?"
 
-    14 igrača istodobno. Ekipa ima do 10 igrača.
+    20 igrača istodobno. Ekipa ima do 10 igrača.
 
 ## :material-sword-cross: Igranje
 

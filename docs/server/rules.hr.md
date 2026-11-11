@@ -9,7 +9,7 @@
 </div>
 
 <div class="fl-facts">
-<div><b>14</b><span>Mjesta</span></div>
+<div><b>20</b><span>Mjesta</span></div>
 <div><b>1. + 3.</b><span>Dopušteni pogledi</span></div>
 <div><b>Isklj.</b><span>Nišan</span></div>
 <div><b>x1.3</b><span>Šteta među igračima</span></div>
@@ -76,7 +76,7 @@ Ova dva pravila nisu postavke poslužitelja: oslanjaju se na to da ih igrači po
 
 | Postavka | Vrijednost | Što radi |
 |---|---|---|
-| `MaxPlayers` | 14 | Mjesta za igrače. |
+| `MaxPlayers` | 20 | Mjesta za igrače. |
 | `ServerPlaystyle` | PVP | Deklarirani stil igre. |
 | `MaxServerTickRate` | 35 | Ažuriranja poslužitelja u sekundi s igračima na mreži. |
 | `MinServerTickRate` | 5 | Ažuriranja poslužitelja u sekundi kad je prazan. |

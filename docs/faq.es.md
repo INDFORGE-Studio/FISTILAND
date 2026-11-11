@@ -25,7 +25,7 @@ search:
 
 ??? question "¿Cuántos jugadores caben en el servidor?"
 
-    14 jugadores a la vez. Una escuadra reúne hasta 10 jugadores.
+    20 jugadores a la vez. Una escuadra reúne hasta 10 jugadores.
 
 ## :material-sword-cross: Jugar
 

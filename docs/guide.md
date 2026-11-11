@@ -14,7 +14,7 @@ search:
 </div>
 
 <div class="fl-facts">
-<div><b>14</b><span>Slots</span></div>
+<div><b>20</b><span>Slots</span></div>
 <div><b>x5</b><span>Loot</span></div>
 <div><b>10</b><span>Per squad</span></div>
 <div><b>3</b><span>Flags per player</span></div>

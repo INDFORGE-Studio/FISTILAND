@@ -9,7 +9,7 @@
 </div>
 
 <div class="fl-facts">
-<div><b>14</b><span>Slots</span></div>
+<div><b>20</b><span>Slots</span></div>
 <div><b>Ego + Third</b><span>Ansichten erlaubt</span></div>
 <div><b>Aus</b><span>Fadenkreuz</span></div>
 <div><b>x1.3</b><span>Spielerschaden</span></div>
@@ -76,7 +76,7 @@ Diese beiden Punkte sind Regeln, keine Servereinstellungen: Sie beruhen darauf, 
 
 | Einstellung | Wert | Wirkung |
 |---|---|---|
-| `MaxPlayers` | 14 | Spielerplätze. |
+| `MaxPlayers` | 20 | Spielerplätze. |
 | `ServerPlaystyle` | PVP | Angegebener Spielstil. |
 | `MaxServerTickRate` | 35 | Server-Updates pro Sekunde mit Spielern online. |
 | `MinServerTickRate` | 5 | Server-Updates pro Sekunde, wenn leer. |

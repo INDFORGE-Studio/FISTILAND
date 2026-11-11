@@ -14,7 +14,7 @@ search:
 </div>
 
 <div class="fl-facts">
-<div><b>14</b><span>Mjesta</span></div>
+<div><b>20</b><span>Mjesta</span></div>
 <div><b>x5</b><span>Loot</span></div>
 <div><b>10</b><span>Po ekipi</span></div>
 <div><b>3</b><span>Zastave po igraču</span></div>
