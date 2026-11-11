@@ -25,7 +25,7 @@ search:
 
 ??? question "Combien de joueurs peuvent être sur le serveur ?"
 
-    14 joueurs en même temps. Une escouade compte jusqu'à 10 joueurs.
+    20 joueurs en même temps. Une escouade compte jusqu'à 10 joueurs.
 
 ## :material-sword-cross: Jouer
 

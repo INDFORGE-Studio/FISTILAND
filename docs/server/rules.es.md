@@ -9,7 +9,7 @@
 </div>
 
 <div class="fl-facts">
-<div><b>14</b><span>Slots</span></div>
+<div><b>20</b><span>Slots</span></div>
 <div><b>1.ª + 3.ª</b><span>Vistas permitidas</span></div>
 <div><b>No</b><span>Mira</span></div>
 <div><b>x1.3</b><span>Daño entre jugadores</span></div>
@@ -76,7 +76,7 @@ Estas dos son reglas, no ajustes del servidor: dependen de que los jugadores las
 
 | Ajuste | Valor | Qué hace |
 |---|---|---|
-| `MaxPlayers` | 14 | Plazas de jugadores. |
+| `MaxPlayers` | 20 | Plazas de jugadores. |
 | `ServerPlaystyle` | PVP | Estilo de juego declarado. |
 | `MaxServerTickRate` | 35 | Actualizaciones del servidor por segundo con jugadores conectados. |
 | `MinServerTickRate` | 5 | Actualizaciones del servidor por segundo cuando está vacío. |

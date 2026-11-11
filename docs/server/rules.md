@@ -9,7 +9,7 @@
 </div>
 
 <div class="fl-facts">
-<div><b>14</b><span>Slots</span></div>
+<div><b>20</b><span>Slots</span></div>
 <div><b>1st + 3rd</b><span>Views allowed</span></div>
 <div><b>Off</b><span>Crosshair</span></div>
 <div><b>x1.3</b><span>Player damage</span></div>
@@ -76,7 +76,7 @@ These two are rules, not server settings: they rely on players respecting them.
 
 | Setting | Value | What it does |
 |---|---|---|
-| `MaxPlayers` | 14 | Player slots. |
+| `MaxPlayers` | 20 | Player slots. |
 | `ServerPlaystyle` | PVP | Declared play style. |
 | `MaxServerTickRate` | 35 | Server updates per second with players online. |
 | `MinServerTickRate` | 5 | Server updates per second when empty. |

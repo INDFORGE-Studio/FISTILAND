@@ -13,7 +13,7 @@ hide:
 <div><a class="fl-btn fl-join" href="server/overview/#join" data-copy="31.214.207.109:8159">Pridruži se</a></div>
 
 <div class="fl-stats">
-  <div><b>14</b><span>Mjesta</span></div>
+  <div><b>20</b><span>Mjesta</span></div>
   <div><b>EU</b><span>Regija</span></div>
   <div><b>PvP</b><span>Potpuni</span></div>
   <div><b>x5</b><span>Loot</span></div>

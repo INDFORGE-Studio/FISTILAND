@@ -25,7 +25,7 @@ search:
 
 ??? question "How many players can be on the server?"
 
-    14 players at once. A squad holds up to 10 players.
+    20 players at once. A squad holds up to 10 players.
 
 ## :material-sword-cross: Playing
 

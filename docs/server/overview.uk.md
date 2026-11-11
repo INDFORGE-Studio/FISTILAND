@@ -9,7 +9,7 @@
 </div>
 
 <div class="fl-facts">
-<div><b>14</b><span>Слотів</span></div>
+<div><b>20</b><span>Слотів</span></div>
 <div><b>EU</b><span>Регіон</span></div>
 <div><b>PvP</b><span>Повний</span></div>
 <div><b>x5</b><span>Луту</span></div>

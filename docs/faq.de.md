@@ -25,7 +25,7 @@ search:
 
 ??? question "Wie viele Spieler passen auf den Server?"
 
-    14 Spieler gleichzeitig. Ein Trupp fasst bis zu 10 Spieler.
+    20 Spieler gleichzeitig. Ein Trupp fasst bis zu 10 Spieler.
 
 ## :material-sword-cross: Spielen
 

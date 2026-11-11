@@ -14,7 +14,7 @@ search:
 </div>
 
 <div class="fl-facts">
-<div><b>14</b><span>Слотів</span></div>
+<div><b>20</b><span>Слотів</span></div>
 <div><b>x5</b><span>Луту</span></div>
 <div><b>10</b><span>У загоні</span></div>
 <div><b>3</b><span>Прапори на гравця</span></div>

@@ -25,7 +25,7 @@ search:
 
 ??? question "Ilu graczy może być na serwerze?"
 
-    14 graczy naraz. Drużyna liczy do 10 graczy.
+    20 graczy naraz. Drużyna liczy do 10 graczy.
 
 ## :material-sword-cross: Gra
 

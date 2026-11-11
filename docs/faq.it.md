@@ -25,7 +25,7 @@ search:
 
 ??? question "Quanti giocatori possono stare sul server?"
 
-    14 giocatori contemporaneamente. Una squadra riunisce fino a 10 giocatori.
+    20 giocatori contemporaneamente. Una squadra riunisce fino a 10 giocatori.
 
 ## :material-sword-cross: Giocare
 
