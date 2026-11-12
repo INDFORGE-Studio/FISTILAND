@@ -51,6 +51,6 @@ FISTILAND (INDFORGE Studio), https://indforge-studio.github.io/FISTILAND/ - CC B
 
 ## :material-message-text: Контакти
 
-Пишіть нам у [Discord](https://discord.gg/RHkNGk6ZQN) або створіть [звернення на GitHub](https://github.com/INDFORGE-Studio/FISTILAND/issues). Використовуйте ці канали для питань щодо ліцензії, запитів на зазначення авторства чи вимог про вилучення.
+Пишіть нам у [Discord](https://discord.gg/qSEmWUBVKz) або створіть [звернення на GitHub](https://github.com/INDFORGE-Studio/FISTILAND/issues). Використовуйте ці канали для питань щодо ліцензії, запитів на зазначення авторства чи вимог про вилучення.
 
 *Останнє оновлення: 15 жовтня 2026 року.*

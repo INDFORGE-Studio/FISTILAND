@@ -25,7 +25,7 @@ search:
 ## :material-login: 1. Entrer
 
 - [ ] Ouvrez la liste des serveurs par la section **MULTIJOUEUR** de SCUM, puis inscrivez <button type="button" class="fl-ip" data-copy="195.82.158.28:7879">195.82.158.28:7879</button> dans le champ blanc en bas à droite. Toutes les étapes sont dans [Rejoindre](server/overview.md#join). L'accès au serveur est libre.
-- [ ] Rejoignez le [Discord](https://discord.gg/RHkNGk6ZQN) : nouveautés, changements, et l'endroit où chercher une escouade.
+- [ ] Rejoignez le [Discord](https://discord.gg/qSEmWUBVKz) : nouveautés, changements, et l'endroit où chercher une escouade.
 - [ ] Lisez les deux règles de joueur dans [Règles](server/rules.md) : pas de raid en aéronef, et les mines servent uniquement à défendre votre base.
 
 ## :material-parachute: 2. Atterrir et s'équiper

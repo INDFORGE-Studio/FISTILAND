@@ -219,7 +219,7 @@
   {% endif %}
   {% if page and seo_slug == 'home' %}
   <script type="application/ld+json">{{ {"@context": "https://schema.org", "@type": "WebSite", "name": config.site_name, "url": config.site_url, "inLanguage": seo_lang, "description": page.meta.description} | tojson }}</script>
-  <script type="application/ld+json">{{ {"@context": "https://schema.org", "@type": "GameServer", "name": config.site_name, "url": config.site_url, "description": page.meta.description, "game": {"@type": "VideoGame", "name": "SCUM"}, "sameAs": ["https://discord.gg/RHkNGk6ZQN"]} | tojson }}</script>
+  <script type="application/ld+json">{{ {"@context": "https://schema.org", "@type": "GameServer", "name": config.site_name, "url": config.site_url, "description": page.meta.description, "game": {"@type": "VideoGame", "name": "SCUM"}, "sameAs": ["https://discord.gg/qSEmWUBVKz"]} | tojson }}</script>
   {% elif page and page.canonical_url %}
   <script type="application/ld+json">{{ {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "FISTILAND", "item": config.site_url ~ ('' if seo_lang == 'en' else seo_lang ~ '/')}, {"@type": "ListItem", "position": 2, "name": (page.title | striptags), "item": page.canonical_url}]} | tojson }}</script>
   {% endif %}

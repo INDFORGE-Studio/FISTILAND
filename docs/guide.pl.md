@@ -25,7 +25,7 @@ search:
 ## :material-login: 1. Wejście
 
 - [ ] Otwórz w SCUM listę serwerów w sekcji **MULTIPLAYER**, a potem wpisz <button type="button" class="fl-ip" data-copy="195.82.158.28:7879">195.82.158.28:7879</button> w białe pole w prawym dolnym rogu. Wszystkie kroki są w [Dołączanie](server/overview.md#join). Wejście na serwer jest wolne.
-- [ ] Dołącz do [Discorda](https://discord.gg/RHkNGk6ZQN): nowości, zmiany i miejsce, gdzie szukać drużyny.
+- [ ] Dołącz do [Discorda](https://discord.gg/qSEmWUBVKz): nowości, zmiany i miejsce, gdzie szukać drużyny.
 - [ ] Przeczytaj dwie zasady dla graczy w [Zasady](server/rules.md): żadnych rajdów statkami powietrznymi, a miny służą tylko do obrony twojej bazy.
 
 ## :material-parachute: 2. Lądowanie i wyposażenie

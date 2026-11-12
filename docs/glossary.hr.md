@@ -86,4 +86,4 @@ Zračni teret
 
 ---
 
-Nedostaje riječ? Pitaj na [Discordu](https://discord.gg/RHkNGk6ZQN).
+Nedostaje riječ? Pitaj na [Discordu](https://discord.gg/qSEmWUBVKz).

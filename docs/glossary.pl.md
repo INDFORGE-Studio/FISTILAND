@@ -86,4 +86,4 @@ Zrzut zaopatrzenia
 
 ---
 
-Brakuje słowa? Zapytaj na [Discordzie](https://discord.gg/RHkNGk6ZQN).
+Brakuje słowa? Zapytaj na [Discordzie](https://discord.gg/qSEmWUBVKz).

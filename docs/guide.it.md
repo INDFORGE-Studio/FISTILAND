@@ -25,7 +25,7 @@ search:
 ## :material-login: 1. Entrare
 
 - [ ] Apri l'elenco dei server dalla sezione **MULTIGIOCATORE** di SCUM, poi digita <button type="button" class="fl-ip" data-copy="195.82.158.28:7879">195.82.158.28:7879</button> nel campo bianco in basso a destra. Tutti i passaggi sono in [Entrare](server/overview.md#join). L'accesso al server è libero.
-- [ ] Unisciti al [Discord](https://discord.gg/RHkNGk6ZQN): novità, modifiche e il posto dove cercare una squadra.
+- [ ] Unisciti al [Discord](https://discord.gg/qSEmWUBVKz): novità, modifiche e il posto dove cercare una squadra.
 - [ ] Leggi le due regole per i giocatori in [Regole](server/rules.md): niente raid con aeromobili, e le mine servono solo a difendere la tua base.
 
 ## :material-parachute: 2. Atterrare ed equipaggiarsi

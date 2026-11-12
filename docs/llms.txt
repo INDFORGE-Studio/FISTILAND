@@ -2,7 +2,7 @@
 
 > FISTILAND is a European PvP SCUM server built around territory wars: loot x5, fast respawns, easier survival, squads of up to 10, no mechs. This wiki explains every server setting and is written in 8 languages (English, Español, Français, Deutsch, Italiano, Polski, Українська, Hrvatski).
 
-To join: open SCUM, go to MULTIPLAYER, search for "FISTILAND" or type the server address 195.82.158.28:7879, then click CONNECT. Community: https://discord.gg/RHkNGk6ZQN
+To join: open SCUM, go to MULTIPLAYER, search for "FISTILAND" or type the server address 195.82.158.28:7879, then click CONNECT. Community: https://discord.gg/qSEmWUBVKz
 
 ## Start here
 

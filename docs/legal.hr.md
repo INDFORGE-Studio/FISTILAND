@@ -51,6 +51,6 @@ Da bi radila bez veze, stranica sprema kopiju stranica koje otvorite u offline p
 
 ## :material-message-text: Kontakt
 
-Javite nam se na našem [Discordu](https://discord.gg/RHkNGk6ZQN) ili otvorite [prijavu na GitHubu](https://github.com/INDFORGE-Studio/FISTILAND/issues). Koristite te kanale za pitanja o licenci, zahtjeve za navođenje izvora ili zahtjeve za uklanjanje.
+Javite nam se na našem [Discordu](https://discord.gg/qSEmWUBVKz) ili otvorite [prijavu na GitHubu](https://github.com/INDFORGE-Studio/FISTILAND/issues). Koristite te kanale za pitanja o licenci, zahtjeve za navođenje izvora ili zahtjeve za uklanjanje.
 
 *Zadnje ažuriranje: 15. listopada 2026.*

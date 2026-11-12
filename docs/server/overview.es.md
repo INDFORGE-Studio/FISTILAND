@@ -26,7 +26,7 @@
 
 3. En ambos casos, haz clic en **CONECTAR**. Es un servidor comunitario de acceso libre.
 
-[:simple-discord: **DISCORD**](https://discord.gg/RHkNGk6ZQN){ .fl-discord }
+[:simple-discord: **DISCORD**](https://discord.gg/qSEmWUBVKz){ .fl-discord }
 
 Únete a nuestro Discord para estar al día de las novedades y los cambios, buscar escuadra y, por supuesto, contar con un soporte comunitario simpático y agradable.
 

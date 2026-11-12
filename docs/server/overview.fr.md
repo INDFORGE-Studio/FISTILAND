@@ -26,7 +26,7 @@
 
 3. Dans les deux cas, cliquez sur **CONNEXION**. C'est un serveur communautaire en accès libre.
 
-[:simple-discord: **DISCORD**](https://discord.gg/RHkNGk6ZQN){ .fl-discord }
+[:simple-discord: **DISCORD**](https://discord.gg/qSEmWUBVKz){ .fl-discord }
 
 Rejoignez-nous sur Discord pour bénéficier des dernières actualités, des derniers changements, rechercher une squad et, bien évidemment, profiter d'un support communautaire sympathique et agréable.
 

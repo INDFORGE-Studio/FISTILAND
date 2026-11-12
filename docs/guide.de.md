@@ -25,7 +25,7 @@ search:
 ## :material-login: 1. Reinkommen
 
 - [ ] Öffne in SCUM die Serverliste über **MEHRSPIELER** und gib <button type="button" class="fl-ip" data-copy="195.82.158.28:7879">195.82.158.28:7879</button> in das weiße Feld unten rechts ein. Alle Schritte stehen unter [Beitreten](server/overview.md#join). Der Zutritt zum Server ist frei.
-- [ ] Tritt dem [Discord](https://discord.gg/RHkNGk6ZQN) bei: Neuigkeiten, Änderungen und der Ort, um einen Trupp zu suchen.
+- [ ] Tritt dem [Discord](https://discord.gg/qSEmWUBVKz) bei: Neuigkeiten, Änderungen und der Ort, um einen Trupp zu suchen.
 - [ ] Lies die zwei Spielerregeln unter [Regeln](server/rules.md): kein Raiden mit Luftfahrzeugen, und Minen dienen nur zur Verteidigung deiner Basis.
 
 ## :material-parachute: 2. Landen und ausrüsten

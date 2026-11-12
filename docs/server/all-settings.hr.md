@@ -27,7 +27,7 @@ Nazivi su prikazani bez prefiksa `scum.`. Stranice kategorija objašnjavaju post
 | Postavka | Vrijednost |
 |---|---|
 | `ServerName` | `[EU] FISTILAND - Loot x5 - PvP` |
-| `ServerDescription` | `Active EU community PvP server built around territory wars. Loot x5, fast respawns, cheap prices, skills x1 (archery, driving x1.5), easier survival, squads of 10 max, no pay-to-win packs. No mechs, light zombies, easy armed NPCs, plenty of game to hunt. 3 flags per player, 2 turrets per base, 6 Killbox + 6 Apex keycards, short nights, no crosshair. Hold zones, defend your base, fight over cargo drops. Join our Discord: RHkNGk6ZQN` |
+| `ServerDescription` | `Active EU community PvP server built around territory wars. Loot x5, fast respawns, cheap prices, skills x1 (archery, driving x1.5), easier survival, squads of 10 max, no pay-to-win packs. No mechs, light zombies, easy armed NPCs, plenty of game to hunt. 3 flags per player, 2 turrets per base, 6 Killbox + 6 Apex keycards, short nights, no crosshair. Hold zones, defend your base, fight over cargo drops. Join our Discord: qSEmWUBVKz` |
 | `MaxPlayers` | `20` |
 | `PlaySafeIdProtection` | `False` |
 | `ServerPlaystyle` | `PVP` |

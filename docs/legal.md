@@ -51,6 +51,6 @@ To work without a connection, the site keeps a copy of the pages you open in you
 
 ## :material-message-text: Contact
 
-Reach us on our [Discord](https://discord.gg/RHkNGk6ZQN) or by opening an [issue on GitHub](https://github.com/INDFORGE-Studio/FISTILAND/issues). Use these for licence questions, credit requests or takedown requests.
+Reach us on our [Discord](https://discord.gg/qSEmWUBVKz) or by opening an [issue on GitHub](https://github.com/INDFORGE-Studio/FISTILAND/issues). Use these for licence questions, credit requests or takedown requests.
 
 *Last updated: 15 October 2026.*

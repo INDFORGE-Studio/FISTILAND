@@ -26,7 +26,7 @@
 
 3. В обох випадках натисніть **ПІДКЛЮЧИТИСЯ**. Це спільнотний сервер із вільним доступом.
 
-[:simple-discord: **DISCORD**](https://discord.gg/RHkNGk6ZQN){ .fl-discord }
+[:simple-discord: **DISCORD**](https://discord.gg/qSEmWUBVKz){ .fl-discord }
 
 Приєднуйтесь до нашого Discord, щоб отримувати новини та зміни, шукати загін і, звісно, мати привітну та приємну підтримку спільноти.
 

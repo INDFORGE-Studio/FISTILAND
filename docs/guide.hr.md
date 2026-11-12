@@ -25,7 +25,7 @@ search:
 ## :material-login: 1. Ulazak
 
 - [ ] Otvori u SCUM-u popis poslužitelja u odjeljku **MULTIPLAYER**, pa upiši <button type="button" class="fl-ip" data-copy="195.82.158.28:7879">195.82.158.28:7879</button> u bijelo polje dolje desno. Svi koraci su u [Pridruživanje](server/overview.md#join). Ulaz na poslužitelj je slobodan.
-- [ ] Pridruži se [Discordu](https://discord.gg/RHkNGk6ZQN): novosti, promjene i mjesto gdje možeš potražiti ekipu.
+- [ ] Pridruži se [Discordu](https://discord.gg/qSEmWUBVKz): novosti, promjene i mjesto gdje možeš potražiti ekipu.
 - [ ] Pročitaj dva pravila za igrače u [Pravila](server/rules.md): nema napada zrakoplovima, a mine služe samo za obranu tvoje baze.
 
 ## :material-parachute: 2. Slijetanje i opremanje

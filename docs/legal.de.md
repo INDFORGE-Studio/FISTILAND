@@ -51,6 +51,6 @@ Damit die Website ohne Verbindung funktioniert, speichert sie eine Kopie der von
 
 ## :material-message-text: Kontakt
 
-Schreiben Sie uns auf unserem [Discord](https://discord.gg/RHkNGk6ZQN) oder eröffnen Sie ein [Issue auf GitHub](https://github.com/INDFORGE-Studio/FISTILAND/issues). Nutzen Sie diese Wege für Lizenzfragen, Quellenangaben oder Löschanfragen.
+Schreiben Sie uns auf unserem [Discord](https://discord.gg/qSEmWUBVKz) oder eröffnen Sie ein [Issue auf GitHub](https://github.com/INDFORGE-Studio/FISTILAND/issues). Nutzen Sie diese Wege für Lizenzfragen, Quellenangaben oder Löschanfragen.
 
 *Zuletzt aktualisiert: 15. Oktober 2026.*

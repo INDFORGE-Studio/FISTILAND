@@ -25,7 +25,7 @@ search:
 ## :material-login: 1. Get in
 
 - [ ] Open the server list from **MULTIPLAYER** in SCUM, then type <button type="button" class="fl-ip" data-copy="195.82.158.28:7879">195.82.158.28:7879</button> in the white field at the bottom right. All the steps are in [Join](server/overview.md#join). The server is free to enter.
-- [ ] Join the [Discord](https://discord.gg/RHkNGk6ZQN): news, changes, and the place to look for a squad.
+- [ ] Join the [Discord](https://discord.gg/qSEmWUBVKz): news, changes, and the place to look for a squad.
 - [ ] Read the two player rules in [Rules](server/rules.md): no raiding with aircraft, and mines are for defending your base only.
 
 ## :material-parachute: 2. Land and gear up
