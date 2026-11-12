@@ -26,7 +26,7 @@
 
 3. U oba slučaja klikni **CONNECT**. Ovo je zajednički poslužitelj slobodnog pristupa.
 
-[:simple-discord: **DISCORD**](https://discord.gg/RHkNGk6ZQN){ .fl-discord }
+[:simple-discord: **DISCORD**](https://discord.gg/qSEmWUBVKz){ .fl-discord }
 
 Pridruži nam se na Discordu za najnovije vijesti i promjene, za traženje ekipe i, naravno, za prijateljsku i susretljivu podršku zajednice.
 

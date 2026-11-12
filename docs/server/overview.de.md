@@ -26,7 +26,7 @@
 
 3. In beiden Fällen klickst du auf **VERBINDEN**. Es ist ein frei zugänglicher Community-Server.
 
-[:simple-discord: **DISCORD**](https://discord.gg/RHkNGk6ZQN){ .fl-discord }
+[:simple-discord: **DISCORD**](https://discord.gg/qSEmWUBVKz){ .fl-discord }
 
 Komm auf unseren Discord für die neuesten Neuigkeiten und Änderungen, um einen Trupp zu suchen und natürlich für freundlichen, hilfsbereiten Community-Support.
 

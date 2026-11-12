@@ -109,6 +109,6 @@ search:
 
 ---
 
-Nema na popisu? Pitaj na [Discordu](https://discord.gg/RHkNGk6ZQN).
+Nema na popisu? Pitaj na [Discordu](https://discord.gg/qSEmWUBVKz).
 
 --8<-- "abbr.hr.md"

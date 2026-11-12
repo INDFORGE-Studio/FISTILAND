@@ -109,6 +109,6 @@ search:
 
 ---
 
-Nie ma na liście? Zapytaj na [Discordzie](https://discord.gg/RHkNGk6ZQN).
+Nie ma na liście? Zapytaj na [Discordzie](https://discord.gg/qSEmWUBVKz).
 
 --8<-- "abbr.pl.md"

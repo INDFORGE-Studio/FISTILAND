@@ -51,6 +51,6 @@ Aby działać bez połączenia, strona zachowuje kopię otwieranych przez ciebie
 
 ## :material-message-text: Kontakt
 
-Napisz do nas na naszym [Discordzie](https://discord.gg/RHkNGk6ZQN) lub otwórz [zgłoszenie na GitHubie](https://github.com/INDFORGE-Studio/FISTILAND/issues). Korzystaj z tych kanałów w sprawach licencji, próśb o wskazanie źródła lub wniosków o usunięcie.
+Napisz do nas na naszym [Discordzie](https://discord.gg/qSEmWUBVKz) lub otwórz [zgłoszenie na GitHubie](https://github.com/INDFORGE-Studio/FISTILAND/issues). Korzystaj z tych kanałów w sprawach licencji, próśb o wskazanie źródła lub wniosków o usunięcie.
 
 *Ostatnia aktualizacja: 15 października 2026.*

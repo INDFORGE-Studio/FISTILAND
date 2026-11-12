@@ -86,4 +86,4 @@ Vaisseau (dropship)
 
 ---
 
-Il manque un mot ? Demandez sur le [Discord](https://discord.gg/RHkNGk6ZQN).
+Il manque un mot ? Demandez sur le [Discord](https://discord.gg/qSEmWUBVKz).

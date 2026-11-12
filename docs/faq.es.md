@@ -109,6 +109,6 @@ search:
 
 ---
 
-¿No está en la lista? Pregunta en el [Discord](https://discord.gg/RHkNGk6ZQN).
+¿No está en la lista? Pregunta en el [Discord](https://discord.gg/qSEmWUBVKz).
 
 --8<-- "abbr.es.md"

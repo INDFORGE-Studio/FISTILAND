@@ -86,4 +86,4 @@ Tick rate
 
 ---
 
-¿Falta una palabra? Pregunta en el [Discord](https://discord.gg/RHkNGk6ZQN).
+¿Falta una palabra? Pregunta en el [Discord](https://discord.gg/qSEmWUBVKz).

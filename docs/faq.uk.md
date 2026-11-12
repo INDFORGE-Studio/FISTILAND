@@ -109,6 +109,6 @@ search:
 
 ---
 
-Немає у списку? Запитайте в [Discord](https://discord.gg/RHkNGk6ZQN).
+Немає у списку? Запитайте в [Discord](https://discord.gg/qSEmWUBVKz).
 
 --8<-- "abbr.uk.md"

@@ -86,4 +86,4 @@ Zugangskarte
 
 ---
 
-Fehlt ein Wort? Frag auf dem [Discord](https://discord.gg/RHkNGk6ZQN).
+Fehlt ein Wort? Frag auf dem [Discord](https://discord.gg/qSEmWUBVKz).

@@ -65,7 +65,7 @@
   if (opt && !document.querySelector('.fl-hd-discord')) {
     var a = document.createElement('a');
     a.className = 'md-header__button fl-hd-discord fl-dvhost';
-    a.href = 'https://discord.gg/RHkNGk6ZQN';
+    a.href = 'https://discord.gg/qSEmWUBVKz';
     a.target = '_blank'; a.rel = 'noopener';
     a.title = 'Discord'; a.setAttribute('aria-label', 'Discord');
     a.innerHTML = variants();

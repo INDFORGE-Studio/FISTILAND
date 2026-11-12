@@ -26,7 +26,7 @@
 
 3. Either way, click **CONNECT**. It is a free-access community server.
 
-[:simple-discord: **DISCORD**](https://discord.gg/RHkNGk6ZQN){ .fl-discord }
+[:simple-discord: **DISCORD**](https://discord.gg/qSEmWUBVKz){ .fl-discord }
 
 Join us on Discord for the latest news and changes, to look for a squad, and of course for friendly, helpful community support.
 

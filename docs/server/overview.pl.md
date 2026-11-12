@@ -26,7 +26,7 @@
 
 3. W obu przypadkach kliknij **CONNECT**. To serwer społecznościowy z wolnym dostępem.
 
-[:simple-discord: **DISCORD**](https://discord.gg/RHkNGk6ZQN){ .fl-discord }
+[:simple-discord: **DISCORD**](https://discord.gg/qSEmWUBVKz){ .fl-discord }
 
 Dołącz do nas na Discordzie po najnowsze wieści i zmiany, by szukać drużyny i oczywiście po przyjazną, pomocną społeczność.
 

@@ -26,7 +26,7 @@
 
 3. In entrambi i casi, clicca su **CONNETTI**. È un server della community ad accesso libero.
 
-[:simple-discord: **DISCORD**](https://discord.gg/RHkNGk6ZQN){ .fl-discord }
+[:simple-discord: **DISCORD**](https://discord.gg/qSEmWUBVKz){ .fl-discord }
 
 Unisciti al nostro Discord per le ultime novità e modifiche, per cercare una squadra e, ovviamente, per un supporto della community simpatico e piacevole.
 

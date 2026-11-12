@@ -86,4 +86,4 @@ Tick rate (частота оновлень)
 
 ---
 
-Бракує слова? Запитайте в [Discord](https://discord.gg/RHkNGk6ZQN).
+Бракує слова? Запитайте в [Discord](https://discord.gg/qSEmWUBVKz).

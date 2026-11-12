@@ -109,6 +109,6 @@ search:
 
 ---
 
-Not in the list? Ask on the [Discord](https://discord.gg/RHkNGk6ZQN).
+Not in the list? Ask on the [Discord](https://discord.gg/qSEmWUBVKz).
 
 --8<-- "abbr.en.md"
