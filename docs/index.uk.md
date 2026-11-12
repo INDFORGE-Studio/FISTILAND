@@ -10,7 +10,7 @@ hide:
 <img class="fl-logo" src="/FISTILAND/assets/logo-home-v4.png" alt="FISTILAND - SCUM Server">
 <div class="fl-title fl-sr">FISTILAND</div>
 <p class="fl-lead">Тримайте свої зони, захищайте базу, боріться за повітряні скиди. Виживати легше: головне тут бій.</p>
-<div><a class="fl-btn fl-join" href="server/overview/#join" data-copy="31.214.207.109:8159">Приєднатися</a></div>
+<div><a class="fl-btn fl-join" href="server/overview/#join" data-copy="195.82.158.28:7879">Приєднатися</a></div>
 
 <div class="fl-stats">
   <div><b>20</b><span>Слотів</span></div>

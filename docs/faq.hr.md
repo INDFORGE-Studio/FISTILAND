@@ -17,7 +17,7 @@ search:
 
 ??? question "Kako se pridružiti poslužitelju?"
 
-    Pokreni SCUM, otvori popis poslužitelja u **MULTIPLAYER**, potraži `FISTILAND` ili upiši `31.214.207.109:8159` u bijelo polje dolje desno, pa klikni **CONNECT**. IP radi puno bolje od pretraživanja. Koraci su u [Pridruživanje](server/overview.md#join).
+    Pokreni SCUM, otvori popis poslužitelja u **MULTIPLAYER**, potraži `FISTILAND` ili upiši `195.82.158.28:7879` u bijelo polje dolje desno, pa klikni **CONNECT**. IP radi puno bolje od pretraživanja. Koraci su u [Pridruživanje](server/overview.md#join).
 
 ??? question "Je li besplatno? Ima li plaćenih paketa?"
 

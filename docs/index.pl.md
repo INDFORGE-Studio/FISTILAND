@@ -10,7 +10,7 @@ hide:
 <img class="fl-logo" src="/FISTILAND/assets/logo-home-v4.png" alt="FISTILAND - SCUM Server">
 <div class="fl-title fl-sr">FISTILAND</div>
 <p class="fl-lead">Trzymaj strefy, broń bazy, walcz o zrzuty zaopatrzenia. Przetrwanie jest łatwiejsze, więc to walka jest najważniejsza.</p>
-<div><a class="fl-btn fl-join" href="server/overview/#join" data-copy="31.214.207.109:8159">Dołącz</a></div>
+<div><a class="fl-btn fl-join" href="server/overview/#join" data-copy="195.82.158.28:7879">Dołącz</a></div>
 
 <div class="fl-stats">
   <div><b>20</b><span>Miejsc</span></div>

@@ -17,7 +17,7 @@ search:
 
 ??? question "Jak dołączyć do serwera?"
 
-    Uruchom SCUM, otwórz listę serwerów w **MULTIPLAYER**, wyszukaj `FISTILAND` albo wpisz `31.214.207.109:8159` w białe pole w prawym dolnym rogu, a potem kliknij **CONNECT**. IP działa o wiele lepiej niż wyszukiwanie. Kroki są w [Dołączanie](server/overview.md#join).
+    Uruchom SCUM, otwórz listę serwerów w **MULTIPLAYER**, wyszukaj `FISTILAND` albo wpisz `195.82.158.28:7879` w białe pole w prawym dolnym rogu, a potem kliknij **CONNECT**. IP działa o wiele lepiej niż wyszukiwanie. Kroki są w [Dołączanie](server/overview.md#join).
 
 ??? question "Czy jest za darmo? Czy są płatne pakiety?"
 

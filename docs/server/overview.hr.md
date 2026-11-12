@@ -22,7 +22,7 @@
 
 1. Pokreni SCUM i otvori popis poslužitelja u odjeljku **MULTIPLAYER**.
 
-2. Potraži <button type="button" class="fl-ip" data-copy="FISTILAND">FISTILAND</button> na kartici **SEARCH** gore desno ili upiši IP poslužitelja izravno u bijelo polje dolje desno: <button type="button" class="fl-ip" data-copy="31.214.207.109:8159">31.214.207.109:8159</button> (tako radi puno bolje).
+2. Potraži <button type="button" class="fl-ip" data-copy="FISTILAND">FISTILAND</button> na kartici **SEARCH** gore desno ili upiši IP poslužitelja izravno u bijelo polje dolje desno: <button type="button" class="fl-ip" data-copy="195.82.158.28:7879">195.82.158.28:7879</button> (tako radi puno bolje).
 
 3. U oba slučaja klikni **CONNECT**. Ovo je zajednički poslužitelj slobodnog pristupa.
 

@@ -17,7 +17,7 @@ search:
 
 ??? question "Come entro nel server?"
 
-    Avvia SCUM, apri l'elenco dei server da **MULTIGIOCATORE**, cerca `FISTILAND` oppure digita `31.214.207.109:8159` nel campo bianco in basso a destra, poi clicca su **CONNETTI**. L'IP funziona molto meglio della ricerca. I passaggi sono in [Entrare](server/overview.md#join).
+    Avvia SCUM, apri l'elenco dei server da **MULTIGIOCATORE**, cerca `FISTILAND` oppure digita `195.82.158.28:7879` nel campo bianco in basso a destra, poi clicca su **CONNETTI**. L'IP funziona molto meglio della ricerca. I passaggi sono in [Entrare](server/overview.md#join).
 
 ??? question "È gratis? Ci sono pacchetti a pagamento?"
 
