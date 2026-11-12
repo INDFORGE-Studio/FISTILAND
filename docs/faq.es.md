@@ -17,7 +17,7 @@ search:
 
 ??? question "¿Cómo me uno al servidor?"
 
-    Inicia SCUM, abre la lista de servidores desde **MULTIJUGADOR**, busca `FISTILAND` o escribe `31.214.207.109:8159` en el campo blanco de abajo a la derecha y haz clic en **CONECTAR**. La IP funciona mucho mejor que la búsqueda. Los pasos están en [Unirse](server/overview.md#join).
+    Inicia SCUM, abre la lista de servidores desde **MULTIJUGADOR**, busca `FISTILAND` o escribe `195.82.158.28:7879` en el campo blanco de abajo a la derecha y haz clic en **CONECTAR**. La IP funciona mucho mejor que la búsqueda. Los pasos están en [Unirse](server/overview.md#join).
 
 ??? question "¿Es gratis? ¿Hay paquetes de pago?"
 

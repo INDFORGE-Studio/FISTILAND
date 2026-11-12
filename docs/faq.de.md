@@ -17,7 +17,7 @@ search:
 
 ??? question "Wie trete ich dem Server bei?"
 
-    Starte SCUM, öffne die Serverliste über **MEHRSPIELER**, suche nach `FISTILAND` oder gib `31.214.207.109:8159` in das weiße Feld unten rechts ein und klicke auf **VERBINDEN**. Die IP funktioniert viel besser als die Suche. Die Schritte stehen unter [Beitreten](server/overview.md#join).
+    Starte SCUM, öffne die Serverliste über **MEHRSPIELER**, suche nach `FISTILAND` oder gib `195.82.158.28:7879` in das weiße Feld unten rechts ein und klicke auf **VERBINDEN**. Die IP funktioniert viel besser als die Suche. Die Schritte stehen unter [Beitreten](server/overview.md#join).
 
 ??? question "Ist er kostenlos? Gibt es bezahlte Pakete?"
 

@@ -17,7 +17,7 @@ search:
 
 ??? question "How do I join the server?"
 
-    Start SCUM, open the server list from **MULTIPLAYER**, search for `FISTILAND` or type `31.214.207.109:8159` in the white field at the bottom right, then click **CONNECT**. The IP works much better than the search. The steps are in [Join](server/overview.md#join).
+    Start SCUM, open the server list from **MULTIPLAYER**, search for `FISTILAND` or type `195.82.158.28:7879` in the white field at the bottom right, then click **CONNECT**. The IP works much better than the search. The steps are in [Join](server/overview.md#join).
 
 ??? question "Is it free? Are there paid packs?"
 

@@ -17,7 +17,7 @@ search:
 
 ??? question "Comment rejoindre le serveur ?"
 
-    Lancez SCUM, ouvrez la liste des serveurs par **MULTIJOUEUR**, cherchez `FISTILAND` ou inscrivez `31.214.207.109:8159` dans le champ blanc en bas à droite, puis cliquez sur **CONNEXION**. L'IP fonctionne beaucoup mieux que la recherche. Les étapes sont dans [Rejoindre](server/overview.md#join).
+    Lancez SCUM, ouvrez la liste des serveurs par **MULTIJOUEUR**, cherchez `FISTILAND` ou inscrivez `195.82.158.28:7879` dans le champ blanc en bas à droite, puis cliquez sur **CONNEXION**. L'IP fonctionne beaucoup mieux que la recherche. Les étapes sont dans [Rejoindre](server/overview.md#join).
 
 ??? question "C'est gratuit ? Y a-t-il des packs payants ?"
 
