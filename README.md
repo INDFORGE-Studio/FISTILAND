@@ -11,6 +11,7 @@ Edit pages in `docs/`, navigation in `mkdocs.yml`. A push to `main` rebuilds and
 - The same script splits the search index per language and adds a Content-Security-Policy to every page (own files only, inline scripts allowed by hash).
 - Fonts, scripts and icons are self-hosted; licences of the fonts are in `docs/assets/fonts/licenses/`.
 - New or changed scripts and styles get a new file name (`name-vN.js`) listed in `mkdocs.yml`; superseded versions are removed one release later.
+- `tools/matricule404_test.mjs` replays a headless browser test of the INMATE 404 search assistant on a built site (8 languages, phone to desktop, keyboard, console and CSP, links, search, offline).
 
 ## Licence
 
