@@ -312,9 +312,11 @@ html[lang="hr"] .md-header__option .md-select > button::before { background-imag
 }
 @media (max-height: 700px) { .fl-logo { height: 13vh; margin-bottom: .2rem; } }
 
-/* Home: the tagline stays on a single line on desktop */
+/* Home: on desktop the tagline uses the whole width, so it stays on one line when it fits; a longer one (any language)
+   wraps onto balanced lines instead of running off the screen. Tighter lines + padding: one line keeps exactly its
+   former height (1.25em + .35em = 1.6em), two lines take less room so the home page still fits one screen. */
 @media (min-width: 62em) {
-  .fl-lead { max-width: none; white-space: nowrap; font-size: min(clamp(.9rem, 2.3vh, 1.1rem), 1.7vw); }
+  .fl-lead { max-width: 100%; white-space: normal; text-wrap: balance; line-height: 1.25; padding-block: .175em; font-size: min(clamp(.9rem, 2.3vh, 1.1rem), 1.7vw); }
 }
 
 /* ---- Home v11: logo is the title; bigger kicker under it; one-line tagline ---- */
